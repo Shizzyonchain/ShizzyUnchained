@@ -143,6 +143,8 @@ test("saved wallets persist, remove individually and clear completely", async ({
   await expect(transfers).toContainText("Received TAO");
   await expect(transfers).toContainText("5 TAO or more");
   await expect(transfers).not.toContainText("Dust transfer");
+  await expect(signed).toHaveCount(0);
+  await activity.getByText("Advanced transactions",{exact:true}).click();
   await expect(signed).toContainText("SubtensorModule.add_stake");
   await transfers.getByRole("button", { name: "Older →", exact: true }).click();
   await expect(transfers).toContainText("Sent TAO");
