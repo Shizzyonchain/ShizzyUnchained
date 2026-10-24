@@ -3,7 +3,7 @@
 Reviewed October 22, 2026. This is a navigation/runbook document, not proof that unperformed operational tests succeeded.
 
 ## Ownership and deployment
-Owner: ShizzyUnchained. App: Shizzyonchain/ShizzyOnchain.com, main branch. Vercel serves Next.js; backend is a separate Render service with owner node and TaoStats fallbacks. Never put credentials in this document. Production changes require lint, complete JS/Python suites and bounded browser gates (CI_TESTING.md), READY deployment and live verification. Roll back through Vercel deployment history to a known healthy build; data/schema compatibility must be checked separately.
+Owner: ShizzyUnchained. App: Shizzyonchain/ShizzyUnchained, main branch. Vercel serves Next.js; backend is a separate Render service with owner node and TaoStats fallbacks. Never put credentials in this document. Production changes require lint, complete JS/Python suites and bounded browser gates (CI_TESTING.md), READY deployment and live verification. Roll back through Vercel deployment history to a known healthy build; data/schema compatibility must be checked separately.
 
 ## Integrations and scheduled work
 - Market/chart/validator data: backend cache and background workers; keep visitor requests free of node scans. Check source timestamps as well as HTTP status. A stale cache must not be reported as fresh.
