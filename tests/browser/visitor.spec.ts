@@ -340,3 +340,20 @@ test("full ball map frame profile", async ({ page }, testInfo) => {
   expect(profile.frames).toBeGreaterThan(0);
   expect(profile.styleMutations,"Animation must not change every ball DOM style each frame").toBeLessThan(512);
 });
+
+
+test("trading card loads honestly and retains only a fresh snapshot during retry",async({page})=>{
+ await page.clock.install();
+ let release:()=>void=()=>{};const first=new Promise<void>(resolve=>{release=resolve;});let calls=0,failed=false;
+ await page.route("**/api/market-signals",async route=>{calls++;if(calls===1)await first;if(failed)return route.fulfill({json:{buying:null,sectors:[],tags:[]}});return route.fallback();});
+ await page.goto("/");const signals=page.getByRole("region",{name:"Market signals",exact:true});
+ await expect(signals.getByText("Loading trading data",{exact:false})).toBeVisible();
+ await expect(signals.getByText("Trading data unavailable",{exact:true})).toHaveCount(0);
+ release();await expect(signals.getByText("60% buy volume",{exact:true})).toBeVisible();
+ failed=true;await page.clock.fastForward(60000);
+ await expect(signals.getByText(/Refresh delayed/)).toBeVisible();await expect(signals.getByText("60% buy volume",{exact:true})).toBeVisible();
+ failed=false;await page.clock.fastForward(15000);await expect(signals.getByText(/Refresh delayed/)).toHaveCount(0);
+ failed=true;await page.clock.fastForward(16*60000);await expect(signals.getByText("Trading data unavailable",{exact:true})).toBeVisible();
+ await expect(signals.getByText("60% buy volume",{exact:true})).toHaveCount(0);
+ const response=await page.request.get("/api/market-signals?period=24h");expect((await response.json()).buying).toBeNull();expect(response.headers()["cache-control"]).toBe("no-store");
+});

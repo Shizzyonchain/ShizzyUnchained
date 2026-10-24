@@ -22,4 +22,4 @@ export async function GET(request:Request){
  const period=new URL(request.url).searchParams.get("period")||"24h";
  if(!["1h","24h"].includes(period))return Response.json({error:"Choose 1h or 24h"},{status:400});
  if(period==="1h")return coalesce("1h",async()=>{try{return Response.json({buying:await hourly()},{headers:{"Cache-Control":"public, s-maxage=300, stale-while-revalidate=60"}});}catch(error){console.warn("Hourly market trades unavailable",error instanceof Error?error.message:"Unknown provider failure");return Response.json({buying:null},{status:503,headers:{"Cache-Control":"no-store"}});}},300000);
-let buying=null;try{buying=await load();}catch{}return Response.json({buying,sectors:sectors.sectors.map(({id,name})=>({id,name})),tags},{headers:{"Cache-Control":"public, s-maxage=300, stale-while-revalidate=60"}});}
+let buying=null;try{buying=await load();}catch{}return Response.json({buying,sectors:sectors.sectors.map(({id,name})=>({id,name})),tags},{headers:{"Cache-Control":buying?"public, s-maxage=300, stale-while-revalidate=60":"no-store"}});}
