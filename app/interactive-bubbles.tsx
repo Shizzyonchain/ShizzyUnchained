@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState, type PointerEvent } from "react";
-import { confineBubble, layoutBubbles, stepBubbles, poolPockets, stepPoolPockets, type BubbleBody } from "./lib/bubble-physics";
+import { confineBubble, layoutBubbles, stepBubbles, poolPockets, stepPoolPockets, rollBubble, type BubbleBody } from "./lib/bubble-physics";
 import { matchesSubnetQuery } from "./lib/subnet-search";
 import "./interactive-bubbles.css";
 
@@ -32,9 +32,15 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
     const host = field.current;
     if (!host) return;
     let width = host.clientWidth, height = host.clientHeight, raf = 0, last = 0, visible = true, disposed = false, settleUntil = 0;
+    const painted = new Map<number, {x:number;y:number}>();
     const paint = () => {
       for (const body of bodies.current) {
         const node = buttons.current.get(body.id); if (!node) continue;
+        const prior = painted.get(body.id);
+        if (prior && !body.pocket && !body.returning) rollBubble(body, body.x - prior.x, body.y - prior.y);
+        painted.set(body.id, {x:body.x,y:body.y});
+        const surface = node.firstElementChild as HTMLElement | null;
+        if (surface) surface.style.transform = `rotateX(${body.rollX ?? 0}deg) rotateY(${body.rollY ?? 0}deg)`;
         node.style.width = `${body.r * 2}px`; node.style.height = `${body.r * 2}px`;
         const scale = body.pocket ? Math.max(.02, 1 - body.pocket.progress) : body.returning ? 1 - body.returning * .35 : 1;
         node.style.transform = `translate3d(${body.x - body.r}px,${body.y - body.r}px,0) scale(${scale})`;
@@ -50,8 +56,12 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
       {
         const dt = last ? Math.min(2, (now - last) / 16.667) : 1; last = now;
         if (!paused || drag.current || now < settleUntil || bodies.current.some(body => body.pocket || body.returning)) {
-          stepBubbles(bodies.current, width, height, dt, now, !paused, drag.current?.id ?? null);
-          stepPoolPockets(bodies.current, width, height, dt, now, !paused, drag.current?.id ?? null);
+          // Two physics samples per 60Hz frame improve contact response; paint at native refresh.
+          const samples = Math.max(1, Math.ceil(dt / .5));
+          for (let sample = 0; sample < samples; sample++) {
+            stepBubbles(bodies.current, width, height, dt / samples, now, !paused, drag.current?.id ?? null);
+            stepPoolPockets(bodies.current, width, height, dt / samples, now, !paused, drag.current?.id ?? null);
+          }
           paint();
         }
       }
@@ -69,7 +79,7 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
       bodies.current = layoutBubbles(items, width, height, bodies.current, reset);
       host.style.setProperty("--pool-pocket-radius", `${poolPockets(width, height)[0].r}px`);
       if (paused && !drag.current) for (const body of bodies.current) { body.vx = 0; body.vy = 0; }
-      paint(); host.dataset.ready = "true"; wake.current();
+      painted.clear(); paint(); host.dataset.ready = "true"; wake.current();
     };
     resize();
     const observer = new ResizeObserver(resize); observer.observe(host);
@@ -125,7 +135,7 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
         onKeyDown={event => { if (event.key === "Escape") setInspecting(null); if (event.key === "Enter" || event.key === " ") skipClick.current = false; }}
         title={`SN${item.id} ${item.name} · ${item.changeLabel} · ${period}`}
         aria-label={`SN${item.id} ${item.name}, ${item.changeLabel}, ${period}. Drag to move or activate for details.`}>
-        <small>{item.name}</small><strong>SN{item.id}</strong><em>{item.changeLabel}</em>
+        <span className="ball-roll" aria-hidden="true"><i/><i/><i/></span><small>{item.name}</small><strong>SN{item.id}</strong><em>{item.changeLabel}</em>
       </button>)}
     </div>
     {detail && <aside className="bubble-inspector" aria-label={`SN${detail.id} details`} onKeyDown={event => { if (event.key === "Escape") setInspecting(null); }}>

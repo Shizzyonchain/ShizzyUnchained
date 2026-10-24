@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { layoutBubbles, stepBubbles, poolPockets, stepPoolPockets } from '../app/lib/bubble-physics.ts';
+import { layoutBubbles, stepBubbles, poolPockets, stepPoolPockets, rollBubble } from '../app/lib/bubble-physics.ts';
 const shapes=Array.from({length:128},(_,i)=>({id:i+1,size:i===69?152:52+(i%7)*3}));
 test('128 bubbles pack within desktop and phone bounds without intersections',()=>{
  for(const [w,h] of [[1380,720],[343,1040],[343,360]]){
@@ -48,4 +48,23 @@ test('oversized, held and paused balls do not sink',()=>{
  stepPoolPockets([small],1380,720,1,0,true,1);assert.equal(small.pocket,undefined);
  stepPoolPockets([small],1380,720,1,0,false);assert.equal(small.pocket,undefined);
  stepPoolPockets([small],1380,720,1,0);assert.ok(small.pocket);
+});
+
+test('rolling tracks distance and reverses direction without spinning stationary balls',()=>{
+ const b={id:1,x:100,y:100,vx:0,vy:0,r:20,targetR:20};
+ rollBubble(b,Math.PI*20,0);assert.ok(Math.abs(b.rollY-180)<.00001);assert.equal(b.rollX,0);
+ rollBubble(b,-Math.PI*20,0);assert.ok(Math.abs(b.rollY)<.00001);
+ rollBubble(b,0,Math.PI*10);assert.ok(Math.abs(b.rollX+90)<.00001);
+ const before=[b.rollX,b.rollY];rollBubble(b,0,0);assert.deepEqual([b.rollX,b.rollY],before);
+});
+test('equal-size pool balls transfer momentum on impact without gaining energy',()=>{
+ const a={id:1,x:100,y:100,vx:3,vy:0,r:20,targetR:20}, b={...a,id:2,x:141,vx:0};
+ stepBubbles([a,b],500,300,.5,0,false);
+ assert.ok(b.vx>2.8);assert.ok(Math.abs(a.vx)<.15);
+ assert.ok(a.vx*a.vx+b.vx*b.vx<=9);
+});
+test('glancing impact conserves tangential velocity and rails rebound',()=>{
+ const a={id:1,x:100,y:100,vx:3,vy:1,r:20,targetR:20}, b={...a,id:2,x:141,vx:0,vy:1};
+ stepBubbles([a,b],500,300,.5,0,false);assert.ok(Math.abs(a.vy-b.vy)<.001);assert.ok(b.vx>2.8);
+ const wall={...a,x:21,vx:-3};stepBubbles([wall],500,300,.5,0,false);assert.ok(wall.vx>2.6&&wall.x>=22);
 });

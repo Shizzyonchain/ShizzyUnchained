@@ -292,10 +292,12 @@ test("Balls supports search, paused dragging, legacy links and chart details", a
   const bubble=map.getByRole("button",{name:/^SN51 Smoke Lium,/});
   await bubble.scrollIntoViewIfNeeded();
   const before=await bubble.boundingBox();
+  const rollBefore=await bubble.locator(".ball-roll").getAttribute("style");
   await page.mouse.move(before!.x+before!.width/2,before!.y+before!.height/2);
   await page.mouse.down();
   await page.mouse.move(before!.x+before!.width/2+65,before!.y+before!.height/2+40,{steps:12});
   await page.mouse.up();
+  await expect.poll(()=>bubble.locator(".ball-roll").getAttribute("style")).not.toBe(rollBefore);
   await expect(page.getByRole("complementary",{name:"SN51 details",exact:true})).toHaveCount(0);
   await bubble.click();
   const details=page.getByRole("complementary",{name:"SN51 details",exact:true});

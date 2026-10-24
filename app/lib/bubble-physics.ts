@@ -1,12 +1,12 @@
-export type BubbleBody = { id: number; x: number; y: number; vx: number; vy: number; r: number; targetR: number; pocket?: { corner: number; progress: number }; returning?: number };
+export type BubbleBody = { id: number; x: number; y: number; vx: number; vy: number; r: number; targetR: number; rollX?: number; rollY?: number; pocket?: { corner: number; progress: number }; returning?: number };
 export type BubbleShape = { id: number; size: number };
 const clamp = (v: number, min: number, max: number) => Math.max(min, Math.min(max, v));
 const random = (n: number) => { const x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
 
 export function confineBubble(b: BubbleBody, width: number, height: number) {
   const r = Math.min(b.r, width / 2, height / 2);
-  if (b.x < r + 2 || b.x > width - r - 2) b.vx *= -.65;
-  if (b.y < r + 2 || b.y > height - r - 2) b.vy *= -.65;
+  if (b.x < r + 2 || b.x > width - r - 2) b.vx *= -.9;
+  if (b.y < r + 2 || b.y > height - r - 2) b.vy *= -.9;
   b.x = clamp(b.x, r + 2, width - r - 2);
   b.y = clamp(b.y, r + 2, height - r - 2);
 }
@@ -22,8 +22,8 @@ export function stepBubbles(bodies: BubbleBody[], width: number, height: number,
         b.vx += Math.sin(clock * .0004 + b.id * 2.4) * .004 * dt;
         b.vy += Math.cos(clock * .00037 + b.id * 1.7) * .004 * dt;
       }
-      b.vx = clamp(b.vx * Math.pow(.993, dt), -4, 4);
-      b.vy = clamp(b.vy * Math.pow(.993, dt), -4, 4);
+      b.vx = clamp(b.vx * Math.pow(.998, dt), -4, 4);
+      b.vy = clamp(b.vy * Math.pow(.998, dt), -4, 4);
       b.x += b.vx * dt; b.y += b.vy * dt;
     }
     confineBubble(b, width, height);
@@ -49,7 +49,7 @@ export function stepBubbles(bodies: BubbleBody[], width: number, height: number,
         b.x += nx * push * wb / total; b.y += ny * push * wb / total;
         const speed = (b.vx - a.vx) * nx + (b.vy - a.vy) * ny;
         if (speed < 0) {
-          const impulse = -speed * 1.45 / total;
+          const impulse = -speed * 1.94 / total;
           if (wa) { a.vx -= impulse * nx * wa; a.vy -= impulse * ny * wa; }
           if (wb) { b.vx += impulse * nx * wb; b.vy += impulse * ny * wb; }
         }
@@ -131,4 +131,11 @@ export function stepPoolPockets(bodies: BubbleBody[], width: number, height: num
       }
     }
   }
+}
+
+/** No-slip surface rotation follows actual travel, including reversals after impact. */
+export function rollBubble(body: BubbleBody, dx: number, dy: number) {
+  const degrees = 180 / Math.PI / Math.max(1, body.r);
+  body.rollX = ((body.rollX ?? 0) - dy * degrees) % 360;
+  body.rollY = ((body.rollY ?? 0) + dx * degrees) % 360;
 }
