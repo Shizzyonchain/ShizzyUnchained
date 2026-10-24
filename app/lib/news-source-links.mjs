@@ -1,5 +1,5 @@
 import { routeIsAllowed } from "./backend-routes.mjs";
-const siteHosts = new Set(["shizzyunchained.com", "www.shizzyunchained.com", "shizzyonchain.com", "shizzy-onchain-com.vercel.app"]);
+const siteHosts = new Set(["shizzyunchained.com", "www.shizzyunchained.com", "shizzy-onchain-com.vercel.app"]);
 /** Deterministic build gate; no network request is made by readers or builds.
  * @param {{url: string, availability?: string, unavailableReason?: string, checkedAt?: string}} source
  */
