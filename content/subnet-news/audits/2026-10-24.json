@@ -2800,8 +2800,8 @@
     "videos": "DONE both tabs and exact watch timestamps; three future streams added, existing replay/public/member defaults preserved",
     "sectors": "DONE all128 metadata compared; SN34 tags updated from primary Yugos product",
     "market": "DONE 128 rows and individual outlier dispositions",
-    "publication": "Local gates passed; deployment and live review pending",
-    "XRoundup": "PENDING"
+    "publication": "DONE: production READY for 31c7455; dated news, latest index, videos, sectors, Burns, eTAO and four subnet-history pagination checks passed live.",
+    "XRoundup": "DONE: posted once after live verification to @ShizzyUnchained."
   },
   "validation": {
     "news": "77 reports validated",
@@ -2810,6 +2810,27 @@
     "javascriptTests": "137 passed",
     "browser": "18 desktop/phone visitor gates passed locally before push",
     "sourceText": "218 tracked source files checked",
-    "productionAudit": "0 vulnerabilities"
+    "productionAudit": "0 vulnerabilities",
+    "applicationCI": {
+      "run": 40112090357,
+      "conclusion": "success",
+      "sha": "31c7455f810bc02abbe3ec5eeba34634adf6f70c"
+    },
+    "newsCI": {
+      "run": 40112090295,
+      "conclusion": "success"
+    },
+    "deployment": {
+      "id": "dpl_6N8XXA69uUbhmkwrz7CGdCr8whFE",
+      "state": "READY",
+      "verifiedAt": "2026-10-24T16:38:14.590540+00:00"
+    }
+  },
+  "dailyXRoundup": {
+    "status": "posted",
+    "url": "https://x.com/ShizzyUnchained/status/2114033634755662052",
+    "verifiedAt": "2026-10-24T16:38:14.590540+00:00",
+    "text": "New AI weights. A robotics deal. A live protocol upgrade.\n\nSN92 REAX 1.2\nSN80 OpenRoboto × SN93 Bitcast\nSN22 Desearch V2\n\n19 sourced updates + verified burns and next week’s Shizzy livestreams.\n\nhttps://shizzyunchained.com/subnet-news/2026-10-24\n$TAO",
+    "confirmation": "X displayed Your post was sent and public profile displayed exact text and dated news link."
   }
 }
