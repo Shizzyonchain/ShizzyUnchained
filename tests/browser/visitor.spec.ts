@@ -276,3 +276,33 @@ test("scheduled livestreams stay out of recent videos and replays", async ({ pag
   await expect(page.locator(".video-caption")).toContainText("October 28, 2026");
   await noOverflow(page);
 });
+
+test("floating bubbles support search, paused dragging and chart details", async ({ page }) => {
+  await page.emulateMedia({reducedMotion:"reduce"});
+  await page.goto("/bubbles");
+  const map=page.getByRole("region",{name:"Interactive subnet bubble map",exact:true});
+  await expect(map.locator(".market-bubble")).toHaveCount(markets.length);
+  await expect(map.getByRole("button",{name:"Resume motion",exact:true})).toBeVisible();
+  await map.getByRole("searchbox",{name:"Find a subnet",exact:true}).fill("SN51");
+  await expect(map.locator(".search-dimmed")).toHaveCount(markets.length-1);
+  const bubble=map.getByRole("button",{name:/^SN51 Smoke Lium,/});
+  await bubble.scrollIntoViewIfNeeded();
+  const before=await bubble.boundingBox();
+  await page.mouse.move(before!.x+before!.width/2,before!.y+before!.height/2);
+  await page.mouse.down();
+  await page.mouse.move(before!.x+before!.width/2+65,before!.y+before!.height/2+40,{steps:12});
+  await page.mouse.up();
+  await expect(page.getByRole("complementary",{name:"SN51 details",exact:true})).toHaveCount(0);
+  await bubble.click();
+  const details=page.getByRole("complementary",{name:"SN51 details",exact:true});
+  await expect(details).toContainText("Smoke Lium");
+  await expect(details.getByRole("button",{name:"Open subnet chart"})).toBeVisible();
+  await page.getByRole("button",{name:"Close subnet details",exact:true}).click();
+  await map.getByRole("button",{name:"Clear search",exact:true}).click();
+  await map.getByRole("button",{name:"Reset layout",exact:true}).click();
+  await expect(map.locator(".market-bubble")).toHaveCount(markets.length);
+  await noOverflow(page);
+  await bubble.click();
+  await details.getByRole("button",{name:"Open subnet chart"}).click();
+  await expect(page).toHaveURL(/\/charts\/51/);
+});

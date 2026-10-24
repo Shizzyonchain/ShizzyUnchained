@@ -2,7 +2,7 @@
 import { matchesSubnetQuery } from "./lib/subnet-search";
 import { quoteFresh, quoteUsable, type TaoQuote } from "./lib/fx-price";
 
-import { CSSProperties, FormEvent, PointerEvent as ReactPointerEvent, ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { CSSProperties, FormEvent, ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
@@ -206,6 +206,7 @@ const compactAlpha = (value?: string | number) =>
   }).format(Number(value ?? 0));
 const changeClass = (v?: string) => (Number(v ?? 0) > 0 ? "positive" : Number(v ?? 0) < 0 ? "negative" : "neutral");
 
+const InteractiveBubbleField = dynamic(() => import("./interactive-bubbles").then(module => module.InteractiveBubbleField), { ssr: false, loading: () => <p role="status">Building the interactive bubble map…</p> });
 const TradingChart = dynamic(() => import("./trading-chart"), { ssr: false,
   loading: () => <div className="chart-module-loading" role="status">Opening chart…</div> });
 type ChartHistory = { data: Candle[]; savedAt: number; method: string; done?: boolean; notice?: string };
@@ -358,8 +359,6 @@ export function Dashboard({
   const [marketDetailOpen, setMarketDetailOpen] = useState(chartPage);
   const [timeframe, setTimeframe] = useState(initialInterval);
   const [bubbleTimeframePreference, setBubbleTimeframePreference] = useState<BubbleTimeframe>("change_24h");
-  const [bubbleOffsets, setBubbleOffsets] = useState<Record<number, { x: number; y: number }>>({});
-  const [draggingBubble, setDraggingBubble] = useState<number | null>(null);
   const chartCardRef = useRef<HTMLDivElement>(null);
   const pulseDialog = useRef<HTMLDialogElement>(null);
   const [pulseHelp, setPulseHelp] = useState("Momentum");
@@ -368,21 +367,6 @@ export function Dashboard({
     pulseDialog.current?.showModal();
   }
   const marketModalCloseRef = useRef<HTMLButtonElement>(null);
-  const bubbleCloudRef = useRef<HTMLElement>(null);
-  const bubbleDragRef = useRef<{
-    netuid: number;
-    pointerId: number;
-    startX: number;
-    startY: number;
-    offsetX: number;
-    offsetY: number;
-    minX: number;
-    maxX: number;
-    minY: number;
-    maxY: number;
-    moved: boolean;
-  } | null>(null);
-  const suppressBubbleClick = useRef(false);
   const [chartData, setChartData] = useState<{
     key: string;
     candles: Candle[];
@@ -845,45 +829,6 @@ export function Dashboard({
     return Math.round(52 + Math.min(22, Math.sqrt(Math.abs(movement)) * 7));
   };
   const bubbleChange = (row: ScreenerRow) => row[bubbleTimeframe] as string | undefined;
-  const startBubbleDrag = (event: ReactPointerEvent<HTMLButtonElement>, netuid: number) => {
-    if (event.button !== 0 || !bubbleCloudRef.current) return;
-    const bubble = event.currentTarget.getBoundingClientRect();
-    const cloud = bubbleCloudRef.current.getBoundingClientRect();
-    const offset = bubbleOffsets[netuid] || { x: 0, y: 0 };
-    bubbleDragRef.current = {
-      netuid,
-      pointerId: event.pointerId,
-      startX: event.clientX,
-      startY: event.clientY,
-      offsetX: offset.x,
-      offsetY: offset.y,
-      minX: offset.x + cloud.left - bubble.left,
-      maxX: offset.x + cloud.right - bubble.right,
-      minY: offset.y + cloud.top - bubble.top,
-      maxY: offset.y + cloud.bottom - bubble.bottom,
-      moved: false,
-    };
-    event.currentTarget.setPointerCapture(event.pointerId);
-    setDraggingBubble(netuid);
-  };
-  const moveBubbleDrag = (event: ReactPointerEvent<HTMLButtonElement>) => {
-    const drag = bubbleDragRef.current;
-    if (!drag || drag.pointerId !== event.pointerId) return;
-    const dx = event.clientX - drag.startX,
-      dy = event.clientY - drag.startY;
-    if (Math.hypot(dx, dy) > 4) drag.moved = true;
-    const x = Math.max(drag.minX, Math.min(drag.maxX, drag.offsetX + dx));
-    const y = Math.max(drag.minY, Math.min(drag.maxY, drag.offsetY + dy));
-    setBubbleOffsets((current) => ({ ...current, [drag.netuid]: { x, y } }));
-  };
-  const endBubbleDrag = (event: ReactPointerEvent<HTMLButtonElement>) => {
-    const drag = bubbleDragRef.current;
-    if (!drag || drag.pointerId !== event.pointerId) return;
-    suppressBubbleClick.current = drag.moved;
-    if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
-    bubbleDragRef.current = null;
-    setDraggingBubble(null);
-  };
   const money = (value?: string | number, price = false) => {
     if (value == null || value === "") return currency === "tao" ? "τ —" : "$—";
     const tao = Number(value ?? 0);
@@ -1748,7 +1693,7 @@ export function Dashboard({
               <h1>
                 Subnet <span>bubbles.</span>
               </h1>
-              <p>Every subnet in one view. Subnet numbers lead, names stay compact, and only exceptional green movers grow large.</p>
+              <p>Explore all 128 subnets. Drag, release and watch bubbles move around each other. Our largest bubbles highlight exceptional gains.</p>
             </div>
             <div className="bubble-controls" role="group" aria-label="Bubble performance period">
               {[
@@ -1786,90 +1731,14 @@ export function Dashboard({
                 ? `1-day history rebuilding · showing ${bubbleTimeframeLabel(bubbleTimeframe)}`
                 : bubbleHistoryFallback
                   ? `${bubbleTimeframeLabel(bubbleTimeframePreference)} history rebuilding · showing ${bubbleTimeframeLabel(bubbleTimeframe)}`
-                : "Drag any bubble · big bubbles = exceptional gains"}
+                : "Floating market map · big bubbles = exceptional gains"}
             </b>
-            <button onClick={() => setBubbleOffsets({})}>Reset layout</button>
           </div>
-          <section ref={bubbleCloudRef} className="bubble-cloud panel" aria-label="Draggable subnet market bubbles">
-            {!hasMarketData && (
-              <div className="market-loading" role="status">
-                <i />
-                <strong>{dataState === "loading" ? "Building the live market map" : "Bubble data unavailable"}</strong>
-                <span>{dataState === "loading" ? "Waiting for all finalized subnets…" : "We’ll reconnect automatically."}</span>
-              </div>
-            )}
-            {bubbleRows.map((row) => {
-              const movement = Number(bubbleChange(row) || 0);
-              const size = bubbleSize(row);
-              const offset = bubbleOffsets[row.netuid] || { x: 0, y: 0 };
-              const bubbleStyle = {
-                width: size,
-                height: size,
-                "--bubble-x": `${offset.x}px`,
-                "--bubble-y": `${offset.y}px`,
-              } as CSSProperties;
-              return (
-                <button
-                  key={row.netuid}
-                  style={bubbleStyle}
-                  className={`market-bubble ${size < 58 ? "compact" : ""} ${movement > 0.005 ? "gain" : movement < -0.005 ? "loss" : "flat"} ${selected === row.netuid ? "selected" : ""} ${draggingBubble === row.netuid ? "dragging" : ""}`}
-                  onPointerDown={(event) => startBubbleDrag(event, row.netuid)}
-                  onPointerMove={moveBubbleDrag}
-                  onPointerUp={endBubbleDrag}
-                  onPointerCancel={endBubbleDrag}
-                  onClick={() => {
-                    if (suppressBubbleClick.current) {
-                      suppressBubbleClick.current = false;
-                      return;
-                    }
-                    setSelected(row.netuid);
-                  }}
-                  aria-label={`${row.name || "Unknown"}, draggable, ${money(row.market_cap_tao)} market cap, ${movement >= 0 ? "+" : ""}${fmt(movement)} percent`}
-                >
-                  <small>{row.name || "Unknown"}</small>
-                  <strong>SN{row.netuid}</strong>
-                  <em>
-                    {movement > 0 ? "+" : ""}
-                    {fmt(movement)}%
-                  </em>
-                  <span>{money(row.market_cap_tao)}</span>
-                </button>
-              );
-            })}
-          </section>
-          {active && (
-            <aside className="bubble-detail panel">
-              <div>
-                <span className="bubble-token">{active.symbol?.replace("α", "") || active.netuid}</span>
-                <div>
-                  <small>SN{active.netuid}</small>
-                  <h2>{active.name || "Unknown"}</h2>
-                </div>
-              </div>
-              <dl>
-                <div>
-                  <dt>Price</dt>
-                  <dd>{money(active.price_tao, true)}</dd>
-                </div>
-                <div>
-                  <dt>Market cap</dt>
-                  <dd>{money(active.market_cap_tao)}</dd>
-                </div>
-                <div>
-                  <dt>Liquidity</dt>
-                  <dd>{money(active.tao_reserve)}</dd>
-                </div>
-                <div>
-                  <dt>{bubbleTimeframe === "change_10m" ? "10 minutes" : bubbleTimeframe === "change_1h" ? "1 hour" : "1 day"}</dt>
-                  <dd className={changeClass(bubbleChange(active))}>
-                    {Number(bubbleChange(active) || 0) > 0 ? "+" : ""}
-                    {fmt(bubbleChange(active))}%
-                  </dd>
-                </div>
-              </dl>
-              <button onClick={() => openSubnetChart(active.netuid)}>Open market chart →</button>
-            </aside>
-          )}
+          {!hasMarketData && <p role="status">{dataState === "loading" ? "Loading finalized subnet data…" : "Bubble data unavailable. Reconnecting automatically."}</p>}
+          <InteractiveBubbleField
+            items={bubbleRows.map(row => ({ id: row.netuid, name: row.name || "Unknown", size: bubbleSize(row), change: Number(bubbleChange(row) || 0), changeLabel: `${Number(bubbleChange(row) || 0) > 0 ? "+" : ""}${fmt(bubbleChange(row))}%`, price: money(row.price_tao, true), marketCap: money(row.market_cap_tao), liquidity: money(row.tao_reserve) }))}
+            selected={selected} onSelect={setSelected} onChart={openSubnetChart} period={bubbleTimeframeLabel(bubbleTimeframe)}
+          />
         </section>
       ) : view === "wallets" ? (
         <section className="wallet-page">
