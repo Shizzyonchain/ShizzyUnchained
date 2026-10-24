@@ -234,7 +234,7 @@ test("owner wallet opens subnet alpha sales instead of general wallet transfers"
 
 test("latest news opens the full edition and retains the archive", async ({ page }) => {
   await page.goto("/subnet-news");
-  await expect(page.getByRole("heading", {name:"Bittensor Daily News",exact:true})).toBeVisible();
+  await expect(page.getByText("Bittensor Daily News",{exact:true})).toBeVisible();
   const edition=page.getByRole("combobox",{name:"Choose news edition"});
   const dates=await edition.locator("option").evaluateAll(options=>options.map(option=>(option as HTMLOptionElement).value));
   expect(dates.length).toBeGreaterThan(70);
@@ -247,7 +247,12 @@ test("latest news opens the full edition and retains the archive", async ({ page
     const story=page.locator(".news-item").filter({has:page.getByRole("heading",{name:item.headline,exact:true})});
     await expect(story).toContainText(item.summary);
   }
-  await expect(page.getByRole("heading",{name:"The lead story",exact:true})).toBeVisible();
+  const headline=page.getByRole("heading",{level:1});
+  await expect(headline).toBeVisible();
+  await expect(page.getByRole("region",{name:"Main story"}).getByRole("heading",{level:1})).toHaveCount(1);
+  const headlineBounds=await headline.boundingBox();
+  expect(headlineBounds!.y).toBeLessThan(520);
+  await expect(page.getByRole("heading",{name:"The lead story",exact:true})).toHaveCount(0);
   await noOverflow(page);
   await page.goto(`/subnet-news/${dates[0]}`);
   await expect(page.locator(".news-item")).toHaveCount(count);

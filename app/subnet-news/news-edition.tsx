@@ -32,17 +32,18 @@ export function NewsEdition({brief,briefs}:{brief:SubnetNewsBrief;briefs:SubnetN
       <SubnetNewsHeader />
       <article className={`news-report ${styles.edition}`} aria-label={`News edition ${brief.date}`}>
         <header className={styles.masthead}>
-          <div className={styles.topline}><span>Independent coverage by Shizzy Unchained</span><EditionSelect editions={editions} current={date}/></div>
-          <div className={styles.titleRow}><h1>Bittensor Daily News</h1><span>{isLatestBrief?"Latest edition":"From the archive"}</span></div>
+          <div className={styles.topline}>
+            <div className={styles.publication}><p>Bittensor Daily News</p><span>{isLatestBrief ? "Latest edition" : "From the archive"}</span></div>
+            <EditionSelect editions={editions} current={date}/>
+          </div>
           <div className={styles.dateline}><time dateTime={date}>{formatBriefDate(date)}</time><span>{updatedSubnets.length} subnets with updates · {brief.subnets.length} in coverage roster</span><Link href={`/subnet-news/${date}`} prefetch={false}>Edition permalink ↗</Link>{!isLatestBrief&&<Link href="/subnet-news">Read the latest →</Link>}</div>
-          <p className={styles.dek}>{brief.summary}</p>
-          <p className={styles.window}>Coverage: {new Date(brief.coverageStart).toLocaleString("en-US",{timeZone:"America/New_York",dateStyle:"medium",timeStyle:"short"})} – {new Date(brief.coverageEnd).toLocaleString("en-US",{timeZone:"America/New_York",dateStyle:"medium",timeStyle:"short"})} ET</p>
+          {!scoredFormat && <h1 className={styles.legacyHeadline}>{brief.title}</h1>}
           {brief.correctedAt&&<p className={styles.correction}><b>Correction · </b><time dateTime={brief.correctedAt}>{new Date(brief.correctedAt).toISOString().replace("T"," ").replace(".000Z"," UTC")}</time> · {brief.correctionNote}</p>}
         </header>
 
         {scoredFormat ? (
           <>
-          {lead&&<section className={styles.lead} aria-labelledby="lead-story"><div className={styles.sectionLabel}><h2 id="lead-story">The lead story</h2><span>Biggest developments first</span></div><NewsItem item={lead.item} context={lead.context} rank={rankedNews.indexOf(lead)+1}/></section>}
+          {lead&&<section className={styles.lead} aria-label="Main story"><NewsItem item={lead.item} context={lead.context} rank={rankedNews.indexOf(lead)+1} headingLevel={1}/></section>}
           {remaining.length>0&&<section className={styles.desk} aria-labelledby="more-news"><div className={styles.sectionLabel}><h2 id="more-news">Around Bittensor</h2><span>{remaining.length} more stories</span></div><div className={styles.stories}>{remaining.map(entry=><NewsItem key={JSON.stringify(entry.item)} item={entry.item} context={entry.context} rank={rankedNews.indexOf(entry)+1}/>)}</div></section>}
           {quickBriefs.length>0&&<section className={styles.briefs} aria-labelledby="quick-briefs"><div className={styles.sectionLabel}><h2 id="quick-briefs">Quick briefs &amp; watchlist</h2><span>{quickBriefs.length} updates</span></div><p className={styles.editorNote}>Smaller developments and early plans. Verification labels distinguish confirmed information from developing claims.</p><div className={styles.stories}>{quickBriefs.map(entry=><NewsItem key={JSON.stringify(entry.item)} item={entry.item} context={entry.context} rank={rankedNews.indexOf(entry)+1}/>)}</div></section>}
           <p className={styles.editorNote}>Stars indicate editorial priority, not investment quality. Routine competition updates receive at most three stars. Shizzy videos receive three; substantive non-video Shizzy coverage receives at least four. Scheduled events remain plans.</p>
@@ -102,6 +103,8 @@ export function NewsEdition({brief,briefs}:{brief:SubnetNewsBrief;briefs:SubnetN
 
         <details className={styles.coverage}><summary>Sources &amp; coverage notes</summary><section className="news-report-section coverage-section" aria-labelledby="coverage-notes">
           <div className="news-section-head"><span>{sectionNumber(4)}</span><div><p className="eyebrow">Audit trail</p><h2 id="coverage-notes">Coverage notes</h2></div></div>
+          <p className={styles.dek}>{brief.summary}</p>
+          <p className={styles.window}>Coverage: {new Date(brief.coverageStart).toLocaleString("en-US",{timeZone:"America/New_York",dateStyle:"medium",timeStyle:"short"})} – {new Date(brief.coverageEnd).toLocaleString("en-US",{timeZone:"America/New_York",dateStyle:"medium",timeStyle:"short"})} ET</p>
           <div className="coverage-grid">
             <div><h3>Searched</h3><ul>{brief.coverage.searched.map((item) => <li key={item}>{item}</li>)}</ul></div>
             <div><h3>Public-data gaps</h3>{brief.coverage.gaps.length ? <ul>{brief.coverage.gaps.map((item) => <li key={item}>{item}</li>)}</ul> : <p>No material gaps were identified.</p>}</div>
