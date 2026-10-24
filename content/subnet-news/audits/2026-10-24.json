@@ -2881,5 +2881,23 @@
         "Dated edition and all prior stories retained"
       ]
     }
-  }
+  },
+  "chainFollowups": [
+    {
+      "checkedAt": "2026-10-24T23:48:12.624711+00:00",
+      "reason": "Owner requested 30-day activity and owner-attributed transaction burns on subnet pages. Refresh the reviewed archive for the feature; preserve prior news and history.",
+      "fromBlock": 9355839,
+      "toBlock": 9356837,
+      "hash": "0x5c96801286c7f5d47f3d3e144f704b3cfda70eb0af19bee1704bd90302564b06",
+      "throughTime": "2026-10-24T23:47:12+00:00",
+      "evidence": "/evidence/2026-10-24-owner-burn-continuity.json",
+      "complete": true,
+      "gaps": [],
+      "etaoVectorChanges": 0,
+      "newQualifyingBurns": 0,
+      "underThresholdEventsRetained": 12,
+      "archiveUpdated": true,
+      "newsDisposition": "No new qualifying event; no story or additional tweet. Existing daily edition preserved. Owner burn stats identify archive cutoff, current coldkey, 100-alpha per-event minimum, and partial older history."
+    }
+  ]
 }

@@ -35,6 +35,7 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
       else if (path === "/api/validators/root/history") value = { data: history(url.searchParams.get("hotkey") === keys[1] ? 1 : 0) };
       else if (path === "/api/validators/root/recommendations") value = { matches: keys.map((hotkey, index) => ({ hotkey, name: `Smoke Validator ${index + 1}`, take: .09, totalReturn: .03, drawdown: -.0314 - index * .001, volatility: .001, concentration: 1, quoteGap: 0, topFive: 1, snapshot: stamp, identityTimestamp: stamp, operatingTimestamp: stamp, start: history()[60].day, end: history()[90].day })), excluded: [], reviewed: ["Smoke Validator 1", "Smoke Validator 2"], totalBaskets: 2, historyCandidates: 2, hiddenChildren: 0, historyEnd: history()[90].day, preparedAt: stamp };
       else { unexpected.push(`${route.request().method()} ${path}`); return route.fulfill({ status: 501, json: { error: "Unmocked smoke contract" } }); }
+      if(path==="/api/subnets/owner-sales")Object.assign(value as object,{month:{alpha:"100000000000",tao:"50000000000",trades:5,bought:{alpha:"500000000000",tao:"100000000000",trades:6},netAlpha:"400000000000"},burns:{asOf:stamp,historyStart:new Date(Date.parse(stamp)-4*86400000).toISOString(),minimumAlpha:"100",day:{alpha:"200000000000",burns:1,complete:true},week:{alpha:"300000000000",burns:2,complete:false},month:{alpha:"300000000000",burns:2,complete:false}}});
       return route.fulfill({ json: value });
     });
     await use({ failed, calls });
@@ -377,4 +378,11 @@ test("hourly trading refresh retries independently and never substitutes daily t
  await period.getByRole("button",{name:"1H",exact:true}).click();await expect(signals.getByText("43% buy volume",{exact:true})).toBeVisible();
  const previous=calls;await page.evaluate(()=>document.dispatchEvent(new Event("visibilitychange")));await expect.poll(()=>calls).toBeGreaterThan(previous);
  failed=true;await page.clock.fastForward(16*60000);await expect(signals.getByText("Trading data unavailable",{exact:true})).toBeVisible();await expect(signals.getByText("43% buy volume",{exact:true})).toHaveCount(0);
+});
+
+test("owner activity exposes a month and separates verified burns from trading",async({page,isMobile})=>{
+ await page.goto("/charts/51");const panel=page.getByRole("region",{name:"Owner wallet alpha activity",exact:true});await expect(panel.getByRole("heading",{name:"Owner wallet buys, sells & burns",exact:true})).toBeVisible();
+ if(isMobile)await panel.getByRole("group",{name:"Owner activity period",exact:true}).getByRole("button",{name:"30D",exact:true}).click();
+ await expect(panel.getByText("Last 30 days",{exact:true})).toBeVisible();await expect(panel.getByText("300 α or more",{exact:true}).last()).toBeVisible();await expect(panel.getByText("+400 α",{exact:true})).toBeVisible();await expect(panel).toContainText("partial history");await expect(panel).toContainText("Burns through");
+ await noOverflow(page);
 });
