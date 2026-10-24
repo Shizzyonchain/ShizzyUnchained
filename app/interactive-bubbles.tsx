@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState, type PointerEvent } from "react";
-import { confineBubble, layoutBubbles, stepBubbles, type BubbleBody } from "./lib/bubble-physics";
+import { confineBubble, layoutBubbles, stepBubbles, poolPockets, stepPoolPockets, type BubbleBody } from "./lib/bubble-physics";
 import { matchesSubnetQuery } from "./lib/subnet-search";
 import "./interactive-bubbles.css";
 
@@ -36,7 +36,10 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
       for (const body of bodies.current) {
         const node = buttons.current.get(body.id); if (!node) continue;
         node.style.width = `${body.r * 2}px`; node.style.height = `${body.r * 2}px`;
-        node.style.transform = `translate3d(${body.x - body.r}px,${body.y - body.r}px,0)`;
+        const scale = body.pocket ? Math.max(.02, 1 - body.pocket.progress) : body.returning ? 1 - body.returning * .35 : 1;
+        node.style.transform = `translate3d(${body.x - body.r}px,${body.y - body.r}px,0) scale(${scale})`;
+        node.style.opacity = body.pocket ? String(1 - body.pocket.progress * .8) : body.returning ? String(1 - body.returning) : "";
+        node.dataset.pocketed = String(Boolean(body.pocket));
         node.dataset.small = String(body.r < 32);
         node.style.setProperty("--bubble-label-size", `${Math.min(18, Math.max(8, (body.r * 2 - 8) / 3.2))}px`);
       }
@@ -46,12 +49,13 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
       if (disposed || !visible || document.hidden) return;
       if (!last || now - last >= 30) {
         const dt = last ? Math.min(2, (now - last) / 16.667) : 1; last = now;
-        if (!paused || drag.current || now < settleUntil) {
+        if (!paused || drag.current || now < settleUntil || bodies.current.some(body => body.pocket || body.returning)) {
           stepBubbles(bodies.current, width, height, dt, now, !paused, drag.current?.id ?? null);
+          stepPoolPockets(bodies.current, width, height, dt, now, !paused, drag.current?.id ?? null);
           paint();
         }
       }
-      if (!paused || drag.current || now < settleUntil) raf = requestAnimationFrame(frame);
+      if (!paused || drag.current || now < settleUntil || bodies.current.some(body => body.pocket || body.returning)) raf = requestAnimationFrame(frame);
     };
     const start = () => { if (!disposed && visible && !document.hidden && !raf) raf = requestAnimationFrame(frame); };
     wake.current = () => { settleUntil = performance.now() + 1100; start(); };
@@ -60,6 +64,7 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
       width = host.clientWidth; height = host.clientHeight;
       if (oldWidth && oldHeight) for (const body of bodies.current) { body.x *= width / oldWidth; body.y *= height / oldHeight; }
       bodies.current = layoutBubbles(items, width, height, bodies.current, reset);
+      host.style.setProperty("--pool-pocket-radius", `${poolPockets(width, height)[0].r}px`);
       if (paused && !drag.current) for (const body of bodies.current) { body.vx = 0; body.vy = 0; }
       paint(); host.dataset.ready = "true"; wake.current();
     };
@@ -104,9 +109,11 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
       {query && <button onClick={() => setQuery("")}>Clear search</button>}
       <button onClick={() => setPaused(value => !value)} aria-pressed={paused}>{paused ? "Resume motion" : "Pause motion"}</button>
       <button onClick={() => { bodies.current = []; setReset(value => value + 1); }}>Reset layout</button>
-      <p role="status">{query ? `${items.filter(matches).length} matching subnets · clear search to see all` : "Drag & release to toss a ball · tap for details"}</p>
+      <p role="status">{query ? `${items.filter(matches).length} matching subnets · clear search to see all` : "Drag & toss · fitting balls sink in corners, then return"}</p>
     </div>
     <div ref={field} className="bubble-cloud bubble-field panel" aria-label="Floating subnet balls" data-motion={paused ? "paused" : "running"}>
+      <div className="pool-pockets" aria-hidden="true">{["top-left", "top-right", "bottom-left", "bottom-right"].map(corner => <i key={corner} className={`pool-pocket ${corner}`}/>)}</div>
+      <div className="pool-sights" aria-hidden="true">{[25, 50, 75].flatMap(position => [<i key={`top-${position}`} className="top" style={{left:`${position}%`}}/>, <i key={`bottom-${position}`} className="bottom" style={{left:`${position}%`}}/>])}</div>
       {items.map(item => <button key={item.id} ref={node => { if (node) buttons.current.set(item.id, node); else buttons.current.delete(item.id); }}
         tabIndex={matches(item) ? 0 : -1} className={`market-bubble ${item.change > .005 ? "gain" : item.change < -.005 ? "loss" : "flat"} ${selected === item.id ? "selected" : ""} ${dragging === item.id ? "dragging" : ""} ${matches(item) ? "" : "search-dimmed"}`}
         onPointerDown={event => down(event, item.id)} onPointerMove={move} onPointerUp={event => end(event)} onPointerCancel={event => end(event, true)}
