@@ -6,7 +6,7 @@ import styles from "./market-signals.module.css";
 type Buying={buy:number;sell:number;asOf:string;count:number;trades?:number;windowStart?:string};
 type Payload={buying:Buying|null;sectors:{id:string;name:string}[];tags:{netuid:number;sectors:string[]}[]};
 const amount=(n:number)=>n.toLocaleString("en-US",{maximumFractionDigits:0});
-const percent=(n:number)=>`${n>0?"+":""}${n.toFixed(2)}%`;
+const percent=(n:number)=>Math.abs(n)>0&&Math.abs(n)<0.01?`${n>0?"+":"−"}${Math.abs(n).toPrecision(2)}%`:`${n>0?"+":""}${n.toFixed(2)}%`;
 function TradeComparison({alert,period}:{alert:{netuid:number;name:string;volume:number;ratio:number};period:"1h"|"24h"}) {
  const previous=alert.volume/alert.ratio;
  return <Link prefetch={false} href={`/charts/${alert.netuid}`} className={styles.tradeComparison}>
