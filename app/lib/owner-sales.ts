@@ -1,6 +1,6 @@
 import type { WalletActivity } from "./wallet-activity";
 export type SalesTotal = { alpha: string; tao: string; trades: number };
-export type OwnerSales = { netuid: number; address: string; asOf: string; ownerCheckedAt: string; complete: boolean; day: TradeTotal; week: TradeTotal };
+export type OwnerSales = { netuid: number; address: string; asOf: string; ownerCheckedAt: string; complete: boolean; sales?: WalletActivity[]; day: TradeTotal; week: TradeTotal };
 export type TradeTotal = SalesTotal & { bought: SalesTotal; netAlpha: string };
 function sumDirection(rows: WalletActivity[], netuid: number, asOf: number, buy: boolean) {
   const totals = [ { alpha: BigInt(0), tao: BigInt(0), trades: 0 }, { alpha: BigInt(0), tao: BigInt(0), trades: 0 } ];
@@ -28,4 +28,13 @@ export function formatSalesAmount(raw: string): string {
   const value = BigInt(raw), whole = value / BigInt(1_000_000_000);
   const fraction = (value % BigInt(1_000_000_000)).toString().padStart(9, "0").replace(/0+$/, "");
   return whole.toLocaleString("en-US") + (fraction ? `.${fraction}` : "");
+}
+
+export function ownerSaleEvidence(rows: WalletActivity[], netuid: number, asOf: number) {
+ const seen = new Set<string>();
+ return rows.filter(row => {
+  const trade=row.swap,time=Date.parse(row.timestamp);
+  if(seen.has(row.id)||!trade||trade.feeConversion||trade.fromToken!==`SN${netuid}`||trade.toToken!=="TAO"||BigInt(trade.taoValue)<BigInt(5000000000)||!Number.isFinite(time)||time>asOf||time<asOf-604800000)return false;
+  seen.add(row.id);return true;
+ }).sort((a,b)=>Date.parse(b.timestamp)-Date.parse(a.timestamp)).slice(0,20);
 }

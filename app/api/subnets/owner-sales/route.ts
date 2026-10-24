@@ -2,7 +2,7 @@ import { NextRequest } from "next/server";
 import { getEtaoSnapshot } from "../../../lib/etao-source";
 import { requestGuard, responseCoalescer } from "../../../lib/request-protection";
 import { swapRows, validWalletAddress, type WalletActivity } from "../../../lib/wallet-activity";
-import { sumOwnerActivity } from "../../../lib/owner-sales";
+import { ownerSaleEvidence, sumOwnerActivity } from "../../../lib/owner-sales";
 const coalesce = responseCoalescer(256, 8);
 export async function GET(request: NextRequest) {
   const blocked = requestGuard(request, "activity"); if (blocked) return blocked;
@@ -38,7 +38,7 @@ export async function GET(request: NextRequest) {
       };
       const [sales, buys] = await Promise.all([load(false), load(true)]);
       const complete = sales.complete && buys.complete;
-      return Response.json({ netuid, address, asOf: new Date(end * 1000).toISOString(), ownerCheckedAt: snapshot.ownerSnapshot.checkedAt, complete, ...sumOwnerActivity([...sales.rows, ...buys.rows], netuid, end * 1000) }, { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=60" } });
+      return Response.json({ netuid, address, asOf: new Date(end * 1000).toISOString(), ownerCheckedAt: snapshot.ownerSnapshot.checkedAt, complete, sales: ownerSaleEvidence(sales.rows, netuid, end * 1000), ...sumOwnerActivity([...sales.rows, ...buys.rows], netuid, end * 1000) }, { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=60" } });
     } catch { return Response.json({ error: "Owner sales could not be verified. Please retry shortly." }, { status: 503, headers: { "Cache-Control": "no-store", "Retry-After": "60" } }); }
   }, 60_000);
 }

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {sumOwnerSales,sumOwnerActivity,formatSalesAmount} from '../app/lib/owner-sales.ts';
+import {ownerSaleEvidence,sumOwnerSales,sumOwnerActivity,formatSalesAmount} from '../app/lib/owner-sales.ts';
 const now=Date.parse('2026-10-23T12:00:00Z');
 const row=(id,hours,extra={})=>({id,timestamp:new Date(now-hours*3600000).toISOString(),swap:{fromToken:'SN51',toToken:'TAO',fromAmount:'9007199254740993',toAmount:'5000000000',taoValue:'5000000000',...extra}});
 test('owner sales use exact window boundaries, token scope, fee exclusions and deduplication',()=>{
@@ -20,3 +20,5 @@ test('owner activity compares alpha units, not TAO, and preserves signed precisi
  assert.equal(formatSalesAmount(result.week.netAlpha),'-12');
  assert.equal(formatSalesAmount('-1'),'-0.000000001');
 });
+
+test('owner sale evidence excludes unrelated transfers, other subnet trades, fees, dust and duplicates',()=>{const rows=[row('valid',1),row('other',1,{fromToken:'SN64'}),row('fee',1,{feeConversion:true}),row('buy',1,{fromToken:'TAO',toToken:'SN51'}),row('dust',1,{taoValue:'1'}),row('old',169),row('valid',1)];assert.deepEqual(ownerSaleEvidence(rows,51,now).map(r=>r.id),['valid']);});
