@@ -292,14 +292,15 @@ test("Balls supports search, paused dragging, legacy links and chart details", a
   const bubble=map.getByRole("button",{name:/^SN51 Smoke Lium,/});
   await bubble.scrollIntoViewIfNeeded();
   const before=await bubble.boundingBox();
-  const rollBefore=await bubble.locator(".ball-roll").getAttribute("style");
+  await expect(map.locator("canvas.ball-canvas")).toBeVisible();
   await page.mouse.move(before!.x+before!.width/2,before!.y+before!.height/2);
   await page.mouse.down();
   await page.mouse.move(before!.x+before!.width/2+65,before!.y+before!.height/2+40,{steps:12});
   await page.mouse.up();
-  await expect.poll(()=>bubble.locator(".ball-roll").getAttribute("style")).not.toBe(rollBefore);
+  await expect.poll(()=>bubble.boundingBox()).not.toEqual(before);
   await expect(page.getByRole("complementary",{name:"SN51 details",exact:true})).toHaveCount(0);
-  await bubble.click();
+  const clicked=await bubble.boundingBox();
+  await page.mouse.click(clicked!.x+clicked!.width/2,clicked!.y+clicked!.height/2);
   const details=page.getByRole("complementary",{name:"SN51 details",exact:true});
   await expect(details).toContainText("Smoke Lium");
   await expect(details.getByRole("button",{name:"Open subnet chart"})).toBeVisible();
@@ -308,7 +309,34 @@ test("Balls supports search, paused dragging, legacy links and chart details", a
   await map.getByRole("button",{name:"Reset layout",exact:true}).click();
   await expect(map.locator(".market-bubble")).toHaveCount(markets.length);
   await noOverflow(page);
-  await bubble.click();
+  await bubble.press("Enter");
   await details.getByRole("button",{name:"Open subnet chart"}).click();
   await expect(page).toHaveURL(/\/charts\/51/);
+});
+
+
+test("full ball map frame profile", async ({ page }, testInfo) => {
+  const session=await page.context().newCDPSession(page);
+  await session.send("Emulation.setCPUThrottlingRate",{rate:4});
+  await page.emulateMedia({reducedMotion:"no-preference"});
+  await page.goto("/balls");
+  await expect(page.locator(".bubble-field[data-ready=true] .market-bubble")).toHaveCount(128);
+  const measure=()=>page.evaluate(()=>new Promise<{frames:number;meanMs:number;p95Ms:number;styleMutations:number}>(resolve=>{
+    const intervals:number[]=[];let start=0,last=0,styleMutations=0;
+    const observer=new MutationObserver(rows=>{styleMutations+=rows.length;});
+    observer.observe(document.querySelector(".bubble-field")!,{subtree:true,attributes:true,attributeFilter:["style"]});
+    const frame=(now:number)=>{if(!start)start=now;if(last)intervals.push(now-last);last=now;
+      if(now-start<3000){requestAnimationFrame(frame);return;}
+      observer.disconnect();const sorted=[...intervals].sort((a,b)=>a-b);
+      resolve({frames:intervals.length,meanMs:intervals.reduce((a,b)=>a+b,0)/intervals.length,p95Ms:sorted[Math.floor(sorted.length*.95)],styleMutations});};
+    requestAnimationFrame(frame);
+  }));
+  const profile=await measure();
+  console.log(`BALL_PROFILE ${testInfo.project.name} ${JSON.stringify(profile)}`);
+  await testInfo.attach("ball-frame-profile",{body:JSON.stringify(profile,null,2),contentType:"application/json"});
+  await session.send("Emulation.setCPUThrottlingRate",{rate:1});const native=await measure();
+  console.log(`BALL_NATIVE ${testInfo.project.name} ${JSON.stringify(native)}`);
+  await testInfo.attach("ball-native-frame-profile",{body:JSON.stringify(native,null,2),contentType:"application/json"});
+  expect(profile.frames).toBeGreaterThan(0);
+  expect(profile.styleMutations,"Animation must not change every ball DOM style each frame").toBeLessThan(512);
 });

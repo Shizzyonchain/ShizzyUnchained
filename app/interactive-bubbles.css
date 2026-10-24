@@ -11,3 +11,10 @@
 
 /* Solid lacquered balls: no bubble rim, glow or selected/hover halo. */
 .bubble-field .market-bubble,.bubble-field .market-bubble.selected,.bubble-field .market-bubble:hover{border:0;outline:none;box-shadow:inset 3px 4px 8px #ffffff38,inset -9px -12px 18px #000c,inset 0 -3px 4px #000e,3px 9px 7px -3px #000e}.bubble-field .market-bubble:focus-visible{outline:2px solid #fff;outline-offset:3px}.ball-roll i:first-child{border:0}
+
+/* One bitmap canvas replaces hundreds of independently composited 3D surfaces. */
+.ball-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}.bubble-field .market-bubble,.bubble-field .market-bubble.selected,.bubble-field .market-bubble:hover{width:64px!important;height:64px!important;transform-origin:0 0;background:transparent!important;box-shadow:none!important;border:0;filter:none!important;perspective:none;transition:none;z-index:2;padding:0}.bubble-field .market-bubble:before,.bubble-field .market-bubble:after,.bubble-field .market-bubble>small,.bubble-field .market-bubble>strong,.bubble-field .market-bubble>em{display:none!important}.bubble-field .market-bubble[data-pocketed=true]{pointer-events:none}.bubble-field .market-bubble:focus-visible{outline:2px solid white;outline-offset:1px}
+
+.bubble-field .market-bubble{will-change:auto;transform-style:flat;contain:layout style}
+
+.bubble-field .market-bubble{opacity:0!important;pointer-events:none!important;outline:none!important}.site-theme .bubble-explorer .bubble-field{touch-action:none}.ball-canvas{pointer-events:auto}
