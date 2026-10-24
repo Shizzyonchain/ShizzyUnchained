@@ -62,7 +62,7 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
     const resize = () => {
       const oldWidth = width, oldHeight = height;
       const available = (window.visualViewport?.height ?? window.innerHeight) - (host.getBoundingClientRect().top + window.scrollY) - 12;
-      const nextHeight = Math.max(180, Math.floor(available));
+      const nextHeight = Math.max(80, Math.floor(available));
       if (host.style.height !== `${nextHeight}px`) host.style.height = `${nextHeight}px`;
       width = host.clientWidth; height = host.clientHeight;
       if (oldWidth && oldHeight) for (const body of bodies.current) { body.x *= width / oldWidth; body.y *= height / oldHeight; }
