@@ -3,6 +3,7 @@ import { newsSourceIssue } from "../app/lib/news-source-links.mjs";
 import { copyFileSync, mkdirSync, readFileSync, readdirSync } from "node:fs";
 import { basename, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateChainReviews } from "./news-chain-review.mjs";
 import { validateMarketReview } from "./news-market-review.mjs";
 
 const root = resolve(fileURLToPath(new URL("..", import.meta.url)));
@@ -107,6 +108,10 @@ function readAndValidate(path) {
   if (value.date >= "2026-09-26") {
     const audit = JSON.parse(readFileSync(join(reportsDirectory, "audits", `${value.date}.json`), "utf8"));
     validateMarketReview(value, audit);
+    if (value.date >= "2026-10-24") validateChainReviews(value, audit, {
+      etao: JSON.parse(readFileSync(join(root, "app/data/etao.json"), "utf8")),
+      burns: JSON.parse(readFileSync(join(root, "app/data/burns.json"), "utf8")),
+    });
   }
   return validate(value, basename(path));
 }

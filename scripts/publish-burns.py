@@ -46,22 +46,22 @@ if __name__ == '__main__':
     parser.add_argument('--output', default='app/data/burns.json')
     parser.add_argument('--history-start', required=True)
     args = parser.parse_args()
-    scans = sorted([json.loads(Path(p).read_text()) for p in args.scans], key=lambda x: x['fromBlock'])
+    scans = sorted([json.loads(Path(p).read_text(encoding='utf-8-sig')) for p in args.scans], key=lambda x: x['fromBlock'])
     for a, b in zip(scans, scans[1:]):
         if b['fromBlock'] > a['toBlock'] + 1:
             raise ValueError('Gap between scan intervals')
     target = Path(args.output)
-    old = json.loads(target.read_text()) if target.exists() else None
+    old = json.loads(target.read_text(encoding='utf-8')) if target.exists() else None
     if old and scans[0]['fromBlock'] > old['toBlock'] + 1:
         raise ValueError('Gap since prior archive')
     if old and max(s['toBlock'] for s in scans) < old['toBlock']:
         raise ValueError('Refusing to regress archive coverage')
-    names = json.loads(Path('app/data/etao.json').read_text())['names']
+    names = json.loads(Path('app/data/etao.json').read_text(encoding='utf-8'))['names']
     merged = {r['id']: r for r in old['transactions']} if old else {}
     for scan in scans:
         for row in records(scan, names):
             merged.setdefault(row['id'], row)
     last = max(scans, key=lambda s: s['toBlock'])
-    data = dict(version=1, checkedAt=datetime.now(timezone.utc).isoformat(), fromBlock=old['fromBlock'] if old else scans[0]['fromBlock'], toBlock=last['toBlock'], hash=last['finalizedHash'], historyStart=old['historyStart'] if old else args.history_start, runtime=481, source='Finalized Opentensor archive RPC event scan', coverageNote='Every block in this archive interval was read for explicit alpha burn, buyback-burn and TAO balance-burn events. Successful transaction events only; automatic miner emissions and recycling excluded. Earlier history has not been backfilled.', transactions=sorted(merged.values(), key=lambda x: (x['block'], x['eventIndex']), reverse=True))
-    target.write_text(json.dumps(data, indent=2) + '\n')
+    data = dict(version=1, checkedAt=datetime.now(timezone.utc).isoformat(), fromBlock=old['fromBlock'] if old else scans[0]['fromBlock'], toBlock=last['toBlock'], hash=last['finalizedHash'], historyStart=old['historyStart'] if old else args.history_start, runtime=last['runtime'], source='Finalized Opentensor archive RPC event scan', coverageNote='Every finalized block in this archived interval was read for explicit alpha burns, buyback-burns and TAO balance burns using the relevant runtime decoder. Successful transaction events only; automatic miner emissions and recycling excluded. Public entries require at least 100 native tokens per individual event. Earlier history has not been backfilled.', transactions=sorted(merged.values(), key=lambda x: (x['block'], x['eventIndex']), reverse=True))
+    target.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
     print('Published archive records:', len(merged))

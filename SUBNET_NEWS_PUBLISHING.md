@@ -125,3 +125,16 @@ These checks cover our own public links. External X/Discord/provider links still
 
 ## Material corrections
 For a material factual correction to a published report, preserve publishedAt and event dates; add correctedAt (actual ISO timestamp at or after publication) and correctionNote (plain explanation). Both fields are required together and displayed on the report/latest page. Keep the dated audit. Do not backfill invented correction times for historical edits.
+
+
+## Required eTAO and Burns completion gate — October 24, 2026
+
+Every daily news run must complete BOTH chain reviews before sign-off, including retries and "today's news" requests. Run `python scripts/review-chain-news.py --from-block <earliest archive reviewed head + 1> --output <dated evidence path>` through one recorded finalized cutoff. This combined offline collector checks runtime metadata, positive event controls and every block; it reconciles all current emission vectors while detecting intermediate changes. A runtime/layout change or missing range is BLOCKED until reviewed, never an empty-event result.
+
+- [ ] Read both durable archives, any later complete evidence receipts and pending eTAO observations. Start without a gap in either archive; overlapping an already reviewed range is safe.
+- [ ] Verify eTAO executions and exact before/after five-slot vectors, registration identities and all qualifying transaction burns. Preserve history. The burn minimum remains 100 native tokens PER EVENT; miner emissions, allocation withholding, fees and recycling are excluded.
+- [ ] Reconcile BOTH public archives through the same finalized block/hash/time, even when no qualifying change was found. Save durable source evidence and a separate `chainReviews.etao` / `chainReviews.burns` receipt in the dated audit: status DONE or BLOCKED, checkedAt, fromBlock, toBlock, hash, throughTime, evidence, gaps, archiveUpdated and newsDisposition. For BLOCKED add reason and the public coverage gap; do not mark the daily workflow complete.
+- [ ] Put material verified events under the correct SN in today's existing news, preserving other stories; retain routine events in Burns with an explicit editorial disposition. Never create a one-story daily edition or duplicate the daily tweet for a later chain refresh.
+- [ ] Verify live eTAO review-through time, pending observations, Burns minimum/filters and affected subnet news after READY deployment. No visitor chain RPC, new per-visitor requests or unchanged-content deployment for routine monitor checks.
+
+The news validator requires these receipts for editions from October 24 onward. A DONE receipt must have contiguous finalized coverage, a reconciled archive and a cutoff within 30 minutes of the report cutoff (or later). The 10 AM daily automation includes this gate. The separate six-hour eTAO monitor remains active; it supplements the daily review rather than replacing it.
