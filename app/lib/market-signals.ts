@@ -4,8 +4,8 @@ export function freshSignalRows(rows: SignalRow[], now = Date.now()) {
  const seen = new Set<number>();
  return rows.filter(row => { const time = Date.parse(row.time || ""); if (row.netuid <= 0 || seen.has(row.netuid) || !Number.isFinite(time) || time > now + 60000 || now - time > 180000) return false; seen.add(row.netuid); return true; });
 }
-export function volumeAlerts(rows: SignalRow[], period: "1h" | "24h") {
- return rows.flatMap(row => { const ratio = numberOrNull(row[period === "1h" ? "volume_acceleration_1h" : "volume_acceleration_24h"]); const volume = numberOrNull(row[period === "1h" ? "volume_1h_tao" : "volume_24h_tao"]); return ratio !== null && ratio >= 2 && volume !== null && volume >= 10 && volume / ratio >= 10 ? [{ netuid: row.netuid, name: row.name || `SN${row.netuid}`, ratio, volume }] : []; }).sort((a,b) => b.ratio-a.ratio || b.volume-a.volume).slice(0,3);
+export function volumeAlerts(rows: SignalRow[], period: "1h" | "24h", limit = 3) {
+ return rows.flatMap(row => { const ratio = numberOrNull(row[period === "1h" ? "volume_acceleration_1h" : "volume_acceleration_24h"]); const volume = numberOrNull(row[period === "1h" ? "volume_1h_tao" : "volume_24h_tao"]); return ratio !== null && ratio >= 2 && volume !== null && volume >= 10 && volume / ratio >= 10 ? [{ netuid: row.netuid, name: row.name || `SN${row.netuid}`, ratio, volume }] : []; }).sort((a,b) => b.ratio-a.ratio || b.volume-a.volume).slice(0,limit);
 }
 export function sectorHeat(rows: SignalRow[], sectors: {id:string;name:string}[], tags: {netuid:number;sectors:string[]}[], period: "1h" | "24h") {
  const lookup = new Map(rows.map(row => [row.netuid,row]));
