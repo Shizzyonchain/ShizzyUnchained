@@ -357,3 +357,19 @@ test("trading card loads honestly and retains only a fresh snapshot during retry
  await expect(signals.getByText("60% buy volume",{exact:true})).toHaveCount(0);
  const response=await page.request.get("/api/market-signals?period=24h");expect((await response.json()).buying).toBeNull();expect(response.headers()["cache-control"]).toBe("no-store");
 });
+
+
+test("hourly trading refresh retries independently and never substitutes daily totals",async({page})=>{
+ await page.clock.install();let release:()=>void=()=>{};const first=new Promise<void>(resolve=>{release=resolve;});let calls=0,failed=false;
+ await page.route(url=>url.pathname==="/api/market-signals"&&url.searchParams.get("period")==="1h",async route=>{calls++;if(calls===1)await first;if(failed)return route.fulfill({status:503,json:{buying:null}});return route.fallback();});
+ await page.goto("/");const signals=page.getByRole("region",{name:"Market signals",exact:true}),period=signals.getByRole("group",{name:"Buyers and Sellers period",exact:true});
+ await expect(signals.getByText("60% buy volume",{exact:true})).toBeVisible();await period.getByRole("button",{name:"1H",exact:true}).click();
+ await expect(signals.getByText("Loading hourly trades",{exact:false})).toBeVisible();await expect(signals.getByText("60% buy volume",{exact:true})).toHaveCount(0);
+ release();await expect(signals.getByText("43% buy volume",{exact:true})).toBeVisible();failed=true;await page.clock.fastForward(60000);
+ await expect(signals.getByText(/Refresh delayed/)).toBeVisible();await expect(signals.getByText("43% buy volume",{exact:true})).toBeVisible();
+ failed=false;await page.clock.fastForward(15000);await expect(signals.getByText(/Refresh delayed/)).toHaveCount(0);
+ await period.getByRole("button",{name:"24H",exact:true}).click();await expect(signals.getByText("60% buy volume",{exact:true})).toBeVisible();
+ await period.getByRole("button",{name:"1H",exact:true}).click();await expect(signals.getByText("43% buy volume",{exact:true})).toBeVisible();
+ const previous=calls;await page.evaluate(()=>document.dispatchEvent(new Event("visibilitychange")));await expect.poll(()=>calls).toBeGreaterThan(previous);
+ failed=true;await page.clock.fastForward(16*60000);await expect(signals.getByText("Trading data unavailable",{exact:true})).toBeVisible();await expect(signals.getByText("43% buy volume",{exact:true})).toHaveCount(0);
+});
