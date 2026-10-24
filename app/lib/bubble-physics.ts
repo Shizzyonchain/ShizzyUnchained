@@ -66,7 +66,7 @@ export function layoutBubbles(shapes: BubbleShape[], width: number, height: numb
   const scale = Math.min(1.4, Math.sqrt(width * height * .44 / Math.max(1, area)));
   const old = new Map(previous.map(b => [b.id, b]));
   const result = shapes.map(shape => {
-    const radius = clamp(safeSize(shape.size) * scale / 2, 15, Math.min(width, height) * .22);
+    const radius = clamp(safeSize(shape.size) * scale / 2, Math.min(15, Math.sqrt(width * height / shapes.length) * .24), Math.min(width, height) * .22);
     const prior = old.get(shape.id);
     if (prior) { prior.targetR = radius; if (!prior.pocket) confineBubble(prior, width, height); return prior; }
     return { id: shape.id, x: radius + 3 + random(shape.id + seed * 137) * (width - 2 * radius - 6), y: radius + 3 + random(shape.id * 7 + seed * 173) * (height - 2 * radius - 6), vx: 0, vy: 0, r: radius, targetR: radius };

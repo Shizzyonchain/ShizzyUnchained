@@ -284,6 +284,7 @@ test("Balls supports search, paused dragging, legacy links and chart details", a
   await expect(page.getByRole("heading",{level:1,name:"Balls.",exact:true})).toBeVisible();
   const map=page.getByRole("region",{name:"Interactive subnet ball map",exact:true});
   await expect(map.locator(".pool-pocket")).toHaveCount(4);
+  await expect.poll(()=>map.locator(".bubble-field").evaluate(el=>{const r=el.getBoundingClientRect();return r.top>=0&&r.bottom<=window.innerHeight;})).toBe(true);
   await expect(map.locator(".market-bubble")).toHaveCount(markets.length);
   await expect(map.getByRole("button",{name:"Resume motion",exact:true})).toBeVisible();
   await map.getByRole("searchbox",{name:"Find a subnet",exact:true}).fill("SN51");

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { layoutBubbles, stepBubbles, poolPockets, stepPoolPockets } from '../app/lib/bubble-physics.ts';
 const shapes=Array.from({length:128},(_,i)=>({id:i+1,size:i===69?152:52+(i%7)*3}));
 test('128 bubbles pack within desktop and phone bounds without intersections',()=>{
- for(const [w,h] of [[1380,720],[343,1040]]){
+ for(const [w,h] of [[1380,720],[343,1040],[343,360]]){
   const bodies=layoutBubbles(shapes,w,h);
   assert.equal(bodies.length,128);
   for(const b of bodies){assert.ok(Number.isFinite(b.x+b.y+b.r));assert.ok(b.x>=b.r&&b.x+b.r<=w);assert.ok(b.y>=b.r&&b.y+b.r<=h);}

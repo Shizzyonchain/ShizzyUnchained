@@ -47,7 +47,7 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
     const frame = (now: number) => {
       raf = 0;
       if (disposed || !visible || document.hidden) return;
-      if (!last || now - last >= 30) {
+      {
         const dt = last ? Math.min(2, (now - last) / 16.667) : 1; last = now;
         if (!paused || drag.current || now < settleUntil || bodies.current.some(body => body.pocket || body.returning)) {
           stepBubbles(bodies.current, width, height, dt, now, !paused, drag.current?.id ?? null);
@@ -61,6 +61,9 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
     wake.current = () => { settleUntil = performance.now() + 1100; start(); };
     const resize = () => {
       const oldWidth = width, oldHeight = height;
+      const available = (window.visualViewport?.height ?? window.innerHeight) - (host.getBoundingClientRect().top + window.scrollY) - 12;
+      const nextHeight = Math.max(180, Math.floor(available));
+      if (host.style.height !== `${nextHeight}px`) host.style.height = `${nextHeight}px`;
       width = host.clientWidth; height = host.clientHeight;
       if (oldWidth && oldHeight) for (const body of bodies.current) { body.x *= width / oldWidth; body.y *= height / oldHeight; }
       bodies.current = layoutBubbles(items, width, height, bodies.current, reset);
@@ -70,10 +73,11 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
     };
     resize();
     const observer = new ResizeObserver(resize); observer.observe(host);
+    window.addEventListener("resize", resize); window.visualViewport?.addEventListener("resize", resize);
     const intersection = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; if (visible) { last = 0; start(); } else { cancelAnimationFrame(raf); raf = 0; } }); intersection.observe(host);
     const visibility = () => { cancelAnimationFrame(raf); raf = 0; last = 0; if (!document.hidden) start(); };
     document.addEventListener("visibilitychange", visibility);
-    return () => { disposed = true; cancelAnimationFrame(raf); observer.disconnect(); intersection.disconnect(); document.removeEventListener("visibilitychange", visibility); wake.current = () => {}; };
+    return () => { disposed = true; cancelAnimationFrame(raf); observer.disconnect(); window.removeEventListener("resize", resize); window.visualViewport?.removeEventListener("resize", resize); intersection.disconnect(); document.removeEventListener("visibilitychange", visibility); wake.current = () => {}; };
   }, [items, paused, reset]);
 
   const down = (event: PointerEvent<HTMLButtonElement>, id: number) => {
