@@ -21,3 +21,10 @@ export function buyingTotals(data: unknown, now = Date.now()) {
  return {buy:Number(buy)/1e9,sell:Number(sell)/1e9,asOf:new Date(Math.min(...times)).toISOString(),count:rows.length};
 }
 
+
+/** Recheck cached timestamps at serving time, not only during collection. */
+export function requireFreshTrading<T extends {asOf:string}>(value:T,now=Date.now()):T {
+ const age=now-Date.parse(value.asOf);
+ if(!Number.isFinite(age)||age < -60000||age>900000)throw new Error("Delayed trading snapshot");
+ return value;
+}
