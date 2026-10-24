@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [{ protocol: "https", hostname: "i.ytimg.com", pathname: "/vi/**" }],
   },
+  async redirects() {
+    return [{ source: "/bubbles", destination: "/balls", permanent: true }];
+  },
   async headers() {
     return [{
       source: "/(.*)",

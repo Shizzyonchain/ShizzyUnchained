@@ -277,10 +277,12 @@ test("scheduled livestreams stay out of recent videos and replays", async ({ pag
   await noOverflow(page);
 });
 
-test("floating bubbles support search, paused dragging and chart details", async ({ page }) => {
+test("Balls supports search, paused dragging, legacy links and chart details", async ({ page }) => {
   await page.emulateMedia({reducedMotion:"reduce"});
-  await page.goto("/bubbles");
-  const map=page.getByRole("region",{name:"Interactive subnet bubble map",exact:true});
+  await page.goto("/bubbles?currency=tao");
+  await expect(page).toHaveURL(/\/balls\?currency=tao$/);
+  await expect(page.getByRole("heading",{level:1,name:"Balls.",exact:true})).toBeVisible();
+  const map=page.getByRole("region",{name:"Interactive subnet ball map",exact:true});
   await expect(map.locator(".market-bubble")).toHaveCount(markets.length);
   await expect(map.getByRole("button",{name:"Resume motion",exact:true})).toBeVisible();
   await map.getByRole("searchbox",{name:"Find a subnet",exact:true}).fill("SN51");

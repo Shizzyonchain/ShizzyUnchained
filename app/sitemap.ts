@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     "",
     "/activity",
-    "/bubbles",
+    "/balls",
     "/wallet-tracker",
     "/validators",
     "/validators/root",

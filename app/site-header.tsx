@@ -29,7 +29,7 @@ type NavItem = {
 const navigation: readonly NavItem[] = [
   { href: "/", label: "Market", exact: true },
   { href: "/subnet-news", label: "Bittensor News" },
-  { href: "/bubbles", label: "Bubbles" },
+  { href: "/balls", label: "Balls" },
   { href: "/video", label: "Videos" },
   { href: "/sectors", label: "Sectors" },
   { href: "https://shizzyunchained.printful.me/", label: "Shop", external: true },

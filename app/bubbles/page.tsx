@@ -1,16 +1,5 @@
-import { withSocialMetadata } from "../lib/social-metadata";
-import { getTaoHistory } from "../lib/tao-history";
-import type { Metadata } from "next";
-import { Dashboard } from "../dashboard";
-import { getInitialMarkets, getInitialTaoQuote } from "../lib/market-data";
+import { permanentRedirect } from "next/navigation";
 
-export const metadata: Metadata = withSocialMetadata({
-  title: "Bittensor Subnet Market Bubbles | ShizzyUnchained",
-  description: "Explore live finalized Bittensor subnet price action in an interactive market map.",
-  alternates: { canonical: "/bubbles" },
-}, "/bubbles");
-
-export default async function BubblesPage() {
-  const [initialRows, quote, initialDollarHistory] = await Promise.all([getInitialMarkets(), getInitialTaoQuote(), getTaoHistory()]);
-  return <Dashboard initialDollarHistory={initialDollarHistory} initialView="bubbles" initialRows={initialRows} initialTaoUsd={quote?.usd || 0} initialTaoQuote={quote} />;
+export default function LegacyBubblesPage() {
+  permanentRedirect("/balls");
 }

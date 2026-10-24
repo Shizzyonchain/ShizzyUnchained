@@ -98,15 +98,15 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
     drag.current = null; setDragging(null); if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId); wake.current();
   };
 
-  return <section className="bubble-explorer" aria-label="Interactive subnet bubble map">
+  return <section className="bubble-explorer" aria-label="Interactive subnet ball map">
     <div className="bubble-map-tools">
       <label>Find a subnet<input type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Name or SN51" /></label>
       {query && <button onClick={() => setQuery("")}>Clear search</button>}
       <button onClick={() => setPaused(value => !value)} aria-pressed={paused}>{paused ? "Resume motion" : "Pause motion"}</button>
       <button onClick={() => { bodies.current = []; setReset(value => value + 1); }}>Reset layout</button>
-      <p role="status">{query ? `${items.filter(matches).length} matching subnets · clear search to see all` : "Drag & release to move bubbles · tap for details"}</p>
+      <p role="status">{query ? `${items.filter(matches).length} matching subnets · clear search to see all` : "Drag & release to toss a ball · tap for details"}</p>
     </div>
-    <div ref={field} className="bubble-cloud bubble-field panel" aria-label="Floating subnet bubbles" data-motion={paused ? "paused" : "running"}>
+    <div ref={field} className="bubble-cloud bubble-field panel" aria-label="Floating subnet balls" data-motion={paused ? "paused" : "running"}>
       {items.map(item => <button key={item.id} ref={node => { if (node) buttons.current.set(item.id, node); else buttons.current.delete(item.id); }}
         tabIndex={matches(item) ? 0 : -1} className={`market-bubble ${item.change > .005 ? "gain" : item.change < -.005 ? "loss" : "flat"} ${selected === item.id ? "selected" : ""} ${dragging === item.id ? "dragging" : ""} ${matches(item) ? "" : "search-dimmed"}`}
         onPointerDown={event => down(event, item.id)} onPointerMove={move} onPointerUp={event => end(event)} onPointerCancel={event => end(event, true)}

@@ -206,7 +206,7 @@ const compactAlpha = (value?: string | number) =>
   }).format(Number(value ?? 0));
 const changeClass = (v?: string) => (Number(v ?? 0) > 0 ? "positive" : Number(v ?? 0) < 0 ? "negative" : "neutral");
 
-const InteractiveBubbleField = dynamic(() => import("./interactive-bubbles").then(module => module.InteractiveBubbleField), { ssr: false, loading: () => <div className="bubble-map-loading" role="status">Building the interactive bubble map…</div> });
+const InteractiveBubbleField = dynamic(() => import("./interactive-bubbles").then(module => module.InteractiveBubbleField), { ssr: false, loading: () => <div className="bubble-map-loading" role="status">Building the interactive market map…</div> });
 const TradingChart = dynamic(() => import("./trading-chart"), { ssr: false,
   loading: () => <div className="chart-module-loading" role="status">Opening chart…</div> });
 type ChartHistory = { data: Candle[]; savedAt: number; method: string; done?: boolean; notice?: string };
@@ -1691,11 +1691,11 @@ export function Dashboard({
             <div>
               <p className="eyebrow">All 128 subnets · live market map</p>
               <h1>
-                Subnet <span>bubbles.</span>
+                <span>Balls.</span>
               </h1>
-              <p>Explore all 128 subnets. Drag, release and watch bubbles move around each other. Our largest bubbles highlight exceptional gains.</p>
+              <p>Explore all 128 subnets. Grab a ball, toss it and watch the others move around it. Our largest balls highlight exceptional gains.</p>
             </div>
-            <div className="bubble-controls" role="group" aria-label="Bubble performance period">
+            <div className="bubble-controls" role="group" aria-label="Ball performance period">
               {[
                 { value: "change_10m", label: "10 Minutes" },
                 { value: "change_1h", label: "1 Hour" },
@@ -1731,10 +1731,10 @@ export function Dashboard({
                 ? `1-day history rebuilding · showing ${bubbleTimeframeLabel(bubbleTimeframe)}`
                 : bubbleHistoryFallback
                   ? `${bubbleTimeframeLabel(bubbleTimeframePreference)} history rebuilding · showing ${bubbleTimeframeLabel(bubbleTimeframe)}`
-                : "Floating market map · big bubbles = exceptional gains"}
+                : "Floating market map · large balls highlight exceptional gains"}
             </b>
           </div>
-          {!hasMarketData && <p role="status">{dataState === "loading" ? "Loading finalized subnet data…" : "Bubble data unavailable. Reconnecting automatically."}</p>}
+          {!hasMarketData && <p role="status">{dataState === "loading" ? "Loading finalized subnet data…" : "Ball data unavailable. Reconnecting automatically."}</p>}
           <InteractiveBubbleField
             items={bubbleRows.map(row => ({ id: row.netuid, name: row.name || "Unknown", size: bubbleSize(row), change: Number(bubbleChange(row) || 0), changeLabel: `${Number(bubbleChange(row) || 0) > 0 ? "+" : ""}${fmt(bubbleChange(row))}%`, price: money(row.price_tao, true), marketCap: money(row.market_cap_tao), liquidity: money(row.tao_reserve) }))}
             selected={selected} onSelect={setSelected} onChart={openSubnetChart} period={bubbleTimeframeLabel(bubbleTimeframe)}
