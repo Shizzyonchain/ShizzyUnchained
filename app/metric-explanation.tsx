@@ -10,6 +10,12 @@ const momentum: Guide = {
 const guides: Record<string, Guide> = {
   "Momentum": momentum,
   "Top mover": momentum,
+  "Weakest mover": {
+    meaning: "Which subnet has the lowest price return over the last hour?",
+    example: [["Subnet A", "−3%"], ["Subnet B", "+1%"], ["Weakest mover", "Subnet A"]],
+    takeaway: "A weak price move does not establish a bad project or a reason to sell.",
+    details: "Uses the lowest available rolling 1-hour return among alpha subnets. Root and invalid or missing returns are excluded. USD mode uses dollar returns; TAO mode uses alpha/TAO returns. If every subnet is rising, this shows the smallest gain. This complements Top mover, which shows the strongest return.",
+  },
   "Volume pulse": {
     meaning: "Is trading busier or quieter than the previous hour?",
     example: [["Previous hour", "100 TAO"], ["Latest hour", "200 TAO"], ["Volume pulse", "2× · twice as busy"]],

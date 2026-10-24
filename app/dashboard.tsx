@@ -796,7 +796,8 @@ export function Dashboard({
     : chartData.method === "taostats-alpha" ? `TaoStats candles${currency === "usd" ? ` · USD candles use historical TAO/USD rates; high/low are estimates${missingUsdPeriods > 2 ? ` · ${missingUsdPeriods} periods lack USD quotes; TAO mode retains those subnet candles` : ""}` : " · Alpha/TAO"}`
     : `${chartData.method === "boundary" ? "Interval-boundary prices; wicks and volume are estimates" : "Sampled on-chain prices; volume is estimated"}${currency === "usd" ? " · USD estimates use matching historical TAO/USD candles" : " · Alpha/TAO"}`);
   const totalVolume = rows.reduce((sum, r) => sum + Number(r.volume_24h_tao || 0), 0);
-  const rankedMovers = rows.filter(row => row.change_1h != null).sort((a, b) => Number(b.change_1h || 0) - Number(a.change_1h || 0));
+  const rankedMovers = rows.filter(row => row.netuid > 0 && row.change_1h != null && row.change_1h !== "" && Number.isFinite(Number(row.change_1h))).sort((a, b) => Number(b.change_1h || 0) - Number(a.change_1h || 0));
+  const weakestMover = rankedMovers[rankedMovers.length - 1];
   const advancingMarkets = rows.filter((row) => Number(row.change_1h || 0) > 0).length;
   const decliningMarkets = rows.filter((row) => Number(row.change_1h || 0) < 0).length;
   const directionalMarkets = advancingMarkets + decliningMarkets;
@@ -1138,7 +1139,7 @@ export function Dashboard({
               <div>
                 <OverviewHelp title="Top mover" />
                 <strong className={changeClass(rankedMovers[0]?.change_1h)}>{rankedMovers[0]?.name || "—"}</strong>
-                <small className={changeClass(rankedMovers[0]?.change_1h)}>{rankedMovers[0] ? `${Number(rankedMovers[0].change_1h || 0) > 0 ? "+" : ""}${fmt(rankedMovers[0].change_1h)}% · 1 Hour` : "Waiting for market data"}</small>
+                <small className={changeClass(rankedMovers[0]?.change_1h)}>{rankedMovers[0] ? `${Number(rankedMovers[0].change_1h || 0) > 0 ? "+" : ""}${fmt(rankedMovers[0].change_1h)}% · 1 Hour · ${currency.toUpperCase()}` : "Waiting for market data"}</small>
               </div>
               <SentimentTile rows={rawRows} state={dataState} />
             </section>
@@ -1159,16 +1160,16 @@ export function Dashboard({
             <button
               aria-haspopup="dialog" onClick={() => openPulseHelp("Markets rising")}
             >
-              <span>Markets rising</span>
+              <span>Markets rising · {currency === "usd" ? "USD" : "TAO"}</span>
               <strong className={marketsRisingPercent >= 50 ? "positive" : "negative"}>{directionalMarkets ? `${Math.round(marketsRisingPercent)}%` : "—"}</strong>
               <small>
-                {advancingMarkets} rising · {decliningMarkets} falling
+                {advancingMarkets} rising · {decliningMarkets} falling · {currency === "usd" ? "in USD" : "against TAO"}
               </small>
             </button>
-            <button aria-haspopup="dialog" onClick={() => openPulseHelp("Momentum")}>
-              <span>Momentum</span>
-              <strong>{rankedMovers[0]?.name || "—"}</strong>
-              <small className={changeClass(rankedMovers[0]?.change_1h)}>{rankedMovers[0] ? `${Number(rankedMovers[0].change_1h || 0) >= 0 ? "+" : ""}${fmt(rankedMovers[0].change_1h)}% leader` : "Collecting"}</small>
+            <button aria-haspopup="dialog" onClick={() => openPulseHelp("Weakest mover")}>
+              <span>Weakest mover · {currency.toUpperCase()}</span>
+              <strong className={changeClass(weakestMover?.change_1h)}>{weakestMover?.name || "—"}</strong>
+              <small className={changeClass(weakestMover?.change_1h)}>{weakestMover ? `${Number(weakestMover.change_1h) > 0 ? "+" : ""}${fmt(weakestMover.change_1h)}% · 1 Hour` : "Collecting"}</small>
             </button>
             <button
               aria-haspopup="dialog" onClick={() => openPulseHelp("Liquidity flow")}
