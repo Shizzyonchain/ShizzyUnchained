@@ -13,7 +13,8 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
       if (failed.has(path)) return route.fulfill({ status: 503, json: { error: "Smoke provider unavailable" } });
       if (path === "/api/backend/v1/screener" || path === "/api/market-status" || /^\/api\/subnets\/\d+\/news$/.test(path)) return route.continue();
       let value: unknown;
-      if (path === "/api/tao-price") value = { usd: 250, updatedAt: Math.floor(Date.now() / 1000), source: "ci-contract-fixture" };
+      if (path === "/api/market-signals") value = {buying:{buy:600,sell:400,asOf:new Date().toISOString(),count:128},sectors:[{id:"compute",name:"Compute & Cloud"}],tags:[{netuid:51,sectors:["compute"]},{netuid:64,sectors:["compute"]}]};
+      else if (path === "/api/tao-price") value = { usd: 250, updatedAt: Math.floor(Date.now() / 1000), source: "ci-contract-fixture" };
       else if (path === "/api/wallet-activity") {
         const transfer = url.searchParams.get("kind") === "transfers", older = url.searchParams.get("page") === "2";
         const tradeKind = url.searchParams.get("kind");
@@ -221,3 +222,7 @@ test("sector discovery supports overlap, search, unknown slots and subnet naviga
   await page.getByRole("link", { name: "Chart & subnet details", exact: true }).click();
   await expect(page).toHaveURL("/charts/80");
 });
+
+ test("market signals show indexed buy volume, share period controls and filter sector deep links",async({page})=>{
+ await page.goto("/");const signals=page.getByRole("region",{name:"Market signals",exact:true});await expect(signals.getByText("60% buy volume",{exact:true})).toBeVisible();await signals.getByRole("button",{name:"24H",exact:true}).click();await expect(signals.getByRole("button",{name:"24H",exact:true})).toHaveAttribute("aria-pressed","true");await signals.getByText("How to read it",{exact:true}).first().click();await expect(signals.getByText(/not unique people/)).toBeVisible();await noOverflow(page);await page.goto("/sectors?sector=robotics");await expect(page.getByRole("heading",{name:"Robotics & Physical AI",exact:true})).toBeVisible();await expect(page.getByRole("status").filter({hasText:"subnets found"})).toContainText("7 subnets found");
+ });

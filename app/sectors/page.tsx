@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import data from "../data/sectors.json";
 import { SiteHeader } from "../site-header";
 import { withSocialMetadata } from "../lib/social-metadata";
@@ -18,7 +19,7 @@ export default function SectorsPage() {
         <p className={styles.lead}>Robotics. Inference. Security. See who’s building what—and where the sectors overlap.</p>
         <div className={styles.stats}><span><b>128</b> subnet slots</span><span><b>{data.sectors.length}</b> sectors</span><span><b>{pending}</b> unclassified</span></div>
       </header>
-      <SectorExplorer sectors={data.sectors} subnets={data.subnets} />
+      <Suspense fallback={<p>Loading sector map…</p>}><SectorExplorer sectors={data.sectors} subnets={data.subnets} /></Suspense>
       <section className={styles.method} aria-labelledby="sector-method">
         <h2 id="sector-method">How the map works</h2>
         <p>Tags describe a project’s stated work. A subnet can belong to several sectors, so sector counts overlap. They are editorial classifications—not rankings, proof of adoption or confirmation that every announced product is live.</p>

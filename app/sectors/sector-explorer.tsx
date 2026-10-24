@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useRef, useState } from "react";
 import styles from "./sectors.module.css";
 
@@ -8,7 +9,10 @@ type Sector = { id: string; name: string; description: string };
 type Subnet = { netuid: number; name: string; summary: string; sectors: string[]; source: string; basis: string; reviewNote: string; identityStatus: string };
 
 export function SectorExplorer({ sectors, subnets }: { sectors: Sector[]; subnets: Subnet[] }) {
-  const [selected, setSelected] = useState("all");
+  const params = useSearchParams();
+  const [choice, setSelected] = useState<string|null>(null);
+  const requested = params.get("sector");
+  const selected = choice ?? (sectors.some(s => s.id === requested) ? requested! : "all");
   const [query, setQuery] = useState("");
   const [limit, setLimit] = useState(24);
   const results = useRef<HTMLElement>(null);

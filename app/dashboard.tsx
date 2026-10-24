@@ -19,6 +19,7 @@ import { SubnetNewsPanel } from "./subnet-news-panel";
 import { WalletHistory, clearWalletHistoryCache } from "./wallet-history";
 import { SubnetYield } from "./subnet-yield";
 import { SubnetOwner } from "./subnet-owner";
+import { MarketSignals } from "./market-signals";
 import { SentimentTile } from "./sentiment-tile";
 import { OverviewHelp } from "./overview-help";
 import { MetricExplanation } from "./metric-explanation";
@@ -1195,6 +1196,7 @@ export function Dashboard({
             <div className="sentiment-dialog-head"><h2 id="pulse-help-heading">{pulseHelp}</h2><button type="button" aria-label="Close network pulse explanation" onClick={() => pulseDialog.current?.close()}>✕</button></div>
             <MetricExplanation title={pulseHelp} />
           </dialog>
+          <MarketSignals rows={rawRows} />
           <div className="home-promo-row">
             <Link className="insiders-home-cta tao-heads-home-cta" href={taoHeadsCommunity.path} aria-label={`Explore ${taoHeadsCommunity.name}`}>
               <Image
