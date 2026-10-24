@@ -909,16 +909,33 @@ html.site-theme {
 
 .site-theme .screener th:nth-child(10){width:210px}
 
-/* A soft light-gray hover stays distinct from dark rows without a bright white flash. */
+/* Highlight the row without changing its dark background or market colors. */
+.site-theme .screener tbody tr {
+  --market-row-background: var(--panel);
+  background: var(--market-row-background);
+}
+.site-theme .screener tbody tr:nth-child(even) {
+  --market-row-background: #101010;
+}
+.site-theme .screener tbody tr:is(:hover, .selected, :focus-within) td:nth-child(2) {
+  background: var(--panel2);
+}
+.site-theme .screener tbody tr:focus-within > td {
+  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
+}
+.site-theme .screener tbody tr:focus-within {
+  outline: 1px solid #fff;
+  outline-offset: -1px;
+}
 @media (hover: hover) and (pointer: fine) {
-  .site-theme .screener tbody tr:hover,
-  .site-theme .screener tbody tr:hover td,
-  .site-theme .screener tbody tr:hover td:nth-child(2) { background:#b8bdc5; color:#111; }
-  .site-theme .screener tbody tr:hover td :is(a,b,strong,small,span,summary,p) { color:#111; }
-  .site-theme .screener tbody tr:hover :is(.positive,.positive .yield-rate) { color:#00743b!important; }
-  .site-theme .screener tbody tr:hover :is(.negative,.negative .yield-rate) { color:#ba1931!important; }
-  .site-theme .screener tbody tr:hover :is(.yield-warning,.yield-caution .yield-rate) { color:#825200!important; }
-  .site-theme .screener tbody tr:hover .subnet-chart-link:focus-visible { outline-color:#111; }
+  .site-theme .screener tbody tr:hover > td {
+    box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 #fff;
+  }
+  .site-theme .screener tbody tr:hover {
+    background: var(--market-row-background);
+    outline: 1px solid #fff;
+    outline-offset: -1px;
+  }
 }
 
 /* Keep the market rows compact; detailed yield basis stays in the chart/explanation. */
