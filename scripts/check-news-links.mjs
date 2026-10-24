@@ -3,7 +3,7 @@ import { resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { newsSourceIssue } from "../app/lib/news-source-links.mjs";
 const publicRoot = resolve(fileURLToPath(new URL("../public/", import.meta.url)));
-const owned = new Set(["shizzyunchained.com", "www.shizzyunchained.com", "shizzy-onchain-com.vercel.app"]);
+const owned = new Set(["shizzyunchained.com", "www.shizzyunchained.com", "shizzyunchained.vercel.app", "shizzy-onchain-com.vercel.app"]);
 export function collectNewsSources(value) {
  if (!value || typeof value !== "object") return [];
  if (Array.isArray(value)) return value.flatMap(collectNewsSources);
