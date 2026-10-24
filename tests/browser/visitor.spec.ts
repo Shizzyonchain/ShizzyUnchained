@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { test as base, expect, type Page } from "@playwright/test";
 import { keys, stamp, markets, candidates, validators, pagination, baskets, history, chart, cachedWallets } from "./contracts.mjs";
 
@@ -230,3 +231,28 @@ test("sector discovery supports overlap, search, unknown slots and subnet naviga
  });
 
 test("owner wallet opens subnet alpha sales instead of general wallet transfers",async({page,contracts})=>{await page.goto("/charts/51");await page.getByRole("button",{name:"View SN51 owner alpha sales",exact:true}).click();const dialog=page.getByRole("dialog",{name:"Owner alpha sales",exact:true});await expect(dialog.getByText("12.5 α sold",{exact:true})).toHaveCount(2);await expect(dialog.getByRole("link",{name:"View transaction",exact:false})).toBeVisible();await expect(dialog.getByText("TAO transfers",{exact:true})).toHaveCount(0);expect(contracts.calls.filter(p=>p==="/api/wallet-activity")).toHaveLength(0);await noOverflow(page);await dialog.getByRole("button",{name:"Close owner alpha sales",exact:true}).click();await expect(dialog).not.toBeVisible();});
+
+test("latest news opens the full edition and retains the archive", async ({ page }) => {
+  await page.goto("/subnet-news");
+  await expect(page.getByRole("heading", {name:"Bittensor Daily News",exact:true})).toBeVisible();
+  const edition=page.getByRole("combobox",{name:"Choose news edition"});
+  const dates=await edition.locator("option").evaluateAll(options=>options.map(option=>(option as HTMLOptionElement).value));
+  expect(dates.length).toBeGreaterThan(70);
+  const count=await page.locator(".news-item").count();
+  const brief=JSON.parse(readFileSync(`content/subnet-news/${dates[0]}.json`,"utf8"));
+  const items=[...brief.highlights,...brief.ecosystem,...brief.subnets.flatMap((subnet: {updates:unknown[]})=>subnet.updates)];
+  const unique=[...new Map(items.map(item=>[JSON.stringify(item),item])).values()];
+  expect(count).toBe(unique.length);
+  for(const item of unique){
+    const story=page.locator(".news-item").filter({has:page.getByRole("heading",{name:item.headline,exact:true})});
+    await expect(story).toContainText(item.summary);
+  }
+  await expect(page.getByRole("heading",{name:"The lead story",exact:true})).toBeVisible();
+  await noOverflow(page);
+  await page.goto(`/subnet-news/${dates[0]}`);
+  await expect(page.locator(".news-item")).toHaveCount(count);
+  await page.getByRole("combobox",{name:"Choose news edition"}).selectOption(dates[1]);
+  await expect(page).toHaveURL(new RegExp(`/subnet-news/${dates[1]}$`));
+  await expect(page.getByText("From the archive",{exact:true})).toBeVisible();
+  await noOverflow(page);
+});

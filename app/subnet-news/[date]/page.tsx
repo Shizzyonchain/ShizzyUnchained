@@ -1,14 +1,8 @@
-import { NewsSourceLink } from "../../news-source-link";
 import { withSocialMetadata } from "../../lib/social-metadata";
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { formatBriefDate, getSubnetNewsBrief, getSubnetNewsBriefs } from "../../lib/subnet-news";
-import { NewsItem } from "../news-item";
-import { SubnetNewsHeader } from "../subnet-news-header";
-import { LivestreamBanner } from "../../livestream-banner";
-import { MembershipPromo } from "../../membership-promo";
-
+import { getSubnetNewsBrief, getSubnetNewsBriefs } from "../../lib/subnet-news";
+import { NewsEdition } from "../news-edition";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -26,112 +20,4 @@ export async function generateMetadata({ params }: PageProps<"/subnet-news/[date
   }, `/subnet-news/${date}`, { article: true, publishedTime: brief.publishedAt });
 }
 
-export default async function SubnetNewsBriefPage({ params }: PageProps<"/subnet-news/[date]">) {
-  const { date } = await params;
-  const brief = getSubnetNewsBrief(date);
-  if (!brief) notFound();
-  const showPromotions = date >= "2026-09-07";
-  const isLatestBrief = date === getSubnetNewsBriefs()[0]?.date;
-
-  const updatedSubnets = brief.subnets.filter((subnet) => subnet.updates.length > 0);
-  const quietSubnets = brief.subnets.filter((subnet) => subnet.updates.length === 0);
-  const scoredFormat = [...brief.highlights, ...brief.ecosystem, ...updatedSubnets.flatMap((subnet) => subnet.updates)].some((item) => item.rating !== undefined);
-  const rankedNews = [
-    ...brief.highlights.map((item) => ({ item, context: "Network" })),
-    ...brief.ecosystem.map((item) => ({ item, context: "Ecosystem" })),
-    ...updatedSubnets.flatMap((subnet) => subnet.updates.map((item) => ({ item, context: `SN${subnet.netuid} · ${subnet.name}` }))),
-  ].filter((entry, index, all) => all.findIndex((candidate) => candidate.item.headline === entry.item.headline) === index)
-    .toSorted((a, b) => (b.item.rating ?? 0) - (a.item.rating ?? 0) || Number(Boolean(b.item.priceAction)) - Number(Boolean(a.item.priceAction)));
-  const conciseEdition = date >= "2026-10-21";
-  const mainNews = conciseEdition ? rankedNews.filter(({ item }) => (item.rating ?? 0) >= 3) : rankedNews;
-  const shortUpdates = conciseEdition ? rankedNews.filter(({ item }) => (item.rating ?? 0) < 3) : [];
-  const sectionNumber = (base: number) => String(base + (brief.upcomingUnlocks.length ? 1 : 0)).padStart(2, "0");
-
-  return (
-    <main className="news-shell news-report-shell">
-      <SubnetNewsHeader />
-      {showPromotions && isLatestBrief && <LivestreamBanner />}
-      <article className="news-report">
-        <header className="news-report-hero">
-          <Link href="/subnet-news">← All Subnet News</Link>
-          <p className="eyebrow">{formatBriefDate(brief.date)} · Published daily</p>
-          <h1>{brief.title}</h1>
-          <p>{brief.summary}</p>
-          <dl>
-            <div><dt>Coverage window</dt><dd>{new Date(brief.coverageStart).toLocaleString("en-US", { timeZone: "America/New_York", dateStyle: "medium", timeStyle: "short" })} – {new Date(brief.coverageEnd).toLocaleString("en-US", { timeZone: "America/New_York", dateStyle: date >= "2026-09-08" ? "medium" : undefined, timeStyle: "short" })} ET</dd></div>
-            {brief.correctedAt && <div><dt>Correction</dt><dd><time dateTime={brief.correctedAt}>{new Date(brief.correctedAt).toISOString().replace("T", " ").replace(".000Z", " UTC")}</time> · {brief.correctionNote}</dd></div>}<div><dt>Subnets in coverage roster</dt><dd>{brief.subnets.length}</dd></div>
-            <div><dt>Subnets with updates</dt><dd>{updatedSubnets.length}</dd></div>
-          </dl>
-        </header>
-
-        {scoredFormat ? (
-          <section className="news-report-section ranked-news-section" aria-labelledby="ranked-news">
-            <div className="news-section-head"><span>01</span><div><p className="eyebrow">Biggest stories first</p><h2 id="ranked-news">Today&apos;s ranked news</h2></div></div>
-            <p className="rating-explainer">{conciseEdition ? <>Stars indicate editorial priority, not investment quality. Routine competition updates receive at most three stars. Shizzy videos receive three; substantive non-video Shizzy coverage receives at least four. Verification labels describe the evidence, and scheduled events remain plans.</> : <>★★★★★ marks the day&apos;s most consequential news. Scores weigh the size of the announcement, evidence quality, ecosystem reach and relevant market reaction.</>}</p>
-            <div className="ranked-news-list">{mainNews.map(({ item, context }, index) => <NewsItem key={item.headline} item={item} rank={index + 1} context={context} />)}</div>
-            {shortUpdates.length > 0 && <details className="news-short-updates"><summary>Short updates & watchlist · {shortUpdates.length}</summary><p>Minor changes and early plans. Expand to read every story and its sources.</p><div className="ranked-news-list">{shortUpdates.map(({ item, context }, index) => <NewsItem key={item.headline} item={item} rank={mainNews.length + index + 1} context={context} />)}</div></details>}
-          </section>
-        ) : brief.highlights.length > 0 && (
-          <section className="news-report-section" aria-labelledby="top-signals">
-            <div className="news-section-head"><span>01</span><div><p className="eyebrow">What matters first</p><h2 id="top-signals">Top signals</h2></div></div>
-            <div className="news-report-grid">{brief.highlights.map((item) => <NewsItem key={item.headline} item={item} />)}</div>
-          </section>
-        )}
-
-        {brief.upcomingUnlocks.length > 0 && (
-          <section className="news-report-section" aria-labelledby="unlock-watch">
-            <div className="news-section-head"><span>02</span><div><p className="eyebrow">Forward calendar</p><h2 id="unlock-watch">Unlock watch</h2></div></div>
-            <p className="unlock-explainer">Conviction unlocks are not always one-day token cliffs. When a lock switches to decaying mode, alpha releases progressively on the chain unlock curve. Dates and amounts below show the best public schedule available and carry an explicit confidence label.</p>
-            <div className="unlock-grid">
-              {brief.upcomingUnlocks
-                .toSorted((a, b) => a.scheduledFor.localeCompare(b.scheduledFor))
-                .map((unlock) => (
-                  <article className="unlock-card" key={`${unlock.netuid}-${unlock.scheduledFor}-${unlock.amountAlpha}`}>
-                    <header><time dateTime={unlock.scheduledFor}>{formatBriefDate(unlock.scheduledFor)}</time><span className={`unlock-status status-${unlock.status}`}>{unlock.status}</span></header>
-                    <div className="unlock-identity"><span>SN{unlock.netuid}</span><h3>{unlock.name}</h3></div>
-                    <strong>{new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(unlock.amountAlpha)} α</strong>
-                    <small>{unlock.releaseType === "conviction-decay" ? "Continuous conviction decay" : unlock.releaseType === "cliff" ? "Scheduled cliff release" : "Release mechanics unconfirmed"}</small>
-                    <p>{unlock.summary}</p>
-                    <div className="news-sources">{unlock.sources.map((source) => <NewsSourceLink key={source.url} source={source} />)}</div>
-                  </article>
-                ))}
-            </div>
-          </section>
-        )}
-
-        {!scoredFormat && <section className="news-report-section" aria-labelledby="subnet-desk">
-          <div className="news-section-head"><span>{sectionNumber(2)}</span><div><p className="eyebrow">Organized by SN#</p><h2 id="subnet-desk">Subnet desk</h2></div></div>
-          {updatedSubnets.length ? (
-            <div className="subnet-news-list">
-              {updatedSubnets.map((subnet) => (
-                <section key={subnet.netuid} className="subnet-news-group">
-                  <header><span>SN{subnet.netuid}</span><h3>{subnet.name}</h3></header>
-                  <div>{subnet.updates.map((item) => <NewsItem key={item.headline} item={item} />)}</div>
-                </section>
-              ))}
-            </div>
-          ) : <p className="news-empty-copy">No subnet-specific updates met the publication threshold in this coverage window.</p>}
-          {quietSubnets.length > 0 && <p className="quiet-subnets"><strong>No published update:</strong> {quietSubnets.map((subnet) => `SN${subnet.netuid}`).join(", ")}. See coverage notes for source-access gaps.</p>}
-        </section>}
-
-        {!scoredFormat && brief.ecosystem.length > 0 && (
-          <section className="news-report-section" aria-labelledby="ecosystem-desk">
-            <div className="news-section-head"><span>{sectionNumber(3)}</span><div><p className="eyebrow">Beyond one subnet</p><h2 id="ecosystem-desk">Ecosystem desk</h2></div></div>
-            <div className="news-report-grid">{brief.ecosystem.map((item) => <NewsItem key={item.headline} item={item} />)}</div>
-          </section>
-        )}
-
-        {showPromotions && <MembershipPromo />}
-
-        <section className="news-report-section coverage-section" aria-labelledby="coverage-notes">
-          <div className="news-section-head"><span>{sectionNumber(4)}</span><div><p className="eyebrow">Audit trail</p><h2 id="coverage-notes">Coverage notes</h2></div></div>
-          <div className="coverage-grid">
-            <div><h3>Searched</h3><ul>{brief.coverage.searched.map((item) => <li key={item}>{item}</li>)}</ul></div>
-            <div><h3>Public-data gaps</h3>{brief.coverage.gaps.length ? <ul>{brief.coverage.gaps.map((item) => <li key={item}>{item}</li>)}</ul> : <p>No material gaps were identified.</p>}</div>
-          </div>
-        </section>
-      </article>
-      <footer className="news-footer"><span>SHIZZYUNCHAINED</span><p>Information only · Not financial advice</p><b>Subnet News</b></footer>
-    </main>
-  );
-}
+export default async function SubnetNewsBriefPage({params}:PageProps<"/subnet-news/[date]">){const {date}=await params;const brief=getSubnetNewsBrief(date);if(!brief)notFound();return <NewsEdition brief={brief} briefs={getSubnetNewsBriefs()}/>;}
