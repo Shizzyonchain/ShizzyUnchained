@@ -19,8 +19,8 @@ export function stepBubbles(bodies: BubbleBody[], width: number, height: number,
     b.r += (b.targetR - b.r) * .12 * dt;
     if (b.id !== pinned) {
       if (drifting) {
-        b.vx += Math.sin(clock * .0004 + b.id * 2.4) * .004 * dt;
-        b.vy += Math.cos(clock * .00037 + b.id * 1.7) * .004 * dt;
+        b.vx += Math.sin(clock * .0004 + b.id * 2.4) * .012 * dt;
+        b.vy += Math.cos(clock * .00037 + b.id * 1.7) * .012 * dt;
       }
       b.vx = clamp(b.vx * Math.pow(.998, dt), -4, 4);
       b.vy = clamp(b.vy * Math.pow(.998, dt), -4, 4);
@@ -73,7 +73,7 @@ export function layoutBubbles(shapes: BubbleShape[], width: number, height: numb
   });
   if (!previous.length) {
     for (let i = 0; i < 260; i++) stepBubbles(result, width, height, 1, 0, false);
-    for (const b of result) { b.vx = (random(b.id * 3) - .5) * .3; b.vy = (random(b.id * 9) - .5) * .3; }
+    for (const b of result) { const angle = random(b.id * 3) * Math.PI * 2, speed = .65 + random(b.id * 9) * .4; b.vx = Math.cos(angle) * speed; b.vy = Math.sin(angle) * speed; }
   }
   return result;
 }
@@ -104,7 +104,7 @@ export function stepPoolPockets(bodies: BubbleBody[], width: number, height: num
           const score = Math.min(...bodies.filter(other => other.id !== b.id && !other.pocket).map(other => Math.hypot(x - other.x, y - other.y) - b.r - other.r), 1000);
           if (score > best.score) best = { x, y, score };
         }
-        b.x = best.x; b.y = best.y; b.vx = (random(b.id + clock) - .5) * .4; b.vy = (random(b.id * 3 + clock) - .5) * .4;
+        b.x = best.x; b.y = best.y; b.vx = Math.cos(b.id + clock) * .8; b.vy = Math.sin(b.id + clock) * .8;
         delete b.pocket; b.returning = 1; confineBubble(b, width, height);
       }
       continue;

@@ -68,3 +68,8 @@ test('glancing impact conserves tangential velocity and rails rebound',()=>{
  stepBubbles([a,b],500,300,.5,0,false);assert.ok(Math.abs(a.vy-b.vy)<.001);assert.ok(b.vx>2.8);
  const wall={...a,x:21,vx:-3};stepBubbles([wall],500,300,.5,0,false);assert.ok(wall.vx>2.6&&wall.x>=22);
 });
+
+test('balls start with visible bounded cruising motion',()=>{
+ const bodies=layoutBubbles(shapes,1380,720);
+ for(const b of bodies){const speed=Math.hypot(b.vx,b.vy);assert.ok(speed>=.65&&speed<=1.05);}
+});
