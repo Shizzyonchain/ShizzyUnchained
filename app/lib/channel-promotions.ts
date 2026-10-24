@@ -11,15 +11,15 @@ export const latestMemberVideo = {
 // Update this alongside the channel's Live tab during each news/video refresh.
 // The removed Cascade URL and postponed VUNE URL must not be restored.
 export const promotedLivestream = {
-  enabled: false,
+  enabled: true,
   listed: true,
-  id: "3i9F3_Ku8Fo",
-  title: "Bittensor’s Next Big Robotics Breakthrough? | Attune SN58",
-  meta: "46:18 · Livestream replay · October 21, 2026",
+  id: "STPM5BtE-ts",
+  title: "Can You Prove You’re Human? Yanez Bittensor Subnet 54 with Jose Caldera",
+  meta: "Upcoming livestream · October 27, 2026 · 12:30 PM ET / 9:30 AM PT",
   membersOnly: false,
-  upcoming: false,
-  headline: "SN58 Attune livestream replay",
-  schedule: "October 21 · Replay available",
-  startsAt: "2026-10-21T16:00:53Z",
-  expiresAt: "2026-10-21T16:47:07Z",
+  upcoming: true,
+  headline: "Next livestream with SN54 Yanez",
+  schedule: "October 27 · 12:30 PM ET / 9:30 AM PT",
+  startsAt: "2026-10-27T16:30:00Z",
+  expiresAt: "2026-10-27T19:30:00Z",
 };

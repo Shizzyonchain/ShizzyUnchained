@@ -15,6 +15,9 @@ type ChannelVideo = {
 
 const channelVideos: ChannelVideo[] = [
   { id: "9orJTIbMwmQ", title: "Bittensor Subnets CRASHING! Sell Now or MORE PAIN Ahead?", meta: "20:48 · Public video · October 22, 2026" },
+  { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "Upcoming · October 28, 2026 · 11:00 AM ET / 8:00 AM PT", upcoming: true },
+  { id: "RnnWezJOuE8", title: "Bittensor Gets Expressive and Conviction Runs Deep with TAO Templar", meta: "Upcoming · October 29, 2026 · 1:00 PM ET / 10:00 AM PT", upcoming: true },
+  { id: "3i9F3_Ku8Fo", title: "Bittensor’s Next Big Robotics Breakthrough? | Attune SN58", meta: "46:18 · Livestream replay · October 21, 2026" },
   ...(promotedLivestream.listed && !promotedLivestream.upcoming ? [promotedLivestream] : []),
   {
     id: "ac6bldErBFU",
@@ -519,7 +522,7 @@ function episodeSubnets(title: string) { return [...new Set([...title.matchAll(/
 export function VideoLibrary() {
  const [query, setQuery] = useState("");
  const matches = (video: ChannelVideo) => `${video.title} ${video.meta}`.toLowerCase().includes(query.trim().toLowerCase().replace(/^sn\s+(\d+)$/i, "sn$1"));
- const [activeVideo, setActiveVideo] = useState<ChannelVideo>(channelVideos.find(video => !video.membersOnly) ?? channelVideos[0]);
+ const [activeVideo, setActiveVideo] = useState<ChannelVideo>(channelVideos.find(video => !video.membersOnly && !video.upcoming) ?? channelVideos[0]);
  return (
         <section className="videos-page">
           <div className="videos-intro">

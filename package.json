@@ -18,7 +18,9 @@
     "check:news-links": "node scripts/check-news-links.mjs",
     "test": "node --test --experimental-strip-types tests/*.test.mjs",
     "build:smoke": "npm run validate:subnet-news && node scripts/generate-social-previews.mjs && node tests/browser/build.mjs",
-    "test:smoke": "playwright test"
+    "test:smoke": "playwright test",
+    "check:source-text": "node scripts/check-source-text.mjs",
+    "verify:release": "npm run check:source-text && npm audit --omit=dev --audit-level=high && npm run lint && npm test && npm run build:smoke && npm run test:smoke"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

@@ -1,0 +1,1025 @@
+{
+  "version": 1,
+  "date": "2026-10-24",
+  "title": "Subnet News — October 24, 2026",
+  "summary": "REAX publishes open decision-model weights; OpenRoboto and Bitcast confirm a distribution partnership; Desearch adds extraction V2; and runtime 484 is finalized. Also: miner upgrade deadlines, Yugos evaluation problems, an SN113 owner-key migration, three qualifying burns and next week’s Shizzy interviews.",
+  "publishedAt": "2026-10-24T16:24:40.407249+00:00",
+  "coverageStart": "2026-10-23T14:54:48.106716+00:00",
+  "coverageEnd": "2026-10-24T16:24:40.407249+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": [
+        {
+          "headline": "SN6 Numinous reports lagging legacy validator queries",
+          "summary": "The October 24 digest says a team member confirmed that an old OpenRouter validator is lagging and advised deactivating its associated keys. It also says the current submission round is open. A separate member report that few forecasts were judged is not a verified network-wide outage. This is an operator follow-up to yesterday’s DKG release coverage; a complete recovery has not been independently confirmed.",
+          "importance": "informational",
+          "status": "developing",
+          "rating": 2,
+          "ratingReason": "A specific unresolved service issue, attributed to the team digest rather than inflated into a launch.",
+          "sources": [
+            {
+              "label": "Attributed Discord digest",
+              "url": "https://subnetradar.com/subnet-news/6/2026-10-24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta records two separate qualifying alpha burns",
+          "summary": "On October 24, successful transactions at blocks 9,353,782 and 9,354,416 emitted SN8 AlphaBurned events for 166.666666666 and 340.896934076 alpha respectively. Each event independently exceeds the 100-token minimum; smaller transactions were not added together to qualify. No matching buyback markers were established for these two events. Their block hashes, UTC times and event indices are retained in the Burns archive. A burn does not establish a price effect or business revenue.",
+          "importance": "medium",
+          "status": "verified",
+          "rating": 3,
+          "ratingReason": "Two new qualifying transactions, verified separately and kept distinct from prior coverage.",
+          "sources": [
+            {
+              "label": "Primary evidence",
+              "url": "https://taostats.io/extrinsic/9353782-13"
+            },
+            {
+              "label": "Primary evidence",
+              "url": "https://taostats.io/extrinsic/9354416-11"
+            },
+            {
+              "label": "Primary evidence",
+              "url": "https://shizzyunchained.com/subnet-news/burns"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": [
+        {
+          "headline": "SN14 Cacheon records a new 1,933.73-alpha burn",
+          "summary": "A successful transaction at block 9,348,391 on October 23 emitted a SN14 AlphaBurned event for 1,933.73 native alpha. This is a new individual burn above the 100-token reporting threshold, separate from yesterday’s 2,870.53-alpha item. No matching buyback marker was established for this event, so we do not infer the acquisition source, revenue or a buyback program. Automatic miner-emission withholding and ordinary transaction fees remain outside the Burns archive.",
+          "importance": "medium",
+          "status": "verified",
+          "rating": 3,
+          "ratingReason": "An individually verified non-miner burn with transaction evidence, not a supply-counter inference.",
+          "sources": [
+            {
+              "label": "Primary evidence",
+              "url": "https://taostats.io/extrinsic/9348391-9"
+            },
+            {
+              "label": "Primary evidence",
+              "url": "https://shizzyunchained.com/subnet-news/burns"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Zero Hour",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": [
+        {
+          "headline": "SN22 Desearch merges page extraction V2; miners face an October 26 cutover",
+          "summary": "The October 23 merge introduces extraction V2 with page-type classification and separate main-text/full-text handling, supported by extraction-version tests. The October 24 team-attributed digest says validators accept V1 and V2 until October 26 at 11:00 UTC, then require V2. It also reports the miner-emission burn allocation falling from 50% to 30%: a 20-percentage-point shift, not a verified 20% increase in a miner’s realized earnings. The code is directly inspectable; the live acceptance deadline and allocation description retain digest attribution. Cleaner structured web text is the product change; the allocation is not a transaction burn.",
+          "importance": "high",
+          "status": "verified",
+          "rating": 4,
+          "ratingReason": "A substantive extraction capability backed by code, with the separate operating deadline and allocation claims qualified.",
+          "sources": [
+            {
+              "label": "Primary evidence",
+              "url": "https://github.com/Desearch-ai/subnet-22/commit/49e127af177a129727c2b94f06a92d15f5f617a2"
+            },
+            {
+              "label": "Attributed Discord digest",
+              "url": "https://subnetradar.com/subnet-news/22/2026-10-24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "Quasar",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": [
+        {
+          "headline": "SN28 SayGM miners told to redeploy v0.5.11 before October 26",
+          "summary": "The public gm-miner repository has a v0.5.11 release. The October 24 digest attributes a mandatory redeployment deadline of October 26 at 11:30 UTC to the team, after which older versions stop receiving traffic. It describes removal of affected eMudhra certificate roots, retries for dropped Azure verification connections, and gmcli deadline/worker notifications. Operators should use the project’s release and instructions rather than an unverified community image. Release availability is confirmed; the service cutover and root-removal details are team-reported through the digest, not an independent security audit.",
+          "importance": "medium",
+          "status": "developing",
+          "rating": 3,
+          "ratingReason": "A time-sensitive miner upgrade and trust-store maintenance requirement with source limits explicit.",
+          "sources": [
+            {
+              "label": "Primary evidence",
+              "url": "https://github.com/taostat/gm-miner/releases/tag/v0.5.11"
+            },
+            {
+              "label": "Attributed Discord digest",
+              "url": "https://subnetradar.com/subnet-news/28/2026-10-24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "BitMind",
+      "updates": [
+        {
+          "headline": "SN34 BitMind’s Yugos migration stalls evaluations; submissions temporarily paused",
+          "summary": "The October 24 digest attributes stalled evaluation runs to a database refactor during SN34 BitMind’s migration to Yugos. It says the team paused new submissions, intended to finish existing runs and migrate the database before reopening. We inspected the Yugos product site: it advertises one model name and an API that routes among model providers, with per-request model/cost visibility. That confirms the current product description, not the number of active customers or a resolution of the submission problem. No verified reopening time was found. The older deepfake-detection description is being replaced in our sector guide while the canonical subnet label remains SN34 BitMind.",
+          "importance": "medium",
+          "status": "developing",
+          "rating": 3,
+          "ratingReason": "A material operating interruption and product-direction correction, without claiming the incident is resolved.",
+          "sources": [
+            {
+              "label": "Attributed Discord digest",
+              "url": "https://subnetradar.com/subnet-news/34/2026-10-24"
+            },
+            {
+              "label": "Primary evidence",
+              "url": "https://www.yugos.ai/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 35,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Epago",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": []
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": [
+        {
+          "headline": "SN54 Yanez joins Shizzy on October 27",
+          "summary": "YouTube lists “Can You Prove You’re Human? Yanez Bittensor Subnet 54 with Jose Caldera” for October 27 at 12:30 PM Eastern / 9:30 AM Pacific. The watch-page start timestamp was checked directly. This is an upcoming interview, not a completed discussion or a new product launch. The video library and next-stream promotion now point to the scheduled episode.",
+          "importance": "medium",
+          "status": "verified",
+          "rating": 3,
+          "ratingReason": "A verified upcoming original Shizzy interview; video coverage uses the three-star rule.",
+          "sources": [
+            {
+              "label": "Primary evidence",
+              "url": "https://www.youtube.com/watch?v=STPM5BtE-ts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": [
+        {
+          "headline": "SN62 Ridges reports a temporary evaluation pause",
+          "summary": "Following yesterday’s slow-validation notice, the October 24 digest attributes a temporary evaluation pause and an expectation of resuming soon to the team. The public repository also merges disk-management and gated Docker-start changes. Those commits do not by themselves prove that evaluation service has resumed, or establish the pause’s cause. We found no independently verified reopening time at the research cutoff.",
+          "importance": "informational",
+          "status": "developing",
+          "rating": 2,
+          "ratingReason": "A useful incident follow-up that keeps the repair code and actual service recovery distinct.",
+          "sources": [
+            {
+              "label": "Attributed Discord digest",
+              "url": "https://subnetradar.com/subnet-news/62/2026-10-24"
+            },
+            {
+              "label": "Primary evidence",
+              "url": "https://github.com/ridgesai/ridges/commit/fd69771a6d716b3ec716fb705fc9cb991c31bdf7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": [
+        {
+          "headline": "SN66 Conjectures adds 16 historical open problems to its task pool",
+          "summary": "An October 23 public merge adds 16 full historical open problems and updates the task catalog and admission records. These are new problem statements for the network to work on, not 16 newly solved conjectures. The distinction matters after yesterday’s coverage of an older Lean verification record. The release makes the new targets inspectable, but no claim is made that every statement is solvable or that miners have already produced proofs.",
+          "importance": "medium",
+          "status": "verified",
+          "rating": 3,
+          "ratingReason": "A verifiable problem-pool expansion; competition supply does not by itself earn a research-breakthrough rating.",
+          "sources": [
+            {
+              "label": "Primary evidence",
+              "url": "https://github.com/conjectures-io/conjectures-validator/commit/38533e8620a9da0cd66568d79b82e0041eef55e0"
+            },
+            {
+              "label": "Attributed Discord digest",
+              "url": "https://subnetradar.com/subnet-news/66/2026-10-24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Consted 2.0",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": [
+        {
+          "headline": "SN71 Leadpoet’s Shizzy interview is scheduled for October 28",
+          "summary": "YouTube schedules “Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71” for October 28 at 11:00 AM Eastern / 8:00 AM Pacific. The scheduled watch page is available in the video library. It is a planned conversation, not evidence of fresh customer adoption today; the previously covered sales-agent launch is not republished as new.",
+          "importance": "medium",
+          "status": "verified",
+          "rating": 3,
+          "ratingReason": "An actionable date for original Shizzy coverage without repeating an older launch.",
+          "sources": [
+            {
+              "label": "Primary evidence",
+              "url": "https://www.youtube.com/watch?v=q2pGNLUvCm4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Parked",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": [
+        {
+          "headline": "SN80 OpenRoboto names SN93 Bitcast its Shift distribution partner",
+          "summary": "In a late-found October 23 announcement, SN80 OpenRoboto named SN93 Bitcast the distribution partner for OpenRoboto Shift; SN93 Bitcast confirmed the arrangement. Creators will explain how hands-on workers can contribute first-person recordings using the OR-S1 dual-camera headset. This is a concrete link between a creator network and a robotics-data project. Neither announcement supplies a contract value, a count of newly recruited workers or independently reconciled licensing revenue. The announcement is dated October 23, not presented as a deal signed today.",
+          "importance": "high",
+          "status": "verified",
+          "rating": 4,
+          "ratingReason": "Both parties confirm a specific distribution arrangement; no adoption or revenue totals are inferred.",
+          "sources": [
+            {
+              "label": "Original announcement",
+              "url": "https://x.com/openroboto/status/2113624165995663711"
+            },
+            {
+              "label": "Original announcement",
+              "url": "https://x.com/Bitcast_network/status/2113624881921225001"
+            },
+            {
+              "label": "Original announcement",
+              "url": "https://x.com/openroboto/status/2113624171683176479"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": [
+        {
+          "headline": "SN92 REAX releases open-weight REAX 1.2 with an abstention tradeoff",
+          "summary": "REAX announced REAX 1.2 and REAX 1.1 on October 24. The public REAX 1.2 model card identifies an Apache-2.0, 27B fine-tune of REAX 1 that returns probabilities for structured choices rather than generating prose. It is trained to abstain more often when a question offers an “I don’t know” option. The team reports higher accuracy among questions it answers, but also more abstentions, including on answerable questions. These are internal measurements, not an independently reproduced benchmark or an official leaderboard result. Public cards and release metadata were inspected; the weights were not downloaded or executed.",
+          "importance": "high",
+          "status": "verified",
+          "rating": 4,
+          "ratingReason": "An inspectable open model release with a concrete behavior change and its tradeoff clearly stated.",
+          "sources": [
+            {
+              "label": "Original announcement",
+              "url": "https://x.com/reaxlabs/status/2114001983371940284"
+            },
+            {
+              "label": "Primary evidence",
+              "url": "https://huggingface.co/decisionmodels/reax-1.2"
+            },
+            {
+              "label": "Primary evidence",
+              "url": "https://huggingface.co/decisionmodels/reax-1.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": [
+        {
+          "headline": "SN93 Bitcast confirms creator distribution work for SN80 OpenRoboto",
+          "summary": "SN93 Bitcast’s October 23 confirmation establishes its role as the distribution partner for SN80 OpenRoboto Shift. For creators, the stated assignment is explaining first-person robotics-data collection and how hands-on workers can participate. This is the same arrangement covered under SN80, not a second deal or a new buyback figure. Campaign spend, creator payouts and resulting recruitment totals were not disclosed in the reviewed announcements.",
+          "importance": "medium",
+          "status": "verified",
+          "rating": 3,
+          "ratingReason": "A concrete creator-facing use of the partnership, cross-referenced without counting a second deal.",
+          "sources": [
+            {
+              "label": "Bitcast confirmation",
+              "url": "https://x.com/Bitcast_network/status/2113624881921225001"
+            },
+            {
+              "label": "OpenRoboto original announcement",
+              "url": "https://x.com/openroboto/status/2113624165995663711"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Thirty Spokes",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": [
+        {
+          "headline": "SN113 Unknown records an owner-coldkey migration, not a verified sale",
+          "summary": "A successful ColdkeySwapped event at block 9,347,623 on October 23 moves the owner key associated with SN113. Adjacent finalized SubnetOwner reads confirm the old and new keys, while NetworkRegisteredAt remains unchanged. The current project name remains Unknown under our unnamed-subnet convention. This establishes a key migration, not a negotiated subnet sale, a buyer’s identity, a price or a new registration. The dated chain evidence preserves both addresses and the event reference.",
+          "importance": "informational",
+          "status": "verified",
+          "rating": 2,
+          "ratingReason": "A verified ownership-key execution with the limits of what chain evidence establishes made clear.",
+          "sources": [
+            {
+              "label": "Primary evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-24-chain.json"
+            },
+            {
+              "label": "Original announcement",
+              "url": "https://x.com/TensiaBot/status/2113678084343750803"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": [
+        {
+          "headline": "SN117 everyframe adds four video-model contracts and editable SVG support",
+          "summary": "The public v0.7.4 miner release adds Kling 4.0, HeyGen Video, Gemini Omni Flash 1.1 and Vidu Q4 Preview contracts through the Fal adapter. The preceding v0.7.3 change adds Ideogram Vector for editable SVG output. Release notes describe updating the CLI and workers, renewing attestation and choosing enabled models. The repository explicitly says catalog presence does not mean every model is currently available for mining: coordinator settings, pricing, credentials and offers still apply. We inspected the source and notes, not a paid generation run.",
+          "importance": "medium",
+          "status": "verified",
+          "rating": 3,
+          "ratingReason": "Specific model/output support backed by release code, with live availability kept separate from catalog inclusion.",
+          "sources": [
+            {
+              "label": "Primary evidence",
+              "url": "https://github.com/everyframe-studio/everyframe-miner/commit/80eeafa718d384329690f445648d4f9714eaaa3d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": [
+        {
+          "headline": "SN120 Affine scoring reports conflict with shadow-release documentation",
+          "summary": "The October 24 digest describes a transition toward multi-armed-bandit scoring, with miners continuing and scores moving gradually. The latest reviewed public merge instead labels its flip-incentive work “SHADOW” and states that live weights remain v9/seq7. These may describe different components, but they do not establish a single verified live cutover. We retain the change as developing until the team publishes an unambiguous mechanism/version and activation evidence. No reset, cheating allegation or completed network-wide rollout is inferred.",
+          "importance": "informational",
+          "status": "developing",
+          "rating": 2,
+          "ratingReason": "The source conflict is itself the useful update; a live scoring change is not asserted without reconciliation.",
+          "sources": [
+            {
+              "label": "Attributed Discord digest",
+              "url": "https://subnetradar.com/subnet-news/120/2026-10-24"
+            },
+            {
+              "label": "Primary evidence",
+              "url": "https://github.com/AffineFoundation/affine/commit/ebf4f5f67dd34e3a13c6c275e1b9e3fd3c9766cd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Astrid",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "ecosystem": [
+    {
+      "headline": "Runtime 484 is finalized; lifecycle reporting and Root claims change",
+      "summary": "Our finalized state read reports runtime 484. The public release adds explicit subnet lifecycle reporting, including dissolving subnets, increases the Root claim limit to accommodate all 128 subnet assets plus TAO, and exposes liquid-alpha consensus-mode reads/settings through the subnet EVM precompile. The owner setter retains its authorization, admin-window and rate-limit checks. The release also includes token-symbol and CLI fixes. Source changes and actual runtime activation were checked separately; we have not reproduced every migration or security test.",
+      "importance": "high",
+      "status": "verified",
+      "rating": 4,
+      "ratingReason": "A chain-confirmed protocol release with meaningful Root and subnet-lifecycle behavior changes.",
+      "sources": [
+        {
+          "label": "Primary evidence",
+          "url": "https://github.com/RaoFoundation/subtensor/releases/tag/v484"
+        },
+        {
+          "label": "Primary evidence",
+          "url": "https://github.com/RaoFoundation/subtensor/commit/5749dbfbe4a78ccd3938d46ffae45e059488feb7"
+        },
+        {
+          "label": "Primary evidence",
+          "url": "https://shizzyunchained.com/evidence/2026-10-24-chain.json"
+        }
+      ]
+    },
+    {
+      "headline": "Shizzy’s validator finder now puts one choice first",
+      "summary": "The validator page now starts with a subnet selector and one main choice, its fee, historical yield and a copyable staking hotkey. Alternatives, source checks and the full directory are optional. When no validator meets the complete recommendation standard, a separately labelled current option is shown only if all other eligibility checks pass and recent participation is adequate; its weaker 30-day participation remains visible. Missing or stale evidence still cannot become a recommendation. The rebuilt page was checked on phone and desktop, and its final application CI passed.",
+      "importance": "high",
+      "status": "verified",
+      "rating": 4,
+      "ratingReason": "A substantive original Shizzy tool improvement that makes subnet staking comparisons easier to use.",
+      "sources": [
+        {
+          "label": "Primary evidence",
+          "url": "https://shizzyunchained.com/validators"
+        },
+        {
+          "label": "Primary evidence",
+          "url": "https://github.com/Shizzyonchain/ShizzyOnchain.com/actions/runs/40066079711"
+        }
+      ]
+    },
+    {
+      "headline": "TAO Templar’s Shizzy conversation is scheduled for October 29",
+      "summary": "YouTube lists “Bittensor Gets Expressive and Conviction Runs Deep with TAO Templar” for October 29 at 1:00 PM Eastern / 10:00 AM Pacific. Its start timestamp was verified directly. It is an upcoming community conversation, with no unsupported subnet number assigned to the guest.",
+      "importance": "medium",
+      "status": "verified",
+      "rating": 3,
+      "ratingReason": "A verified upcoming Shizzy video event, clearly labelled as scheduled.",
+      "sources": [
+        {
+          "label": "Primary evidence",
+          "url": "https://www.youtube.com/watch?v=RnnWezJOuE8"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "Signed-in @ShizzyUnchained Grok discovery and top-five attention review, with primary verification and final omission check.",
+      "All 128 subnet-number groups searched on public X; selected team/partner profiles, quotes, replies, bookmarks and relevant history reviewed.",
+      "All 128 dated SubnetRadar briefs checked; 203 known repository paths checked since previous cutoff; relevant commit diffs inspected.",
+      "Finalized archive event scan for registrations, removals, owner-key migration, eTAO and qualifying transaction burns, plus full state reconciliation.",
+      "Full 128-row Finney market snapshot, flagged-return dispositions, current sector metadata/product review, and both YouTube Videos and Live tabs."
+    ],
+    "gaps": [
+      "X searches covered grouped SN numbers and selected primary accounts; they are sampled public results, not an exhaustive account-by-account or private-channel census.",
+      "Of 128 October 24 SubnetRadar URLs, 48 supplied briefs and 80 returned no edition/404. Digest attribution is not independent verification of its underlying Discord posts.",
+      "Fourteen repository paths returned errors; repositories with 30 returned commits may have more history beyond this first page. Routine commits were not automatically promoted to news.",
+      "Internal model results, commercial accounting, paid product runs and the full history of indexed wallet trades were not independently reproduced. No undisclosed sale price or beneficial owner is inferred.",
+      "Full finalized event coverage ends at the recorded chain cutoff, before the later state snapshot and report publication. Earlier-than-archive history is not claimed complete."
+    ]
+  }
+}

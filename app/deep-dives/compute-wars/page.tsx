@@ -8,7 +8,7 @@ import { DeepDivesHeader } from "../deep-dives-header";
 export const metadata = withSocialMetadata({ title: "Compute Wars | Shizzy Deep Dives", description: "The battle to control the decentralized AI compute stack has already begun.", alternates: { canonical: "/deep-dives/compute-wars" } }, "/deep-dives/compute-wars", { article: true });
 
 function clean(line: string) {
-  return line.replaceAll("â€œ", "“").replaceAll("â€", "”").replaceAll("â€™", "’").replaceAll("Ï„", "τ")
+  return line.replaceAll("\u00e2\u20ac\u0153", "“").replaceAll("\u00e2\u20ac\u009d", "”").replaceAll("\u00e2\u20ac\u2122", "’").replaceAll("\u00cf\u201e", "τ")
     .replace(/\bIm\b/g, "I’m").replace(/\bdont\b/gi, m => m[0] === "D" ? "Don’t" : "don’t").replace(/\bdoesnt\b/gi, "doesn’t")
     .replace(/\bisnt\b/gi, "isn’t").replace(/\bcant\b/gi, "can’t").replace(/\barent\b/gi, "aren’t").replace(/\bwont\b/gi, "won’t")
     .replace(/\balot\b/gi, "a lot").replace(/\bworlds\b/gi, "world’s");

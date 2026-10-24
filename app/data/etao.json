@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-10-23T14:44:08.583270+00:00",
-  "block": 9346919,
-  "hash": "0x86ed044f6b14153251cde76cd3a04e1fa97ee5686d2aa9ff30e430d0932feff3",
-  "chainTime": 1792766616000,
-  "runtime": 483,
+  "checkedAt": "2026-10-24T16:14:07.742673+00:00",
+  "block": 9354569,
+  "hash": "0xbfe89f330ed9d3a9d6516d0d0bfb5038e4c6d907486e035afe71142a3dd22685",
+  "chainTime": 1792858416000,
+  "runtime": 484,
   "source": "Opentensor archive RPC",
   "weights": {
     "1": [
@@ -1272,13 +1272,16 @@
     "33": "ReadyAI",
     "92": "REAX",
     "59": "Unknown",
-    "113": "Unknown"
+    "113": "Unknown",
+    "57": "Unknown",
+    "84": "Unknown",
+    "103": "Unknown"
   },
   "observations": [],
   "ownerSnapshot": {
-    "checkedAt": "2026-10-23T14:44:08.583270+00:00",
-    "block": 9346919,
-    "hash": "0x86ed044f6b14153251cde76cd3a04e1fa97ee5686d2aa9ff30e430d0932feff3",
+    "checkedAt": "2026-10-24T16:14:07.742673+00:00",
+    "block": 9354569,
+    "hash": "0xbfe89f330ed9d3a9d6516d0d0bfb5038e4c6d907486e035afe71142a3dd22685",
     "owners": {
       "1": "5HCFWvRqzSHWRPecN7q8J6c7aKQnrCZTMHstPv39xL1wgDHh",
       "2": "5EcYQ3W77ndrmMWdvVQusoFqY8doxfP3U2zrh7xZQiaz7avY",
@@ -1392,7 +1395,7 @@
       "110": "5D53sX6AwAzXUB24G85Ch35hYr5rCpXjYFWpFTe4uzBb75sL",
       "111": "5CGTryXjAmwmb3mAFD6B5ba2iBXZBcS5dN9pHLBxRoeonigv",
       "112": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
-      "113": "5GndoVhMAr8mF5zv1gPVLQYbXzmXe3Xh3kF37nt8qy5CaXTP",
+      "113": "5DhtXP8GCgkGTkBu7qy1dzd86mhFb3KDcDPpwacsyGA2JrLd",
       "114": "5FHrQMjzzAhmL5zS9ys87ZrGCwG3vsVT9hXAUWZQ8SNdRqig",
       "115": "5EkNnrTjnMYaj4x1gNxAnJne9UvKgfU6NZNjhm6XFWMstbdG",
       "116": "5D5RwyMPFaKLwChEcfb5yPA6VENHxJBagcHkP5aztfg8Ynj9",
@@ -1412,11 +1415,11 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9346872,
-    "finalizedHash": "0x4da7f39c8e4e85dfe9490626db1725e4d0fa29c539cf3ade7a210c3bd2144735",
-    "checkedAt": "2026-10-23T14:44:09.193345+00:00",
+    "toBlock": 9354548,
+    "finalizedHash": "0x69bebd366e7b48be4a0eb36c4f97bc920e76c258205ce0efd1be883b5b3f630c",
+    "checkedAt": "2026-10-24T16:16:03.644471+00:00",
     "eventCount": 2,
-    "method": "Every finalized block inspected in contiguous archived reviews, including intermediate/reversed changes. Runtime 481/482/483 event and vector metadata reviewed; 482/483 metadata types identical. Newly verified SN117 allocation event; original SN59 event retained.",
+    "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history."
   }
