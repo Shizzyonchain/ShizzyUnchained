@@ -37,7 +37,8 @@ export function InteractiveBubbleField({ items, selected, onSelect, onChart, per
         const node = buttons.current.get(body.id); if (!node) continue;
         node.style.width = `${body.r * 2}px`; node.style.height = `${body.r * 2}px`;
         node.style.transform = `translate3d(${body.x - body.r}px,${body.y - body.r}px,0)`;
-        node.dataset.small = String(body.r < 26);
+        node.dataset.small = String(body.r < 32);
+        node.style.setProperty("--bubble-label-size", `${Math.min(18, Math.max(8, (body.r * 2 - 8) / 3.2))}px`);
       }
     };
     const frame = (now: number) => {
