@@ -74,6 +74,11 @@ test("market search, clear and chart navigation retain useful chart controls", a
     await page.getByRole("group", { name: "Chart currency", exact: true }).getByRole("button", { name: "TAO", exact: true }).click();
   }
   await expect(page.locator(".chart-plot-context")).toContainText("TAO");
+  const jump=page.getByRole("link",{name:"Market snapshot ↓",exact:true});
+  await expect(jump).toHaveAttribute("href","#subnet-market-snapshot");await jump.click();
+  const snapshot=page.getByRole("region",{name:"Subnet market information",exact:true});
+  await expect(snapshot.getByRole("heading",{name:"Market snapshot",exact:true})).toBeInViewport();
+  expect((await snapshot.boundingBox())!.y).toBeGreaterThan(80);
   const ownerActivity = page.getByRole("region", { name: "Owner wallet alpha activity", exact: true });
   await expect(ownerActivity).toContainText("Net buying");
   await expect(ownerActivity).toContainText("+12.5");
