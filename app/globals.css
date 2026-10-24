@@ -482,3 +482,8 @@ html,body{overflow-x:clip}
 .news-short-updates>summary:focus-visible{outline:2px solid #fff;outline-offset:5px}
 .news-short-updates>p{color:#aaa;line-height:1.6}
 @media(max-width:720px){.news-short-updates{padding:14px}}
+
+/* Give the interactive field the space, rather than a tall page introduction. */
+.site-theme .bubbles-page{padding-top:24px}.bubbles-page .bubbles-hero{align-items:center;gap:18px;margin-bottom:16px}.bubbles-page .bubbles-hero h1{font-size:clamp(30px,3vw,44px);line-height:1;margin:8px 0 10px;letter-spacing:-1px}.bubbles-page .bubbles-hero p:not(.eyebrow){font-size:12px;line-height:1.6}.bubbles-page .bubble-legend{margin-bottom:12px;padding:10px 14px}@media(max-width:700px){.site-theme .bubbles-page{padding-top:18px;padding-inline:14px}.bubbles-page .bubbles-hero{gap:14px}.bubbles-page .bubbles-hero h1{font-size:34px}.bubbles-page .bubble-legend{gap:10px}.bubble-map-tools label{font-size:10px}}
+
+.bubble-map-loading{max-width:1512px;height:calc(clamp(620px,76vh,900px) + 56px);margin:0 auto;display:grid;place-items:center;color:#aaa;font:12px var(--font-mono);border:1px solid #333;background:#0a0a0a}@media(max-width:700px){.bubble-map-loading{height:1160px}}

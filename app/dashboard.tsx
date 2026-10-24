@@ -206,7 +206,7 @@ const compactAlpha = (value?: string | number) =>
   }).format(Number(value ?? 0));
 const changeClass = (v?: string) => (Number(v ?? 0) > 0 ? "positive" : Number(v ?? 0) < 0 ? "negative" : "neutral");
 
-const InteractiveBubbleField = dynamic(() => import("./interactive-bubbles").then(module => module.InteractiveBubbleField), { ssr: false, loading: () => <p role="status">Building the interactive bubble map…</p> });
+const InteractiveBubbleField = dynamic(() => import("./interactive-bubbles").then(module => module.InteractiveBubbleField), { ssr: false, loading: () => <div className="bubble-map-loading" role="status">Building the interactive bubble map…</div> });
 const TradingChart = dynamic(() => import("./trading-chart"), { ssr: false,
   loading: () => <div className="chart-module-loading" role="status">Opening chart…</div> });
 type ChartHistory = { data: Candle[]; savedAt: number; method: string; done?: boolean; notice?: string };
