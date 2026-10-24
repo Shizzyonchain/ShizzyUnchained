@@ -11,12 +11,11 @@ type ChannelVideo = {
   meta: string;
   membersOnly?: boolean;
   upcoming?: boolean;
+  startsAt?: string;
 };
 
 const channelVideos: ChannelVideo[] = [
   { id: "9orJTIbMwmQ", title: "Bittensor Subnets CRASHING! Sell Now or MORE PAIN Ahead?", meta: "20:48 · Public video · October 22, 2026" },
-  { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "Upcoming · October 28, 2026 · 11:00 AM ET / 8:00 AM PT", upcoming: true },
-  { id: "RnnWezJOuE8", title: "Bittensor Gets Expressive and Conviction Runs Deep with TAO Templar", meta: "Upcoming · October 29, 2026 · 1:00 PM ET / 10:00 AM PT", upcoming: true },
   { id: "3i9F3_Ku8Fo", title: "Bittensor’s Next Big Robotics Breakthrough? | Attune SN58", meta: "46:18 · Livestream replay · October 21, 2026" },
   ...(promotedLivestream.listed && !promotedLivestream.upcoming ? [promotedLivestream] : []),
   {
@@ -87,7 +86,6 @@ const channelVideos: ChannelVideo[] = [
     title: "How to Buy Bittensor Subnet Tokens: Set Up a TAO Wallet in Minutes",
     meta: "10:25 · October 4, 2026",
   },
-  ...(promotedLivestream.listed && promotedLivestream.upcoming ? [promotedLivestream] : []),
   {
     id: "rEaGFK5yn8g",
     title: "Quantum Computing Is Already on Bittensor?! | SN48 Quantum Compute",
@@ -360,6 +358,9 @@ const channelVideos: ChannelVideo[] = [
   },
 ];
 const liveStreams: ChannelVideo[] = [
+  { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "Upcoming livestream · October 28, 2026 · 11:00 AM ET / 8:00 AM PT", startsAt: "2026-10-28T15:00:00Z", upcoming: true },
+  { id: "RnnWezJOuE8", title: "Bittensor Gets Expressive and Conviction Runs Deep with TAO Templar", meta: "Upcoming livestream · October 29, 2026 · 1:00 PM ET / 10:00 AM PT", startsAt: "2026-10-29T17:00:00Z", upcoming: true },
+
   {
     id: "ac6bldErBFU",
     title: "Can Bittensor Make AI Faster and Cheaper? Inside Pareton SN10",
@@ -518,11 +519,15 @@ const liveStreams: ChannelVideo[] = [
     meta: "57:35",
   },
 ];
+// Upcoming streams never belong in the completed episode/replay shelves.
+const recentVideos = channelVideos.filter(video => !video.upcoming);
+const upcomingStreams = [...new Map([...channelVideos, ...liveStreams].filter(video => video.upcoming).map(video => [video.id, video])).values()].sort((a, b) => (a.startsAt ?? "9999").localeCompare(b.startsAt ?? "9999"));
+const streamReplays = liveStreams.filter(video => !video.upcoming);
 function episodeSubnets(title: string) { return [...new Set([...title.matchAll(/\bSN\s*(\d{1,3})\b/gi)].map(match => Number(match[1])).filter(id => id > 0 && id <= 128))]; }
 export function VideoLibrary() {
  const [query, setQuery] = useState("");
  const matches = (video: ChannelVideo) => `${video.title} ${video.meta}`.toLowerCase().includes(query.trim().toLowerCase().replace(/^sn\s+(\d+)$/i, "sn$1"));
- const [activeVideo, setActiveVideo] = useState<ChannelVideo>(channelVideos.find(video => !video.membersOnly && !video.upcoming) ?? channelVideos[0]);
+ const [activeVideo, setActiveVideo] = useState<ChannelVideo>(recentVideos.find(video => !video.membersOnly) ?? recentVideos[0]);
  return (
         <section className="videos-page">
           <div className="videos-intro">
@@ -556,17 +561,20 @@ export function VideoLibrary() {
             </div>
           </div>
           <MembershipPromo />
-          <div style={{padding:"16px",border:"1px solid #333",margin:"16px 0"}}><label htmlFor="episode-search">Find an episode by title, date or SN</label><input id="episode-search" type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Try SN51 or robotics" style={{display:"block",width:"100%",padding:"14px",background:"#111",color:"white",border:"1px solid #555",marginTop:"10px"}} /><p>Searches published titles and dates. Chapters and transcripts are not indexed.</p>{query && <button onClick={() => setQuery("")} style={{background:"white",color:"black",padding:"12px"}}>Clear episode search</button>}{![...liveStreams,...channelVideos].some(matches) && <p role="status">No matching episodes. Try a subnet number or a shorter title.</p>}</div>
-          <div className="live-library">
+          <div style={{padding:"16px",border:"1px solid #333",margin:"16px 0"}}><label htmlFor="episode-search">Find an episode by title, date or SN</label><input id="episode-search" type="search" value={query} onChange={event => setQuery(event.target.value)} placeholder="Try SN51 or robotics" style={{display:"block",width:"100%",padding:"14px",background:"#111",color:"white",border:"1px solid #555",marginTop:"10px"}} /><p>Searches titles and dates. Chapters and transcripts are not indexed.</p>{query && <button onClick={() => setQuery("")} style={{background:"white",color:"black",padding:"12px"}}>Clear episode search</button>}{![...liveStreams,...channelVideos].some(matches) && <p role="status">No matching episodes. Try a subnet number or a shorter title.</p>}</div>
+          {[
+            { id: "upcoming-livestreams", title: "Upcoming livestreams", eyebrow: "Scheduled · Set a reminder", videos: upcomingStreams, upcoming: true },
+            { id: "livestream-replays", title: "Livestream replays", eyebrow: "Shizzy live", videos: streamReplays, upcoming: false },
+          ].filter(section => section.videos.some(matches)).map(section => <section className="live-library" key={section.id} aria-labelledby={section.id}>
             <div className="library-head">
               <div>
-                <p className="eyebrow">Shizzy live</p>
-                <h2>Live streams & replays</h2>
+                <p className="eyebrow">{section.eyebrow}</p>
+                <h2 id={section.id}>{section.title}</h2>
               </div>
-              <span>{liveStreams.length} streams</span>
+              <span>{section.videos.filter(matches).length} {section.upcoming ? "scheduled" : "replays"}</span>
             </div>
             <div className="live-grid">
-              {liveStreams.filter(matches).map((video, index) => (
+              {section.videos.filter(matches).map((video, index) => (
                 <button
                   key={video.id}
                   className={video.id === activeVideo.id ? "active" : ""}
@@ -578,7 +586,7 @@ export function VideoLibrary() {
                   <span className="video-thumb">
                     <Image src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt="" width={480} height={360} sizes="(max-width: 700px) 100vw, 25vw" />
                     <i>▶</i>
-                    <em className={`stream-badge${video.upcoming ? " upcoming-badge" : ""}`}>{video.upcoming ? "Upcoming" : "Live replay"}</em>
+                    <em className={`stream-badge${video.upcoming ? " upcoming-badge" : ""}`}>{video.upcoming ? "Upcoming livestream" : "Live replay"}</em>
                   </span>
                   <span className="video-info">
                     <small>{String(index + 1).padStart(2, "0")}</small>
@@ -590,17 +598,17 @@ export function VideoLibrary() {
                 </button>
               ))}
             </div>
-          </div>
+          </section>)}
           <div className="video-library">
             <div className="library-head">
               <div>
                 <p className="eyebrow">From the channel</p>
                 <h2>Recent videos</h2>
               </div>
-              <span>{channelVideos.length} episodes</span>
+              <span>{recentVideos.length} episodes</span>
             </div>
             <div className="video-grid">
-              {channelVideos.filter(matches).map((video, index) => (
+              {recentVideos.filter(matches).map((video, index) => (
                 <button
                   key={video.id}
                   className={video.id === activeVideo.id ? "active" : ""}
