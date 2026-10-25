@@ -1,4 +1,4 @@
-export type OwnerHolding={address:string;registeredAt:number;alphaRaw:string;lockedAlphaRaw:string;unstakableAlphaRaw:string;freeTaoRaw:string;frozenTaoRaw:string;rootTaoRaw:string};
+export type OwnerHolding={address:string;registeredAt:number;alphaRaw:string;lockedAlphaRaw:string;unstakableAlphaRaw:string;freeTaoRaw:string;frozenTaoRaw:string;rootTaoRaw:string;ownerEmissionPerDayRaw?:string;alphaOutEmissionRaw?:string;ownerWeightRaw?:string};
 export type OwnerHoldings={block:number;hash:string;asOf:string;source:string;evidence:string;subnets:Record<string,OwnerHolding>};
 /** Old wallet snapshots must never follow a subnet to a different owner. */
 export function holdingForOwner(snapshot:OwnerHoldings|undefined,netuid:number,address:string|undefined,now=Date.now()){

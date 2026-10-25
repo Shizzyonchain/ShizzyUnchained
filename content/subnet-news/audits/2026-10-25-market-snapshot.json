@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-25",
+  "feature": "Compact subnet market snapshot",
+  "checkedAt": "2026-10-25T06:30:03.671342+00:00",
+  "holdingsBlock": 9358800,
+  "hash": "0xe3e96dd896a908626a7bb98c6a1fcb7c15e673ec4e9ab2c5acc6a32fb7a33f84",
+  "asOf": "2026-10-25T06:19:48+00:00",
+  "evidence": "/evidence/owner-holdings-9358800.json",
+  "metrics": {
+    "rank": "Market-cap rank among available non-root rows; ties preserved",
+    "fdv": "Current spot alpha/TAO price \u00d7 nominal 21,000,000 alpha cap",
+    "ownerPerDay": "Finalized alpha-out emission \u00d7 owner slot / u64::MAX, floored per block, \u00d7 7200; daily-rate estimate, not actual trailing-day earnings or revenue",
+    "supply": "Same-row pool alpha + outstanding alpha; not circulating or lifetime issuance",
+    "burns": "All-wallet qualifying events >=100 alpha each over 30 days ending at separate reviewed archive cutoff; deduplicated and registration-filtered; not all-time",
+    "locks": "Total current market-feed locked alpha; owner daily verified coldkey locked alpha; timestamps separate"
+  },
+  "performance": "One existing coalesced owners request for both sections; module-level server burn aggregation; no visitor RPC or browser archive imports",
+  "validation": {
+    "pythonEmissionTests": 2,
+    "unitMathTests": 3,
+    "browserChecks": 46,
+    "mobile": "375px visual check; no horizontal overflow; sources expandable",
+    "pending": "Mandatory release gate and READY live verification"
+  },
+  "sources": [
+    "https://www.bittensor.com/docs/concepts/emissions",
+    "https://www.bittensor.com/docs/concepts/emission-weights"
+  ],
+  "reviewNotes": "No changes to news editions, owner trading thresholds or burn archive semantics. All advanced metrics retained."
+}

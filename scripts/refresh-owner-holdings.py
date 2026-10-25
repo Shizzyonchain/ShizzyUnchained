@@ -2,6 +2,7 @@
 import argparse, json, os
 from datetime import datetime, timezone
 from pathlib import Path
+from subnet_fundamentals import add_owner_emissions
 from substrateinterface import SubstrateInterface
 from substrateinterface.utils.ss58 import ss58_decode, ss58_encode
 
@@ -76,6 +77,7 @@ def main():
  for sn,address in owners.items():
   stake=availability[address].get(sn,{'total':0,'locked':0,'available':0});balance=balance_by_owner[address]
   rows[str(sn)]={'address':address,'registeredAt':registrations[sn],'alphaRaw':str(stake['total']),'lockedAlphaRaw':str(stake['locked']),'unstakableAlphaRaw':str(stake['available']),'freeTaoRaw':str(balance['free']),'frozenTaoRaw':str(balance.get('frozen',0)),'rootTaoRaw':str(availability[address].get(0,{}).get('total',0))}
+ emission_evidence=add_owner_emissions(c,h,rows)
  result={'version':1,'block':block,'hash':h,'runtime':runtime,'asOf':datetime.fromtimestamp(timestamp/1000,timezone.utc).isoformat(),'checkedAt':datetime.now(timezone.utc).isoformat(),'source':'Finalized Subtensor StakeInfoRuntimeApi stake availability and System.Account; one block for every wallet','subnets':rows}
  target=Path(args.output)
  if target.exists() and json.loads(target.read_text(encoding='utf-8'))['block']>block:raise ValueError('Refusing to regress owner holdings')
@@ -86,7 +88,7 @@ def main():
   total,positions=decode_stake_total(raw,address,sn)
   if total!=int(rows[str(sn)]['alphaRaw']):raise ValueError('Independent alpha holdings cross-check failed')
   cross_checks.append({'netuid':sn,'address':address,'alphaRaw':str(total),'positions':positions,'raw':raw})
- proof.write_text(json.dumps({'snapshot':result,'stakeAvailability':evidence,'accountBalances':balance_by_owner,'crossChecks':cross_checks},indent=2)+'\n',encoding='utf-8')
+ proof.write_text(json.dumps({'snapshot':result,'stakeAvailability':evidence,'accountBalances':balance_by_owner,'crossChecks':cross_checks,'ownerEmissionRates':emission_evidence},indent=2)+'\n',encoding='utf-8')
  result['evidence']='/evidence/'+proof.name
  temporary=target.with_suffix('.tmp');temporary.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8');temporary.replace(target)
  print('Published holdings:',len(rows),'subnets at finalized block',block)

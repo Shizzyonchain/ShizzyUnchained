@@ -95,7 +95,7 @@ test("market search, clear and chart navigation retain useful chart controls", a
 test("extreme yield disclosure keeps uncapped data and does not navigate the table row", async ({ page, isMobile }) => {
   await page.goto("/"); await search(page).fill("SN103");
   if (isMobile) await page.getByRole("link", { name: "Smoke Subnet 103 SN103", exact: true }).click();
-  const cell = page.locator(isMobile ? ".subnet-yield-fact" : ".apy-cell");
+  const cell = isMobile ? page.getByRole("region",{name:"Subnet market information",exact:true}).locator("dl>div").filter({has:page.getByText("Staker APY · est.",{exact:true})}) : page.locator(".apy-cell");
   await expect(cell).toContainText("20,000%"); await expect(cell).toContainText("530% APR");
   await expect(cell).toContainText("Potentially unstable");
   await cell.locator("summary").click();
@@ -395,10 +395,11 @@ test("subnet research stays compact and preserves advanced metrics without extra
  let ownerRequests=0;page.on("request",request=>{if(request.url().includes('/api/subnets/owner-sales?'))ownerRequests++;});
  await page.goto('/charts/51');
  const snapshot=page.getByRole('region',{name:'Subnet market information',exact:true});
- expect(await snapshot.locator('.subnet-key-metrics>div').count()).toBe(6);
- await expect(snapshot.getByText('Estimated deregistration payout',{exact:true})).not.toBeVisible();
+ await expect(snapshot.getByText('FDV',{exact:true})).toBeVisible();
+ await expect(snapshot.getByText('Dereg. payout',{exact:true})).toBeVisible();
+ await expect(snapshot.getByText('Staked / outstanding alpha',{exact:true})).not.toBeVisible();
  await snapshot.getByText('More metrics & staking basis',{exact:true}).click();
- await expect(snapshot.getByText('Estimated deregistration payout',{exact:true})).toBeVisible();
+ await expect(snapshot.getByText('Payout vs market price',{exact:true})).toBeVisible();
  await expect(snapshot.getByText('Staked / outstanding alpha',{exact:true})).toBeVisible();
  const owner=page.getByRole('region',{name:'Owner wallet alpha activity',exact:true});
  await expect(owner.getByText('Net buying',{exact:true})).toBeVisible();const before=ownerRequests;
@@ -441,4 +442,31 @@ test('all-wallet subnet burns switch periods without additional requests and ret
  await activity.getByRole('button',{name:'7D',exact:true}).click();await expect(burns.getByText('11,404.3 α',{exact:true})).toBeVisible();
  await activity.getByRole('button',{name:'30D',exact:true}).click();await expect(burns.getByText('16,704.04 α',{exact:true})).toBeVisible();await expect(burns).toContainText('43 qualifying burns');
  expect(contracts.calls.filter(p=>p==='/api/subnets/owner-sales').length).toBe(before);await expect(burns.getByRole('link',{name:'Burn history ↗',exact:true})).toHaveAttribute('href','/subnet-news/burns?subnet=8');await noOverflow(page);
+});
+
+
+test('snapshot metrics keep units and exact owner evidence while sharing the owner request',async({page,contracts})=>{
+ const holding={address:keys[0],registeredAt:1,alphaRaw:'600000000000',lockedAlphaRaw:'25000000000',unstakableAlphaRaw:'575000000000',freeTaoRaw:'1000000000',frozenTaoRaw:'0',rootTaoRaw:'0',ownerEmissionPerDayRaw:'1296000000000',alphaOutEmissionRaw:'1000000000',ownerWeightRaw:'3320329489486196244'};
+ await page.route('**/api/subnets/owners',route=>route.fulfill({json:{checkedAt:stamp,block:9000000,owners:{51:keys[0]},holdings:{block:9000000,hash:'0xabc',asOf:stamp,source:'Finalized fixture',evidence:'/evidence/test.json',subnets:{51:holding}},burns:{asOf:stamp,historyStart:new Date(Date.parse(stamp)-31*86400000).toISOString(),subnets:{51:{alphaRaw:'1234567890123',events:2,complete:true}}}}}));
+ let requests=0;page.on('request',r=>{if(new URL(r.url()).pathname==='/api/subnets/owners')requests++;});
+ await page.goto('/charts/51?currency=tao');
+ const snapshot=page.getByRole('region',{name:'Subnet market information',exact:true});
+ const fact=(label:string)=>snapshot.locator('dl>div').filter({has:page.getByText(label,{exact:true})});
+ await expect(fact('FDV')).toContainText('τ2.1M');
+ await expect(fact('Current alpha supply')).toContainText('110,000 α');
+ await expect(fact('Owner / day · est.')).toContainText('1,296 α / day');
+ await expect(fact('Owner / day · est.')).toContainText('τ129.6');
+ await expect(fact('Verified burns · 30D')).toContainText('1,234.57 α');
+ await expect(fact('Locked alpha')).toContainText('25 α');
+ await expect(page.getByRole('region',{name:'Owner wallet holdings',exact:true})).toContainText('600 α');
+ expect(requests).toBe(1);
+ await snapshot.getByText('Sources, calculations & exact amounts',{exact:true}).click();
+ await expect(snapshot).toContainText('1,234.567890123');
+ await expect(snapshot.getByRole('link',{name:'Transactions & coverage ↗'})).toHaveAttribute('href','/subnet-news/burns?subnet=51');
+ await snapshot.getByText('Sources, calculations & exact amounts',{exact:true}).click();
+ if(test.info().project.name.startsWith('phone'))await page.setViewportSize({width:375,height:844});
+ await page.getByRole('link',{name:'Market snapshot ↓',exact:true}).click();
+ await expect.poll(async()=>Math.round((await snapshot.boundingBox())?.y??-1)).toBeGreaterThan(140);
+ await page.screenshot({path:`../research-oct25/snapshot-viewport-${test.info().project.name}.png`});
+ await noOverflow(page);
 });

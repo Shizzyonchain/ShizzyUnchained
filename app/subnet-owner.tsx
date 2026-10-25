@@ -1,40 +1,20 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { OwnerSalesSummary } from "./subnet-owner-sales";
-import { holdingForOwner, displayHolding, type OwnerHoldings } from "./lib/owner-holdings";
+import { holdingForOwner, displayHolding } from "./lib/owner-holdings";
 import { formatSalesAmount } from "./lib/owner-sales";
 import styles from "./subnet-owner.module.css";
-type Owners = { checkedAt: string; block: number; owners: Record<string, string>; holdings?:OwnerHoldings };
-let cached: Owners | null = null;
-let pending: Promise<Owners> | null = null;
-async function loadOwners() {
-  if (cached && Date.now() - Date.parse(cached.checkedAt) < 15 * 60_000) return cached;
-  if (!pending) pending = fetch("/api/subnets/owners", { signal: AbortSignal.timeout(8000) }).then(async response => {
-    if (!response.ok) throw new Error("Owner data unavailable");
-    const data = await response.json() as Owners;
-    if (!data.owners || !Number.isInteger(data.block) || !Number.isFinite(Date.parse(data.checkedAt))) throw new Error("Invalid owner data");
-    cached = data; return data;
-  }).finally(() => { pending = null; });
-  return pending;
-}
+import { useOwners } from "./lib/owner-data";
 export function SubnetOwner({ netuid }: { netuid: number }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const [opened,setOpened] = useState(false);
   const showSales = () => { setOpened(true); dialog.current?.showModal(); };
-  const [snapshot, setSnapshot] = useState<Owners | null>(null);
-  const [stale, setStale] = useState(false);
-  const [error, setError] = useState(false);
+  const {snapshot,error,now}=useOwners();
+  const stale=!!snapshot&&now-Date.parse(snapshot.checkedAt)>30*60_000;
   const [copyState, setCopyState] = useState("");
-  useEffect(() => {
-    let cancelled = false;
-    const refresh = () => { loadOwners().then(data => { if (!cancelled) { setSnapshot(data); setStale(Date.now() - Date.parse(data.checkedAt) > 30 * 60_000); setError(false); } }).catch(() => { if (!cancelled) setError(true); }); };
-    refresh();
-    const timer = setInterval(refresh, 60_000);
-    return () => { cancelled = true; clearInterval(timer); };
-  }, [netuid]);
   const address = snapshot?.owners[String(netuid)];
   const valid = address && /^[1-9A-HJ-NP-Za-km-z]{46,50}$/.test(address) ? address : null;
-  const holding=holdingForOwner(snapshot?.holdings,netuid,valid||undefined);
+  const holding=holdingForOwner(snapshot?.holdings,netuid,valid||undefined,now);
   return <section id="subnet-owner-activity" tabIndex={-1} className={styles.owner} aria-label="Subnet owner research">
     <p className={styles.label}>Owner wallet</p>
     {valid && snapshot ? <><div className={styles.actions}><button type="button" className={styles.walletSalesLink} onClick={showSales} aria-label={`View SN${netuid} owner alpha sales`} aria-haspopup="dialog"><code title={valid}>{valid.slice(0,7)}…{valid.slice(-7)}</code> →</button><button type="button" onClick={async () => { try { await navigator.clipboard.writeText(valid); setCopyState("Copied"); } catch { setCopyState("Copy unavailable—select the address"); } }}>Copy address</button></div><details className={styles.walletVerification}><summary>Full address &amp; chain verification</summary><small>Subnet owner coldkey</small><code>{valid}</code><small>{stale || error ? "Last verified owner · " : "Chain verified · "}block {snapshot.block.toLocaleString("en-US")} · {new Date(snapshot.checkedAt).toLocaleString("en-US", { timeZone: "UTC" })} UTC</small></details></> : <p>{error ? "Owner wallet temporarily unavailable" : snapshot ? "No verified owner wallet available" : "Loading owner wallet…"}</p>}
