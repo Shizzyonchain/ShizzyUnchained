@@ -85,6 +85,8 @@ test("market search, clear and chart navigation retain useful chart controls", a
   await expect(ownerActivity).toContainText("+12.5");
   await expect(ownerActivity).toContainText("Net selling");
   await expect(ownerActivity).toContainText("-15");
+  const newsJump=page.getByRole("link",{name:"Recent news ↓",exact:true});await expect(newsJump).toHaveAttribute("href","#subnet-recent-news");await newsJump.click();
+  const news=page.getByRole("region",{name:"Recent news & history",exact:true});await expect(news.getByRole("heading",{name:"Recent news & history",exact:true})).toBeInViewport();expect((await news.boundingBox())!.y).toBeGreaterThan(80);
   await noOverflow(page);
 });
 

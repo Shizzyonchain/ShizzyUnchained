@@ -22,7 +22,7 @@ export function SubnetNewsPanel({ netuid }: { netuid: number }) {
     }).catch(reason => { if (!controller.signal.aborted) setError(reason.message); }).finally(() => { if (!controller.signal.aborted) setLoading(false); });
     return () => controller.abort();
   }, [netuid, offset, retry]);
-  return <section className="subnet-recent-news" aria-labelledby={`subnet-news-${netuid}`}>
+  return <section id="subnet-recent-news" tabIndex={-1} className="subnet-recent-news" aria-labelledby={`subnet-news-${netuid}`}>
     <div className="subnet-news-heading"><div><p className="eyebrow">SN{netuid} · PUBLISHED COVERAGE</p><h2 id={`subnet-news-${netuid}`}>Recent news &amp; history</h2></div><Link href="/subnet-news">All subnet news →</Link></div>
     <p className="subnet-news-context">Updates across our daily reports, newest first. Dates are report dates.{history?.archiveThrough && ` Archive through ${dateLabel(history.archiveThrough)}.`} A subnet number can be reused by a different project; each update keeps its recorded name. Registration, deregistration and ownership stories appear when covered in our reports.</p>
     {loading && <p role="status">Loading subnet news…</p>}
