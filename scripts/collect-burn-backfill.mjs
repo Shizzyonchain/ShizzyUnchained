@@ -10,16 +10,17 @@ export function validateBurnPage(payload,kind,page,start,end,total,seen){
 }
 async function main(){
  if(process.env.VERCEL_ENV!=="production"||!process.env.TAOSTATS_API_KEY){console.log("Historical burn index collection skipped outside authenticated production build");return;}
- try{const prior=JSON.parse(await readFile(output,"utf8"));if(prior.complete){console.log("Historical burn index evidence already retained");return;}}catch{}
+ let prior;try{prior=JSON.parse(await readFile(output,"utf8"));if(prior.complete){console.log("Historical burn index evidence already retained");return;}}catch{}
  const start=Math.floor(Date.parse("2026-09-22T00:00:00Z")/1000),end=Math.floor(Date.parse("2026-10-20T16:23:12Z")/1000);
  const evidence={version:1,checkedAt:new Date().toISOString(),start,end,source:"TaoStats v1 indexed burn events; discovery evidence only, pending independent finalized chain verification",complete:false,streams:[],errors:[]};
  try{for(const kind of [["SubtensorModule","AlphaBurned"],["Balances","Burned"]]){
-  const stream={pallet:kind[0],name:kind[1],rows:[],pages:[],complete:false};evidence.streams.push(stream);let page=1,total;const seen=new Set();
+  const stream=prior?.streams?.find(s=>s.pallet===kind[0]&&s.name===kind[1])??{pallet:kind[0],name:kind[1],rows:[],pages:[],complete:false};evidence.streams.push(stream);if(stream.complete)continue;let page=(stream.pages.at(-1)?.page??0)+1,total=stream.total;const seen=new Set(stream.rows.map(r=>r.id));
   while(page){
+   await new Promise(resolve=>setTimeout(resolve,3500));
    const url=new URL("https://api.taostats.io/v1/events");for(const [key,value]of Object.entries({pallet:kind[0],name:kind[1],timestamp_start:String(start),timestamp_end:String(end),limit:"200",page:String(page),order_by:"timestamp",order_dir:"asc"}))url.searchParams.set(key,value);
    let payload;
-   for(let attempt=0;attempt<4;attempt++){const r=await fetch(url,{headers:{Authorization:process.env.TAOSTATS_API_KEY},signal:AbortSignal.timeout(20000)});if((r.status===429||r.status>=500)&&attempt<3){await new Promise(resolve=>setTimeout(resolve,1000*(attempt+1)));continue;}if(!r.ok)throw new Error(`Indexed burn source HTTP ${r.status}`);payload=await r.json();break;}
-   const result=validateBurnPage(payload,kind,page,start,end,total,seen);total=result.total;stream.rows.push(...result.rows);stream.pages.push({page,count:result.rows.length,sha256:createHash("sha256").update(JSON.stringify(result.rows)).digest("hex")});page=result.next;
+   for(let attempt=0;attempt<4;attempt++){const r=await fetch(url,{headers:{Authorization:process.env.TAOSTATS_API_KEY},signal:AbortSignal.timeout(20000)});if((r.status===429||r.status>=500)&&attempt<3){await new Promise(resolve=>setTimeout(resolve,r.status===429?65000:2000*(attempt+1)));continue;}if(!r.ok)throw new Error(`Indexed burn source HTTP ${r.status}`);payload=await r.json();break;}
+   const result=validateBurnPage(payload,kind,page,start,end,total,seen);total=result.total;stream.total=total;stream.rows.push(...result.rows);stream.pages.push({page,count:result.rows.length,sha256:createHash("sha256").update(JSON.stringify(result.rows)).digest("hex")});page=result.next;
    console.log(`Burn discovery ${kind.join(".")}: ${stream.rows.length} / ${total} rows`);
   }
   if(stream.rows.length!==total)throw new Error("Missing indexed burn records");stream.total=total;stream.complete=true;
