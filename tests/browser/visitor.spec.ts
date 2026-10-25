@@ -326,20 +326,26 @@ test("Balls supports search, paused dragging, legacy links and chart details", a
 
 
 test("full ball map frame profile", async ({ page }, testInfo) => {
+  // Shared CI machines can stall animation frames. Bound each sample in wall
+  // time too, so starvation produces a useful failed assertion, not a hung test.
+  test.setTimeout(60000);
   const session=await page.context().newCDPSession(page);
   await session.send("Emulation.setCPUThrottlingRate",{rate:4});
   await page.emulateMedia({reducedMotion:"no-preference"});
   await page.goto("/balls");
   await expect(page.locator(".bubble-field[data-ready=true] .market-bubble")).toHaveCount(128);
   const measure=()=>page.evaluate(()=>new Promise<{frames:number;meanMs:number;p95Ms:number;styleMutations:number}>(resolve=>{
-    const intervals:number[]=[];let start=0,last=0,styleMutations=0;
+    const intervals:number[]=[];let start=0,last=0,styleMutations=0,frameId=0,finished=false;
     const observer=new MutationObserver(rows=>{styleMutations+=rows.length;});
     observer.observe(document.querySelector(".bubble-field")!,{subtree:true,attributes:true,attributeFilter:["style"]});
-    const frame=(now:number)=>{if(!start)start=now;if(last)intervals.push(now-last);last=now;
-      if(now-start<3000){requestAnimationFrame(frame);return;}
+    const finish=()=>{if(finished)return;finished=true;clearTimeout(deadline);cancelAnimationFrame(frameId);
       observer.disconnect();const sorted=[...intervals].sort((a,b)=>a-b);
-      resolve({frames:intervals.length,meanMs:intervals.reduce((a,b)=>a+b,0)/intervals.length,p95Ms:sorted[Math.floor(sorted.length*.95)],styleMutations});};
-    requestAnimationFrame(frame);
+      resolve({frames:intervals.length,meanMs:intervals.length?intervals.reduce((a,b)=>a+b,0)/intervals.length:0,p95Ms:sorted[Math.floor(sorted.length*.95)]??0,styleMutations});};
+    const deadline=setTimeout(finish,5000);
+    const frame=(now:number)=>{if(!start)start=now;if(last)intervals.push(now-last);last=now;
+      if(now-start<3000){frameId=requestAnimationFrame(frame);return;}
+      finish();};
+    frameId=requestAnimationFrame(frame);
   }));
   const profile=await measure();
   console.log(`BALL_PROFILE ${testInfo.project.name} ${JSON.stringify(profile)}`);
@@ -348,6 +354,7 @@ test("full ball map frame profile", async ({ page }, testInfo) => {
   console.log(`BALL_NATIVE ${testInfo.project.name} ${JSON.stringify(native)}`);
   await testInfo.attach("ball-native-frame-profile",{body:JSON.stringify(native,null,2),contentType:"application/json"});
   expect(profile.frames).toBeGreaterThan(0);
+  expect(native.frames,"Native-rate sampling must receive animation frames").toBeGreaterThan(0);
   expect(profile.styleMutations,"Animation must not change every ball DOM style each frame").toBeLessThan(512);
 });
 

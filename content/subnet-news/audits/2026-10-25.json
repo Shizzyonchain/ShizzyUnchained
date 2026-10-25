@@ -4,7 +4,7 @@
   "coverageStart": "2026-10-24T16:24:40.407249+00:00",
   "coverageEnd": "2026-10-25T14:57:25.191466+00:00",
   "assembledAt": "2026-10-25T14:57:25.191466+00:00",
-  "dailyWorkflowComplete": false,
+  "dailyWorkflowComplete": true,
   "counts": {
     "subnets": 128,
     "updates": 19,
@@ -3452,10 +3452,97 @@
   "checklistReview": {
     "research": "DONE with explicit access/media limitations",
     "chain": "DONE eTAO/burns and lifecycle",
-    "videos": "DONE metadata and library refresh; live verification pending",
+    "videos": "DONE metadata and live latest/retained-member entries checked",
     "market": "DONE full roster and outlier dispositions",
     "sectors": "DONE no changes justified",
-    "publication": "PENDING",
-    "XRoundup": "PENDING"
+    "publication": "DONE READY and live desktop/375px checks",
+    "XRoundup": "DONE posted and public post verified"
+  },
+  "publication": {
+    "status": "DONE",
+    "commit": "92cdf5df5207de69d5b1fd7ac418ecfe770490fd",
+    "deployment": "dpl_9kZTXtEPGGEyskmm14ZPWiT3XU7e",
+    "state": "READY",
+    "verifiedAt": "2026-10-25T15:03:38.822Z",
+    "url": "https://shizzyunchained.com/subnet-news/2026-10-25",
+    "liveChecks": [
+      {
+        "path": "/subnet-news",
+        "status": 200,
+        "okay": true
+      },
+      {
+        "path": "/subnet-news/2026-10-25",
+        "status": 200,
+        "okay": true
+      },
+      {
+        "path": "/subnet-news/2026-10-24",
+        "status": 200,
+        "okay": true
+      },
+      {
+        "path": "/subnet-news/etao",
+        "status": 200,
+        "okay": true
+      },
+      {
+        "path": "/subnet-news/burns?subnet=8",
+        "status": 200,
+        "okay": true
+      },
+      {
+        "path": "/video",
+        "status": 200,
+        "okay": true
+      },
+      {
+        "path": "/api/subnets/owners",
+        "status": 200,
+        "okay": true
+      }
+    ],
+    "mobileDesktop": [
+      {
+        "name": "desktop",
+        "width": 1440,
+        "overflow": false,
+        "errors": []
+      },
+      {
+        "name": "phone",
+        "width": 375,
+        "overflow": false,
+        "errors": []
+      }
+    ],
+    "ownerHoldings": {
+      "block": 9361280,
+      "asOf": "2026-10-25T14:35:48+00:00",
+      "subnets": 128
+    },
+    "subnetHistory": "SN8/14/15/25/51/53/91 show October25; stale CDN responses rechecked with fresh requests. Older edition and history retained."
+  },
+  "xRoundup": {
+    "status": "verified",
+    "url": "https://x.com/ShizzyUnchained/status/2114373291003494555",
+    "text": "ETF filing ≠ ETF approval.\n\nToday’s Bittensor news cuts through the noise:\n• Grayscale’s amended filing\n• SN15 ORO audit report\n• SN25 UR settlement delay\n• Verified SN8, SN14 & SN53 burns\n\nGet the facts + all 19 updates:\nhttps://shizzyunchained.com/subnet-news/2026-10-25\n$TAO",
+    "checkedAt": "2026-10-25T15:08:46.002Z",
+    "identity": "@ShizzyUnchained",
+    "duplicateCheck": "Own profile checked before posting; latest daily roundup was October24. Posted once, after live verification.",
+    "evidence": "research-oct25/roundup-posted.txt",
+    "screenshot": "research-oct25/roundup-posted.png"
+  },
+  "releaseChecks": {
+    "sourceText": "PASS",
+    "dependencyAudit": "PASS",
+    "lint": "PASS",
+    "javascriptTests": 171,
+    "browserVisitorChecks": 46,
+    "burnPythonChecks": 5,
+    "newsAndHoldingsValidation": "PASS",
+    "build": "PASS",
+    "receipt": "research-oct25/daily-release-check.txt",
+    "ciFollowup": "Initial hosted CI passed45/46 visitor checks; 4x-throttled Balls frame diagnostic exceeded30seconds. Follow-up bounds frame samples with a wall-clock timer, retains mutation assertions and requires native frames; targeted rerun and full pre-push gates required."
   }
 }
