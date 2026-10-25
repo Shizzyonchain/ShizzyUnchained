@@ -1,6 +1,6 @@
 import type { WalletActivity } from "./wallet-activity";
 export type SalesTotal = { alpha: string; tao: string; trades: number };
-export type OwnerSales = { netuid: number; address: string; asOf: string; ownerCheckedAt: string; complete: boolean; sales?: WalletActivity[]; day: TradeTotal; week: TradeTotal; month: TradeTotal; burns: OwnerBurns };
+export type OwnerSales = { netuid: number; address: string; asOf: string; ownerCheckedAt: string; complete: boolean; sales?: WalletActivity[]; day: TradeTotal; week: TradeTotal; month: TradeTotal; burns: OwnerBurns; subnetBurns: OwnerBurns };
 export type BurnTotal={alpha:string;burns:number;complete:boolean};
 export type OwnerBurns={asOf:string;historyStart:string;minimumAlpha:string;day:BurnTotal;week:BurnTotal;month:BurnTotal};
 export type BurnRecord={id:string;netuid:number|null;account:string;kind:string;amountRaw:string;timestamp:string};
@@ -43,12 +43,16 @@ export function ownerSaleEvidence(rows: WalletActivity[], netuid: number, asOf: 
 }
 
 /** Only finalized explicit burns attributed to the current owner; never recycling/emissions. */
-export function sumOwnerBurns(rows:BurnRecord[],netuid:number,address:string,asOf:number,historyStart:string):OwnerBurns {
+function sumBurns(rows:BurnRecord[],netuid:number,address:string|null,asOf:number,historyStart:string):OwnerBurns {
  const start=Date.parse(historyStart);if(!Number.isFinite(asOf)||!Number.isFinite(start)||start>asOf)throw new Error("Missing burn coverage");
  const totals=[86400000,604800000,2592000000].map(duration=>({alpha:BigInt(0),burns:0,complete:start<=asOf-duration}));const seen=new Set<string>();
- for(const row of rows){const time=Date.parse(row.timestamp);if(seen.has(row.id)||row.netuid!==netuid||row.account!==address||!["alpha","buyback"].includes(row.kind)||!/^\d+$/.test(row.amountRaw)||!Number.isFinite(time)||time<start||time>asOf||BigInt(row.amountRaw)<BigInt(100000000000))continue;seen.add(row.id);
+ for(const row of rows){const time=Date.parse(row.timestamp);if(seen.has(row.id)||row.netuid!==netuid||(address!==null&&row.account!==address)||!["alpha","buyback"].includes(row.kind)||!/^\d+$/.test(row.amountRaw)||!Number.isFinite(time)||time<start||time>asOf||BigInt(row.amountRaw)<BigInt(100000000000))continue;seen.add(row.id);
   for(const [i,duration]of [86400000,604800000,2592000000].entries())if(time>=asOf-duration){totals[i].alpha+=BigInt(row.amountRaw);totals[i].burns++;}
  }
  const encode=(t:typeof totals[number]):BurnTotal=>({...t,alpha:t.alpha.toString()});
  return {asOf:new Date(asOf).toISOString(),historyStart,minimumAlpha:"100",day:encode(totals[0]),week:encode(totals[1]),month:encode(totals[2])};
 }
+
+export function sumOwnerBurns(rows:BurnRecord[],netuid:number,address:string,asOf:number,historyStart:string):OwnerBurns{return sumBurns(rows,netuid,address,asOf,historyStart);}
+/** All wallets on this subnet; includes owner burns, so never add the two totals. */
+export function sumSubnetBurns(rows:BurnRecord[],netuid:number,asOf:number,historyStart:string):OwnerBurns{return sumBurns(rows,netuid,null,asOf,historyStart);}

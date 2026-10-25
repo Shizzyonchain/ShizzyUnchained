@@ -2,7 +2,7 @@ import { NextRequest } from "next/server";
 import { getEtaoSnapshot } from "../../../lib/etao-source";
 import { requestGuard, responseCoalescer } from "../../../lib/request-protection";
 import { swapRows, validWalletAddress, type WalletActivity } from "../../../lib/wallet-activity";
-import { ownerSaleEvidence, sumOwnerActivity, sumOwnerBurns } from "../../../lib/owner-sales";
+import { ownerSaleEvidence, sumOwnerActivity, sumOwnerBurns, sumSubnetBurns } from "../../../lib/owner-sales";
 import burnArchive from "../../../data/burns.json";
 export const maxDuration=40;
 const coalesce = responseCoalescer(256, 8);
@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
   if (!address || !validWalletAddress(address) || Date.now() - Date.parse(snapshot.ownerSnapshot.checkedAt) > 30 * 60_000) return Response.json({ error: "A fresh verified owner wallet is unavailable" }, { status: 503, headers: { "Cache-Control": "no-store" } });
   // Fixed five-minute boundaries let all visitors reuse identical upstream requests.
   const end = Math.floor(Date.now() / 300_000) * 300;
-  return coalesce(`v4:${netuid}:${address}:${end}`, async () => {
+  return coalesce(`v5:${netuid}:${address}:${end}`, async () => {
     const key = process.env.TAOSTATS_API_KEY;
     if (!key) return Response.json({ error: "Owner sales temporarily unavailable" }, { status: 503 });
     try {
@@ -40,7 +40,7 @@ export async function GET(request: NextRequest) {
       };
       const [sales, buys] = await Promise.all([load(false), load(true)]);
       const complete = sales.complete && buys.complete;
-      return Response.json({ netuid, address, asOf: new Date(end * 1000).toISOString(), ownerCheckedAt: snapshot.ownerSnapshot.checkedAt, complete, burns:sumOwnerBurns(burnArchive.transactions,netuid,address,Date.parse(burnArchive.throughTime),burnArchive.historyStart), sales: ownerSaleEvidence(sales.rows, netuid, end * 1000), ...sumOwnerActivity([...sales.rows, ...buys.rows], netuid, end * 1000) }, { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=60" } });
+      return Response.json({ netuid, address, asOf: new Date(end * 1000).toISOString(), ownerCheckedAt: snapshot.ownerSnapshot.checkedAt, complete, subnetBurns:sumSubnetBurns(burnArchive.transactions,netuid,Date.parse(burnArchive.throughTime),burnArchive.historyStart), burns:sumOwnerBurns(burnArchive.transactions,netuid,address,Date.parse(burnArchive.throughTime),burnArchive.historyStart), sales: ownerSaleEvidence(sales.rows, netuid, end * 1000), ...sumOwnerActivity([...sales.rows, ...buys.rows], netuid, end * 1000) }, { headers: { "Cache-Control": "public, s-maxage=60, stale-while-revalidate=60" } });
     } catch { return Response.json({ error: "Owner sales could not be verified. Please retry shortly." }, { status: 503, headers: { "Cache-Control": "no-store", "Retry-After": "60" } }); }
   }, 60_000);
 }

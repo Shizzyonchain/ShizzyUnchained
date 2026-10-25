@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {sumOwnerBurns,ownerSaleEvidence,sumOwnerSales,sumOwnerActivity,formatSalesAmount} from '../app/lib/owner-sales.ts';
+import {sumSubnetBurns,sumOwnerBurns,ownerSaleEvidence,sumOwnerSales,sumOwnerActivity,formatSalesAmount} from '../app/lib/owner-sales.ts';
 const now=Date.parse('2026-10-23T12:00:00Z');
 const row=(id,hours,extra={})=>({id,timestamp:new Date(now-hours*3600000).toISOString(),swap:{fromToken:'SN51',toToken:'TAO',fromAmount:'9007199254740993',toAmount:'5000000000',taoValue:'5000000000',...extra}});
 test('owner sales use exact window boundaries, token scope, fee exclusions and deduplication',()=>{
@@ -42,4 +42,26 @@ test('retained burn archive covers every owner window and retains historical ver
  assert.equal(proof.sourceComplete,true);assert.deepEqual(proof.errors,[]);assert.equal(proof.events.length,62);
  for(const event of proof.events){const record=archive.transactions.find(r=>r.id===`${event.block}-${event.eventIndex}`);assert.ok(record);assert.equal(record.hash,event.hash);assert.equal(record.account,event.event.attributes[0]);assert.equal(record.amountRaw,String(event.event.attributes[2]));assert.ok(event.registeredAt<=event.block);}
  const r=sumOwnerBurns(archive.transactions,27,'unrelated',Date.parse(archive.throughTime),archive.historyStart);assert.ok(r.day.complete&&r.week.complete&&r.month.complete);
+});
+
+
+test('subnet burn totals include other wallets without double-counting the owner',()=>{
+ const burn=(id,extra={})=>({id,netuid:8,account:'owner',kind:'alpha',amountRaw:'100000000000',timestamp:new Date(now).toISOString(),...extra});
+ const rows=[burn('a'),burn('b',{account:'treasury',kind:'buyback'}),burn('c',{account:'other',amountRaw:'99000000000'}),burn('a'),burn('other-sn',{netuid:51}),burn('recycle',{kind:'recycling'}),burn('tao',{netuid:null,kind:'tao'}),burn('future',{timestamp:new Date(now+1000).toISOString()})];
+ const start=new Date(now-31*86400000).toISOString();
+ assert.equal(sumOwnerBurns(rows,8,'owner',now,start).month.alpha,'100000000000');
+ assert.equal(sumSubnetBurns(rows,8,now,start).month.alpha,'200000000000');
+ assert.equal(sumSubnetBurns(rows,8,now,start).month.burns,2);
+ assert.equal(sumSubnetBurns(rows,8,now,new Date(now-4*86400000).toISOString()).week.complete,false);
+});
+
+test('Vanta regression: all-wallet burns differ from the current owner across all three periods',async()=>{
+ const {readFile}=await import('node:fs/promises');const archive=JSON.parse(await readFile(new URL('../app/data/burns.json',import.meta.url),'utf8'));
+ const cutoff=Date.parse('2026-10-24T23:47:12Z');const start='2026-09-22T00:00:00Z';
+ const owner='5F6tnxzAAxbhaWRmeUmB63JEM3VXBNSmqb3AwYJVDStQjw8y';
+ const totals=sumSubnetBurns(archive.transactions,8,cutoff,start),wallet=sumOwnerBurns(archive.transactions,8,owner,cutoff,start);
+ assert.equal(totals.day.alpha,'507563600742');assert.equal(totals.day.burns,2);
+ assert.equal(totals.week.alpha,'11404297663360');assert.equal(totals.week.burns,20);
+ assert.equal(totals.month.alpha,'16704039876811');assert.equal(totals.month.burns,43);
+ for(const p of ['day','week','month']){assert.equal(wallet[p].alpha,'0');assert.equal(totals[p].complete,true);}
 });

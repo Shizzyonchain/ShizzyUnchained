@@ -35,6 +35,7 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
       else if (path === "/api/validators/root/history") value = { data: history(url.searchParams.get("hotkey") === keys[1] ? 1 : 0) };
       else if (path === "/api/validators/root/recommendations") value = { matches: keys.map((hotkey, index) => ({ hotkey, name: `Smoke Validator ${index + 1}`, take: .09, totalReturn: .03, drawdown: -.0314 - index * .001, volatility: .001, concentration: 1, quoteGap: 0, topFive: 1, snapshot: stamp, identityTimestamp: stamp, operatingTimestamp: stamp, start: history()[60].day, end: history()[90].day })), excluded: [], reviewed: ["Smoke Validator 1", "Smoke Validator 2"], totalBaskets: 2, historyCandidates: 2, hiddenChildren: 0, historyEnd: history()[90].day, preparedAt: stamp };
       else { unexpected.push(`${route.request().method()} ${path}`); return route.fulfill({ status: 501, json: { error: "Unmocked smoke contract" } }); }
+      if(path==="/api/subnets/owner-sales")Object.assign(value as object,{subnetBurns:{asOf:stamp,historyStart:new Date(Date.parse(stamp)-31*86400000).toISOString(),minimumAlpha:"100",day:{alpha:"507563600742",burns:2,complete:true},week:{alpha:"11404297663360",burns:20,complete:true},month:{alpha:"16704039876811",burns:43,complete:true}}});
       if(path==="/api/subnets/owner-sales")Object.assign(value as object,{month:{alpha:"100000000000",tao:"50000000000",trades:5,bought:{alpha:"500000000000",tao:"100000000000",trades:6},netAlpha:"400000000000"},burns:{asOf:stamp,historyStart:new Date(Date.parse(stamp)-4*86400000).toISOString(),minimumAlpha:"100",day:{alpha:"200000000000",burns:1,complete:true},week:{alpha:"300000000000",burns:2,complete:false},month:{alpha:"300000000000",burns:2,complete:false}}});
       return route.fulfill({ json: value });
     });
@@ -431,4 +432,13 @@ test('owner holdings are dated, exact on expansion and hidden for a different cu
  await panel.getByText('Exact balances & snapshot evidence',{exact:true}).click();await expect(panel).toContainText('685,444.757179017');await expect(panel).toContainText('Finalized block 9,357,545');await noOverflow(page);
  await page.route('**/api/subnets/owners',route=>route.fulfill({json:{checkedAt:new Date().toISOString(),block:9357546,owners:{51:keys[1]},holdings:{block:9357545,hash:'0xabc',asOf:stamp,source:'Finalized fixture',evidence:'/evidence/test.json',subnets:{51:holding}}}}));
  await page.reload();const updated=page.getByRole('region',{name:'Owner wallet holdings',exact:true});await expect(updated).toContainText('No daily holdings snapshot matches');await expect(updated.getByText('685,444.76 α',{exact:true})).toHaveCount(0);
+});
+
+test('all-wallet subnet burns switch periods without additional requests and retain owner scope',async({page,contracts})=>{
+ await page.goto('/charts/8');const activity=page.getByRole('region',{name:'Owner wallet alpha activity',exact:true}),burns=activity.getByRole('region',{name:'Subnet burns · all wallets',exact:true});
+ await expect(activity.getByText('Owner-wallet burns',{exact:true}).first()).toBeVisible();
+ await expect(burns.getByText('507.56 α',{exact:true})).toBeVisible();const before=contracts.calls.filter(p=>p==='/api/subnets/owner-sales').length;
+ await activity.getByRole('button',{name:'7D',exact:true}).click();await expect(burns.getByText('11,404.3 α',{exact:true})).toBeVisible();
+ await activity.getByRole('button',{name:'30D',exact:true}).click();await expect(burns.getByText('16,704.04 α',{exact:true})).toBeVisible();await expect(burns).toContainText('43 qualifying burns');
+ expect(contracts.calls.filter(p=>p==='/api/subnets/owner-sales').length).toBe(before);await expect(burns.getByRole('link',{name:'Burn history ↗',exact:true})).toHaveAttribute('href','/subnet-news/burns?subnet=8');await noOverflow(page);
 });
