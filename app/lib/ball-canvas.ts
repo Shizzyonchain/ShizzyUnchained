@@ -16,7 +16,7 @@ export function createBallPainter(canvas:HTMLCanvasElement, items:Label[]) {
     const shine=g.createRadialGradient(73,65,1,73,65,29);shine.addColorStop(0,"#ffffffa8");shine.addColorStop(.3,"#ffffff38");shine.addColorStop(1,"#ffffff00");g.fillStyle=shine;g.beginPath();g.arc(73,65,29,0,Math.PI*2);g.fill();skins.set(key,c);
   }
   const stripe=sheet(128),sc=stripe.getContext("2d")!;
-  sc.strokeStyle="#ffffff24";sc.lineWidth=4;sc.beginPath();sc.ellipse(64,64,26,58,-.4,-1.9,1.9);sc.stroke();
+  sc.strokeStyle="#ffffff24";sc.lineWidth=4;sc.beginPath();sc.ellipse(64,64,26,56,-.4,0,Math.PI*2);sc.closePath();sc.stroke();
   const label=(item:Label,small:boolean)=>{
     const key=`${item.id}:${small}`;let image=labels.get(key);if(image)return image;
     image=sheet(192);const g=image.getContext("2d")!;g.drawImage(skins.get(item.change>.005?"gain":item.change<-.005?"loss":"flat")!,0,0);g.setTransform(1.125,0,0,1.125,24,24);g.textAlign="center";g.fillStyle="#fff";g.shadowColor="#000";g.shadowBlur=3;
