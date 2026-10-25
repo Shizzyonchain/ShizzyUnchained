@@ -1,0 +1,51 @@
+{
+  "automation": "verify-etao-changes-every-six-hours",
+  "checkedAt": "2026-10-25T04:42:03.718463+00:00",
+  "status": "DONE",
+  "fromBlock": 9356838,
+  "toBlock": 9358292,
+  "hash": "0x77f12d462723c59fe0d42906d51858fba0ba8fc87cec63c31c596c9e70ca6fd8",
+  "throughTime": "2026-10-25T04:38:12.001000+00:00",
+  "blocksReviewed": 1455,
+  "evidence": "/evidence/2026-10-25-chain-monitor-0438.json",
+  "evidenceSha256": "df1ed3c453ee36a6a0c43fb2f53d57d7b6a7ac7bab82bb294b451f5b98b757b3",
+  "gaps": [],
+  "emissionWeightEvents": 0,
+  "allocationVectorDifferences": 0,
+  "qualifyingBurnEvents": 2,
+  "qualifyingBurns": [
+    {
+      "id": "9357550-167",
+      "block": 9357550,
+      "hash": "0xbea93955b92ddf0e7b563deab9c83be2c01b3d62d0d9dee3b63cae493bc1aa68",
+      "extrinsic": 5,
+      "eventIndex": 167,
+      "eventName": "SubtensorModule.AlphaBurned",
+      "timestamp": "2026-10-25T02:09:48+00:00",
+      "netuid": 14,
+      "name": "Cacheon",
+      "kind": "alpha",
+      "amountRaw": "1448447800000",
+      "taoSpentRaw": null,
+      "account": "5GJeoh9ecN9vLJhcBo5rGT1DiVGx4zMpkmvjyVb5Z8GDb8NM"
+    },
+    {
+      "id": "9357759-161",
+      "block": 9357759,
+      "hash": "0xc4a9129d9651b92363d2190241418fd96b4358bd1cbdd599aa640644ae0cea30",
+      "extrinsic": 7,
+      "eventIndex": 161,
+      "eventName": "SubtensorModule.AlphaBurned",
+      "timestamp": "2026-10-25T02:51:36+00:00",
+      "netuid": 53,
+      "name": "engy",
+      "kind": "buyback",
+      "amountRaw": "4633974128881",
+      "taoSpentRaw": "146690000000",
+      "account": "5Ccg2rH1xWZ8cgDoQy8fbhyfjTCwffeBChGpyNrcDYcinpLZ"
+    }
+  ],
+  "newsDisposition": "October 25 Eastern edition does not exist; retained these verified SN14 and SN53 leads for the next full daily report. No one-story edition or extra X post. Prior editions preserved.",
+  "validation": "5 burn tests, news/owner-holdings validation and full release gate passed; 44 desktop/phone browser checks. Historical UTF-8 labels preserved. Pending production verification.",
+  "pendingObservationsReview": "Live eTAO page reports no pending snapshot differences; complete finalized scan found no allocation events or vector differences."
+}
