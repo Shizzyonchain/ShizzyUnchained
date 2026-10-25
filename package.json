@@ -7,12 +7,12 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/publish-subnet-news.mjs --check && node scripts/generate-social-previews.mjs && next build",
+    "build": "npm run validate:subnet-news && node scripts/generate-social-previews.mjs && next build",
     "start": "next start",
     "lint": "eslint . --ignore-pattern .next",
     "test:bubbles": "node --test --experimental-strip-types tests/bubble-timeframe.test.mjs",
     "test:charts": "node --test --experimental-strip-types tests/chart-data.test.mjs tests/chart-drawings.test.mjs",
-    "validate:subnet-news": "node scripts/publish-subnet-news.mjs --check",
+    "validate:subnet-news": "node scripts/publish-subnet-news.mjs --check && npm run validate:owner-holdings",
     "publish:subnet-news": "node scripts/publish-subnet-news.mjs",
     "predev": "node scripts/generate-social-previews.mjs",
     "check:news-links": "node scripts/check-news-links.mjs",
@@ -20,7 +20,8 @@
     "build:smoke": "npm run validate:subnet-news && node scripts/generate-social-previews.mjs && node tests/browser/build.mjs",
     "test:smoke": "playwright test",
     "check:source-text": "node scripts/check-source-text.mjs",
-    "verify:release": "npm run check:source-text && npm audit --omit=dev --audit-level=high && npm run lint && npm test && npm run build:smoke && npm run test:smoke"
+    "verify:release": "npm run check:source-text && npm audit --omit=dev --audit-level=high && npm run lint && npm test && npm run build:smoke && npm run test:smoke",
+    "validate:owner-holdings": "node --experimental-strip-types scripts/check-owner-holdings.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

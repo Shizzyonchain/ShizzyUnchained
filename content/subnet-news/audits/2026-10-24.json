@@ -2915,5 +2915,17 @@
     ],
     "method": "Complete paginated index discovery; every qualifying individual burn independently checked on finalized RPC for exact args, success, block hash/time, runtime and historical identity/registration. Older interval is index-dependent, not a full-block replay. Oct20 onward full-block receipts unchanged.",
     "editorialOutcome": "Historical archive backfill for owner 24H/7D/30D totals, not new news or a new tweet. Threshold 100 native tokens per individual event; no emissions, fees or recycling."
+  },
+  "ownerHoldings": {
+    "status": "DONE",
+    "block": 9357545,
+    "hash": "0x0f9e0e35ebe12d8078431f784a215e44e620c6efb33cad26db107ba19333eb76",
+    "asOf": "2026-10-25T02:08:48+00:00",
+    "checkedAt": "2026-10-25T02:11:16.471490+00:00",
+    "subnets": 128,
+    "evidence": "/evidence/owner-holdings-9357545.json",
+    "method": "Finalized Subtensor StakeInfoRuntimeApi stake availability and System.Account; one block for every wallet",
+    "gaps": [],
+    "disposition": "New daily holdings snapshot for owner wallet panels; no news story or additional tweet."
   }
 }

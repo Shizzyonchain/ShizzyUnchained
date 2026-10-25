@@ -422,3 +422,13 @@ test('compact subnet news keeps every loaded story and reveals older pages immed
  await expect(news.getByRole('heading',{name:'Retained story 6',exact:true})).toBeVisible();
  await expect(news.getByRole('heading',{name:'Retained story 1',exact:true})).toBeVisible();await noOverflow(page);
 });
+
+test('owner holdings are dated, exact on expansion and hidden for a different current owner',async({page})=>{
+ const holding={address:keys[0],registeredAt:1,alphaRaw:'685444757179017',lockedAlphaRaw:'655356695260173',unstakableAlphaRaw:'30088061918844',freeTaoRaw:'217058340',frozenTaoRaw:'0',rootTaoRaw:'273004165'};
+ await page.route('**/api/subnets/owners',route=>route.fulfill({json:{checkedAt:new Date().toISOString(),block:9357545,owners:{51:keys[0]},holdings:{block:9357545,hash:'0xabc',asOf:stamp,source:'Finalized fixture',evidence:'/evidence/test.json',subnets:{51:holding}}}}));
+ await page.goto('/charts/51');const panel=page.getByRole('region',{name:'Owner wallet holdings',exact:true});
+ await expect(panel.getByText('685,444.76 α',{exact:true})).toBeVisible();await expect(panel.getByText('0.22 TAO',{exact:true})).toBeVisible();
+ await panel.getByText('Exact balances & snapshot evidence',{exact:true}).click();await expect(panel).toContainText('685,444.757179017');await expect(panel).toContainText('Finalized block 9,357,545');await noOverflow(page);
+ await page.route('**/api/subnets/owners',route=>route.fulfill({json:{checkedAt:new Date().toISOString(),block:9357546,owners:{51:keys[1]},holdings:{block:9357545,hash:'0xabc',asOf:stamp,source:'Finalized fixture',evidence:'/evidence/test.json',subnets:{51:holding}}}}));
+ await page.reload();const updated=page.getByRole('region',{name:'Owner wallet holdings',exact:true});await expect(updated).toContainText('No daily holdings snapshot matches');await expect(updated.getByText('685,444.76 α',{exact:true})).toHaveCount(0);
+});
