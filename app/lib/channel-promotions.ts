@@ -1,10 +1,10 @@
 export const youtubeMembershipUrl = "https://www.youtube.com/channel/UCzp_1hHByX_XBnRRJPucEIw/join";
 
 export const latestMemberVideo = {
-  id: "PmO2ELJ4q2g",
-  title: "10/21/26 Bittensor News Updates & TAO Price Action | Members Video",
-  meta: "8:01 · Members-only video · Published October 21, 2026",
-  publishedLabel: "October 21",
+  id: "96Edr_DLpcE",
+  title: "10/24/26 Bittensor News Updates & TAO Price Action | Members Video",
+  meta: "14:54 · Members-only video · Published October 24, 2026",
+  publishedLabel: "October 24",
   membersOnly: true,
 };
 
