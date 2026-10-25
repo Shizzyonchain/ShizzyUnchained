@@ -1210,8 +1210,10 @@ export function Dashboard({
                             </div>
                           </div>
                           <>
-                              {!showTaoChart && <div className="onchain-activity chart-onchain-activity"><div><strong>On-chain buying activity</strong><span>SN{selected} · Buys and sells on TaoFlows</span></div><div className="chart-subnet-actions"><a className="chart-snapshot-jump" href="#subnet-market-snapshot">Market snapshot ↓</a><a className="chart-snapshot-jump" href="#subnet-recent-news">Recent news ↓</a><a href={`https://taoflows.app/flows?subnets=${selected}`} target="_blank" rel="noopener noreferrer" aria-label={`View SN${selected} buys and sells on TaoFlows (opens in a new tab)`}><span className="onchain-desktop-label">View buys &amp; sells ↗</span><span className="onchain-mobile-label">TaoFlows ↗</span></a></div></div>}
+                              {!showTaoChart && <nav className="subnet-research-nav" aria-label="Subnet sections"><a href="#subnet-price-chart">Chart</a><a href="#subnet-market-snapshot">Market snapshot ↓</a><a href="#subnet-owner-activity">Owner activity ↓</a><a href="#subnet-recent-news">Recent news ↓</a><a className="subnet-flow-link" href={`https://taoflows.app/flows?subnets=${selected}`} target="_blank" rel="noopener noreferrer" aria-label={`View SN${selected} buys and sells on TaoFlows (opens in a new tab)`}>TaoFlows ↗</a></nav>}
+                              <div id="subnet-price-chart" tabIndex={-1}>
                               <TradingChart assetOptions={[{ value: "tao", label: "TAO · Bittensor" }, ...Array.from({ length: 128 }, (_, index) => { const netuid = index + 1; const row = rawRows.find(row => row.netuid === netuid); return { value: String(netuid), label: `SN${netuid} · ${row?.name || "Unknown"}` }; })]} onAssetChange={asset => asset === "tao" ? openTaoChart() : openSubnetChart(Number(asset))} onLoadEarlier={loadEarlierHistory} earlierLoading={earlierHistory.key === requestedChartKey && earlierHistory.loading} earlierDone={earlierHistory.key === requestedChartKey && earlierHistory.done} earlierError={earlierHistory.key === requestedChartKey ? earlierHistory.error : ""} historySession={requestedChartKey} historicalDate={chartDate} onHistoryDate={setChartDate} assetLabel={showTaoChart ? "TAO · Bittensor" : `SN${selected} · ${active?.name || "Unknown"}`} drawingId={showTaoChart ? "tao" : `sn${selected}`} onCurrencyChange={showTaoChart ? undefined : setCurrency} volumeAvailable={chartData.method !== "taostats-price" && chartData.method !== "extended-price"} volumeUnit={chartData.method === "taostats-alpha" ? "alpha" : "TAO"} key={showTaoChart ? "tao" : selected} appearance={appearance} bars={chartBars} currency={chartCurrency} timeframe={timeframe} onTimeframeChange={setTimeframe} loading={chartLoading} error={chartError} note={chartNote} onRetry={() => { candleCache.delete(`${showTaoChart ? "tao" : selected}:${timeframe}${chartDate === null ? "" : `:${chartDate}`}`); candleCache.delete(`tao:${timeframe}${chartDate === null ? "" : `:${chartDate}`}`); setChartRetry(value => value + 1); }} />
+                              </div>
                               {chartRangeChange != null && <p className="chart-range-return">Available history <strong className={chartRangeChange >= 0 ? "positive" : "negative"}>{chartRangeChange > 0 ? "+" : ""}{chartRangeChange.toFixed(2)}%</strong> · {chartCurrency.toUpperCase()}</p>}
                               {showTaoChart ? (
                                 <div className="chart-stats">
@@ -1228,21 +1230,22 @@ export function Dashboard({
                               ) : (
                                 <section id="subnet-market-snapshot" tabIndex={-1} className="subnet-market-facts" aria-label="Subnet market information">
                                   <div className="subnet-facts-heading"><h2>Market snapshot</h2><span>{currency.toUpperCase()} · {dataState === "stale" ? "Delayed feed" : "Finalized data"}</span></div>
-                                  <dl className="subnet-facts-grid">
-                                    <div><dt>Price</dt><dd>{money(active?.price_tao, true)}</dd></div>
+                                  <dl className="subnet-facts-grid subnet-key-metrics">
                                     <div><dt>Market cap</dt><dd>{money(active?.market_cap_tao)}</dd></div>
-                                    <div><dt>Emission share</dt><dd className={changeClass(active?.emission_change_24h)}>{active?.emission_pct == null ? "—" : `${fmt(active.emission_pct, 4)}%`}</dd><small>of network emissions</small></div>
-                                    <div><dt>Emission change · 24h</dt><dd className={changeClass(active?.emission_change_24h)}>{active?.emission_change_24h == null ? "—" : `${Number(active.emission_change_24h) > 0 ? "+" : ""}${fmt(active.emission_change_24h, 4)} pts`}</dd><small>percentage points</small></div>
-                                    <div><dt>Pool TAO reserve</dt><dd>{money(active?.tao_reserve)}</dd></div>
                                     <div><dt>Trading volume · 24h</dt><dd>{money(active?.volume_24h_tao)}</dd></div>
-                                    <div className="subnet-yield-fact"><dt>Estimated staker APY</dt><dd><SubnetYield row={active || {}} now={fxNow} detail /></dd></div>
+                                    <div><dt>Pool TAO reserve</dt><dd>{money(active?.tao_reserve)}</dd></div>
+                                    <div><dt>Emission share</dt><dd className={changeClass(active?.emission_change_24h)}>{active?.emission_pct == null ? "—" : `${fmt(active.emission_pct, 4)}%`}</dd><small>of network emissions</small></div>
+                                    <div className="subnet-yield-fact"><dt>Estimated staker APY</dt><dd><SubnetYield row={active || {}} now={fxNow} /></dd><small>Subnet-wide estimate</small></div>
                                     <div><dt>Locked alpha</dt><dd>{active?.conviction_locked_alpha == null ? "—" : `${compactAlpha(active.conviction_locked_alpha)} α`}</dd><small>{active?.conviction_locked_pct == null ? "Share unavailable" : `${fmt(active.conviction_locked_pct, 2)}% of α-out`}</small></div>
+                                  </dl>
+                                  <div className="subnet-return-grid" aria-label={`Price changes in ${currency.toUpperCase()}`}>{[["10 minutes", active?.change_10m], ["1 hour", active?.change_1h], ["24 hours", active?.change_24h], ["7 days", active?.change_7d]].map(([label, value]) => <div key={label}><span>{label}</span><strong className={changeClass(value)}>{value == null ? "—" : `${Number(value) > 0 ? "+" : ""}${fmt(value)}%`}</strong></div>)}</div>
+                                  <details className="subnet-more-metrics"><summary>More metrics &amp; staking basis</summary><dl className="subnet-facts-grid">                                    <div><dt>Price</dt><dd>{money(active?.price_tao, true)}</dd></div>
+                                    <div><dt>Emission change · 24h</dt><dd className={changeClass(active?.emission_change_24h)}>{active?.emission_change_24h == null ? "—" : `${Number(active.emission_change_24h) > 0 ? "+" : ""}${fmt(active.emission_change_24h, 4)} pts`}</dd><small>percentage points</small></div>
                                     <div><dt>Staked / outstanding alpha</dt><dd>{active?.alpha_out == null ? "—" : `${compactAlpha(active.alpha_out)} α`}</dd><small>SubnetAlphaOut</small></div>
                                     <div><dt>Estimated deregistration payout</dt><dd>{active?.liquidation_price_tao == null ? "—" : money(active.liquidation_price_tao, true)}</dd><small>per alpha · conditional estimate</small></div>
                                     <div><dt>Payout vs market price</dt><dd className={changeClass(active?.liquidation_diff_pct)}>{liquidationPercent(active?.liquidation_diff_pct)}</dd><small>only on deregistration</small></div>
                                     <div><dt>Liquidity flow · 24h</dt><dd className={changeClass(active?.liquidity_change_24h)}>{active?.liquidity_change_24h == null ? "—" : `${Number(active.liquidity_change_24h) > 0 ? "+" : ""}${fmt(active.liquidity_change_24h)}%`}</dd><small>TAO reserve change</small></div>
-                                  </dl>
-                                  <div className="subnet-return-grid" aria-label={`Price changes in ${currency.toUpperCase()}`}>{[["10 minutes", active?.change_10m], ["1 hour", active?.change_1h], ["24 hours", active?.change_24h], ["7 days", active?.change_7d]].map(([label, value]) => <div key={label}><span>{label}</span><strong className={changeClass(value)}>{value == null ? "—" : `${Number(value) > 0 ? "+" : ""}${fmt(value)}%`}</strong></div>)}</div>
+                                    <div className="subnet-yield-basis"><dt>Estimated staker APY</dt><dd><SubnetYield row={active || {}} now={fxNow} detail /></dd></div></dl></details>
                                   <details className="subnet-facts-guide"><summary>What these figures mean</summary><p>Market cap is the current alpha price multiplied by the circulating supply used by our market feed. Pool reserve is TAO held in the subnet pool, shown in the selected currency; it is not the amount you can sell without price impact.</p><p>Emission share is allocation, not price performance. Its color tracks the 24-hour change in percentage points. Estimated subnet-wide APY compounds recent net staking rewards; APR does not compound. Both exclude token-price changes and are not a specific validator’s yield.</p><p>Locked alpha is a portion of SubnetAlphaOut, not matured conviction. {liquidationExplanation}</p><p>Price returns use rolling periods in the selected currency. Missing figures remain unavailable. Snapshot: {active?.time ? new Date(active.time).toUTCString() : "Unavailable"}. Figures use the existing market feed; opening this panel makes no additional market-data requests.</p></details>
                                 </section>
                               )}
@@ -1253,8 +1256,7 @@ export function Dashboard({
                                   <p className="eyebrow">Owner-submitted on-chain metadata</p>
                                   <h2>What this subnet does</h2>
                                   {active.description ? <p>{active.description}</p> : <p className="metadata-empty">The subnet owner has not published a description on-chain yet.</p>}
-                                  {active.additional && <p className="project-additional">{active.additional}</p>}
-                                  <SubnetOwner key={active.netuid} netuid={active.netuid} />
+                                  {active.additional && <details className="subnet-metadata-details"><summary>Full project metadata &amp; links</summary><p className="project-additional">{active.additional}</p></details>}
                                 </div>
                                 <div className="project-links">
                                   {safeProjectUrl(active.website) && (
@@ -1280,6 +1282,7 @@ export function Dashboard({
                                 </div>
                               </div>
                           )}
+                          {!showTaoChart && active && <SubnetOwner key={active.netuid} netuid={active.netuid} />}
                           {!showTaoChart && active && <SubnetNewsPanel key={active.netuid} netuid={active.netuid} />}
                         </>
                       )}

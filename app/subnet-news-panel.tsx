@@ -8,6 +8,7 @@ type History = { entries: SubnetTimelineEntry[]; total: number; nextOffset: numb
 const dateLabel = (date: string) => new Date(`${date}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
 function safeSource(url: string) { return /^https?:\/\//i.test(url) || /^\/subnet-news\/\d{4}-\d{2}-\d{2}$/.test(url); }
 export function SubnetNewsPanel({ netuid }: { netuid: number }) {
+  const [showAll,setShowAll]=useState(false);
   const [history, setHistory] = useState<History | null>(null);
   const [offset, setOffset] = useState(0);
   const [retry, setRetry] = useState(0);
@@ -28,11 +29,12 @@ export function SubnetNewsPanel({ netuid }: { netuid: number }) {
     {loading && <p role="status">Loading subnet news…</p>}
     {error && <p role="alert">{error} <button onClick={() => { setError(""); setLoading(true); setRetry(value => value + 1); }}>Retry news</button></p>}
     {history?.entries.length === 0 && <p>No published updates for this subnet in the archive yet.</p>}
-    <div className="subnet-news-timeline">{history?.entries.map(entry => <article key={entry.id}>
+    <div className="subnet-news-timeline">{history?.entries.slice(0,showAll?undefined:3).map(entry => <article key={entry.id}>
       <div className="subnet-news-meta"><time dateTime={entry.date}>{dateLabel(entry.date)}</time><span>{entry.kind === "archive-name" ? "Archive name change" : `SN${netuid} · ${entry.name}`}</span><span>{entry.status}</span>{entry.rating && <span aria-label={`${entry.rating} out of 5 stars`}>{"★".repeat(entry.rating)}</span>}</div>
       <h3>{entry.headline}</h3><p>{entry.summary.length > 300 ? `${entry.summary.slice(0, 300)}…` : entry.summary}</p>
       <details><summary>Read update &amp; sources</summary>{entry.summary.length > 300 && <p>{entry.summary}</p>}<div className="subnet-news-source-links">{entry.sources.filter(source => safeSource(source.url)).map(source => <NewsSourceLink key={source.url} source={source} />)}<Link href={`/subnet-news/${entry.date}`}>Read the {dateLabel(entry.date)} report →</Link></div></details>
     </article>)}</div>
-    {history?.nextOffset !== null && history?.nextOffset !== undefined && <button className="subnet-news-more" disabled={loading} onClick={() => { setError(""); setLoading(true); setOffset(history.nextOffset!); }}>Load older updates</button>}
+    {!showAll&&history&&history.entries.length>3&&<button className="subnet-news-more" onClick={()=>setShowAll(true)}>Show {history.entries.length-3} more updates</button>}
+    {(showAll||!history||history.entries.length<=3)&&history?.nextOffset !== null && history?.nextOffset !== undefined && <button className="subnet-news-more" disabled={loading} onClick={() => { setError(""); setLoading(true); setOffset(history.nextOffset!); }}>Load older updates</button>}
   </section>;
 }

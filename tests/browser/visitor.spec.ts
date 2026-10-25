@@ -83,8 +83,9 @@ test("market search, clear and chart navigation retain useful chart controls", a
   const ownerActivity = page.getByRole("region", { name: "Owner wallet alpha activity", exact: true });
   await expect(ownerActivity).toContainText("Net buying");
   await expect(ownerActivity).toContainText("+12.5");
+  await ownerActivity.getByRole("group",{name:"Owner activity period",exact:true}).getByRole("button",{name:"7D",exact:true}).click();
   await expect(ownerActivity).toContainText("Net selling");
-  await expect(ownerActivity).toContainText("-15");
+  await expect(ownerActivity).toContainText("−15");
   const newsJump=page.getByRole("link",{name:"Recent news ↓",exact:true});await expect(newsJump).toHaveAttribute("href","#subnet-recent-news");await newsJump.click();
   const news=page.getByRole("region",{name:"Recent news & history",exact:true});await expect(news.getByRole("heading",{name:"Recent news & history",exact:true})).toBeInViewport();expect((await news.boundingBox())!.y).toBeGreaterThan(80);
   await noOverflow(page);
@@ -382,9 +383,29 @@ test("hourly trading refresh retries independently and never substitutes daily t
  failed=true;await page.clock.fastForward(16*60000);await expect(signals.getByText("delayed, not live",{exact:false})).toBeVisible();await page.clock.fastForward(345*60000);await expect(signals.getByText("Trading data unavailable",{exact:true})).toBeVisible();await expect(signals.getByText("43% buy volume",{exact:true})).toHaveCount(0);
 });
 
-test("owner activity exposes a month and separates verified burns from trading",async({page,isMobile})=>{
+test("owner activity exposes a month and separates verified burns from trading",async({page})=>{
  await page.goto("/charts/51");const panel=page.getByRole("region",{name:"Owner wallet alpha activity",exact:true});await expect(panel.getByRole("heading",{name:"Owner wallet buys, sells & burns",exact:true})).toBeVisible();
- if(isMobile)await panel.getByRole("group",{name:"Owner activity period",exact:true}).getByRole("button",{name:"30D",exact:true}).click();
- await expect(panel.getByText("Last 30 days",{exact:true})).toBeVisible();await expect(panel.getByText("300 α or more",{exact:true}).last()).toBeVisible();await expect(panel.getByText("+400 α",{exact:true})).toBeVisible();await expect(panel).toContainText("partial history");await expect(panel).toContainText("Burns through");
+ await panel.getByRole("group",{name:"Owner activity period",exact:true}).getByRole("button",{name:"30D",exact:true}).click();
+ await expect(panel.getByText("Last 30 days",{exact:true})).toBeVisible();await expect(panel.getByText("300 α or more",{exact:true}).first()).toBeVisible();await expect(panel.getByText("+400 α",{exact:true}).first()).toBeVisible();await expect(panel).toContainText("partial history");await expect(panel).toContainText("Burns through");
+ await noOverflow(page);
+});
+
+test("subnet research stays compact and preserves advanced metrics without extra owner requests",async({page})=>{
+ let ownerRequests=0;page.on("request",request=>{if(request.url().includes('/api/subnets/owner-sales?'))ownerRequests++;});
+ await page.goto('/charts/51');
+ const snapshot=page.getByRole('region',{name:'Subnet market information',exact:true});
+ expect(await snapshot.locator('.subnet-key-metrics>div').count()).toBe(6);
+ await expect(snapshot.getByText('Estimated deregistration payout',{exact:true})).not.toBeVisible();
+ await snapshot.getByText('More metrics & staking basis',{exact:true}).click();
+ await expect(snapshot.getByText('Estimated deregistration payout',{exact:true})).toBeVisible();
+ await expect(snapshot.getByText('Staked / outstanding alpha',{exact:true})).toBeVisible();
+ const owner=page.getByRole('region',{name:'Owner wallet alpha activity',exact:true});
+ await expect(owner.getByText('Net buying',{exact:true})).toBeVisible();const before=ownerRequests;
+ await owner.getByRole('button',{name:'30D',exact:true}).click();
+ await expect(owner.getByText('+400 α',{exact:true}).first()).toBeVisible();expect(ownerRequests).toBe(before);
+ await owner.getByText('Exact amounts, transactions & coverage',{exact:true}).click();
+ await expect(owner.getByText(/Burns through/)).toBeVisible();
+ await page.getByRole('link',{name:'Owner activity ↓',exact:true}).click();
+ await expect(page.getByRole('region',{name:'Subnet owner research',exact:true})).toBeInViewport();
  await noOverflow(page);
 });
