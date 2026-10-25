@@ -2899,5 +2899,21 @@
       "archiveUpdated": true,
       "newsDisposition": "No new qualifying event; no story or additional tweet. Existing daily edition preserved. Owner burn stats identify archive cutoff, current coldkey, 100-alpha per-event minimum, and partial older history."
     }
-  ]
+  ],
+  "ownerBurnBackfill": {
+    "status": "DONE",
+    "checkedAt": "2026-10-25T00:19:53.447472+00:00",
+    "start": "2026-09-22T00:00:00+00:00",
+    "end": "2026-10-20T16:23:12+00:00",
+    "indexedAlphaEvents": 5958,
+    "indexedTaoBurns": 0,
+    "qualifyingEventsChainVerified": 62,
+    "existingRecordsPreserved": 681,
+    "evidence": [
+      "/evidence/burn-index-backfill-2026-09-22--2026-10-20.json",
+      "/evidence/burn-backfill-finalized-2026-09-22--2026-10-20.json"
+    ],
+    "method": "Complete paginated index discovery; every qualifying individual burn independently checked on finalized RPC for exact args, success, block hash/time, runtime and historical identity/registration. Older interval is index-dependent, not a full-block replay. Oct20 onward full-block receipts unchanged.",
+    "editorialOutcome": "Historical archive backfill for owner 24H/7D/30D totals, not new news or a new tweet. Threshold 100 native tokens per individual event; no emissions, fees or recycling."
+  }
 }

@@ -32,3 +32,14 @@ test('owner burns are exact, wallet/subnet scoped, deduplicated and thresholded 
  assert.equal(r.day.alpha,'200000000000');assert.equal(r.week.alpha,'400000000000');assert.equal(r.month.alpha,'600000000000');assert.equal(r.month.burns,3);assert.equal(r.month.complete,true);
  const partial=sumOwnerBurns([burn('a',1)],51,'owner',now,new Date(now-4*86400000).toISOString());assert.equal(partial.day.complete,true);assert.equal(partial.week.complete,false);assert.equal(partial.month.complete,false);
 });
+
+test('retained burn archive covers every owner window and retains historical verification evidence',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const archive=JSON.parse(await readFile(new URL('../app/data/burns.json',import.meta.url),'utf8'));
+ assert.ok(Date.parse(archive.throughTime)-Date.parse(archive.historyStart)>=30*86400000);
+ assert.equal(archive.historicalReview.qualifyingVerified,62);
+ const proof=JSON.parse(await readFile(new URL('../public'+archive.historicalReview.evidence,import.meta.url),'utf8'));
+ assert.equal(proof.sourceComplete,true);assert.deepEqual(proof.errors,[]);assert.equal(proof.events.length,62);
+ for(const event of proof.events){const record=archive.transactions.find(r=>r.id===`${event.block}-${event.eventIndex}`);assert.ok(record);assert.equal(record.hash,event.hash);assert.equal(record.account,event.event.attributes[0]);assert.equal(record.amountRaw,String(event.event.attributes[2]));assert.ok(event.registeredAt<=event.block);}
+ const r=sumOwnerBurns(archive.transactions,27,'unrelated',Date.parse(archive.throughTime),archive.historyStart);assert.ok(r.day.complete&&r.week.complete&&r.month.complete);
+});

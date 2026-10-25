@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/publish-subnet-news.mjs --check && node scripts/generate-social-previews.mjs && node scripts/collect-burn-backfill.mjs && next build",
+    "build": "node scripts/publish-subnet-news.mjs --check && node scripts/generate-social-previews.mjs && next build",
     "start": "next start",
     "lint": "eslint . --ignore-pattern .next",
     "test:bubbles": "node --test --experimental-strip-types tests/bubble-timeframe.test.mjs",
