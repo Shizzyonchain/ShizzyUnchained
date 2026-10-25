@@ -16,7 +16,13 @@ export function createBallPainter(canvas:HTMLCanvasElement, items:Label[]) {
     const shine=g.createRadialGradient(73,65,1,73,65,29);shine.addColorStop(0,"#ffffffa8");shine.addColorStop(.3,"#ffffff38");shine.addColorStop(1,"#ffffff00");g.fillStyle=shine;g.beginPath();g.arc(73,65,29,0,Math.PI*2);g.fill();skins.set(key,c);
   }
   const stripe=sheet(128),sc=stripe.getContext("2d")!;
-  sc.strokeStyle="#ffffff24";sc.lineWidth=4;sc.beginPath();sc.ellipse(64,64,26,56,-.4,0,Math.PI*2);sc.closePath();sc.stroke();
+  // Bake a thin painted seam with a soft falloff into the unlit side.
+  const ringShade=sc.createLinearGradient(28,30,100,106);
+  ringShade.addColorStop(0,"rgba(255,255,255,.10)");
+  ringShade.addColorStop(.45,"rgba(255,255,255,.055)");
+  ringShade.addColorStop(.75,"rgba(255,255,255,.018)");
+  ringShade.addColorStop(1,"rgba(255,255,255,.002)");
+  sc.strokeStyle=ringShade;sc.lineWidth=1.5;sc.beginPath();sc.ellipse(64,64,26,56,-.4,0,Math.PI*2);sc.closePath();sc.stroke();
   const label=(item:Label,small:boolean)=>{
     const key=`${item.id}:${small}`;let image=labels.get(key);if(image)return image;
     image=sheet(192);const g=image.getContext("2d")!;g.drawImage(skins.get(item.change>.005?"gain":item.change<-.005?"loss":"flat")!,0,0);g.setTransform(1.125,0,0,1.125,24,24);g.textAlign="center";g.fillStyle="#fff";g.shadowColor="#000";g.shadowBlur=3;
