@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import type { ScreenerRow } from "./dashboard";
 import { formatSalesAmount } from "./lib/owner-sales";
 import { SubnetYield } from "./subnet-yield";
@@ -15,6 +15,10 @@ const compact=(value:number|null)=>value===null?"—":value.toLocaleString("en-U
 const stamp=(value:string|undefined)=>value&&Number.isFinite(Date.parse(value))?new Date(value).toLocaleString("en-US",{timeZone:"UTC",month:"short",day:"numeric",hour:"2-digit",minute:"2-digit",hour12:false})+" UTC":"Unavailable";
 function Fact({label,help,children,className=""}:{label:string;help?:string;children:ReactNode;className?:string}){
   return <div className={`${styles.fact} ${className}`}><dt>{help?<details className={styles.help}><summary>{label}</summary><p>{help}</p></details>:label}</dt><dd>{children}</dd></div>;
+}
+function SnapshotLogo({netuid,url}:{netuid:number;url?:string}){
+  const [failed,setFailed]=useState(false);
+  return !failed&&url&&/^https:\/\//.test(url)?<Image src={url} alt="" width={44} height={44} unoptimized className={styles.logo} onError={()=>setFailed(true)}/>:<span className={styles.badge}>SN{netuid}</span>;
 }
 export function SubnetMarketSnapshot({row,rows,currency,taoUsd,delayed,now}:{row:ScreenerRow|undefined;rows:ScreenerRow[];currency:"usd"|"tao";taoUsd:number;delayed:boolean;now:number}){
   const {snapshot,error}=useOwners();
@@ -36,11 +40,11 @@ export function SubnetMarketSnapshot({row,rows,currency,taoUsd,delayed,now}:{row
   return <section id="subnet-market-snapshot" tabIndex={-1} className={styles.card} aria-label="Subnet market information">
     <div className={styles.heading}><h2>Market snapshot</h2><span>{delayed?"Delayed market feed":"Market feed"} · USD / TAO</span></div>
     <div className={styles.identity}>
-      {row.logo_url&&/^https:\/\//.test(row.logo_url)?<Image src={row.logo_url} alt="" width={44} height={44} unoptimized className={styles.logo}/>:<span className={styles.badge}>SN{row.netuid}</span>}
+      <SnapshotLogo key={`${row.netuid}:${row.logo_url}`} netuid={row.netuid} url={row.logo_url}/>
       <div><h3>{row.name||"Unknown"} <span>SN{row.netuid}</span></h3>{row.description&&<p>{row.description}</p>}</div>
     </div>
     <dl className={styles.top}>
-      <Fact label="Rank" help="Rank by market capitalization in TAO across available subnet rows. Ties share a rank. Missing market caps are excluded; this is not emission rank."><span className={styles.accent}>{rank?`#${rank.rank}`:"—"}</span><small>{rank?`of ${rank.count} priced subnets`:"Market cap unavailable"}</small></Fact>
+      <Fact label="Market-cap rank" help="Rank by market capitalization in TAO across available subnet rows. Ties share a rank. Missing market caps are excluded; this is not emission rank."><span className={styles.accent}>{rank?`#${rank.rank}`:"—"}</span><small>{rank?`of ${rank.count} priced subnets`:"Market cap unavailable"}</small></Fact>
       <Fact label="Market cap" help="Current alpha price multiplied by the circulating supply used by the shared market feed. This differs from pool plus outstanding alpha.">{dual(cap)}</Fact>
       <Fact label="FDV" help={`Hypothetical current spot price × the nominal ${ALPHA_CAP.toLocaleString("en-US")} alpha protocol cap. Not an exit quote, forecast or circulating market cap.`}>{dual(numbers.fdv)}</Fact>
       <Fact label="Dereg. payout" help={liquidationExplanation}>{dual(payout,true)}</Fact>
