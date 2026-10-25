@@ -350,7 +350,7 @@ test("full ball map frame profile", async ({ page }, testInfo) => {
 });
 
 
-test("trading card loads honestly and retains only a fresh snapshot during retry",async({page})=>{
+test("trading card loads honestly and retains a timestamped snapshot during an outage",async({page})=>{
  await page.clock.install();
  let release:()=>void=()=>{};const first=new Promise<void>(resolve=>{release=resolve;});let calls=0,failed=false;
  await page.route("**/api/market-signals",async route=>{calls++;if(calls===1)await first;if(failed)return route.fulfill({json:{buying:null,sectors:[],tags:[]}});return route.fallback();});
@@ -361,7 +361,7 @@ test("trading card loads honestly and retains only a fresh snapshot during retry
  failed=true;await page.clock.fastForward(60000);
  await expect(signals.getByText(/Refresh delayed/)).toBeVisible();await expect(signals.getByText("60% buy volume",{exact:true})).toBeVisible();
  failed=false;await page.clock.fastForward(15000);await expect(signals.getByText(/Refresh delayed/)).toHaveCount(0);
- failed=true;await page.clock.fastForward(16*60000);await expect(signals.getByText("Trading data unavailable",{exact:true})).toBeVisible();
+ failed=true;await page.clock.fastForward(16*60000);await expect(signals.getByText("delayed, not live",{exact:false})).toBeVisible();await page.clock.fastForward(345*60000);await expect(signals.getByText("Trading data unavailable",{exact:true})).toBeVisible();
  await expect(signals.getByText("60% buy volume",{exact:true})).toHaveCount(0);
  const response=await page.request.get("/api/market-signals?period=24h");expect((await response.json()).buying).toBeNull();expect(response.headers()["cache-control"]).toBe("no-store");
 });
@@ -379,7 +379,7 @@ test("hourly trading refresh retries independently and never substitutes daily t
  await period.getByRole("button",{name:"24H",exact:true}).click();await expect(signals.getByText("60% buy volume",{exact:true})).toBeVisible();
  await period.getByRole("button",{name:"1H",exact:true}).click();await expect(signals.getByText("43% buy volume",{exact:true})).toBeVisible();
  const previous=calls;await page.evaluate(()=>document.dispatchEvent(new Event("visibilitychange")));await expect.poll(()=>calls).toBeGreaterThan(previous);
- failed=true;await page.clock.fastForward(16*60000);await expect(signals.getByText("Trading data unavailable",{exact:true})).toBeVisible();await expect(signals.getByText("43% buy volume",{exact:true})).toHaveCount(0);
+ failed=true;await page.clock.fastForward(16*60000);await expect(signals.getByText("delayed, not live",{exact:false})).toBeVisible();await page.clock.fastForward(345*60000);await expect(signals.getByText("Trading data unavailable",{exact:true})).toBeVisible();await expect(signals.getByText("43% buy volume",{exact:true})).toHaveCount(0);
 });
 
 test("owner activity exposes a month and separates verified burns from trading",async({page,isMobile})=>{

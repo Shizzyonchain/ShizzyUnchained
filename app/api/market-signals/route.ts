@@ -1,3 +1,4 @@
+import { resilientTrading } from "../../lib/trading-snapshot";
 import { collectHourlyTrades } from "../../lib/hourly-buying";
 import { responseCoalescer } from "../../lib/request-protection";
 import { unstable_cache } from "next/cache";
@@ -7,7 +8,7 @@ const tags=sectors.subnets.map(({netuid,sectors})=>({netuid,sectors}));
 const load=unstable_cache(async()=>{
  const key=process.env.TAOSTATS_API_KEY;if(!key)throw new Error("Trading source unavailable");
  const response=await fetch("https://api.taostats.io/v1/subnets/pools/aggregate?limit=200",{headers:{Authorization:key},signal:AbortSignal.timeout(7000),cache:"no-store"});
- if(!response.ok)throw new Error(`Trading source HTTP ${response.status}`);const body=await response.json();if(body.pagination?.next_page)throw new Error("Incomplete pool page");try{return buyingTotals(body.data);}catch(error){const rows=Array.isArray(body.data)?body.data:[];console.warn("Pool trading validation",JSON.stringify({error:error instanceof Error?error.message:"invalid",count:rows.length,oldest:rows.map((r:{timestamp:string})=>r.timestamp).sort()[0],newest:rows.map((r:{timestamp:string})=>r.timestamp).sort().at(-1),invalid:rows.filter((r:{netuid:number;timestamp:string;tao_buy_volume_24_hr:unknown;tao_sell_volume_24_hr:unknown})=>r.netuid>0&&(!Number.isFinite(Date.parse(r.timestamp))||Date.now()-Date.parse(r.timestamp)>900000||r.tao_buy_volume_24_hr==null||r.tao_sell_volume_24_hr==null)).map((r:{netuid:number;timestamp:string})=>({netuid:r.netuid,timestamp:r.timestamp}))}));throw error;}
+ if(!response.ok)throw new Error(`Trading source HTTP ${response.status}`);const body=await response.json();if(body.pagination?.next_page)throw new Error("Incomplete pool page");return buyingTotals(body.data);
 },["market-buy-sell-v1"],{revalidate:300});
 const hourlyAt=unstable_cache(async(anchor:string)=>{
  const key=process.env.TAOSTATS_API_KEY!;const signal=AbortSignal.timeout(25000);
@@ -17,11 +18,11 @@ const hourlyAt=unstable_cache(async(anchor:string)=>{
  });
 },["market-hourly-trades-by-source-v2"],{revalidate:300});
 // A new aggregate timestamp selects a new hourly cache entry immediately.
-const hourly=async()=>requireFreshTrading(await hourlyAt(requireFreshTrading(await load()).asOf));
+const hourly=async()=>requireFreshTrading(await hourlyAt(new Date(Math.floor(Date.now()/300000)*300000-60000).toISOString()));
 const coalesce=responseCoalescer(2,2);
 export const maxDuration=60;
 export async function GET(request:Request){
  const period=new URL(request.url).searchParams.get("period")||"24h";
  if(!["1h","24h"].includes(period))return Response.json({error:"Choose 1h or 24h"},{status:400});
- if(period==="1h")return coalesce("1h",async()=>{try{return Response.json({buying:await hourly()},{headers:{"Cache-Control":"public, s-maxage=60, stale-while-revalidate=30"}});}catch(error){console.warn("Hourly market trades unavailable",error instanceof Error?error.message:"Unknown provider failure");return Response.json({buying:null},{status:503,headers:{"Cache-Control":"no-store"}});}},1000);
-let buying=null;try{buying=requireFreshTrading(await load());}catch(error){console.warn("Daily market trades unavailable",error instanceof Error?error.message:"Unknown provider failure");}return Response.json({buying,sectors:sectors.sectors.map(({id,name})=>({id,name})),tags},{headers:{"Cache-Control":buying?"public, s-maxage=60, stale-while-revalidate=30":"no-store"}});}
+ if(period==="1h")return coalesce("1h",async()=>{try{return Response.json({buying:await resilientTrading("1h",hourly)},{headers:{"Cache-Control":"public, s-maxage=60, stale-while-revalidate=30"}});}catch(error){console.warn("Hourly market trades unavailable",error instanceof Error?error.message:"Unknown provider failure");return Response.json({buying:null},{status:503,headers:{"Cache-Control":"no-store"}});}},1000);
+return coalesce("24h",async()=>{let buying=null;try{buying=await resilientTrading("24h",async()=>requireFreshTrading(await load()));}catch(error){console.warn("Daily market trades unavailable",error instanceof Error?error.message:"Unknown provider failure");}return Response.json({buying,sectors:sectors.sectors.map(({id,name})=>({id,name})),tags},{headers:{"Cache-Control":buying?"public, s-maxage=60, stale-while-revalidate=30":"no-store"}});},1000);}

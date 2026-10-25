@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { freshSignalRows, sectorHeat, volumeAlerts, type SignalRow } from "./lib/market-signals";
 import styles from "./market-signals.module.css";
-type Buying={buy:number;sell:number;asOf:string;count:number;trades?:number;windowStart?:string};
+type Buying={buy:number;sell:number;asOf:string;count:number;trades?:number;windowStart?:string;delayed?:boolean};
 type Payload={buying:Buying|null;sectors:{id:string;name:string}[];tags:{netuid:number;sectors:string[]}[]};
 const amount=(n:number)=>n.toLocaleString("en-US",{maximumFractionDigits:0});
 const percent=(n:number)=>Math.abs(n)>0&&Math.abs(n)<0.01?`${n>0?"+":"−"}${Math.abs(n).toPrecision(2)}%`:`${n>0?"+":""}${n.toFixed(2)}%`;
@@ -26,14 +26,14 @@ export function MarketSignals({rows}:{rows:SignalRow[]}){
  useEffect(()=>{
   const controller=new AbortController();let timer:ReturnType<typeof setTimeout>,running=false;
   function schedule(delay:number){timer=setTimeout(()=>{if(document.hidden)schedule(delay);else void refresh();},delay);}
-  async function refresh(){if(running||controller.signal.aborted)return;running=true;clearTimeout(timer);let failed=true;setNow(Date.now());try{const r=await fetch("/api/market-signals",{signal:controller.signal});if(!r.ok)throw new Error("Trading source unavailable");const d:Payload=await r.json();if(controller.signal.aborted)return;failed=!d.buying;setPayload(previous=>({...d,buying:d.buying??previous?.buying??null}));setDayError(failed);}catch{if(!controller.signal.aborted)setDayError(true);}finally{running=false;if(!controller.signal.aborted){setDayLoaded(true);schedule(failed?15000:60000);}}}
+  async function refresh(){if(running||controller.signal.aborted)return;running=true;clearTimeout(timer);let failed=true;setNow(Date.now());try{const r=await fetch("/api/market-signals",{signal:controller.signal});if(!r.ok)throw new Error("Trading source unavailable");const d:Payload=await r.json();if(controller.signal.aborted)return;failed=!d.buying||Boolean(d.buying.delayed);setPayload(previous=>({...d,buying:d.buying??previous?.buying??null}));setDayError(failed);}catch{if(!controller.signal.aborted)setDayError(true);}finally{running=false;if(!controller.signal.aborted){setDayLoaded(true);schedule(failed?15000:60000);}}}
   const resume=()=>{if(!document.hidden)void refresh();};document.addEventListener("visibilitychange",resume);
   void refresh();return()=>{controller.abort();clearTimeout(timer);document.removeEventListener("visibilitychange",resume);};
  },[]);
  useEffect(()=>{
   if(buyPeriod!=="1h")return;const controller=new AbortController();let timer:ReturnType<typeof setTimeout>,running=false;
   function schedule(delay:number){timer=setTimeout(()=>{if(document.hidden)schedule(delay);else void refresh();},delay);}
-  async function refresh(){if(running||controller.signal.aborted)return;running=true;clearTimeout(timer);let failed=true;try{const r=await fetch("/api/market-signals?period=1h",{signal:controller.signal});const d=await r.json();if(controller.signal.aborted)return;if(r.ok&&d.buying){setHourly(d.buying);failed=false;}setHourError(failed);setNow(Date.now());}catch{if(!controller.signal.aborted)setHourError(true);}finally{running=false;if(!controller.signal.aborted){setHourLoaded(true);schedule(failed?15000:60000);}}}
+  async function refresh(){if(running||controller.signal.aborted)return;running=true;clearTimeout(timer);let failed=true;try{const r=await fetch("/api/market-signals?period=1h",{signal:controller.signal});const d=await r.json();if(controller.signal.aborted)return;if(r.ok&&d.buying){setHourly(d.buying);failed=Boolean(d.buying.delayed);}setHourError(failed);setNow(Date.now());}catch{if(!controller.signal.aborted)setHourError(true);}finally{running=false;if(!controller.signal.aborted){setHourLoaded(true);schedule(failed?15000:60000);}}}
   const resume=()=>{if(!document.hidden)void refresh();};document.addEventListener("visibilitychange",resume);
   void refresh();return()=>{controller.abort();clearTimeout(timer);document.removeEventListener("visibilitychange",resume);};
  },[buyPeriod]);
@@ -44,15 +44,16 @@ export function MarketSignals({rows}:{rows:SignalRow[]}){
  const heat=useMemo(()=>sectorHeat(fresh,payload?.sectors||[],payload?.tags||[],period),[fresh,payload,period]);
  const alerts=useMemo(()=>volumeAlerts(fresh,surgePeriod),[fresh,surgePeriod]);
  const selectedBuying=buyPeriod==="1h"?hourly:payload?.buying;
- const buying=selectedBuying&&now-Date.parse(selectedBuying.asOf)<=900000&&Date.parse(selectedBuying.asOf)<=now+60000?selectedBuying:null;
+ const buying=selectedBuying&&now-Date.parse(selectedBuying.asOf)<=21600000&&Date.parse(selectedBuying.asOf)<=now+60000?selectedBuying:null;
  const tradingLoading=buyPeriod==="1h"?!hourLoaded:!dayLoaded;
- const tradingError=buyPeriod==="1h"?hourError:dayError;
+ const tradingError=(buyPeriod==="1h"?hourError:dayError)||Boolean(buying&&(buying.delayed||now-Date.parse(buying.asOf)>900000));
  const total=buying?buying.buy+buying.sell:0,share=buying&&total>0?buying.buy/total*100:null;
  const allAlerts=useMemo(()=>volumeAlerts(fresh,surgePeriod,128),[fresh,surgePeriod]);
  const warm=heat.slice(0,3),cool=heat.slice(Math.max(3,heat.length-3)).reverse();
  return <><section className={styles.grid} aria-label="Market signals">
  <article className={styles.card}><button type="button" className={styles.cardTrigger} aria-label="Buyers vs Sellers details" aria-haspopup="dialog" onClick={()=>open("buyers")}/><header><h2>Buyers vs Sellers <span aria-hidden="true">ⓘ</span></h2><div className={styles.periods} role="group" aria-label="Buyers and Sellers period">{(["1h","24h"] as const).map(p=><button type="button" key={p} aria-pressed={buyPeriod===p} onClick={()=>setBuyPeriod(p)}>{p.toUpperCase()}</button>)}</div></header><p className={styles.lead}>{share===null?(buying?"No recorded trades":tradingLoading?(buyPeriod==="1h"?"Loading hourly trades…":"Loading trading data…"):"Trading data unavailable"):`${share.toFixed(0)}% buy volume`}</p>
  {buying&&share!==null&&<><div className={styles.bar} role="img" aria-label={`${share.toFixed(1)} percent buy volume, ${(100-share).toFixed(1)} percent sell volume`}><i style={{width:`${share}%`}}/></div><div className={styles.totals}><span>Buys <b className={styles.up}>{amount(buying.buy)} TAO</b></span><span>Sells <b className={styles.down}>{amount(buying.sell)} TAO</b></span></div><p className={styles.note}>Net {buying.buy>=buying.sell?"+":""}{amount(buying.buy-buying.sell)} TAO · {buying.count} subnets</p></>}
+ {buying&&<p className={styles.note}>Snapshot {new Date(buying.asOf).toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit",timeZone:"UTC"})} UTC{tradingError?" · delayed, not live":""}</p>}
  {tradingError&&<p className={styles.note} role="status">{buying?"Refresh delayed · showing the latest verified snapshot. Retrying automatically.":"Trading feed delayed · retrying automatically."}</p>}
  </article>
  <article className={styles.card}><button type="button" className={styles.cardTrigger} aria-label="Sector Heat details" aria-haspopup="dialog" onClick={()=>open("sectors")}/><header><h2>Sector Heat <span aria-hidden="true">ⓘ</span></h2><div className={styles.periods} role="group" aria-label="Market signal period">{(["1h","24h"] as const).map(p=><button type="button" key={p} aria-pressed={period===p} onClick={()=>setPeriod(p)}>{p.toUpperCase()}</button>)}</div></header><p className={styles.note}>Median move against TAO · {period.toUpperCase()}</p>
