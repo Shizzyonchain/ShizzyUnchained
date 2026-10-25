@@ -409,3 +409,16 @@ test("subnet research stays compact and preserves advanced metrics without extra
  await expect(page.getByRole('region',{name:'Subnet owner research',exact:true})).toBeInViewport();
  await noOverflow(page);
 });
+
+test('compact subnet news keeps every loaded story and reveals older pages immediately',async({page})=>{
+ const entry=(n:number)=>({id:`news-${n}`,date:'2026-10-24',kind:'news',name:'Lium',status:'verified',rating:3,headline:`Retained story ${n}`,summary:`Full preserved update ${n}`,sources:[]});
+ await page.route('**/api/subnets/51/news?offset=*',route=>{const older=new URL(route.request().url()).searchParams.get('offset')!=='0';return route.fulfill({json:{entries:older?[entry(6)]:[1,2,3,4,5].map(entry),total:6,nextOffset:older?null:5,archiveThrough:'2026-10-24'}});});
+ await page.goto('/charts/51');const news=page.getByRole('region',{name:'Recent news & history',exact:true});
+ await expect(news.getByRole('heading',{name:'Retained story 3',exact:true})).toBeVisible();
+ await expect(news.getByRole('heading',{name:'Retained story 4',exact:true})).toHaveCount(0);
+ await news.getByRole('button',{name:'Show 2 more updates',exact:true}).click();
+ await expect(news.getByRole('heading',{name:'Retained story 5',exact:true})).toBeVisible();
+ await news.getByRole('button',{name:'Load older updates',exact:true}).click();
+ await expect(news.getByRole('heading',{name:'Retained story 6',exact:true})).toBeVisible();
+ await expect(news.getByRole('heading',{name:'Retained story 1',exact:true})).toBeVisible();await noOverflow(page);
+});

@@ -35,6 +35,6 @@ export function SubnetNewsPanel({ netuid }: { netuid: number }) {
       <details><summary>Read update &amp; sources</summary>{entry.summary.length > 300 && <p>{entry.summary}</p>}<div className="subnet-news-source-links">{entry.sources.filter(source => safeSource(source.url)).map(source => <NewsSourceLink key={source.url} source={source} />)}<Link href={`/subnet-news/${entry.date}`}>Read the {dateLabel(entry.date)} report →</Link></div></details>
     </article>)}</div>
     {!showAll&&history&&history.entries.length>3&&<button className="subnet-news-more" onClick={()=>setShowAll(true)}>Show {history.entries.length-3} more updates</button>}
-    {(showAll||!history||history.entries.length<=3)&&history?.nextOffset !== null && history?.nextOffset !== undefined && <button className="subnet-news-more" disabled={loading} onClick={() => { setError(""); setLoading(true); setOffset(history.nextOffset!); }}>Load older updates</button>}
+    {(showAll||!history||history.entries.length<=3)&&history?.nextOffset !== null && history?.nextOffset !== undefined && <button className="subnet-news-more" disabled={loading} onClick={() => { setShowAll(true); setError(""); setLoading(true); setOffset(history.nextOffset!); }}>Load older updates</button>}
   </section>;
 }
