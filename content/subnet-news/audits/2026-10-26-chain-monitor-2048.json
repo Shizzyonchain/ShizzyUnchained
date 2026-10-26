@@ -1,0 +1,35 @@
+{
+  "automation": "verify-etao-changes-every-six-hours",
+  "checkedAt": "2026-10-26T20:53:42.113519+00:00",
+  "status": "DONE",
+  "fromBlock": 9368376,
+  "toBlock": 9370351,
+  "throughTime": "2026-10-26T20:50:00+00:00",
+  "hash": "0xae92b028f34c8e0b40238daa2db21e0fe1de69b48db121bb2a9a0bacb37012dc",
+  "runtimeBoundary": 9369470,
+  "evidence": "/evidence/2026-10-26-chain-monitor-2048.json",
+  "gaps": [],
+  "allocationEvents": 0,
+  "vectorDifferences": 0,
+  "qualifyingBurns": [
+    {
+      "id": "9370098-316",
+      "block": 9370098,
+      "hash": "0x74e3ac29869659a2d161a6f9b43452a5641fbffb68b830aca560922e26823c65",
+      "extrinsic": 19,
+      "eventIndex": 316,
+      "eventName": "SubtensorModule.AlphaBurned",
+      "timestamp": "2026-10-26T19:59:24.001000+00:00",
+      "netuid": 14,
+      "name": "Cacheon",
+      "kind": "alpha",
+      "amountRaw": "2843585000000",
+      "taoSpentRaw": null,
+      "account": "5GJeoh9ecN9vLJhcBo5rGT1DiVGx4zMpkmvjyVb5Z8GDb8NM"
+    }
+  ],
+  "excluded": "Other AlphaBurned events below100 alpha and AlphaRecycled retained only in full evidence; fees excluded.",
+  "newsDisposition": "Added SN14 verified burn to existing October26 edition; all prior stories preserved; no extra tweet.",
+  "publication": "Validated; awaiting Git/Vercel production verification.",
+  "validation": "79 news reports and128 owner holdings valid; lint0errors1existingunused-variablewarning;4JS eTAO/burn tests and5Python burntests passed; UTF8source check and production build passed."
+}

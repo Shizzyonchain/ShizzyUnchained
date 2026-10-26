@@ -115,7 +115,26 @@
     {
       "netuid": 14,
       "name": "Cacheon",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN14 Cacheon burns 2,843.585 alpha in a finalized transaction",
+          "summary": "A successful AlphaBurned transaction at 2026-10-26T19:59:24.001000+00:00 destroyed exactly 2,843.585 SN14 alpha (2,843,585,000,000 native units) at block 9,370,098, extrinsic 19. Historical on-chain identity confirms Cacheon, registered at block 4,848,444. There is no matching AddStakeBurn event in this extrinsic, so this is a direct alpha burn, not evidence of a revenue-funded buyback. Routine transaction fees are excluded.",
+          "rating": 3,
+          "ratingReason": "Finalized execution verifies meaningful token destruction, without establishing revenue, adoption or future price effects.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "label": "Finalized SN14 burn transaction",
+              "url": "https://taostats.io/extrinsic/9370098-19"
+            },
+            {
+              "label": "Permanent finalized event and runtime review evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-26-chain-monitor-2048.json"
+            }
+          ]
+        }
+      ]
     },
     {
       "netuid": 15,
