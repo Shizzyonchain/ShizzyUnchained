@@ -273,18 +273,22 @@ instead. See opentensor/subtensor staking/stake_utils.rs and share-pool.
 
 ## Node-first market trading — October 26, 2026
 
-The existing Render indexer now maintains `market_trade_blocks` independently
+The existing Render indexer now maintains `market_trade_blocks_v2` independently
 of market enrichment. It reads finalized events through the configured archive
-RPC, not TaoStats. Eight bounded reads run concurrently; each committed batch
-is complete. The worker fills the recent hour first, then extends its contiguous
-prefix toward 26 hours while continuing to catch up to the finalized head.
+RPC, not TaoStats. Independent live and historical lanes use four and six bounded reads respectively;
+each committed batch is complete. The live lane fills the recent hour first.
+The historical lane retains its connection while extending the contiguous prefix
+toward 26 hours, without delaying current finalized heads.
 Only three days of these aggregate block records are retained. No visitor RPC.
 
 `GET /v1/market/trading?period=1h|24h` uses the existing API-key authorization and
 reads PostgreSQL only. It refuses stale tails, missing start boundaries and gaps.
 Successful TAO/alpha stake events on SN1–128 are counted in raw rao once;
-Root, explicit alpha-fee conversions and matched alpha/alpha routing legs are
-excluded. Successful items of interrupted batches retain their actual surviving
+The SN0 asset, explicit alpha-fee conversions and matched alpha/alpha routing
+legs (swap, move and transfer) are excluded. BasketSwapped events count a genuine
+root-TAO/alpha market leg once, including finalized initialization events; an
+internal alpha/alpha basket route is excluded. Version 2 recomputes its own
+complete history and never mixes earlier-method checkpoints or caches. Successful items of interrupted batches retain their actual surviving
 events. Runtime 484 is reviewed; another runtime pauses this collector pending
 review without stopping the existing price/wallet/validator workers.
 

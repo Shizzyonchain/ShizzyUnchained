@@ -102,3 +102,50 @@ async def test_node_windows_require_contiguous_coverage_and_keep_hour_day_separa
         await trading_snapshot(Window(gap=True), "1h")
     with pytest.raises(ValueError):
         await trading_snapshot(Window(stale=True), "24h")
+
+
+def test_cross_subnet_moves_and_transfers_exclude_paired_market_legs():
+    rows = [
+        event("StakeRemoved", ["cold", "origin", 500, 100, 1, 0]),
+        event("StakeAdded", ["cold", "destination", 490, 200, 2, 0]),
+        event("StakeMoved", ["cold", "origin", 1, "destination", 2, 500]),
+        event("StakeRemoved", ["alice", "hot", 300, 80, 3, 0]),
+        event("StakeAdded", ["bob", "hot", 290, 170, 4, 0]),
+        event("StakeTransferred", ["alice", "bob", "hot", 3, 4, 300]),
+        stake("StakeAdded", 1, 600),
+        SUCCESS,
+    ]
+    assert trade_totals(rows) == {"buy": 600, "sell": 0, "trades": 1}
+
+
+def test_dust_route_without_completed_destination_is_a_real_external_sale():
+    rows = [
+        stake("StakeAdded", 2, 700),
+        stake("StakeRemoved", 1, 5),
+        event("StakeSwapped", ["cold", "hot", 1, 2, 5]),
+        SUCCESS,
+    ]
+    assert trade_totals(rows) == {"buy": 700, "sell": 5, "trades": 2}
+
+
+def test_basket_market_trades_include_root_legs_once_but_exclude_internal_routes():
+    def basket(origin, destination, tao, idx=1):
+        return event(
+            "BasketSwapped",
+            {
+                "hotkey": "validator",
+                "origin_netuid": origin,
+                "destination_netuid": destination,
+                "tao_mid": tao,
+            },
+            idx=idx,
+        )
+
+    rows = [
+        basket(0, 1, 500),
+        basket(2, 0, 300),
+        basket(1, 2, 900),
+        basket(0, 2, 100, idx=None),
+        SUCCESS,
+    ]
+    assert trade_totals(rows) == {"buy": 600, "sell": 300, "trades": 3}

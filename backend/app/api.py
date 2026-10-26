@@ -60,7 +60,7 @@ async def node_trading(period: str = Query('24h', pattern='^(1h|24h)$'), x_api_k
     try:
         return await trading_snapshot(app.state.db, period)
     except ValueError as exc:
-        since = await app.state.db.fetchval("SELECT min(block_time) FROM market_trade_blocks")
+        since = await app.state.db.fetchval("SELECT min(block_time) FROM market_trade_blocks_v2")
         headers = {"X-Trade-History-Since": since.isoformat()} if since else {}
         raise HTTPException(503, str(exc), headers=headers) from exc
 
