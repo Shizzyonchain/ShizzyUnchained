@@ -12,6 +12,7 @@ from app.rpc import finalized_heads
 from app.retention import retention_loop
 from app.wallet_job import wallet_job_loop
 from app.validator_yield import yield_check_loop
+from app.trading import trading_loop
 
 log = logging.getLogger("shizzy.indexer")
 MAX_CATCHUP_BLOCKS = 250
@@ -444,6 +445,7 @@ async def indexer():
     asyncio.create_task(wallet_job_loop(db, settings))
     asyncio.create_task(retention_loop(db, settings))
     asyncio.create_task(yield_check_loop(db, settings))
+    asyncio.create_task(trading_loop(db, settings))
     endpoints = settings.subtensor_ws_urls
     endpoint_index = 0
     retry_delay = 1

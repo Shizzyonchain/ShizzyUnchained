@@ -10,7 +10,7 @@ async function dailyTaoHistory(interval: string) {
   if (!key) throw new Error("Price provider unavailable");
   // Load only the visible recent range; older history is paged on demand.
   const end = Math.floor(Date.now() / 86400000) * 86400 + 86400;
-  const count = interval === "1d" ? 200 : interval === "1w" ? 900 : 1800;
+  const count = interval === "1d" ? 200 : interval === "1w" ? 1000 : 1800;
   const start = Math.max(Date.UTC(2021, 0, 1) / 1000, end - count * 86400);
   const span = 200 * 86400;
   const windows = Array.from({ length: Math.ceil((end - start) / span) }, (_, index) => ({
@@ -21,7 +21,7 @@ async function dailyTaoHistory(interval: string) {
     const pages = await Promise.all(windows.slice(index, index + 4).map(async ({ from, to }) => {
       const url = new URL("https://api.taostats.io/v1/price/ohlc");
       for (const [name, value] of Object.entries({ asset: "TAO", period: "1d", timestamp_start: from, timestamp_end: to, limit: 200 })) url.searchParams.set(name, String(value));
-      const response = await fetch(url, { headers: { Authorization: key }, next: { revalidate: to === end ? 60 : 86400 }, signal: AbortSignal.timeout(6000) });
+      const response = await fetch(url, { headers: { Authorization: key }, next: { revalidate: to === end ? 1800 : 86400 }, signal: AbortSignal.timeout(6000) });
       if (!response.ok) throw new Error("Price history unavailable");
       return taoPriceCandles(await response.json());
     }));

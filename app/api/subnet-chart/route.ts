@@ -7,7 +7,7 @@ import { udfCandles } from "../../lib/taostats-candles";
 const intervals: Record<string, { resolution: string; seconds: number; count: number }> = {
   "10m": { resolution: "5", seconds: 300, count: 600 },
   "1h": { resolution: "60", seconds: 3600, count: 300 },
-  "1d": { resolution: "1D", seconds: 86400, count: 200 },
+  "1d": { resolution: "1D", seconds: 86400, count: 900 },
   "1w": { resolution: "1D", seconds: 86400, count: 900 },
   "1mo": { resolution: "1D", seconds: 86400, count: 900 },
 };
@@ -25,11 +25,12 @@ async function loadUncached(request: NextRequest) {
   try {
     // Stable minute buckets share the provider response across visitors.
     const bucket = interval === "10m" ? 600 : config.seconds;
-    const to = before === null ? Math.floor(Date.now() / 60_000) * 60 : Math.floor(before / bucket) * bucket;
+    const refreshSeconds = config.seconds >= 86400 ? 1800 : 300;
+    const to = before === null ? Math.floor(Date.now() / (refreshSeconds*1000)) * refreshSeconds : Math.floor(before / bucket) * bucket;
     const count = before === null ? config.count : interval === "10m" ? 288 : interval === "1h" ? 720 : 900;
     const url = new URL("/v1/tradingview/udf/history", "https://api.taostats.io");
     for (const [name, value] of Object.entries({ symbol: `SUB-${netuid}`, resolution: config.resolution, to, from: to - config.seconds * count, countback: count })) url.searchParams.set(name, String(value));
-    const response = await fetch(url, { headers: { Authorization: key }, next: { revalidate: before === null ? 60 : 86400 }, signal: AbortSignal.timeout(7000) });
+    const response = await fetch(url, { headers: { Authorization: key }, next: { revalidate: before === null ? refreshSeconds : 86400 }, signal: AbortSignal.timeout(7000) });
     if (!response.ok) throw new Error("Provider unavailable");
     const payload = await response.json();
     if (payload.s === "no_data") return NextResponse.json({ data: [], method: "taostats-alpha", done: true, interval });

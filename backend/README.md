@@ -270,3 +270,35 @@ can credit an existing sole-owner pool directly, so alpha-per-share growth can
 include operator take or owner income. This is not evidence of the net return
 available to an outside nominator. Shared-pool fee credits mint owner shares
 instead. See opentensor/subtensor staking/stake_utils.rs and share-pool.
+
+## Node-first market trading — October 26, 2026
+
+The existing Render indexer now maintains `market_trade_blocks` independently
+of market enrichment. It reads finalized events through the configured archive
+RPC, not TaoStats. Eight bounded reads run concurrently; each committed batch
+is complete. The worker fills the recent hour first, then extends its contiguous
+prefix toward 26 hours while continuing to catch up to the finalized head.
+Only three days of these aggregate block records are retained. No visitor RPC.
+
+`GET /v1/market/trading?period=1h|24h` uses the existing API-key authorization and
+reads PostgreSQL only. It refuses stale tails, missing start boundaries and gaps.
+Successful TAO/alpha stake events on SN1–128 are counted in raw rao once;
+Root, explicit alpha-fee conversions and matched alpha/alpha routing legs are
+excluded. Successful items of interrupted batches retain their actual surviving
+events. Runtime 484 is reviewed; another runtime pauses this collector pending
+review without stopping the existing price/wallet/validator workers.
+
+The website tries this source first, sharing its result. TaoStats is a fallback
+while a node window is incomplete or unavailable, with one fallback attempt per
+period per half hour in shared Runtime Cache, plus warm-instance coalescing.
+Dated last-good trading snapshots remain available, visibly delayed, up to six
+hours. Missing windows never become zero, and hourly totals never use daily data.
+
+Historical chart OHLC, older wallet trades and provider return history still
+need the indexed provider: sampled node prices are not an equivalent complete
+archive. Subnet day/week/month views share the same daily provider request;
+recent intraday provider windows refresh at five-minute buckets, daily chart
+history at thirty-minute buckets. TAO daily/week/month current history uses a
+shared 200-day page boundary and thirty-minute cache. Live quotes remain on the
+separate existing node/FX path. Credit costs per request vary; these limits do
+not claim that a request always costs one credit or prove a monthly allowance.

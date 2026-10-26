@@ -18,6 +18,7 @@ from app.db import close, connect
 from app.models import MassWalletRequest
 from app.liquidation import liquidation_join
 from app.yield_math import subnet_reward_estimate
+from app.trading import trading_snapshot
 
 settings = get_settings()
 log = logging.getLogger("shizzy.api")
@@ -51,6 +52,15 @@ app.add_middleware(
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type", "X-API-Key"],
 )
+
+
+@app.get("/v1/market/trading")
+async def node_trading(period: str = Query('24h', pattern='^(1h|24h)$'), x_api_key: str | None = Header(None)):
+    await authorize(x_api_key)
+    try:
+        return await trading_snapshot(app.state.db, period)
+    except ValueError as exc:
+        raise HTTPException(503, str(exc)) from exc
 
 
 async def authorize(x_api_key: str | None = Header(None)):
