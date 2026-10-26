@@ -45,5 +45,11 @@ export const maxDuration=60;
 export async function GET(request:Request){
  const period=new URL(request.url).searchParams.get("period")||"24h";
  if(!["1h","24h"].includes(period))return Response.json({error:"Choose 1h or 24h"},{status:400});
+ // Operational check of the same public totals, never a forced provider call.
+ // This lets us verify node readiness without consuming fallback credits.
+ if(new URL(request.url).searchParams.get('source')==='node')return coalesce(`node:${period}`,async()=>{
+  try{return Response.json({buying:await nodeTrading(period as '1h'|'24h')},{headers:{'Cache-Control':'public, s-maxage=30'}});}
+  catch(error){return Response.json({buying:null,error:error instanceof Error?error.message:'Node trading unavailable'},{status:503,headers:{'Cache-Control':'no-store'}});}
+ },1000);
  if(period==="1h")return coalesce("1h",async()=>{try{return Response.json({buying:await resilientTrading("1h",()=>primary('1h'))},{headers:{"Cache-Control":"public, s-maxage=60, stale-while-revalidate=30"}});}catch(error){console.warn("Hourly market trades unavailable",error instanceof Error?error.message:"Unknown provider failure");return Response.json({buying:null},{status:503,headers:{"Cache-Control":"no-store"}});}},1000);
 return coalesce("24h",async()=>{let buying=null;try{buying=await resilientTrading("24h",()=>primary('24h'));}catch(error){console.warn("Daily market trades unavailable",error instanceof Error?error.message:"Unknown provider failure");}return Response.json({buying,sectors:sectors.sectors.map(({id,name})=>({id,name})),tags},{headers:{"Cache-Control":buying?"public, s-maxage=60, stale-while-revalidate=30":"no-store"}});},1000);}
