@@ -21,7 +21,7 @@ def trade_totals(records):
     """Count successful external TAO↔alpha legs; exclude root and alpha↔alpha routing.
 
     Runtime 484 six-field StakeAdded/Removed balances are raw rao. Explicit
-    alpha-fee conversions are matched by wallet/hotkey/subnet/alpha amount.
+    alpha-fee conversions are matched by wallet/subnet/alpha amount.
     Failed nested calls have rolled-back events; surviving successful batch
     items remain valid even when a later item interrupts the batch.
     """
