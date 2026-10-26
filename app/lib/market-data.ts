@@ -5,6 +5,10 @@ import { getTaoQuote } from "./tao-price-source";
 
 import type { ScreenerRow } from "../dashboard";
 
+// Read once at the server data boundary and serialize it with the snapshot.
+// The browser uses the same clock for hydration, then starts its live clock.
+export const getInitialRenderTime = cache(async () => Date.now());
+
 export const getInitialMarkets = cache(async (): Promise<ScreenerRow[]> => {
   const base = process.env.BACKEND_API_URL;
   if (!base) return [];

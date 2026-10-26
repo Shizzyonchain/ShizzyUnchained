@@ -2,7 +2,7 @@ import { withSocialMetadata } from "../lib/social-metadata";
 import { getTaoHistory } from "../lib/tao-history";
 import type { Metadata } from "next";
 import { Dashboard } from "../dashboard";
-import { getInitialMarkets, getInitialTaoQuote } from "../lib/market-data";
+import { getInitialMarkets, getInitialTaoQuote, getInitialRenderTime } from "../lib/market-data";
 
 export const metadata: Metadata = withSocialMetadata({
   title: "Balls | Bittensor Subnet Market Map | ShizzyUnchained",
@@ -12,5 +12,6 @@ export const metadata: Metadata = withSocialMetadata({
 
 export default async function BallsPage() {
   const [initialRows, quote, initialDollarHistory] = await Promise.all([getInitialMarkets(), getInitialTaoQuote(), getTaoHistory()]);
-  return <Dashboard initialNow={Date.now()} initialDollarHistory={initialDollarHistory} initialView="bubbles" initialRows={initialRows} initialTaoUsd={quote?.usd || 0} initialTaoQuote={quote} />;
+  const initialNow = await getInitialRenderTime();
+  return <Dashboard initialNow={initialNow} initialDollarHistory={initialDollarHistory} initialView="bubbles" initialRows={initialRows} initialTaoUsd={quote?.usd || 0} initialTaoQuote={quote} />;
 }

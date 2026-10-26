@@ -3,7 +3,7 @@ import { withSocialMetadata } from "../../lib/social-metadata";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Dashboard } from "../../dashboard";
-import { getInitialMarkets, getInitialTaoQuote } from "../../lib/market-data";
+import { getInitialMarkets, getInitialTaoQuote, getInitialRenderTime } from "../../lib/market-data";
 import { getTaoHistory } from "../../lib/tao-history";
 
 export const revalidate = 15;
@@ -29,5 +29,6 @@ export default async function ChartPage({ params, searchParams }: { params: Prom
   const currency = query.currency === "tao" && selected !== "tao" ? "tao" : "usd";
   const interval = typeof query.interval === "string" && ["10m", "1h", "1d", "1w", "1mo"].includes(query.interval) ? query.interval : "1d";
   const [rows, quote, history] = await Promise.all([getInitialMarkets(), getInitialTaoQuote(), getTaoHistory()]);
-  return <Dashboard initialNow={Date.now()} key={asset} initialChart={selected} initialCurrency={currency} initialInterval={interval} initialRows={rows} initialTaoUsd={quote?.usd || 0} initialTaoQuote={quote} initialDollarHistory={history} />;
+  const initialNow = await getInitialRenderTime();
+  return <Dashboard initialNow={initialNow} key={asset} initialChart={selected} initialCurrency={currency} initialInterval={interval} initialRows={rows} initialTaoUsd={quote?.usd || 0} initialTaoQuote={quote} initialDollarHistory={history} />;
 }

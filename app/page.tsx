@@ -2,7 +2,7 @@ import { withSocialMetadata } from "./lib/social-metadata";
 import { getTaoHistory } from "./lib/tao-history";
 import type { Metadata } from "next";
 import { Dashboard } from "./dashboard";
-import { getInitialMarkets, getInitialTaoQuote } from "./lib/market-data";
+import { getInitialMarkets, getInitialTaoQuote, getInitialRenderTime } from "./lib/market-data";
 
 export const revalidate = 15;
 export const metadata: Metadata = withSocialMetadata({
@@ -36,13 +36,14 @@ export default async function Home() {
     })),
   };
 
+  const initialNow = await getInitialRenderTime();
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
       />
-      <Dashboard initialNow={Date.now()} appearance="monochrome" initialDollarHistory={initialDollarHistory} initialRows={rows} initialTaoUsd={quote?.usd || 0} initialTaoQuote={quote} />
+      <Dashboard initialNow={initialNow} appearance="monochrome" initialDollarHistory={initialDollarHistory} initialRows={rows} initialTaoUsd={quote?.usd || 0} initialTaoQuote={quote} />
     </>
   );
 }
