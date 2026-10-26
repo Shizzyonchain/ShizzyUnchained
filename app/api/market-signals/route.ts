@@ -17,7 +17,7 @@ const hourlyAt=unstable_cache(async(anchor:string)=>{
  return collectHourlyTrades(anchor,async(page,start,end)=>{
  const url=new URL("https://api.taostats.io/v1/subnets/trades");Object.entries({limit:"200",page:String(page),timestamp_start:String(start),timestamp_end:String(end),order_by:"timestamp",order_dir:"desc"}).forEach(([k,v])=>url.searchParams.set(k,v));
  const response=await fetch(url,{headers:{Authorization:key},signal,cache:"no-store"});if(!response.ok)throw new Error("Hourly trades unavailable");return response.json();
- });
+ },8);
 },["market-hourly-trades-by-source-v2"],{revalidate:300});
 // A new aggregate timestamp selects a new hourly cache entry immediately.
 const hourly=async()=>requireFreshTrading(await hourlyAt(new Date(Math.floor(Date.now()/300000)*300000-60000).toISOString()));

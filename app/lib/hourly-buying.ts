@@ -11,11 +11,11 @@ export function hourlyTradeTotals(pages:TradePage[],start:number,end:number){
  }}if(seen.size!==expected)throw new Error("Missing trade rows");
  return {buy:Number(buy)/1e9,sell:Number(sell)/1e9,asOf:new Date(end*1000).toISOString(),windowStart:new Date(start*1000).toISOString(),count:128,trades};
 }
-export async function collectHourlyTrades(anchor:string,request:(page:number,start:number,end:number)=>Promise<TradePage>){
+export async function collectHourlyTrades(anchor:string,request:(page:number,start:number,end:number)=>Promise<TradePage>,maxPages=40){
  const end=Math.floor(Date.parse(anchor)/1000),start=end-3600;
  if(!Number.isFinite(end)||Date.now()/1000-end>900||end>Date.now()/1000+60)throw new Error("Delayed trade anchor");
  const first=await request(1,start,end);const count=first.pagination?.total_pages;
- if(!Number.isInteger(count)||count<0||count>40)throw new Error("Trade window exceeds bounded collection");
+ if(!Number.isInteger(count)||count<0||count>Math.min(40,maxPages))throw new Error("Trade window exceeds bounded collection");
  const pages=[first];for(let n=2;n<=count;n+=4){pages.push(...await Promise.all(Array.from({length:Math.min(4,count-n+1)},(_,i)=>request(n+i,start,end))));}
  return hourlyTradeTotals(pages,start,end);
 }
