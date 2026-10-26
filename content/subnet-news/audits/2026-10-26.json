@@ -4,8 +4,8 @@
   "coverageStart": "2026-10-25T14:57:25.191466+00:00",
   "coverageEnd": "2026-10-26T14:24:50.166214+00:00",
   "assembledAt": "2026-10-26T14:24:50.166214+00:00",
-  "dailyWorkflowComplete": false,
-  "scope": "Full daily research assembled; publication, live verification and X roundup pending.",
+  "dailyWorkflowComplete": true,
+  "scope": "Full daily workflow published and verified, with the specific public/source access limitations retained.",
   "counts": {
     "subnets": 128,
     "updates": 16,
@@ -3937,11 +3937,27 @@
     }
   ],
   "publication": {
-    "status": "PENDING"
+    "status": "DONE",
+    "commit": "b9b69ab8e06fdbfbcaad5eb030463f34cb2a96dd",
+    "deployment": "dpl_9jNGDxpVJDaZjX12qCSjHsM9FYCF",
+    "state": "READY",
+    "ciRuns": [
+      40340089193,
+      40340089819
+    ],
+    "ci": "success",
+    "liveEvidence": "research-oct26/daily-live-verification.json",
+    "verifiedAt": "2026-10-26T14:51:03.708995+00:00"
   },
   "xRoundup": {
-    "status": "PENDING",
-    "authorized": true
+    "status": "DONE",
+    "identity": "@ShizzyUnchained",
+    "url": "https://x.com/ShizzyUnchained/status/2114730978719514729",
+    "publishedAt": "2026-10-26T14:48:49.785000+00:00",
+    "verifiedAt": "2026-10-26T14:51:03.708995+00:00",
+    "text": "Chutes is ending subscriptions. Hippius just launched a CDN.\n\nToday’s Bittensor news:\n• SN64 billing + beta models\n• SN75 CDN\n• SN28 Taostats case study\n• SN72 emission split\n• Verified SN8 burns\n\nAll 16 updates + sources:\nhttps://shizzyunchained.com/subnet-news/2026-10-26\n$TAO",
+    "duplicateCheck": "Own recent profile and October26 audit had no roundup. One successful post; direct permalink and dated site card verified. No second post for chain refresh.",
+    "evidence": "research-oct26/roundup-published.txt"
   },
   "grokReview": {
     "status": "DONE",
@@ -4015,7 +4031,8 @@
       "SN75 CDN demo, three-step origin/zone/domain setup",
       "SN28 SayGM x Taostats case-study graphic",
       "SN25 primary post and partner confirmation",
-      "SN65 teaser with subscription imagery and November2 date"
+      "SN65 teaser with subscription imagery and November2 date",
+      "SN67 Cloudflare Workers AI Native on SN67 graphic, dated October26"
     ],
     "limitations": "Full-length archived interviews not watched anew. SN78 Base video metrics not independently audited and excluded from quantitative coverage. No paid workloads or alleged incidents reproduced."
   },
@@ -4035,6 +4052,61 @@
     "SN25 traffic migration versus announcement",
     "SN65 November2 details",
     "SN50 historical API shutdown: actual closure date unconfirmed",
-    "SN19 sales/buyback criticism, SN17 private-model allegations, SN21 private-labelled files: establish primary attribution before public allegations"
+    "SN19 sales/buyback criticism, SN17 private-model allegations, SN21 private-labelled files: establish primary attribution before public allegations",
+    "SN107 direct evidence of completed ASHG presentations/app availability",
+    "Carbon full interview review",
+    "Gamma/lending specifications and Novelty Search replay: proposals are not activation"
+  ],
+  "completedAt": "2026-10-26T14:51:03.708995+00:00",
+  "releaseChecks": {
+    "news": "79 reports validated",
+    "ownerHoldings": "128 owners validated at9368328",
+    "javascript": "174 passed",
+    "browser": "48 desktop/phone checks passed",
+    "python": "5 burn tests and3 emission tests passed",
+    "lintBuild": "Passed release gate and hosted Application CI",
+    "localRecovery": "Sector evidence path/schema corrected before release; GitHub transient500 retried after confirming no push landed. No checks bypassed."
+  },
+  "laterChainReviews": [
+    {
+      "status": "DONE",
+      "checkedAt": "2026-10-26T14:44:17.948908+00:00",
+      "fromBlock": 9368376,
+      "toBlock": 9368518,
+      "hash": "0xb7c8ae44071d7ec95d50f2941a943136129452d6923bd44076b3956b79a060ba",
+      "throughTime": "2026-10-26T14:43:24+00:00",
+      "evidence": "research-oct26/chain-monitor-1443.json",
+      "gaps": [],
+      "allocationEvents": 0,
+      "qualifyingBurns": 0,
+      "archiveUpdated": false,
+      "newsDisposition": "No new material events. Durable complete scan retained locally; no timestamps-only deployment or extra tweet. Full daily publication separately verified through9368375."
+    }
+  ],
+  "priorLeadReconciliation": [
+    {
+      "lead": "ORO enforcement and Leadpoet disputed payout",
+      "outcome": "No direct independent resolution; prior coverage preserved and Leadpoet whitelist handled separately."
+    },
+    {
+      "lead": "IOTA queue/load allegation",
+      "outcome": "New brief still has member reports, no verified cause/recovery; no new confirmed outage claim."
+    },
+    {
+      "lead": "SN107 completed ASHG presentations and app launch",
+      "outcome": "No new completion evidence established; do not convert earlier scheduled appearances into completed ones."
+    },
+    {
+      "lead": "Carbon long interview",
+      "outcome": "Saved interview retained; full media not rewatched, no new business outcome inferred."
+    },
+    {
+      "lead": "SN46 engine and C6 Umi activation",
+      "outcome": "Umi execution progress covered with certification/weights pending; no verified SN46 engine activation."
+    },
+    {
+      "lead": "Gamma/lending drafts and Novelty Search replay",
+      "outcome": "No separately verified production activation in this review; retain for direct specification/media follow-up."
+    }
   ]
 }
