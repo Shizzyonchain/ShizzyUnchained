@@ -295,6 +295,9 @@ review without stopping the existing price/wallet/validator workers.
 The website tries this source first, sharing its result. TaoStats is a fallback
 while a node window is incomplete or unavailable, with one fallback attempt per
 period per half hour in shared Runtime Cache, plus warm-instance coalescing.
+The daily backup uses a matching half-hour cache key, so an expired dormant
+provider entry cannot repeatedly defeat failover. The hourly fallback refuses
+more than eight pages instead of publishing a partial total.
 Dated last-good trading snapshots remain available, visibly delayed, up to six
 hours. Missing windows never become zero, and hourly totals never use daily data.
 

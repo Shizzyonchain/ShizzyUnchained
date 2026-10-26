@@ -7,7 +7,8 @@ import { buyingTotals, requireFreshTrading } from "../../lib/market-signals";
 import { nodeTrading } from "../../lib/node-trading-source";
 import { getCache } from "@vercel/functions";
 const tags=sectors.subnets.map(({netuid,sectors})=>({netuid,sectors}));
-const load=unstable_cache(async()=>{
+const load=unstable_cache(async(anchor:number)=>{
+ if(!Number.isSafeInteger(anchor))throw new Error('Invalid fallback cache window');
  const key=process.env.TAOSTATS_API_KEY;if(!key)throw new Error("Trading source unavailable");
  const response=await fetch("https://api.taostats.io/v1/subnets/pools/aggregate?limit=200",{headers:{Authorization:key},signal:AbortSignal.timeout(7000),cache:"no-store"});
  if(!response.ok)throw new Error(`Trading source HTTP ${response.status}`);const body=await response.json();if(body.pagination?.next_page)throw new Error("Incomplete pool page");return buyingTotals(body.data);
@@ -36,7 +37,9 @@ async function primary(period:'1h'|'24h'){
   if(retry&&Date.now()<retry)throw new Error('Provider fallback cooling down');
   const retryAt=Date.now()+1800000;fallbackRetry.set(period,retryAt);
   try{await cache.set(period,retryAt,{ttl:1800});}catch{}
-  return period==='1h'?hourly():requireFreshTrading(await load());
+  // A new half-hour key reads fresh provider data on first failover, rather
+  // than repeatedly receiving an expired stale-while-revalidate entry.
+  return period==='1h'?hourly():requireFreshTrading(await load(Math.floor(Date.now()/1800000)));
  })().finally(()=>fallbackTasks.delete(period));
  fallbackTasks.set(period,task);return task;
 }
