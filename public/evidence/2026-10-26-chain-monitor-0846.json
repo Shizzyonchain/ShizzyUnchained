@@ -1,0 +1,5339 @@
+{
+  "scan": {
+    "checkedAt": "2026-10-26T08:47:34.984824+00:00",
+    "fromBlock": 9364951,
+    "toBlock": 9366736,
+    "finalizedHash": "0x889154e422351ee5f0b0f4cee122399c26d74e0b7e1a9e361ebf7b34cc3e1478",
+    "runtime": 484,
+    "chainTime": 1793004420000,
+    "source": "Opentensor archive RPC",
+    "metadataEventDefinitions": [
+      {
+        "pallet": "Balances",
+        "palletIndex": 5,
+        "event": {
+          "name": "Burned",
+          "fields": [
+            {
+              "name": "who",
+              "type": 0,
+              "typeName": "T::AccountId",
+              "docs": []
+            },
+            {
+              "name": "amount",
+              "type": 6,
+              "typeName": "T::Balance",
+              "docs": []
+            }
+          ],
+          "index": 11,
+          "docs": [
+            "Some amount was burned from an account."
+          ]
+        }
+      },
+      {
+        "pallet": "SubtensorModule",
+        "palletIndex": 7,
+        "event": {
+          "name": "AlphaRecycled",
+          "fields": [
+            {
+              "name": null,
+              "type": 0,
+              "typeName": "T::AccountId",
+              "docs": []
+            },
+            {
+              "name": null,
+              "type": 0,
+              "typeName": "T::AccountId",
+              "docs": []
+            },
+            {
+              "name": null,
+              "type": 43,
+              "typeName": "AlphaBalance",
+              "docs": []
+            },
+            {
+              "name": null,
+              "type": 41,
+              "typeName": "NetUid",
+              "docs": []
+            }
+          ],
+          "index": 97,
+          "docs": [
+            "Alpha has been recycled, reducing AlphaOut on a subnet.",
+            "",
+            "Parameters:",
+            "(coldkey, hotkey, amount, subnet_id)"
+          ]
+        }
+      },
+      {
+        "pallet": "SubtensorModule",
+        "palletIndex": 7,
+        "event": {
+          "name": "AlphaBurned",
+          "fields": [
+            {
+              "name": null,
+              "type": 0,
+              "typeName": "T::AccountId",
+              "docs": []
+            },
+            {
+              "name": null,
+              "type": 0,
+              "typeName": "T::AccountId",
+              "docs": []
+            },
+            {
+              "name": null,
+              "type": 43,
+              "typeName": "AlphaBalance",
+              "docs": []
+            },
+            {
+              "name": null,
+              "type": 41,
+              "typeName": "NetUid",
+              "docs": []
+            }
+          ],
+          "index": 98,
+          "docs": [
+            "Alpha have been burned without reducing AlphaOut.",
+            "",
+            "Parameters:",
+            "(coldkey, hotkey, amount, subnet_id)"
+          ]
+        }
+      },
+      {
+        "pallet": "SubtensorModule",
+        "palletIndex": 7,
+        "event": {
+          "name": "AddStakeBurn",
+          "fields": [
+            {
+              "name": "netuid",
+              "type": 41,
+              "typeName": "NetUid",
+              "docs": [
+                "The subnet ID"
+              ]
+            },
+            {
+              "name": "hotkey",
+              "type": 0,
+              "typeName": "T::AccountId",
+              "docs": [
+                "hotky account ID"
+              ]
+            },
+            {
+              "name": "amount",
+              "type": 6,
+              "typeName": "TaoBalance",
+              "docs": [
+                "Tao provided"
+              ]
+            },
+            {
+              "name": "alpha",
+              "type": 43,
+              "typeName": "AlphaBalance",
+              "docs": [
+                "Alpha burned"
+              ]
+            }
+          ],
+          "index": 125,
+          "docs": [
+            "\"Add stake and burn\" event: alpha token was purchased and burned."
+          ]
+        }
+      },
+      {
+        "pallet": "SubtensorModule",
+        "palletIndex": 7,
+        "event": {
+          "name": "SubnetEmissionWeightsSet",
+          "fields": [
+            {
+              "name": "netuid",
+              "type": 41,
+              "typeName": "NetUid",
+              "docs": [
+                "Subnet whose vector changed."
+              ]
+            },
+            {
+              "name": "weights",
+              "type": 73,
+              "typeName": "Vec<u64>",
+              "docs": [
+                "Full post-merge vector `[burn, recycle, owner, validator, miner]` in",
+                "`u64::MAX` parts."
+              ]
+            }
+          ],
+          "index": 158,
+          "docs": [
+            "The subnet owner or root set the subnet's emission weight vector."
+          ]
+        }
+      }
+    ],
+    "metadataReview": "Runtime 484; target event definitions and full portable types equal to previous reviewed boundary; each scanned block runtime checked; known eTAO and burn event controls decoded.",
+    "scannedThrough": 9366736,
+    "events": [
+      {
+        "block": 9364998,
+        "hash": "0x947da58d8a541a84cb2d2216d7dcc8580e89d3f240fd5e35739a5ab04fbcafda",
+        "timestamp": 1792983564000,
+        "eventIndex": 141,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              1444980732,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            1444980732,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                1444980732,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              1444980732,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365150,
+        "hash": "0x273a96903a24c6832c1f4a4d3662a9c39eb011f048b3e3ca6b1a140f40451e1a",
+        "timestamp": 1792985388001,
+        "eventIndex": 187,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              4207233436,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            4207233436,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                4207233436,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              4207233436,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365297,
+        "hash": "0x1782ef5d5d2c71f235963cf4a71cb38a5cce6ecd1c2ac38b2624338da0d09d4c",
+        "timestamp": 1792987152000,
+        "eventIndex": 184,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 24,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5CHxd2KVRnZ56BGAf1UGcSUnXYE6e1XLApAwYsJZ524PtaXr",
+              "5EHG3JbP4zT3yR89SKJqQadeLrr1iKGrKkF7NaT4uo4pePHV",
+              2596821466,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5CHxd2KVRnZ56BGAf1UGcSUnXYE6e1XLApAwYsJZ524PtaXr",
+            "5EHG3JbP4zT3yR89SKJqQadeLrr1iKGrKkF7NaT4uo4pePHV",
+            2596821466,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 24,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5CHxd2KVRnZ56BGAf1UGcSUnXYE6e1XLApAwYsJZ524PtaXr",
+                "amount": 255114
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5CHxd2KVRnZ56BGAf1UGcSUnXYE6e1XLApAwYsJZ524PtaXr",
+              "amount": 255114
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 24,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5CHxd2KVRnZ56BGAf1UGcSUnXYE6e1XLApAwYsJZ524PtaXr",
+                "5EHG3JbP4zT3yR89SKJqQadeLrr1iKGrKkF7NaT4uo4pePHV",
+                2596821466,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5CHxd2KVRnZ56BGAf1UGcSUnXYE6e1XLApAwYsJZ524PtaXr",
+              "5EHG3JbP4zT3yR89SKJqQadeLrr1iKGrKkF7NaT4uo4pePHV",
+              2596821466,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 24,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5CHxd2KVRnZ56BGAf1UGcSUnXYE6e1XLApAwYsJZ524PtaXr",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5CHxd2KVRnZ56BGAf1UGcSUnXYE6e1XLApAwYsJZ524PtaXr",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 24,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5CHxd2KVRnZ56BGAf1UGcSUnXYE6e1XLApAwYsJZ524PtaXr",
+                "actual_fee": 255114,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5CHxd2KVRnZ56BGAf1UGcSUnXYE6e1XLApAwYsJZ524PtaXr",
+              "actual_fee": 255114,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 24,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365309,
+        "hash": "0xed77a839eb1e2e7556286cc424776dd00a715a4ffa402547820016328ab52f11",
+        "timestamp": 1792987296001,
+        "eventIndex": 181,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 23,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              63465634648,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            63465634648,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 23,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 23,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                63465634648,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              63465634648,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 23,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 23,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 23,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365311,
+        "hash": "0x32f3dfb0ea3dc4ea1cc290a4d8e7c0736eda01eedc989cdc5fee7050de93217f",
+        "timestamp": 1792987320000,
+        "eventIndex": 163,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              533521749085,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            533521749085,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                533521749085,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              533521749085,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365469,
+        "hash": "0xd6ecb6e330c680bc81a3659e0ae0b4a29df46ced0842d4572337146e21c1b76c",
+        "timestamp": 1792989216000,
+        "eventIndex": 219,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 28,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              4804668517,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            4804668517,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 28,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 28,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                4804668517,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              4804668517,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 28,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 28,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 28,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365495,
+        "hash": "0x83fff0203d981bda2a97d296ffb9232b4d3e15481abe2314d37000c7c61d36ce",
+        "timestamp": 1792989528000,
+        "eventIndex": 157,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 8,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5GBvfE6NTfzJrAv6FJSKRLshA7VgeRV2DYnPy1JuoizDiGQP",
+              "5E4LX4FwXMZS1YkuMTDgSHcdsoBuLPcYyPNmyDDt5fMMGTZg",
+              2365924818,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5GBvfE6NTfzJrAv6FJSKRLshA7VgeRV2DYnPy1JuoizDiGQP",
+            "5E4LX4FwXMZS1YkuMTDgSHcdsoBuLPcYyPNmyDDt5fMMGTZg",
+            2365924818,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0502",
+              "module_id": "Balances",
+              "event_id": "Transfer",
+              "attributes": {
+                "from": "5EYCAe5jLQhn6ofDSw856NJXzJkmm5DwarHALhGjPBbZa5wW",
+                "to": "5CDjMevVJ9qndrCKqagcUnsAoi5mNsFEZHDkvNWDaqiLSAAq",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Transfer",
+            "attributes": {
+              "from": "5EYCAe5jLQhn6ofDSw856NJXzJkmm5DwarHALhGjPBbZa5wW",
+              "to": "5CDjMevVJ9qndrCKqagcUnsAoi5mNsFEZHDkvNWDaqiLSAAq",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0703",
+              "module_id": "SubtensorModule",
+              "event_id": "StakeRemoved",
+              "attributes": [
+                "5GBvfE6NTfzJrAv6FJSKRLshA7VgeRV2DYnPy1JuoizDiGQP",
+                "5E4LX4FwXMZS1YkuMTDgSHcdsoBuLPcYyPNmyDDt5fMMGTZg",
+                255113,
+                29950447,
+                62,
+                0
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "StakeRemoved",
+            "attributes": [
+              "5GBvfE6NTfzJrAv6FJSKRLshA7VgeRV2DYnPy1JuoizDiGQP",
+              "5E4LX4FwXMZS1YkuMTDgSHcdsoBuLPcYyPNmyDDt5fMMGTZg",
+              255113,
+              29950447,
+              62,
+              0
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EYCAe5jLQhn6ofDSw856NJXzJkmm5DwarHALhGjPBbZa5wW",
+                "amount": 255113
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EYCAe5jLQhn6ofDSw856NJXzJkmm5DwarHALhGjPBbZa5wW",
+              "amount": 255113
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5GBvfE6NTfzJrAv6FJSKRLshA7VgeRV2DYnPy1JuoizDiGQP",
+                "5E4LX4FwXMZS1YkuMTDgSHcdsoBuLPcYyPNmyDDt5fMMGTZg",
+                2365924818,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5GBvfE6NTfzJrAv6FJSKRLshA7VgeRV2DYnPy1JuoizDiGQP",
+              "5E4LX4FwXMZS1YkuMTDgSHcdsoBuLPcYyPNmyDDt5fMMGTZg",
+              2365924818,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0780",
+              "module_id": "SubtensorModule",
+              "event_id": "TransactionFeePaidWithAlpha",
+              "attributes": {
+                "who": "5GBvfE6NTfzJrAv6FJSKRLshA7VgeRV2DYnPy1JuoizDiGQP",
+                "netuid": 62,
+                "alpha_fee": 29950447,
+                "tao_amount": 255113
+              }
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "TransactionFeePaidWithAlpha",
+            "attributes": {
+              "who": "5GBvfE6NTfzJrAv6FJSKRLshA7VgeRV2DYnPy1JuoizDiGQP",
+              "netuid": 62,
+              "alpha_fee": 29950447,
+              "tao_amount": 255113
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5GBvfE6NTfzJrAv6FJSKRLshA7VgeRV2DYnPy1JuoizDiGQP",
+                "actual_fee": 255114,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5GBvfE6NTfzJrAv6FJSKRLshA7VgeRV2DYnPy1JuoizDiGQP",
+              "actual_fee": 255114,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365538,
+        "hash": "0x4d8f2456e8669024601c4e17353231b72b0e880815cf9a2a1e64425e6976f4d1",
+        "timestamp": 1792990044000,
+        "eventIndex": 191,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5HH2RbYK2yowfaNaECSHDyciFBwp9Wh7DGzkdHt1gfA9Q3sf",
+              "5EFZzhzU2TKa1soJuxvQzmHUWimQ4CsVorB2nTjd9E8Yoy9w",
+              2364541162,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5HH2RbYK2yowfaNaECSHDyciFBwp9Wh7DGzkdHt1gfA9Q3sf",
+            "5EFZzhzU2TKa1soJuxvQzmHUWimQ4CsVorB2nTjd9E8Yoy9w",
+            2364541162,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 12,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5HH2RbYK2yowfaNaECSHDyciFBwp9Wh7DGzkdHt1gfA9Q3sf",
+                "amount": 255113
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5HH2RbYK2yowfaNaECSHDyciFBwp9Wh7DGzkdHt1gfA9Q3sf",
+              "amount": 255113
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 12,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5HH2RbYK2yowfaNaECSHDyciFBwp9Wh7DGzkdHt1gfA9Q3sf",
+                "5EFZzhzU2TKa1soJuxvQzmHUWimQ4CsVorB2nTjd9E8Yoy9w",
+                2364541162,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5HH2RbYK2yowfaNaECSHDyciFBwp9Wh7DGzkdHt1gfA9Q3sf",
+              "5EFZzhzU2TKa1soJuxvQzmHUWimQ4CsVorB2nTjd9E8Yoy9w",
+              2364541162,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 12,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5HH2RbYK2yowfaNaECSHDyciFBwp9Wh7DGzkdHt1gfA9Q3sf",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5HH2RbYK2yowfaNaECSHDyciFBwp9Wh7DGzkdHt1gfA9Q3sf",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 12,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5HH2RbYK2yowfaNaECSHDyciFBwp9Wh7DGzkdHt1gfA9Q3sf",
+                "actual_fee": 255113,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5HH2RbYK2yowfaNaECSHDyciFBwp9Wh7DGzkdHt1gfA9Q3sf",
+              "actual_fee": 255113,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 12,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365621,
+        "hash": "0xcdaa3f691322750b4971cd5b5e6c8d0a38d6afa1a1ea9aca9182b3453bd4fce0",
+        "timestamp": 1792991040000,
+        "eventIndex": 244,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 30,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              166666666666,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            166666666666,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 30,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 30,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                166666666666,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              166666666666,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 30,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 30,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 30,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365752,
+        "hash": "0x60adbcf2566cad6acd79be318aff0e8ea9fd3e01149fb1cc1555e18db1091816",
+        "timestamp": 1792992612000,
+        "eventIndex": 201,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 16,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5E1W2RbrRufnEiymuBdUbmw5C7HtKgPiioxQ6chMR4LZP8SK",
+              "5Fv8xrEP8Z4nrLdhEQyHSmgp5g3eu6WQaeGLbF6r4dKW6rw9",
+              2576459371,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5E1W2RbrRufnEiymuBdUbmw5C7HtKgPiioxQ6chMR4LZP8SK",
+            "5Fv8xrEP8Z4nrLdhEQyHSmgp5g3eu6WQaeGLbF6r4dKW6rw9",
+            2576459371,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 16,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5E1W2RbrRufnEiymuBdUbmw5C7HtKgPiioxQ6chMR4LZP8SK",
+                "amount": 255113
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5E1W2RbrRufnEiymuBdUbmw5C7HtKgPiioxQ6chMR4LZP8SK",
+              "amount": 255113
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 16,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5E1W2RbrRufnEiymuBdUbmw5C7HtKgPiioxQ6chMR4LZP8SK",
+                "5Fv8xrEP8Z4nrLdhEQyHSmgp5g3eu6WQaeGLbF6r4dKW6rw9",
+                2576459371,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5E1W2RbrRufnEiymuBdUbmw5C7HtKgPiioxQ6chMR4LZP8SK",
+              "5Fv8xrEP8Z4nrLdhEQyHSmgp5g3eu6WQaeGLbF6r4dKW6rw9",
+              2576459371,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 16,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5E1W2RbrRufnEiymuBdUbmw5C7HtKgPiioxQ6chMR4LZP8SK",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5E1W2RbrRufnEiymuBdUbmw5C7HtKgPiioxQ6chMR4LZP8SK",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 16,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5E1W2RbrRufnEiymuBdUbmw5C7HtKgPiioxQ6chMR4LZP8SK",
+                "actual_fee": 255113,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5E1W2RbrRufnEiymuBdUbmw5C7HtKgPiioxQ6chMR4LZP8SK",
+              "actual_fee": 255113,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 16,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365773,
+        "hash": "0x115c437c542323c3aa8277b9e2ff25c07a5df2ad6631519e22f34158153eb50a",
+        "timestamp": 1792992864000,
+        "eventIndex": 187,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 25,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              367663417,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            367663417,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 25,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 25,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                367663417,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              367663417,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 25,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 25,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 25,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365804,
+        "hash": "0x7fcbce1f2d0e387a0f85c8d7873f10ca7a6ad776b84e4adf67f72932e6beea6e",
+        "timestamp": 1792993236000,
+        "eventIndex": 170,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 8,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5ECLgtB6a6tW85gy5orszFgxhrifCpxnrwzvkjniYCJFaNEZ",
+              "5Cr4gYa3XvgEtkDe11XEKZx9WjeL6Zr2rXqCHoRVHvWuWVjf",
+              2367005886,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5ECLgtB6a6tW85gy5orszFgxhrifCpxnrwzvkjniYCJFaNEZ",
+            "5Cr4gYa3XvgEtkDe11XEKZx9WjeL6Zr2rXqCHoRVHvWuWVjf",
+            2367005886,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5ECLgtB6a6tW85gy5orszFgxhrifCpxnrwzvkjniYCJFaNEZ",
+                "amount": 255114
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5ECLgtB6a6tW85gy5orszFgxhrifCpxnrwzvkjniYCJFaNEZ",
+              "amount": 255114
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5ECLgtB6a6tW85gy5orszFgxhrifCpxnrwzvkjniYCJFaNEZ",
+                "5Cr4gYa3XvgEtkDe11XEKZx9WjeL6Zr2rXqCHoRVHvWuWVjf",
+                2367005886,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5ECLgtB6a6tW85gy5orszFgxhrifCpxnrwzvkjniYCJFaNEZ",
+              "5Cr4gYa3XvgEtkDe11XEKZx9WjeL6Zr2rXqCHoRVHvWuWVjf",
+              2367005886,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5ECLgtB6a6tW85gy5orszFgxhrifCpxnrwzvkjniYCJFaNEZ",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5ECLgtB6a6tW85gy5orszFgxhrifCpxnrwzvkjniYCJFaNEZ",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5ECLgtB6a6tW85gy5orszFgxhrifCpxnrwzvkjniYCJFaNEZ",
+                "actual_fee": 255114,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5ECLgtB6a6tW85gy5orszFgxhrifCpxnrwzvkjniYCJFaNEZ",
+              "actual_fee": 255114,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365833,
+        "hash": "0x7e78456e969f0c7bf943a01ab3cbf0f082d1d3014f8f7a7531d50022e3cafb8b",
+        "timestamp": 1792993584000,
+        "eventIndex": 185,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 24,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5Gxuhb4kxoFCUjhbgosLWkq8SrqF4ktxW5y4LH8oPhzSvToM",
+              "5HTAcDmYq9rtKTaoGQKECNsbYQDEmqFeyASNYAV4kg53Njge",
+              2342608101,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5Gxuhb4kxoFCUjhbgosLWkq8SrqF4ktxW5y4LH8oPhzSvToM",
+            "5HTAcDmYq9rtKTaoGQKECNsbYQDEmqFeyASNYAV4kg53Njge",
+            2342608101,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 24,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5Gxuhb4kxoFCUjhbgosLWkq8SrqF4ktxW5y4LH8oPhzSvToM",
+                "amount": 255114
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5Gxuhb4kxoFCUjhbgosLWkq8SrqF4ktxW5y4LH8oPhzSvToM",
+              "amount": 255114
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 24,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5Gxuhb4kxoFCUjhbgosLWkq8SrqF4ktxW5y4LH8oPhzSvToM",
+                "5HTAcDmYq9rtKTaoGQKECNsbYQDEmqFeyASNYAV4kg53Njge",
+                2342608101,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5Gxuhb4kxoFCUjhbgosLWkq8SrqF4ktxW5y4LH8oPhzSvToM",
+              "5HTAcDmYq9rtKTaoGQKECNsbYQDEmqFeyASNYAV4kg53Njge",
+              2342608101,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 24,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5Gxuhb4kxoFCUjhbgosLWkq8SrqF4ktxW5y4LH8oPhzSvToM",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5Gxuhb4kxoFCUjhbgosLWkq8SrqF4ktxW5y4LH8oPhzSvToM",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 24,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5Gxuhb4kxoFCUjhbgosLWkq8SrqF4ktxW5y4LH8oPhzSvToM",
+                "actual_fee": 255114,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5Gxuhb4kxoFCUjhbgosLWkq8SrqF4ktxW5y4LH8oPhzSvToM",
+              "actual_fee": 255114,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 24,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365849,
+        "hash": "0x02b67d7670d2d937149093421fd04fc04a71e28658ab04646533848ea33d857c",
+        "timestamp": 1792993776000,
+        "eventIndex": 170,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 20,
+          "event": {
+            "event_index": "0761",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaRecycled",
+            "attributes": [
+              "5H12QV5mVkgXyoyP22Fs2BZAJASXiXmQmdeJJTrKVEfaRJSU",
+              "5CFsbSfXW44gJkC5Y8vi5dXkPQzsDLCLX6Nbv5jeh8Zb4kNC",
+              4550000000000,
+              104
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaRecycled",
+          "attributes": [
+            "5H12QV5mVkgXyoyP22Fs2BZAJASXiXmQmdeJJTrKVEfaRJSU",
+            "5CFsbSfXW44gJkC5Y8vi5dXkPQzsDLCLX6Nbv5jeh8Zb4kNC",
+            4550000000000,
+            104
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 20,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5H12QV5mVkgXyoyP22Fs2BZAJASXiXmQmdeJJTrKVEfaRJSU",
+                "amount": 310364
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5H12QV5mVkgXyoyP22Fs2BZAJASXiXmQmdeJJTrKVEfaRJSU",
+              "amount": 310364
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 20,
+            "event": {
+              "event_index": "0761",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaRecycled",
+              "attributes": [
+                "5H12QV5mVkgXyoyP22Fs2BZAJASXiXmQmdeJJTrKVEfaRJSU",
+                "5CFsbSfXW44gJkC5Y8vi5dXkPQzsDLCLX6Nbv5jeh8Zb4kNC",
+                4550000000000,
+                104
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaRecycled",
+            "attributes": [
+              "5H12QV5mVkgXyoyP22Fs2BZAJASXiXmQmdeJJTrKVEfaRJSU",
+              "5CFsbSfXW44gJkC5Y8vi5dXkPQzsDLCLX6Nbv5jeh8Zb4kNC",
+              4550000000000,
+              104
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 20,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5H12QV5mVkgXyoyP22Fs2BZAJASXiXmQmdeJJTrKVEfaRJSU",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5H12QV5mVkgXyoyP22Fs2BZAJASXiXmQmdeJJTrKVEfaRJSU",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 20,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5H12QV5mVkgXyoyP22Fs2BZAJASXiXmQmdeJJTrKVEfaRJSU",
+                "actual_fee": 310364,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5H12QV5mVkgXyoyP22Fs2BZAJASXiXmQmdeJJTrKVEfaRJSU",
+              "actual_fee": 310364,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 20,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1763445000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1763445000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365925,
+        "hash": "0x64113f7a0416f461c75eccea8779b9c397fd2c7298d8f1e743af36eeecd0bc83",
+        "timestamp": 1792994688000,
+        "eventIndex": 154,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 13,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              199418817,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            199418817,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 13,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 13,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                199418817,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              199418817,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 13,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 13,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 13,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9365925,
+        "hash": "0x64113f7a0416f461c75eccea8779b9c397fd2c7298d8f1e743af36eeecd0bc83",
+        "timestamp": 1792994688000,
+        "eventIndex": 177,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 18,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5C8JVpxSCwNiVwu2WoLUsg2u1kL4wqpPinZHSG2jifW1N5oj",
+              "5Egv5XmVKboMZesh3B3REDULJaa6gpBTww6CAwguU9ui41ci",
+              2333844877,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5C8JVpxSCwNiVwu2WoLUsg2u1kL4wqpPinZHSG2jifW1N5oj",
+            "5Egv5XmVKboMZesh3B3REDULJaa6gpBTww6CAwguU9ui41ci",
+            2333844877,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 18,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5C8JVpxSCwNiVwu2WoLUsg2u1kL4wqpPinZHSG2jifW1N5oj",
+                "amount": 255114
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5C8JVpxSCwNiVwu2WoLUsg2u1kL4wqpPinZHSG2jifW1N5oj",
+              "amount": 255114
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 18,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5C8JVpxSCwNiVwu2WoLUsg2u1kL4wqpPinZHSG2jifW1N5oj",
+                "5Egv5XmVKboMZesh3B3REDULJaa6gpBTww6CAwguU9ui41ci",
+                2333844877,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5C8JVpxSCwNiVwu2WoLUsg2u1kL4wqpPinZHSG2jifW1N5oj",
+              "5Egv5XmVKboMZesh3B3REDULJaa6gpBTww6CAwguU9ui41ci",
+              2333844877,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 18,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5C8JVpxSCwNiVwu2WoLUsg2u1kL4wqpPinZHSG2jifW1N5oj",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5C8JVpxSCwNiVwu2WoLUsg2u1kL4wqpPinZHSG2jifW1N5oj",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 18,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5C8JVpxSCwNiVwu2WoLUsg2u1kL4wqpPinZHSG2jifW1N5oj",
+                "actual_fee": 255114,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5C8JVpxSCwNiVwu2WoLUsg2u1kL4wqpPinZHSG2jifW1N5oj",
+              "actual_fee": 255114,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 18,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9366052,
+        "hash": "0xd3ea341d71e2603037a257f9f1408868bf35e4016afdb4403f6cb79b0d2e6ce6",
+        "timestamp": 1792996212000,
+        "eventIndex": 142,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 5,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5GurufihGmZseSiiUwtidk57iSAZnpWBM76srYtVKpQhVyE8",
+              "5FxjUVsAu98JHfhGZaC5XDJq181RVKRid8KBiDevtzqzZuFT",
+              2316904196,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5GurufihGmZseSiiUwtidk57iSAZnpWBM76srYtVKpQhVyE8",
+            "5FxjUVsAu98JHfhGZaC5XDJq181RVKRid8KBiDevtzqzZuFT",
+            2316904196,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0502",
+              "module_id": "Balances",
+              "event_id": "Transfer",
+              "attributes": {
+                "from": "5EYCAe5jLQhn6ofDSw856NJXzJkmm5DwarHALhGjPBbZa5wW",
+                "to": "5FFVBixHWLUBha3ryDTKybWe35i9dLSrnTcmZ6PbWzNxc78D",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Transfer",
+            "attributes": {
+              "from": "5EYCAe5jLQhn6ofDSw856NJXzJkmm5DwarHALhGjPBbZa5wW",
+              "to": "5FFVBixHWLUBha3ryDTKybWe35i9dLSrnTcmZ6PbWzNxc78D",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0703",
+              "module_id": "SubtensorModule",
+              "event_id": "StakeRemoved",
+              "attributes": [
+                "5GurufihGmZseSiiUwtidk57iSAZnpWBM76srYtVKpQhVyE8",
+                "5FxjUVsAu98JHfhGZaC5XDJq181RVKRid8KBiDevtzqzZuFT",
+                255113,
+                29951948,
+                62,
+                0
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "StakeRemoved",
+            "attributes": [
+              "5GurufihGmZseSiiUwtidk57iSAZnpWBM76srYtVKpQhVyE8",
+              "5FxjUVsAu98JHfhGZaC5XDJq181RVKRid8KBiDevtzqzZuFT",
+              255113,
+              29951948,
+              62,
+              0
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EYCAe5jLQhn6ofDSw856NJXzJkmm5DwarHALhGjPBbZa5wW",
+                "amount": 255113
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EYCAe5jLQhn6ofDSw856NJXzJkmm5DwarHALhGjPBbZa5wW",
+              "amount": 255113
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5GurufihGmZseSiiUwtidk57iSAZnpWBM76srYtVKpQhVyE8",
+                "5FxjUVsAu98JHfhGZaC5XDJq181RVKRid8KBiDevtzqzZuFT",
+                2316904196,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5GurufihGmZseSiiUwtidk57iSAZnpWBM76srYtVKpQhVyE8",
+              "5FxjUVsAu98JHfhGZaC5XDJq181RVKRid8KBiDevtzqzZuFT",
+              2316904196,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0780",
+              "module_id": "SubtensorModule",
+              "event_id": "TransactionFeePaidWithAlpha",
+              "attributes": {
+                "who": "5GurufihGmZseSiiUwtidk57iSAZnpWBM76srYtVKpQhVyE8",
+                "netuid": 62,
+                "alpha_fee": 29951948,
+                "tao_amount": 255113
+              }
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "TransactionFeePaidWithAlpha",
+            "attributes": {
+              "who": "5GurufihGmZseSiiUwtidk57iSAZnpWBM76srYtVKpQhVyE8",
+              "netuid": 62,
+              "alpha_fee": 29951948,
+              "tao_amount": 255113
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5GurufihGmZseSiiUwtidk57iSAZnpWBM76srYtVKpQhVyE8",
+                "actual_fee": 255114,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5GurufihGmZseSiiUwtidk57iSAZnpWBM76srYtVKpQhVyE8",
+              "actual_fee": 255114,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9366058,
+        "hash": "0x00847b8cdeb0dc8784b44b343d9c1e9ce811efdb05da7dd8db891109ca6c4c65",
+        "timestamp": 1792996284000,
+        "eventIndex": 139,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 5,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+              "5FYp6df63XrAyNee6QVVgDRFXMjyGfRWYeHhSr6VVc2RpjGL",
+              2339895765,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+            "5FYp6df63XrAyNee6QVVgDRFXMjyGfRWYeHhSr6VVc2RpjGL",
+            2339895765,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+                "amount": 255113
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+              "amount": 255113
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+                "5FYp6df63XrAyNee6QVVgDRFXMjyGfRWYeHhSr6VVc2RpjGL",
+                2339895765,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+              "5FYp6df63XrAyNee6QVVgDRFXMjyGfRWYeHhSr6VVc2RpjGL",
+              2339895765,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+                "actual_fee": 255113,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+              "actual_fee": 255113,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 5,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9366077,
+        "hash": "0x758ec2a76259c72a49d2fc51376408eb54917e2706da4b28204fadb13388e180",
+        "timestamp": 1792996512000,
+        "eventIndex": 182,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 22,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              4731828845,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            4731828845,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 22,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 22,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                4731828845,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              4731828845,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 22,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 22,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 22,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9366077,
+        "hash": "0x758ec2a76259c72a49d2fc51376408eb54917e2706da4b28204fadb13388e180",
+        "timestamp": 1792996512000,
+        "eventIndex": 187,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 23,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5HnGzwXETH7WPpSHaLPm2eRWYZwhTUsduyWdZACZNYxetdED",
+              "5Dytq5Kxk4Rke27jZGV2mCDr1XpmSwPwe9AiQeBVKANyd4EY",
+              2333877658,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5HnGzwXETH7WPpSHaLPm2eRWYZwhTUsduyWdZACZNYxetdED",
+            "5Dytq5Kxk4Rke27jZGV2mCDr1XpmSwPwe9AiQeBVKANyd4EY",
+            2333877658,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 23,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5HnGzwXETH7WPpSHaLPm2eRWYZwhTUsduyWdZACZNYxetdED",
+                "amount": 255114
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5HnGzwXETH7WPpSHaLPm2eRWYZwhTUsduyWdZACZNYxetdED",
+              "amount": 255114
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 23,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5HnGzwXETH7WPpSHaLPm2eRWYZwhTUsduyWdZACZNYxetdED",
+                "5Dytq5Kxk4Rke27jZGV2mCDr1XpmSwPwe9AiQeBVKANyd4EY",
+                2333877658,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5HnGzwXETH7WPpSHaLPm2eRWYZwhTUsduyWdZACZNYxetdED",
+              "5Dytq5Kxk4Rke27jZGV2mCDr1XpmSwPwe9AiQeBVKANyd4EY",
+              2333877658,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 23,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5HnGzwXETH7WPpSHaLPm2eRWYZwhTUsduyWdZACZNYxetdED",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5HnGzwXETH7WPpSHaLPm2eRWYZwhTUsduyWdZACZNYxetdED",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 23,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5HnGzwXETH7WPpSHaLPm2eRWYZwhTUsduyWdZACZNYxetdED",
+                "actual_fee": 255114,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5HnGzwXETH7WPpSHaLPm2eRWYZwhTUsduyWdZACZNYxetdED",
+              "actual_fee": 255114,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 23,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9366108,
+        "hash": "0x835a6954d94433e309b59d926dd523b824ee8fc4db351cb70d94fab4c4754fad",
+        "timestamp": 1792996884000,
+        "eventIndex": 161,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 9,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+              "5D22QSC8Be44yBVvLJYWsmNA5PXt3zZwsb3FF1gtHxcqkFR6",
+              2332265711,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+            "5D22QSC8Be44yBVvLJYWsmNA5PXt3zZwsb3FF1gtHxcqkFR6",
+            2332265711,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 9,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+                "amount": 255113
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+              "amount": 255113
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 9,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+                "5D22QSC8Be44yBVvLJYWsmNA5PXt3zZwsb3FF1gtHxcqkFR6",
+                2332265711,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+              "5D22QSC8Be44yBVvLJYWsmNA5PXt3zZwsb3FF1gtHxcqkFR6",
+              2332265711,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 9,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 9,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+                "actual_fee": 255113,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5CJAaUzMXbhRapKUdtSqo286nERbWoAtC96s26UvM3uUWjeT",
+              "actual_fee": 255113,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 9,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9366237,
+        "hash": "0xf6c36cee51908f5408d2b041d243b356c62663b8d9039ca27ceef1ac4679f64a",
+        "timestamp": 1792998432000,
+        "eventIndex": 222,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 31,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              42886749,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            42886749,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 31,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 31,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                42886749,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              42886749,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 31,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 31,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 31,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9366271,
+        "hash": "0xc7fc29244a14484862e5e1ed07cf89b2c4f0c9a49a4f3b8d133320f791c6b35a",
+        "timestamp": 1792998840000,
+        "eventIndex": 159,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 7,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5HjnFE7Zr9TkepGkGLNK4skFU9pBZEfCXTvQAB7nkPvSz6Wv",
+              "5F2Dz5Fn2gkZB4iUZpMfZrA77MRbxXU2TwyEqTCmXCuaSSbX",
+              2591903382,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5HjnFE7Zr9TkepGkGLNK4skFU9pBZEfCXTvQAB7nkPvSz6Wv",
+            "5F2Dz5Fn2gkZB4iUZpMfZrA77MRbxXU2TwyEqTCmXCuaSSbX",
+            2591903382,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 7,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5HjnFE7Zr9TkepGkGLNK4skFU9pBZEfCXTvQAB7nkPvSz6Wv",
+                "amount": 255114
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5HjnFE7Zr9TkepGkGLNK4skFU9pBZEfCXTvQAB7nkPvSz6Wv",
+              "amount": 255114
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 7,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5HjnFE7Zr9TkepGkGLNK4skFU9pBZEfCXTvQAB7nkPvSz6Wv",
+                "5F2Dz5Fn2gkZB4iUZpMfZrA77MRbxXU2TwyEqTCmXCuaSSbX",
+                2591903382,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5HjnFE7Zr9TkepGkGLNK4skFU9pBZEfCXTvQAB7nkPvSz6Wv",
+              "5F2Dz5Fn2gkZB4iUZpMfZrA77MRbxXU2TwyEqTCmXCuaSSbX",
+              2591903382,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 7,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5HjnFE7Zr9TkepGkGLNK4skFU9pBZEfCXTvQAB7nkPvSz6Wv",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5HjnFE7Zr9TkepGkGLNK4skFU9pBZEfCXTvQAB7nkPvSz6Wv",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 7,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5HjnFE7Zr9TkepGkGLNK4skFU9pBZEfCXTvQAB7nkPvSz6Wv",
+                "actual_fee": 255114,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5HjnFE7Zr9TkepGkGLNK4skFU9pBZEfCXTvQAB7nkPvSz6Wv",
+              "actual_fee": 255114,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 7,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9366542,
+        "hash": "0xf22cd04d75bb861bd34386f2b28c99fdf26dc29bb40c6a9439937fa0d032dcc5",
+        "timestamp": 1793002092000,
+        "eventIndex": 231,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 11,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              5675384685,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            5675384685,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 11,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 11,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                5675384685,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              5675384685,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 11,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 11,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 11,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9366629,
+        "hash": "0x066f273e5ae6f8166558692d9434ceb421ae674af77da0b501a78cfe225c066b",
+        "timestamp": 1793003136000,
+        "eventIndex": 207,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 25,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5FpctiJuen1Y12E79A8VU5w6wkZyTfRFoFoCMCdpmHietnw9",
+              "5D75zmXKYKMkZf7DMn7eH6Gm6XXWcvBtJbpyPfbMJoqkP8QW",
+              2305888164,
+              62
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5FpctiJuen1Y12E79A8VU5w6wkZyTfRFoFoCMCdpmHietnw9",
+            "5D75zmXKYKMkZf7DMn7eH6Gm6XXWcvBtJbpyPfbMJoqkP8QW",
+            2305888164,
+            62
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 25,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5FpctiJuen1Y12E79A8VU5w6wkZyTfRFoFoCMCdpmHietnw9",
+                "amount": 255114
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5FpctiJuen1Y12E79A8VU5w6wkZyTfRFoFoCMCdpmHietnw9",
+              "amount": 255114
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 25,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5FpctiJuen1Y12E79A8VU5w6wkZyTfRFoFoCMCdpmHietnw9",
+                "5D75zmXKYKMkZf7DMn7eH6Gm6XXWcvBtJbpyPfbMJoqkP8QW",
+                2305888164,
+                62
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5FpctiJuen1Y12E79A8VU5w6wkZyTfRFoFoCMCdpmHietnw9",
+              "5D75zmXKYKMkZf7DMn7eH6Gm6XXWcvBtJbpyPfbMJoqkP8QW",
+              2305888164,
+              62
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 25,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5FpctiJuen1Y12E79A8VU5w6wkZyTfRFoFoCMCdpmHietnw9",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5FpctiJuen1Y12E79A8VU5w6wkZyTfRFoFoCMCdpmHietnw9",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 25,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5FpctiJuen1Y12E79A8VU5w6wkZyTfRFoFoCMCdpmHietnw9",
+                "actual_fee": 255114,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5FpctiJuen1Y12E79A8VU5w6wkZyTfRFoFoCMCdpmHietnw9",
+              "actual_fee": 255114,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 25,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      {
+        "block": 9366702,
+        "hash": "0x77b83df52e3fd62f98f03680d39549c98d6bf621749f8eb962da1e5ab2dd3e1e",
+        "timestamp": 1793004012000,
+        "eventIndex": 154,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              88228,
+              8
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            88228,
+            8
+          ],
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 255115
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 255115
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0762",
+              "module_id": "SubtensorModule",
+              "event_id": "AlphaBurned",
+              "attributes": [
+                "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+                88228,
+                8
+              ]
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+              88228,
+              8
+            ],
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "amount": 0
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "amount": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+                "actual_fee": 255115,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+              "actual_fee": 255115,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 6,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1535225000,
+                    "proof_size": 9796
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1535225000,
+                  "proof_size": 9796
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "weights": {
+      "1": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "2": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "3": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "4": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "5": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "6": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "7": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "8": [
+        "0",
+        "0",
+        "0",
+        "9223372036854775807",
+        "9223372036854775808"
+      ],
+      "9": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "10": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "11": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "12": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "13": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "14": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "15": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "16": [
+        "0",
+        "0",
+        "3320413933267719290",
+        "3781582535110458081",
+        "11344747605331374244"
+      ],
+      "17": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "18": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "19": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "20": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "21": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "22": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "23": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "24": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "25": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "26": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "27": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "28": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "29": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "30": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "31": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "32": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "33": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "34": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "35": [
+        "0",
+        "0",
+        "6087425544324152032",
+        "5534023222112865484",
+        "6825295307272534099"
+      ],
+      "36": [
+        "0",
+        "0",
+        "6087425544324152032",
+        "5534023222112865484",
+        "6825295307272534099"
+      ],
+      "37": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "38": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "39": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "40": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "41": [
+        "0",
+        "0",
+        "1844674407370955161",
+        "7378697629483820646",
+        "9223372036854775808"
+      ],
+      "42": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "43": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "44": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "45": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "46": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "47": [
+        "0",
+        "0",
+        "3320413933267719290",
+        "2324289753287403503",
+        "12802040387154428822"
+      ],
+      "48": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "49": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "50": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "51": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "52": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "53": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "54": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "55": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "56": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "57": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "58": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "59": [
+        "0",
+        "0",
+        "5552469966186575036",
+        "6806848563198824545",
+        "6087425544324152034"
+      ],
+      "60": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "61": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "62": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "63": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "64": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "65": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "66": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "67": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "68": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "69": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "70": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "71": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "72": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "73": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "74": [
+        "0",
+        "0",
+        "0",
+        "9223372036854775807",
+        "9223372036854775808"
+      ],
+      "75": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "76": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "9038904596117680291",
+        "6087509988105675080"
+      ],
+      "77": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "78": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "79": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "80": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "81": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "82": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "83": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "84": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "85": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "86": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "87": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "88": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "89": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "90": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "91": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "92": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "93": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "94": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "95": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "96": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "97": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "98": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "99": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "100": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "101": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "102": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "103": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "104": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "105": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "106": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "107": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "108": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "109": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "110": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "111": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "112": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "113": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "114": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "115": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "116": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "117": [
+        "0",
+        "0",
+        "6087425544324152032",
+        "6271892985061247549",
+        "6087425544324152034"
+      ],
+      "118": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "119": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "120": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "121": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "122": [
+        "0",
+        "0",
+        "3320413933267719291",
+        "3320413933267719291",
+        "11805916207174113033"
+      ],
+      "123": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "124": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "125": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "126": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "127": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "128": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ]
+    },
+    "differences": [],
+    "completedAt": "2026-10-26T08:50:26.916723+00:00",
+    "complete": true
+  },
+  "verification": {
+    "checkedAt": "2026-10-26T08:50:37.476745+00:00",
+    "allocations": [],
+    "burnIdentities": [
+      {
+        "block": 9365311,
+        "eventIndex": 163,
+        "netuid": 8,
+        "identity": {
+          "subnet_name": "Vanta",
+          "github_repo": "https://github.com/taoshidev/vanta-network",
+          "subnet_contact": "",
+          "subnet_url": "https://www.vantanetwork.io/",
+          "discord": "tl_arrash",
+          "description": "The first decentralized & trustless liquidity and execution engine for prop firms and traders",
+          "logo_url": "https://website-git-ken-vanta-taoshi.vercel.app/black-white.png",
+          "additional": "Vanta Network is the first decentralized, trustless liquidity and execution engine for prop firms and traders. It live-trades top-performing miners who deposit alpha for funding, rewards them based on verifiable performance, and uses profits to buy back alpha, creating a transparent, risk-adjusted, and incentive-aligned trading ecosystem."
+        },
+        "registeredAt": 1477264
+      },
+      {
+        "block": 9365621,
+        "eventIndex": 244,
+        "netuid": 8,
+        "identity": {
+          "subnet_name": "Vanta",
+          "github_repo": "https://github.com/taoshidev/vanta-network",
+          "subnet_contact": "",
+          "subnet_url": "https://www.vantanetwork.io/",
+          "discord": "tl_arrash",
+          "description": "The first decentralized & trustless liquidity and execution engine for prop firms and traders",
+          "logo_url": "https://website-git-ken-vanta-taoshi.vercel.app/black-white.png",
+          "additional": "Vanta Network is the first decentralized, trustless liquidity and execution engine for prop firms and traders. It live-trades top-performing miners who deposit alpha for funding, rewards them based on verifiable performance, and uses profits to buy back alpha, creating a transparent, risk-adjusted, and incentive-aligned trading ecosystem."
+        },
+        "registeredAt": 1477264
+      }
+    ],
+    "errors": []
+  },
+  "qualifyingBurns": [
+    {
+      "id": "9365311-163",
+      "block": 9365311,
+      "hash": "0x32f3dfb0ea3dc4ea1cc290a4d8e7c0736eda01eedc989cdc5fee7050de93217f",
+      "extrinsic": 6,
+      "eventIndex": 163,
+      "eventName": "SubtensorModule.AlphaBurned",
+      "timestamp": "2026-10-26T04:02:00+00:00",
+      "netuid": 8,
+      "name": "Vanta",
+      "kind": "alpha",
+      "amountRaw": "533521749085",
+      "taoSpentRaw": null,
+      "account": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5"
+    },
+    {
+      "id": "9365621-244",
+      "block": 9365621,
+      "hash": "0xcdaa3f691322750b4971cd5b5e6c8d0a38d6afa1a1ea9aca9182b3453bd4fce0",
+      "extrinsic": 30,
+      "eventIndex": 244,
+      "eventName": "SubtensorModule.AlphaBurned",
+      "timestamp": "2026-10-26T05:04:00+00:00",
+      "netuid": 8,
+      "name": "Vanta",
+      "kind": "alpha",
+      "amountRaw": "166666666666",
+      "taoSpentRaw": null,
+      "account": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5"
+    }
+  ],
+  "note": "Two successful direct AlphaBurned executions on SN8 Vanta. No AddStakeBurn marker: no buyback or revenue claim. Exact raw amounts use 1e9 native units. Other small burns and AlphaRecycled retained in evidence only; no new emission-allocation events and all current vectors match."
+}
