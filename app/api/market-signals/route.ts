@@ -11,7 +11,7 @@ const load=unstable_cache(async()=>{
  const key=process.env.TAOSTATS_API_KEY;if(!key)throw new Error("Trading source unavailable");
  const response=await fetch("https://api.taostats.io/v1/subnets/pools/aggregate?limit=200",{headers:{Authorization:key},signal:AbortSignal.timeout(7000),cache:"no-store"});
  if(!response.ok)throw new Error(`Trading source HTTP ${response.status}`);const body=await response.json();if(body.pagination?.next_page)throw new Error("Incomplete pool page");return buyingTotals(body.data);
-},["market-buy-sell-v1"],{revalidate:300});
+},["market-buy-sell-v2"],{revalidate:300});
 const hourlyAt=unstable_cache(async(anchor:string)=>{
  const key=process.env.TAOSTATS_API_KEY!;const signal=AbortSignal.timeout(25000);
  return collectHourlyTrades(anchor,async(page,start,end)=>{
@@ -30,7 +30,7 @@ async function primary(period:'1h'|'24h'){
  try{return await nodeTrading(period);}catch{}
  const existing=fallbackTasks.get(period);if(existing)return existing;
  const task=(async()=>{
-  const cache=getCache({namespace:'market-provider-fallback-v1'});
+  const cache=getCache({namespace:'market-provider-fallback-v2'});
   let retry=fallbackRetry.get(period);
   try{retry=(await cache.get(period) as number|undefined)??retry;}catch{}
   if(retry&&Date.now()<retry)throw new Error('Provider fallback cooling down');
