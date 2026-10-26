@@ -24,7 +24,13 @@ def add_owner_emissions(chain, block_hash, rows):
     for sn, (_, value) in zip(rows, values):
         emission = emissions.get(int(sn))
         if emission is None:
-            raise ValueError('Missing alpha emission')
+            # Unstarted registrations can omit this Default storage map key.
+            # Read the same-block runtime default explicitly, never invent zero.
+            emission = chain.query('SubtensorModule', 'SubnetAlphaOutEmission',
+                                   [int(sn)], block_hash=block_hash).value
+            if emission is None:
+                raise ValueError('Missing alpha emission')
+            emission = int(emission)
         weights = [int(v) for v in value.value]
         amount = owner_daily_rate(emission, weights)
         rows[sn].update(ownerEmissionPerDayRaw=str(amount), alphaOutEmissionRaw=str(emission), ownerWeightRaw=str(weights[2]))

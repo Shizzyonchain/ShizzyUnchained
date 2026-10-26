@@ -1,46 +1,4040 @@
 {
+  "version": 1,
   "date": "2026-10-26",
-  "scope": "Six-hour chain monitor only; full daily research is not complete.",
+  "coverageStart": "2026-10-25T14:57:25.191466+00:00",
+  "coverageEnd": "2026-10-26T14:24:50.166214+00:00",
+  "assembledAt": "2026-10-26T14:24:50.166214+00:00",
+  "dailyWorkflowComplete": false,
+  "scope": "Full daily research assembled; publication, live verification and X roundup pending.",
+  "counts": {
+    "subnets": 128,
+    "updates": 16,
+    "repositoryPaths": 134,
+    "repositoryErrors": 3
+  },
+  "sourceMethods": [
+    "All 128 current subnet project pages and October26 Discord briefs; known repositories and selected commit diffs",
+    "Signed-in @ShizzyUnchained Grok discovery, qualitative top-five discussion and final omission review",
+    "Numbered X searches covering SN1–SN128, selected official team/partner originals and Const/Tensia profiles",
+    "Owner bookmarks and visible X History; preceding seven editions for overlap and unresolved leads",
+    "Finalized lifecycle, ownership, eTAO and burn events; one-block snapshot of 128 owner wallets",
+    "YouTube Videos and Live shelves plus watch-page metadata; full alpha/TAO market snapshot and sector review"
+  ],
+  "accessGaps": [
+    "X review is sampled public coverage, not an exhaustive census of posts, replies or private channels. Grok attention is qualitative and can omit primary evidence.",
+    "Discord briefs are attributed discovery; private original messages and miner incidents were not independently audited. Those items remain developing.",
+    "SayGM customer metrics and provider performance claims were not independently benchmarked or reconciled against private billing logs. Paid workloads were not purchased.",
+    "Some repositories were unavailable; code publication does not establish production activation. Not every full-length linked interview was watched.",
+    "Pre-October20 burn history uses paginated index discovery and independent qualifying-event verification; subsequent full-block review ends at the stated cutoff. Historical registration labels are preserved.",
+    "Authenticated TaoStats credit/log access was unavailable. Historical indexed data remains a dependency; no unsupported quota-saving estimate is given."
+  ],
+  "marketReview": {
+    "source": "https://shizzyunchained.com/api/backend/v1/screener",
+    "observedAt": "2026-10-26T14:00:57.837947+00:00",
+    "basis": "alpha/TAO",
+    "rows": [
+      {
+        "netuid": 1,
+        "change24hPct": -0.1626970312533872,
+        "change7dPct": -2.5328414290164827
+      },
+      {
+        "netuid": 2,
+        "change24hPct": -1.0599113957399324,
+        "change7dPct": -1.9139446375490412
+      },
+      {
+        "netuid": 3,
+        "change24hPct": 0.16611021650416738,
+        "change7dPct": -2.03310840620296
+      },
+      {
+        "netuid": 4,
+        "change24hPct": 2.1911153478351686,
+        "change7dPct": 5.74415459323144
+      },
+      {
+        "netuid": 5,
+        "change24hPct": -1.3449660516208002,
+        "change7dPct": -2.950789987477272
+      },
+      {
+        "netuid": 6,
+        "change24hPct": -0.20460233546728154,
+        "change7dPct": 1.568607667006898
+      },
+      {
+        "netuid": 7,
+        "change24hPct": -0.11332970149146036,
+        "change7dPct": 0.6555370040981856
+      },
+      {
+        "netuid": 8,
+        "change24hPct": -0.3423258964876494,
+        "change7dPct": 4.042840568778117
+      },
+      {
+        "netuid": 9,
+        "change24hPct": -1.734345367019036,
+        "change7dPct": 3.1683988304162995
+      },
+      {
+        "netuid": 10,
+        "change24hPct": 1.6870249421873824,
+        "change7dPct": -9.458602620394414
+      },
+      {
+        "netuid": 11,
+        "change24hPct": 1.4561014880735945,
+        "change7dPct": 7.1733858190216
+      },
+      {
+        "netuid": 12,
+        "change24hPct": -0.17751010213648427,
+        "change7dPct": -1.245980438412453
+      },
+      {
+        "netuid": 13,
+        "change24hPct": 0.013443782948287719,
+        "change7dPct": -1.6531443044022043
+      },
+      {
+        "netuid": 14,
+        "change24hPct": 0.0985004378245834,
+        "change7dPct": -0.8766115122927913
+      },
+      {
+        "netuid": 15,
+        "change24hPct": 2.557910195507312,
+        "change7dPct": -1.6465152565289614
+      },
+      {
+        "netuid": 16,
+        "change24hPct": 2.0841163389176978,
+        "change7dPct": -8.703129222529688
+      },
+      {
+        "netuid": 17,
+        "change24hPct": -0.14082187567790222,
+        "change7dPct": -0.5263184015737776
+      },
+      {
+        "netuid": 18,
+        "change24hPct": -0.2571012356051286,
+        "change7dPct": -0.952036842370874
+      },
+      {
+        "netuid": 19,
+        "change24hPct": -0.4484211258508036,
+        "change7dPct": -3.373453151042775
+      },
+      {
+        "netuid": 20,
+        "change24hPct": -0.8461646185019467,
+        "change7dPct": -1.268340256052376
+      },
+      {
+        "netuid": 21,
+        "change24hPct": 1.483357584163981,
+        "change7dPct": 8.215094729042288
+      },
+      {
+        "netuid": 22,
+        "change24hPct": -0.5444200185449032,
+        "change7dPct": -0.9949278321978172
+      },
+      {
+        "netuid": 23,
+        "change24hPct": 3.7485584049267238,
+        "change7dPct": 57.463948369374194
+      },
+      {
+        "netuid": 24,
+        "change24hPct": 3.1953184309401763,
+        "change7dPct": 2.1746314252627488
+      },
+      {
+        "netuid": 25,
+        "change24hPct": 2.9239780630360475,
+        "change7dPct": -6.077932646508992
+      },
+      {
+        "netuid": 26,
+        "change24hPct": 0.10618367840724482,
+        "change7dPct": -41.7982391797576
+      },
+      {
+        "netuid": 27,
+        "change24hPct": 2.6376312525487644,
+        "change7dPct": 14.172667347340893
+      },
+      {
+        "netuid": 28,
+        "change24hPct": 5.089470218578048,
+        "change7dPct": 1.3272018710086604
+      },
+      {
+        "netuid": 29,
+        "change24hPct": 0.03981009112087523,
+        "change7dPct": -1.793825999464845
+      },
+      {
+        "netuid": 30,
+        "change24hPct": -0.06608404895879527,
+        "change7dPct": -2.5320909359200403
+      },
+      {
+        "netuid": 31,
+        "change24hPct": -0.48539974088239884,
+        "change7dPct": -7.078401127839386
+      },
+      {
+        "netuid": 32,
+        "change24hPct": -0.4944801292612845,
+        "change7dPct": -2.8868867982422413
+      },
+      {
+        "netuid": 33,
+        "change24hPct": -0.08652673295174328,
+        "change7dPct": -3.754038568940955
+      },
+      {
+        "netuid": 34,
+        "change24hPct": -2.152130069176421,
+        "change7dPct": 10.681189999172474
+      },
+      {
+        "netuid": 35,
+        "change24hPct": -0.5696444598843396,
+        "change7dPct": -39.83738274005176
+      },
+      {
+        "netuid": 36,
+        "change24hPct": -9.549967274983638,
+        "change7dPct": -38.319940123621826
+      },
+      {
+        "netuid": 37,
+        "change24hPct": 0.04471937724126508,
+        "change7dPct": -8.114673805183443
+      },
+      {
+        "netuid": 38,
+        "change24hPct": 0.43165505307001617,
+        "change7dPct": -27.870806702474564
+      },
+      {
+        "netuid": 39,
+        "change24hPct": -0.9029649360662227,
+        "change7dPct": 13.429851253075814
+      },
+      {
+        "netuid": 40,
+        "change24hPct": -0.9645375199853222,
+        "change7dPct": -6.284830661611739
+      },
+      {
+        "netuid": 41,
+        "change24hPct": 0.35721963239885496,
+        "change7dPct": 19.0642540029549
+      },
+      {
+        "netuid": 42,
+        "change24hPct": 0.2363514051278164,
+        "change7dPct": -2.035928310061899
+      },
+      {
+        "netuid": 43,
+        "change24hPct": 0.05809316643730454,
+        "change7dPct": -0.19064299446165686
+      },
+      {
+        "netuid": 44,
+        "change24hPct": -1.6471256614260676,
+        "change7dPct": -3.1971168167684962
+      },
+      {
+        "netuid": 45,
+        "change24hPct": -2.0940245290955417,
+        "change7dPct": -4.312397761515282
+      },
+      {
+        "netuid": 46,
+        "change24hPct": 5.255349657245299,
+        "change7dPct": -15.921988955315191
+      },
+      {
+        "netuid": 47,
+        "change24hPct": -0.007010874645561337,
+        "change7dPct": -3.11680831953962
+      },
+      {
+        "netuid": 48,
+        "change24hPct": 13.187733124794994,
+        "change7dPct": 29.92512768734929
+      },
+      {
+        "netuid": 49,
+        "change24hPct": 1.4268924160668086,
+        "change7dPct": -15.17597445038662
+      },
+      {
+        "netuid": 50,
+        "change24hPct": -1.4060638276426594,
+        "change7dPct": -6.563849720648203
+      },
+      {
+        "netuid": 51,
+        "change24hPct": -0.5405706709103293,
+        "change7dPct": 5.66279095389966
+      },
+      {
+        "netuid": 52,
+        "change24hPct": 0.09843081975750845,
+        "change7dPct": 0.3599856471957501
+      },
+      {
+        "netuid": 53,
+        "change24hPct": 0.8624901608148678,
+        "change7dPct": -12.103244646720652
+      },
+      {
+        "netuid": 54,
+        "change24hPct": -0.38479266483284663,
+        "change7dPct": -13.983978786794765
+      },
+      {
+        "netuid": 55,
+        "change24hPct": 4.923435424959918,
+        "change7dPct": -3.618824466491245
+      },
+      {
+        "netuid": 56,
+        "change24hPct": -0.5845544732856112,
+        "change7dPct": -0.06592721807624054
+      },
+      {
+        "netuid": 57,
+        "change24hPct": -0.1776523844846889,
+        "change7dPct": -6.8830435141472615
+      },
+      {
+        "netuid": 58,
+        "change24hPct": -5.9375053275512455,
+        "change7dPct": 43.2452107558215
+      },
+      {
+        "netuid": 59,
+        "change24hPct": 8.811576396555282,
+        "change7dPct": 87.37578813249682,
+        "disposition": "excluded",
+        "reason": "Current identity is unnamed; no independently verified product catalyst. An 87.38% seven-day alpha/TAO move is not adoption evidence.",
+        "sources": [
+          {
+            "label": "Dated market observation",
+            "url": "https://shizzyunchained.com/evidence/market-2026-10-26.json"
+          }
+        ]
+      },
+      {
+        "netuid": 60,
+        "change24hPct": -0.4629699607449131,
+        "change7dPct": -11.673015442199842
+      },
+      {
+        "netuid": 61,
+        "change24hPct": -4.099863709455918,
+        "change7dPct": -13.505199110423215
+      },
+      {
+        "netuid": 62,
+        "change24hPct": -1.32321731366345,
+        "change7dPct": -0.9640438883103495
+      },
+      {
+        "netuid": 63,
+        "change24hPct": 12.235722640223765,
+        "change7dPct": 43.30893244781974
+      },
+      {
+        "netuid": 64,
+        "change24hPct": -0.6374864563283175,
+        "change7dPct": 0.5177614259061202
+      },
+      {
+        "netuid": 65,
+        "change24hPct": -6.894494328410942,
+        "change7dPct": -4.933926508576004
+      },
+      {
+        "netuid": 66,
+        "change24hPct": 0.15175161959851388,
+        "change7dPct": -5.239671207272197
+      },
+      {
+        "netuid": 67,
+        "change24hPct": -0.35675782439449927,
+        "change7dPct": -8.27279709160883
+      },
+      {
+        "netuid": 68,
+        "change24hPct": 0.6868969968220092,
+        "change7dPct": -5.946294343483033
+      },
+      {
+        "netuid": 69,
+        "change24hPct": -0.2017550895629907,
+        "change7dPct": -1.0928547845534942
+      },
+      {
+        "netuid": 70,
+        "change24hPct": 590.3925347998842,
+        "change7dPct": 378.9164275650423,
+        "disposition": "excluded",
+        "reason": "Re-registered at9364303 with a new owner. Multi-day slot returns span registrations and are not continuous project returns. Lifecycle already appended to October25 edition.",
+        "sources": [
+          {
+            "label": "Dated market observation",
+            "url": "https://shizzyunchained.com/evidence/market-2026-10-26.json"
+          }
+        ]
+      },
+      {
+        "netuid": 71,
+        "change24hPct": 0.003960992562194098,
+        "change7dPct": -20.689732850970874
+      },
+      {
+        "netuid": 72,
+        "change24hPct": -0.6501880657697253,
+        "change7dPct": -2.7133663571157225
+      },
+      {
+        "netuid": 73,
+        "change24hPct": -1.4648354783254494,
+        "change7dPct": -4.885790973099566
+      },
+      {
+        "netuid": 74,
+        "change24hPct": 0.9137337278428936,
+        "change7dPct": 3.2722545477991596
+      },
+      {
+        "netuid": 75,
+        "change24hPct": 0.2565014820152434,
+        "change7dPct": 0.4812122554118917
+      },
+      {
+        "netuid": 76,
+        "change24hPct": -1.8495610095304769,
+        "change7dPct": -15.838635533105876
+      },
+      {
+        "netuid": 77,
+        "change24hPct": -0.21362254024109636,
+        "change7dPct": -2.12973907651016
+      },
+      {
+        "netuid": 78,
+        "change24hPct": -0.7786797676222148,
+        "change7dPct": -31.109639153186755
+      },
+      {
+        "netuid": 79,
+        "change24hPct": 1.7972038899204,
+        "change7dPct": 2.926743941354261
+      },
+      {
+        "netuid": 80,
+        "change24hPct": -5.325599081706425,
+        "change7dPct": -17.431558714142152
+      },
+      {
+        "netuid": 81,
+        "change24hPct": 0.8357387238209565,
+        "change7dPct": -2.9207587669610993
+      },
+      {
+        "netuid": 82,
+        "change24hPct": -4.9905988259265746,
+        "change7dPct": -9.773741924524094
+      },
+      {
+        "netuid": 83,
+        "change24hPct": -0.424573847584303,
+        "change7dPct": -2.4078350254791316
+      },
+      {
+        "netuid": 84,
+        "change24hPct": -0.1914969032161779,
+        "change7dPct": -10.287199480181936
+      },
+      {
+        "netuid": 85,
+        "change24hPct": -0.47474489208945597,
+        "change7dPct": -13.471233388417824
+      },
+      {
+        "netuid": 86,
+        "change24hPct": -5.611530261500937,
+        "change7dPct": -35.540191789228096
+      },
+      {
+        "netuid": 87,
+        "change24hPct": -0.040760480832579854,
+        "change7dPct": -18.677755571342388
+      },
+      {
+        "netuid": 88,
+        "change24hPct": 1.3366362717563638,
+        "change7dPct": -4.2702137086511
+      },
+      {
+        "netuid": 89,
+        "change24hPct": -0.28063470164891685,
+        "change7dPct": 1.0742412781411614
+      },
+      {
+        "netuid": 90,
+        "change24hPct": 1.3233837611083623,
+        "change7dPct": -8.560638622025866
+      },
+      {
+        "netuid": 91,
+        "change24hPct": 5.311512660130815,
+        "change7dPct": 9.9168872605824
+      },
+      {
+        "netuid": 92,
+        "change24hPct": -0.3702523009189529,
+        "change7dPct": -33.62298987555986
+      },
+      {
+        "netuid": 93,
+        "change24hPct": 1.7925802111482365,
+        "change7dPct": -18.43016176959565
+      },
+      {
+        "netuid": 94,
+        "change24hPct": -4.214857665336972,
+        "change7dPct": -11.562738732414964
+      },
+      {
+        "netuid": 95,
+        "change24hPct": -1.9589774836250582,
+        "change7dPct": -10.689528808217748
+      },
+      {
+        "netuid": 96,
+        "change24hPct": -1.3741598347013855,
+        "change7dPct": -12.48206714568586
+      },
+      {
+        "netuid": 97,
+        "change24hPct": -0.08511434792214782,
+        "change7dPct": -2.7730833763963583
+      },
+      {
+        "netuid": 98,
+        "change24hPct": -0.8492024666275857,
+        "change7dPct": -1.6220517265324101
+      },
+      {
+        "netuid": 99,
+        "change24hPct": -0.7041351033677565,
+        "change7dPct": -23.607546585485206
+      },
+      {
+        "netuid": 100,
+        "change24hPct": 2.8667157215370094,
+        "change7dPct": -13.000241205953799
+      },
+      {
+        "netuid": 101,
+        "change24hPct": 0.8833499711890567,
+        "change7dPct": -4.232984565594692
+      },
+      {
+        "netuid": 102,
+        "change24hPct": 0.24067445281105612,
+        "change7dPct": -18.420834885533303
+      },
+      {
+        "netuid": 103,
+        "change24hPct": 0.31647203460329193,
+        "change7dPct": 640.4927837089759,
+        "disposition": "excluded",
+        "reason": "Current slot remains unnamed after earlier reuse; 640.49% seven-day slot move does not establish an identified product or a new sale. No verified catalyst asserted.",
+        "sources": [
+          {
+            "label": "Dated market observation",
+            "url": "https://shizzyunchained.com/evidence/market-2026-10-26.json"
+          }
+        ]
+      },
+      {
+        "netuid": 104,
+        "change24hPct": 0.0266384778012685,
+        "change7dPct": -1.464928357214262
+      },
+      {
+        "netuid": 105,
+        "change24hPct": 7.297417143191281,
+        "change7dPct": -7.527510981399812
+      },
+      {
+        "netuid": 106,
+        "change24hPct": -0.5994303463700003,
+        "change7dPct": -5.313159964301178
+      },
+      {
+        "netuid": 107,
+        "change24hPct": -0.48745619498325454,
+        "change7dPct": -5.650192075852191
+      },
+      {
+        "netuid": 108,
+        "change24hPct": -1.4685568729742167,
+        "change7dPct": -27.392928448144296
+      },
+      {
+        "netuid": 109,
+        "change24hPct": 1.6622355381009577,
+        "change7dPct": -14.180592979315598
+      },
+      {
+        "netuid": 110,
+        "change24hPct": 5.196051818925698,
+        "change7dPct": -1.9827183181742174
+      },
+      {
+        "netuid": 111,
+        "change24hPct": 0.0759282288416874,
+        "change7dPct": -1.1628864982520812
+      },
+      {
+        "netuid": 112,
+        "change24hPct": 3.2450409973535455,
+        "change7dPct": 14.118205665313104
+      },
+      {
+        "netuid": 113,
+        "change24hPct": -1.3313369918172868,
+        "change7dPct": 3.084320615499874
+      },
+      {
+        "netuid": 114,
+        "change24hPct": -4.576529646486318,
+        "change7dPct": -11.711914656619353
+      },
+      {
+        "netuid": 115,
+        "change24hPct": 4.488135869351767,
+        "change7dPct": -12.026202438577318
+      },
+      {
+        "netuid": 116,
+        "change24hPct": -10.273041189548312,
+        "change7dPct": -24.834581691420844
+      },
+      {
+        "netuid": 117,
+        "change24hPct": 0.49437052035521556,
+        "change7dPct": -15.081268899744126
+      },
+      {
+        "netuid": 118,
+        "change24hPct": 0.81170885278146,
+        "change7dPct": -8.107451533288234
+      },
+      {
+        "netuid": 119,
+        "change24hPct": 1.4207900571139849,
+        "change7dPct": -7.188878479472323
+      },
+      {
+        "netuid": 120,
+        "change24hPct": 0.2316506107192916,
+        "change7dPct": -2.2670983501869757
+      },
+      {
+        "netuid": 121,
+        "change24hPct": -0.39519925696209596,
+        "change7dPct": -5.915812744112956
+      },
+      {
+        "netuid": 122,
+        "change24hPct": -0.35309369085550457,
+        "change7dPct": -12.525632832403772
+      },
+      {
+        "netuid": 123,
+        "change24hPct": -0.06577247421953912,
+        "change7dPct": -0.10150327637157908
+      },
+      {
+        "netuid": 124,
+        "change24hPct": -2.456422216809622,
+        "change7dPct": -0.654728520326425
+      },
+      {
+        "netuid": 125,
+        "change24hPct": 0.03560769468175783,
+        "change7dPct": -8.895569266680603
+      },
+      {
+        "netuid": 126,
+        "change24hPct": -0.9852291987149351,
+        "change7dPct": -0.44703946429167
+      },
+      {
+        "netuid": 127,
+        "change24hPct": 6.246265908617428,
+        "change7dPct": 13.380328759408922
+      },
+      {
+        "netuid": 128,
+        "change24hPct": -0.24715618984320534,
+        "change7dPct": -4.55467947612929
+      }
+    ],
+    "decisions": [
+      {
+        "netuid": 59,
+        "outcome": "excluded",
+        "reason": "Current identity is unnamed; no independently verified product catalyst. An 87.38% seven-day alpha/TAO move is not adoption evidence.",
+        "sources": [
+          {
+            "label": "Dated market observation",
+            "url": "https://shizzyunchained.com/evidence/market-2026-10-26.json"
+          }
+        ]
+      },
+      {
+        "netuid": 70,
+        "outcome": "excluded",
+        "reason": "Re-registered at9364303 with a new owner. Multi-day slot returns span registrations and are not continuous project returns. Lifecycle already appended to October25 edition.",
+        "sources": [
+          {
+            "label": "Dated market observation",
+            "url": "https://shizzyunchained.com/evidence/market-2026-10-26.json"
+          }
+        ]
+      },
+      {
+        "netuid": 103,
+        "outcome": "excluded",
+        "reason": "Current slot remains unnamed after earlier reuse; 640.49% seven-day slot move does not establish an identified product or a new sale. No verified catalyst asserted.",
+        "sources": [
+          {
+            "label": "Dated market observation",
+            "url": "https://shizzyunchained.com/evidence/market-2026-10-26.json"
+          }
+        ]
+      }
+    ]
+  },
   "chainReviews": {
     "etao": {
       "status": "DONE",
-      "checkedAt": "2026-10-26T08:51:19.137739+00:00",
-      "fromBlock": 9364951,
-      "toBlock": 9366736,
-      "hash": "0x889154e422351ee5f0b0f4cee122399c26d74e0b7e1a9e361ebf7b34cc3e1478",
-      "throughTime": "2026-10-26T08:47:00+00:00",
-      "evidence": "/evidence/2026-10-26-chain-monitor-0846.json",
+      "checkedAt": "2026-10-26T14:24:50.166214+00:00",
+      "fromBlock": 9366737,
+      "toBlock": 9368375,
+      "hash": "0x9834b70b7aa779948790e1fe7c95d44ab75cadd020aa91d694f49032369db72a",
+      "throughTime": "2026-10-26T14:14:48+00:00",
+      "evidence": "/evidence/2026-10-26-daily-chain.json",
       "gaps": [],
       "archiveUpdated": true,
-      "allocationEvents": 0,
-      "qualifyingBurns": 0,
-      "newsDisposition": "October 26 edition does not exist. Updated archives only; retain SN8 Vanta burns as leads for the next full daily report. No one-story edition or X post."
+      "newsDisposition": "SN72 allocation covered. Two earlier SN8 burns included from the morning archive; no additional qualifying burns in daily increment.",
+      "allocationEvents": 1
     },
     "burns": {
       "status": "DONE",
-      "checkedAt": "2026-10-26T08:51:19.137739+00:00",
-      "fromBlock": 9364951,
-      "toBlock": 9366736,
-      "hash": "0x889154e422351ee5f0b0f4cee122399c26d74e0b7e1a9e361ebf7b34cc3e1478",
-      "throughTime": "2026-10-26T08:47:00+00:00",
-      "evidence": "/evidence/2026-10-26-chain-monitor-0846.json",
+      "checkedAt": "2026-10-26T14:24:50.166214+00:00",
+      "fromBlock": 9366737,
+      "toBlock": 9368375,
+      "hash": "0x9834b70b7aa779948790e1fe7c95d44ab75cadd020aa91d694f49032369db72a",
+      "throughTime": "2026-10-26T14:14:48+00:00",
+      "evidence": "/evidence/2026-10-26-daily-chain.json",
       "gaps": [],
       "archiveUpdated": true,
-      "allocationEvents": 0,
-      "qualifyingBurns": 2,
-      "newsDisposition": "October 26 edition does not exist. Updated archives only; retain SN8 Vanta burns as leads for the next full daily report. No one-story edition or X post."
+      "newsDisposition": "SN72 allocation covered. Two earlier SN8 burns included from the morning archive; no additional qualifying burns in daily increment.",
+      "qualifyingBurns": 0
     }
   },
-  "pendingDailyLeads": [
+  "earlierMonitor": {
+    "date": "2026-10-26",
+    "scope": "Six-hour chain monitor only; full daily research is not complete.",
+    "chainReviews": {
+      "etao": {
+        "status": "DONE",
+        "checkedAt": "2026-10-26T08:51:19.137739+00:00",
+        "fromBlock": 9364951,
+        "toBlock": 9366736,
+        "hash": "0x889154e422351ee5f0b0f4cee122399c26d74e0b7e1a9e361ebf7b34cc3e1478",
+        "throughTime": "2026-10-26T08:47:00+00:00",
+        "evidence": "/evidence/2026-10-26-chain-monitor-0846.json",
+        "gaps": [],
+        "archiveUpdated": true,
+        "allocationEvents": 0,
+        "qualifyingBurns": 0,
+        "newsDisposition": "October 26 edition does not exist. Updated archives only; retain SN8 Vanta burns as leads for the next full daily report. No one-story edition or X post."
+      },
+      "burns": {
+        "status": "DONE",
+        "checkedAt": "2026-10-26T08:51:19.137739+00:00",
+        "fromBlock": 9364951,
+        "toBlock": 9366736,
+        "hash": "0x889154e422351ee5f0b0f4cee122399c26d74e0b7e1a9e361ebf7b34cc3e1478",
+        "throughTime": "2026-10-26T08:47:00+00:00",
+        "evidence": "/evidence/2026-10-26-chain-monitor-0846.json",
+        "gaps": [],
+        "archiveUpdated": true,
+        "allocationEvents": 0,
+        "qualifyingBurns": 2,
+        "newsDisposition": "October 26 edition does not exist. Updated archives only; retain SN8 Vanta burns as leads for the next full daily report. No one-story edition or X post."
+      }
+    },
+    "pendingDailyLeads": [
+      {
+        "netuid": 8,
+        "name": "Vanta",
+        "summary": "Two qualifying finalized alpha burns: 533.521749085 alpha at 04:02 UTC and 166.666666666 alpha at 05:04 UTC; 700.188415751 alpha total. Not miner emissions or recycling; no buyback/profit attribution established.",
+        "sources": [
+          "https://taostats.io/extrinsic/9365311-6",
+          "https://taostats.io/extrinsic/9365621-30",
+          "https://shizzyunchained.com/evidence/2026-10-26-chain-monitor-0846.json"
+        ]
+      }
+    ]
+  },
+  "ownerHoldings": {
+    "status": "DONE",
+    "block": 9368328,
+    "hash": "0xba3421aac0e55cb8ec698b3ae3bf2aacb28a6d0a2e177b9b11505846585b4b7c",
+    "asOf": "2026-10-26T14:05:24+00:00",
+    "evidence": "/evidence/owner-holdings-9368328.json",
+    "subnets": 128,
+    "note": "SN70 absent alpha emission map entry explicitly read at the same block via runtime Default query:0; never guessed from absence."
+  },
+  "registrationDeregistrationSalesReview": {
+    "status": "DONE",
+    "fromBlock": 9361360,
+    "toBlock": 9368375,
+    "evidence": "/evidence/2026-10-26-daily-chain.json",
+    "gaps": [],
+    "outcome": "SN70 lifecycle/new registration and SN76 allocation already published in October25 supplement; no repeated sale. Only changed owner/registration map entry is70. Final78-block lifecycle extension had no events. Registration lock is not a negotiated sale price."
+  },
+  "etaoReview": {
+    "status": "DONE",
+    "pendingObservations": 0,
+    "allocations": [
+      {
+        "netuid": 72,
+        "block": 9366833,
+        "hash": "0x8076c3bd054efea9dd2cff5915a0fadd73298c1f8b1b5fc7e146171cb9baaff4",
+        "timestamp": 1793005584001,
+        "eventIndex": 250,
+        "extrinsic": 43,
+        "before": [
+          "0",
+          "0",
+          "3320329489486196244",
+          "7563207292111677685",
+          "7563207292111677686"
+        ],
+        "after": [
+          "0",
+          "0",
+          "6087425544324152000",
+          "5534023222112865000",
+          "6825295307272534615"
+        ],
+        "identity": {
+          "subnet_name": "StreetVision by NATIX",
+          "github_repo": "https://github.com/natixnetwork/streetvision-subnet",
+          "subnet_contact": "",
+          "subnet_url": "https://www.natix.network/?utm_source=bittensor",
+          "discord": "https://discord.com/channels/799672011265015819/1349122541754515538",
+          "description": "Powered by NATIX’s Internet of Cameras, StreetVision is advancing autonomous driving, Physical AI, and map-making.",
+          "logo_url": "",
+          "additional": ""
+        },
+        "registeredAt": 5064327
+      }
+    ]
+  },
+  "burnReview": {
+    "status": "DONE",
+    "newQualifyingEvents": 0,
+    "earlierQualifyingEvents": 2,
+    "minimum": "100 native tokens per event",
+    "exclusions": "Fees, miner emissions/withholding, recycling and smaller burns excluded publicly."
+  },
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/1",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/1/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "macrocosm-os/apex",
+        "macrocosm-os/apex-competition-humanoid-scramble"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/2",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/2/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "DaniLabsAI/subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/3",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/3/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "unarbos/teutonic",
+        "unarbos/arbos"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/4",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/4/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "manifold-inc/targon",
+        "manifold-inc/targon-sdk"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/5",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/5/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "hone-subnet-org/hone-subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/6",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/6/2026-10-26",
+        "available": true,
+        "outcome": "Numinous plans aggregation, rewards require accurate forecasts Share 𝕏 The Numinous team confirmed a prediction round is open until midnight UTC. They plan to build an aggregation feature for graph predictions. On incentive burn questions, the team said no miner has yet forecasted an event accurately, which they view as expected only 3-4 days in. Prediction round open until midnight UTC. Aggregation for graph predictions will be built asap. No miner has accurately forecasted an event yet. Distilled from 13 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "numinouslabs/numinous"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/7",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/7/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "entrius/allways",
+        "entrius/gittensor"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
     {
       "netuid": 8,
       "name": "Vanta",
-      "summary": "Two qualifying finalized alpha burns: 533.521749085 alpha at 04:02 UTC and 166.666666666 alpha at 05:04 UTC; 700.188415751 alpha total. Not miner emissions or recycling; no buyback/profit attribution established.",
-      "sources": [
-        "https://taostats.io/extrinsic/9365311-6",
-        "https://taostats.io/extrinsic/9365621-30",
-        "https://shizzyunchained.com/evidence/2026-10-26-chain-monitor-0846.json"
-      ]
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/8",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/8/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "taoshidev/vanta-network"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/9",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/9/2026-10-26",
+        "available": true,
+        "outcome": "Miners report no runs, no team updates Share 𝕏 Members discussed expected monthly returns on an M2 Pro MacBook and several reported receiving no runs for over 24 hours. No confirmed team messages appeared in the channel, so no official changes or announcements can be reported. Members asked about M2 Pro returns. Several miners reported no runs for 24+ hours. Distilled from 7 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "macrocosm-os/iota"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/10",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/10/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "Pareton-ai/pareton"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/11",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/11/2026-10-26",
+        "available": true,
+        "outcome": "TrajectoryRL Channel Quiet, Only Member Chatter Share 𝕏 Subnet 11's public channel saw only informal member messages over the past 24 hours. No team announcements or confirmed updates were posted. Distilled from 5 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "trajectoryRL/trajectoryRL"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/12",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/12/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "backend-developers-ltd/ComputeHorde",
+        "backend-developers-ltd/factory-horde"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/13",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/13/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "macrocosm-os/data-universe"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/14",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/14/2026-10-26",
+        "available": true,
+        "outcome": "Cacheon Channel Quiet, No Team Updates Share 𝕏 No concrete updates from the Cacheon team in the last 24 hours. The only team message was a brief, unclear reference. Members discussed a planned new evaluation system, but nothing was officially confirmed. Distilled from 3 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "latent-to/cacheon",
+        "latent-to/cacheon-frontend"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/15",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/15/2026-10-26",
+        "available": true,
+        "outcome": "ORO team clarifies race eligibility and timeout rules Share 𝕏 Team clarified race mechanics in Discord. Eliminated agents remain subject to similarity checks, so resubmitting a similar agent under another hotkey can be rejected. Hotkey timeouts must be waited out. Agents from deregistered hotkeys are still evaluated, but emissions require re-registering the hotkey. Eliminated agents still face similarity checks on resubmission. Resubmission blocked until 18-hour hotkey timeout expires. Deregistered hotkeys' agents still scored; emissions need re-registration. Distilled from 66 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "ORO-AI/oro"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 16,
+      "name": "Zero Hour",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/16",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/16/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "fast-thinker/kenju"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/17",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/17/2026-10-26",
+        "available": true,
+        "outcome": "Members Flag Private Models in Round 58 Submissions Share 𝕏 Members reported that six round 58 submissions used private HuggingFace models, with pinned revisions returning 401 errors and missing from the public model list. They argued this violates subnet rules and noted a round 57 winning repo was previously rejected for private source code. The team did not confirm any action. Six round 58 submissions use private HuggingFace models, member reports. Member says private components invalid under subnet rules. Round 57 winning repo was rejected for private source, per member. Distilled from 11 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "404-Repo/404-gen-subnet",
+        "404-Repo/404-game-jam"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/18",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/18/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "Orpheus-AI/Zeus"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/19",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/19/2026-10-26",
+        "available": true,
+        "outcome": "Blockmachine team agrees sales outpace buybacks Share 𝕏 A Blockmachine team member acknowledged a community criticism that weekly token sales exceed buyback amounts, saying the issue had already been raised before. A separate question about CU routing on RobinHood nodes received no team response. Distilled from 3 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "taostat/blockmachine",
+        "taostat/gm-miner"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/20",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/20/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "witnessvision/witness_subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/21",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/21/2026-10-26",
+        "available": true,
+        "outcome": "Members Flag Private-Labeled Files in SN21 Repo Share 𝕏 A member reported finding files marked 'PRIVATE, do not distribute to miners' in the public AdTAO repository and said they quarantined them. Other members discussed self-mining concerns and asked about staking requirements and buybacks. No team account responded within the window. Member found private-labeled evaluation files in public AdTAO repo. Member said they quarantined the data and did not use it. Members raised self-mining concerns and asked about buybacks and staking. No team account responded during the window. Distilled from 25 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "ippcteam/SN21-adtao"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/22",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/22/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "datura-ai/desearch",
+        "Datura-ai/lium-io"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/23",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/23/2026-10-26",
+        "available": true,
+        "outcome": "Members Discuss New Challenge and SOTA Timeline Share 𝕏 In the last 24 hours, community members speculated that the current challenge may end after this round and that a new challenge type is being prepared. No confirmed team account shared details or updates. One member predicted output SOTA would arrive soon. Distilled from 3 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "TrishoolAI/trishool-phase2"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 24,
+      "name": "Quasar",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/24",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/24/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "SILX-LABS/QUASAR-SUBNET"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/25",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/25/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "urfoundation/sn"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/26",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/26/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "0xsigurd/Perturb"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/27",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/27/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "Komms-protocol/komms-docs"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/28",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/28/2026-10-26",
+        "available": true,
+        "outcome": "SayGM team clarifies effective pricing and routing Share 𝕏 SayGM team members explained how pricing works on the platform, noting that the headline rate is the best available price while default routing balances price, performance, and reliability. Effective per-model prices for the last epoch are published on the website, and the gmcli tool plus API routing docs were shared. A team member reported a 37% measured discount versus the UI's 75% estimate, which the team addressed by detailing the routing model. The team also shared the gm-miner repository and noted Spain blocks Cloudflare IPs on match weekends. Effective per-model prices published per epoch on the website Default routing balances price, performance, and reliability gmcli shows best rates; routing docs and miner repo shared Spain blocks Cloudflare IPs on match weekends, affecting access Distilled from 31 message s in the subn"
+      },
+      "repositoryPaths": [
+        "taostat/gm-miner"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/29",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/29/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "coldint/hotfloat"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/30",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/30/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "Endure-Network/endure-subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/31",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/31/2026-10-26",
+        "available": true,
+        "outcome": "Team Defends Testnet Progress Against Criticism Share 𝕏 The subnet team rejected claims that development is stalling, stating that extensive testnet testing is already underway. A community member asked for public progress updates and wider testnet access. No release or feature changes were announced. Team says testnet testing is already extensive. Member asks for progress updates and open testnet access. Distilled from 12 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-1-32.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/32",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/32/2026-10-26",
+        "available": true,
+        "outcome": "No Team Updates in ItsAI Subnet Channel Share 𝕏 Only member chatter occurred in the last 24 hours, with questions about mining hardware and self-mining left unanswered by the team. Distilled from 7 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "It-s-AI/llm-detection"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/33",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/33/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "afterpartyai/bittensor-conversation-genome-project"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 34,
+      "name": "BitMind",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/34",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/34/2026-10-26",
+        "available": true,
+        "outcome": "BitMind To Refresh Benchmarks and Ban Hard-Coded Rules Share 𝕏 BitMind is closing submissions for an upcoming upgrade. The benchmark pack will be refreshed with new questions, and submissions will be required to handle all decision logic via their loaded safetensors model, with no additional hard-coded rules. The team acknowledged that miner submissions overfit the current benchmark and said updates are coming. Members also reported evaluation issues that the team said it will fix. Submissions closing for benchmark refresh and model-only rule change. New requirements ban hard-coded decision logic outside safetensors model. Team confirmed overfitting was expected, updates to subnet in progress. Evaluation issues reported; team said fix is coming. Distilled from 35 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our o"
+      },
+      "repositoryPaths": [
+        "BitMind-AI/bitmind-subnet",
+        "BitMind-AI/yugos",
+        "BitMind-AI/gasbench"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 35,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/35",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/35/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "General-Tao-Ventures/cartha-validator"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 36,
+      "name": "Epago",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/36",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/36/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "EpagoFoundation/epago"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/37",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/37/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "Aurelius-Protocol/Aurelius-Protocol"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/38",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/38/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "chronollm/sn38"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/39",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/39/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "deprecated/deprecated"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/40",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/40/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "RalphLabsAI/ralph",
+        "RalphLabsAI/ralph-v2"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/41",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/41/2026-10-26",
+        "available": true,
+        "outcome": "Almanac team addresses recurring volume crediting bug Share 𝕏 A user reported that yesterday's trading volume was not credited, leaving rewards incorrect, a problem they had encountered before. The team traced the issue to improper Polymarket v2 data syncing and said they would fix it as in the previous case, asking for the user's UID to investigate. Member reports uncounted volume, rewards incorrect Team attributes issue to Polymarket v2 sync Team requests UID to resolve the bug Distilled from 5 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "corvxai/almanac"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/42",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/42/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/43",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/43/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "GraphiteAI/Graphite-Subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/44",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/44/2026-10-26",
+        "available": true,
+        "outcome": "Score team flags hotkey abuse, removes bad blocks Share 𝕏 Score SN44 team reported blacklisting a cluster of Cricket hotkeys tied to one operator with shared IPs and requested daily spot checks. Incorrect ground truth blocks in Petrol, Vehicle, PPE, and Person tracks were removed. Vehicle detection is currently not working and under review; members also reported an infrastructure error on the PPE track. Team blacklisted Cricket hotkeys linked to one operator, requested daily checks. Removed incorrect annotations across four Score tracks. Team said football scoring cannot use the other tracks' approach. Vehicle detection is broken and being investigated. Team clarified blacklisting also covers unreproducible results and kph reads. Distilled from 33 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "score-technologies/turbovision",
+        "score-technologies/score-studio-agent-plugins"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/45",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/45/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "Team-Rizzo/alpharidge-ai"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/46",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/46/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "Subnet46/sn46-validator"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/47",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/47/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "forgenet47/gpuforge"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/48",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/48/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "qbittensor-labs/quantum-compute",
+        "qbittensor-labs/hqp-solutions"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/49",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/49/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "nepher-ai/nepher-subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/50",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/50/2026-10-26",
+        "available": true,
+        "outcome": "Synth Confirms Data API Service Shut Down Share 𝕏 The Synth team confirmed they no longer sell data via API, noting the service was closed some time ago. Other channel messages covered miner scoring questions and pending Ultra (VHFT) application statuses, but drew no team response. Data API service discontinued, no current API sales Distilled from 6 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "mode-network/synth-subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/51",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/51/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "Datura-ai/lium-io"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/52",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/52/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "tensorplex-labs/dojo"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/53",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/53/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "hanlinai/engy"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/54",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/54/2026-10-26",
+        "available": true,
+        "outcome": "Yanez Team Confirms Section Start, No Incentive Change Share 𝕏 Team confirmed the current section began Monday, Oct 19th. They also stated that the incentive mechanism has not changed recently, responding to miner questions about a perceived drop. Confirmed section started Monday, Oct 19th. Incentive mechanism unchanged in recent days. Distilled from 5 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "yanez-compliance/MIID-subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/55",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/55/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "genomesio/subnet-niome"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/56",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/56/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "gradients-ai/G.O.D"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/57",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/57/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/58",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/58/2026-10-26",
+        "available": true,
+        "outcome": "Attune Channel Quiet, Only Member Chatter Share 𝕏 Only member chatter appeared in the Attune channel over the past 24 hours. Members discussed feedback on Robotensor Playground and compared Level 2 versus Level 3 optimization margins. No confirmed team updates were posted. Distilled from 4 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "robotensor/attune-subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/59",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/59/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/60",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/60/2026-10-26",
+        "available": true,
+        "outcome": "Bitsec.ai members ask about round project visibility Share 𝕏 Members discussed how miners can check projects assigned for the current round, with one asking whether access is limited to the API or also available on the dashboard or GitHub. A member also posted a number and another made a general positive remark about more clients and revenue. No confirmed team announcements appeared in the channel. Distilled from 4 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "Bitsec-AI/sandbox"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/61",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/61/2026-10-26",
+        "available": true,
+        "outcome": "RedTeam Channel Quiet, BEX Tracker Queries Linger Share 𝕏 No confirmed team updates appeared in the RedTeam channel over the past 24 hours. Members discussed a rejected BEX Tracker submission and unusually high dashboard scores on the BEX track, with speculation about leaderboard validity. Requests for partnership or non-technical news went unanswered. Distilled from 25 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "RedTeamSubnet/RedTeam"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/62",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/62/2026-10-26",
+        "available": true,
+        "outcome": "Ridges team rejects hardcoding claim on submission Share 𝕏 Team member aluminum96 said the latest top submission improves on the previous one and should not be classified as hardcoded. The team confirmed the top code is not public and was reviewed by a judge panel via auto-approvals. Members also requested clearer evaluation documentation and more detailed logs for upload failures, but no team answers were given in this window. Team says latest top submission is an improvement, not hardcoded. Top code remains private; judge panel reviewed via auto-approvals. Members requested evaluation docs and detailed failure logs. Distilled from 10 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "ridgesai/ridges"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/63",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/63/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "qbittensor-labs/enigma"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-33-64.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/64",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/64/2026-10-26",
+        "available": true,
+        "outcome": "Chutes Details Balance Conversion and Non-TEE Compute Plans Share 𝕏 Chutes team clarified that Tao deposits are converted into a USD balance, not held as Tao, and the Tao balance field is a legacy display that usually reads zero. In a separate discussion, the team said some closed models are already served through other providers, with more coming soon. Non-TEE compute could serve workloads without emission rewards, avoiding KYC or permissioned mining, while freeing network GPUs for unrevealed future uses. Tao deposits convert to balance, not held as Tao. Tao balance field is legacy, usually zero. Some closed models use other providers, more soon. Non-TEE compute can run outside emission rewards. Freed network GPUs may support unrevealed future workloads. Distilled from 8 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated"
+      },
+      "repositoryPaths": [
+        "chutesai/chutes"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/65",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/65/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "taofu-labs/true-performance-network"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/66",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/66/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "conjectures-io/conjectures-validator",
+        "conjectures-io/conjectures-contribution"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/67",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/67/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "harnyx/harnyx"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/68",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/68/2026-10-26",
+        "available": true,
+        "outcome": "Team confirms Blueprint earnings of 10,000 alpha Share 𝕏 A NOVA team member confirmed that Blueprint offers earnings of 10,000 alpha. Questions about PR100 and the molecules competition were raised, but the team did not answer them. Distilled from 5 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "metanova-labs/nova"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/69",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/69/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "HeraldMedia/herald"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 70,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/70",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/70/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/71",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/71/2026-10-26",
+        "available": true,
+        "outcome": "Leadpoet Agents Must Use Whitelisted Reasoning Models Share 𝕏 The Leadpoet team told miners that agents must switch to approved whitelisted models that return full reasoning text. The README lists supported models, providers, and required settings, and operators should enable reasoning output before the change takes effect. Most other channel activity was member chatter about mining incentives and spam, with no official confirmation. Agents must use approved models that return full reasoning text. README lists supported models, providers, and required settings. Operators should enable reasoning output before the change takes effect. Distilled from 21 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "leadpoet/leadpoet"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/72",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/72/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "natixnetwork/streetvision-subnet"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 73,
+      "name": "Parked",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/73",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/73/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/74",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/74/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "entrius/gittensor"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/75",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/75/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "thenervelab/thebrain",
+        "thenervelab/hippius-cvm",
+        "thenervelab/hippius-drive-sdk"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/76",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/76/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "heroncovelabs/ormas-subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/77",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/77/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "creativebuilds/sn77"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/78",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/78/2026-10-26",
+        "available": true,
+        "outcome": "Umi completes C6 evaluation, C7 schedule pending Share 𝕏 C6 challenge execution is complete across 103 models, with certification and reward activation still pending due to settlement bookkeeping. A targeted fix for the delay passed testing and is being prepared for deployment. C7 remains in intake with no confirmed evaluation start; the team will post a schedule before intake closes. Miners can take C5 endpoints offline without affecting C6 results or future submissions. C6 execution done: 103 models, 1,236 results, 618 comparisons. Final certification and C6 rewards pending settlement fix. C7 and later cohorts are public-model only; schedule unconfirmed. C5 endpoints can be taken offline; hotkeys and records must stay. Distilled from 10 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "Umi-BitSign/umi"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/79",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/79/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "taos-im/sn-79"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/80",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/80/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "openroboto-ai/openroboto-subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/81",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/81/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "reliquadotai/reliquary"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/82",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/82/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "Vora-Inc/NOAH"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/83",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/83/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "toptensor/CliqueAI"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/84",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/84/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/85",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/85/2026-10-26",
+        "available": true,
+        "outcome": "Vidaio Channel Sees Member Q&A on Competition Rules Share 𝕏 All recent messages were from members discussing Vidaio's competition 004. A member explained that submitted weights must be under commercial-use licenses and that fine-tuning on AI-generated clips is acceptable as training data. No team accounts posted in the channel. Distilled from 5 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "vidaio-subnet/vidaio-subnet",
+        "vidAio-subnet/vidaio-subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/86",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/86/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/87",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/87/2026-10-26",
+        "available": true,
+        "outcome": "Members Share SN87 Recap; Mainnet ETA Query Unanswered Share 𝕏 All channel activity came from non-team accounts. A member posted a weekly recap citing contributions from miners and token holders and SN87's appearance at AIBC Rome (Nov 2-5). Another member asked about the mainnet mining ETA, while a third followed up on shadow cohort scheduling and issue review. No team account confirmed any of these points. Member recap cites AIBC Rome appearance Nov 2-5. Question on mainnet mining ETA unanswered. Shadow cohort issue #14 unreviewed, second schedule query raised. Distilled from 5 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/88",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/88/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "mobiusfund/investing"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/89",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/89/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "DeltaCompute24/InfiniteQuant-Subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/90",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/90/2026-10-26",
+        "available": true,
+        "outcome": "Members Share KubeTEE Phase 1 Update Share 𝕏 No confirmed team messages appeared in the KubeTEE channel. A lengthy member post described daily security upgrades, live Kata Containers 4.3.1 and LiteLLM 1.103.9, and an upcoming Phase 1 opening permissionless access with the Bittensor GAMMA release. The post also mentioned a collaboration with Leadpoet. No team confirmation was provided. A member post listed Kata Containers 4.3.1 and LiteLLM 1.103.9 as live. A member post described Phase 1 as permissionless GA tied to GAMMA. A member post mentioned a Leadpoet collaboration. Distilled from 4 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "KubeTEE-AI/kubetee-subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/91",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/91/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "TensorLink-AI/cascade"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/92",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/92/2026-10-26",
+        "available": true,
+        "outcome": "REAX Engine Adds Quantization and Plans V2 Share 𝕏 The REAX Engine track will officially allow quantization, including FP8, INT8, NVFP4/MXFP4 and lossless repacks, starting with the next validator release planned for Tue Oct 27. Existing entries get three days to switch, and approved awards remain unchanged. Crowning moves to fixed slots on Tuesdays and Fridays at 14:30 UTC after Mon Oct 26, 19:00 UTC. The team also outlined a future v2 competition focused on optimizing all decision models served on decisionmodels.io. Quantization allowed for engine entries with next validator release, planned Oct 27. Crowning moves to fixed slots Tuesdays and Fridays at 14:30 UTC. V2 engine competition will target decisionmodels.io served model speed and cost. Derived entries must declare every earlier entry whose files appear in their image. Distilled from 27 message s in the subnet’s channel in the of"
+      },
+      "repositoryPaths": [
+        "reaxlabs/reax-subnet",
+        "reaxlabs/auto-model-router"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/93",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/93/2026-10-26",
+        "available": true,
+        "outcome": "Bitcast to continue buybacks, review burn policy Share 𝕏 Bitcast team members debated whether buybacks should be burned or locked, with one arguing burning is necessary and another defending buyback-plus-lock as equal in effect. A team member said buybacks will continue and the approach will be raised internally for review this week, with final decisions guided by holder preferences. Team member argued buybacks should be burned Buyback plus lock equals burn effect on price Team will continue buybacks, review internally this week Larger investors prefer alpha on balance sheet Distilled from 10 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "bitcast-network/bitcast",
+        "bitcast-network/bitcast-x"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/94",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/94/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "cathedralai/cathedral-sandbox"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/95",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/95/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "actual-computer/actual-subnet-95",
+        "actual-computer/toks"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-65-96.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/96",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/96/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "verathos-ai/verathos"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/97",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/97/2026-10-26",
+        "available": true,
+        "outcome": "Ingot channel quiet, no team updates Share 𝕏 No substantive team updates appeared in the Ingot channel. Members asked about GPU requirements for mining, and one user shared hardware suggestions. A community post noted emission share climbed to 1.21%. A team account posted an external X link without further context in the channel. Members reported an evaluation pause lasting about an hour. Community post: emission share rose to 1.21%. Team shared an X post; content not expanded in Discord. Distilled from 10 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "DendriteLabs/ingot"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/98",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/98/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "neverplayalone/neverplayalone_subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 99,
+      "name": "Thirty Spokes",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/99",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/99/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/100",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/100/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "CortexLM/cortex"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/101",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/101/2026-10-26",
+        "available": true,
+        "outcome": "Tag101 Channel Quiet, No Team Updates Share 𝕏 All messages came from community members; no team account posted. Members chatted about mining plans and earnings, with no concrete updates. Distilled from 6 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "tag101-ai/tag101"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/102",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/102/2026-10-26",
+        "available": true,
+        "outcome": "ConnitoAI Discord Quiet With Member Q&A Only Share 𝕏 All messages came from community members, with no confirmed team activity. Members asked about coldkey-hotkey management, the 'putty' model, and self-mining, but no answers from the team were provided. Distilled from 5 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "Connito-AI/Connito"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 103,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/103",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/103/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/104",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/104/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "taostatus/taostatus-subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/105",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/105/2026-10-26",
+        "available": true,
+        "outcome": "Beam Members Debate Transfer Eligibility Scoring Share 𝕏 Members discussed concerns that room transfers assigned to ineligible clients score zero for participating miners despite successful completions. One member advised miners to launch their own transfers or wait. No team account commented, so these claims are unconfirmed. Distilled from 3 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/106",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/106/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "nodexo-ai/nodexo"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/107",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/107/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "minos-protocol/minos_subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/108",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/108/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "TatsuProject/ChipForge_SN108"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/109",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/109/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/110",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/110/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/111",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/111/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "DeSciClaims/Claims"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/112",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/112/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/113",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/113/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/114",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/114/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "DendriteHQ/SOMA",
+        "DendriteHQ/SOMA-benchmark"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/115",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/115/2026-10-26",
+        "available": true,
+        "outcome": "MoirAI Channel Quiet, No Team Updates Share 𝕏 No confirmed team messages appeared in the MoirAI channel over the past 24 hours. Members exchanged greetings and one asked about the timeline for miner rewards, which received no response. Distilled from 7 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "moirai115/MoirAI"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/116",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/116/2026-10-26",
+        "available": true,
+        "outcome": "Carbon community discusses testnet launch timeline Share 𝕏 No confirmed team messages appeared in the channel today. Community members discussed a first full mainnet-like testnet environment arriving this week, with the mainnet release depending on testing results. One member also said a development update would follow tomorrow. Member said testnet environment with all challenges ships this week. Mainnet release depends on testnet performance and testing. Answer-data generation is the main bottleneck, member said. Distilled from 9 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "carbonphysicsai/Carbon"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/117",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/117/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "everyframe-studios/everyframe-miner",
+        "everyframe-studio/everyframe-validator"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/118",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/118/2026-10-26",
+        "available": true,
+        "outcome": "Ditto fixes review bug, corrects integrity rule overreach Share 𝕏 Ditto fixed a bug in Ditto Review where budget reservations made reviews stop early, even with budget remaining, and deployed the fix. The team also corrected an overbroad integrity rule that had rejected agents for losing previously seen evidence during fallback, overturning those rejections and preserving scores. A new competition is in shadow mode without emissions while a bug is fixed, and a miner's hold for public-source reuse of Hades v6 was cleared. Fixed review-budget bug that made Ditto Review stop early Overturned I2 rejections from overbroad evidence-loss rule New competition running in shadow mode without emissions Cleared hold on agent using public Hades v6 code Distilled from 47 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own wor"
+      },
+      "repositoryPaths": [],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/119",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/119/2026-10-26",
+        "available": true,
+        "outcome": "Quiet Day on SN119 Channel Share 𝕏 Public channel traffic consisted of member chatter only. One member shared a post describing SN119 as building youth-friendly AI focused on clear explanations, guided practice, and meaningful feedback. No confirmed team statements or developments appeared. Distilled from 3 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "capabilityforge-next/capabilityforge"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/120",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/120/2026-10-26",
+        "available": true,
+        "outcome": "Affine Epochs Stall as Team Questions UID Ban Logic Share 𝕏 Multiple miners reported the Affine eval system appeared stuck with no new epoch over the past day. A confirmed team account asked the subnet to share its UID ban logic after seeing high FLIP scores earn no emissions. On-chain data posted in the channel showed active neurons grew to 594. A member theorized the stall may come from the optimizer being reinitialized each epoch without warmup. Eval system stuck, no new epoch reported by multiple miners. Confirmed team account asks for UID ban logic after high FLIP, zero emissions. On-chain data shows active neurons grew from 520 to 594 in 7 days. Member suggests optimizer reset each epoch without warmup may cause stall. Distilled from 19 message s in the subnet’s channel in the official Bittensor Discord, including posts by the subnet team. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "AffineFoundation/affine"
+      ],
+      "reason": "Selected sourced development; see story."
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/121",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/121/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "sundae-bar/bittensor-subnet",
+        "sundae-bar/sb-validator"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/122",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/122/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "CookingTao/CookingTAO-Subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/123",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/123/2026-10-26",
+        "available": true,
+        "outcome": "Member Posts Outline ETHHITFIRST Retirement Share 𝕏 All messages came from unconfirmed member accounts, so no team confirmation is available. A member detailed an upcoming validator release that would retire the ETHHITFIRST challenge, reallocate its emissions to other challenges, and revise cluster detection logic. The post said the release ships next week, though no commit hash or block was given. Member post: ETHHITFIRST weight to drop to zero Emissions redistributed pro-rata to remaining challenges Cluster detection and dedup logic changes planned Payloads including ETHHITFIRST will be ignored without penalty Distilled from 3 message s in the subnet’s channel in the official Bittensor Discord. Anyone in that channel can post, so a statement here is not necessarily the subnet team speaking. AI-generated in our own words."
+      },
+      "repositoryPaths": [
+        "Barbariandev/MANTIS",
+        "Barbariandev/Refinery"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/124",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/124/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "swarm-subnet/swarm"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/125",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/125/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "Barbariandev/refinery"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/126",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/126/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "attelierai/attelierai_subnet"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 127,
+      "name": "Astrid",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/127",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/127/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "astridintelligence/sn-127"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "publishedItems": 0,
+      "outcome": "excluded",
+      "xReview": {
+        "method": "SN-number group search and selected direct project/partner review",
+        "evidence": "research-oct26/x-search-97-128.txt",
+        "exhaustive": false
+      },
+      "profileReview": {
+        "source": "https://subnetradar.com/subnet/128",
+        "status": "READ"
+      },
+      "briefReview": {
+        "source": "https://subnetradar.com/subnet-news/128/2026-10-26",
+        "available": false,
+        "outcome": "No substantive dated brief rendered; not confirmed team silence."
+      },
+      "repositoryPaths": [
+        "byteleapai/byteleap-Miner"
+      ],
+      "reason": "Collected sources and overlap checked; no newly verified material development selected. Allegations, repetition, generic promotion and routine commits not automatically promoted."
     }
+  ],
+  "publication": {
+    "status": "PENDING"
+  },
+  "xRoundup": {
+    "status": "PENDING",
+    "authorized": true
+  },
+  "grokReview": {
+    "status": "DONE",
+    "conversation": "https://x.com/i/grok?conversation=cf5108a3-f4aa-4a7f-965c-9f016c494934",
+    "evidence": [
+      "research-oct26/grok-discovery.txt",
+      "research-oct26/grok-omissions.txt"
+    ],
+    "topFive": [
+      51,
+      120,
+      23,
+      64,
+      4
+    ],
+    "limitation": "Qualitative; ambiguous fifth also mentions44/9. Not a measured volume ranking. Older recap leads deduplicated. Grok missed SN8 burns, SN92 changelog and SN69 campaign; direct evidence took precedence."
+  },
+  "constReview": {
+    "status": "DONE",
+    "sources": [
+      "https://x.com/const_reborn",
+      "https://x.com/const_reborn/with_replies"
+    ],
+    "outcome": "Visible originals/quotes/replies inspected; earlier model posts overlap prior coverage. No newly verified material item found."
+  },
+  "tensiaReview": {
+    "status": "DONE",
+    "sources": [
+      "https://x.com/TensiaFDN",
+      "https://x.com/TensiaFDN/with_replies",
+      "https://x.com/TensiaBot",
+      "https://x.com/TensiaBot/with_replies"
+    ],
+    "outcome": "SN72 verified directly; SN70/SN76 deduplicated; book promotion not repeated."
+  },
+  "ownerSourceReview": {
+    "status": "DONE",
+    "identity": "@ShizzyUnchained",
+    "outcome": "Visible Bookmarks and History reviewed; Carbon interview carried as overlap, Attune/Bitcast/Lium already covered. Full browsing history not exposed. Saved private content not published."
+  },
+  "youtubeVerified": {
+    "status": "DONE",
+    "evidence": [
+      "research-oct26/youtube.json",
+      "research-oct26/video-details.json"
+    ],
+    "changes": "No new upload, completed stream or reschedule requiring an edit. Latest public/members entries unchanged. Three upcoming broadcasts remain separate from replays.",
+    "nextStream": "STPM5BtE-ts",
+    "startsAt": "2026-10-27T16:30:00Z",
+    "members": "96Edr_DLpcE",
+    "membersAccess": "Membership gate confirmed, not bypassed."
+  },
+  "taostatsReview": {
+    "status": "PARTIAL",
+    "outcome": "Public SN113 page reachable; Unknown retained. Node-first trading source checked. Historical indexed data remains separate.",
+    "quotaStatus": "BLOCKED: authenticated account usage logs unavailable; no credit estimate fabricated.",
+    "sources": [
+      "https://taostats.io/subnets/113"
+    ]
+  },
+  "sectorReview": {
+    "status": "DONE",
+    "block": 9368375,
+    "evidence": "/evidence/sectors-2026-10-26.json",
+    "outcome": "128 metadata/project pages compared. SN70 name cleared to Unknown; remains Unclassified. No other supported purpose change selected."
+  },
+  "mediaReview": {
+    "status": "DONE_WITH_GAPS",
+    "viewed": [
+      "SN64 Platform Update image and full billing/privacy text",
+      "SN75 CDN demo, three-step origin/zone/domain setup",
+      "SN28 SayGM x Taostats case-study graphic",
+      "SN25 primary post and partner confirmation",
+      "SN65 teaser with subscription imagery and November2 date"
+    ],
+    "limitations": "Full-length archived interviews not watched anew. SN78 Base video metrics not independently audited and excluded from quantitative coverage. No paid workloads or alleged incidents reproduced."
+  },
+  "priorEditionsReviewed": [
+    "2026-10-19",
+    "2026-10-20",
+    "2026-10-21",
+    "2026-10-22",
+    "2026-10-23",
+    "2026-10-24",
+    "2026-10-25"
+  ],
+  "pendingNextEdition": [
+    "SN92 Oct27 actual activation",
+    "SN78 certification, settlement and C7 start",
+    "SN120 evaluation recovery; no inferred cause",
+    "SN25 traffic migration versus announcement",
+    "SN65 November2 details",
+    "SN50 historical API shutdown: actual closure date unconfirmed",
+    "SN19 sales/buyback criticism, SN17 private-model allegations, SN21 private-labelled files: establish primary attribution before public allegations"
   ]
 }
