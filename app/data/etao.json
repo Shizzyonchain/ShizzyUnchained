@@ -1230,11 +1230,11 @@
     "72": "StreetVision by NATIX",
     "69": "Herald",
     "105": "Beam",
-    "17": "404—GEN",
+    "17": "404â€”GEN",
     "44": "Score",
     "89": "InfiniteQuant",
     "40": "Ralph",
-    "29": "hoτfloaτ",
+    "29": "hoÏ„floaÏ„",
     "118": "Ditto",
     "9": "iota",
     "83": "CliqueAI",
@@ -1444,5 +1444,20 @@
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history."
-  }
+  },
+  "lifecycleResets": [
+    {
+      "netuid": 70,
+      "block": 9364302,
+      "after": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "reason": "Finalized lifecycle cleanup removed prior identity and reset registration/storage; not an owner allocation transaction. New registration at 9364303.",
+      "evidence": "/evidence/2026-10-26-chain-monitor-0247.json"
+    }
+  ]
 }

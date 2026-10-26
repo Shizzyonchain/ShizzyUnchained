@@ -8,3 +8,6 @@ export function decodeEmission(value: string): string[] {
 }
 export const emissionPercent = (value: string) => `${(Number(value) / 18446744073709551615 * 100).toFixed(2)}%`;
 export type EmissionObservation = { netuid: number; before: string[] | null; after: string[] | null; fromBlock: number; toBlock: number; detectedAt: string };
+export function observationIsResolved(row: EmissionObservation, verified: { netuid: number; block: number; after: string[] }[]) {
+  return verified.some(change => change.netuid === row.netuid && change.block > row.fromBlock && change.block <= row.toBlock && JSON.stringify(change.after) === JSON.stringify(row.after));
+}

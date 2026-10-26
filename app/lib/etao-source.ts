@@ -2,7 +2,7 @@ import "server-only";
 import { getCache } from "@vercel/functions";
 import seed from "../data/etao.json";
 import { ss58 } from "./child-hotkey-storage";
-import { decodeEmission, emissionPrefix, type EmissionObservation } from "./etao";
+import { decodeEmission, emissionPrefix, observationIsResolved, type EmissionObservation } from "./etao";
 export type EtaoSnapshot = Omit<typeof seed, "weights" | "observations" | "names" | "ownerSnapshot"> & { ownerSnapshot: { block: number; hash: string; checkedAt: string; owners: Record<string, string> }; weights: Record<string, string[]>; names: Record<string, string>; observations: EmissionObservation[] };
 const cache = () => getCache({ namespace: "shizzy-etao-v1" });
 export async function getEtaoSnapshot(): Promise<EtaoSnapshot> {
@@ -13,7 +13,7 @@ export async function getEtaoSnapshot(): Promise<EtaoSnapshot> {
     const changes = [...new Map([...cached.changes, ...seed.changes].map(row => [`${row.block}-${row.extrinsic}`, row])).values()];
     // Daily reviewed history takes precedence over an older cached manifest.
     const ownerSnapshot = cached.ownerSnapshot?.block > seed.ownerSnapshot.block ? cached.ownerSnapshot : seed.ownerSnapshot;
-    return { ...latest, eventReview: seed.eventReview, ownerSnapshot, changes, names: { ...cached.names, ...seed.names }, observations: cached.observations.filter(row => !seed.changes.some(change => change.netuid === row.netuid && change.block > row.fromBlock && change.block <= row.toBlock && JSON.stringify(change.after) === JSON.stringify(row.after))) };
+    return { ...latest, eventReview: seed.eventReview, ownerSnapshot, changes, names: { ...cached.names, ...seed.names }, observations: cached.observations.filter(row => !observationIsResolved(row, [...seed.changes, ...seed.lifecycleResets])) };
   }
   catch { return seed; }
 }
