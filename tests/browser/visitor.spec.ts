@@ -45,6 +45,12 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
   }, { auto: true }],
 });
 const search = (page: Page) => page.getByRole("searchbox", { name: "Search subnets by name or subnet number" });
+test('cached server snapshots hydrate safely after freshness expires',async({page})=>{
+ await page.clock.install({time:new Date(Date.now()+20*60_000)});
+ await page.goto('/');
+ await expect(search(page)).toBeVisible();
+ await expect(page.locator('.screener tbody tr').first()).toContainText('Delayed');
+});
 async function noOverflow(page: Page) {
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1)).toBe(true);
 }

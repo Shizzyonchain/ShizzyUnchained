@@ -15,14 +15,14 @@ function TradeComparison({alert,period}:{alert:{netuid:number;name:string;volume
  <div className={styles.comparisonBars} aria-hidden="true"><span>Before</span><div><i style={{width:`${100/alert.ratio}%`}}/></div><span>Now</span><div><i style={{width:"100%"}}/></div></div>
  </Link>;
 }
-export function MarketSignals({rows}:{rows:SignalRow[]}){
+export function MarketSignals({rows,initialNow=0}:{rows:SignalRow[];initialNow?:number}){
  const [surgePeriod,setSurgePeriod]=useState<"1h"|"24h">("1h");
  const [buyPeriod,setBuyPeriod]=useState<"1h"|"24h">("24h");
  const [hourly,setHourly]=useState<Buying|null>(null);
  const [hourLoaded,setHourLoaded]=useState(false);
  const [dayLoaded,setDayLoaded]=useState(false);
  const [dayError,setDayError]=useState(false),[hourError,setHourError]=useState(false);
- const [payload,setPayload]=useState<Payload|null>(null),[period,setPeriod]=useState<"1h"|"24h">("1h"),[now,setNow]=useState(()=>Date.now());
+ const [payload,setPayload]=useState<Payload|null>(null),[period,setPeriod]=useState<"1h"|"24h">("1h"),[now,setNow]=useState(initialNow);
  useEffect(()=>{
   const controller=new AbortController();let timer:ReturnType<typeof setTimeout>,running=false;
   function schedule(delay:number){timer=setTimeout(()=>{if(document.hidden)schedule(delay);else void refresh();},delay);}

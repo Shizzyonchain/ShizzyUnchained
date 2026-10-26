@@ -321,6 +321,7 @@ export function Dashboard({
   initialChart,
   initialCurrency = "usd",
   initialInterval = "1d",
+  initialNow = 0,
 }: {
   appearance?: "blue" | "monochrome";
   initialView?: DashboardView;
@@ -331,6 +332,7 @@ export function Dashboard({
   initialChart?: number | "tao";
   initialCurrency?: "usd" | "tao";
   initialInterval?: string;
+  initialNow?: number;
 }) {
   const router = useRouter();
   const chartPage = initialChart !== undefined;
@@ -341,7 +343,7 @@ export function Dashboard({
   const [walletHistoryAddress, setWalletHistoryAddress] = useState<string | null>(null);
   const [currency, setCurrency] = useState<"usd" | "tao">(initialCurrency);
   const [taoQuote, setTaoQuote] = useState<TaoQuote | null>(initialTaoQuote ?? (initialTaoUsd > 0 ? { usd: initialTaoUsd, updatedAt: 0, source: "unverified" } : null));
-  const [fxNow, setFxNow] = useState(() => Date.now());
+  const [fxNow, setFxNow] = useState(initialNow);
   const taoUsd = quoteUsable(taoQuote, fxNow) ? taoQuote!.usd : 0;
   const fxFresh = quoteFresh(taoQuote, fxNow);
   const [rawRows, setRows] = useState<ScreenerRow[]>(serverRows);
@@ -1042,7 +1044,7 @@ export function Dashboard({
               <button key={`${r.netuid}-${i}`} onClick={() => openSubnetChart(r.netuid)}>
                 <span>
                   <b>{r.name || "Unknown"}</b>
-                  <small>SN{r.netuid}{!snapshotIsFresh(Date.parse(r.time || "")) && " · Delayed"}</small>
+                  <small>SN{r.netuid}{!snapshotIsFresh(Date.parse(r.time || ""),fxNow) && " · Delayed"}</small>
                 </span>
                 <strong>{money(r.price_tao, true)}</strong>
                 <em className={changeClass(r.change_1h)}>
@@ -1087,7 +1089,7 @@ export function Dashboard({
                 <strong className={changeClass(rankedMovers[0]?.change_1h)}>{rankedMovers[0]?.name || "—"}</strong>
                 <small className={changeClass(rankedMovers[0]?.change_1h)}>{rankedMovers[0] ? `${Number(rankedMovers[0].change_1h || 0) > 0 ? "+" : ""}${fmt(rankedMovers[0].change_1h)}% · 1 Hour · ${currency.toUpperCase()}` : "Waiting for market data"}</small>
               </div>
-              <SentimentTile rows={rawRows} state={dataState} />
+              <SentimentTile rows={rawRows} state={dataState} initialNow={initialNow} />
             </section>
             <a className="shop-card" href="https://shizzyunchained.printful.me/" target="_blank" rel="noreferrer" aria-label="Shop Shizzy Unchained merchandise">
               <Image src="/shop-hat.webp" alt="Black TAO hat" width={256} height={256} sizes="(max-width: 1100px) 64px, 80px" />
@@ -1143,7 +1145,7 @@ export function Dashboard({
             <div className="sentiment-dialog-head"><h2 id="pulse-help-heading">{pulseHelp}</h2><button type="button" aria-label="Close network pulse explanation" onClick={() => pulseDialog.current?.close()}>✕</button></div>
             <MetricExplanation title={pulseHelp} />
           </dialog>
-          <MarketSignals rows={rawRows} />
+          <MarketSignals rows={rawRows} initialNow={initialNow} />
           <div className="home-promo-row">
             <Link className="insiders-home-cta tao-heads-home-cta" href={taoHeadsCommunity.path} aria-label={`Explore ${taoHeadsCommunity.name}`}>
               <Image
@@ -1450,7 +1452,7 @@ export function Dashboard({
                         <td>
                           <div><Link className="subnet-chart-link" href={`/charts/${r.netuid}?currency=${currency}&interval=${timeframe}`} prefetch={false} onClick={event => event.stopPropagation()} onKeyDown={event => event.stopPropagation()}>
                             <b>{r.name || "Unknown"}</b>
-                            <small>SN{r.netuid}{!snapshotIsFresh(Date.parse(r.time || "")) && " · Delayed"}</small>
+                            <small>SN{r.netuid}{!snapshotIsFresh(Date.parse(r.time || ""),fxNow) && " · Delayed"}</small>
                           </Link></div>
                         </td>
                         <td>{money(r.price_tao, true)}</td>

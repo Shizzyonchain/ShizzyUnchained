@@ -42,7 +42,7 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
       />
-      <Dashboard appearance="monochrome" initialDollarHistory={initialDollarHistory} initialRows={rows} initialTaoUsd={quote?.usd || 0} initialTaoQuote={quote} />
+      <Dashboard initialNow={Date.now()} appearance="monochrome" initialDollarHistory={initialDollarHistory} initialRows={rows} initialTaoUsd={quote?.usd || 0} initialTaoQuote={quote} />
     </>
   );
 }

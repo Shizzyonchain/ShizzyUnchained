@@ -12,5 +12,5 @@ export const metadata: Metadata = withSocialMetadata({
 
 export default async function ActivityPage() {
   const [initialRows, quote, initialDollarHistory] = await Promise.all([getInitialMarkets(), getInitialTaoQuote(), getTaoHistory()]);
-  return <Dashboard initialDollarHistory={initialDollarHistory} initialView="activity" initialRows={initialRows} initialTaoUsd={quote?.usd || 0} initialTaoQuote={quote} />;
+  return <Dashboard initialNow={Date.now()} initialDollarHistory={initialDollarHistory} initialView="activity" initialRows={initialRows} initialTaoUsd={quote?.usd || 0} initialTaoQuote={quote} />;
 }
