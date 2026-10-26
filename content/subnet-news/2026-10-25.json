@@ -2,7 +2,7 @@
   "version": 1,
   "date": "2026-10-25",
   "title": "Bittensor Daily News — October 25, 2026",
-  "summary": "Grayscale’s amended filing keeps a TAO ETF on the application path; SN15 ORO reports an evaluation audit; SN25 UR revises its settlement timetable; and an SN91 Cascade user describes a live integration. Also: GPU profiling, miner-facing fixes, three finalized burns and the refreshed Shizzy video library.",
+  "summary": "Grayscale’s amended filing keeps a TAO ETF on the application path; SN15 ORO reports an evaluation audit; SN25 UR revises its settlement timetable; and an SN91 Cascade user describes a live integration. Also: GPU profiling, miner-facing fixes, three finalized burns and the refreshed Shizzy video library. Late chain update: SN76 Ormas changes its emission split, and SN70 is re-registered without a project name.",
   "publishedAt": "2026-10-25T14:57:25.191466+00:00",
   "coverageStart": "2026-10-24T16:24:40.407249+00:00",
   "coverageEnd": "2026-10-25T14:57:25.191466+00:00",
@@ -558,7 +558,22 @@
     {
       "netuid": 70,
       "name": "Consted 2.0",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN70’s prior identity is cleared; a new unnamed registration follows",
+          "summary": "Finalization of block 9,364,302 on October 26 at 00:40:12 UTC removes the former Consted 2.0 identity and clears its registration/owner storage. Block 9,364,303, twelve seconds later, records NetworkAdded for SN70 with a new registration height and a different owner. The new registration has no on-chain project name at our finalized cutoff, so its current label is Unknown. Its allocation is the default 18% owner / 41% validators / 41% miners. The earlier 33% / 33% / 34% vector was reset during lifecycle cleanup, not by a newly observed owner allocation transaction. This does not establish a subnet sale, purchase price or continuity with the old project. Historical Consted coverage stays labelled with its recorded identity.",
+          "rating": 3,
+          "ratingReason": "Verified slot reuse changes which owner and project the current subnet data describes; a new name or sale is not inferred.",
+          "sources": [
+            {
+              "label": "Finalized lifecycle events and registration storage",
+              "url": "https://shizzyunchained.com/evidence/2026-10-26-chain-monitor-0247.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 71,
@@ -611,7 +626,26 @@
     {
       "netuid": 76,
       "name": "Ormas",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN76 Ormas raises its validator emission allocation to 49%",
+          "summary": "A successful finalized transaction at block 9,361,535 on October 25 at 15:26:48 UTC changes the alpha split from 18% owner / 41% validators / 41% miners to 18% / 49% / 33%. The burn and recycle slots remain zero. This reallocates eight percentage points from miners to the validator bucket; it is not a transaction burn. Root receives its live baseline first, capped by the validator allocation, and alpha validators share the remainder. Individual returns still depend on stake, performance and take; historical yield can lag the change.",
+          "rating": 3,
+          "ratingReason": "A chain-verified allocation change directly affects the reward buckets without guaranteeing an individual yield.",
+          "sources": [
+            {
+              "label": "Finalized transaction",
+              "url": "https://taostats.io/extrinsic/9361535-8"
+            },
+            {
+              "label": "Exact event and before/after storage",
+              "url": "https://shizzyunchained.com/evidence/2026-10-26-chain-monitor-0247.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 77,
@@ -1030,5 +1064,7 @@
       "Burn history before October 20 depends on paginated index discovery with qualifying events independently finalized-chain verified, not a complete earlier block replay. Daily full-block event coverage ends at the stated finalized cutoff.",
       "Provider credit usage, internal revenue accounts, paid inference and every regional wallet build were not independently tested. Grok attention is a qualitative lead list, not measured mention rankings."
     ]
-  }
+  },
+  "correctedAt": "2026-10-26T02:59:25.851759+00:00",
+  "correctionNote": "Added a later finalized chain supplement through 2026-10-26T02:49:48.001000+00:00: SN76 allocation change and SN70 lifecycle reset/new registration. Original stories, publication time and research window are preserved."
 }

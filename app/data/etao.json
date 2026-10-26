@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-25T14:57:25.191466+00:00",
-  "block": 9361359,
-  "hash": "0x8ab9f0270d697e447c6bd18302b907dbf10b9d6168cbdec98bf9434207e3c1e7",
-  "chainTime": 1792939896000,
+  "checkedAt": "2026-10-26T02:59:25.851759+00:00",
+  "block": 9364950,
+  "hash": "0xa94840ba67d3983510f34f20312498c7de66cc5f6b1a13c22c634adcd9e49452",
+  "chainTime": 1792982988001,
   "runtime": 484,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -492,9 +492,9 @@
     "70": [
       "0",
       "0",
-      "6087425544324152032",
-      "6087425544324152032",
-      "6271892985061247551"
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
     ],
     "71": [
       "0",
@@ -535,8 +535,8 @@
       "0",
       "0",
       "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "9038904596117680291",
+      "6087509988105675080"
     ],
     "77": [
       "0",
@@ -1145,6 +1145,28 @@
         "6087425544324152034"
       ],
       "name": "everyframe.studio"
+    },
+    {
+      "netuid": 76,
+      "block": 9361535,
+      "hash": "0x0b6637286e7db25261ab818fb7c84053fdc8c5e0b5f1795c5fe81be537e3f2b7",
+      "timestamp": 1792942008000,
+      "extrinsic": 8,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "9038904596117680291",
+        "6087509988105675080"
+      ],
+      "name": "Ormas"
     }
   ],
   "names": {
@@ -1152,7 +1174,7 @@
     "35": "Unknown",
     "36": "Epago",
     "41": "Almanac",
-    "70": "Consted 2.0",
+    "70": "Unknown",
     "122": "CookingTAO",
     "119": "CapabilityForge Next",
     "54": "Yanez",
@@ -1279,9 +1301,9 @@
   },
   "observations": [],
   "ownerSnapshot": {
-    "block": 9361280,
-    "hash": "0xe9d1e6930bc4455796ae505a8082e9b4a5d3a39c05b0988e2e5fcdb1b36189eb",
-    "checkedAt": "2026-10-25T14:39:03.246282+00:00",
+    "block": 9364950,
+    "hash": "0xa94840ba67d3983510f34f20312498c7de66cc5f6b1a13c22c634adcd9e49452",
+    "checkedAt": "2026-10-26T02:59:25.851759+00:00",
     "owners": {
       "1": "5HCFWvRqzSHWRPecN7q8J6c7aKQnrCZTMHstPv39xL1wgDHh",
       "2": "5EcYQ3W77ndrmMWdvVQusoFqY8doxfP3U2zrh7xZQiaz7avY",
@@ -1352,7 +1374,7 @@
       "67": "5HEAv3TU1yNei4GwiTsxfmDCDW9pMCKLeDVky9iaVJfYiVeY",
       "68": "5EcdJLAeYoxM3Tsf5VZ3NQPenPku218gqnjSoo3iJNy4V12V",
       "69": "5HBPFVcJxuhT6PFg93s5B5qa9GZjMQWRBWWEssZMDAMmRAvc",
-      "70": "5Cz1mjiJ6shnfmxJLJZY9nRnDdHDbVyMzG7ih3LpshB4hf4A",
+      "70": "5GbydRVj98hQZvR2cf4t8WtcoUVjAuJykxxuqauiJpJqwB7m",
       "71": "5DwHzMhBXPGPSSxnPzp3J8Y12UyYmU17nppQ8oHum6yrRjSk",
       "72": "5FjP8fFbMb6pEHfRZyRegsmwRUMDuLFNcaBu1TerWMPEKgNh",
       "73": "5GHtVze5TpNih1iRriz4rK1gDJiUdHkMTSR9X9Wc6Nk6LyiT",
@@ -1415,10 +1437,10 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9361359,
-    "finalizedHash": "0x8ab9f0270d697e447c6bd18302b907dbf10b9d6168cbdec98bf9434207e3c1e7",
-    "checkedAt": "2026-10-25T14:57:25.191466+00:00",
-    "eventCount": 2,
+    "toBlock": 9364950,
+    "finalizedHash": "0xa94840ba67d3983510f34f20312498c7de66cc5f6b1a13c22c634adcd9e49452",
+    "checkedAt": "2026-10-26T02:59:25.851759+00:00",
+    "eventCount": 3,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history."
