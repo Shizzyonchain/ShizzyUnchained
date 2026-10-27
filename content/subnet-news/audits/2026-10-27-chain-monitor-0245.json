@@ -1,0 +1,44 @@
+{
+  "automation": "verify-etao-changes-every-six-hours",
+  "checkedAt": "2026-10-27T02:48:21.369879+00:00",
+  "easternDate": "2026-10-26",
+  "status": "DONE",
+  "fromBlock": 9370352,
+  "toBlock": 9372129,
+  "throughTime": "2026-10-27T02:45:36+00:00",
+  "hash": "0x047d9ee71410bf3e456fd2ca38dd08dbd734347fc1d2caa5e9e7eec044de04b9",
+  "runtime": 486,
+  "evidence": "/evidence/2026-10-27-chain-monitor-0245.json",
+  "gaps": [],
+  "allocationEvents": 1,
+  "vectorDifferences": 1,
+  "change": {
+    "netuid": 98,
+    "block": 9371009,
+    "hash": "0x73b978d5edd4df6799612107b2892c0b7ee91fe55613302dd1b78899f890b931",
+    "timestamp": 1793055696000,
+    "extrinsic": 22,
+    "before": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "after": [
+      "0",
+      "0",
+      "6087425544324152032",
+      "1291272085159668613",
+      "11068046444225730970"
+    ],
+    "name": "NeverPlayAlone"
+  },
+  "qualifyingBurns": [],
+  "targetEvents": 27,
+  "burnReview": "All finalized blocks scanned; successful native burns checked individually against 100-token threshold. None qualify. Small burns and recycling remain in permanent evidence, not public transactions.",
+  "pendingObservations": "SN98 bot observation reconciled with finalized event and before/after storage; no outstanding archive observations.",
+  "newsDisposition": "Added SN98 to existing October26 edition; every prior story preserved. No social post authorized or made.",
+  "publication": "Pending validation and production verification",
+  "validation": "79 reports and128 owner holdings validated;4 eTAO/burn regression tests passed; full release gate enforced on push."
+}

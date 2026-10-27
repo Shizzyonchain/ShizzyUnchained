@@ -766,7 +766,26 @@
     {
       "netuid": 98,
       "name": "NeverPlayAlone",
-      "updates": []
+      "updates": [
+        {
+          "headline": "NeverPlayAlone changes SN98 reward allocation to 33% owner, 7% validators and 60% miners",
+          "summary": "A successful finalized transaction at block 9,371,009 on October 26 at 23:01:36 UTC changes the five-slot allocation from 0% burn / 0% recycle / 18% owner / 41% validators / 41% miners to approximately 0% / 0% / 33% / 7% / 60%. This increases both the owner and miner shares while reducing the validator bucket. Root receives its live baseline first, capped by that validator allocation; alpha validators share any remainder. These are allocation weights, not guaranteed individual returns, and historical yield estimates can lag the change. Exact vectors, successful execution and historical registration identity are retained in the evidence.",
+          "rating": 3,
+          "ratingReason": "A finalized reward-allocation change affects subnet participants without establishing a new product or promising individual yield.",
+          "sources": [
+            {
+              "label": "SN98 finalized transaction",
+              "url": "https://taostats.io/extrinsic/9371009-22"
+            },
+            {
+              "label": "Exact event, storage and registration evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-27-chain-monitor-0245.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 99,
