@@ -312,3 +312,8 @@ history at thirty-minute buckets. TAO daily/week/month current history uses a
 shared 200-day page boundary and thirty-minute cache. Live quotes remain on the
 separate existing node/FX path. Credit costs per request vary; these limits do
 not claim that a request always costs one credit or prove a monthly allowance.
+
+Outage recovery keeps the live lane bounded to the newest64 finalized blocks.
+A separate lane repairs newest missing blocks first across the complete26-hour
+window, including internal holes after a worker pause. Reads never treat these
+holes as zero trades: complete boundary and continuity checks still gate1H/24H.

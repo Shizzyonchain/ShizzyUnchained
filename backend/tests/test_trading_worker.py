@@ -43,3 +43,11 @@ def test_reviewed_runtime_upgrade_resumes_worker_but_unknown_versions_still_stop
     for version in [483, 485, 487, None]:
         with pytest.raises(ValueError, match="runtime review"):
             require_trade_runtime(version)
+
+
+def test_live_lane_prioritizes_current_head_after_long_outage():
+    from app.trading_worker import live_trade_numbers
+    assert list(live_trade_numbers(100, 2000)) == list(range(1937, 2001))
+    assert list(live_trade_numbers(1998, 2000)) == [1999, 2000]
+    assert list(live_trade_numbers(2000, 2000)) == []
+    assert list(live_trade_numbers(None, 20)) == list(range(1, 21))

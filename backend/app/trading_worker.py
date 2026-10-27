@@ -50,6 +50,13 @@ async def read_trade_block(chain, number, parse, known=None):
     )
 
 
+def live_trade_numbers(last, end):
+    # A restart can be hours behind. Pin the head lane to at most64 blocks;
+    # the independent bounded history scan repairs every older missing block.
+    first = max(1, end - 63, last + 1 if last is not None else 1)
+    return range(first, end + 1)
+
+
 async def run_trading(db, settings, parse):
     async def lane(history):
         endpoints = list(dict.fromkeys([settings.backfill_ws_url, *settings.subtensor_ws_urls]))
@@ -76,32 +83,33 @@ async def run_trading(db, settings, parse):
                             end = await db.fetchval(
                                 "SELECT max(block_number) FROM market_trade_blocks_v2"
                             )
-                            first = await db.fetchval(
-                                "SELECT min(block_number) FROM market_trade_blocks_v2"
-                            )
-                            if first is None:
+                            if end is None:
                                 await asyncio.sleep(5)
                                 continue
                             target = max(1, end - int(26 * 3600 / seconds))
-                            if first <= target:
+                            # Repair internal outage gaps as well as the early boundary.
+                            # Newest holes first restores the hourly window before 24h.
+                            missing = await db.fetch(
+                                """SELECT n FROM generate_series($1::bigint,$2::bigint) n
+                                LEFT JOIN market_trade_blocks_v2 b ON b.block_number=n
+                                WHERE b.block_number IS NULL ORDER BY n DESC LIMIT 64""",
+                                target, end,
+                            )
+                            if not missing:
                                 await asyncio.sleep(60)
                                 continue
-                            numbers = range(max(target, first - 64), first)
+                            numbers = [row["n"] for row in missing]
                         else:
                             head = await asyncio.wait_for(anext(heads), 45)
                             end = head["number"]
                             last = await db.fetchval(
                                 "SELECT max(block_number) FROM market_trade_blocks_v2"
                             )
-                            first = (
-                                last + 1
-                                if last is not None
-                                else max(1, end - int(70 * 60 / seconds))
-                            )
-                            numbers = range(first, end + 1)
+                            numbers = live_trade_numbers(last, end)
                         pending = list(numbers)
-                        # Prefix chunks commit atomically; never skip a hole.
-                        # Live chunks are independent and always prioritize the head.
+                        # Live tails never wait on a long historical backlog.
+                        # Missing blocks are repaired by the history lane; reads
+                        # still require every block in their complete window.
                         for offset in range(0, len(pending), 64):
                             chunk = pending[offset : offset + 64]
                             provenance = await db.fetch(
@@ -113,8 +121,9 @@ async def run_trading(db, settings, parse):
                             if batch:
                                 await db.executemany(INSERT, batch)
                         if history:
-                            log.info("trade history earliest=%s target=%s", pending[0], target)
+                            log.info("trade history repaired=%s oldest=%s newest=%s target=%s", len(pending), min(pending), max(pending), target)
                         else:
+                            log.info("trade live through=%s repaired=%s", end, len(pending))
                             await db.execute(
                                 "DELETE FROM market_trade_blocks_v2 WHERE block_time<now()-interval '3 days'"
                             )
