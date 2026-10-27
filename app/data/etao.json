@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-27T02:48:21.369879+00:00",
-  "block": 9372129,
-  "hash": "0x047d9ee71410bf3e456fd2ca38dd08dbd734347fc1d2caa5e9e7eec044de04b9",
-  "chainTime": 1793069136000,
+  "checkedAt": "2026-10-27T08:59:46.983871+00:00",
+  "block": 9373985,
+  "hash": "0x1dae2a763589a3df30bf22b1985baf3553f11a48b4372ebcd80121de635a7ae9",
+  "chainTime": 1793091408000,
   "runtime": 486,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -513,9 +513,9 @@
     "73": [
       "0",
       "0",
-      "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "6087425544324152032",
+      "1106804644422573096",
+      "11252513884962826487"
     ],
     "74": [
       "0",
@@ -1211,6 +1211,29 @@
         "11068046444225730970"
       ],
       "name": "NeverPlayAlone"
+    },
+    {
+      "netuid": 73,
+      "block": 9372736,
+      "hash": "0x2ece26bc8657ff4217b5a3a2586ce02c203c7c45020afa5fe98956d090d8d8dd",
+      "timestamp": 1793076420000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "6087425544324152032",
+        "1106804644422573096",
+        "11252513884962826487"
+      ],
+      "extrinsic": 10,
+      "name": "Elenost",
+      "registeredAt": 5160047
     }
   ],
   "names": {
@@ -1286,7 +1309,7 @@
     "70": "Unknown",
     "71": "Leadpoet",
     "72": "StreetVision by NATIX",
-    "73": "Parked",
+    "73": "Elenost",
     "74": "Gittensor",
     "75": "Hippius",
     "76": "Ormas",
@@ -1481,10 +1504,10 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9372129,
-    "finalizedHash": "0x047d9ee71410bf3e456fd2ca38dd08dbd734347fc1d2caa5e9e7eec044de04b9",
-    "checkedAt": "2026-10-27T02:48:21.369879+00:00",
-    "eventCount": 5,
+    "toBlock": 9373985,
+    "finalizedHash": "0x1dae2a763589a3df30bf22b1985baf3553f11a48b4372ebcd80121de635a7ae9",
+    "checkedAt": "2026-10-27T08:59:46.983871+00:00",
+    "eventCount": 6,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history."

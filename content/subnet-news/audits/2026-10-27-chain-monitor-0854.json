@@ -1,0 +1,60 @@
+{
+  "automation": "verify-etao-changes-every-six-hours",
+  "checkedAt": "2026-10-27T08:59:46.983871+00:00",
+  "easternDate": "2026-10-27",
+  "status": "DONE",
+  "fromBlock": 9372130,
+  "toBlock": 9373985,
+  "throughTime": "2026-10-27T08:56:48+00:00",
+  "hash": "0x1dae2a763589a3df30bf22b1985baf3553f11a48b4372ebcd80121de635a7ae9",
+  "runtime": 486,
+  "evidence": "/evidence/2026-10-27-chain-monitor-0854.json",
+  "gaps": [],
+  "allocationEvents": [
+    {
+      "netuid": 73,
+      "block": 9372736,
+      "hash": "0x2ece26bc8657ff4217b5a3a2586ce02c203c7c45020afa5fe98956d090d8d8dd",
+      "timestamp": 1793076420000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "6087425544324152032",
+        "1106804644422573096",
+        "11252513884962826487"
+      ],
+      "extrinsic": 10,
+      "name": "Elenost",
+      "registeredAt": 5160047
+    }
+  ],
+  "qualifyingBurns": [
+    {
+      "id": "9373978-155",
+      "block": 9373978,
+      "hash": "0x7ab53afcb4e73d13523cf531de976eeb183d93d42b193a92886b544c1d79152b",
+      "extrinsic": 6,
+      "eventIndex": 155,
+      "eventName": "SubtensorModule.AlphaBurned",
+      "timestamp": "2026-10-27T08:55:24+00:00",
+      "netuid": 8,
+      "name": "Vanta",
+      "kind": "alpha",
+      "amountRaw": "103438971428",
+      "taoSpentRaw": null,
+      "account": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+      "registeredAt": 1477264
+    }
+  ],
+  "targetEvents": 55,
+  "pendingObservations": "SN73 bot lead reconciled with finalized execution and before/after storage; stored observations empty.",
+  "newsDisposition": "October27 full edition does not yet exist. Allocation retained as pending daily lead; routine qualifying Vanta burn retained in Burns archive. No one-story edition or social post created.",
+  "publication": "Pending validation and READY verification"
+}
