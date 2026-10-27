@@ -4,6 +4,7 @@ import { unstable_cache } from "next/cache";
 import { getCache } from "@vercel/functions";
 import { packChildIndex, unpackChildIndex } from "./child-hotkey-cache";
 import { scanChildHotkeys } from "./child-hotkey-storage";
+import { validatorCollection } from "./validator-provider-source";
 import type { Validator } from "./validator-types";
 
 const getPackedChildHotkeys = unstable_cache(async () => {
@@ -42,21 +43,7 @@ export async function getChildHotkeys() {
 const readStandaloneValidators = unstable_cache(async () => {
   const key = process.env.TAOSTATS_API_KEY;
   if (!key) throw new Error("Validator data is not configured for this environment.");
-  const [index, all] = await Promise.all([getChildHotkeys(), (async () => {
-    const rows: Validator[] = [];
-    for (let page = 1; page <= 12; page++) {
-      const url = new URL("/v1/validators", "https://api.taostats.io");
-      Object.entries({ order_by: "rank", order_dir: "asc", limit: "200", page: String(page) }).forEach(([name, value]) => url.searchParams.set(name, value));
-      const response = await fetch(url, { headers: { Authorization: key }, next: { revalidate: 1800 }, signal: AbortSignal.timeout(8_000) });
-      if (!response.ok) throw new Error("Validator provider unavailable.");
-      const payload = await response.json();
-      if (!Array.isArray(payload.data) || payload.pagination?.current_page !== page) throw new Error("Invalid validator directory response.");
-      rows.push(...payload.data);
-      if (payload.pagination.next_page === null) return rows;
-      if (payload.pagination.next_page !== page + 1) throw new Error("Incomplete validator directory.");
-    }
-    throw new Error("Validator directory exceeds bounded coverage.");
-  })()]);
+  const [index, all] = await Promise.all([getChildHotkeys(), validatorCollection<Validator>("/v1/validators", { order_by: "rank", order_dir: "asc" }, key)]);
   const children = new Set(index.hotkeys);
   return { rows: all.filter(row => !children.has(row.hotkey)), hiddenChildren: all.filter(row => children.has(row.hotkey)).length, childCheck: { block: index.block, checkedAt: index.checkedAt } };
 }, ["standalone-validator-directory-v2"], { revalidate: 900 });

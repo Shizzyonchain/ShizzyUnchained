@@ -103,6 +103,8 @@ async def queue_yield_check(payload: YieldCheckRequest, x_api_key: str | None = 
         payload=EXCLUDED.payload,state='queued',requested_at=now(),error=NULL
         WHERE validator_yield_checks.state NOT IN ('queued','running')
           AND (validator_yield_checks.requested_at<now()-interval '1 hour'
+            OR (validator_yield_checks.requested_at<now()-interval '15 minutes'
+                AND validator_yield_checks.payload->'rows'->0->>'block' IS DISTINCT FROM EXCLUDED.payload->'rows'->0->>'block')
             OR (validator_yield_checks.result IS NOT NULL
                 AND COALESCE((validator_yield_checks.result->>'methodVersion')::int,0)<>4))
         RETURNING netuid""", payload.netuid, payload.model_dump_json())

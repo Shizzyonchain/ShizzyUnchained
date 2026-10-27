@@ -317,3 +317,10 @@ Outage recovery keeps the live lane bounded to the newest64 finalized blocks.
 A separate lane repairs newest missing blocks first across the complete26-hour
 window, including internal holes after a worker pause. Reads never treat these
 holes as zero trades: complete boundary and continuity checks still gate1H/24H.
+
+
+### Validator provider budget (October 27, 2026)
+
+Validator sources now share completed, paginated generations across directory and recommendation readers. Historical provider yields refresh every 45 minutes; directory, permits/metagraph and activity parameters retain their 30-minute source refresh. This replaces the previous 30-minute yield scan and separate directory fetch. Page checkpoints survive a throttled retry, a short preparation lease prevents polling storms, and only complete generations are used. Original evidence timestamps and the existing two-hour freshness / one-hour source-alignment checks remain unchanged. The 34-page yield example falls from at most 1,632 to 1,088 scheduled requests/day at continuous demand (a theoretical reduction, not measured billing or guaranteed credits).
+
+Node archive jobs reuse prepared candidates without reloading all provider sources. A changed provider end block can requeue an existing node check after 15 minutes instead of waiting a full hour; unchanged snapshots retain the hourly bound. Jobs remain serial, off visitor requests, and rankings require exact matching block/time, complete historical windows, non-operator-only pools and comparable node yields. Provider participation/history is still required; a subnet-wide current epoch estimate is never substituted for a validator's measured net return. No new visitor chain RPC is introduced.
