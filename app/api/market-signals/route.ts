@@ -1,9 +1,9 @@
-import { resilientTrading } from "../../lib/trading-snapshot";
-import { collectHourlyTrades } from "../../lib/hourly-buying";
+import { resilientTrading, type TradingSnapshot } from "../../lib/trading-snapshot";
 import { responseCoalescer } from "../../lib/request-protection";
 import { unstable_cache } from "next/cache";
 import sectors from "../../data/sectors.json";
 import { buyingTotals, requireFreshTrading } from "../../lib/market-signals";
+import { nodeFirstTrading } from "../../lib/node-first-trading";
 import { nodeTrading } from "../../lib/node-trading-source";
 import { getCache } from "@vercel/functions";
 const tags=sectors.subnets.map(({netuid,sectors})=>({netuid,sectors}));
@@ -13,22 +13,16 @@ const load=unstable_cache(async(anchor:number)=>{
  const response=await fetch("https://api.taostats.io/v1/subnets/pools/aggregate?limit=200",{headers:{Authorization:key},signal:AbortSignal.timeout(7000),cache:"no-store"});
  if(!response.ok)throw new Error(`Trading source HTTP ${response.status}`);const body=await response.json();if(body.pagination?.next_page)throw new Error("Incomplete pool page");return buyingTotals(body.data);
 },["market-buy-sell-v2"],{revalidate:300});
-const hourlyAt=unstable_cache(async(anchor:string)=>{
- const key=process.env.TAOSTATS_API_KEY!;const signal=AbortSignal.timeout(25000);
- return collectHourlyTrades(anchor,async(page,start,end)=>{
- const url=new URL("https://api.taostats.io/v1/subnets/trades");Object.entries({limit:"200",page:String(page),timestamp_start:String(start),timestamp_end:String(end),order_by:"timestamp",order_dir:"desc"}).forEach(([k,v])=>url.searchParams.set(k,v));
- const response=await fetch(url,{headers:{Authorization:key},signal,cache:"no-store"});if(!response.ok)throw new Error("Hourly trades unavailable");return response.json();
- },8);
-},["market-hourly-trades-by-source-v2"],{revalidate:300});
-// A new aggregate timestamp selects a new hourly cache entry immediately.
-const hourly=async()=>requireFreshTrading(await hourlyAt(new Date(Math.floor(Date.now()/300000)*300000-60000).toISOString()));
+// Hourly totals come only from our finalized index. Replaying a paginated
+// network-wide trade window on provider failover burns the monthly allowance.
+// resilientTrading retains the dated last-good hourly snapshot on an outage.
 // An unavailable node must not turn every visitor into another paginated scan.
 // The node collector fills history independently; preserve the dated last-good
 // result while limiting provider fallback attempts to once per half hour.
 const fallbackTasks=new Map<string,Promise<ReturnType<typeof buyingTotals>>>();
 const fallbackRetry=new Map<string,number>();
 async function primary(period:'1h'|'24h'){
- try{return await nodeTrading(period);}catch{}
+ return nodeFirstTrading<TradingSnapshot>(period,()=>nodeTrading(period),async()=>{
  const existing=fallbackTasks.get(period);if(existing)return existing;
  const task=(async()=>{
   const cache=getCache({namespace:'market-provider-fallback-v2'});
@@ -39,9 +33,10 @@ async function primary(period:'1h'|'24h'){
   try{await cache.set(period,retryAt,{ttl:1800});}catch{}
   // A new half-hour key reads fresh provider data on first failover, rather
   // than repeatedly receiving an expired stale-while-revalidate entry.
-  return period==='1h'?hourly():requireFreshTrading(await load(Math.floor(Date.now()/1800000)));
+  return requireFreshTrading(await load(Math.floor(Date.now()/1800000)));
  })().finally(()=>fallbackTasks.delete(period));
  fallbackTasks.set(period,task);return task;
+ });
 }
 const coalesce=responseCoalescer(2,2);
 export const maxDuration=60;

@@ -289,15 +289,18 @@ legs (swap, move and transfer) are excluded. BasketSwapped events count a genuin
 root-TAO/alpha market leg once, including finalized initialization events; an
 internal alpha/alpha basket route is excluded. Version 2 recomputes its own
 complete history and never mixes earlier-method checkpoints or caches. Successful items of interrupted batches retain their actual surviving
-events. Runtime 484 is reviewed; another runtime pauses this collector pending
+events. Runtimes 484 and 486 are reviewed (486 changes availability read-weight
+accounting, not these trade events); another runtime pauses this collector pending
 review without stopping the existing price/wallet/validator workers.
 
-The website tries this source first, sharing its result. TaoStats is a fallback
-while a node window is incomplete or unavailable, with one fallback attempt per
-period per half hour in shared Runtime Cache, plus warm-instance coalescing.
+The website tries this source first, sharing its result. Hourly totals have no
+paginated TaoStats fallback: an unavailable node uses a dated last-good snapshot
+or an honest unavailable state. The daily aggregate backup is limited to one
+attempt per half hour in shared Runtime Cache, plus warm-instance coalescing.
 The daily backup uses a matching half-hour cache key, so an expired dormant
-provider entry cannot repeatedly defeat failover. The hourly fallback refuses
-more than eight pages instead of publishing a partial total.
+provider entry cannot repeatedly defeat failover. Owner buy/sell history shares
+fixed thirty-minute windows and fetch-cache entries; responses retain their exact
+asOf time. This is still indexed history, not a complete node wallet archive.
 Dated last-good trading snapshots remain available, visibly delayed, up to six
 hours. Missing windows never become zero, and hourly totals never use daily data.
 

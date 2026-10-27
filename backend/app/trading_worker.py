@@ -8,6 +8,18 @@ from app.chain import ChainClient
 from app.rpc import finalized_heads
 
 log = logging.getLogger("shizzy.trading")
+# Runtime 486 reviewed against RaoFoundation/subtensor commit
+# 72323e13249c9e25c7e792a2b3c08502c84651d5: stake/event semantics unchanged;
+# only GetStakeAvailabilityV1 read-weight accounting and version changed.
+# Evidence: public/evidence/2026-10-26-chain-monitor-2048.json.
+REVIEWED_TRADE_RUNTIMES = frozenset({484, 486})
+
+
+def require_trade_runtime(version):
+    if version not in REVIEWED_TRADE_RUNTIMES:
+        raise ValueError(f"Trade event semantics need runtime review (spec {version})")
+
+
 INSERT = """INSERT INTO market_trade_blocks_v2
  (block_number,block_hash,block_time,buy_rao,sell_rao,trades)
  VALUES($1,$2,$3,$4,$5,$6) ON CONFLICT DO NOTHING"""
@@ -46,8 +58,7 @@ async def run_trading(db, settings, parse):
             heads = None
             try:
                 async with ChainClient(settings, endpoint_url=endpoints[endpoint]) as chain:
-                    if await chain.client.spec_version() != 484:
-                        raise ValueError("Trade event semantics need runtime review")
+                    require_trade_runtime(await chain.client.spec_version())
                     seconds = await chain.client.block_time()
                     if not 0 < seconds <= 60:
                         raise ValueError("Invalid chain block time")
@@ -60,8 +71,7 @@ async def run_trading(db, settings, parse):
                     if not history:
                         heads = finalized_heads(endpoints[endpoint])
                     while True:
-                        if await chain.client.spec_version() != 484:
-                            raise ValueError("Trade runtime changed")
+                        require_trade_runtime(await chain.client.spec_version())
                         if history:
                             end = await db.fetchval(
                                 "SELECT max(block_number) FROM market_trade_blocks_v2"

@@ -33,3 +33,13 @@ async def test_missing_provenance_reads_exact_pinned_timestamp_and_hash():
     chain.client.at.assert_awaited_once_with(456)
     view.timestamp.assert_awaited_once()
     assert result[:3] == (456, "0x456", stamp)
+
+
+def test_reviewed_runtime_upgrade_resumes_worker_but_unknown_versions_still_stop():
+    import pytest
+    from app.trading_worker import require_trade_runtime
+    for version in [484, 486]:
+        require_trade_runtime(version)
+    for version in [483, 485, 487, None]:
+        with pytest.raises(ValueError, match="runtime review"):
+            require_trade_runtime(version)
