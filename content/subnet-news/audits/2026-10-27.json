@@ -4,8 +4,8 @@
   "coverageStart": "2026-10-26T14:24:50.166214+00:00",
   "coverageEnd": "2026-10-27T14:22:00+00:00",
   "assembledAt": "2026-10-27T14:23:12.848652+00:00",
-  "dailyWorkflowComplete": false,
-  "scope": "Full daily edition; live publication and roundup pending.",
+  "dailyWorkflowComplete": true,
+  "scope": "Full daily edition published and live verified; one daily X roundup publicly verified. Disclosed research limitations remain, without claiming exhaustive private-source access.",
   "counts": {
     "subnets": 128,
     "updates": 25,
@@ -3358,11 +3358,88 @@
     }
   ],
   "publication": {
-    "status": "DEPLOYMENT_PENDING"
+    "status": "LIVE_VERIFIED",
+    "commit": "5cc6fa76cd57072bb17f4a24886dcfde92154fe1",
+    "deployment": "dpl_ECVkqa3DDFhDG4S3xtioA3TZoddd",
+    "ready": true,
+    "verifiedAt": "2026-10-27T14:30:13.669Z",
+    "checks": [
+      {
+        "path": "/subnet-news",
+        "status": 200,
+        "okay": true,
+        "missing": []
+      },
+      {
+        "path": "/subnet-news/2026-10-27",
+        "status": 200,
+        "okay": true,
+        "missing": []
+      },
+      {
+        "path": "/subnet-news/2026-10-26",
+        "status": 200,
+        "okay": true,
+        "missing": []
+      },
+      {
+        "path": "/subnet-news/etao",
+        "status": 200,
+        "okay": true,
+        "missing": []
+      },
+      {
+        "path": "/subnet-news/burns?subnet=8",
+        "status": 200,
+        "okay": true,
+        "missing": []
+      },
+      {
+        "path": "/video",
+        "status": 200,
+        "okay": true,
+        "missing": []
+      },
+      {
+        "path": "/api/subnets/owners",
+        "status": 200,
+        "okay": true,
+        "missing": []
+      },
+      {
+        "path": "/api/subnets/67/news",
+        "status": 200,
+        "okay": true,
+        "missing": []
+      },
+      {
+        "path": "/api/subnets/103/news",
+        "status": 200,
+        "okay": true,
+        "missing": []
+      },
+      {
+        "path": "/evidence/2026-10-27-daily-chain.json",
+        "status": 200,
+        "okay": true,
+        "missing": []
+      }
+    ],
+    "ownerHoldings": {
+      "block": 9375533,
+      "asOf": "2026-10-27T14:06:24+00:00",
+      "sn103": "5HZJ7QuYrNWhbWccjAcVTuTGMGmkcLs5ctWSe8AuYWuPweAN"
+    },
+    "visualEvidence": "research-oct27/news-live.png"
   },
   "xRoundup": {
-    "status": "PENDING",
-    "authorized": true
+    "status": "PUBLISHED_VERIFIED",
+    "identity": "@ShizzyUnchained",
+    "copy": "Beyond the red candles: what’s actually being built on Bittensor?\n\nHarnyx has added REAX decision models for SN67 research miners. Beam has published EVM delivery receipts. Taoswap announced an Ethereum bridge.\n\nToday’s news separates working tools, team claims and roadmap plans—plus owner-key changes, eTAO and verified burns.\n\nRead the full edition: https://shizzyunchained.com/subnet-news/2026-10-27",
+    "url": "https://x.com/ShizzyUnchained/status/2115089232037331088",
+    "verifiedAt": "2026-10-27T14:33:28.225Z",
+    "site": "https://shizzyunchained.com/subnet-news/2026-10-27",
+    "deployment": "dpl_ECVkqa3DDFhDG4S3xtioA3TZoddd"
   },
   "grokReview": {
     "status": "DONE",
@@ -3423,7 +3500,11 @@
   "taostatsReview": {
     "status": "PARTIAL",
     "outcome": "Current public market feed and node-first health cross-check carried from same-morning reliability receipt; authenticated latest logs have incomplete hour coverage. No request-to-credit conversion or measured saving invented. SN113 finalized identity remains blank.",
-    "evidence": "overnight-reliability-2026-10-27/final-handoff.json"
+    "evidence": "overnight-reliability-2026-10-27/final-handoff.json",
+    "healthCheck": {
+      "evidence": "research-oct27/health-check.json",
+      "outcome": "Both1H/24H return200,128subnets,nodeindexsource,delayedfalse; source times14:30:12/14:29UTC. Marketstatus14:32:48UTC. No visitor/provider replay introduced."
+    }
   },
   "sectorReview": {
     "status": "DONE",
@@ -3621,6 +3702,43 @@
     "build": "PASS production-mode smoke build",
     "sourceText": "PASS",
     "productionDependencies": "zero vulnerabilities",
-    "firstAttempt": "Two sector-data format inconsistencies caught and corrected; complete rerun passed."
+    "firstAttempt": "Two sector-data format inconsistencies caught and corrected; complete rerun passed.",
+    "ci": {
+      "application": "success",
+      "news": "success",
+      "applicationRun": "https://github.com/Shizzyonchain/ShizzyUnchained/actions/runs/40521433482"
+    }
+  },
+  "completedAt": "2026-10-27T14:34:21.397793+00:00",
+  "repositoryAccessGaps": [
+    {
+      "repo": "deprecated/deprecated",
+      "error": "gh: Not Found (HTTP 404)\n"
+    },
+    {
+      "repo": "actual-computer/actual-subnet-95",
+      "error": "gh: Not Found (HTTP 404)\n"
+    },
+    {
+      "repo": "attelierai/attelierai_subnet",
+      "error": "gh: Not Found (HTTP 404)\n"
+    }
+  ],
+  "completionGates": {
+    "research128": "DONE with explicit sampled-public-source limits",
+    "grokDiscoveryTopFiveOmissions": "DONE",
+    "constTensiaOwnerSources": "DONE; private browsing history not exposed",
+    "primaryMedia": "DONE_WITH_DISCLOSED_GAPS; not every long video independently reviewed",
+    "lifecycle": "DONE",
+    "etao": "DONE",
+    "burns": "DONE",
+    "ownerHoldings": "DONE",
+    "marketReview": "DONE",
+    "videosAndLive": "DONE; no library change required",
+    "sectorMaintenance": "DONE",
+    "validationBuildCI": "DONE",
+    "productionAndHistory": "DONE",
+    "dailyRoundup": "DONE; exactly one post",
+    "providerCreditComparison": "BLOCKED: complete post-rollout hours unavailable; no savings claim"
   }
 }
