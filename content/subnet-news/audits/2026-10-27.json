@@ -8,7 +8,7 @@
   "scope": "Full daily edition published and live verified; one daily X roundup publicly verified. Disclosed research limitations remain, without claiming exhaustive private-source access.",
   "counts": {
     "subnets": 128,
-    "updates": 25,
+    "updates": 26,
     "repositoryPaths": 135,
     "repositoryErrors": 3,
     "ecosystem": 2
@@ -2780,8 +2780,8 @@
     {
       "netuid": 98,
       "name": "NeverPlayAlone",
-      "publishedItems": 0,
-      "outcome": "excluded",
+      "publishedItems": 1,
+      "outcome": "covered",
       "profileReview": {
         "source": "https://subnetradar.com/subnet/98",
         "status": "READ"
@@ -2794,7 +2794,7 @@
       "repositoryPaths": [
         "neverplayalone/neverplayalone_subnet"
       ],
-      "reason": "Collected project/brief/repository sources and overlap reviewed; no newly verified material item selected. Routine commits, generic promotion and unsupported allegations not automatically published."
+      "reason": "Overnight allocation carried forward explicitly from October26; not a second event."
     },
     {
       "netuid": 99,
@@ -3430,7 +3430,9 @@
       "asOf": "2026-10-27T14:06:24+00:00",
       "sn103": "5HZJ7QuYrNWhbWccjAcVTuTGMGmkcLs5ctWSe8AuYWuPweAN"
     },
-    "visualEvidence": "research-oct27/news-live.png"
+    "visualEvidence": "research-oct27/news-live.png",
+    "correctionStatus": "RELEASE_REQUESTED; subsequent live verification retained in news-omissions-2026-10-27/receipt.json",
+    "correctedAt": "2026-10-27T15:54:45.039742+00:00"
   },
   "xRoundup": {
     "status": "PUBLISHED_VERIFIED",
@@ -3740,5 +3742,82 @@
     "productionAndHistory": "DONE",
     "dailyRoundup": "DONE; exactly one post",
     "providerCreditComparison": "BLOCKED: complete post-rollout hours unavailable; no savings claim"
-  }
+  },
+  "ownerCorrections": [
+    {
+      "checkedAt": "2026-10-27T15:54:45.039742+00:00",
+      "source": "https://x.com/TensiaBot",
+      "windowStart": "2026-10-26T14:24:50.166214+00:00",
+      "alerts": [
+        {
+          "netuid": 103,
+          "url": "https://x.com/TensiaBot/status/2115081232199336080",
+          "claim": "Name Unknown → Terza Inference",
+          "disposition": "Already in initial edition; now explicit old/new headline and direct alert link",
+          "evidence": "https://shizzyunchained.com/evidence/2026-10-27-daily-chain.json"
+        },
+        {
+          "netuid": 103,
+          "url": "https://x.com/TensiaBot/status/2115026455839060195",
+          "claim": "Executed owner coldkey migration",
+          "disposition": "Already in initial edition; successful block/extrinsic now explicit",
+          "evidence": "https://shizzyunchained.com/evidence/2026-10-27-daily-chain.json"
+        },
+        {
+          "netuid": 73,
+          "url": "https://x.com/TensiaBot/status/2114942052618097130",
+          "claim": "18/41/41 → 33/6/61 allocation",
+          "disposition": "Already in initial edition and archive",
+          "evidence": "https://shizzyunchained.com/subnet-news/etao"
+        },
+        {
+          "netuid": 36,
+          "url": "https://x.com/TensiaBot/status/2114925244943159572",
+          "claim": "Epago → Bittensor display name",
+          "disposition": "Already in initial edition; self-submitted commentary kept separate from network identity",
+          "evidence": "https://shizzyunchained.com/evidence/2026-10-27-daily-chain.json"
+        },
+        {
+          "netuid": 73,
+          "url": "https://x.com/TensiaBot/status/2114886066574360867",
+          "claim": "Parked → Elenost",
+          "disposition": "Initial story used current name but did not clearly spell out rename; clarified",
+          "evidence": "https://shizzyunchained.com/subnet-news/etao"
+        },
+        {
+          "netuid": 34,
+          "url": "https://x.com/TensiaBot/status/2114870322121904308",
+          "claim": "BitMind → Yugos",
+          "disposition": "Already in initial edition and sector data",
+          "evidence": "https://shizzyunchained.com/evidence/2026-10-27-daily-chain.json"
+        },
+        {
+          "netuid": 98,
+          "url": "https://x.com/TensiaBot/status/2114855135331401814",
+          "claim": "18/41/41 → 33/7/60 allocation",
+          "disposition": "Previously published only in October26 supplement; now carried into morning edition with original event date",
+          "evidence": "https://shizzyunchained.com/subnet-news/etao"
+        },
+        {
+          "netuid": 72,
+          "url": "https://x.com/TensiaBot/status/2114644947022365128",
+          "claim": "18/41/41 → 33/30/37 allocation",
+          "disposition": "Before current coverageStart, already covered October26; not a new October27 event",
+          "evidence": "https://shizzyunchained.com/subnet-news/etao"
+        }
+      ],
+      "ownerPost": {
+        "url": "https://x.com/ShizzyUnchained/status/2114860303456633171",
+        "finding": "Announcement image inspected. Initial edition mentioned the plan but omitted50→40and10percentagepoints; exact denominator and planned status restored."
+      },
+      "cause": "The saved initial owner-posts capture does not contain2114860303456633171, while a fresh scroll through the actual overnight timeline does. The owner review stopped before covering the full window. REAX was picked up secondarily but over-compressed, losing exact50→40and10percentagepoints. Tensia’s SN98 alert was captured but wrongly excluded from today because it had been appended to yesterday. SN103 was already included, but its old/new naming was not explicit in the headline.",
+      "prevention": "Require URL-by-URL source dispositions against the actual published edition; retain an overnight carry-forward rather than silently excluding a fresh development just because a previous edition was supplemented.",
+      "social": "Daily roundup already posted; no duplicate roundup or extra X post.",
+      "ownerWindowEvidence": [
+        "news-omissions-2026-10-27/owner-posts.txt",
+        "news-omissions-2026-10-27/owner-posts-page5.txt",
+        "news-omissions-2026-10-27/owner-bookmarks.txt"
+      ]
+    }
+  ]
 }

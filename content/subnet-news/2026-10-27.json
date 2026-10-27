@@ -662,8 +662,8 @@
       "name": "Elenost",
       "updates": [
         {
-          "headline": "Elenost reallocates owner, validator and miner shares",
-          "summary": "SN73’s finalized allocation at block 9,372,736 changes the owner/validator/miner proportions from 18%/41%/41% to 33%/6%/61%; its current identity is Elenost. The archive preserves the exact five-slot raw vectors, block hash and extrinsic. These are allocations, not a promise of a particular validator APY. Root baseline/cap treatment and observed yield can differ or lag; the split is not an alpha burn.",
+          "headline": "SN73 changes from Parked to Elenost and adopts a 33% / 6% / 61% split",
+          "summary": "SN73’s owner-submitted identity changed from Parked to Elenost. A separate successful allocation event at block 9,372,736 changes owner/validator/miner proportions from 18%/41%/41% to 33%/6%/61%. The archive preserves the exact five-slot raw vectors, block hash and extrinsic. These are allocations, not a promise of a particular validator APY. Root baseline/cap treatment and observed yield can differ or lag; the split is not an alpha burn.",
           "rating": 3,
           "ratingReason": "A verified economic allocation change; historical labels and exact chain evidence preserved.",
           "sources": [
@@ -674,6 +674,10 @@
             {
               "label": "Allocation archive",
               "url": "https://shizzyunchained.com/subnet-news/etao"
+            },
+            {
+              "label": "Tensia name-change alert",
+              "url": "https://x.com/TensiaBot/status/2114886066574360867"
             }
           ],
           "status": "verified",
@@ -810,8 +814,8 @@
       "name": "REAX",
       "updates": [
         {
-          "headline": "REAX gains a Harnyx integration; GPU caps rise while a later split remains planned",
-          "summary": "SN67 Harnyx announced support for REAX decision providers on October 27. Separately, published REAX code doubles GPU throughput caps for Pro and Fast, leaving the Lite/CPU limits unchanged. The dated operator brief discusses validator hotfixes and an October 30 inference/burn allocation plan. That future allocation is not reported as an executed chain change; current allocations remain those in the finalized archive.",
+          "headline": "REAX plans a 10% miner-budget burn from October 30; inference share falls from 50% to 40%",
+          "summary": "REAX’s announcement, pictured in Shizzy’s October 26 post and corroborated by the dated operator brief, schedules the inference share of its miner reward budget to fall from 50% to 40% after the October 30 engine slot. The freed 10 percentage points of that miner budget are to be burned; this is not a claim that 10% of all subnet emissions or existing holder balances are destroyed. The team says future inference rewards will follow measured customer demand, while its two competitions keep their full rewards for now. This is a planned emission mechanism, not a completed transaction burn or an already-executed change to the five-slot eTAO vector. Separately, Harnyx announced REAX provider support, and the operator brief reports early GPU-cap activation with validator 1.2.0rc11.post7.1.",
           "rating": 3,
           "ratingReason": "Useful adoption and operator detail; routine caps and planned reward changes remain three stars.",
           "sources": [
@@ -826,9 +830,13 @@
             {
               "label": "Discord brief — secondary source",
               "url": "https://subnetradar.com/subnet-news/92/2026-10-27"
+            },
+            {
+              "label": "Shizzy post with the team announcement image",
+              "url": "https://x.com/ShizzyUnchained/status/2114860303456633171"
             }
           ],
-          "status": "verified",
+          "status": "developing",
           "importance": "medium"
         }
       ]
@@ -876,7 +884,30 @@
     {
       "netuid": 98,
       "name": "NeverPlayAlone",
-      "updates": []
+      "updates": [
+        {
+          "headline": "Last night: SN98 NeverPlayAlone changed its allocation to 33% owner, 7% validators and 60% miners",
+          "summary": "Carried forward from the October 26 edition so today’s morning report includes the overnight change: A successful finalized transaction at block 9,371,009 on October 26 at 23:01:36 UTC changes the five-slot allocation from 0% burn / 0% recycle / 18% owner / 41% validators / 41% miners to approximately 0% / 0% / 33% / 7% / 60%. This increases both the owner and miner shares while reducing the validator bucket. Root receives its live baseline first, capped by that validator allocation; alpha validators share any remainder. These are allocation weights, not guaranteed individual returns, and historical yield estimates can lag the change. Exact vectors, successful execution and historical registration identity are retained in the evidence.",
+          "rating": 3,
+          "ratingReason": "A finalized reward-allocation change affects subnet participants without establishing a new product or promising individual yield.",
+          "sources": [
+            {
+              "label": "SN98 finalized transaction",
+              "url": "https://taostats.io/extrinsic/9371009-22"
+            },
+            {
+              "label": "Exact event, storage and registration evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-27-chain-monitor-0245.json"
+            },
+            {
+              "label": "Tensia allocation alert",
+              "url": "https://x.com/TensiaBot/status/2114855135331401814"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 99,
@@ -903,8 +934,8 @@
       "name": "Terza Inference",
       "updates": [
         {
-          "headline": "SN103 owner key changes; current identity reads Terza Inference",
-          "summary": "Finalized state confirms SN103’s owner address changed from 5FHb1T…uPzXz to 5HZJ7Q…PweAN during the reviewed interval. Its current identity reads Terza Inference and supplies an inference-marketplace site and repository. The registration block is unchanged across the state comparison. The full event scan is retained with this edition: this is an executed owner-key change plus a current identity observation, not evidence of a negotiated sale price or proven customer usage.",
+          "headline": "SN103 changes from Unknown to Terza Inference; owner coldkey migrated",
+          "summary": "SN103’s finalized owner-submitted identity changed from unnamed (displayed as Unknown) to Terza Inference, a project describing an AI inference marketplace on Bittensor. The identity update is at block 9,375,503, extrinsic 29. Earlier on October 27, a successful ColdkeySwapped event at block 9,374,413, extrinsic 31, migrated the owner address from 5FHb1T…uPzXz to 5HZJ7Q…PweAN. The reviewed registration block remains unchanged. These are verified identity and owner-key events; they do not establish a sale price, independently tested marketplace availability or paying customer usage.",
           "rating": 3,
           "ratingReason": "A verified ownership/identity development, without inventing a sale or carrying old-project returns into a new claim.",
           "sources": [
@@ -919,6 +950,10 @@
             {
               "label": "Current project",
               "url": "https://terza.si/"
+            },
+            {
+              "label": "Tensia name-change alert",
+              "url": "https://x.com/TensiaBot/status/2115081232199336080"
             }
           ],
           "status": "verified",
@@ -1147,5 +1182,7 @@
       "Not every full-length media attachment or interview was watched. Text-only and media-access limits are recorded in the source audit.",
       "Earlier burn history retains its disclosed indexer/history limits. New contiguous finalized reviews end at the stated block; miner emissions, withholding, fees and recycling are not transaction burns."
     ]
-  }
+  },
+  "correctedAt": "2026-10-27T15:54:45.039742+00:00",
+  "correctionNote": "Updated: REAX plan, subnet renames and the overnight SN98 allocation."
 }
