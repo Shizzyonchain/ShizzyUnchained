@@ -27,7 +27,7 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
       else if (path === "/api/subnet-chart") value = chart(url.searchParams.get("interval") || "1d");
       else if (path === "/api/tao-chart") value = { ...chart(url.searchParams.get("interval") || "1d"), data: chart(url.searchParams.get("interval") || "1d").data.map(([time]) => ({ time, open: "250", high: "250", low: "250", close: "250" })) };
       else if (path === "/api/subnets/owner-sales") value = { netuid: Number(url.searchParams.get("netuid")), address: keys[0], asOf: stamp, ownerCheckedAt: stamp, complete: true, sales:[{id:"owner-sale",extrinsic:"9000000-0001",timestamp:stamp,swap:{fromToken:`SN${url.searchParams.get("netuid")}`,toToken:"TAO",fromAmount:"12500000000",toAmount:"6000000000",taoValue:"6000000000"}}], day: { alpha: "12500000000", tao: "6000000000", trades: 1, bought: { alpha: "25000000000", tao: "12000000000", trades: 2 }, netAlpha: "12500000000" }, week: { alpha: "25000000000", tao: "12000000000", trades: 2, bought: { alpha: "10000000000", tao: "5000000000", trades: 1 }, netAlpha: "-15000000000" } };
-      else if (path === "/api/subnets/owners") value = { checkedAt: stamp, block: 9000000, owners: { 51: keys[0], 103: keys[0] } };
+      else if (path === "/api/subnets/owners") value = { checkedAt: stamp, block: 9000000, owners: Object.fromEntries(Array.from({length:128},(_,i)=>[i+1,keys[0]])) };
       else if (path === "/api/validators") value = { data: validators, pagination, directoryTotal: 2 };
       else if (path === "/api/validators/recommendations") value = { netuid: 51, candidates, collectedAt: stamp, preparedAt: stamp, coverage: { permitHolders: 2, yieldRows: 2, directoryEntries: 2 } };
       else if (path === "/api/validators/yield-checks") value = { netuid: 51, state: "ready", result: { methodVersion: 4, checkedAt: stamp, rows: candidates.map(row => ({ hotkey: row.hotkey, providerBlock: row.yieldBlock, providerTimestamp: stamp, seven: { status: "consistent", chainApy: .3, chainApr: .26 }, thirty: { status: "consistent", chainApy: .3, chainApr: .26 } })) } };
@@ -482,4 +482,14 @@ test('snapshot metrics keep units and exact owner evidence while sharing the own
  await expect.poll(async()=>Math.round((await snapshot.boundingBox())?.y??-1)).toBeGreaterThan(140);
  await page.screenshot({path:`../research-oct25/snapshot-viewport-${test.info().project.name}.png`});
  await noOverflow(page);
+});
+
+
+test("owner activity rejects trades attributed to a different coldkey",async({page})=>{
+ await page.route('**/api/subnets/owner-sales?**',route=>route.fulfill({json:{netuid:51,address:keys[1]}}));
+ await page.goto('/charts/51');
+ const activity=page.getByRole('region',{name:'Owner wallet alpha activity',exact:true});
+ await expect(activity).toContainText('Owner activity temporarily unavailable');
+ await expect(activity.getByText('Net buying',{exact:true})).toHaveCount(0);
+ await expect(activity.getByRole('link',{name:'View wallet transfers & transactions ↗',exact:true})).toHaveAttribute('href',`https://taostats.io/account/${keys[0]}/transactions`);
 });
