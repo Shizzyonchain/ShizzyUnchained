@@ -2,7 +2,7 @@
   "version": 1,
   "date": "2026-10-27",
   "title": "Bittensor Daily News — October 27, 2026",
-  "summary": "Harnyx connects research miners to REAX decision models; Beam publishes Bittensor EVM delivery receipts; Taoswap announces an Ethereum bridge; and Chutes lays out its next compute strategy. Also: a working Desearch Reddit demo, owner-key and identity changes, allocations, burns and operator updates.",
+  "summary": "Harnyx connects research miners to REAX decision models; Beam publishes Bittensor EVM delivery receipts; Taoswap announces an Ethereum bridge; and Chutes lays out its next compute strategy. Also: a working Desearch Reddit demo, owner-key and identity changes, allocations, burns and operator updates. Afternoon update: SN4 Targon reports revenue-funded alpha buybacks and burns; a large alpha burn is finalized, SN33 ReadyAI and SN54 Yanez change allocations, and ForeverMoney reports a cumulative bridge milestone.",
   "publishedAt": "2026-10-27T14:23:12.848652+00:00",
   "coverageStart": "2026-10-26T14:24:50.166214+00:00",
   "coverageEnd": "2026-10-27T14:22:00+00:00",
@@ -36,6 +36,20 @@
         {
           "label": "Finalized scan",
           "url": "https://shizzyunchained.com/evidence/2026-10-27-daily-chain.json"
+        }
+      ],
+      "status": "verified",
+      "importance": "medium"
+    },
+    {
+      "headline": "ForeverMoney reports 13,393.6 TAO bridged since launch",
+      "summary": "ForeverMoney’s October 27 update reports cumulative bridging of 13,393.6 TAO in under 80 days: 8,521.78 to Base and 4,871.82 to Robinhood Chain, valued by the team at about $3.32 million in total. This is a cumulative activity milestone, not current bridge TVL, audited revenue or a new bridge launch. The attached animation shows a separate bridge-TVL series; it should not be equated with the cumulative amount bridged. The team describes native 1:1 TAO movement using Chainlink CCIP; this review did not execute a transfer or audit reserves/security.",
+      "rating": 3,
+      "ratingReason": "A relevant team-reported usage milestone with cumulative flows separated from current holdings and security claims.",
+      "sources": [
+        {
+          "label": "October 27 milestone and media",
+          "url": "https://x.com/forevermoney_ai/status/2115134004940914720"
         }
       ],
       "status": "verified",
@@ -76,7 +90,30 @@
     {
       "netuid": 4,
       "name": "Targon",
-      "updates": []
+      "updates": [
+        {
+          "headline": "Targon reports revenue-funded buybacks and burns; a large alpha burn is finalized",
+          "summary": "SN4 Targon’s October 27 announcement reports repurchasing and burning 1,772 TAO-equivalent of alpha using organic Targon.com revenue, plus another 6,678 TAO-equivalent of alpha described as revenue-linked. Its graphic combines those as 8,450 TAO; these are valuations of alpha, not 8,450 native TAO destroyed. Independently, our finalized scan confirms 152,314.359019724 SN4 alpha burned at block 9,376,324, extrinsic 7, at 16:44:36 UTC. That verifies token destruction, not the claimed revenue provenance, repurchase cost or full TAO-equivalent breakdown. The distinction matters when assessing whether customer revenue is supporting subnet token demand.",
+          "rating": 4,
+          "ratingReason": "A consequential revenue-linked capital-allocation announcement supported by a separately verified large alpha burn; revenue attribution and TAO valuations remain explicitly team-reported.",
+          "sources": [
+            {
+              "label": "October 27 team announcement",
+              "url": "https://x.com/TargonCompute/status/2115124390052409817"
+            },
+            {
+              "label": "Finalized burn evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-27-chain-monitor-1918.json"
+            },
+            {
+              "label": "Successful burn transaction",
+              "url": "https://taostats.io/extrinsic/9376324-0007"
+            }
+          ],
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
     },
     {
       "netuid": 5,
@@ -278,7 +315,26 @@
     {
       "netuid": 33,
       "name": "ReadyAI",
-      "updates": []
+      "updates": [
+        {
+          "headline": "ReadyAI shifts its allocation toward validators",
+          "summary": "The finalized October 27 SubnetEmissionWeightsSet event at block 9,376,469, extrinsic 23, changes SN33 ReadyAI’s displayed owner/validator/miner split from approximately 18%/41%/41% to 18%/49%/33%. Exact five-slot vectors and registration identity are preserved in the evidence; the raw owner weight changes slightly despite the rounded 18% label. A larger validator allocation is not a guaranteed individual validator or staker APY, and historical yield measurements can lag the change.",
+          "rating": 3,
+          "ratingReason": "Verified executed allocation change affecting reward distribution, without projecting returns.",
+          "sources": [
+            {
+              "label": "Bot discovery",
+              "url": "https://x.com/TensiaBot/status/2115129937518526550"
+            },
+            {
+              "label": "Finalized vectors and execution",
+              "url": "https://shizzyunchained.com/evidence/2026-10-27-chain-monitor-1918.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 34,
@@ -492,6 +548,24 @@
           ],
           "status": "verified",
           "importance": "medium"
+        },
+        {
+          "headline": "Yanez executes its new split and explains the end of miner withholding",
+          "summary": "The finalized October 27 event at block 9,376,080, extrinsic 12, changes SN54 Yanez’s displayed owner/validator/miner split from approximately 18%/41%/41% to 18%/49%/33%; exact raw vectors are archived. The team says its prior 30% miner burn ends and describes higher liquidity-pool TAO inflow and alpha-staker yield at then-current stake. Those economic estimates are team calculations, not fixed returns or an independently measured outcome. Miner withholding is separate from an explicit transaction burn and is not added to our Burns archive. Root’s baseline/cap and historical yield lag still apply.",
+          "rating": 3,
+          "ratingReason": "Executed allocation change with clearly separated team economic estimates and transaction-burn accounting.",
+          "sources": [
+            {
+              "label": "Team explanation, October 27",
+              "url": "https://x.com/yanez__ai/status/2115115071236083966"
+            },
+            {
+              "label": "Finalized vectors and execution",
+              "url": "https://shizzyunchained.com/evidence/2026-10-27-chain-monitor-1918.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
         }
       ]
     },
@@ -576,6 +650,20 @@
           ],
           "status": "developing",
           "importance": "high"
+        },
+        {
+          "headline": "Chutes expands the non-TEE model catalog",
+          "summary": "SN64 Chutes’ October 27 follow-up announces seven additional non-TEE model choices under its existing API key and billing, alongside its TEE offerings. This is an incremental availability update to the previously covered beta: users gain more model choices, but non-TEE availability should not be read as carrying the same confidential-compute properties as TEE inference. We reviewed the team post and model-family artwork; no paid inference benchmark or independent availability test was performed.",
+          "rating": 3,
+          "ratingReason": "A useful catalog expansion rather than a newly verified adoption or performance breakthrough.",
+          "sources": [
+            {
+              "label": "October 27 catalog announcement",
+              "url": "https://x.com/chutes_ai/status/2115081018512183733"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
         }
       ]
     },

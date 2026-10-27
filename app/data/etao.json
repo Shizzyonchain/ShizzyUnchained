@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-27T14:23:12.848652+00:00",
-  "block": 9375531,
-  "hash": "0x069d2c301fa829bbcc2df46bdca3df82858b3df935e96e64d42811ff40ff3209",
-  "chainTime": 1793109960000,
+  "checkedAt": "2026-10-27T19:25:23.755351+00:00",
+  "block": 9377105,
+  "hash": "0x2a532627f091cb5dcd5686a7c9f04062c37e7865bd6a8dce1abe1666706114ff",
+  "chainTime": 1793128848000,
   "runtime": 486,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -233,9 +233,9 @@
     "33": [
       "0",
       "0",
-      "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "3320413933267719290",
+      "9038904596117680291",
+      "6087425544324152034"
     ],
     "34": [
       "0",
@@ -380,9 +380,9 @@
     "54": [
       "0",
       "0",
-      "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "3320413933267719290",
+      "9038904596117680291",
+      "6087425544324152034"
     ],
     "55": [
       "0",
@@ -1234,6 +1234,52 @@
       "extrinsic": 10,
       "name": "Elenost",
       "registeredAt": 5160047
+    },
+    {
+      "netuid": 54,
+      "block": 9376080,
+      "hash": "0xd08d63d50f187d5f5ed2bc8386549d9c38d4f6a41f51ccf16b2acd3418d625b5",
+      "timestamp": 1793116548000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "3320413933267719290",
+        "9038904596117680291",
+        "6087425544324152034"
+      ],
+      "extrinsic": 12,
+      "registeredAt": 4742549,
+      "name": "Yanez"
+    },
+    {
+      "netuid": 33,
+      "block": 9376469,
+      "hash": "0x7f79be145af0fa0c87d8b2e36e63d7249ceeb3f8cf029e4a1db29775694461a9",
+      "timestamp": 1793121216000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "3320413933267719290",
+        "9038904596117680291",
+        "6087425544324152034"
+      ],
+      "extrinsic": 23,
+      "registeredAt": 2943950,
+      "name": "ReadyAI"
     }
   ],
   "names": {
@@ -1504,10 +1550,10 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9375531,
-    "finalizedHash": "0x069d2c301fa829bbcc2df46bdca3df82858b3df935e96e64d42811ff40ff3209",
-    "checkedAt": "2026-10-27T14:23:12.848652+00:00",
-    "eventCount": 6,
+    "toBlock": 9377105,
+    "finalizedHash": "0x2a532627f091cb5dcd5686a7c9f04062c37e7865bd6a8dce1abe1666706114ff",
+    "checkedAt": "2026-10-27T19:25:23.755351+00:00",
+    "eventCount": 8,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history."
