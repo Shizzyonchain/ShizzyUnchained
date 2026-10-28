@@ -4,8 +4,8 @@
   "coverageStart": "2026-10-27T14:22:00+00:00",
   "coverageEnd": "2026-10-28T14:17:30.864166+00:00",
   "assembledAt": "2026-10-28T14:17:30.864166+00:00",
-  "dailyWorkflowComplete": false,
-  "scope": "Research and validation complete with disclosed access gaps; production and roundup verification pending.",
+  "dailyWorkflowComplete": true,
+  "scope": "Daily research, validation, production/live archives, owner holdings and one public quote-style roundup completed; source access gaps remain disclosed.",
   "sourceMethods": [
     "All 128 current subnet project pages and dated public Discord briefs; 136 repository paths",
     "Signed-in Grok discovery and top-five review, direct team posts and partner cross-checks",
@@ -4285,8 +4285,31 @@
     }
   ],
   "publication": {
-    "status": "PENDING",
-    "dailyRoundup": "PENDING",
-    "note": "One quote-style daily roundup will also fulfill the overlapping three-hour monitor; no duplicate quote."
+    "status": "VERIFIED_PUBLIC",
+    "account": "@ShizzyUnchained",
+    "text": "Bittensor subnets are connecting.\n\nSN64 Chutes is now available through SN28 SayGM—a documented new route for confidential open-weight models. Access is real; adoption and privacy guarantees still need scrutiny.\n\nToday’s news also covers model-comparison tools, drone simulation, subnet renames and verified allocations/burns.\n\nRead the full October 28 edition:\nhttps://shizzyunchained.com/subnet-news/2026-10-28",
+    "quote": "https://x.com/chutes_ai/status/2115428388139565229",
+    "edition": "https://shizzyunchained.com/subnet-news/2026-10-28",
+    "at": "2026-10-28T14:52:35.768Z",
+    "verifiedAt": "2026-10-28T14:55:06.581626+00:00",
+    "url": "https://x.com/ShizzyUnchained/status/2115457062121378251",
+    "deployment": {
+      "id": "dpl_8LfArB8moMfWUTzH2WFX5Q2pFkAe",
+      "state": "READY",
+      "commit": "f5bb8d7874ecc39edb6cfd93e0801b14e1d85432"
+    },
+    "liveChecks": "research-oct28/live-check.json",
+    "screenshots": [
+      "research-oct28/live-news.png",
+      "research-oct28/roundup-public.png"
+    ],
+    "note": "One quote-style daily roundup fulfills daily and overlapping three-hour monitor; no second quote/roundup.",
+    "dailyRoundup": "DONE",
+    "liveOwnerHoldings": {
+      "count": 128,
+      "block": 9382707,
+      "asOf": "2026-10-28T14:01:12+00:00"
+    },
+    "chainArchiveLiveChecks": "DONE"
   }
 }
