@@ -599,7 +599,26 @@
     {
       "netuid": 50,
       "name": "Synth",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN50 Synth links miner rewards to AutoQuant benchmark performance",
+          "summary": "SN50 Synth’s October 28 announcement describes a collective performance benchmark built from frontier-agent forecasting models: greater miner outperformance reduces the miner-emission burn and leaves more rewards for miners. The team reports 22% for this week, unchanged from last week, and links its open-source AutoQuant work. This affects the stated incentive mechanism; it is miner-emission withholding, not a qualifying transaction burn, an alpha-sale event or guaranteed miner earnings. The live reward calculation and benchmark outcomes were not independently reproduced.",
+          "rating": 3,
+          "ratingReason": "A concrete miner-incentive update, with the unchanged weekly withholding rate distinguished from transaction burns.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/SynthdataCo/status/2115476236801552772"
+            },
+            {
+              "label": "Team AutoQuant follow-up",
+              "url": "https://x.com/SynthdataCo/status/2115476240429891956"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 51,
@@ -1247,6 +1266,20 @@
           ],
           "status": "developing",
           "importance": "medium"
+        },
+        {
+          "headline": "SN114 SOMA announces GLM 5.3 Flash support",
+          "summary": "The October 28 team post says GLM 5.3 and GLM 5.3 Flash are live through SN114 SOMA’s context-compression service. GLM 5.3 had already appeared in its October 26 highlights; the Flash variant is the distinct addition in this announcement. This broadens the advertised model choice for agent workflows. The announcement is primary evidence of the team’s availability claim, not an independently executed API test or a measured guarantee of token savings or output quality.",
+          "rating": 3,
+          "ratingReason": "A specific advertised model addition, with previously announced support and untested savings distinguished.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/SomaSubnet/status/2115483459133251738"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
         }
       ]
     },
@@ -1404,6 +1437,6 @@
       "Earlier chain history retains the archives’ published boundaries. New reviewed intervals have no missing blocks; miner withholding, recycling and fees are excluded from transaction burns."
     ]
   },
-  "correctedAt": "2026-10-28T16:26:23.321926+00:00",
-  "correctionNote": "Gavin moved to November 5, 11 AM ET / 8 AM PT. Five afternoon updates added; morning cutoff retained."
+  "correctedAt": "2026-10-28T19:26:25.464354+00:00",
+  "correctionNote": "Gavin moved to November 5, 11 AM ET / 8 AM PT. Seven afternoon updates added; morning cutoff retained."
 }

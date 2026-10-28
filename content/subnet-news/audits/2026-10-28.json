@@ -759,7 +759,7 @@
   },
   "counts": {
     "subnets": 128,
-    "updates": 32,
+    "updates": 39,
     "ecosystem": 3,
     "repositoryPaths": 136,
     "repositoryErrors": 3
@@ -1925,7 +1925,7 @@
     {
       "netuid": 50,
       "name": "Synth",
-      "publishedItems": 0,
+      "publishedItems": 1,
       "profileReview": {
         "source": "https://subnetradar.com/subnet/50",
         "status": "READ"
@@ -1943,7 +1943,15 @@
         "mode-network/synth-subnet"
       ],
       "outcome": "excluded",
-      "reason": "Available project, repository and dated brief reviewed; no new supported material item selected. Generic promotion, unverified member claims and routine commits excluded."
+      "reason": "Available project, repository and dated brief reviewed; no new supported material item selected. Generic promotion, unverified member claims and routine commits excluded.",
+      "supplementReviews": [
+        {
+          "checkedAt": "2026-10-28T19:26:25.464354+00:00",
+          "source": "https://x.com/SynthdataCo/status/2115476236801552772",
+          "status": "PRIMARY_READ",
+          "headline": "SN50 Synth links miner rewards to AutoQuant benchmark performance"
+        }
+      ]
     },
     {
       "netuid": 51,
@@ -3378,7 +3386,7 @@
     {
       "netuid": 114,
       "name": "SOMA",
-      "publishedItems": 1,
+      "publishedItems": 2,
       "profileReview": {
         "source": "https://subnetradar.com/subnet/114",
         "status": "READ"
@@ -3397,7 +3405,15 @@
         "DendriteHQ/SOMA-benchmark"
       ],
       "outcome": "covered",
-      "reason": "Selected sourced update(s)."
+      "reason": "Selected sourced update(s).",
+      "supplementReviews": [
+        {
+          "checkedAt": "2026-10-28T19:26:25.464354+00:00",
+          "source": "https://x.com/SomaSubnet/status/2115483459133251738",
+          "status": "PRIMARY_READ",
+          "headline": "SN114 SOMA announces GLM 5.3 Flash support"
+        }
+      ]
     },
     {
       "netuid": 115,
@@ -4446,6 +4462,133 @@
       "mediaReview": "METANOVA collaboration graphic inspected; Score playback shows detections and counts without independent ground truth; lium listing marked spot/$32machine/$4GPU; Vanta image repeats payout claim.",
       "chainReview": "Separate six-hour review 9382707–9383041 complete unchanged; no new chain claim added.",
       "socialDisposition": "No new four-star story; no quote or second daily roundup."
+    },
+    {
+      "checkedAt": "2026-10-28T19:26:25.464354+00:00",
+      "windowStart": "2026-10-28T16:20:46.220Z",
+      "windowEnd": "2026-10-28T19:26:25.464354+00:00",
+      "identity": "@ShizzyUnchained directly verified",
+      "grokConversation": "https://x.com/i/grok?conversation=2b2d9c5a-aa06-4785-b2d9-00456f4730cd",
+      "addedStories": [
+        {
+          "netuid": 114,
+          "headline": "SN114 SOMA announces GLM 5.3 Flash support",
+          "summary": "The October 28 team post says GLM 5.3 and GLM 5.3 Flash are live through SN114 SOMA’s context-compression service. GLM 5.3 had already appeared in its October 26 highlights; the Flash variant is the distinct addition in this announcement. This broadens the advertised model choice for agent workflows. The announcement is primary evidence of the team’s availability claim, not an independently executed API test or a measured guarantee of token savings or output quality.",
+          "rating": 3,
+          "ratingReason": "A specific advertised model addition, with previously announced support and untested savings distinguished.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/SomaSubnet/status/2115483459133251738"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        },
+        {
+          "netuid": 50,
+          "headline": "SN50 Synth links miner rewards to AutoQuant benchmark performance",
+          "summary": "SN50 Synth’s October 28 announcement describes a collective performance benchmark built from frontier-agent forecasting models: greater miner outperformance reduces the miner-emission burn and leaves more rewards for miners. The team reports 22% for this week, unchanged from last week, and links its open-source AutoQuant work. This affects the stated incentive mechanism; it is miner-emission withholding, not a qualifying transaction burn, an alpha-sale event or guaranteed miner earnings. The live reward calculation and benchmark outcomes were not independently reproduced.",
+          "rating": 3,
+          "ratingReason": "A concrete miner-incentive update, with the unchanged weekly withholding rate distinguished from transaction burns.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/SynthdataCo/status/2115476236801552772"
+            },
+            {
+              "label": "Team AutoQuant follow-up",
+              "url": "https://x.com/SynthdataCo/status/2115476240429891956"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ],
+      "mediaReview": "SOMA branded animated model-announcement frame and Synth dynamic-rewards diagram inspected; no independent execution or benchmark reproduction. Tom B three-minute video remains pending complete media review.",
+      "ownerSourceReview": "Direct bookmarks, original/quote posts, substantive replies and reposts inspected; new Bitcast CEO lead retained privately for primary video review. Older bookmarked Leadpoet and Vanta allocations already covered.",
+      "dispositions": [
+        {
+          "source": "https://x.com/desearch_ai/status/2115474763888078938",
+          "outcome": "already-covered",
+          "reason": "Embedding work option and Desearch-Embedding-4B already described October22; recap explicitly says last week."
+        },
+        {
+          "source": "https://x.com/yanez__ai/status/2115504124183904370",
+          "outcome": "already-covered",
+          "reason": "Team promotes October27 interview already in site coverage and replay promotion; no distinct new launch."
+        },
+        {
+          "source": "https://x.com/inference_labs/status/2115473673088118934",
+          "outcome": "excluded",
+          "reason": "Positioning about air-gapped verifiable AI without a specific new release or executed customer deployment."
+        },
+        {
+          "source": "https://x.com/engyai/status/2115470839390867791",
+          "outcome": "pending",
+          "reason": "Team pricing comparison; image and model/tier methodology still to inspect, no independently verified30% equivalent-workload saving."
+        },
+        {
+          "source": "https://x.com/EndureNet/status/2115469697629974967",
+          "outcome": "pending",
+          "reason": "Dated forecast-error report; methodology/sample and attached image still to inspect before selecting."
+        }
+      ],
+      "priorityAccounts": "Const latest originals October21; TensiaBot latest relevant October28 05:42 SN16 rename already covered; FDN latest October23. Direct displayed timeline review, not exhaustive replies.",
+      "gaps": [
+        "Incremental all-team roster feed and Grok discovery do not establish an exhaustive census of all128 timelines or private Discord.",
+        "SOMA API and Synth live reward calculation were not executed/reproduced.",
+        "Bitcast CEO video playback available but complete audio/transcript not reviewed; pending rather than silently excluded or inferred from short caption."
+      ],
+      "socialDisposition": "Neither addition reaches four stars; no quote or second daily roundup.",
+      "publication": "PENDING_VALIDATION_READY_AND_LIVE_CHECK",
+      "grokStatus": "Discovery and second omission query completed. Initial answer missed SOMA/Synth/Bitcast, corrected against direct sources. Five discussed subnets qualitative, not measured ranking.",
+      "announcementTimes": [
+        {
+          "netuid": 114,
+          "announcedAt": "2026-10-28T16:38:00Z"
+        },
+        {
+          "netuid": 50,
+          "announcedAt": "2026-10-28T16:10:00Z",
+          "note": "Missed before prior scan window; actual date retained as same-day catch-up."
+        }
+      ],
+      "pendingLeads": [
+        {
+          "netuid": 93,
+          "source": "https://x.com/Tom_dot_b/status/2115489234500894788",
+          "announcedAt": "2026-10-28T17:01:00Z",
+          "rating": null,
+          "status": "Pending complete video review. Direct bookmarked primary post and CEO/SN93 identity verified; written outline says automated sales process online, new hires, revenue streams coming online. Three-minute playback opened but full spoken content/transcript not accessible in this pass. Preserve for next check; do not infer executed revenue or customers."
+        },
+        {
+          "netuid": 44,
+          "source": "https://x.com/VenturaLabs/status/2115502644504740121",
+          "announcedAt": "2026-10-28T17:55:00Z",
+          "rating": null,
+          "status": "Secondary dirt-detection competition-track claim; Grok follow-up could not find primary confirmation. Pending official repository/team verification, not a four-star launch."
+        },
+        {
+          "netuid": 66,
+          "source": "https://x.com/VenturaLabs/status/2115506931871748539",
+          "announcedAt": "2026-10-28T18:12:00Z",
+          "rating": null,
+          "status": "Secondary TorchLean/FloatLib competition change; framework predates October28. Pending direct team/repository evidence for a new change. Not verified launch."
+        },
+        {
+          "netuid": 53,
+          "source": "https://x.com/engyai/status/2115470839390867791",
+          "rating": null,
+          "status": "Primary caption observed; pricing-comparison graphic/methodology not fully reviewed. No verified 30% equivalent-workload saving."
+        },
+        {
+          "netuid": 30,
+          "source": "https://x.com/EndureNet/status/2115469697629974967",
+          "rating": null,
+          "status": "Primary dated forecasting-error caption reviewed; methodology/sample/graphic remain to inspect. Do not equate forecast accuracy with profitable trades."
+        }
+      ]
     }
   ]
 }
