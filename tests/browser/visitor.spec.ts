@@ -293,7 +293,7 @@ test("scheduled livestreams stay out of recent videos and replays", async ({ pag
   await expect(page.locator(".video-caption")).toContainText("Now playing");
   await upcoming.getByRole("button",{name:/Leadpoet’s Latest/}).click();
   await expect(page.locator(".video-caption")).toContainText("Upcoming live stream");
-  await expect(page.locator(".video-caption")).toContainText("October 28, 2026");
+  await expect(page.locator(".video-caption")).toContainText("November 5, 2026");
   await noOverflow(page);
 });
 
