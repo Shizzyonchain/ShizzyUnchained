@@ -281,11 +281,14 @@ test("latest news opens the full edition and retains the archive", async ({ page
 test("scheduled livestreams stay out of recent videos and replays", async ({ page }) => {
   await page.goto("/video");
   const upcoming=page.getByRole("region",{name:"Upcoming livestreams",exact:true});
-  await expect(upcoming.getByRole("button")).toHaveCount(3);
+  await expect(upcoming.getByRole("button")).toHaveCount(2);
   await expect(upcoming).toContainText("October 28, 2026");
   await expect(upcoming).toContainText("October 29, 2026");
-  await expect(page.locator(".video-library").getByRole("button",{name:/Leadpoet’s Latest|Gets Expressive|Yanez/})).toHaveCount(0);
-  await expect(page.getByRole("region",{name:"Livestream replays",exact:true}).getByRole("button",{name:/Leadpoet’s Latest|Gets Expressive|Yanez/})).toHaveCount(0);
+  await expect(page.locator(".video-library").getByRole("button",{name:/Leadpoet’s Latest|Gets Expressive/})).toHaveCount(0);
+  const replays=page.getByRole("region",{name:"Livestream replays",exact:true});
+  await expect(replays.getByRole("button",{name:/Leadpoet’s Latest|Gets Expressive/})).toHaveCount(0);
+  await expect(replays.getByRole("button",{name:/Yanez/})).toHaveCount(1);
+  await expect(upcoming.getByRole("button",{name:/Yanez/})).toHaveCount(0);
   await expect(page.locator(".video-caption")).toContainText("Now playing");
   await upcoming.getByRole("button",{name:/Leadpoet’s Latest/}).click();
   await expect(page.locator(".video-caption")).toContainText("Upcoming live stream");

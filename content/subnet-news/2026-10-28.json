@@ -1,0 +1,1331 @@
+{
+  "version": 1,
+  "date": "2026-10-28",
+  "title": "Bittensor Daily News — October 28, 2026",
+  "summary": "SN64 Chutes brings confidential models to SN28 SayGM; SN65 True Performance Network adds model comparison; SN75 Hippius announces a Chrome capture extension; and SN124 Swarm schedules Sentinel. Also: SN103 Terza’s inference launch, identity changes, a pending SN38 key migration, finalized allocations and burns, and operator updates.",
+  "publishedAt": "2026-10-28T14:17:30.864166+00:00",
+  "coverageStart": "2026-10-27T14:22:00+00:00",
+  "coverageEnd": "2026-10-28T14:17:30.864166+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [
+    {
+      "headline": "Quantum-resistant wallet implementation remains pre-activation",
+      "summary": "PR 3220 merged into release-487; PR 3291 is a separate version-bump merge. Neither establishes Finney activation. The recorded daily finalized cutoff still runs runtime 486. The implementation describes optional signing/key-rotation paths; no required wallet migration or independently audited quantum-security guarantee is inferred.",
+      "rating": 3,
+      "ratingReason": "Protocol development with implementation, branch and activation distinguished.",
+      "sources": [
+        {
+          "label": "Implementation PR",
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3220"
+        },
+        {
+          "label": "Version PR",
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3291"
+        },
+        {
+          "label": "Finalized runtime",
+          "url": "https://shizzyunchained.com/evidence/2026-10-28-daily-chain.json"
+        }
+      ],
+      "status": "developing",
+      "importance": "medium"
+    },
+    {
+      "headline": "Shizzy with SN71 Leadpoet today; SN54 Yanez replay available",
+      "summary": "Shizzy’s SN71 Leadpoet interview is scheduled October 28 at 11 AM ET / 8 AM PT. The October 27 SN54 Yanez interview with Jose Caldera is a completed public replay covering human verification, deepfakes and agentic-commerce identity. SN71 remains upcoming at this report’s cutoff.",
+      "rating": 3,
+      "ratingReason": "Original Shizzy coverage with scheduled and completed episodes separated.",
+      "sources": [
+        {
+          "label": "SN71 upcoming",
+          "url": "https://www.youtube.com/watch?v=q2pGNLUvCm4"
+        },
+        {
+          "label": "SN54 replay",
+          "url": "https://www.youtube.com/watch?v=STPM5BtE-ts"
+        }
+      ],
+      "status": "verified",
+      "importance": "medium"
+    },
+    {
+      "headline": "Bitstarter schedules an October 30 video community call",
+      "summary": "The October 27 announcement schedules a team video call for Friday October 30 at 5 PM UK, with questions and agenda updates through its Telegram community. This is a scheduled ecosystem event, not a completed launch or evidence that Bitstarter owns another subnet.",
+      "rating": 2,
+      "ratingReason": "A dated, actionable community event carried forward after yesterday’s cutoff.",
+      "status": "verified",
+      "importance": "informational",
+      "sources": [
+        {
+          "label": "Original announcement",
+          "url": "https://x.com/bitstarterAI/status/2115187511270195517"
+        }
+      ]
+    }
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": [
+        {
+          "headline": "SN4 Targon adds a buybacks view after its burn update",
+          "summary": "Carry-forward from October 27: the team reports 1,772 TAO-equivalent repurchased/burned plus 6,678 TAO-equivalent of SN4 alpha attributed to revenue. The verified large alpha burn remains archived; revenue attribution and TAO/USD valuation are team-reported. The public buybacks view separates spend, alpha bought and burned, noting burns may include accrued rewards and incoming transfers. Monthly cadence is a reported plan, not proof of future purchases.",
+          "rating": 3,
+          "ratingReason": "Transparency follow-up with flows and valuations distinguished.",
+          "sources": [
+            {
+              "label": "Original team post",
+              "url": "https://x.com/TargonCompute/status/2115124390052409817"
+            },
+            {
+              "label": "Buybacks dashboard",
+              "url": "https://stats.targon.com/buybacks"
+            },
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/4/2026-10-28"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta changes Classic rules; qualifying alpha burn verified",
+          "summary": "SN8 Vanta’s October 27 scaling announcement says a passed Classic evaluation can advance account size under its rules. An October 28 update changes daily-loss measurement to start-of-day balance rather than equity, retaining the chosen 3% or 5% limit. Evaluation account sizes are not guaranteed cash or profits. Separately, finalized block 9379010 contains a successful 493.333333333-alpha burn; smaller later burns remain evidence-only under the 100-alpha-per-event minimum.",
+          "rating": 3,
+          "ratingReason": "Participant rule changes and a separately verified burn.",
+          "sources": [
+            {
+              "label": "Original team post",
+              "url": "https://x.com/VantaTrading/status/2115179347900563715"
+            },
+            {
+              "label": "Original team post",
+              "url": "https://x.com/VantaTrading/status/2115262396906492240"
+            },
+            {
+              "label": "Finalized burn",
+              "url": "https://shizzyunchained.com/evidence/2026-10-28-chain-monitor-0257.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "end game",
+      "updates": [
+        {
+          "headline": "SN16 changes its name from Zero Hour to end game",
+          "summary": "Successful SubnetIdentitySet at finalized block 9380213 changes Zero Hour to end game. The description, GitHub, website and contact fields are empty at the reviewed cutoff. A robotics pivot, new product or sale cannot be inferred from an aggregator label. Historical Zero Hour stories retain their original names.",
+          "rating": 2,
+          "ratingReason": "Executed identity update without unsupported business conclusions.",
+          "sources": [
+            {
+              "label": "Finalized evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-28-daily-chain.json"
+            },
+            {
+              "label": "Detector",
+              "url": "https://x.com/TensiaBot/status/2115318253027258868"
+            }
+          ],
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": [
+        {
+          "headline": "SN17 404-GEN reports client and SDK changes",
+          "summary": "The dated brief reports a witness-client fix for a /v1/ request error, an async SDK, old-SDK deprecation and reshuffled submissions against a base benchmark. Original private messages and the exact upgrade deadline were not independently accessed; check pinned operator instructions.",
+          "rating": 3,
+          "ratingReason": "Concrete participation, scoring or service-status information; secondary details remain developing.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/17/2026-10-28"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": [
+        {
+          "headline": "SN20 Witness: finalized allocation carried into today’s report",
+          "summary": "The full-window review verifies the successful allocation event at block 9378110. Owner/validator/miner shares are approximately 33%/7%/60% of the subnet allocation, versus the previous 18%/41%/41%. Exact before/after five-slot vectors and historical registration labels remain in the eTAO archive. Allocation settings are not transaction burns, guaranteed APY or a specific validator’s realized return; yield series can lag the change.",
+          "rating": 3,
+          "ratingReason": "Verified economic settings; carry-forward does not count a second event.",
+          "sources": [
+            {
+              "label": "Allocation archive",
+              "url": "https://shizzyunchained.com/subnet-news/etao"
+            },
+            {
+              "label": "Full-window evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-28-daily-chain.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": [
+        {
+          "headline": "SN22 Desearch publishes Topic-to-RSS example",
+          "summary": "The October 28 example turns a query into a feed of dated results, filters undated pages, deduplicates URLs and titles, and sorts newest first. It is a pattern for agents following topics without a native feed. The announcement and example link were reviewed; long-running reliability was not independently tested.",
+          "rating": 3,
+          "ratingReason": "A concrete reusable developer search workflow.",
+          "sources": [
+            {
+              "label": "Original team post",
+              "url": "https://x.com/desearch_ai/status/2115428650694967502"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": [
+        {
+          "headline": "SN24 changes its name from Quasar to ms.computer",
+          "summary": "Successful SubnetIdentitySet at finalized block 9378507 changes Quasar to ms.computer and updates the website field. Full-window owner and registration comparisons found no executed ownership/registration change for this SN. Discord channel-claim commentary does not establish a subnet sale. The large dated alpha/TAO move does not independently establish its cause or a product launch.",
+          "rating": 2,
+          "ratingReason": "Executed identity change, separated from ownership and price causality.",
+          "sources": [
+            {
+              "label": "Finalized evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-28-daily-chain.json"
+            },
+            {
+              "label": "Detector",
+              "url": "https://x.com/TensiaBot/status/2115232422585421993"
+            }
+          ],
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": [
+        {
+          "headline": "SN28 SayGM adds SN64 Chutes as a confidential inference provider",
+          "summary": "The October 28 integration gives SN28 SayGM users another upstream for confidential open-weight inference. It does not mean every proprietary-model request is executed by SN64 Chutes, or that every model has the same privacy tier. Documentation distinguishes confidential -tee models and provider selection; check the current catalog and privacy policy. No customer volume or audited savings were established in this review.",
+          "rating": 4,
+          "ratingReason": "A documented new provider connection that changes gateway access.",
+          "sources": [
+            {
+              "label": "Original team post",
+              "url": "https://x.com/chutes_ai/status/2115428388139565229"
+            },
+            {
+              "label": "Original team post",
+              "url": "https://x.com/say_gm_/status/2115428371161039324"
+            },
+            {
+              "label": "Technical announcement",
+              "url": "https://chutes.ai/news/chutes-models-are-now-on-saygm"
+            }
+          ],
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": [
+        {
+          "headline": "SN33 ReadyAI: finalized allocation carried into today’s report",
+          "summary": "The full-window review verifies the successful allocation event at block 9376469. Owner/validator/miner shares are approximately 18%/49%/33% of the subnet allocation, versus the previous 18%/41%/41%. Exact before/after five-slot vectors and historical registration labels remain in the eTAO archive. Allocation settings are not transaction burns, guaranteed APY or a specific validator’s realized return; yield series can lag the change.",
+          "rating": 3,
+          "ratingReason": "Verified economic settings; carry-forward does not count a second event.",
+          "sources": [
+            {
+              "label": "Allocation archive",
+              "url": "https://shizzyunchained.com/subnet-news/etao"
+            },
+            {
+              "label": "Full-window evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-28-daily-chain.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": [
+        {
+          "headline": "SN34 Yugos resets history and pauses submissions",
+          "summary": "The dated brief reports a v0.3.0 champion-history reset so routing-only entries do not inherit old multi-call results, and a pause for incentive/private-dataset changes. Published docs explain wording-gate enforcement. This is not an independent fairness audit.",
+          "rating": 3,
+          "ratingReason": "Concrete participation, scoring or service-status information; secondary details remain developing.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/34/2026-10-28"
+            },
+            {
+              "label": "Published code",
+              "url": "https://github.com/BitMind-AI/yugos/commit/65b09a8100d0f8d018f1e87af5e0b7f738633315"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 35,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Bittensor",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": [
+        {
+          "headline": "SN38 owner announces a coldkey swap; execution is pending",
+          "summary": "Finalized block 9381551 records ColdkeySwapAnnounced for the current SN38 owner. The event field is new_coldkey_hash: 0xf32c…faa5 is a commitment, not a verified destination address. Owner storage remains unchanged; the pending tuple points to block 9417551. This is a delayed key-migration announcement, not a completed subnet transfer, identified buyer or sale price.",
+          "rating": 2,
+          "ratingReason": "Verified pending key operation with hash/address confusion resolved.",
+          "sources": [
+            {
+              "label": "Finalized event evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-28-daily-chain.json"
+            },
+            {
+              "label": "Detector",
+              "url": "https://x.com/subnetradarcom/status/2115386254485275007"
+            }
+          ],
+          "status": "developing",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": [
+        {
+          "headline": "SN42 sets an owner operating hotkey",
+          "summary": "Finalized block 9376369 records a successful SubnetOwnerHotkeySet for SN42. This updates an operating role, not the registered owner coldkey. The full-window owner/registration comparison found no SN42 ownership or registration change; no sale or named new team is inferred.",
+          "rating": 2,
+          "ratingReason": "Verified operational event without a claimed ownership transfer.",
+          "sources": [
+            {
+              "label": "Finalized event evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-28-daily-chain.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": [
+        {
+          "headline": "SN44 Score reports annotation-error removals",
+          "summary": "The dated brief reports five ground-truth-error blocks removed across PPE, Petrol Station and Fallen Person, with edge cases retained. This changes scoring inputs, not proof of a model-accuracy breakthrough. Private annotation records were not independently audited.",
+          "rating": 3,
+          "ratingReason": "Concrete participation, scoring or service-status information; secondary details remain developing.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/44/2026-10-28"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": [
+        {
+          "headline": "SN46 Instant reports dashboard work and an overloaded API",
+          "summary": "The dated brief says a swarm test overloaded the portal/API while revenue/usage data and token-counter visibility were being corrected. Recovery was expected by morning, not independently verified here. Launch and recovery remain developing; planned charts do not establish audited revenue.",
+          "rating": 3,
+          "ratingReason": "Concrete participation, scoring or service-status information; secondary details remain developing.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/46/2026-10-28"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": []
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": [
+        {
+          "headline": "SN54 Yanez: finalized allocation carried into today’s report",
+          "summary": "The full-window review verifies the successful allocation event at block 9376080. Owner/validator/miner shares are approximately 18%/49%/33% of the subnet allocation, versus the previous 18%/41%/41%. Exact before/after five-slot vectors and historical registration labels remain in the eTAO archive. Allocation settings are not transaction burns, guaranteed APY or a specific validator’s realized return; yield series can lag the change.",
+          "rating": 3,
+          "ratingReason": "Verified economic settings; carry-forward does not count a second event.",
+          "sources": [
+            {
+              "label": "Allocation archive",
+              "url": "https://shizzyunchained.com/subnet-news/etao"
+            },
+            {
+              "label": "Full-window evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-28-daily-chain.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": [
+        {
+          "headline": "SN62 Ridges starts a baseline phase and signals Ridgeline access",
+          "summary": "The October 27 team post describes a benchmark phase where miners compete to set the initial leader without emissions; normal rewards follow. The October 28 brief says parts of Ridgeline open within the week. Access remains planned, not a verified general launch.",
+          "rating": 3,
+          "ratingReason": "Concrete participation, scoring or service-status information; secondary details remain developing.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/62/2026-10-28"
+            },
+            {
+              "label": "Original team post",
+              "url": "https://x.com/ridges_ai/status/2115210793969176732"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": [
+        {
+          "headline": "SN64 Chutes confidential models arrive on SN28 SayGM",
+          "summary": "Both teams announced the integration on October 28. Builders can access SN64 Chutes-served open-weight models through the SN28 SayGM gateway alongside its other providers, using one key and base URL. The technical article identifies confidential models by a -tee suffix and documents X-GM-Providers: chutes to pin routing. This expands distribution across two subnet products. The teams describe TEE protection at gateway and inference layers; this review did not execute a paid request or independently audit attestation and privacy guarantees.",
+          "rating": 4,
+          "ratingReason": "A concrete cross-subnet product integration confirmed by both teams and technical routing documentation.",
+          "sources": [
+            {
+              "label": "Original team post",
+              "url": "https://x.com/chutes_ai/status/2115428388139565229"
+            },
+            {
+              "label": "Original team post",
+              "url": "https://x.com/say_gm_/status/2115428371161039324"
+            },
+            {
+              "label": "Technical announcement",
+              "url": "https://chutes.ai/news/chutes-models-are-now-on-saygm"
+            }
+          ],
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": [
+        {
+          "headline": "SN65 True Performance Network announces base-versus-quant comparison",
+          "summary": "The October 28 Bench announcement describes next-token distribution divergence, hidden-layer comparison and cross-model perplexity. These help developers examine whether a compressed model behaves like its source beyond a headline score. The team links the Workbench; the attached screenshot shows Quantize, so the image alone does not verify Compare results. No independent model pair was benchmarked here.",
+          "rating": 3,
+          "ratingReason": "A useful developer capability with bounded launch and testing evidence.",
+          "sources": [
+            {
+              "label": "Original team post",
+              "url": "https://x.com/TPN_Labs/status/2115416290164646216"
+            },
+            {
+              "label": "Workbench",
+              "url": "https://bench.trueperformancenetwork.com/"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": [
+        {
+          "headline": "SN71 Leadpoet expands reasoning routes and repairs arena proof checks",
+          "summary": "The October 28 Discord brief reports migration 582 applied for the arena round, adding reasoning routes. Published commits address undispatched-model coverage and a written-success shortcut before failed-attempt proof. These are competition changes; merges do not prove every validator upgraded. Shizzy’s team interview is scheduled today at 11 AM ET / 8 AM PT.",
+          "rating": 3,
+          "ratingReason": "Operator changes and a verified upcoming interview, distinct from commercial adoption.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/71/2026-10-28"
+            },
+            {
+              "label": "Published code",
+              "url": "https://github.com/leadpoet/leadpoet/commit/9b1ad0d0ed7830d52e59ad343e61a82dd84aa56b"
+            },
+            {
+              "label": "Published code",
+              "url": "https://github.com/leadpoet/leadpoet/commit/aba23fbe4a42a7b13274576c4f141b14976725b8"
+            },
+            {
+              "label": "Upcoming interview",
+              "url": "https://www.youtube.com/watch?v=q2pGNLUvCm4"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": [
+        {
+          "headline": "SN75 Hippius announces Chrome screen capture and sharing",
+          "summary": "SN75 Hippius announced its Chrome Web Store extension on October 28: recordings and screenshots encrypted in the browser and stored in SN75 Hippius Drive, with links for recipients without an account. The official thread links the store and notes Chrome restrictions on capturing other extensions or the PDF viewer. This review inspected the announcement, not an installed extension or an encryption audit.",
+          "rating": 3,
+          "ratingReason": "A practical new distribution surface with privacy claims attributed.",
+          "sources": [
+            {
+              "label": "Original team post",
+              "url": "https://x.com/Hippius_cloud/status/2115352879452102974"
+            },
+            {
+              "label": "Original team post",
+              "url": "https://x.com/Hippius_cloud/status/2115352880089641322"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "updates": [
+        {
+          "headline": "SN78 Umi: finalized allocation carried into today’s report",
+          "summary": "The full-window review verifies the successful allocation event at block 9377881. Owner/validator/miner shares are approximately 30.75%/15.5%/53.75% of the subnet allocation, versus the previous 18%/41%/41%. Exact before/after five-slot vectors and historical registration labels remain in the eTAO archive. Allocation settings are not transaction burns, guaranteed APY or a specific validator’s realized return; yield series can lag the change.",
+          "rating": 3,
+          "ratingReason": "Verified economic settings; carry-forward does not count a second event.",
+          "sources": [
+            {
+              "label": "Allocation archive",
+              "url": "https://shizzyunchained.com/subnet-news/etao"
+            },
+            {
+              "label": "Full-window evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-28-daily-chain.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        },
+        {
+          "headline": "SN78 Umi opens C7 intake and hardens admission deadlines",
+          "summary": "The dated brief reports C6 weights live, C7 intake open with a 12-hour warning, and per-bucket decay changing from 0.75 to 0.85 with a 1% grace band. The owner says extra allocation will fund private ASL evaluation data; this is intent, not audited expenditure. Published code preserves accepted uploads at deadlines and prevents failures starving later models. Private original scoring claims remain a disclosed access gap.",
+          "rating": 3,
+          "ratingReason": "Participation changes backed by code; private scoring claims qualified.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/78/2026-10-28"
+            },
+            {
+              "label": "Published code",
+              "url": "https://github.com/Umi-BitSign/umi/commit/b4d95b7a7f67f358ef31e611460bd5704380fa65"
+            },
+            {
+              "label": "Published code",
+              "url": "https://github.com/Umi-BitSign/umi/commit/43b27ba78bc78eb87e32601386b4ec4d45163f8f"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": [
+        {
+          "headline": "SN92 REAX publishes engine-v2 validator release and switch schedule",
+          "summary": "The published post8.1 release targets October 28 at 12:00 UTC, updates Blink text gates and commit-reveal keep-alive handling, and schedules a pool switch for October 30 at 09:00 UTC with 24-hour grace. The preceding v2 commit keeps its composite path off until configured; first dm-all crowning is scheduled October 30 at 14:30 UTC. Code and schedules are verified, not universal live rollout or explanations of wallet sales.",
+          "rating": 3,
+          "ratingReason": "Actionable validator transition information with deployment limits explicit.",
+          "sources": [
+            {
+              "label": "Published code",
+              "url": "https://github.com/reaxlabs/reax-subnet/commit/f811bf61cb5fcadb7af929ff1463840332599221"
+            },
+            {
+              "label": "Published code",
+              "url": "https://github.com/reaxlabs/reax-subnet/commit/3a0d0274ab96807d5f324955134087f5fd249b6b"
+            },
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/92/2026-10-28"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": [
+        {
+          "headline": "SN98 NeverPlayAlone announces Animal Husbandry mission",
+          "summary": "The dated brief says the round labelled 2026-10-28 adds a 20-minute mission to build an enclosure, raise and breed animals, with scoring capped at 100. Original private rules and actual round execution were not independently reproduced.",
+          "rating": 3,
+          "ratingReason": "Concrete participation, scoring or service-status information; secondary details remain developing.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/98/2026-10-28"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 99,
+      "name": "Thirty Spokes",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": [
+        {
+          "headline": "SN103 Terza announces early-access inference and pricing",
+          "summary": "SN103 Terza’s October 27 launch says one API key routes requests to independent miners on SN103; its site labels the service early access. Follow-ups introduce Jev by TypeSafe in the Playground and publish token-price comparisons. Those are team figures: model equivalence, output quality, billing and availability were not independently benchmarked. API compatibility does not establish a commercial partnership with model vendors.",
+          "rating": 3,
+          "ratingReason": "A meaningful inference offering qualified to early-access evidence.",
+          "sources": [
+            {
+              "label": "Original team post",
+              "url": "https://x.com/TerzaInference/status/2115080191961972954"
+            },
+            {
+              "label": "Original team post",
+              "url": "https://x.com/TerzaInference/status/2115098620303450234"
+            },
+            {
+              "label": "Original team post",
+              "url": "https://x.com/TerzaInference/status/2115262525025693779"
+            },
+            {
+              "label": "Product",
+              "url": "https://terza.si/"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": [
+        {
+          "headline": "SN105 Beam announces an OpenClaw skill",
+          "summary": "The October 27 announcement says OpenClaw agents can use SN105 Beam through a skill on ClawHub. This adds a tool-discovery route; large ecosystem counts in the post do not measure SN105 Beam customers or transactions. No live agent transfer was executed here.",
+          "rating": 3,
+          "ratingReason": "A specific agent integration without inferred adoption.",
+          "sources": [
+            {
+              "label": "Original team post",
+              "url": "https://x.com/b1m_ai/status/2115156606531084657"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        },
+        {
+          "headline": "SN105 Beam announces Hugging Face data movement",
+          "summary": "The October 28 post is headed “Now Live” but describes enabling large datasets to move into and out of Hugging Face through SN105 Beam. That is a team-announced integration direction; no counterpart statement, executed transfer, throughput test or paying usage was verified. Hugging Face catalog counts are ecosystem context, not SN105 Beam adoption.",
+          "rating": 3,
+          "ratingReason": "A specific team-announced data route; counterpart confirmation and operational testing remain open.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/b1m_ai/status/2115443520551166359"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": [
+        {
+          "headline": "SN107 Minos reports off-chain bug testing",
+          "summary": "The dated brief describes a small bug-testing group, expected to finish within a week. This phase is off-chain and has no tester rewards. Variant calling and synthetic-genome directions remain discussion rather than completed launches.",
+          "rating": 3,
+          "ratingReason": "Concrete participation, scoring or service-status information; secondary details remain developing.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/107/2026-10-28"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": [
+        {
+          "headline": "SN114 SOMA closes stage-one uploads",
+          "summary": "The dated brief reports the upload window closed with some entries queued or processing, and stage two next. Published code handles unavailable-provider benchmark failures. Relative timing needs the original message timestamp before assigning an exact start hour.",
+          "rating": 3,
+          "ratingReason": "Concrete participation, scoring or service-status information; secondary details remain developing.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/114/2026-10-28"
+            },
+            {
+              "label": "Published code",
+              "url": "https://github.com/DendriteHQ/SOMA/commit/095033a7766fab857b2cf7b0b1dea8a819e15735"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": []
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": [
+        {
+          "headline": "SN118 Ditto adds a generator track and reports scorer repairs",
+          "summary": "The October 27 team post says generator competition is live alongside memory-agent competition. The dated brief separately reports a stale 64-versus-80-case scorer wrongly rejecting six generators and a freshness failure voiding another round. Reported repairs reinstate affected entries and retry instead of immediately voiding; private incident logs were not independently audited.",
+          "rating": 3,
+          "ratingReason": "Concrete participation, scoring or service-status information; secondary details remain developing.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/118/2026-10-28"
+            },
+            {
+              "label": "Original team post",
+              "url": "https://x.com/heydittoai/status/2115173145577758947"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": [
+        {
+          "headline": "SN120 Affine plans simpler training and an unban",
+          "summary": "The dated brief says unstable learning prompted plans for large miner-supplied batches with before/after probes, removing a toploc requirement and unbanning UIDs in the next update. Completed rollout and every ban removal were not verified.",
+          "rating": 3,
+          "ratingReason": "Concrete participation, scoring or service-status information; secondary details remain developing.",
+          "sources": [
+            {
+              "label": "Dated Discord brief — secondary",
+              "url": "https://subnetradar.com/subnet-news/120/2026-10-28"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": [
+        {
+          "headline": "SN124 Swarm schedules Sentinel for October 29",
+          "summary": "SN124 Swarm’s October 28 post says Sentinel goes live tomorrow. The preview depicts a simulated docked drone guarding a solar park, with thermal, zoom, laser, weather and moving intruders. An October 27 demo describes human confirmation before alerts. Simulation footage does not prove a physical security deployment, paid customer or completed October 29 launch.",
+          "rating": 3,
+          "ratingReason": "A specific simulator participation date and demo; launch remains scheduled.",
+          "sources": [
+            {
+              "label": "Original team post",
+              "url": "https://x.com/SwarmSubnet/status/2115373586789908779"
+            },
+            {
+              "label": "Original team post",
+              "url": "https://x.com/SwarmSubnet/status/2115125759266144268"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Astrid",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "All 128 current subnet project pages and dated public Discord briefs; 136 repository paths",
+      "Signed-in Grok discovery and top-five review, direct team posts and partner cross-checks",
+      "Owner bookmarks, posts, quotes, substantive replies and reposts; Const Reborn and Tensia sources",
+      "Complete finalized lifecycle scan; contiguous eTAO/burn reviews; 128 current owner wallets",
+      "Both YouTube Videos and Live shelves, schedules, market outliers and sectors"
+    ],
+    "gaps": [
+      "Public sources are sampled; this is not an exhaustive census of every X timeline, private channel or reply. Unavailable daily briefs are gaps, not proof of no news.",
+      "Discord briefs are secondary summaries. Private original messages, miner reports and allegations were not independently audited; relevant items remain developing.",
+      "Team privacy, pricing, revenue and performance claims were not independently audited. No paid inference, bridge transfer or extension installation was performed.",
+      "Selected images and demo frames were inspected; complete viewing of every long video is not claimed.",
+      "Earlier chain history retains the archives’ published boundaries. New reviewed intervals have no missing blocks; miner withholding, recycling and fees are excluded from transaction burns."
+    ]
+  }
+}
