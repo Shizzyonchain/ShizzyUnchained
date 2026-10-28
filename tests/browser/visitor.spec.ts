@@ -490,6 +490,11 @@ test("beginner guide connects the research journey without loading market tools"
  await expect(page.getByRole('heading',{level:1})).toHaveText('Find your way intoBittensor.');
  await expect(page.getByRole('link',{name:'Watch the website walkthrough ↗'})).toHaveAttribute('href','https://www.youtube.com/watch?v=AeDXwWTAaf0');
  await expect(page.getByRole('link',{name:'Explore the sectors →',exact:true})).toHaveAttribute('href','/sectors');
+ await expect(page.getByRole('heading',{name:'Your beginner lessons.'})).toBeVisible();
+ await expect(page.getByText('Read the lesson',{exact:true})).toHaveCount(6);
+ await page.getByText('Read the lesson',{exact:true}).first().click();
+ await expect(page.getByText(/If you're new to Bittensor, start here/)).toBeVisible();
+ await expect(page.locator('iframe,video')).toHaveCount(0);
  await page.getByRole('link',{name:'Start with these 3 steps ↓'}).click();
  await expect(page).toHaveURL(/#your-first-steps$/);
  expect(contracts.calls.filter(path=>/screener|subnet-chart|owner-sales|wallet-activity/.test(path))).toEqual([]);

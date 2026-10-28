@@ -1,0 +1,44 @@
+export const beginnerLessons = [
+  {
+    "number": "01",
+    "slug": "what-is-bittensor",
+    "title": "What Is Bittensor?",
+    "script": "If you're new to Bittensor, start here. I'm Shizzy, and here's the idea without the jargon. Think about all the different jobs involved in artificial intelligence: answering questions, supplying compute, collecting useful data, or improving a model. Bittensor is a network where specialized groups compete to do work like that. Those groups are called subnets. Each subnet sets a task and a way to evaluate results. Miners do the work. Validators score the work. The network's incentive system rewards participation according to its rules. Here's the important part: Bittensor isn't one chatbot, and every subnet isn't doing the same thing. One might focus on inference, another on robotics, another on scientific research. That variety is exciting, but it also means you need to research each project separately. A token price going up doesn't prove a product works. Ask what is being built, who can use it, and what evidence supports the claims. On this site, you can explore sectors, meet founders in interviews, and follow sourced daily news. Your first goal isn't to learn every acronym. It's to understand one useful product. Next, let's separate TAO from a subnet's alpha token.",
+    "source": "https://www.bittensor.com/docs"
+  },
+  {
+    "number": "02",
+    "slug": "tao-and-alpha",
+    "title": "TAO vs. Alpha Tokens",
+    "script": "TAO and alpha are connected, but they are not the same token. I'm Shizzy. Let's make this simple. TAO is Bittensor's native token. A subnet has its own alpha token, associated with that particular subnet. Imagine two different subnets: one provides compute, and one works on robotics. Their alpha tokens are different assets. Holding one does not give you the other. Through subnet pools, TAO can be exchanged for alpha, and alpha can be exchanged back for TAO. The actual amount you receive depends on the pool and the trade. Slippage matters, especially when liquidity is thin. Now here's a mistake beginners make: they only look at the dollar chart. An alpha token can rise in dollars while falling against TAO, because TAO itself moved. That's why our charts let you compare both units. Another distinction: an alpha token is not automatically company stock. Don't assume it grants ownership of the business, revenue rights, or promised buybacks. Research the subnet's actual incentives and the team's documented commitments. Your takeaway is this: know which asset you are looking at, what currency the chart uses, and what the token actually does. You don't need to buy anything to learn. Next, let's look at what happens inside a subnet.",
+    "source": "https://www.bittensor.com/docs"
+  },
+  {
+    "number": "03",
+    "slug": "what-is-a-subnet",
+    "title": "What Is a Subnet?",
+    "script": "What is a Bittensor subnet? Think of it as a specialized market with a job to do and a way to judge the results. I'm Shizzy. Here's a simple example. Suppose the job is answering requests with an AI model. Miners compete to provide responses. Validators evaluate those responses using the subnet's scoring rules. The incentive system rewards participants according to those rules. That's an illustration, not a description of every subnet. A robotics subnet might evaluate a model or a task. A compute subnet might care about reliable hardware and service. The number after S N identifies the subnet slot. The name, team, task, and even the registration behind that number can change, so check current information and the dates on historical stories. Also, a subnet and the company building a product around it aren't identical things. Ask which parts happen on the subnet, which happen in the company's software, and how users get value. On our sectors page, start with a category you understand. Then pick one subnet and read what it does. Can you try its product? Can you find its code or documentation? Who is using it? A useful explanation should answer those questions before it talks about a token price. Next, let's separate the people doing the work from the people judging it.",
+    "source": "https://www.bittensor.com/docs"
+  },
+  {
+    "number": "04",
+    "slug": "miners-and-validators",
+    "title": "Miners and Validators",
+    "script": "Miners and validators have different jobs. I'm Shizzy, and this distinction makes Bittensor much easier to understand. Miners compete to perform the task a subnet asks for. That might involve running compute, improving a model, or producing useful data. Mining here doesn't always mean the same thing as Bitcoin mining. Each subnet has its own software, hardware needs, and competition. Validators evaluate miner work and submit scores or weights. The protocol uses those evaluations and its consensus rules to calculate rewards. A good incentive mechanism should make useful work pay, rather than merely rewarding a trick that looks good on a benchmark. That's why scoring changes, exploits, and real-world testing matter. As a researcher, ask what miners are actually doing, how validators test it, and whether the test measures something customers need. If you delegate stake, you aren't personally running a validator. You're backing a validator's position under the network's rules. Fees, eligibility, performance, and the token's price all affect the outcome. A displayed annual yield is an estimate based on its data and method, not a guaranteed paycheck. You also don't need to become a miner or stake tokens to follow the ecosystem. Learn the work first. Then understand how rewards are distributed. That's our next lesson: emissions.",
+    "source": "https://www.bittensor.com/docs"
+  },
+  {
+    "number": "05",
+    "slug": "emissions",
+    "title": "How Emissions Work",
+    "script": "What does emissions mean in Bittensor? I'm Shizzy. It means tokens issued under the protocol's reward system. It does not mean a company earned that much customer revenue. Separate two questions. First: how does the network allocate incentives across subnets? Second: how does a particular subnet divide its participant rewards? Those are different decisions. Inside a subnet, alpha rewards support miners, validators, stakers, and the registered owner under the protocol's rules. You may have seen the old default split: eighteen percent owner, forty-one percent validators, and forty-one percent miners. Don't assume every subnet still uses that split. With eTAO, subnet owners can adjust their allocation within chain-enforced limits. Root stakers have a separate baseline protection in that mechanism, so changing a validator percentage doesn't tell the whole payout story. Here's an example: a subnet might direct a larger share toward miners because their work is the expensive part. That change is an incentive decision. It does not, by itself, prove greater demand or a better product. On our site, use the eTAO history to see verified allocation changes, dates, and transaction evidence. Compare like-for-like percentages, and remember that issuance, market value, trading volume, and business revenue are different numbers. Your takeaway: emissions tell you where incentives go. Research whether those incentives produce useful work.",
+    "source": "https://www.bittensor.com/docs/guides/etao"
+  },
+  {
+    "number": "06",
+    "slug": "research-a-subnet",
+    "title": "Research Your First Subnet",
+    "script": "Before you judge a subnet, ask four questions. I'm Shizzy. Here's the research routine I want newcomers to use. First: what does it do? Find a plain-English explanation, then look for a product you can try, documentation, or public code. A roadmap is a plan, not proof that a feature is live. Second: who uses it? Separate a team's claim from independent evidence. A partnership announcement is different from measured customer usage, and revenue is different from token emissions. Third: what do the incentives reward? Understand the miner task, the validator test, and how the alpha token fits. Don't assume owning alpha gives you company equity or guaranteed revenue. Fourth: what does the data actually show? Check the time window, currency, source, and freshness. A rising dollar price may still be falling against TAO. An owner transferring alpha to another wallet is not automatically selling it. A burn is not a sale, and a zero in partially reviewed history may not mean nothing happened. Use our sectors page to choose a project, its chart and market snapshot for context, and its dated news for original sources. Then watch a founder interview and compare the answers with the evidence. You don't have to know everything today. Understand one subnet well, keep asking questions, and come back as the facts change.",
+    "source": "https://www.bittensor.com/docs"
+  }
+] as const;
