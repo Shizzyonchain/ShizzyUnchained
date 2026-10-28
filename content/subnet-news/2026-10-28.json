@@ -148,6 +148,20 @@
           ],
           "status": "verified",
           "importance": "medium"
+        },
+        {
+          "headline": "SN8 Vanta reports $1 million paid to traders",
+          "summary": "The October 28 announcement claims cumulative trader payouts have reached $1 million and points to a public payout ledger in its follow-up. This is a team-reported payout milestone, not independently reconciled revenue, profit, alpha burns or a guarantee of future trader returns. The accompanying challenge giveaway is separate from the payout total.",
+          "rating": 3,
+          "ratingReason": "A material operating claim, attributed to the team pending independent ledger reconciliation.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/VantaTrading/status/2115443073924640997"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
         }
       ]
     },
@@ -525,6 +539,20 @@
           ],
           "status": "developing",
           "importance": "medium"
+        },
+        {
+          "headline": "SN44 Score demonstrates people and vehicle counting at Shibuya",
+          "summary": "The October 28 video overlays pedestrian and vehicle detections and a running count on Shibuya Crossing footage. It illustrates dense-scene computer vision beyond a text announcement. The displayed counters are demo outputs, not independently scored accuracy results; the clip does not establish a new paid deployment or a public production launch.",
+          "rating": 3,
+          "ratingReason": "A concrete visual demonstration; commercial deployment and accuracy are not inferred.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/webuildscore/status/2115451273898061952"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
         }
       ]
     },
@@ -576,7 +604,22 @@
     {
       "netuid": 51,
       "name": "lium.io",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN51 lium advertises B300 spot capacity at $4 per GPU-hour",
+          "summary": "SN51 lium’s October 28 post advertises B300 GPUs at $4 per GPU-hour and reports 550 B300s listed, with 443 rented. The attached listing is marked SPOT and shows $32 per hour for the displayed machine ($4 per GPU), so the headline is not the price of the whole machine or a guarantee of uninterrupted reserved capacity. Inventory, rentals and pricing are the team’s dated figures, not independently audited revenue or a guaranteed current quote.",
+          "rating": 3,
+          "ratingReason": "Actionable compute pricing with per-GPU, machine and spot terms distinguished.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/lium_io/status/2115445163363316133"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 52,
@@ -741,7 +784,26 @@
     {
       "netuid": 68,
       "name": "NOVA",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN68 NOVA develops a Hit-to-Lead agent with SN64 Chutes and OnePot AI",
+          "summary": "In its October 28 announcement, METANOVA describes extending a NOVA Blueprint winner’s algorithm from finding molecular hits into iterative lead optimization. OnePot AI supplies proprietary chemical databases; SN64 Chutes separately confirms collaboration and support for the developing agent. METANOVA says domain-specific models were integrated for confidential TEE inference, with integration into its own development program still the next step. This is a development collaboration, not a completed drug, clinical result, or independently validated synthesis or privacy outcome.",
+          "rating": 3,
+          "ratingReason": "A specific drug-discovery workflow and confirmed infrastructure collaboration, with program integration still pending.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/metanova_labs/status/2115443469380661619"
+            },
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/chutes_ai/status/2115448015393812870"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 69,
@@ -1224,6 +1286,20 @@
           ],
           "status": "developing",
           "importance": "medium"
+        },
+        {
+          "headline": "SN118 Ditto says end-to-end encryption is coming",
+          "summary": "Ditto’s October 28 post says end-to-end encryption remains in testing and that the team has encrypted its own personal memories. The broader rollout is described as coming soon. This does not establish that every user’s stored memories are already end-to-end encrypted or that the implementation has passed an independent security audit.",
+          "rating": 2,
+          "ratingReason": "A useful planned privacy change with current availability kept explicit.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/heydittoai/status/2115460447981752746"
+            }
+          ],
+          "status": "developing",
+          "importance": "informational"
         }
       ]
     },
@@ -1327,5 +1403,7 @@
       "Selected images and demo frames were inspected; complete viewing of every long video is not claimed.",
       "Earlier chain history retains the archives’ published boundaries. New reviewed intervals have no missing blocks; miner withholding, recycling and fees are excluded from transaction burns."
     ]
-  }
+  },
+  "correctedAt": "2026-10-28T16:26:23.321926+00:00",
+  "correctionNote": "Updated Gavin’s interview to November 5 at 11 AM ET / 8 AM PT and added five October 28 follow-ups: NOVA collaboration, Score demo, lium spot pricing, Vanta’s payout claim and Ditto’s planned encryption. Original morning coverage cutoff and prior stories are preserved."
 }
