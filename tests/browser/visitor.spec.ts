@@ -282,7 +282,8 @@ test("scheduled livestreams stay out of recent videos and replays", async ({ pag
   await page.goto("/video");
   const upcoming=page.getByRole("region",{name:"Upcoming livestreams",exact:true});
   await expect(upcoming.getByRole("button")).toHaveCount(2);
-  await expect(upcoming).toContainText("October 28, 2026");
+  await expect(upcoming).toContainText("November 5, 2026");
+  await expect(upcoming).not.toContainText("October 28, 2026");
   await expect(upcoming).toContainText("October 29, 2026");
   await expect(page.locator(".video-library").getByRole("button",{name:/Leadpoet’s Latest|Gets Expressive/})).toHaveCount(0);
   const replays=page.getByRole("region",{name:"Livestream replays",exact:true});
