@@ -6,7 +6,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteOrigin;
   const pages = [
     "",
-    "/start-here",
     "/activity",
     "/balls",
     "/wallet-tracker",

@@ -373,7 +373,7 @@ const channelVideos: ChannelVideo[] = [
 ];
 const liveStreams: ChannelVideo[] = [
   { id: "STPM5BtE-ts", title: "Can You Prove You’re Human? Yanez Bittensor Subnet 54 with Jose Caldera", meta: "57:00 · Livestream replay · October 27, 2026" },
-  { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "Upcoming livestream · October 28, 2026 · 11:00 AM ET / 8:00 AM PT", startsAt: "2026-10-28T15:00:00Z", upcoming: true },
+  { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "Rescheduled livestream · November 5, 2026 · 11:00 AM ET / 8:00 AM PT", startsAt: "2026-11-05T16:00:00Z", upcoming: true },
   { id: "RnnWezJOuE8", title: "Bittensor Gets Expressive and Conviction Runs Deep with TAO Templar", meta: "Upcoming livestream · October 29, 2026 · 1:00 PM ET / 10:00 AM PT", startsAt: "2026-10-29T17:00:00Z", upcoming: true },
 
   {

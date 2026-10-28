@@ -1066,7 +1066,6 @@ export function Dashboard({
       />
 
       {view === "screener" && <LivestreamBanner />}
-      {view === "screener" && !chartPage && <div className="start-here-entry"><span>New to Bittensor?</span><a href="/start-here">Start with Shizzy’s beginner guide →</a></div>}
 
       {view === "screener" ? (
         <>
