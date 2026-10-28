@@ -485,21 +485,24 @@ test('snapshot metrics keep units and exact owner evidence while sharing the own
 });
 
 
-test("beginner guide connects the research journey without loading market tools",async({page,contracts})=>{
+test("beginner guide leads with a click-loaded video and compact lessons",async({page,contracts})=>{
  await page.goto('/start-here');
- await expect(page.getByRole('heading',{level:1})).toHaveText('Find your way intoBittensor.');
- await expect(page.getByRole('link',{name:'Watch the website walkthrough ↗'})).toHaveAttribute('href','https://www.youtube.com/watch?v=AeDXwWTAaf0');
- await expect(page.getByRole('link',{name:'Explore the sectors →',exact:true})).toHaveAttribute('href','/sectors');
- await expect(page.getByRole('heading',{name:'Your beginner lessons.'})).toBeVisible();
- await expect(page.getByText('Read the lesson',{exact:true})).toHaveCount(6);
- await page.getByText('Read the lesson',{exact:true}).first().click();
- await expect(page.getByText(/If you're new to Bittensor, start here/)).toBeVisible();
+ await expect(page.getByRole('heading',{level:1})).toHaveText('Understand Bittensor.Then explore it.');
+ await expect(page.getByRole('link',{name:'Watch on YouTube ↗'})).toHaveAttribute('href','https://www.youtube.com/watch?v=AeDXwWTAaf0');
+ await expect(page.getByRole('link',{name:'Explore the sectors',exact:true})).toHaveAttribute('href','/sectors');
+ await expect(page.getByRole('heading',{name:'Six things worth understanding.'})).toBeVisible();
+ await expect(page.locator('details')).toHaveCount(6);
+ await expect(page.locator('details[open]')).toHaveCount(0);
  await expect(page.locator('iframe,video')).toHaveCount(0);
- await page.getByRole('link',{name:'Start with these 3 steps ↓'}).click();
- await expect(page).toHaveURL(/#your-first-steps$/);
- expect(contracts.calls.filter(path=>/screener|subnet-chart|owner-sales|wallet-activity/.test(path))).toEqual([]);
  await noOverflow(page);
- await page.screenshot({path:`../start-here-2026-10-27/guide-${test.info().project.name}.png`,fullPage:true});
+ await page.screenshot({path:`../start-here-2026-10-27/redesign-${test.info().project.name}.png`,fullPage:true});
+ await page.getByText('Read the explanation',{exact:false}).first().click();
+ await expect(page.getByText(/If you're new to Bittensor, start here/)).toBeVisible();
+ await noOverflow(page);
+ await page.route('https://www.youtube-nocookie.com/embed/**',route=>route.fulfill({contentType:'text/html',body:'<html><body>Video player test</body></html>'}));
+ await page.getByRole('button',{name:'Play the website walkthrough'}).click();
+ await expect(page.getByTitle('Shizzy’s Bittensor website walkthrough')).toHaveAttribute('src','https://www.youtube-nocookie.com/embed/AeDXwWTAaf0?autoplay=1&rel=0');
+ expect(contracts.calls.filter(path=>/screener|subnet-chart|owner-sales|wallet-activity/.test(path))).toEqual([]);
 });
 
 test("owner activity rejects trades attributed to a different coldkey",async({page})=>{
