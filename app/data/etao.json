@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-27T19:25:23.755351+00:00",
-  "block": 9377105,
-  "hash": "0x2a532627f091cb5dcd5686a7c9f04062c37e7865bd6a8dce1abe1666706114ff",
-  "chainTime": 1793128848000,
+  "checkedAt": "2026-10-28T03:01:33.048077+00:00",
+  "block": 9379394,
+  "hash": "0x9d2ef5daf5ea0ddc0c848b2bad7e05af9081c5a2564f4c51791c26de9777dfce",
+  "chainTime": 1793156316000,
   "runtime": 486,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -142,9 +142,9 @@
     "20": [
       "0",
       "0",
-      "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "6087425544324152032",
+      "1291272085159668613",
+      "11068046444225730970"
     ],
     "21": [
       "0",
@@ -548,9 +548,9 @@
     "78": [
       "0",
       "0",
-      "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "5672373802665687121",
+      "2859245331424980500",
+      "9915124939618883994"
     ],
     "79": [
       "0",
@@ -1280,6 +1280,52 @@
       "extrinsic": 23,
       "registeredAt": 2943950,
       "name": "ReadyAI"
+    },
+    {
+      "netuid": 78,
+      "block": 9377881,
+      "hash": "0x6ddf7a24b129f83328c8652dc084694b3cd15271caf7a976890c7b268ee5c982",
+      "timestamp": 1793138160000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "5672373802665687121",
+        "2859245331424980500",
+        "9915124939618883994"
+      ],
+      "extrinsic": 22,
+      "name": "Umi",
+      "registeredAt": 7966145
+    },
+    {
+      "netuid": 20,
+      "block": 9378110,
+      "hash": "0x216e495e8e98cdf73cbf05458c5090bcb49cbf1df12c6d663cd755ac60ec1297",
+      "timestamp": 1793140908000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "6087425544324152032",
+        "1291272085159668613",
+        "11068046444225730970"
+      ],
+      "extrinsic": 14,
+      "name": "Witness",
+      "registeredAt": 1970929
     }
   ],
   "names": {
@@ -1550,10 +1596,10 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9377105,
-    "finalizedHash": "0x2a532627f091cb5dcd5686a7c9f04062c37e7865bd6a8dce1abe1666706114ff",
-    "checkedAt": "2026-10-27T19:25:23.755351+00:00",
-    "eventCount": 8,
+    "toBlock": 9379394,
+    "finalizedHash": "0x9d2ef5daf5ea0ddc0c848b2bad7e05af9081c5a2564f4c51791c26de9777dfce",
+    "checkedAt": "2026-10-28T03:01:33.048077+00:00",
+    "eventCount": 10,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history."

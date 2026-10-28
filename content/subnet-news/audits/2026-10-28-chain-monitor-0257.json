@@ -1,0 +1,80 @@
+{
+  "automation": "verify-etao-changes-every-six-hours",
+  "status": "DONE",
+  "checkedAt": "2026-10-28T03:01:33.048077+00:00",
+  "easternDate": "2026-10-27",
+  "fromBlock": 9377106,
+  "toBlock": 9379394,
+  "hash": "0x9d2ef5daf5ea0ddc0c848b2bad7e05af9081c5a2564f4c51791c26de9777dfce",
+  "throughTime": "2026-10-28T02:58:36+00:00",
+  "gaps": [],
+  "allocationEvents": [
+    {
+      "netuid": 78,
+      "block": 9377881,
+      "hash": "0x6ddf7a24b129f83328c8652dc084694b3cd15271caf7a976890c7b268ee5c982",
+      "timestamp": 1793138160000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "5672373802665687121",
+        "2859245331424980500",
+        "9915124939618883994"
+      ],
+      "extrinsic": 22,
+      "name": "Umi",
+      "registeredAt": 7966145
+    },
+    {
+      "netuid": 20,
+      "block": 9378110,
+      "hash": "0x216e495e8e98cdf73cbf05458c5090bcb49cbf1df12c6d663cd755ac60ec1297",
+      "timestamp": 1793140908000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "6087425544324152032",
+        "1291272085159668613",
+        "11068046444225730970"
+      ],
+      "extrinsic": 14,
+      "name": "Witness",
+      "registeredAt": 1970929
+    }
+  ],
+  "qualifyingBurns": [
+    {
+      "id": "9379010-147",
+      "block": 9379010,
+      "hash": "0x2e1ca16da2cfacd09399825165cb46f6caaae555c6865427a2c2856425ddfa1e",
+      "extrinsic": 6,
+      "eventIndex": 147,
+      "eventName": "SubtensorModule.AlphaBurned",
+      "timestamp": "2026-10-28T01:41:48+00:00",
+      "netuid": 8,
+      "name": "Vanta",
+      "kind": "alpha",
+      "amountRaw": "493333333333",
+      "taoSpentRaw": null,
+      "account": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+      "registeredAt": 1477264
+    }
+  ],
+  "evidence": "/evidence/2026-10-28-chain-monitor-0257.json",
+  "newsDisposition": "After 5PM Eastern: queue verified events for October28 full edition; preserve October27 edition. No social post.",
+  "publication": "Pending validation and live READY check"
+}
