@@ -28,6 +28,7 @@ type NavItem = {
 
 const navigation: readonly NavItem[] = [
   { href: "/", label: "Market", exact: true },
+  { href: "/start-here", label: "Start Here" },
   { href: "/subnet-news", label: "Bittensor News" },
   { href: "/balls", label: "Balls" },
   { href: "/video", label: "Videos" },

@@ -485,6 +485,18 @@ test('snapshot metrics keep units and exact owner evidence while sharing the own
 });
 
 
+test("beginner guide connects the research journey without loading market tools",async({page,contracts})=>{
+ await page.goto('/start-here');
+ await expect(page.getByRole('heading',{level:1})).toHaveText('Find your way intoBittensor.');
+ await expect(page.getByRole('link',{name:'Watch the website walkthrough ↗'})).toHaveAttribute('href','https://www.youtube.com/watch?v=AeDXwWTAaf0');
+ await expect(page.getByRole('link',{name:'Explore the sectors →',exact:true})).toHaveAttribute('href','/sectors');
+ await page.getByRole('link',{name:'Start with these 3 steps ↓'}).click();
+ await expect(page).toHaveURL(/#your-first-steps$/);
+ expect(contracts.calls.filter(path=>/screener|subnet-chart|owner-sales|wallet-activity/.test(path))).toEqual([]);
+ await noOverflow(page);
+ await page.screenshot({path:`../start-here-2026-10-27/guide-${test.info().project.name}.png`,fullPage:true});
+});
+
 test("owner activity rejects trades attributed to a different coldkey",async({page})=>{
  await page.route('**/api/subnets/owner-sales?**',route=>route.fulfill({json:{netuid:51,address:keys[1]}}));
  await page.goto('/charts/51');
