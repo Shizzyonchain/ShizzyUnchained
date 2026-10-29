@@ -4384,5 +4384,82 @@
       "editorial": "Before5PM Eastern, append to existing full edition. No extra roundup or four-star quote. Original publication and chain-review cutoffs preserved.",
       "limits": "Listing and published prices verified; no paid request, uptime test, TEE claim or benchmark superiority claim."
     }
+  ],
+  "chainMonitorSupplements": [
+    {
+      "checkedAt": "2026-10-29T21:09:17.820096+00:00",
+      "chainReviews": {
+        "etao": {
+          "status": "DONE",
+          "checkedAt": "2026-10-29T21:09:17.820096+00:00",
+          "fromBlock": 9389919,
+          "toBlock": 9392032,
+          "hash": "0x0968f1d56dc584ec16e3757fb19ee4622f49612cb80a493181ac0c98dbe70e95",
+          "throughTime": "2026-10-29T21:06:12+00:00",
+          "gaps": [],
+          "archiveUpdated": true,
+          "evidence": "/evidence/2026-10-29-chain-monitor-2106.json",
+          "eventCount": 1,
+          "newsDisposition": "Verified SN59 allocation; queued next daily edition after5PM cutoff."
+        },
+        "burns": {
+          "status": "DONE",
+          "checkedAt": "2026-10-29T21:09:17.820096+00:00",
+          "fromBlock": 9389919,
+          "toBlock": 9392032,
+          "hash": "0x0968f1d56dc584ec16e3757fb19ee4622f49612cb80a493181ac0c98dbe70e95",
+          "throughTime": "2026-10-29T21:06:12+00:00",
+          "gaps": [],
+          "archiveUpdated": true,
+          "evidence": "/evidence/2026-10-29-chain-monitor-2106.json",
+          "eventCount": 0,
+          "smallBurns": 31,
+          "newsDisposition": "No qualifying burns; smaller events retained solely in evidence."
+        }
+      },
+      "lead": {
+        "netuid": 59,
+        "announcementDate": "2026-10-29T17:46:48+00:00",
+        "readyAt": "2026-10-29T21:09:17.820096+00:00",
+        "status": "verified",
+        "headline": "SN59 owner allocation rises from 30.1% to 31.9696%; validators fall from 36.9% to 35.0304%",
+        "block": 9391035,
+        "hash": "0x1f1f605c908283bf9cab918f6ce272e179bdf8822f3b69f71a24563c7a0b86a6",
+        "extrinsic": 18,
+        "eventIndex": 197,
+        "before": [
+          "0",
+          "0",
+          "5552469966186575036",
+          "6806848563198824545",
+          "6087425544324152034"
+        ],
+        "after": [
+          "0",
+          "0",
+          "5897350293388648813",
+          "6461968235996750768",
+          "6087425544324152034"
+        ],
+        "beforePercent": [
+          0.0,
+          0.0,
+          30.1,
+          36.9,
+          33.0
+        ],
+        "afterPercent": [
+          0.0,
+          0.0,
+          31.9696,
+          35.0304,
+          33.0
+        ],
+        "registration": 8938771,
+        "name": "Unknown",
+        "evidence": "https://shizzyunchained.com/evidence/2026-10-29-chain-monitor-2106.json",
+        "disposition": "After5PM Eastern: queue forOctober30 full news. Publish eTAO/Burns archive coverage now. Root baseline is paid first and capped by validator allocation; yield history can lag. No promised yield or transaction burn."
+      }
+    }
   ]
 }

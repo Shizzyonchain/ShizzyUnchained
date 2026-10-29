@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-29T14:13:38.116909+00:00",
-  "block": 9389918,
-  "hash": "0x5cfb90bff971503ee4a0a5fd8e6e30116ae8c5fbc08be27dcc799ef31cfe4085",
-  "chainTime": 1793282604000,
+  "checkedAt": "2026-10-29T21:09:17.820096+00:00",
+  "block": 9392032,
+  "hash": "0x0968f1d56dc584ec16e3757fb19ee4622f49612cb80a493181ac0c98dbe70e95",
+  "chainTime": 1793307972000,
   "runtime": 486,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -415,8 +415,8 @@
     "59": [
       "0",
       "0",
-      "5552469966186575036",
-      "6806848563198824545",
+      "5897350293388648813",
+      "6461968235996750768",
       "6087425544324152034"
     ],
     "60": [
@@ -1326,6 +1326,29 @@
       "extrinsic": 14,
       "name": "Witness",
       "registeredAt": 1970929
+    },
+    {
+      "netuid": 59,
+      "block": 9391035,
+      "hash": "0x1f1f605c908283bf9cab918f6ce272e179bdf8822f3b69f71a24563c7a0b86a6",
+      "timestamp": 1793296008000,
+      "extrinsic": 18,
+      "before": [
+        "0",
+        "0",
+        "5552469966186575036",
+        "6806848563198824545",
+        "6087425544324152034"
+      ],
+      "after": [
+        "0",
+        "0",
+        "5897350293388648813",
+        "6461968235996750768",
+        "6087425544324152034"
+      ],
+      "name": "Unknown",
+      "registeredAt": 8938771
     }
   ],
   "names": {
@@ -1596,10 +1619,10 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9389918,
-    "finalizedHash": "0x5cfb90bff971503ee4a0a5fd8e6e30116ae8c5fbc08be27dcc799ef31cfe4085",
-    "checkedAt": "2026-10-29T14:13:38.116909+00:00",
-    "eventCount": 10,
+    "toBlock": 9392032,
+    "finalizedHash": "0x0968f1d56dc584ec16e3757fb19ee4622f49612cb80a493181ac0c98dbe70e95",
+    "checkedAt": "2026-10-29T21:09:17.820096+00:00",
+    "eventCount": 11,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history."
