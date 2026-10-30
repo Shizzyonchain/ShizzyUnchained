@@ -4121,5 +4121,107 @@
       "quoteDisposition": "No newly verified four-star consequential story. No X post or second roundup.",
       "scope": "Supplemental monitor, not another full daily report. Previous coverage boundaries and stories retained."
     }
+  ],
+  "chainMonitorSupplements": [
+    {
+      "checkedAt": "2026-10-30T21:27:38.865769+00:00",
+      "chainReviews": {
+        "etao": {
+          "status": "DONE",
+          "checkedAt": "2026-10-30T21:27:38.865769+00:00",
+          "fromBlock": 9397500,
+          "toBlock": 9399321,
+          "hash": "0xd917e38fd7dd621993f616e57ed5afee65e3a6bafab0d5472e010788a2291caf",
+          "throughTime": "2026-10-30T21:24:00+00:00",
+          "gaps": [],
+          "archiveUpdated": true,
+          "evidence": "/evidence/2026-10-30-chain-monitor-2124.json",
+          "eventCount": 1,
+          "newsDisposition": "NOVA execution queued October31 after cutoff."
+        },
+        "burns": {
+          "status": "DONE",
+          "checkedAt": "2026-10-30T21:27:38.865769+00:00",
+          "fromBlock": 9397500,
+          "toBlock": 9399321,
+          "hash": "0xd917e38fd7dd621993f616e57ed5afee65e3a6bafab0d5472e010788a2291caf",
+          "throughTime": "2026-10-30T21:24:00+00:00",
+          "gaps": [],
+          "archiveUpdated": true,
+          "evidence": "/evidence/2026-10-30-chain-monitor-2124.json",
+          "eventCount": 1,
+          "smallBurnsEvidenceOnly": 45,
+          "newsDisposition": "Qualifying burns queued October31 after cutoff."
+        }
+      },
+      "leads": [
+        {
+          "netuid": 68,
+          "block": 9398764,
+          "hash": "0xcc63a5257126c2a47451b6f3ad74c57e6876caa4b882920250cc02e4f58fd1ab",
+          "timestamp": 1793388756000,
+          "extrinsic": 5,
+          "before": [
+            "0",
+            "0",
+            "3320329489486196244",
+            "7563207292111677685",
+            "7563207292111677686"
+          ],
+          "after": [
+            "0",
+            "0",
+            "4796153459164483419",
+            "7563165070220916162",
+            "6087425544324152034"
+          ],
+          "name": "NOVA",
+          "announcementDate": "2026-10-30T19:32:36+00:00",
+          "eventIndex": 148,
+          "registration": 4972413,
+          "beforePercent": [
+            0.0,
+            0.0,
+            17.99954223,
+            41.00022889,
+            41.00022889
+          ],
+          "afterPercent": [
+            0.0,
+            0.0,
+            26.0,
+            41.0,
+            33.0
+          ],
+          "readyAt": "2026-10-30T21:27:38.865769+00:00",
+          "status": "verified",
+          "headline": "NOVA SN68 executes owner allocation increase from 18% to 26%; miners fall from 41% to 33%",
+          "evidence": "https://shizzyunchained.com/evidence/2026-10-30-chain-monitor-2124.json",
+          "disposition": "Queued for October31 full edition after5PM Eastern. Validator allocation rounds to41% but exact vector changes slightly. Root baseline is paid first and capped by validator allocation; observed yield may lag. No social publication."
+        },
+        {
+          "id": "9398416-188",
+          "block": 9398416,
+          "hash": "0x6db5d30cbfa9418fb6935e51888143f8b9929cfdda23da6d0e13661dccf52ed9",
+          "extrinsic": 12,
+          "eventIndex": 188,
+          "eventName": "SubtensorModule.AlphaBurned",
+          "timestamp": "2026-10-30T18:23:00+00:00",
+          "netuid": 53,
+          "name": "engy",
+          "kind": "buyback",
+          "amountRaw": "5568586960919",
+          "taoSpentRaw": "175630000000",
+          "account": "5Ccg2rH1xWZ8cgDoQy8fbhyfjTCwffeBChGpyNrcDYcinpLZ",
+          "registeredAt": 4203869,
+          "announcementDate": "2026-10-30T18:23:00+00:00",
+          "readyAt": "2026-10-30T21:27:38.865769+00:00",
+          "status": "verified",
+          "headline": "SN53 engy: finalized 5568.586960919 alpha burn",
+          "evidence": "https://shizzyunchained.com/evidence/2026-10-30-chain-monitor-2124.json",
+          "disposition": "Archive published now; news queued October31 after5PM cutoff. Explicit successful transaction burn, not emissions, fees or recycling; execution does not establish revenue source."
+        }
+      ]
+    }
   ]
 }
