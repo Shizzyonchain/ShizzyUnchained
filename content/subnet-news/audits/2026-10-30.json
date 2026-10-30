@@ -1211,7 +1211,7 @@
     {
       "netuid": 14,
       "name": "Cacheon",
-      "publishedItems": 0,
+      "publishedItems": 1,
       "profileReview": {
         "source": "https://subnetradar.com/subnet/14",
         "status": "READ"
@@ -1229,8 +1229,8 @@
         "status": "PARTIAL",
         "method": "SN/name roster discovery, indexed feed and signed-in Grok plus selected original follow-ups; not every timeline"
       },
-      "outcome": "excluded",
-      "reason": "No supported new material development selected from available profile/brief/repository research; missing original channels remain a gap."
+      "outcome": "covered",
+      "reason": "Finalized qualifying burn added by15:20UTCchainmonitor; event-specific registration and execution verified."
     },
     {
       "netuid": 15,
@@ -2317,7 +2317,7 @@
     {
       "netuid": 62,
       "name": "Ridges",
-      "publishedItems": 0,
+      "publishedItems": 1,
       "profileReview": {
         "source": "https://subnetradar.com/subnet/62",
         "status": "READ"
@@ -2334,8 +2334,8 @@
         "status": "PARTIAL",
         "method": "SN/name roster discovery, indexed feed and signed-in Grok plus selected original follow-ups; not every timeline"
       },
-      "outcome": "excluded",
-      "reason": "No supported new material development selected from available profile/brief/repository research; missing original channels remain a gap."
+      "outcome": "covered",
+      "reason": "Finalized qualifying burn added by15:20UTCchainmonitor; event-specific registration and execution verified."
     },
     {
       "netuid": 63,
@@ -3845,7 +3845,7 @@
   ],
   "counts": {
     "subnets": 128,
-    "updates": 30,
+    "updates": 32,
     "ecosystem": 1
   },
   "sourceAccountReview": {
@@ -3920,5 +3920,70 @@
     "roundup": "PENDING"
   },
   "validation": "verify:release passed: UTF8 source check, security audit, lint,181 unit tests, production build and52 desktop/phone browser checks. Existing content-dependent tests updated for SN16 re-registration and completed Templar stream.",
-  "unresolvedLeadCount": 4
+  "unresolvedLeadCount": 4,
+  "chainSupplements": [
+    {
+      "checkedAt": "2026-10-30T15:21:55.794930+00:00",
+      "chainReviews": {
+        "etao": {
+          "status": "DONE",
+          "checkedAt": "2026-10-30T15:21:55.794930+00:00",
+          "fromBlock": 9397084,
+          "toBlock": 9397499,
+          "hash": "0x077e79a2a215a9f93087f36a45c877766aff513afa8ffcb64e757635813f33eb",
+          "throughTime": "2026-10-30T15:19:36+00:00",
+          "evidence": "/evidence/2026-10-30-chain-monitor-1520.json",
+          "gaps": [],
+          "archiveUpdated": true,
+          "newsDisposition": "Two qualifying burns added to existingOctober30edition; no allocation events. No extra roundup or social post."
+        },
+        "burns": {
+          "status": "DONE",
+          "checkedAt": "2026-10-30T15:21:55.794930+00:00",
+          "fromBlock": 9397084,
+          "toBlock": 9397499,
+          "hash": "0x077e79a2a215a9f93087f36a45c877766aff513afa8ffcb64e757635813f33eb",
+          "throughTime": "2026-10-30T15:19:36+00:00",
+          "evidence": "/evidence/2026-10-30-chain-monitor-1520.json",
+          "gaps": [],
+          "archiveUpdated": true,
+          "newsDisposition": "Two qualifying burns added to existingOctober30edition; no allocation events. No extra roundup or social post."
+        }
+      },
+      "events": [
+        {
+          "id": "9397157-245",
+          "block": 9397157,
+          "hash": "0x74e4a1aa202e61acdb3c5533fabb5fe66bb89fd033c1ae9d5d26a8f673c7d3e7",
+          "extrinsic": 39,
+          "eventIndex": 245,
+          "eventName": "SubtensorModule.AlphaBurned",
+          "timestamp": "2026-10-30T14:11:12+00:00",
+          "netuid": 62,
+          "name": "Ridges",
+          "kind": "alpha",
+          "amountRaw": "182481106887",
+          "taoSpentRaw": null,
+          "account": "5EerKd1QYy5SVLDjxTrkaCGH5QzFbCJu56KNtiXEARYQYFtH",
+          "registeredAt": 4474225
+        },
+        {
+          "id": "9397215-169",
+          "block": 9397215,
+          "hash": "0x0ad51061b7f03af245f19941a2d979b8949e658e8da061e1fc791270e2c8f120",
+          "extrinsic": 12,
+          "eventIndex": 169,
+          "eventName": "SubtensorModule.AlphaBurned",
+          "timestamp": "2026-10-30T14:22:48+00:00",
+          "netuid": 14,
+          "name": "Cacheon",
+          "kind": "alpha",
+          "amountRaw": "4614416800000",
+          "taoSpentRaw": null,
+          "account": "5GJeoh9ecN9vLJhcBo5rGT1DiVGx4zMpkmvjyVb5Z8GDb8NM",
+          "registeredAt": 4848444
+        }
+      ]
+    }
+  ]
 }
