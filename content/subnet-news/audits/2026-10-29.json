@@ -4460,6 +4460,54 @@
         "evidence": "https://shizzyunchained.com/evidence/2026-10-29-chain-monitor-2106.json",
         "disposition": "After5PM Eastern: queue forOctober30 full news. Publish eTAO/Burns archive coverage now. Root baseline is paid first and capped by validator allocation; yield history can lag. No promised yield or transaction burn."
       }
+    },
+    {
+      "checkedAt": "2026-10-30T03:19:10.389378+00:00",
+      "chainReviews": {
+        "etao": {
+          "status": "DONE",
+          "checkedAt": "2026-10-30T03:19:10.389378+00:00",
+          "fromBlock": 9392033,
+          "toBlock": 9393876,
+          "hash": "0x0d501f692ff54d0b56da0038ffaeab223d4eefbc3c644f08e7d6548f7454fe2d",
+          "throughTime": "2026-10-30T03:15:00+00:00",
+          "gaps": [],
+          "archiveUpdated": true,
+          "evidence": "/evidence/2026-10-30-chain-monitor-0315.json",
+          "newsDisposition": "No owner allocation event; verified SN16 lifecycle reset preserved separately."
+        },
+        "burns": {
+          "status": "DONE",
+          "checkedAt": "2026-10-30T03:19:10.389378+00:00",
+          "fromBlock": 9392033,
+          "toBlock": 9393876,
+          "hash": "0x0d501f692ff54d0b56da0038ffaeab223d4eefbc3c644f08e7d6548f7454fe2d",
+          "throughTime": "2026-10-30T03:15:00+00:00",
+          "gaps": [],
+          "archiveUpdated": true,
+          "evidence": "/evidence/2026-10-30-chain-monitor-0315.json",
+          "newsDisposition": "One qualifying SN8 burn; next daily edition after cutoff."
+        }
+      },
+      "lead": {
+        "netuid": 8,
+        "headline": "SN8 Vanta: finalized 170.301197993 alpha transaction burn",
+        "eventDate": "2026-10-29T23:30:00+00:00",
+        "block": 9392751,
+        "extrinsic": 11,
+        "eventIndex": 171,
+        "amountRaw": "170301197993",
+        "registeredAt": 1477264,
+        "source": "https://shizzyunchained.com/evidence/2026-10-30-chain-monitor-0315.json",
+        "status": "verified",
+        "disposition": "After5PM Eastern: next daily report. This is an all-wallet subnet burn; burn wallet is not current owner coldkey. No offchain revenue attribution."
+      },
+      "lifecycleReset": {
+        "netuid": 16,
+        "block": 9392862,
+        "newRegistrationBlock": 9392863,
+        "evidence": "/evidence/2026-10-30-chain-monitor-0315.json"
+      }
     }
   ]
 }
