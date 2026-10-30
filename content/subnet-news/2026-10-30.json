@@ -1,0 +1,1174 @@
+{
+  "version": 1,
+  "date": "2026-10-30",
+  "title": "Bittensor Daily News — October 30, 2026",
+  "summary": "Desearch adds company search; TPN introduces quant validation; Nepher opens a robotics challenge. Also: REAX incentive plans, Attune Level 3, Cascade code changes, Beam integrations, Ditto updates and finalized SN59/SN16/SN8 carry-forwards.",
+  "publishedAt": "2026-10-30T14:05:17.677887+00:00",
+  "coverageStart": "2026-10-29T14:04:43.930Z",
+  "coverageEnd": "2026-10-30T13:57:14.835Z",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [
+    {
+      "headline": "TAO Templar replay is available; Leadpoet remains November 5",
+      "summary": "The October29 Travis / TAO Templar conversation is now a public replay with chapters and guest links. Gavin’s Leadpoet livestream remains November5 at11AMET/8AMPT. The October28 members video is still the latest member upload; completed replays and upcoming streams are listed separately.",
+      "rating": 3,
+      "ratingReason": "Original Shizzy coverage with dates and access status separated.",
+      "sources": [
+        {
+          "label": "Templar replay",
+          "url": "https://www.youtube.com/watch?v=RnnWezJOuE8"
+        },
+        {
+          "label": "Leadpoet upcoming",
+          "url": "https://www.youtube.com/watch?v=q2pGNLUvCm4"
+        }
+      ],
+      "status": "verified",
+      "importance": "medium"
+    }
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": [
+        {
+          "headline": "SN1 Apex: Apex reports screener and live-data fixes",
+          "summary": "The public dated brief reports corrected handling of rejected submissions and live competition data. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/1/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta records a finalized 170.301197993-alpha burn",
+          "summary": "Successful AlphaBurned at block9392751, extrinsic11, event171 on October29 23:30UTC destroyed exactly170301197993 raw units. This meets the 100-alpha per-event minimum. The burning wallet differs from the current owner coldkey; all-wallet subnet burns and owner-only burns are different scopes. Execution does not by itself prove the source of offchain revenue.",
+          "rating": 3,
+          "ratingReason": "Exact native-token transaction evidence, not an inferred revenue claim.",
+          "sources": [
+            {
+              "label": "Finalized evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-30-chain-monitor-0315.json"
+            },
+            {
+              "label": "Burn archive",
+              "url": "https://shizzyunchained.com/subnet-news/burns"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        },
+        {
+          "headline": "SN8 Vanta: retained owner-bookmark operating discussion",
+          "summary": "Arrash’s October29 original says Vanta Trading bought about $160,000 in TAO during October at purchase-time prices and discusses expanding funded-miner participation through Null Consensus. This is a team operating claim, not independently audited cash revenue, a new burn transaction or proof of customer retention. Earlier monthly burn aggregates remain in yesterday’s report rather than being counted twice.",
+          "rating": 3,
+          "ratingReason": "A relevant dated owner-saved lead with accounting scope explicit.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/0xarrash/status/2115819571542368318"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": [
+        {
+          "headline": "SN16 EG registration ends; a new registration occupies the slot",
+          "summary": "Finalized lifecycle cleanup at block9392862 removed EG’s identity and registration; NetworkAdded at9392863 created a new registration with a new owner. Its allocation reset to the default vector is lifecycle cleanup, not an owner-set allocation transaction. Prior EG stories remain attached to their historical registration. The chain does not identify an offchain buyer or establish a negotiated sale price.",
+          "rating": 3,
+          "ratingReason": "Finalized registration and state transitions, with buyer/price claims excluded.",
+          "sources": [
+            {
+              "label": "Finalized lifecycle evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-30-chain-monitor-0315.json"
+            },
+            {
+              "label": "Daily interval evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-30-daily-chain.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": [
+        {
+          "headline": "SN18 Zeus reports 25,000 forecast-archive downloads",
+          "summary": "The October 29 original reports 25,000 Hugging Face downloads and says forecasts have been hashed onchain since June 17. Downloads measure archive retrieval, not unique customers, revenue or forecast accuracy. The hashing and download aggregate were not independently reconstructed in this run.",
+          "rating": 3,
+          "ratingReason": "A dated first-party usage claim with the metric’s scope explicit.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/zeussubnet/status/2115846607614714271"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": [
+        {
+          "headline": "SN19 Blockmachine emphasizes performance-weighted traffic",
+          "summary": "The October 30 original says speed and reliability now determine node traffic and earnings in its incentive mechanism. This signals the operational goal beyond low list prices. Actual traffic allocation, latency improvements and customer retention were not independently measured.",
+          "rating": 3,
+          "ratingReason": "A concrete mechanism announcement with measured outcomes left unverified.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/blockmachine_io/status/2116092745962103257"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": [
+        {
+          "headline": "SN22 Desearch announces Company Search",
+          "summary": "The October 30 original introduces company lists from a plain-language brief, with country, required-signal and fit filters plus source-backed public contact and leadership records. The product homepage lists Company Search. The post’s exact documentation route returned 404 during review, so implementation details and paid usage were not tested. This adds a company-research route rather than evidence of new customers.",
+          "rating": 3,
+          "ratingReason": "A concrete product capability with an explicit documentation access gap.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/desearch_ai/status/2116153413667094738"
+            },
+            {
+              "label": "Product homepage",
+              "url": "https://www.desearch.ai/"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": [
+        {
+          "headline": "SN28 SayGM expands its model catalog",
+          "summary": "October 29–30 team posts announce GPT-6.1 Terra and Kimi K3.1 Pro routes and quote launch discounts. Pricing, model identity, context limits and TEE assurances are provider claims and can change; they were not benchmarked or audited here. The useful development is another announced access route, not proof of identical quality or sustained lowest cost.",
+          "rating": 3,
+          "ratingReason": "An attributed catalog update with price and verification limits.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/say_gm_/status/2115919494787019039"
+            },
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/say_gm_/status/2116135198073250173"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": [
+        {
+          "headline": "SN33 ReadyAI: ReadyAI plans a shift away from conversation tasks",
+          "summary": "The brief attributes a phased task transition over coming weeks to the team. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/33/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": [
+        {
+          "headline": "SN34 Yugos: Yugos reports timeout repair and escrow refund",
+          "summary": "The brief describes an affected provider timeout edge case and a repair nearing completion. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/34/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 35,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Bittensor",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": [
+        {
+          "headline": "SN44 Score: Score removes annotation-error blocks",
+          "summary": "The brief reports removal of five flawed challenge blocks and clarified scoring rules. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/44/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": [
+        {
+          "headline": "SN49 Nepher opens Franka Tabletop RL Challenge Phase 1",
+          "summary": "The October 30 original says Phase 1 is live: miners develop policies teaching a Franka arm to grasp, carry, place, stack and pack objects on a cluttered table. This is a new robotics participation task, not evidence of a deployed factory customer or measured real-world success.",
+          "rating": 3,
+          "ratingReason": "A specific live competition; routine participation updates remain three stars.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/nepher_robotics/status/2116153187136627105"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": []
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": [
+        {
+          "headline": "SN54 Yanez: Yanez explains reward-cycle dashboards",
+          "summary": "The brief describes cycle rewards, dashboard timing and the next phase. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/54/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": [
+        {
+          "headline": "SN55 NIOME: NIOME reports token migration underway",
+          "summary": "The brief attributes a started migration to the team; holder-specific instructions were not independently validated. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/55/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": [
+        {
+          "headline": "SN58 Attune raises generalization tests with Level 3",
+          "summary": "Robotensor’s October 29 original says Level 3 changes object models and categories, sizes and colors while varying scene conditions. Its clip explicitly labels Level 3 live. The team reports Level 2 ended at 92.5% after 125 duels; these are its simulation-competition results, not independently measured physical-robot adoption. The harder task aims to distinguish generalization from memorizing one object.",
+          "rating": 3,
+          "ratingReason": "A concrete competition update with team-reported metrics bounded.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/robotensor_ai/status/2115827308204274058"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": [
+        {
+          "headline": "SN59 owner share rises to 31.9696% in a finalized allocation",
+          "summary": "At finalized block 9391035 on October 29 17:46:48 UTC, owner allocation changed 30.1% to 31.9696%, validators 36.9% to 35.0304%, miners stayed 33%; TAO and recycle slots remained zero. Extrinsic 18/event197 executed successfully. Exact five-slot vectors and registration8938771 are retained in permanent evidence. Root baseline is paid first and capped by validator allocation; displayed yield history can lag. This is not a transaction burn.",
+          "rating": 3,
+          "ratingReason": "A verified allocation event with exact before/after values and registration.",
+          "sources": [
+            {
+              "label": "Finalized evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-10-29-chain-monitor-2106.json"
+            },
+            {
+              "label": "eTAO archive",
+              "url": "https://shizzyunchained.com/subnet-news/etao"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": [
+        {
+          "headline": "SN65 TPN introduces quantized-model validation",
+          "summary": "October 30 TPN announces a workbench tool comparing a quantized model with its parent using next-token agreement, KL divergence and perplexity. The public workbench describes validation tied to exact weights and a quote-before-run workflow. This can help developers assess a compression tradeoff; no paid job was run and the reported measures are not a universal proof of equal downstream quality.",
+          "rating": 3,
+          "ratingReason": "A usable developer-tool announcement; independent execution and output verification remain untested.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/TPN_Labs/status/2116117021951750225"
+            },
+            {
+              "label": "Workbench",
+              "url": "https://bench.trueperformancenetwork.com/"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": [
+        {
+          "headline": "SN71 Leadpoet: Leadpoet reports scoring and research-record repairs",
+          "summary": "The brief reports corrected company-size evidence scoring and additional research records. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/71/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": [
+        {
+          "headline": "SN75 Hippius adds language options to its website",
+          "summary": "The October 30 original announces French, German, Spanish, Simplified Chinese, Brazilian Portuguese and Greek alongside English. This can lower the navigation barrier for users; a localized website is not proof of new adoption. Yesterday’s CDN firewall story remains in its original edition.",
+          "rating": 2,
+          "ratingReason": "Useful access improvement, not a major infrastructure milestone.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/Hippius_cloud/status/2116100294937600033"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "updates": [
+        {
+          "headline": "SN78 Umi: Umi reports C7 challenge intake complete",
+          "summary": "The brief reports129 certified entries and125 timely uploads, with evaluation still underway. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/78/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": [
+        {
+          "headline": "SN80 OpenRoboto schedules a peaq discussion",
+          "summary": "The October 30 original invites users to a discussion next Monday about robot-training data, machine identities and the machine economy, with a teaser for more information. This is a scheduled conversation, not confirmation of a new partnership execution. Unresolved allegations about another project are excluded pending identity and primary relationship verification.",
+          "rating": 2,
+          "ratingReason": "A useful dated plan; teaser wording does not establish execution.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/openroboto/status/2116106069172961490"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": [
+        {
+          "headline": "SN88 Investing: SN88 prepares MetaTrader mining",
+          "summary": "The brief describes planned mining mechanics through a graylist release; participation remains subject to primary instructions. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/88/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": [
+        {
+          "headline": "SN91 Cascade merges per-round eligibility code",
+          "summary": "GitHub PRs 382 and 383 merged October 29. Trainer code replaces lifetime hotkey submission exclusion with per-settlement-round eligibility; documentation separates CPU generation from the GPU training clock and requires 32-channel generators. The PR explicitly says the rule applies on trainer restart. A merge and a scheduled launch target do not verify production activation; larger GPU layouts remain planned.",
+          "rating": 3,
+          "ratingReason": "Verified code and documentation changes, not a claimed live activation.",
+          "sources": [
+            {
+              "label": "Merged implementation",
+              "url": "https://github.com/TensorLink-AI/cascade/pull/382"
+            },
+            {
+              "label": "Merged documentation",
+              "url": "https://github.com/TensorLink-AI/cascade/pull/383"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": [
+        {
+          "headline": "SN92 REAX schedules demand-linked inference and competition rewards",
+          "summary": "The official FAQ, updated October 29, marks the new policy approved from the first weight set after the October 30 14:30 UTC engine slot. Inference is planned to move from 50% to 40% of miner emissions. Competition champions retain full payment for three days, followed during a pause by decay to day seven and keep-alive treatment. Unused allocations are intended to be burned. These are miner-emission policy plans, not a verified eTAO-vector change or qualifying transaction burn; execution at the scheduled boundary was not established by this review.",
+          "rating": 3,
+          "ratingReason": "Material miner rules with effective-time and denominator separated from chain execution.",
+          "sources": [
+            {
+              "label": "Official miner FAQ",
+              "url": "https://reax.co/competitions/faq/"
+            },
+            {
+              "label": "Dated operational brief",
+              "url": "https://subnetradar.com/subnet-news/92/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Thirty Spokes",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": [
+        {
+          "headline": "SN105 Beam reports Hugging Face and Zapier connectors",
+          "summary": "Beam’s public product site lists Hugging Face among its connectors; byteleap’s October 30 original also reports the Hugging Face and Zapier integrations live. This offers routes for moving datasets and model weights into existing workflows. No authenticated transfer or Zapier partner-directory verification was performed. Platform-wide Hugging Face catalog sizes are not Beam customer counts, and this is one integration story rather than separate repeated launches.",
+          "rating": 3,
+          "ratingReason": "Concrete integration announcements with testing and partner-verification limits.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/byteleap_ai/status/2115989913837690944"
+            },
+            {
+              "label": "Beam product",
+              "url": "https://b1m.ai/"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": []
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": [
+        {
+          "headline": "SN118 Ditto announces agent navigation and Router work",
+          "summary": "The October 30 original describes an agent-only sidebar, a single launcher for apps/code/tools and simpler app connections. An October 29 team follow-up also discusses Router MCP injection and remote control for Claude Code. This is a product and workflow update; no installed client or customer deployment was independently exercised.",
+          "rating": 3,
+          "ratingReason": "Specific first-party product changes without inferred adoption.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/heydittoai/status/2115987231429284137"
+            },
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/heydittoai/status/2115859905529647291"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        },
+        {
+          "headline": "SN118 Ditto: Ditto reports agent screening and a grader investigation",
+          "summary": "The brief reports released screened agents and an unresolved grading issue. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/118/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": [
+        {
+          "headline": "SN120 Affine: Affine investigates stuck evaluations",
+          "summary": "The brief reports evaluations stuck over12hours and work on larger batches; resolution is not verified. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/120/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": [
+        {
+          "headline": "SN121 sundae_bar: Sundae Bar publishes an SBC33 brief",
+          "summary": "The brief says submissions are scheduled to open at noon EDT. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/121/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": [
+        {
+          "headline": "SN124 Swarm: Swarm reports a new challenge and evaluation backlog",
+          "summary": "The brief attributes a launched challenge and paid-submission queue to the team; scoring and throughput outcomes are unverified. This is an attributed public summary of Discord activity, not independent primary execution or customer verification. Follow original team instructions before acting.",
+          "rating": 2,
+          "ratingReason": "Useful operator information with its secondary source and verification gap explicit.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/124/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Astrid",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "128 active project profiles and dated briefs; 136 repository paths; public X feed and direct original follow-ups",
+      "Signed-in Grok daily discovery/top-five; owner bookmarks, originals, quotes, replies/reposts; Const and Tensia accounts",
+      "Finalized lifecycle, allocation and burn event scans; 128 owner holdings; YouTube Videos and Live tabs"
+    ],
+    "gaps": [
+      "Discovery reviewed 128 project profiles and dated briefs plus 136 repository paths, with three repository access failures; private channels and every individual X reply were not exhaustively checked.",
+      "Secondary Discord briefs remain attributed developing reports. Selected attached images and video frames reviewed; full long-video viewing and independent benchmark/customer audits were not performed.",
+      "Final Grok omission query reached the signed-in usage limit. Discovery and qualitative top-five response succeeded; no successful final omission response is claimed.",
+      "TaoStats local server API key was unavailable; no fresh TaoStats cross-check or credit usage verification. Configured archive evidence and existing shared site cache remain primary."
+    ]
+  }
+}

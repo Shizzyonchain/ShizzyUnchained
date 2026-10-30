@@ -15,6 +15,7 @@ type ChannelVideo = {
 };
 
 const channelVideos: ChannelVideo[] = [
+  { id: "RnnWezJOuE8", title: "Bittensor Gets Expressive and Conviction Runs Deep with TAO Templar", meta: "1:17:21 · Livestream replay · October 29, 2026" },
   { id: "bVrdbn5CsHc", title: "Bittensor’s Make or Break Week? TAO Price, Lium & Subnet Updates", meta: "22:21 · Public video · October 26, 2026" },
   { id: "STPM5BtE-ts", title: "Can You Prove You’re Human? Yanez Bittensor Subnet 54 with Jose Caldera", meta: "57:00 · Livestream replay · October 27, 2026" },
   { id: "9orJTIbMwmQ", title: "Bittensor Subnets CRASHING! Sell Now or MORE PAIN Ahead?", meta: "20:48 · Public video · October 22, 2026" },
@@ -374,7 +375,7 @@ const channelVideos: ChannelVideo[] = [
 const liveStreams: ChannelVideo[] = [
   { id: "STPM5BtE-ts", title: "Can You Prove You’re Human? Yanez Bittensor Subnet 54 with Jose Caldera", meta: "57:00 · Livestream replay · October 27, 2026" },
   { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "Rescheduled livestream · November 5, 2026 · 11:00 AM ET / 8:00 AM PT", startsAt: "2026-11-05T16:00:00Z", upcoming: true },
-  { id: "RnnWezJOuE8", title: "Bittensor Gets Expressive and Conviction Runs Deep with TAO Templar", meta: "Upcoming livestream · October 29, 2026 · 1:00 PM ET / 10:00 AM PT", startsAt: "2026-10-29T17:00:00Z", upcoming: true },
+  { id: "RnnWezJOuE8", title: "Bittensor Gets Expressive and Conviction Runs Deep with TAO Templar", meta: "1:17:21 · Livestream replay · October 29, 2026" },
 
   {
     id: "ac6bldErBFU",
