@@ -2,7 +2,7 @@
   "version": 1,
   "date": "2026-10-30",
   "title": "Bittensor Daily News — October 30, 2026",
-  "summary": "Desearch adds company search; TPN introduces quant validation; Nepher opens a robotics challenge. Also: REAX incentive plans, Attune Level 3, Cascade code changes, Beam integrations, Ditto updates and finalized SN59/SN16/SN8 carry-forwards. Afternoon updates: NOVA’s proposed experimental-data fund, HaloGuard’s reported benchmark, Endure’s dated participation figures and Terza’s reliability metrics.",
+  "summary": "Desearch adds company search; TPN introduces quant validation; Nepher opens a robotics challenge. Also: REAX incentive plans, Attune Level 3, Cascade code changes, Beam integrations, Ditto updates and finalized SN59/SN16/SN8 carry-forwards. Afternoon updates: NOVA’s proposed experimental-data fund, HaloGuard’s reported benchmark, Endure’s dated participation figures and Terza’s reliability metrics. Late-afternoon follow-ups include Score’s public-data recap, additional inference catalog routes and unresolved verification questions around Terza.",
   "publishedAt": "2026-10-30T14:05:17.677887+00:00",
   "coverageStart": "2026-10-29T14:04:43.930Z",
   "coverageEnd": "2026-10-30T13:57:14.835Z",
@@ -320,7 +320,7 @@
       "updates": [
         {
           "headline": "SN28 SayGM expands its model catalog",
-          "summary": "October 29–30 team posts announce GPT-6.1 Terra and Kimi K3.1 Pro routes and quote launch discounts. Pricing, model identity, context limits and TEE assurances are provider claims and can change; they were not benchmarked or audited here. The useful development is another announced access route, not proof of identical quality or sustained lowest cost.",
+          "summary": "October 29–30 team posts announce GPT-6.1 Terra and Kimi K3.1 Pro routes and quote launch discounts. Pricing, model identity, context limits and TEE assurances are provider claims and can change; they were not benchmarked or audited here. The useful development is another announced access route, not proof of identical quality or sustained lowest cost. A further October 30 original adds Mistral Large 4, advertised through KubeTEE inside a TEE. The attached graphic confirms the team’s availability announcement. Model-origin and end-to-end confidentiality claims have not been independently audited; this extends the same catalog story rather than a separate customer win.",
           "rating": 3,
           "ratingReason": "An attributed catalog update with price and verification limits.",
           "sources": [
@@ -331,6 +331,10 @@
             {
               "label": "Original team announcement",
               "url": "https://x.com/say_gm_/status/2116135198073250173"
+            },
+            {
+              "label": "Team follow-up, October 30",
+              "url": "https://x.com/say_gm_/status/2116179204907974868"
             }
           ],
           "status": "developing",
@@ -471,6 +475,20 @@
             {
               "label": "Dated public brief",
               "url": "https://subnetradar.com/subnet-news/44/2026-10-30"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        },
+        {
+          "headline": "SN44 Score reports public data expansion and a Studio evaluation",
+          "summary": "Score’s October 30 monthly recap says three new public elements and more tracking tasks are running on SN44, and more example data from its cricket track is public. It also says an unnamed real-time graphics software company is testing a Studio endpoint using the football model developed earlier this year. The recap and attached graphic document the team’s statement, not an independently confirmed customer, paid contract or revenue result. The distinct development is broader public task/data access and a reported evaluation, rather than a newly proven commercial deployment.",
+          "rating": 3,
+          "ratingReason": "Specific public-data and testing updates; the prospective evaluator is unnamed and commercial outcomes remain unverified.",
+          "sources": [
+            {
+              "label": "Original team announcement, October 30",
+              "url": "https://x.com/webuildscore/status/2116236191293190396"
             }
           ],
           "status": "developing",
@@ -674,7 +692,22 @@
     {
       "netuid": 64,
       "name": "Chutes",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN64 Chutes announces Qwen3.8 Max availability",
+          "summary": "Chutes’ October 30 announcement adds an advertised Qwen3.8 Max route for coding and long agent tasks. Its post and graphic label the model available now and quote $2 per million input tokens and $6 per million output tokens. Those are the provider’s published terms at announcement time, not a purchase or independent serving test. Model identity, context limits and comparative benchmark claims were not independently validated here; a catalog addition does not establish customer adoption.",
+          "rating": 3,
+          "ratingReason": "A concrete provider catalog announcement, with price and performance claims separated from independent testing.",
+          "sources": [
+            {
+              "label": "Original team announcement, October 30",
+              "url": "https://x.com/chutes_ai/status/2116175848168390742"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 65,
@@ -1019,7 +1052,7 @@
       "updates": [
         {
           "headline": "SN103 Terza: route quotes now distinguish success rate from reported uptime",
-          "summary": "Terza announced per-route availability information on October 30. Its public pricing documentation distinguishes 24-hour request success measured by the gateway from 24-hour uptime reported by miners through upstream monitoring. That gives users two different reliability signals when comparing routes; they are not interchangeable. The product was already covered on October 28, so this is a feature update rather than another launch. No independent request benchmark or customer-adoption claim is established by this review.",
+          "summary": "Terza announced per-route availability information on October 30. Its public pricing documentation distinguishes 24-hour request success measured by the gateway from 24-hour uptime reported by miners through upstream monitoring. That gives users two different reliability signals when comparing routes; they are not interchangeable. The product was already covered on October 28, so this is a feature update rather than another launch. No independent request benchmark or customer-adoption claim is established by this review. Later October 30 update: Mark Jeffrey at 20:05 UTC and Tensia Foundation at 20:17 UTC publicly called for caution about SN103. Their posts supplied no underlying technical evidence establishing an incident or misconduct. Terza’s own site still describes early access and invitation-only supply. Its feature descriptions remain team documentation; we have not independently verified operator identity, request execution or customer results. The questions remain unresolved, not a confirmed security finding.",
           "rating": 3,
           "ratingReason": "A useful documented product change with clear metric definitions, rather than evidence of major new adoption.",
           "sources": [
@@ -1030,6 +1063,18 @@
             {
               "label": "Terza pricing and metric definitions",
               "url": "https://terza.si/pricing/"
+            },
+            {
+              "label": "Public caution, October 30; underlying evidence not supplied",
+              "url": "https://x.com/markjeffrey/status/2116260289968849143"
+            },
+            {
+              "label": "Foundation follow-up, October 30",
+              "url": "https://x.com/TensiaFDN/status/2116263278506885282"
+            },
+            {
+              "label": "Terza early-access description",
+              "url": "https://terza.si/"
             }
           ],
           "status": "developing",
@@ -1048,7 +1093,7 @@
       "updates": [
         {
           "headline": "SN105 Beam reports Hugging Face and Zapier connectors",
-          "summary": "Beam’s public product site lists Hugging Face among its connectors; byteleap’s October 30 original also reports the Hugging Face and Zapier integrations live. This offers routes for moving datasets and model weights into existing workflows. No authenticated transfer or Zapier partner-directory verification was performed. Platform-wide Hugging Face catalog sizes are not Beam customer counts, and this is one integration story rather than separate repeated launches.",
+          "summary": "Beam’s public product site lists Hugging Face among its connectors; byteleap’s October 30 original also reports the Hugging Face and Zapier integrations live. This offers routes for moving datasets and model weights into existing workflows. No authenticated transfer or Zapier partner-directory verification was performed. Platform-wide Hugging Face catalog sizes are not Beam customer counts, and this is one integration story rather than separate repeated launches. At 14:00 UTC on October 30, Beam also announced a Box integration. Its accompanying graphic labels that connector live. Box’s platform-wide customer figures in the announcement are not Beam customer counts, a commercial contract or proof those organizations use Beam. No authenticated Box transfer or partner-side confirmation was obtained in this review.",
           "rating": 3,
           "ratingReason": "Concrete integration announcements with testing and partner-verification limits.",
           "sources": [
@@ -1059,6 +1104,10 @@
             {
               "label": "Beam product",
               "url": "https://b1m.ai/"
+            },
+            {
+              "label": "Team follow-up, October 30",
+              "url": "https://x.com/b1m_ai/status/2116168298178261021"
             }
           ],
           "status": "developing",
