@@ -2,7 +2,7 @@
   "version": 1,
   "date": "2026-10-30",
   "title": "Bittensor Daily News — October 30, 2026",
-  "summary": "Desearch adds company search; TPN introduces quant validation; Nepher opens a robotics challenge. Also: REAX incentive plans, Attune Level 3, Cascade code changes, Beam integrations, Ditto updates and finalized SN59/SN16/SN8 carry-forwards.",
+  "summary": "Desearch adds company search; TPN introduces quant validation; Nepher opens a robotics challenge. Also: REAX incentive plans, Attune Level 3, Cascade code changes, Beam integrations, Ditto updates and finalized SN59/SN16/SN8 carry-forwards. Afternoon updates: NOVA’s proposed experimental-data fund, HaloGuard’s reported benchmark, Endure’s dated participation figures and Terza’s reliability metrics.",
   "publishedAt": "2026-10-30T14:05:17.677887+00:00",
   "coverageStart": "2026-10-29T14:04:43.930Z",
   "coverageEnd": "2026-10-30T13:57:14.835Z",
@@ -277,7 +277,22 @@
     {
       "netuid": 23,
       "name": "Trishool",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN23 Trishool: HaloGuard reports an 83.63 average F1 score",
+          "summary": "Trishool reported on October 30 that its 0.8B HaloGuard Output Guard achieved 83.63 average F1 on public benchmarks, versus a previous best of 82.5 cited by the team. It also reported more than 7,500 jailbreaks and 125 miners over 15 weeks of Phase 3. This is a useful safety-model result to follow, but the announced model release, paper and fuller explanation are still forthcoming. The score and state-of-the-art comparison have not been independently reproduced; moving toward enterprise deployment does not establish paying customers.",
+          "rating": 3,
+          "ratingReason": "A concrete team-reported benchmark; independent reproduction and supporting releases are pending.",
+          "sources": [
+            {
+              "label": "Team announcement, October 30",
+              "url": "https://x.com/trishoolai/status/2116190966407393584"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 24,
@@ -331,7 +346,22 @@
     {
       "netuid": 30,
       "name": "Endure Network",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN30 Endure: protocol update reduced forecast participation in October 21–22 rounds",
+          "summary": "In its October 30 report, Endure says miners with published forecasts fell from 235 on October 21 to 43 on October 22 following its protocol update. Its consensus score moved from 96.0% to 94.4%, within the 93.6%–97.1% range reported since October 4. The October 18–24 average was 95.1% across 420 scored values, with no missing consensus round reported. These are historical team metrics, not a new loss of miners today, customer retention data or a guarantee of forecast accuracy.",
+          "rating": 3,
+          "ratingReason": "Dated operating information explains a participation change without treating consensus as customer adoption.",
+          "sources": [
+            {
+              "label": "Team announcement, October 30",
+              "url": "https://x.com/EndureNet/status/2116180037493752165"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 31,
@@ -683,7 +713,22 @@
     {
       "netuid": 68,
       "name": "NOVA",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN68 NOVA: planned emission fund targets experimental data",
+          "summary": "On October 30, METANOVA announced a proposed 26% owner / 33% miner / 41% validator split to fund wet-lab and R&D data. Its first intended use is experimental data for an ADME competition still in development. That could finance evaluation inputs beyond token rewards, but neither the new split nor completed lab work was independently verified here. The last reviewed finalized allocation remains 18% / 41% / 41%; this announcement is a plan, not a verified allocation transaction or burn.",
+          "rating": 3,
+          "ratingReason": "A specific funding plan with practical research relevance; execution and experimental results remain pending.",
+          "sources": [
+            {
+              "label": "Team announcement, October 30",
+              "url": "https://x.com/metanova_labs/status/2116202730020651339"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 69,
@@ -971,7 +1016,26 @@
     {
       "netuid": 103,
       "name": "Terza Inference",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN103 Terza: route quotes now distinguish success rate from reported uptime",
+          "summary": "Terza announced per-route availability information on October 30. Its public pricing documentation distinguishes 24-hour request success measured by the gateway from 24-hour uptime reported by miners through upstream monitoring. That gives users two different reliability signals when comparing routes; they are not interchangeable. The product was already covered on October 28, so this is a feature update rather than another launch. No independent request benchmark or customer-adoption claim is established by this review.",
+          "rating": 3,
+          "ratingReason": "A useful documented product change with clear metric definitions, rather than evidence of major new adoption.",
+          "sources": [
+            {
+              "label": "Team announcement, October 30",
+              "url": "https://x.com/TerzaInference/status/2116186805074891208"
+            },
+            {
+              "label": "Terza pricing and metric definitions",
+              "url": "https://terza.si/pricing/"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 104,
@@ -1200,13 +1264,15 @@
     "searched": [
       "128 active project profiles and dated briefs; 136 repository paths; public X feed and direct original follow-ups",
       "Signed-in Grok daily discovery/top-five; owner bookmarks, originals, quotes, replies/reposts; Const and Tensia accounts",
-      "Finalized lifecycle, allocation and burn event scans; 128 owner holdings; YouTube Videos and Live tabs"
+      "Finalized lifecycle, allocation and burn event scans; 128 owner holdings; YouTube Videos and Live tabs",
+      "October 30 afternoon: signed-in Grok discovery and omission follow-up, direct owner discovery sources, broad public feed and primary team/product follow-ups."
     ],
     "gaps": [
       "Discovery reviewed 128 project profiles and dated briefs plus 136 repository paths, with three repository access failures; private channels and every individual X reply were not exhaustively checked.",
       "Secondary Discord briefs remain attributed developing reports. Selected attached images and video frames reviewed; full long-video viewing and independent benchmark/customer audits were not performed.",
       "Final Grok omission query reached the signed-in usage limit. Discovery and qualitative top-five response succeeded; no successful final omission response is claimed.",
-      "TaoStats local server API key was unavailable; no fresh TaoStats cross-check or credit usage verification. Configured archive evidence and existing shared site cache remain primary."
+      "TaoStats local server API key was unavailable; no fresh TaoStats cross-check or credit usage verification. Configured archive evidence and existing shared site cache remain primary.",
+      "Afternoon monitor: primary announcements and selected graphics/video frames checked; benchmark reproduction, authenticated product trials and chain verification after block 9397499 were not performed. SN82 emission alert and lock aggregates remain pending, not verified execution."
     ]
   }
 }
