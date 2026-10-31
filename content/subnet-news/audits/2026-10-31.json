@@ -2740,7 +2740,7 @@
     {
       "netuid": 65,
       "name": "True Performance Network",
-      "publishedItems": 0,
+      "publishedItems": 1,
       "profileReview": {
         "source": "https://subnetradar.com/subnet/65",
         "status": "READ"
@@ -2758,8 +2758,8 @@
         "status": "PARTIAL",
         "method": "Broad indexed feed/Grok and selected direct originals, not every account timeline"
       },
-      "outcome": "excluded",
-      "reason": "No supported new material development selected; unverified leads retained separately."
+      "outcome": "covered",
+      "reason": "TPN-007 announcement and public dashboard reviewed at the monitor follow-up."
     },
     {
       "netuid": 66,
@@ -4290,7 +4290,7 @@
   },
   "counts": {
     "subnets": 128,
-    "updates": 18,
+    "updates": 19,
     "ecosystem": 2
   },
   "sourceReconciliation": {
@@ -4845,8 +4845,41 @@
     ]
   },
   "publication": {
-    "status": "VALIDATION_PENDING",
-    "roundup": "NOT_POSTED",
-    "deployment": "NOT_PUSHED"
-  }
+    "status": "READY_AND_LIVE_VERIFIED",
+    "commit": "1fd3641463f4094255db94942d0f3cbafcd37bb2",
+    "deployment": "dpl_2mkJAGphQwWkoTVxJQ7PiWMiJ7V8",
+    "liveChecks": "research-oct31/live-checks.json",
+    "roundup": {
+      "status": "PUBLIC_VERIFIED",
+      "url": "https://x.com/ShizzyUnchained/status/2116533948981346741",
+      "publishedAt": "2026-10-31T14:13:11.393000+00:00",
+      "exactCopy": "SN92 REAX’s lock is now more than a promise. 🗿\n\nI checked a successful owner transaction locking 230.55 alpha at finalized block 9,403,214.\n\nThat confirms one deposit. It does not prove daily top-ups, and locked alpha is not burned alpha.\n\nToday’s report also covers SN118 Ditto’s memory encryption, SN22 Desearch’s Scholarship Finder and SN81 Reliquary’s RL update. Plans and unverified claims are labelled.\n\nSources, chain evidence and today’s subnet news:\nhttps://shizzyunchained.com/subnet-news/2026-10-31",
+      "screenshot": "roundup-public.png"
+    },
+    "completedAt": "2026-10-31T14:14:12.845176+00:00",
+    "supplement": "TPN-007 appended; releaseverificationpending"
+  },
+  "supplements": [
+    {
+      "checkedAt": "2026-10-31T14:41:03.889838+00:00",
+      "window": "After initial13:57UTCcutoff through14:40UTC; originalannouncement14:05UTC",
+      "monitorReceipt": "news-monitor-2026-10-31/1438-receipt.json",
+      "added": [
+        {
+          "netuid": 65,
+          "source": "https://x.com/TPN_Labs/status/2116531946176102714",
+          "headline": "SN65 TPN opens TPN-007 RAM-ceiling competition",
+          "rating": 3
+        }
+      ],
+      "excluded": [
+        {
+          "source": "https://x.com/b1m_ai/status/2116531414086926363",
+          "reason": "Repeated Hermes integration promotion. SameintegrationcoveredOctober9/10; no new specific functionality or independently evidenced adoption. Hermes repository clones/stars are not Beam customers."
+        }
+      ],
+      "grokConversation": "https://x.com/i/grok?conversation=da63632a-5612-46db-ae49-8c5ddf69ec1f",
+      "publication": "No second dailyroundup or quote; newitembelowfourstars."
+    }
+  ]
 }
