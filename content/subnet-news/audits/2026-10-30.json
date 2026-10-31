@@ -4222,6 +4222,84 @@
           "disposition": "Archive published now; news queued October31 after5PM cutoff. Explicit successful transaction burn, not emissions, fees or recycling; execution does not establish revenue source."
         }
       ]
+    },
+    {
+      "checkedAt": "2026-10-31T03:29:06.584932+00:00",
+      "chainReviews": {
+        "etao": {
+          "status": "DONE",
+          "checkedAt": "2026-10-31T03:29:06.584932+00:00",
+          "fromBlock": 9399322,
+          "toBlock": 9401131,
+          "hash": "0xfbafb3539b1fa8efe442c345978e1da36c0356adc2cb50246a2b846f5f8056f8",
+          "throughTime": "2026-10-31T03:26:00+00:00",
+          "gaps": [],
+          "archiveUpdated": true,
+          "evidence": "/evidence/2026-10-31-chain-monitor-0326.json",
+          "eventCount": 1,
+          "newsDisposition": "REAX execution queued October31 after cutoff; lock deposits remain separately unverified."
+        },
+        "burns": {
+          "status": "DONE",
+          "checkedAt": "2026-10-31T03:29:06.584932+00:00",
+          "fromBlock": 9399322,
+          "toBlock": 9401131,
+          "hash": "0xfbafb3539b1fa8efe442c345978e1da36c0356adc2cb50246a2b846f5f8056f8",
+          "throughTime": "2026-10-31T03:26:00+00:00",
+          "gaps": [],
+          "archiveUpdated": true,
+          "evidence": "/evidence/2026-10-31-chain-monitor-0326.json",
+          "eventCount": 0,
+          "smallBurnsEvidenceOnly": 36,
+          "newsDisposition": "Qualifying burns queued October31 after cutoff."
+        }
+      },
+      "leads": [
+        {
+          "netuid": 92,
+          "block": 9399960,
+          "hash": "0x3cc2d43d62a5182fb617272cd588626f763c857568125bbc9265e6f9adebeaba",
+          "timestamp": 1793403108000,
+          "extrinsic": 3,
+          "before": [
+            "0",
+            "0",
+            "3320329489486196244",
+            "7563207292111677685",
+            "7563207292111677686"
+          ],
+          "after": [
+            "0",
+            "0",
+            "4796111237273721898",
+            "7563207292111677685",
+            "6087425544324152032"
+          ],
+          "name": "REAX",
+          "announcementDate": "2026-10-30T23:31:48+00:00",
+          "eventIndex": 144,
+          "registration": 9247819,
+          "beforePercent": [
+            0.0,
+            0.0,
+            17.99954223,
+            41.00022889,
+            41.00022889
+          ],
+          "afterPercent": [
+            0.0,
+            0.0,
+            25.99977111,
+            41.00022889,
+            33.0
+          ],
+          "readyAt": "2026-10-31T03:29:06.584932+00:00",
+          "status": "verified",
+          "headline": "REAX SN92 executes owner allocation increase from 18% to 26%; miners fall from 41% to 33%",
+          "evidence": "https://shizzyunchained.com/evidence/2026-10-31-chain-monitor-0326.json",
+          "disposition": "Queued for October31 full edition after5PM Eastern. Validators remain unchanged at41%. Allocation event does not prove conviction-lock deposits, miner reward rescaling or unlock terms; those remain separate team claims requiring evidence. Root baseline is paid first and capped by validator allocation; observed yield may lag. No social publication."
+        }
+      ]
     }
   ]
 }

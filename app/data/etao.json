@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-30T21:27:38.865769+00:00",
-  "block": 9399321,
-  "hash": "0xd917e38fd7dd621993f616e57ed5afee65e3a6bafab0d5472e010788a2291caf",
-  "chainTime": 1793395440000,
+  "checkedAt": "2026-10-31T03:29:06.584932+00:00",
+  "block": 9401131,
+  "hash": "0xfbafb3539b1fa8efe442c345978e1da36c0356adc2cb50246a2b846f5f8056f8",
+  "chainTime": 1793417160000,
   "runtime": 486,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -646,9 +646,9 @@
     "92": [
       "0",
       "0",
-      "3320329489486196244",
+      "4796111237273721898",
       "7563207292111677685",
-      "7563207292111677686"
+      "6087425544324152032"
     ],
     "93": [
       "0",
@@ -1372,6 +1372,29 @@
       ],
       "name": "NOVA",
       "registeredAt": 4972413
+    },
+    {
+      "netuid": 92,
+      "block": 9399960,
+      "hash": "0x3cc2d43d62a5182fb617272cd588626f763c857568125bbc9265e6f9adebeaba",
+      "timestamp": 1793403108000,
+      "extrinsic": 3,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "4796111237273721898",
+        "7563207292111677685",
+        "6087425544324152032"
+      ],
+      "name": "REAX",
+      "registeredAt": 9247819
     }
   ],
   "names": {
@@ -1642,10 +1665,10 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9399321,
-    "finalizedHash": "0xd917e38fd7dd621993f616e57ed5afee65e3a6bafab0d5472e010788a2291caf",
-    "checkedAt": "2026-10-30T21:27:38.865769+00:00",
-    "eventCount": 12,
+    "toBlock": 9401131,
+    "finalizedHash": "0xfbafb3539b1fa8efe442c345978e1da36c0356adc2cb50246a2b846f5f8056f8",
+    "checkedAt": "2026-10-31T03:29:06.584932+00:00",
+    "eventCount": 13,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history."
