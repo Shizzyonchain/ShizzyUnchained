@@ -508,6 +508,7 @@ test("owner activity rejects trades attributed to a different coldkey",async({pa
 
 test("TAO returns has its own news tab, sourced calendar and contained mobile scrolling",async({page})=>{
  await page.goto('/subnet-news');
+ await expect(page.getByRole('link',{name:'TAO Returns →',exact:true})).toBeInViewport();
  await page.getByRole('link',{name:'TAO Returns →',exact:true}).click();
  await expect(page).toHaveURL(/\/subnet-news\/tao-returns$/);
  await expect(page.getByRole('heading',{name:'TAO monthly returns',exact:true})).toBeVisible();
