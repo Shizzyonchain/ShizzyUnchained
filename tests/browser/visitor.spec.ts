@@ -505,3 +505,18 @@ test("owner activity rejects trades attributed to a different coldkey",async({pa
  await expect(activity.getByText('Net buying',{exact:true})).toHaveCount(0);
  await expect(activity.getByRole('link',{name:'View wallet transfers & transactions ↗',exact:true})).toHaveAttribute('href',`https://taostats.io/account/${keys[0]}/transactions`);
 });
+
+test("TAO returns has its own news tab, sourced calendar and contained mobile scrolling",async({page})=>{
+ await page.goto('/subnet-news');
+ await page.getByRole('link',{name:'TAO Returns →',exact:true}).click();
+ await expect(page).toHaveURL(/\/subnet-news\/tao-returns$/);
+ await expect(page.getByRole('heading',{name:'TAO monthly returns',exact:true})).toBeVisible();
+ await expect(page.getByRole('link',{name:'TAO Returns →',exact:true})).toHaveAttribute('aria-current','page');
+ await expect(page.getByRole('link',{name:'Daily news',exact:true})).not.toHaveAttribute('aria-current','page');
+ await expect(page.getByRole('table')).toContainText('2023');
+ await expect(page.getByRole('table')).toContainText('YTD');
+ await expect(page.getByRole('link',{name:'Compare TAO historical prices on CoinGlass ↗',exact:true})).toHaveAttribute('href','https://www.coinglass.com/currencies/TAO/historical-data');
+ await expect(page.getByRole('main')).toContainText('not USD');
+ await noOverflow(page);
+ await page.screenshot({path:`../tao-returns-2026-11-01/returns-${test.info().project.name}.png`});
+});

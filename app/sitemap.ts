@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/subnet-news",
     "/subnet-news/etao",
     "/subnet-news/burns",
+    "/subnet-news/tao-returns",
     "/subnet-news/exploit-conference-catch-up",
     "/subnet-news/exploit-conference-catch-up-day-2",
     "/sectors",
