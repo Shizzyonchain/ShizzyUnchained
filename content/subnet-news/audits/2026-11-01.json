@@ -2,7 +2,7 @@
   "version": 1,
   "date": "2026-11-01",
   "coverageStart": "2026-10-31T13:57:32.305Z",
-  "coverageEnd": "2026-11-01T18:00:12+00:00",
+  "coverageEnd": "2026-11-01T21:34:48+00:00",
   "assembledAt": "2026-11-01T15:16:27.505978+00:00",
   "dailyWorkflowComplete": false,
   "sourceMethods": [
@@ -732,33 +732,33 @@
   "chainReviews": {
     "etao": {
       "status": "DONE",
-      "checkedAt": "2026-11-01T18:03:51.877343+00:00",
+      "checkedAt": "2026-11-01T21:39:28.959414+00:00",
       "fromBlock": 9404288,
-      "toBlock": 9412702,
-      "hash": "0x256092b5807ec55270acd0809baa470ed13854f4c724239c363bf8e0c9b20ec4",
-      "throughTime": "2026-11-01T18:00:12+00:00",
+      "toBlock": 9413775,
+      "hash": "0xea02e8d69e64b78668bf4301a67fc7c4cf9e7780e537d976d6d1c9f7fa2366e7",
+      "throughTime": "2026-11-01T21:34:48+00:00",
       "evidence": "public/evidence/2026-11-01-monitor-chain-1800.json",
       "gaps": [],
       "archiveUpdated": true,
-      "newsDisposition": "SN118 allocation change added to existing edition; no new qualifying transaction burns. Prior permanent evidence and contiguous review receipts retained.",
+      "newsDisposition": "Published material qualifying SN8 burn in existing edition before5PM Eastern; prior stories preserved. No new allocation event, no extra social publication.",
       "eventCount": 1,
       "priorEvidence": "public/evidence/2026-11-01-daily-chain.json",
-      "supplementEvidence": "public/evidence/2026-11-01-monitor-chain-1800.json"
+      "supplementEvidence": "public/evidence/2026-11-01-chain-monitor-2134.json"
     },
     "burns": {
       "status": "DONE",
-      "checkedAt": "2026-11-01T18:03:51.877343+00:00",
+      "checkedAt": "2026-11-01T21:39:28.959414+00:00",
       "fromBlock": 9404288,
-      "toBlock": 9412702,
-      "hash": "0x256092b5807ec55270acd0809baa470ed13854f4c724239c363bf8e0c9b20ec4",
-      "throughTime": "2026-11-01T18:00:12+00:00",
+      "toBlock": 9413775,
+      "hash": "0xea02e8d69e64b78668bf4301a67fc7c4cf9e7780e537d976d6d1c9f7fa2366e7",
+      "throughTime": "2026-11-01T21:34:48+00:00",
       "evidence": "public/evidence/2026-11-01-monitor-chain-1800.json",
       "gaps": [],
       "archiveUpdated": true,
-      "newsDisposition": "SN118 allocation change added to existing edition; no new qualifying transaction burns. Prior permanent evidence and contiguous review receipts retained.",
-      "eventCount": 0,
+      "newsDisposition": "Published material qualifying SN8 burn in existing edition before5PM Eastern; prior stories preserved. No new allocation event, no extra social publication.",
+      "eventCount": 1,
       "priorEvidence": "public/evidence/2026-11-01-daily-chain.json",
-      "supplementEvidence": "public/evidence/2026-11-01-monitor-chain-1800.json"
+      "supplementEvidence": "public/evidence/2026-11-01-chain-monitor-2134.json"
     }
   },
   "ownerHoldings": {
@@ -1394,7 +1394,7 @@
     {
       "netuid": 8,
       "name": "Vanta",
-      "publishedItems": 1,
+      "publishedItems": 2,
       "profileReview": {
         "source": "https://subnetradar.com/subnet/8",
         "status": "READ"
@@ -4653,7 +4653,7 @@
   "sourceCorrection": "Direct TensiaBot reply2116486496261636353 confirms it discussed REAX lock9403214; earlier monitor timeline-only denial was incorrect. No change to independent permanent chain evidence or deposit count.",
   "counts": {
     "subnets": 128,
-    "updates": 20,
+    "updates": 21,
     "ecosystem": 0
   },
   "publication": {
@@ -4744,6 +4744,33 @@
       ],
       "grok": "Signed-in discovery and omissions recovered at13:00EST; conversation5dae1916-b243-405d-8924-53bb7e4e963d. This does not fill morning top-five ranking gap.",
       "releaseStatus": "Prepared; live verification retained in monitor receipt after READY."
+    },
+    {
+      "checkedAt": "2026-11-01T21:39:28.959414+00:00",
+      "fromBlock": 9412703,
+      "toBlock": 9413775,
+      "throughTime": "2026-11-01T21:34:48+00:00",
+      "source": "public/evidence/2026-11-01-chain-monitor-2134.json",
+      "allocationEvents": 0,
+      "qualifyingBurns": [
+        {
+          "id": "9413552-314",
+          "block": 9413552,
+          "hash": "0xb1f7a9e26e098a38faffc1d971c00271d940f67c3d4704847b088dd924222b2b",
+          "extrinsic": 11,
+          "eventIndex": 314,
+          "eventName": "SubtensorModule.AlphaBurned",
+          "timestamp": "2026-11-01T20:50:12+00:00",
+          "netuid": 8,
+          "name": "Vanta",
+          "kind": "alpha",
+          "amountRaw": "223333333333",
+          "taoSpentRaw": null,
+          "account": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5"
+        }
+      ],
+      "newsDisposition": "Published material qualifying SN8 burn in existing edition before5PM Eastern; prior stories preserved. No new allocation event, no extra social publication.",
+      "releaseStatus": "Prepared; verify READY/live in monitor receipt"
     }
   ]
 }

@@ -5,7 +5,7 @@
   "summary": "Desearch describes reconnectable network data, Affine publishes accepted training-turn artifacts, and Cascade merges miner rental safeguards. Also: REAX’s documented pauses, EveryFrame’s model catalog, Carbon’s testnet beta and developing safety reports.",
   "publishedAt": "2026-11-01T15:16:27.505978+00:00",
   "coverageStart": "2026-10-31T13:57:32.305Z",
-  "coverageEnd": "2026-11-01T18:00:12+00:00",
+  "coverageEnd": "2026-11-01T21:34:48+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [],
@@ -81,6 +81,28 @@
           ],
           "status": "developing",
           "importance": "medium"
+        },
+        {
+          "headline": "SN8 Vanta burns 223.333333333 alpha in a finalized transaction",
+          "summary": "A successful direct burn_alpha call on November 1 at 20:50:12 UTC destroyed 223.333333333 SN8 alpha (223,333,333,333 base units). Finalized block 9,413,552, extrinsic 11, event 314 and the unchanged Vanta registration confirm the transaction. This is an explicit alpha burn, separate from miner-emission withholding, fees or recycling. No buyback marker or revenue source is established by this call, so it does not verify revenue, TAO burned or a price effect.",
+          "rating": 2,
+          "ratingReason": "A qualifying supply-reduction transaction has exact finalized evidence, but this individual burn does not establish adoption or business performance.",
+          "sources": [
+            {
+              "label": "Finalized burn call, execution and subnet identity",
+              "url": "https://shizzyunchained.com/evidence/2026-11-01-sn8-burn.json"
+            },
+            {
+              "label": "Complete finalized interval evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-11-01-chain-monitor-2134.json"
+            },
+            {
+              "label": "Transaction explorer",
+              "url": "https://taostats.io/extrinsic/9413552-11"
+            }
+          ],
+          "status": "verified",
+          "importance": "informational"
         }
       ]
     },
