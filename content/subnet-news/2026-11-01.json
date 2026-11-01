@@ -1,0 +1,966 @@
+{
+  "version": 1,
+  "date": "2026-11-01",
+  "title": "Bittensor Daily News — November 1, 2026",
+  "summary": "Desearch describes reconnectable network data, Affine publishes accepted training-turn artifacts, and Cascade merges miner rental safeguards. Also: REAX’s documented pauses, EveryFrame’s model catalog, Carbon’s testnet beta and developing safety reports.",
+  "publishedAt": "2026-11-01T15:16:27.505978+00:00",
+  "coverageStart": "2026-10-31T13:57:32.305Z",
+  "coverageEnd": "2026-11-01T15:07:16.184Z",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": [
+        {
+          "headline": "SN1 Apex brief describes submission-score viewing in its CLI",
+          "summary": "The November 1 public brief attributes to the team a CLI option for viewing scores of a miner’s completed URNetwork submissions. That can help participants inspect finished evaluations. The underlying Discord message and CLI flow were not independently tested; suggestions for more difficult tasks are discussion, not an announced new competition.",
+          "rating": 2,
+          "ratingReason": "A small participation-tool improvement with source and execution limits.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/1/2026-11-01"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta reviews a possible stale-price paper-trading issue",
+          "summary": "The November 1 public brief attributes a stale-price execution complaint and planned hedging/arbitrage controls to channel participants and the team. It says the team was reviewing the report and did not confirm arbitrage. A separate digest gives a different flagged-account amount, so no loss total is published here. The underlying data and Discord originals were not verified, and no deployed fix or effect on another subnet is established. This remains a market-integrity lead requiring follow-up.",
+          "rating": 3,
+          "ratingReason": "A potentially material operational concern warrants qualified coverage while contradictory secondary details remain unresolved.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/8/2026-11-01"
+            },
+            {
+              "label": "Other dated digest",
+              "url": "https://1t1b.ai/2026-11-01/"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": [
+        {
+          "headline": "SN22 Desearch describes resumable public network-stat streaming",
+          "summary": "In its November 1 announcement, Desearch says its public network statistics stream updates once a second and can replay missed snapshots from the preceding 20 minutes using Last-Event-ID. The attached diagram illustrates a dropped connection followed by replay and resume. That is useful for dashboard recovery; reconnect behavior was not independently tested, and these statistics are distinct from the separate AI-search streaming endpoint.",
+          "rating": 3,
+          "ratingReason": "A concrete developer reliability feature with a clear recovery window and testing boundary.",
+          "sources": [
+            {
+              "label": "Original announcement",
+              "url": "https://x.com/desearch_ai/status/2116877974960320998"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": [
+        {
+          "headline": "SN24 ms.computer changes its owner hotkey",
+          "summary": "Finalized block 9409822 (2026-11-01T08:24:12+00:00) records a successful SubnetOwnerHotkeySet at extrinsic 6, event 188. The stored hotkey changed from 5ELpkVn84ubfA7cYtz8YxL3NKYBSvMEZNGzkibkmsDe6YVcL to 5ELAvsvXL9kU9CMzkFcRiqFjw3QGVgA7MrvEfcHsicv5WvWX. The owner coldkey and registration height 2538424 were unchanged immediately before and after. This is an operational hotkey change, not a verified subnet sale or owner-coldkey transfer.",
+          "rating": 2,
+          "ratingReason": "An exact finalized operational change with ownership implications bounded by before/after state.",
+          "sources": [
+            {
+              "label": "Finalized event and storage evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-11-01-sn24-hotkey.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": [
+        {
+          "headline": "SN26 Perturb wallet incident remains unresolved",
+          "summary": "Carry-forward safety watch: October 31 public coverage and an accessible screenshot attribute compromised wallets, unspecified losses and a product-announcement setback to a Perturb team message. The screenshot does not independently establish the speaker’s role, exact original date, attack cause, affected addresses or recovery. No new primary mitigation was found on the official X account. This is the same developing incident, not a new hack or an independently reconstructed chain exploit.",
+          "rating": 3,
+          "ratingReason": "Unresolved safety information is retained without turning a screenshot into execution evidence.",
+          "sources": [
+            {
+              "label": "Prior dated brief",
+              "url": "https://subnetradar.com/subnet-news/26/2026-10-31"
+            },
+            {
+              "label": "Public screenshot source",
+              "url": "https://x.com/RadoTsc/status/2116613071879716924"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": [
+        {
+          "headline": "SN33 ReadyAI clarifies where grading occurs",
+          "summary": "The dated public brief says the challenge API distributes tasks while validators perform validation and grading. It also attributes a planned reduction in conversation-task share to the move toward a Skill Store. This clarifies the stated architecture; no new Skill Store launch or deployed workload change is established.",
+          "rating": 2,
+          "ratingReason": "Useful mechanism clarification, distinct from a completed product launch.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/33/2026-11-01"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": [
+        {
+          "headline": "SN34 Yugos clarifies hosted evaluation handling",
+          "summary": "The November 1 brief says provider errors are retried, failed questions score zero without stopping a run, and the submission quota is three ZIPs per hotkey per 24 hours. It also says oversized calls are admitted despite per-question cost caps. These are attributed operational clarifications from the brief, not an independently tested security or cost guarantee.",
+          "rating": 2,
+          "ratingReason": "Practical submission rules for miners with direct-source access still limited.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/34/2026-11-01"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 35,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Bittensor",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": [
+        {
+          "headline": "SN44 Score removes three mislabeled evaluation blocks",
+          "summary": "The dated brief attributes removal of three faulty ground-truth blocks to the team: Petrol Station 9402900, PPE 9400500 and Beverage 9402000. This matters to evaluation fairness. Moving Vehicle detection to Profile 2 is only being considered for early next week, rather than already applied. Original channel messages and resulting scores were not independently checked.",
+          "rating": 2,
+          "ratingReason": "Specific evaluation corrections and a separate, still-unapproved plan.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/44/2026-11-01"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": []
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": [
+        {
+          "headline": "SN61 RedTeam denies shutdown and points to future client news",
+          "summary": "The dated brief attributes a denial of shutdown to the team and says a client-progress update and another buyback tranche are expected. These are team statements and plans; no new client revenue or buyback transaction is independently verified here.",
+          "rating": 2,
+          "ratingReason": "A relevant status clarification without treating promised commercial progress as delivered.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/61/2026-11-01"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": [
+        {
+          "headline": "SN66 FReady brief reports a chat-log bonus and revised event plans",
+          "summary": "The November 1 brief says an earlier-proof chat-log bonus is live through ZIP uploads in the submissions menu. It also says a Caltech Mathathon arrangement was cancelled after event-structure changes and that an Imperial College London hackathon is planned for November 22–26. The original messages and counterpart event confirmation remain unverified; do not treat a planned event as a completed partnership outcome.",
+          "rating": 3,
+          "ratingReason": "A participation change and cancellation deserve clear coverage, with external confirmation outstanding.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/66/2026-11-01"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": []
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": [
+        {
+          "headline": "SN81 Reliquary verification overhead prompts founder commentary",
+          "summary": "In an October 31 reply about untrusted rollout verification, Const describes a cheap initial commitment followed by a more expensive asynchronous spot check and penalties for cheating. This adds explanation to the already-covered distributed-RL report, not a measured overhead number or independently demonstrated security guarantee.",
+          "rating": 2,
+          "ratingReason": "Relevant new explanatory commentary, separated from benchmark evidence.",
+          "sources": [
+            {
+              "label": "Const reply",
+              "url": "https://x.com/const_reborn/status/2116593082456011246"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": [
+        {
+          "headline": "SN91 Cascade merges safeguards for miner-funded rentals",
+          "summary": "Late-found October 31 merged PRs 392 and 393 add rental caps, failed-boot handling, shutdown cleanup and progress/deadline guards. These address the risk of machines continuing to cost miners when useful training is not progressing. The PRs describe code that still needs rollout: worker safeguards require rebuilt images, and a measured-time gate is off by default. No deployment or reduction in actual bills was independently observed.",
+          "rating": 3,
+          "ratingReason": "Meaningful operator cost controls whose merged-code and deployment states remain separate.",
+          "sources": [
+            {
+              "label": "Merged PR392",
+              "url": "https://github.com/TensorLink-AI/cascade/pull/392"
+            },
+            {
+              "label": "Merged PR393",
+              "url": "https://github.com/TensorLink-AI/cascade/pull/393"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": [
+        {
+          "headline": "SN92 REAX documents paused competitions and demand-linked inference policy",
+          "summary": "Dated follow-up to the October 29 announcement and October 30 policy: the current official FAQ labels inference’s starting allocation 40%, Engine 20% and Generalist 30%, all measured within the miner portion of emissions. It says Generalist paused at October 30 16:30 UTC and Engine paused after its Friday slot, with no next crowning scheduled. Unpaid rewards are described as withheld/burned emissions, not qualifying explicit transaction burns. Further demand-linked adjustments remain plans; neither a fresh eTAO change nor lower realized selling pressure is established by commentary.",
+          "rating": 3,
+          "ratingReason": "Actionable miner documentation clarifies denominators, dates and the difference between stated operation and finalized event evidence.",
+          "sources": [
+            {
+              "label": "Official miner FAQ",
+              "url": "https://reax.co/competitions/faq/"
+            },
+            {
+              "label": "Original announcement",
+              "url": "https://x.com/reaxlabs/status/2115815404014567849"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Thirty Spokes",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": [
+        {
+          "headline": "SN107 Minos keeps IM2 launch and allocation plans provisional",
+          "summary": "The November 1 brief says the team has not finalized the IM1/IM2 allocation, with roughly 10% discussed as an initial share that could later change. It describes IM2 mainnet as forthcoming and intended to operate autonomously with an agent. Neither a mainnet launch nor an executed allocation change is verified.",
+          "rating": 2,
+          "ratingReason": "A useful roadmap qualification rather than a launch claim.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/107/2026-11-01"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": [
+        {
+          "headline": "SN114 SOMA discusses its next benchmark configuration",
+          "summary": "The dated brief describes medium effort, no Agent SDK system prompt, and compressor handling for subagent and side calls in the planned Claude Code and Haiku benchmark round. Cache-write accounting is still described as likely, and the backend was not expected in SOMA-benchmark before November 3. These are proposed settings and timing, not measured new performance results.",
+          "rating": 2,
+          "ratingReason": "Specific benchmark preparation with uncertain settings and release timing retained.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/114/2026-11-01"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": [
+        {
+          "headline": "SN116 Carbon opens Control Room beta practice challenges",
+          "summary": "Late-found October 30 announcement: Control Room beta invites practice on physics-AI challenges. The inspected mining documentation identifies testnet 567, unpaid participation and no carry-over of records to mainnet. It lists 32GB RAM and four CPUs, with GPU optional. The post’s next-day testnet-weights plan is not proof of execution, and mainnet activation was not verified. The full 81-second demonstration remains a media-review gap.",
+          "rating": 3,
+          "ratingReason": "Useful participation information with testnet and unpaid status central.",
+          "sources": [
+            {
+              "label": "Original announcement",
+              "url": "https://x.com/carbonphysicsai/status/2116178176435265617"
+            },
+            {
+              "label": "Mining documentation",
+              "url": "https://github.com/carbonphysicsai/Carbon/blob/main/docs/MINING.md"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": [
+        {
+          "headline": "SN117 EveryFrame lists Pika H3 Flex in its video catalog",
+          "summary": "The October 31 announcement adds Pika H3 Flex to the public video selector. The inspected catalog offered 5–15-second generation, picture and sound, and displayed 29 credits at five seconds during review. This is a visible catalog entry, not a completed paid render, quality benchmark or customer count. It is distinct from the earlier eleven-tool Director announcement. The full 27-second demonstration and its audio were not reviewed.",
+          "rating": 3,
+          "ratingReason": "A specific available model choice, with pricing time and untested execution made explicit.",
+          "sources": [
+            {
+              "label": "Original announcement",
+              "url": "https://x.com/xeveryframe/status/2116632703911244099"
+            },
+            {
+              "label": "Public model catalog",
+              "url": "https://app.everyframe.studio/"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": [
+        {
+          "headline": "SN120 Affine publishes an accepted training-turn artifact after evaluation changes",
+          "summary": "Late-found October 31 evidence: the official turn 354 artifact records a green decision, candidate_promoted=true, a sample size of 179 and z=3.88046 against z_min=1, with batch and file references. This is the team-operated evaluation record, not an independent replay of the claimed model gain. Today’s public brief additionally attributes faster epochs and planned training-script disclosure to the team; those performance figures are not reproduced here.",
+          "rating": 3,
+          "ratingReason": "Inspectable research artifacts make the reported decision auditable without equating it with independent validation.",
+          "sources": [
+            {
+              "label": "Official turn artifact",
+              "url": "https://affine.io/k1/turns/354/turn.json"
+            },
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/120/2026-11-01"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Astrid",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "128 current project profiles and dated public briefs; 138 repository paths and indexed public team posts",
+      "Direct signed-in owner bookmarks/posts/reposts/replies, Const and Tensia sources; dated monitor receipts and unresolved queue",
+      "Complete finalized allocation/burn and lifecycle review, all128 owner holdings, both public YouTube Videos/Live tabs"
+    ],
+    "gaps": [
+      "Grok daily discovery, top-five attention and final omission requests hit the signed-in usage limit. Earlier dated monitor discovery/omissions are retained, but no current mention ranking is claimed.",
+      "All 128 project profiles and dated brief URLs and 138 repository paths were collected; many briefs contain page shells. Indexed public X discovery and selected direct originals do not establish exhaustive access to every team timeline or private Discord.",
+      "Discord-original access remains unavailable for several attributed reports. Vanta paper-trading pricing, Perturb wallet compromise and other unresolved safety claims remain developing; cause, losses and mitigations are not independently reconstructed.",
+      "Selected media and primary artifacts were reviewed as recorded in the audit. Carbon and EveryFrame full demonstration videos and the long Yanez business video remain incompletely reviewed; no paid product tests, customer-revenue audit or independent benchmark replay was performed.",
+      "Authenticated TaoStats cross-check and credit usage are blocked because no configured local key is available. Shared cached market data and finalized archive collection remain separate evidence sources."
+    ]
+  }
+}
