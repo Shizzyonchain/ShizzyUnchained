@@ -9,7 +9,7 @@ export function volumeAlerts(rows: SignalRow[], period: "1h" | "24h", limit = 3)
 }
 export function sectorHeat(rows: SignalRow[], sectors: {id:string;name:string}[], tags: {netuid:number;sectors:string[]}[], period: "1h" | "24h") {
  const lookup = new Map(rows.map(row => [row.netuid,row]));
- return sectors.flatMap(sector => { const members = tags.filter(row => row.sectors.includes(sector.id)); const values = members.map(member => numberOrNull(lookup.get(member.netuid)?.[period === "1h" ? "change_1h" : "change_24h"])).filter((n): n is number => n !== null).sort((a,b)=>a-b); if (values.length < 2 || values.length < members.length*.8) return []; const mid=Math.floor(values.length/2); return [{...sector, value: values.length%2 ? values[mid] : (values[mid-1]+values[mid])/2, count:values.length,total:members.length}]; }).sort((a,b)=>b.value-a.value);
+ return sectors.flatMap(sector => { const members = tags.filter(row => row.sectors.includes(sector.id)); const values = members.map(member => numberOrNull(lookup.get(member.netuid)?.[period === "1h" ? "change_1h" : "change_24h"])).filter((n): n is number => n !== null); if (values.length < 2 || values.length < members.length*.8) return []; return [{...sector, value: values.reduce((sum,value)=>sum+value,0)/values.length, count:values.length,total:members.length}]; }).sort((a,b)=>b.value-a.value);
 }
 export function buyingTotals(data: unknown, now = Date.now()) {
  if (!Array.isArray(data)) throw new Error("Missing pool aggregates");
