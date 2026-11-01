@@ -1,4 +1,4 @@
-export type SignalRow = { netuid: number; name?: string; time?: string; change_1h?: string; change_24h?: string; volume_1h_tao?: string; volume_24h_tao?: string; volume_acceleration_1h?: string; volume_acceleration_24h?: string };
+export type SignalRow = { netuid: number; name?: string; time?: string; price_tao?: string | number; price_1h_tao?: string | number; price_24h_tao?: string | number; time_1h?: string; time_24h?: string; change_1h?: string; change_24h?: string; volume_1h_tao?: string; volume_24h_tao?: string; volume_acceleration_1h?: string; volume_acceleration_24h?: string };
 export const numberOrNull = (value: unknown): number | null => value === null || value === undefined || value === "" || typeof value === "boolean" || !Number.isFinite(Number(value)) ? null : Number(value);
 export function freshSignalRows(rows: SignalRow[], now = Date.now()) {
  const seen = new Set<number>();

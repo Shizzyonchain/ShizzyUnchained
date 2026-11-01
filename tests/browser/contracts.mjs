@@ -5,6 +5,7 @@ const yesterday = Math.floor(Date.now() / 86400000) * 86400000 - 86400000;
 export const markets = Array.from({ length: 128 }, (_, index) => ({
   netuid: index + 1, name: index === 50 ? "Smoke Lium" : `Smoke Subnet ${index + 1}`, symbol: "α", time: stamp,
   block_number: 9000000, price_tao: "0.1", price_10m_tao: "0.1", price_1h_tao: "0.1", price_24h_tao: "0.1", price_7d_tao: "0.1",
+  time_1h: new Date(Date.parse(stamp) - 3600000).toISOString(), time_24h: new Date(Date.parse(stamp) - 86400000).toISOString(),
   tao_reserve: "1000", alpha_reserve: "10000", circulating_alpha: "110000", alpha_out: "100000", market_cap_tao: "11000",
   volume_24h_tao: "10", volume_1h_tao: "1", volume_acceleration_1h: "1", volume_acceleration_24h: "1",
   change_10m: "0", change_1h: "0", change_24h: "0", change_7d: "0", liquidity_change_1h: "0", liquidity_change_24h: "0",

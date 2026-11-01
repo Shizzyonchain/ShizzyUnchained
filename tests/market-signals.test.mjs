@@ -1,3 +1,4 @@
+import {sectorPriceRows} from "../app/lib/currency-returns.ts";
 import {test} from "node:test";
 import assert from "node:assert/strict";
 import {buyingTotals,requireFreshTrading,sectorHeat,volumeAlerts,freshSignalRows} from "../app/lib/market-signals.ts";
@@ -9,4 +10,23 @@ test("alerts require a real 2x comparison and 10 TAO, with stale and duplicate r
 test("expired cached trading totals and future snapshots are rejected at serving time",()=>{
  const snapshot={buy:12,sell:8,asOf:new Date(now-900000).toISOString()};assert.equal(requireFreshTrading(snapshot,now),snapshot);
  assert.throws(()=>requireFreshTrading(snapshot,now+1));assert.throws(()=>requireFreshTrading({...snapshot,asOf:new Date(now+60001).toISOString()},now));assert.throws(()=>requireFreshTrading({...snapshot,asOf:"invalid"},now));
+});
+
+test("sector returns use current price pairs, never the older cached percentage fields",()=>{
+ const rows=sectorPriceRows([{netuid:117,time,price_tao:.00525531,price_1h_tao:.005308603,time_1h:new Date(now-3600000).toISOString(),change_1h:'-1.483120888866619'}]);
+ assert.ok(Math.abs(Number(rows[0].change_1h)-(-1.0038987658334997))<1e-9);
+});
+test("fresh current prices cannot disguise missing or stale sector comparison anchors",()=>{
+ for(const time_1h of [undefined,'invalid',new Date(now-7200000).toISOString(),new Date(now-3000000).toISOString()]){
+  const [row]=sectorPriceRows([{netuid:1,time,price_tao:'2',price_1h_tao:'1',time_1h,change_1h:'100'}]);
+  assert.equal(row.change_1h,undefined);
+ }
+});
+
+test("24-hour sector returns share the price calculation and exclude insufficient valid coverage",()=>{
+ const sectors=[{id:'compute',name:'Compute'}],tags=[1,2,3].map(netuid=>({netuid,sectors:['compute']}));
+ const rows=sectorPriceRows(tags.map(({netuid})=>({netuid,time,price_tao:'1.1',price_24h_tao:'1',time_24h:new Date(now-86400000).toISOString(),change_24h:'-80'})));
+ assert.ok(Math.abs(sectorHeat(rows,sectors,tags,'24h')[0].value-10)<1e-9);
+ const missing=sectorPriceRows(rows.map(row=>({...row,time_24h:row.netuid===1?'':row.time_24h})));
+ assert.deepEqual(sectorHeat(missing,sectors,tags,'24h'),[]);
 });

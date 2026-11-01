@@ -38,3 +38,9 @@ export function currencyReturns<T extends ReturnRow>(row: T, currency: "usd" | "
   }
   return result;
 }
+// The fast backend refresh overlays current prices on older precomputed change
+// fields. Derive sector returns from the same bounded price pairs as the table.
+// Missing anchors must be invalid, not the legacy "trust change_*" fallback.
+export function sectorPriceRows<T extends { time?: string; price_tao?: string | number; price_1h_tao?: string | number; price_24h_tao?: string | number; time_1h?: string; time_24h?: string }>(rows: T[]) {
+ return rows.map(row => currencyReturns({ ...row, price_tao: String(row.price_tao ?? ""), price_1h_tao: String(row.price_1h_tao ?? ""), price_24h_tao: String(row.price_24h_tao ?? ""), time_1h: row.time_1h ?? "", time_24h: row.time_24h ?? "" }, "tao", []));
+}
