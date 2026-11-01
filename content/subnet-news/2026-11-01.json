@@ -5,7 +5,7 @@
   "summary": "Desearch describes reconnectable network data, Affine publishes accepted training-turn artifacts, and Cascade merges miner rental safeguards. Also: REAX’s documented pauses, EveryFrame’s model catalog, Carbon’s testnet beta and developing safety reports.",
   "publishedAt": "2026-11-01T15:16:27.505978+00:00",
   "coverageStart": "2026-10-31T13:57:32.305Z",
-  "coverageEnd": "2026-11-01T15:07:16.184Z",
+  "coverageEnd": "2026-11-01T18:00:12+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [],
@@ -744,7 +744,26 @@
     {
       "netuid": 105,
       "name": "Beam",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN105 Beam reports a one-terabyte transfer in 2 minutes 42 seconds",
+          "summary": "In its November 1 benchmark announcement, Beam reports transferring 1 TB in 2 minutes 42 seconds, describing a 20% speed improvement and 2.5 times as many security and integrity checks compared with the previous month. The attached graphic repeats those figures, and a team reply supplies audit ID 7ef65624-e81e-501d-9547-f051e4078a26. Faster large-file movement matters for distributing models and datasets, but the public audit and miner endpoints returned access errors during this review. The run, test conditions and comparison therefore remain team-reported rather than independently reproduced.",
+          "rating": 3,
+          "ratingReason": "A specific infrastructure-performance claim with an audit reference, while independent access and reproducibility remain unresolved.",
+          "sources": [
+            {
+              "label": "November 1 team benchmark",
+              "url": "https://x.com/b1m_ai/status/2116918126319399231"
+            },
+            {
+              "label": "Team audit reference",
+              "url": "https://x.com/b1m_ai/status/2116918138562548079"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 106,
@@ -877,7 +896,26 @@
     {
       "netuid": 118,
       "name": "Ditto",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN118 Ditto shifts eight allocation points from miners to validators",
+          "summary": "A successful finalized transaction on November 1 at 17:41:48 UTC changed Ditto's alpha-emission split from approximately 18% owner / 41% validators / 41% miners to 18% / 49% / 33%. Block 9,412,610, extrinsic 17, and exact storage immediately before and after confirm execution under the same subnet registration and owner. The validator bucket gains eight percentage points while the miner bucket loses eight; Root is paid its live baseline first, capped by the validator allocation. This is a redistribution of subnet alpha emissions, not an increase in Ditto's network emission share or a transaction burn. Individual staking returns depend on stake, performance and take, and historical yield windows can lag.",
+          "rating": 3,
+          "ratingReason": "A verified payout-allocation change that directly affects miners and validators; it does not establish product adoption or a guaranteed yield.",
+          "sources": [
+            {
+              "label": "Finalized event and before/after storage",
+              "url": "https://shizzyunchained.com/evidence/2026-11-01-ditto-emissions.json"
+            },
+            {
+              "label": "Successful transaction",
+              "url": "https://taostats.io/extrinsic/9412610-17"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 119,

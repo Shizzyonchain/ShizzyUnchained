@@ -2,7 +2,7 @@
   "version": 1,
   "date": "2026-11-01",
   "coverageStart": "2026-10-31T13:57:32.305Z",
-  "coverageEnd": "2026-11-01T15:07:16.184Z",
+  "coverageEnd": "2026-11-01T18:00:12+00:00",
   "assembledAt": "2026-11-01T15:16:27.505978+00:00",
   "dailyWorkflowComplete": false,
   "sourceMethods": [
@@ -732,31 +732,33 @@
   "chainReviews": {
     "etao": {
       "status": "DONE",
-      "checkedAt": "2026-11-01T15:16:27.505978+00:00",
+      "checkedAt": "2026-11-01T18:03:51.877343+00:00",
       "fromBlock": 9404288,
-      "toBlock": 9411829,
-      "hash": "0xa31d48761cc31cb2471724780ab209f4164fc1e92fe82c763daefc64e471c2ce",
-      "throughTime": "2026-11-01T15:05:36+00:00",
-      "evidence": "/evidence/2026-11-01-daily-chain.json",
+      "toBlock": 9412702,
+      "hash": "0x256092b5807ec55270acd0809baa470ed13854f4c724239c363bf8e0c9b20ec4",
+      "throughTime": "2026-11-01T18:00:12+00:00",
+      "evidence": "public/evidence/2026-11-01-monitor-chain-1800.json",
       "gaps": [],
       "archiveUpdated": true,
-      "newsDisposition": "No new allocation events or individual qualifying explicit burns. All prior history preserved; small burns remain in evidence only.",
-      "eventCount": 0,
-      "liveVerifiedAt": "2026-11-01T15:29:39.176040+00:00"
+      "newsDisposition": "SN118 allocation change added to existing edition; no new qualifying transaction burns. Prior permanent evidence and contiguous review receipts retained.",
+      "eventCount": 1,
+      "priorEvidence": "public/evidence/2026-11-01-daily-chain.json",
+      "supplementEvidence": "public/evidence/2026-11-01-monitor-chain-1800.json"
     },
     "burns": {
       "status": "DONE",
-      "checkedAt": "2026-11-01T15:16:27.505978+00:00",
+      "checkedAt": "2026-11-01T18:03:51.877343+00:00",
       "fromBlock": 9404288,
-      "toBlock": 9411829,
-      "hash": "0xa31d48761cc31cb2471724780ab209f4164fc1e92fe82c763daefc64e471c2ce",
-      "throughTime": "2026-11-01T15:05:36+00:00",
-      "evidence": "/evidence/2026-11-01-daily-chain.json",
+      "toBlock": 9412702,
+      "hash": "0x256092b5807ec55270acd0809baa470ed13854f4c724239c363bf8e0c9b20ec4",
+      "throughTime": "2026-11-01T18:00:12+00:00",
+      "evidence": "public/evidence/2026-11-01-monitor-chain-1800.json",
       "gaps": [],
       "archiveUpdated": true,
-      "newsDisposition": "No new allocation events or individual qualifying explicit burns. All prior history preserved; small burns remain in evidence only.",
+      "newsDisposition": "SN118 allocation change added to existing edition; no new qualifying transaction burns. Prior permanent evidence and contiguous review receipts retained.",
       "eventCount": 0,
-      "liveVerifiedAt": "2026-11-01T15:29:39.176040+00:00"
+      "priorEvidence": "public/evidence/2026-11-01-daily-chain.json",
+      "supplementEvidence": "public/evidence/2026-11-01-monitor-chain-1800.json"
     }
   },
   "ownerHoldings": {
@@ -3719,7 +3721,7 @@
     {
       "netuid": 105,
       "name": "Beam",
-      "publishedItems": 0,
+      "publishedItems": 1,
       "profileReview": {
         "source": "https://subnetradar.com/subnet/105",
         "status": "READ"
@@ -3735,8 +3737,8 @@
         "status": "PARTIAL",
         "method": "Indexed public feed and selected direct sources; not every account timeline"
       },
-      "outcome": "excluded",
-      "reason": "No supported new material story selected; unresolved allegations and routine code/social chatter retained without inference."
+      "outcome": "covered",
+      "reason": "November1 monitor supplement: exact finalized allocation evidence forSN118; attributed team benchmark with unavailable audit access forSN105."
     },
     {
       "netuid": 106,
@@ -4023,7 +4025,7 @@
     {
       "netuid": 118,
       "name": "Ditto",
-      "publishedItems": 0,
+      "publishedItems": 1,
       "profileReview": {
         "source": "https://subnetradar.com/subnet/118",
         "status": "READ"
@@ -4041,8 +4043,8 @@
         "status": "PARTIAL",
         "method": "Indexed public feed and selected direct sources; not every account timeline"
       },
-      "outcome": "excluded",
-      "reason": "No supported new material story selected; unresolved allegations and routine code/social chatter retained without inference."
+      "outcome": "covered",
+      "reason": "November1 monitor supplement: exact finalized allocation evidence forSN118; attributed team benchmark with unavailable audit access forSN105."
     },
     {
       "netuid": 119,
@@ -4602,12 +4604,56 @@
       "checkedAt": "2026-11-01T15:18:44.210772+00:00",
       "outcome": "excluded",
       "reason": "Predates daily coverage; overlap reviewed for substantive follow-ups."
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2116948988305801719",
+      "announcementDate": "2026-11-01T17:42:24.479000+00:00",
+      "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+      "outcome": "covered",
+      "headline": "SN118 Ditto shifts eight allocation points from miners to validators",
+      "verification": "Finalized event9412610-17 and exact adjacent storage verified; detector is discovery."
+    },
+    {
+      "url": "https://x.com/b1m_ai/status/2116918126319399231",
+      "announcementDate": "2026-11-01T15:39:46.408Z",
+      "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+      "outcome": "covered",
+      "headline": "SN105 Beam reports a one-terabyte transfer in 2 minutes 42 seconds",
+      "verification": "Original and attached image reviewed; audit endpoint403, team claim only."
+    },
+    {
+      "url": "https://x.com/inference_labs/status/2116938331389133246",
+      "announcementDate": "2026-11-01T17:00:03.672Z",
+      "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+      "outcome": "excluded",
+      "reason": "Primary thread and airport illustration describe an existing use case; no new release, named deployment or client result."
+    },
+    {
+      "url": "https://x.com/desearch_ai/status/2116924055035027817",
+      "announcementDate": "2026-11-01T16:03:19.924Z",
+      "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+      "outcome": "pending",
+      "reason": "Complaint-monitoring script illustration reviewed; LinkedIn implementation source not recovered, retain for next full daily report."
+    },
+    {
+      "url": "https://x.com/TPN_Labs/status/2116931948656394658",
+      "announcementDate": "2026-11-01T16:34:41.910Z",
+      "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+      "outcome": "pending",
+      "reason": "Podcast lead found via public feed; full media not reviewed, retain for next full daily report."
+    },
+    {
+      "url": "https://x.com/Jason/status/2116265695143199088",
+      "announcementDate": "2026-10-30",
+      "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+      "outcome": "excluded",
+      "reason": "Late-saved public investment opinion, not a new subnet capability or independently substantiated adoption."
     }
   ],
   "sourceCorrection": "Direct TensiaBot reply2116486496261636353 confirms it discussed REAX lock9403214; earlier monitor timeline-only denial was incorrect. No change to independent permanent chain evidence or deposit count.",
   "counts": {
     "subnets": 128,
-    "updates": 18,
+    "updates": 20,
     "ecosystem": 0
   },
   "publication": {
@@ -4638,5 +4684,66 @@
       "live": "PASS: dated/latest edition, both archives, five affected subnet histories, video library, exact owner snapshot and permanent evidence"
     },
     "limitation": "Publication verified; dailyWorkflowComplete remains false because current Grok discovery/top-five/omission checks and authenticated TaoStats cross-check were blocked. Other source/media gaps are retained in accessGaps and public coverage notes."
-  }
+  },
+  "monitorSupplements": [
+    {
+      "checkedAt": "2026-11-01T18:03:51.877343+00:00",
+      "coverageEnd": "2026-11-01T18:00:12+00:00",
+      "receipt": "../news-monitor-2026-11-01/1258-receipt.json",
+      "added": [
+        "SN118 Ditto allocation execution",
+        "SN105 Beam self-reported transfer benchmark"
+      ],
+      "unchangedRoundup": "2116929258945663274",
+      "noAutomaticQuote": "No newly cleared four-star story",
+      "sourceDispositions": [
+        {
+          "url": "https://x.com/TensiaBot/status/2116948988305801719",
+          "announcementDate": "2026-11-01T17:42:24Z",
+          "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+          "outcome": "covered",
+          "headline": "SN118 Ditto shifts eight allocation points from miners to validators",
+          "verification": "Finalized event9412610-17 and exact adjacent storage verified; detector is discovery."
+        },
+        {
+          "url": "https://x.com/b1m_ai/status/2116918126319399231",
+          "announcementDate": "2026-11-01T15:39:46.408Z",
+          "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+          "outcome": "covered",
+          "headline": "SN105 Beam reports a one-terabyte transfer in 2 minutes 42 seconds",
+          "verification": "Original and attached image reviewed; audit endpoint403, team claim only."
+        },
+        {
+          "url": "https://x.com/inference_labs/status/2116938331389133246",
+          "announcementDate": "2026-11-01T17:00:03.672Z",
+          "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+          "outcome": "excluded",
+          "reason": "Primary thread and airport illustration describe an existing use case; no new release, named deployment or client result."
+        },
+        {
+          "url": "https://x.com/desearch_ai/status/2116924055035027817",
+          "announcementDate": "2026-11-01T16:03:19.924Z",
+          "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+          "outcome": "pending",
+          "reason": "Complaint-monitoring script illustration reviewed; LinkedIn implementation source not recovered, retain for next full daily report."
+        },
+        {
+          "url": "https://x.com/TPN_Labs/status/2116931948656394658",
+          "announcementDate": "2026-11-01T16:34:41.910Z",
+          "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+          "outcome": "pending",
+          "reason": "Podcast lead found via public feed; full media not reviewed, retain for next full daily report."
+        },
+        {
+          "url": "https://x.com/Jason/status/2116265695143199088",
+          "announcementDate": "2026-10-30",
+          "checkedAt": "2026-11-01T18:05:26.831817+00:00",
+          "outcome": "excluded",
+          "reason": "Late-saved public investment opinion, not a new subnet capability or independently substantiated adoption."
+        }
+      ],
+      "grok": "Signed-in discovery and omissions recovered at13:00EST; conversation5dae1916-b243-405d-8924-53bb7e4e963d. This does not fill morning top-five ranking gap.",
+      "releaseStatus": "Prepared; live verification retained in monitor receipt after READY."
+    }
+  ]
 }
