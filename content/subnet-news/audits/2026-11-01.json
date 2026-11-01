@@ -741,7 +741,8 @@
       "gaps": [],
       "archiveUpdated": true,
       "newsDisposition": "No new allocation events or individual qualifying explicit burns. All prior history preserved; small burns remain in evidence only.",
-      "eventCount": 0
+      "eventCount": 0,
+      "liveVerifiedAt": "2026-11-01T15:29:39.176040+00:00"
     },
     "burns": {
       "status": "DONE",
@@ -754,7 +755,8 @@
       "gaps": [],
       "archiveUpdated": true,
       "newsDisposition": "No new allocation events or individual qualifying explicit burns. All prior history preserved; small burns remain in evidence only.",
-      "eventCount": 0
+      "eventCount": 0,
+      "liveVerifiedAt": "2026-11-01T15:29:39.176040+00:00"
     }
   },
   "ownerHoldings": {
@@ -763,7 +765,8 @@
     "hash": "0x2e05d9fae5320a8200506df40a8e3dd459a5623ce9966e69834b3ad02423160f",
     "asOf": "2026-11-01T15:05:48+00:00",
     "evidence": "/evidence/owner-holdings-9411830.json",
-    "errors": []
+    "errors": [],
+    "liveVerifiedAt": "2026-11-01T15:29:39.176040+00:00"
   },
   "taostatsReview": {
     "status": "BLOCKED",
@@ -4608,7 +4611,32 @@
     "ecosystem": 0
   },
   "publication": {
-    "status": "PRE_PUBLICATION_VALIDATION",
-    "roundup": "NOT_YET_POSTED"
+    "status": "READY_AND_LIVE_VERIFIED_WITH_DISCLOSED_RESEARCH_GAPS",
+    "commit": "84be1c0a6954108dac7f46ce3e7b608f74b0292a",
+    "deployment": "dpl_B1zB4K1cuFPxREE6p5txPEhJdj9G",
+    "liveChecks": "research-nov01/live-checks.json",
+    "ownerPanel": {
+      "netuid": 92,
+      "alpha": "2482.170032969",
+      "lockedAlpha": "228.439627978",
+      "unstakableAlpha": "2253.730404991",
+      "freeTao": "5.072693904",
+      "block": 9411830,
+      "evidence": "research-nov01/owner-live-full.txt"
+    },
+    "roundup": {
+      "status": "PUBLIC_VERIFIED",
+      "url": "https://x.com/ShizzyUnchained/status/2116915425623654503",
+      "publishedAt": "2026-11-01T15:29:02.512000+00:00",
+      "exactCopy": "SN24 changed its owner hotkey. The owner coldkey stayed the same. 🗿\n\nThat distinction matters when people start calling every wallet change a subnet sale. Today's report includes the finalized evidence.\n\nAlso worth your time:\n• Desearch's reconnectable data stream\n• Affine's accepted training-turn artifact\n• Cascade's merged rental safeguards, with deployment still unverified\n• REAX's competition pauses and EveryFrame's expanded model catalog\n\n18 updates, plus refreshed owner balances and the latest eTAO and burn reviews.\n\nhttps://shizzyunchained.com/subnet-news/2026-11-01",
+      "screenshot": "research-nov01/roundup-public.png"
+    },
+    "completedAt": "2026-11-01T15:29:39.176040+00:00",
+    "validation": {
+      "releaseGate": "PASS: UTF-8, production dependency audit, lint (one existing warning), JS suite, isolated build and 52 desktop/phone browser checks",
+      "productionBuild": "PASS",
+      "live": "PASS: dated/latest edition, both archives, five affected subnet histories, video library, exact owner snapshot and permanent evidence"
+    },
+    "limitation": "Publication verified; dailyWorkflowComplete remains false because current Grok discovery/top-five/omission checks and authenticated TaoStats cross-check were blocked. Other source/media gaps are retained in accessGaps and public coverage notes."
   }
 }
