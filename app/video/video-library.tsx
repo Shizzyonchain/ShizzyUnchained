@@ -15,6 +15,7 @@ type ChannelVideo = {
 };
 
 const channelVideos: ChannelVideo[] = [
+  { id: "3ADXtheo1YE", title: "TAO Ready to Fly? My November Outlook | Bittensor & Subnet Update", meta: "22:12 · Public video · November 2, 2026" },
   { id: "KJBm_SVjIeY", title: "Bittensor Bloodbath! My Next Move in the 10 to 100 TAO Challenge", meta: "22:32 · Public video · October 30, 2026" },
   { id: "RnnWezJOuE8", title: "Bittensor Gets Expressive and Conviction Runs Deep with TAO Templar", meta: "1:17:21 · Livestream replay · October 29, 2026" },
   { id: "bVrdbn5CsHc", title: "Bittensor’s Make or Break Week? TAO Price, Lium & Subnet Updates", meta: "22:21 · Public video · October 26, 2026" },
