@@ -46,6 +46,21 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
 });
 const search = (page: Page) => page.getByRole("searchbox", { name: "Search subnets by name or subnet number" });
 
+test('split comparison preserves reviewed provenance, swaps choices and handles same subnet on mobile', async ({ page }) => {
+  await page.goto('/subnet-news/split-compare');
+  await expect(page.getByRole('heading', { name: 'Where do the emissions go?' })).toBeVisible();
+  const a = page.getByRole('combobox', { name: 'Subnet A', exact: true });
+  const b = page.getByRole('combobox', { name: 'Subnet B', exact: true });
+  await expect(a).toHaveValue('92'); await expect(b).toHaveValue('118');
+  await page.getByRole('button', { name: 'Swap A / B' }).click();
+  await expect(a).toHaveValue('118'); await expect(b).toHaveValue('92');
+  await b.selectOption('118');
+  await expect(page.getByRole('status')).toContainText('Same subnet selected');
+  await expect(page.locator('tbody tr').first()).toContainText('0.00 pp');
+  await expect(page.getByText('Reviewed snapshot, not a live feed', { exact: true })).toBeVisible();
+  await noOverflow(page);
+});
+
 test('TAO seasonality filters full months and reveals underlying years without mobile overflow', async ({ page }) => {
   await page.goto('/subnet-news/seasonality');
   await expect(page.getByRole('heading', { name: 'Does the month matter?' })).toBeVisible();
