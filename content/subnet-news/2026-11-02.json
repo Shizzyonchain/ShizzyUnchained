@@ -1,0 +1,1053 @@
+{
+  "version": 1,
+  "date": "2026-11-02",
+  "title": "Bittensor Daily News — November 2, 2026",
+  "summary": "TPN introduces Gratis for running AI locally, Desearch opens a txtai search adapter, and ChronoLLM fixes tokenizer-dependent duplicate comparisons. Also: Lium rental checks, Affine’s public baseline, EveryFrame provider controls and qualified miner-operation updates.",
+  "publishedAt": "2026-11-02T15:23:32.520115+00:00",
+  "coverageStart": "2026-11-01T21:34:48+00:00",
+  "coverageEnd": "2026-11-02T15:02:59.761Z",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta burns 139.158500356 alpha in a finalized transaction",
+          "summary": "Carried forward from the overnight archive: on November 2 at 04:27:48 UTC, a successful direct burn_alpha transaction destroyed 139.158500356 SN8 alpha. Finalized block 9,415,837, extrinsic 13 and event 168 identify it under Vanta’s unchanged registration. It has no matching buyback marker. This qualifies individually above 100 alpha and is separate from emission withholding, fees and recycling; it does not establish revenue, TAO burned, purchase funding or a price effect.",
+          "rating": 2,
+          "ratingReason": "Exact qualifying native-token burn evidence, with business and price inferences excluded.",
+          "sources": [
+            {
+              "label": "Finalized call, execution and registration evidence",
+              "url": "https://shizzyunchained.com/evidence/2026-11-02-sn8-burn-0427.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": [
+        {
+          "headline": "SN11 TrajectoryRL brief reports integrity bans and a coming benchmark revision",
+          "summary": "The November 2 public brief attributes an integrity review, 10 banned owner coldkeys and 45 removed pending submissions to the team after verifier-specific hidden test details appeared in packs. It describes SPEC28 for epoch 4650 and a redesigned release expected in the coming week. This matters to submission fairness, but Discord originals, counts and activation were not independently verified. The planned benchmark change is not treated as completed execution.",
+          "rating": 3,
+          "ratingReason": "Potentially material competition integrity information merits qualified coverage; ordinary benchmark plans do not raise the rating.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/11/2026-11-02"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": [
+        {
+          "headline": "SN15 ORO brief says outage-hit race failures were discarded",
+          "summary": "The November 2 brief says an OpenRouter outage blocked key creation, leading ORO to pause validators taking new work. It attributes recovery, discarding incident failures and retaining all agents in the race to the team. This is relevant to participants whose results depended on an external provider. The Discord original and individual results were not independently checked.",
+          "rating": 3,
+          "ratingReason": "An operational fairness response with attribution and verification limits retained.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/15/2026-11-02"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": [
+        {
+          "headline": "SN22 Desearch opens a search adapter for txtai pipelines and agents",
+          "summary": "The November 2 announcement links an MIT-licensed Python adapter bringing Desearch results into txtai pipelines and agent tools. The reviewed repository documents web, AI, links and public-social modes, returning title, URL and snippet fields. This reduces integration work for developers already using txtai. It requires a Desearch API key; web mode fetches its first page without automatic pagination, and no billable live search was run.",
+          "rating": 3,
+          "ratingReason": "A usable developer integration with inspectable source and clear API requirements; not evidence of new adoption or model quality.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/desearch_ai/status/2117240388289441940"
+            },
+            {
+              "label": "Public adapter repository",
+              "url": "https://github.com/Desearch-ai/desearch-txtai"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": [
+        {
+          "headline": "SN25 URNetwork restricts the extender role to a provider’s direct slot",
+          "summary": "The November 2 merged change makes only a provider run’s direct slot request the extender role, preventing proxy slots on the same host from competing for that role’s key. The patch includes direct/proxy-slot tests. This is a narrow operator reliability fix; the test source was inspected, but tests and live network behavior were not independently replayed.",
+          "rating": 2,
+          "ratingReason": "A bounded operator fix with inspectable tests, rather than a new network launch.",
+          "sources": [
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/urfoundation/sn/commit/8b9b910e039f46c0daf52ad461afc5081e4046e5"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Bittensor",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": [
+        {
+          "headline": "SN38 ChronoLLM makes its duplicate comparison tokenizer-independent",
+          "summary": "Merged November 2 code compares shared token identities rather than assuming two tokenizers use matching vocabulary positions. It also tracks real probe lengths so padded ends do not supply comparison logits. That addresses misleading similarity judgments when evaluating different tokenizers. The source and a later validator-image update are visible; live validator behavior and false-positive rates were not independently measured.",
+          "rating": 3,
+          "ratingReason": "A meaningful evaluation-fairness fix, bounded to reviewed code rather than a claimed production benchmark.",
+          "sources": [
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/chronollm/sn38/commit/936385f58f3c2f9cd469c637f25c28992cdfbf80"
+            },
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/chronollm/sn38/commit/7b8d4f35e4fa638ce9aa036663c7853cd2fa39c1"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": [
+        {
+          "headline": "SN44 Score announces Room Dirtiness evaluation and reviews faulty labels",
+          "summary": "The November 2 official post says Room Dirtiness evaluation is live, covering spills, litter and bins; its accuracy figure is a team-reported result, not an independently reproduced benchmark. Separately, the dated brief attributes removal of disputed ground-truth blocks across Room Dirtiness, Beverage, Petrol Station and Vehicle to the team. This adds a practical vision task while highlighting annotation quality as an ongoing constraint. The Discord decisions were not independently checked.",
+          "rating": 3,
+          "ratingReason": "A specific evaluation capability and fairness follow-up, without turning ordinary competition metrics into independent research proof.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/webuildscore/status/2117236466900152440"
+            },
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/44/2026-11-02"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": [
+        {
+          "headline": "SN51 Lium adds rental GPU-count checks and disk-pressure diagnostics",
+          "summary": "November 2 merged code makes a rented node score zero when its GPU kernel lists fewer GPUs than reported, while keeping the pod running. A separate protocol 2.1.0 change reads host disk pressure before validator containers and adds self_rent fields. These help distinguish usable rental hardware from misleading or pressured hosts. Disk-pressure enforcement remains disabled behind a flag, as does the separate new-volume loopback feature; no fleet-wide rollout or outage recovery is established.",
+          "rating": 3,
+          "ratingReason": "Useful rental-integrity and observability changes with default-off enforcement and deployment limits preserved.",
+          "sources": [
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/Datura-ai/lium-io/commit/c72c00a165c331f8092b9e0e2e6ead86a7c6a39d"
+            },
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/Datura-ai/lium-io/commit/d106e26dab26f9154e5509d3aae5319fedcb803a"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": [
+        {
+          "headline": "SN64 Chutes highlights Kimi K2.7 Code availability",
+          "summary": "Chutes’s November 2 announcement points developers to moonshotai/Kimi-K2.7-Code through its OpenAI-compatible endpoint. The public model-list API independently returns that exact model ID; its record predates this announcement, so this is not presented as a deployment first occurring today. The attached image also says it is available. This is a practical coding-model option, not an independently measured efficiency gain; no billable inference or token-savings benchmark was run.",
+          "rating": 3,
+          "ratingReason": "A specific verified model listing and developer endpoint, with announcement time distinguished from deployment and performance claims.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/chutes_ai/status/2117263159463485535"
+            },
+            {
+              "label": "Public model listing",
+              "url": "https://llm.chutes.ai/v1/models"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": [
+        {
+          "headline": "SN65 TPN introduces Gratis for running AI on your own device",
+          "summary": "The November 2 TPN announcement introduces Gratis, a browser and desktop interface for downloading and running open-source models locally. Its public site opens a model-selection flow asking whether users need image support and displaying download requirements. The attached demonstration shows the model-picking workflow. This gives TPN’s small-model work a user-facing route to local use. Local inference, arbitrary-model compatibility, speed and the team’s privacy claims were not independently tested; a model download and sufficient device resources are still needed.",
+          "rating": 4,
+          "ratingReason": "A concrete new user-facing local-AI capability, supported by the original announcement, live onboarding and demonstration rather than a price or competition claim.",
+          "sources": [
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/TPN_Labs/status/2117255539235180638"
+            },
+            {
+              "label": "Live product",
+              "url": "https://gratis-ai.com/"
+            }
+          ],
+          "status": "verified",
+          "importance": "high"
+        },
+        {
+          "headline": "SN65 TPN interview scheduled for November 3",
+          "summary": "Shizzy’s public YouTube watch page lists AI on Your Terms? with True Performance Network for November 3 at 11:30 AM Eastern / 8:30 AM Pacific. SN116 Carbon’s physics-AI conversation follows November 4 at 11 PM Eastern / 8 PM Pacific, and SN71 Leadpoet is listed November 5 at 11 AM Eastern / 8 AM Pacific. These are scheduled conversations, not completed episodes or subnet execution evidence.",
+          "rating": 3,
+          "ratingReason": "Owner-hosted video coverage uses the standing three-star rule and exact public start times.",
+          "sources": [
+            {
+              "label": "TPN scheduled stream",
+              "url": "https://www.youtube.com/watch?v=1ajAfGr_dh0"
+            },
+            {
+              "label": "Carbon scheduled stream",
+              "url": "https://www.youtube.com/watch?v=dGwR6XOE9tU"
+            },
+            {
+              "label": "Leadpoet scheduled stream",
+              "url": "https://www.youtube.com/watch?v=q2pGNLUvCm4"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": [
+        {
+          "headline": "SN66 Conjectures corrects TMC PAY exchange-rate handling",
+          "summary": "The November 2 merged hotfix reads TMC PAY exchange rates as fiat per TAO and seeds quotes only from TAO. Correct units matter when calculating payment quotes; reversing them can produce a misleading conversion. This is verified source work, not proof of a completed payment, deployed fix or financial loss.",
+          "rating": 3,
+          "ratingReason": "A material payment-calculation correction with execution and impact kept separate.",
+          "sources": [
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/conjectures-io/conjectures-validator/commit/b29f4a6768848af5e349bd99c5cafdab2f599f30"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": [
+        {
+          "headline": "SN71 Leadpoet brief reports stuck scoring and invalid reviews",
+          "summary": "The November 2 brief records miner complaints about long judge retries and review_response_invalid outcomes, plus a team acknowledgment that it is investigating. These are operational leads for participants monitoring evaluation costs. Exact credit spend, full logs, Discord originals and a deployed remedy were not independently verified; no resolved status is implied.",
+          "rating": 2,
+          "ratingReason": "An acknowledged operational problem worth tracking, with unverified loss amounts omitted.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/71/2026-11-02"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "updates": [
+        {
+          "headline": "SN78 brief reports C7 certification and opens C8 intake",
+          "summary": "The November 2 brief attributes completed C7 evaluation and reward weights for 129 models to the team. It says C8 accepts public-model submissions while challenge activation waits for baseline handoff and CPU-speed scoring, and no re-upload is needed for the reference change to UID210. These are attributed participation rules, not independently verified on-chain payouts or an already-started C8 challenge.",
+          "rating": 3,
+          "ratingReason": "Actionable competition status with completed team reports separated from pending activation.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/78/2026-11-02"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": [
+        {
+          "headline": "SN81 Reliquary merges retail-video training and evaluation integration",
+          "summary": "A November 2 source merge integrates a retail-video worker into training and evaluation. That broadens the code path beyond the earlier rollout-verification discussion. The merge establishes implementation work, not a production deployment, retailer customer, measured accuracy gain or new revenue.",
+          "rating": 3,
+          "ratingReason": "A concrete integration extending an evaluation workflow, with commercial and rollout claims excluded.",
+          "sources": [
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/reliquadotai/reliquary/commit/7c14b6a8edd28c028bafb2e2531d242eeedd08db"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": [
+        {
+          "headline": "SN91 Cascade expands CPU region choices and offline miner practice",
+          "summary": "November 2 merged changes expose each available Shadeform CPU region instead of retaining only the first, so a failed region need not hide other offers of that instance type. Another merged change supports retired Hugging Face pools, checkpoint retention and a benchmark-gate preview for miner practice. These are separate from yesterday’s rental-safeguard coverage. Dataset integrity checks are not proof of authenticity, and source merges do not verify production rollout or lower realized costs.",
+          "rating": 3,
+          "ratingReason": "Concrete capacity-selection and miner-preparation improvements, with deployment and trust boundaries explicit.",
+          "sources": [
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/TensorLink-AI/cascade/commit/5a98571c22096a66d10bd1cef58b8832777a96b9"
+            },
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/TensorLink-AI/cascade/commit/87003724e5dc780acb72a18c3ae4c96e9b5c6949"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Thirty Spokes",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": [
+        {
+          "headline": "SN105 Beam reports a 1 TB transfer in 2 minutes 42 seconds",
+          "summary": "Late-found November 1 announcement: Beam reports transferring 1 TB in 2 minutes 42 seconds, claiming a 20% improvement and 2.5 times as many security/integrity checks compared with the preceding month. The original post and attached benchmark card show those figures. This is a team-reported engineering result, not an independent throughput or security test. The linked audit endpoint returned 404 during this review, so its named transfer record and test conditions were not independently verified.",
+          "rating": 3,
+          "ratingReason": "A concrete engineering benchmark claim worth dated coverage, with unavailable audit evidence and no independent performance guarantee.",
+          "sources": [
+            {
+              "label": "Original November1 benchmark announcement and image",
+              "url": "https://x.com/b1m_ai/status/2116918126319399231"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": [
+        {
+          "headline": "SN108 ChipForge targets Monday after Quest2 delay",
+          "summary": "The November 2 public brief says Quest2 code is finalized and validators were asked to run it after a planned Friday release slipped. Monday remains a target dependent on validator readiness. This helps participants distinguish preparation from an activated challenge; the Discord original and a successful launch were not verified.",
+          "rating": 2,
+          "ratingReason": "A useful schedule correction, explicitly pending rather than a completed launch.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/108/2026-11-02"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": [
+        {
+          "headline": "SN117 EveryFrame adds provider-wide offer controls in everycli v0.8.8",
+          "summary": "The November 2 merged release notes add switches for enabling or withdrawing a provider’s model offers together, plus a Not offered view for inactive models. Existing discounts are retained, new offers default to zero discount, and changed prices or revisions require a fresh review. This reduces manual offer management for miners. The instructions say to update and reopen the UI, with no worker update required; the controls were reviewed in source, not exercised on a live miner.",
+          "rating": 3,
+          "ratingReason": "A specific participation improvement with clear review safeguards and no implied revenue gain.",
+          "sources": [
+            {
+              "label": "Release notes",
+              "url": "https://github.com/everyframe-studios/everyframe-miner/blob/main/RELEASE-NOTES-v0.8.8.md"
+            },
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/everyframe-studios/everyframe-miner/commit/487b9d495ebca601151a39f7aeeee4c79b6742d8"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": [
+        {
+          "headline": "SN118 Ditto brief describes cheaper retesting and outage-aware scoring",
+          "summary": "The November 2 brief says continual retests now cover the top five miners and generator rounds run every four tempos. It attributes an October 31 provider-credit outage, voided affected samples and a scoring-pause fix to the team. This can reduce unnecessary evaluation costs and avoid grading infrastructure failures as model failures. Discord originals and reported rerun scores were not independently reconstructed. Today’s source changes also narrow a screener lock, but do not by themselves prove the outage account.",
+          "rating": 3,
+          "ratingReason": "Useful miner operating changes and incident handling, with source and execution limits visible.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/118/2026-11-02"
+            },
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/ditto-assistant/ditto-subnet/commit/9ad8eb9f49a004e36be7bada15883436ed9a3c12"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": [
+        {
+          "headline": "SN120 Affine exposes its baseline sampling shape and fixes the gate threshold",
+          "summary": "Affine’s live November 2 baseline page displays binned head pass rates and task-selection probabilities for a 19,305-task pool, with roughly 500 tasks drawn per round. It explains why uncertain tasks are sampled more often without exposing individual task IDs. Separately, the latest source change fixes the improvement gate at z>1 from E553, removing the earlier time-relaxed schedule. This improves public inspection of evaluation rules; it is not independent proof of model gains or confirmation every validator adopted the commit.",
+          "rating": 3,
+          "ratingReason": "Inspectable methodology and a current rule correction matter to miners; ordinary gate changes remain below four stars.",
+          "sources": [
+            {
+              "label": "Live baseline methodology",
+              "url": "https://affine.io/baseline"
+            },
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/AffineFoundation/affine/commit/d94522e5c3b93053e1224f2b1ffabd3f7542473e"
+            },
+            {
+              "label": "Reviewed source commit",
+              "url": "https://github.com/AffineFoundation/affine/commit/b0d4b7842a64c6ae95fb6a6564e08913370c01be"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": [
+        {
+          "headline": "SN122 CookingTAO brief describes Studio testing for miner development",
+          "summary": "The November 2 brief attributes an invitation to test Studio to the team, describing an environment for people and agents building miner code. The accessible official teaser alone did not verify a public production release, and the linked Discord original requires access. This is a testing-stage lead; availability, supported workflows and execution remain to be confirmed.",
+          "rating": 2,
+          "ratingReason": "A potentially useful developer environment kept at testing status because primary access is incomplete.",
+          "sources": [
+            {
+              "label": "Dated public brief",
+              "url": "https://subnetradar.com/subnet-news/122/2026-11-02"
+            },
+            {
+              "label": "Original team announcement",
+              "url": "https://x.com/CookingTao_/status/2116977964164252068"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Astrid",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "128 current profiles and dated public briefs; 140 repository paths and indexed public team posts",
+      "Signed-in owner bookmarks/posts/replies and Const/Tensia timelines with dated overlap; earlier monitor leads reconciled",
+      "Finalized allocation/burn and lifecycle evidence, 128 owner holdings, public YouTube Videos/Live tabs and exact watch-page schedules"
+    ],
+    "gaps": [
+      "Initial Grok all-roster discovery request hit a usage limit. Follow-up omission and five-discussion reviews succeeded, but no reliable mention counts/ranking or exhaustive all-account search is claimed.",
+      "All 128 project profiles and dated brief URLs, 140 repository paths and indexed team announcements were collected. Selected originals were directly inspected, but not every team timeline or private Discord was accessible.",
+      "Discord-original and independent incident evidence remain unavailable for several reports, including Vanta pricing, Perturb wallets and miner evaluation complaints. Unverified amounts, wallet-person attribution and claimed remedies are not established facts.",
+      "Product pages, selected code patches and attached media were inspected as recorded. No paid inference, customer-revenue audit, independent benchmark replay or full review of every long video was performed. Gratis inference and privacy claims were not independently tested.",
+      "Authenticated TaoStats v1 cross-check and credit usage remain blocked by unavailable local API credentials. Shared market cache and finalized archive evidence remain separate sources."
+    ]
+  }
+}
