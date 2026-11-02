@@ -535,7 +535,7 @@ const liveStreams: ChannelVideo[] = [
   {
     id: "4VOSqr9zmaM",
     title: "Can Bittensor Get Its Own Stablecoin? LIVE with TensorUSD",
-    meta: "57:35",
+    meta: "57:35 · Streamed May 26, 2026",
   },
 ];
 // Upcoming streams never belong in the completed episode/replay shelves.
