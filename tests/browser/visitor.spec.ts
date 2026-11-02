@@ -258,7 +258,10 @@ test("archived unavailable evidence is not clickable and partner referrals remai
   await noOverflow(page); await page.goto("/partners");
   await expect(page.locator('a[href="https://saygm.com/r/qm2gl6jx"]')).toBeVisible();
   await expect(page.locator('a[href="https://engy.ai/r/ShizzyUnchained"]')).toBeVisible();
-  await expect(page.locator(".partner-banner")).toHaveCount(7); await noOverflow(page);
+  const btcc=page.locator('a[href="https://partner.btcc.com/us/c/SHIZZY/94759937"]');
+  await expect(btcc).toContainText('SHIZZY');
+  await expect(btcc).toHaveAttribute('rel',/sponsored/);
+  await expect(page.locator(".partner-banner")).toHaveCount(8); await noOverflow(page);
 });
 
 test("shared privacy footer opens readable notice and wallet controls remain reachable", async ({ page }) => {

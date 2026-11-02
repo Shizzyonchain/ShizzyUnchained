@@ -5,7 +5,7 @@ import { CreatorShell } from "../creator-shell";
 
 export const metadata: Metadata = withSocialMetadata({
   title: "Bittensor Ecosystem Partners | ShizzyUnchained",
-  description: "Explore ShizzyUnchained partners for Bittensor trading, staking, subnet intelligence, security, and privacy, including the AlphaChaser community offer.",
+  description: "Explore ShizzyUnchained partners for Bittensor research, staking, crypto trading, security and privacy, including BTCC with referral code SHIZZY and the AlphaChaser community offer.",
   alternates: { canonical: "/partners" },
 }, "/partners");
 

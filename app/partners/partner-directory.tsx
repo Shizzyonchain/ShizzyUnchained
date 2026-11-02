@@ -48,6 +48,14 @@ const partners = [
     cta: "Find the Alpha Gap",
   },
   {
+    key: "btcc",
+    name: "BTCC",
+    kicker: "Crypto exchange · Referral code SHIZZY",
+    description: "Explore BTCC’s markets and trading platform through Shizzy Unchained’s customer referral link. Use code SHIZZY when registering. Product availability and terms vary by region.",
+    href: "https://partner.btcc.com/us/c/SHIZZY/94759937",
+    cta: "Explore BTCC",
+  },
+  {
     key: "ledger",
     name: "Ledger",
     kicker: "Hardware security",
@@ -78,7 +86,7 @@ export function PartnerDirectory() { return (
           </div>
           <div className="partner-grid">
             {partners.map((partner, index) => (
-              <a className={`partner-banner ${partner.key}`} href={partner.href} target="_blank" rel="sponsored noreferrer" key={partner.name}>
+              <a id={partner.key} className={`partner-banner ${partner.key}`} href={partner.href} target="_blank" rel="sponsored noreferrer" key={partner.name}>
                 <div className="partner-number">0{index + 1}</div>
                 <div className="partner-logo" aria-hidden="true">
                   {partner.key === "alphachaser" ? (
