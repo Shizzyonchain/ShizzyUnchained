@@ -45,6 +45,22 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
   }, { auto: true }],
 });
 const search = (page: Page) => page.getByRole("searchbox", { name: "Search subnets by name or subnet number" });
+
+test('TAO seasonality filters full months and reveals underlying years without mobile overflow', async ({ page }) => {
+  await page.goto('/subnet-news/seasonality');
+  await expect(page.getByRole('heading', { name: 'Does the month matter?' })).toBeVisible();
+  const from = page.getByRole('combobox', { name: 'From year', exact: true });
+  const through = page.getByRole('combobox', { name: 'Through year', exact: true });
+  const latest = await through.inputValue();
+  await from.selectOption(latest);
+  await expect(page.getByRole('status')).toContainText(`${latest}–${latest}`);
+  await page.getByRole('button', { name: 'Reset range', exact: true }).click();
+  const november = page.locator('summary').filter({ hasText: 'November' });
+  await november.click();
+  await expect(november.locator('..')).toContainText('2023');
+  await noOverflow(page);
+  await expect(page.getByRole('navigation', { name: 'Subnet news tools' }).getByRole('link', { name: 'Seasonality', exact: false })).toHaveAttribute('aria-current', 'page');
+});
 test('cached server snapshots hydrate safely after freshness expires',async({page})=>{
  await page.clock.install({time:new Date(Date.now()+20*60_000)});
  await page.goto('/');
