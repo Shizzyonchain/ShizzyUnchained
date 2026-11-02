@@ -1,0 +1,96 @@
+{
+  "automationId": "verify-etao-changes-every-six-hours",
+  "status": "VERIFIED_PREPARED",
+  "triggeredAt": "2026-11-02T09:37:04.753Z",
+  "checkedAt": "2026-11-02T09:41:42.706721+00:00",
+  "easternDate": "2026-11-02",
+  "fromBlock": 9415584,
+  "toBlock": 9417382,
+  "throughTime": "2026-11-02T09:37:24+00:00",
+  "hash": "0x49a2fb9aa389ac61294ec8a43a40648a5c8be59f5cc124678fc351a5c16aa9a4",
+  "runtime": 486,
+  "coverageBlocks": 1799,
+  "targetEvents": 45,
+  "allocationEvents": 0,
+  "qualifyingBurns": [
+    {
+      "id": "9415837-168",
+      "block": 9415837,
+      "hash": "0xb334ad28a1a2aa23184fe3430d3675da840aa592612a201929d2e95152a06ddf",
+      "extrinsic": 13,
+      "eventIndex": 168,
+      "eventName": "SubtensorModule.AlphaBurned",
+      "timestamp": "2026-11-02T04:27:48+00:00",
+      "netuid": 8,
+      "name": "Vanta",
+      "kind": "alpha",
+      "amountRaw": "139158500356",
+      "taoSpentRaw": null,
+      "account": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+      "registeredAt": 1477264
+    }
+  ],
+  "smallBurnsEvidenceOnly": 43,
+  "allVectorsReconciled": 128,
+  "pendingObservations": 0,
+  "gaps": [],
+  "chainReviews": {
+    "etao": {
+      "status": "DONE",
+      "checkedAt": "2026-11-02T09:41:42.706721+00:00",
+      "fromBlock": 9413776,
+      "toBlock": 9417382,
+      "hash": "0x49a2fb9aa389ac61294ec8a43a40648a5c8be59f5cc124678fc351a5c16aa9a4",
+      "throughTime": "2026-11-02T09:37:24+00:00",
+      "gaps": [],
+      "archiveUpdated": true,
+      "evidence": [
+        "2026-11-02-chain-monitor-0337.json",
+        "2026-11-02-chain-monitor-0937.json"
+      ],
+      "eventCount": 0
+    },
+    "burns": {
+      "status": "DONE",
+      "checkedAt": "2026-11-02T09:41:42.706721+00:00",
+      "fromBlock": 9413776,
+      "toBlock": 9417382,
+      "hash": "0x49a2fb9aa389ac61294ec8a43a40648a5c8be59f5cc124678fc351a5c16aa9a4",
+      "throughTime": "2026-11-02T09:37:24+00:00",
+      "gaps": [],
+      "archiveUpdated": true,
+      "evidence": [
+        "2026-11-02-chain-monitor-0337.json",
+        "2026-11-02-chain-monitor-0937.json"
+      ],
+      "eventCount": 1
+    }
+  },
+  "scanSha256": "acf999cf975229e471294f4041005636fd9f96518da061818b1b6286dea5c629",
+  "runtimeReview": "Runtime486 previously reviewed in Oct26 permanent source; target event definitions and full portable types equal to previous reviewed boundary; each scanned block runtime checked; known eTAO and burn event controls decoded.",
+  "runtimeSource": "../chain-monitor-2026-10-26-2048/runtime486-source.json",
+  "priorArchiveCutoffs": {
+    "etao": 9413775,
+    "burns": 9413775
+  },
+  "newsDisposition": "No Nov2 full report exists. Archives updated; qualified story retained for next full edition with actual event date. No one-story edition or social post.",
+  "publication": "PENDING_VALIDATION_DEPLOYMENT",
+  "social": "NONE_AUTHORIZED",
+  "assets": {
+    "prior": "2026-11-02-chain-monitor-0337.json",
+    "scan": "2026-11-02-chain-monitor-0937.json",
+    "detail": "2026-11-02-sn8-burn-0427.json",
+    "audit": "2026-11-02-chain-review-0937.json"
+  },
+  "pendingNews": {
+    "netuid": 8,
+    "headline": "SN8 Vanta burns139.158500356alpha in a finalized transaction",
+    "eventDate": "2026-11-02T04:27:48Z",
+    "eventEasternDate": "2026-11-01",
+    "status": "VERIFIED_PENDING_NOV2_FULL_EDITION",
+    "rating": 2,
+    "summary": "Direct successful burn_alpha call removes139.158500356SN8alpha at finalized block9415837,extrinsic13,event168. Same Vanta registration1477264 before/after. No buyback marker or revenue source established; this is alpha burned, not TAO spent or burned, miner withholding,fees or recycling. No price effect inferred.",
+    "evidence": "2026-11-02-sn8-burn-0427.json",
+    "transaction": "https://taostats.io/extrinsic/9415837-13"
+  }
+}
