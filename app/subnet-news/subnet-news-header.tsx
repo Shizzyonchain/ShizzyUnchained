@@ -16,8 +16,9 @@ export function SubnetNewsHeader() {
   const watchlistActive = pathname === "/subnet-news/watchlist";
   const holdingActive = pathname === "/subnet-news/holding-periods";
   const finderActive = pathname === "/subnet-news/split-finder";
+  const toolkitActive = pathname === "/subnet-news/toolkit";
   const tabs = [
-    { href: "/subnet-news", label: "Daily news", active: !etaoActive && !burnsActive && !returnsActive && !seasonalityActive && !compareActive && !recoveryActive && !searchActive && !watchlistActive && !holdingActive && !finderActive },
+    { href: "/subnet-news", label: "Daily news", active: !etaoActive && !burnsActive && !returnsActive && !seasonalityActive && !compareActive && !recoveryActive && !searchActive && !watchlistActive && !holdingActive && !finderActive && !toolkitActive },
     { href: "/subnet-news/etao", label: "eTAO Changes →", active: etaoActive },
     { href: "/subnet-news/burns", label: "Burns →", active: burnsActive },
     { href: "/subnet-news/tao-returns", label: "TAO Returns →", active: returnsActive },
@@ -29,7 +30,7 @@ export function SubnetNewsHeader() {
     { href: "/subnet-news/watchlist", label: "Watchlist →", active: watchlistActive },
     { href: "/subnet-news/search", label: "News Search →", active: searchActive },
   ];
-  return <><SiteHeader /><nav aria-label="Subnet news tools" className={styles.nav}>
+  return <><SiteHeader /><div className={styles.toolkit}><Link href="/subnet-news/toolkit" aria-current={toolkitActive ? "page" : undefined}>Bittensor Toolkit →</Link><span>Find the right tool for your question.</span></div><nav aria-label="Subnet news tools" className={styles.nav}>
     {tabs.map(tab => <Link key={tab.href} href={tab.href} aria-current={tab.active ? "page" : undefined} style={{ padding: "12px 18px", border: `1px solid ${tab.active ? "#fff" : "#444"}`, background: tab.active ? "#fff" : "#000", color: tab.active ? "#000" : "#fff", fontWeight: 700, textDecoration: "none" }}>{tab.label}</Link>)}
   </nav></>;
 }

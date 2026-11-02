@@ -635,3 +635,20 @@ test("split finder retains exact filters in URL and displays reviewed vectors",a
  await expect(page.getByRole('main')).toContainText('Missing values are not zero');
 });
 
+test("toolkit answers research questions and opens a working tool on mobile",async({page})=>{
+ await page.goto('/subnet-news');
+ await page.getByRole('link',{name:'Bittensor Toolkit →',exact:true}).click();
+ await expect(page).toHaveURL(/\/subnet-news\/toolkit$/);
+ await expect(page.getByRole('link',{name:'Bittensor Toolkit →',exact:true})).toHaveAttribute('aria-current','page');
+ await expect(page.getByRole('link',{name:'Daily news',exact:true})).not.toHaveAttribute('aria-current','page');
+ await expect(page.getByRole('main').getByRole('article')).toHaveCount(10);
+ await expect(page.getByRole('main')).toContainText('No wallet connection or cross-device sync.');
+ await page.getByRole('navigation',{name:'Toolkit categories'}).getByRole('link',{name:'Check what changed on chain ↓',exact:true}).click();
+ await expect(page).toHaveURL(/#chain$/);
+ await expect(page.getByRole('heading',{name:'Check what changed on chain',exact:true})).toBeInViewport();
+ await noOverflow(page);
+ await page.screenshot({path:`../brand-workday-2026-11-02/toolkit-${test.info().project.name}.png`,fullPage:true});
+ await page.getByRole('main').getByRole('link',{name:'Recovery Math →',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'A 50% drop needs a 100% comeback.',exact:true})).toBeVisible();
+});
+
