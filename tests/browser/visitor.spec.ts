@@ -46,6 +46,20 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
 });
 const search = (page: Page) => page.getByRole("searchbox", { name: "Search subnets by name or subnet number" });
 
+test('recovery calculator keeps denominator math, invalid states and mobile controls clear', async ({ page }) => {
+  await page.goto('/subnet-news/recovery-math');
+  await expect(page.getByRole('heading', { name: 'A 50% drop needs a 100% comeback.' })).toBeVisible();
+  await page.getByRole('button', { name: '75% decline', exact: true }).click();
+  await expect(page.getByRole('status')).toContainText('+300%');
+  await page.getByRole('spinbutton', { name: 'Lower price', exact: true }).fill('0');
+  await expect(page.getByRole('status')).toContainText('No finite gain');
+  await page.getByRole('spinbutton', { name: 'Reference price', exact: true }).fill('');
+  await expect(page.getByRole('status')).toContainText('Enter a positive reference price');
+  await page.getByRole('button', { name: 'Reset example', exact: true }).click();
+  await expect(page.getByRole('status')).toContainText('+100%');
+  await noOverflow(page);
+});
+
 test('split comparison preserves reviewed provenance, swaps choices and handles same subnet on mobile', async ({ page }) => {
   await page.goto('/subnet-news/split-compare');
   await expect(page.getByRole('heading', { name: 'Where do the emissions go?' })).toBeVisible();
