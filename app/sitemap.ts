@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/subnet-news/seasonality",
     "/subnet-news/split-compare",
     "/subnet-news/recovery-math",
+    "/subnet-news/search",
     "/subnet-news/exploit-conference-catch-up",
     "/subnet-news/exploit-conference-catch-up-day-2",
     "/sectors",

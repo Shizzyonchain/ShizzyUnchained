@@ -46,6 +46,20 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
 });
 const search = (page: Page) => page.getByRole("searchbox", { name: "Search subnets by name or subnet number" });
 
+test('news archive search keeps filters in the URL, finds history and handles empty results', async ({ page }) => {
+  await page.goto('/subnet-news/search');
+  await page.getByRole('searchbox', { name: 'Keywords', exact: true }).fill('Vanta');
+  await page.getByRole('combobox', { name: 'Subnet', exact: true }).selectOption('8');
+  await page.getByRole('button', { name: 'Search archive' }).click();
+  await expect(page).toHaveURL(/q=Vanta/);
+  await expect(page.locator('article').first()).toContainText('SN8');
+  await noOverflow(page);
+  await page.getByRole('searchbox', { name: 'Keywords', exact: true }).fill('nonexistentuniquesearchphrase');
+  await page.getByRole('button', { name: 'Search archive' }).click();
+  await expect(page.getByRole('heading', { name: '0 matching stories' })).toBeVisible();
+  await expect(page.getByText('No stories match these filters.', { exact: false })).toBeVisible();
+});
+
 test('recovery calculator keeps denominator math, invalid states and mobile controls clear', async ({ page }) => {
   await page.goto('/subnet-news/recovery-math');
   await expect(page.getByRole('heading', { name: 'A 50% drop needs a 100% comeback.' })).toBeVisible();
