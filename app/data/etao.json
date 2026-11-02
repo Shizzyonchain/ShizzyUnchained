@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-02T18:58:22.717407+00:00",
-  "block": 9420155,
-  "hash": "0xea144fe5e08f58e48532d40fa098844924e58eda3598d394ed21efad25714688",
-  "chainTime": 1793645520001,
+  "checkedAt": "2026-11-02T22:02:49.785318+00:00",
+  "block": 9421083,
+  "hash": "0x9a51515ae1c3d30ada7a8ac37b65735be34646e84e834b5d6d5b8e23493ca4b0",
+  "chainTime": 1793656656000,
   "runtime": 486,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -254,9 +254,9 @@
     "36": [
       "0",
       "0",
-      "6087425544324152032",
-      "5534023222112865484",
-      "6825295307272534099"
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
     ],
     "37": [
       "0",
@@ -1480,7 +1480,7 @@
     "33": "ReadyAI",
     "34": "Yugos",
     "35": "Unknown",
-    "36": "Bittensor",
+    "36": "Unknown",
     "37": "Aurelius",
     "38": "ChronoLLM",
     "39": "deprecated",
@@ -1576,9 +1576,8 @@
   },
   "observations": [],
   "ownerSnapshot": {
-    "block": 9419001,
-    "hash": "0x482d3a1aaa6eb6ddc058b202d2ecbab39c0e52208b82d558dcbddd01f76dbad9",
-    "checkedAt": "2026-11-02T15:04:41.377692+00:00",
+    "block": 9421083,
+    "hash": "0x9a51515ae1c3d30ada7a8ac37b65735be34646e84e834b5d6d5b8e23493ca4b0",
     "owners": {
       "1": "5HCFWvRqzSHWRPecN7q8J6c7aKQnrCZTMHstPv39xL1wgDHh",
       "2": "5EcYQ3W77ndrmMWdvVQusoFqY8doxfP3U2zrh7xZQiaz7avY",
@@ -1615,7 +1614,7 @@
       "33": "5HinUfk5SqBUAbkMtgdNoum3VJvwrLgdvwW5sbXA1UPYZ8uB",
       "34": "5DthmKBR83sUdudSfgFnsxBkTYtYTFLJUgovNfb1TSKVLiTH",
       "35": "5FjUeckLxMbRud6sHU127ZTFkqoAHmsdapD5s5hvmyLhruTZ",
-      "36": "5DCjvVt6LbtM5YhMd3McczwSQpu4w85Gq5ENqSsyXjwgJxpZ",
+      "36": "5Gn72TbvTvqFpcpiquaSKZL6TjtAN6uBzWW5W3uV7WZXjM6P",
       "37": "5GRBbS3aDep7cvR1NRm9Awp5HAF1o4HC7t59Y8HoheLZ6ZaP",
       "38": "5GeWgtBAu2ezYo83sPM7VyEigAfEc3vnqqxRzbMXYVYwEV62",
       "39": "5DkwfxC9mZTTCsRUt6nrnwQEWVrhsmY13SBRparj6cpAVxVY",
@@ -1708,13 +1707,14 @@
       "126": "5DqrUa2z6E9taJdY8FGiPCrtCswsEjHjPbVo5xcTw2GqvKZm",
       "127": "5FU4uxAdrZsaWaezWwXEK93MwPX5gw2566BQK2WwrGUudfSH",
       "128": "5GgMeLFN4YssT6f9i9pZpRmczt8GYDsCZ1nYPiGRcTPWn3AA"
-    }
+    },
+    "checkedAt": "2026-11-02T22:02:49.785318+00:00"
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9420155,
-    "finalizedHash": "0xea144fe5e08f58e48532d40fa098844924e58eda3598d394ed21efad25714688",
-    "checkedAt": "2026-11-02T18:58:22.717407+00:00",
+    "toBlock": 9421083,
+    "finalizedHash": "0x9a51515ae1c3d30ada7a8ac37b65735be34646e84e834b5d6d5b8e23493ca4b0",
+    "checkedAt": "2026-11-02T22:02:49.785318+00:00",
     "eventCount": 15,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
     "gaps": [],
@@ -1746,6 +1746,19 @@
       ],
       "reason": "Finalized lifecycle cleanup removed EG identity and reset registration/storage; not an owner allocation transaction. New registration at 9392863.",
       "evidence": "/evidence/2026-10-30-chain-monitor-0315.json"
+    },
+    {
+      "netuid": 36,
+      "block": 9420558,
+      "after": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "reason": "Finalized lifecycle cleanup removed the prior identity and reset registration/storage; not an owner allocation transaction. New registration at 9420559. New identity unset at reviewed cutoff.",
+      "evidence": "/evidence/2026-11-02-chain-monitor-1657.json"
     }
   ]
 }
