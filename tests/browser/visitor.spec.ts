@@ -580,3 +580,22 @@ test("TAO returns has its own news tab, sourced calendar and contained mobile sc
  await noOverflow(page);
  await page.screenshot({path:`../tao-returns-2026-11-01/returns-${test.info().project.name}.png`});
 });
+
+test("watchlist persists selected subnet slots and removes without a wallet",async({page})=>{
+ await page.goto('/subnet-news/watchlist');
+ await expect(page.getByText('Your watchlist is empty.',{exact:false})).toBeVisible();
+ await page.getByRole('combobox',{name:'Choose subnet',exact:true}).selectOption('8');
+ await page.getByRole('button',{name:'Add to watchlist',exact:true}).click();
+ await expect(page.getByRole('article',{name:'SN8 watchlist card',exact:true})).toContainText('Vanta');
+ await page.reload();
+ await expect(page.getByRole('article',{name:'SN8 watchlist card',exact:true})).toBeVisible();
+ await page.getByRole('combobox',{name:'Choose subnet',exact:true}).selectOption('8');
+ await page.getByRole('button',{name:'Add to watchlist',exact:true}).click();
+ await expect(page.getByRole('article',{name:'SN8 watchlist card',exact:true})).toHaveCount(1);
+ await noOverflow(page);
+ await page.getByRole('button',{name:'Remove SN8',exact:true}).click();
+ await page.reload();
+ await expect(page.getByText('Your watchlist is empty.',{exact:false})).toBeVisible();
+});
+
+
