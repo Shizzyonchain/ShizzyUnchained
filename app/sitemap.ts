@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/subnet-news/burns",
     "/subnet-news/tao-returns",
     "/subnet-news/seasonality",
+    "/subnet-news/holding-periods",
     "/subnet-news/split-compare",
     "/subnet-news/recovery-math",
     "/subnet-news/search",
@@ -46,4 +47,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const charts: MetadataRoute.Sitemap = chartPaths.map(path => ({ url: `${base}${path}`, changeFrequency: "daily", priority: 0.7 }));
   return [...staticPages, ...charts, ...newsPages];
 }
+
 

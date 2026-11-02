@@ -599,3 +599,16 @@ test("watchlist persists selected subnet slots and removes without a wallet",asy
 });
 
 
+
+test("holding returns switch periods and exclude filtered missing observations",async({page})=>{
+ await page.goto('/subnet-news/holding-periods');
+ await expect(page.getByRole('heading',{name:'What did holding TAO actually return?',exact:true})).toBeVisible();
+ await page.getByRole('combobox',{name:'Holding period',exact:true}).selectOption('12');
+ await expect(page.getByRole('table')).toContainText('Completed 12-month holding periods');
+ await page.getByLabel('Ending from',{exact:true}).fill('2099-01');
+ await expect(page.getByText('No complete holding periods match these filters.',{exact:true})).toBeVisible();
+ await expect(page.getByRole('status')).toContainText('median —');
+ await page.getByRole('button',{name:'Reset dates',exact:true}).click();
+ await expect(page.getByRole('table').locator('tbody tr')).not.toHaveCount(0);
+ await noOverflow(page);
+});

@@ -14,11 +14,13 @@ export function SubnetNewsHeader() {
   const recoveryActive = pathname === "/subnet-news/recovery-math";
   const searchActive = pathname === "/subnet-news/search";
   const watchlistActive = pathname === "/subnet-news/watchlist";
+  const holdingActive = pathname === "/subnet-news/holding-periods";
   const tabs = [
-    { href: "/subnet-news", label: "Daily news", active: !etaoActive && !burnsActive && !returnsActive && !seasonalityActive && !compareActive && !recoveryActive && !searchActive && !watchlistActive },
+    { href: "/subnet-news", label: "Daily news", active: !etaoActive && !burnsActive && !returnsActive && !seasonalityActive && !compareActive && !recoveryActive && !searchActive && !watchlistActive && !holdingActive },
     { href: "/subnet-news/etao", label: "eTAO Changes →", active: etaoActive },
     { href: "/subnet-news/burns", label: "Burns →", active: burnsActive },
     { href: "/subnet-news/tao-returns", label: "TAO Returns →", active: returnsActive },
+    { href: "/subnet-news/holding-periods", label: "Holding Returns →", active: holdingActive },
     { href: "/subnet-news/seasonality", label: "Seasonality →", active: seasonalityActive },
     { href: "/subnet-news/split-compare", label: "Split Compare →", active: compareActive },
     { href: "/subnet-news/recovery-math", label: "Recovery Math →", active: recoveryActive },
@@ -29,4 +31,5 @@ export function SubnetNewsHeader() {
     {tabs.map(tab => <Link key={tab.href} href={tab.href} aria-current={tab.active ? "page" : undefined} style={{ padding: "12px 18px", border: `1px solid ${tab.active ? "#fff" : "#444"}`, background: tab.active ? "#fff" : "#000", color: tab.active ? "#000" : "#fff", fontWeight: 700, textDecoration: "none" }}>{tab.label}</Link>)}
   </nav></>;
 }
+
 
