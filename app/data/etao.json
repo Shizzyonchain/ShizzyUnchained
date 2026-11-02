@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-02T15:23:32.520115+00:00",
-  "block": 9419000,
-  "hash": "0x71115507329a3cbd0a0d30b7580865bd6f1033f38114158bfebedb4c57195137",
-  "chainTime": 1793631660000,
+  "checkedAt": "2026-11-02T18:58:22.717407+00:00",
+  "block": 9420155,
+  "hash": "0xea144fe5e08f58e48532d40fa098844924e58eda3598d394ed21efad25714688",
+  "chainTime": 1793645520001,
   "runtime": 486,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -744,9 +744,9 @@
     "106": [
       "0",
       "0",
-      "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "6087425544324152032",
+      "5534023222112865484",
+      "6825295307272534099"
     ],
     "107": [
       "0",
@@ -1418,6 +1418,30 @@
       ],
       "name": "Ditto",
       "registeredAt": 5724794
+    },
+    {
+      "netuid": 106,
+      "block": 9419475,
+      "hash": "0xc213603ec2c4ccad9c71f53aba35ef9676be6285aa46e8ffdfd8e236067ec74a",
+      "timestamp": 1793637360000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "6087425544324152032",
+        "5534023222112865484",
+        "6825295307272534099"
+      ],
+      "extrinsic": 30,
+      "name": "Nodexo",
+      "registrationBlock": 5558480,
+      "evidence": "/evidence/2026-11-02-news-monitor-1347-chain.json"
     }
   ],
   "names": {
@@ -1688,10 +1712,10 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9419000,
-    "finalizedHash": "0x71115507329a3cbd0a0d30b7580865bd6f1033f38114158bfebedb4c57195137",
-    "checkedAt": "2026-11-02T15:23:32.520115+00:00",
-    "eventCount": 14,
+    "toBlock": 9420155,
+    "finalizedHash": "0xea144fe5e08f58e48532d40fa098844924e58eda3598d394ed21efad25714688",
+    "checkedAt": "2026-11-02T18:58:22.717407+00:00",
+    "eventCount": 15,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history."

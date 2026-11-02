@@ -5,7 +5,7 @@
   "summary": "TPN introduces Gratis for running AI locally, Desearch opens a txtai search adapter, and ChronoLLM fixes tokenizer-dependent duplicate comparisons. Also: Lium rental checks, Affine’s public baseline, EveryFrame provider controls and qualified miner-operation updates.",
   "publishedAt": "2026-11-02T15:23:32.520115+00:00",
   "coverageStart": "2026-11-01T21:34:48+00:00",
-  "coverageEnd": "2026-11-02T15:02:59.761Z",
+  "coverageEnd": "2026-11-02T18:58:22.717407+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [],
@@ -344,6 +344,24 @@
           ],
           "status": "developing",
           "importance": "medium"
+        },
+        {
+          "headline": "SN44 Score plans a 44/44/12 allocation and an owner-wallet conviction lock",
+          "summary": "Score’s November 2 announcement proposes 44% miners, 44% validators and 12% owner over the following 48 hours, and says it will conviction-lock 44% of the owner’s wallet. At the reviewed finalized cutoff of 18:52 UTC, SN44 still has the 18% owner / 41% validator / 41% miner vector. The planned redistribution would reduce the owner share and increase both other buckets; it is not recorded as executed. The separate wallet-lock plan was not transaction-verified, and the teased third action is unspecified.",
+          "rating": 3,
+          "ratingReason": "Useful advance notice of allocation and lock plans, with execution unconfirmed and no assumption about the teased third action.",
+          "sources": [
+            {
+              "label": "Original Score plan",
+              "url": "https://x.com/webuildscore/status/2117312844840452368"
+            },
+            {
+              "label": "Finalized allocation snapshot through 18:52 UTC",
+              "url": "https://shizzyunchained.com/evidence/2026-11-02-news-monitor-1347-chain.json"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
         }
       ]
     },
@@ -414,7 +432,26 @@
     {
       "netuid": 54,
       "name": "Yanez",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN54 Yanez reports its first week of eTAO results, with variable yields",
+          "summary": "In its November 2 week-one update, Yanez reports alpha-staker APY moving from roughly 25% to 30%, TAO entering the SN54 pool from about 0.9 to 3.79 TAO per day, and miner output from 1,027 to 1,033 alpha per day after the previously announced miner-burn removal. These are the team’s reported observations, not independently reconstructed returns or proof that the split alone caused the changes. Its follow-up explicitly says APY moves with total stake and emissions. The figures are historical observations, not an offer of fixed yield.",
+          "rating": 3,
+          "ratingReason": "A specific follow-up on an existing allocation change; useful measured team claims without independent attribution or guaranteed returns.",
+          "sources": [
+            {
+              "label": "Original week-one team figures",
+              "url": "https://x.com/yanez__ai/status/2117323357754646746"
+            },
+            {
+              "label": "Team qualification on variable APY",
+              "url": "https://x.com/yanez__ai/status/2117323369846829354"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 55,
@@ -588,6 +625,24 @@
           ],
           "status": "developing",
           "importance": "medium"
+        },
+        {
+          "headline": "SN71 Leadpoet sets a concrete sales-workflow pilot with SOMA",
+          "summary": "Leadpoet’s side of the November 2 SOMA pilot specifies company identification, buying-signal research, decision-maker discovery and targeted outreach aimed at customer conversations. This provides a named use case for its lead-sourcing workflow. It does not establish how much of the work has already run, the number of leads delivered or sales converted. SOMA independently confirms the relationship.",
+          "rating": 3,
+          "ratingReason": "A named practical pilot for Leadpoet, without turning planned outreach into evidence of customers or revenue.",
+          "sources": [
+            {
+              "label": "SOMA announcement",
+              "url": "https://x.com/SomaSubnet/status/2117300771805175832"
+            },
+            {
+              "label": "Leadpoet confirms pilot and scope",
+              "url": "https://x.com/LeadpoetAI/status/2117305529634853243"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
         }
       ]
     },
@@ -649,7 +704,22 @@
     {
       "netuid": 80,
       "name": "OpenRoboto",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN80 OpenRoboto moves its peaq discussion to Wednesday",
+          "summary": "In a November 2 reply to a question about the expected peaq broadcast, OpenRoboto says it is rescheduled to Wednesday, November 4. No replacement start time is specified in that reply. This is a scheduling update, not a new partnership launch or evidence of new device activation. The existing peaq integration was covered previously.",
+          "rating": 2,
+          "ratingReason": "A useful timing correction for viewers following the planned discussion; no new technical execution or commercial result.",
+          "sources": [
+            {
+              "label": "Direct team rescheduling reply",
+              "url": "https://x.com/openroboto/status/2117290059510813039"
+            }
+          ],
+          "status": "developing",
+          "importance": "informational"
+        }
+      ]
     },
     {
       "netuid": 81,
@@ -828,7 +898,26 @@
     {
       "netuid": 106,
       "name": "Nodexo",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN106 Nodexo raises its owner allocation to 33% in a finalized transaction",
+          "summary": "At 16:36 UTC on November 2, successful transaction 9419475-30 changed Nodexo’s five-slot alpha-emission vector from 0/0/18/41/41 to 0/0/33/30/37 (burn/recycle/owner/validators/miners, rounded percentages). The owner bucket rises 15 percentage points, validators fall 11 and miners fall 4. Storage immediately before and after the event, successful proxy execution, and unchanged registration identity were checked. Root is paid its live baseline first, capped by the validator allocation; reported yields can lag the change. This is not a token sale, revenue measure or guaranteed APY.",
+          "rating": 3,
+          "ratingReason": "A material, transaction-verified redistribution relevant to miners and stakers, but an ordinary allocation change does not justify a four-star quote.",
+          "sources": [
+            {
+              "label": "Finalized transaction decoded offline",
+              "url": "https://taostats.io/extrinsic/9419475-30"
+            },
+            {
+              "label": "Permanent finalized scan and before/after storage",
+              "url": "https://shizzyunchained.com/evidence/2026-11-02-news-monitor-1347-chain.json"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 107,
@@ -883,7 +972,26 @@
     {
       "netuid": 114,
       "name": "SOMA",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN114 SOMA announces a Leadpoet pilot for enterprise outreach",
+          "summary": "Both teams announced the pilot on November 2. SOMA says Leadpoet will help it find and reach enterprise teams that could benefit from context compression. The intended payoff is getting the product in front of businesses with growing AI usage and inference costs. The announcements establish a joint outreach pilot, not signed customer contracts, verified revenue or independently measured token savings.",
+          "rating": 3,
+          "ratingReason": "A partnership confirmed by both teams with a concrete pilot scope, but customer outcomes and commercial impact are not established.",
+          "sources": [
+            {
+              "label": "SOMA announcement",
+              "url": "https://x.com/SomaSubnet/status/2117300771805175832"
+            },
+            {
+              "label": "Leadpoet confirms pilot and scope",
+              "url": "https://x.com/LeadpoetAI/status/2117305529634853243"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 115,
@@ -893,7 +1001,26 @@
     {
       "netuid": 116,
       "name": "Carbon",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN116 Carbon reports Control Center launch and tougher testnet challenges",
+          "summary": "Carbon’s November 2 development update says its Control Center is launched for registered miners, bringing challenge, compute, inference and agent choices into one workflow. The team says two initial testnet challenges proved too easy and plans harder hidden cases, additional inputs and changing boundary conditions. This matters because high test scores did not necessarily produce the physics-learning models the team wanted. The original post keeps upgraded mainnet challenges upcoming; no completed mainnet launch or commercial model qualification is claimed. The repository contains Control Center code, but the gated miner journey was not independently exercised.",
+          "rating": 3,
+          "ratingReason": "A useful miner-facing workflow and candid testnet findings; challenge refinements and untested gated access remain below four stars.",
+          "sources": [
+            {
+              "label": "Original development update and media",
+              "url": "https://x.com/carbonphysicsai/status/2117279280312844799"
+            },
+            {
+              "label": "Official implementation repository",
+              "url": "https://github.com/carbonphysicsai/Carbon"
+            }
+          ],
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 117,
@@ -1047,7 +1174,8 @@
       "All 128 project profiles and dated brief URLs, 140 repository paths and indexed team announcements were collected. Selected originals were directly inspected, but not every team timeline or private Discord was accessible.",
       "Discord-original and independent incident evidence remain unavailable for several reports, including Vanta pricing, Perturb wallets and miner evaluation complaints. Unverified amounts, wallet-person attribution and claimed remedies are not established facts.",
       "Product pages, selected code patches and attached media were inspected as recorded. No paid inference, customer-revenue audit, independent benchmark replay or full review of every long video was performed. Gratis inference and privacy claims were not independently tested.",
-      "Authenticated TaoStats v1 cross-check and credit usage remain blocked by unavailable local API credentials. Shared market cache and finalized archive evidence remain separate sources."
+      "Authenticated TaoStats v1 cross-check and credit usage remain blocked by unavailable local API credentials. Shared market cache and finalized archive evidence remain separate sources.",
+      "The afternoon supplement reviews newly indexed originals, relevant owner-saved leads and direct ecosystem timelines; it is not a repeated exhaustive search of every active team. Team-reported Yanez figures and Carbon’s gated miner workflow were not independently reproduced. Score’s allocation and wallet-lock announcement remains a plan at the finalized cutoff."
     ]
   }
 }
