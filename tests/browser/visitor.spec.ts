@@ -612,3 +612,19 @@ test("holding returns switch periods and exclude filtered missing observations",
  await expect(page.getByRole('table').locator('tbody tr')).not.toHaveCount(0);
  await noOverflow(page);
 });
+
+test("split finder retains exact filters in URL and displays reviewed vectors",async({page})=>{
+ await page.goto('/subnet-news/split-finder');
+ await expect(page.getByRole('heading',{name:'128 matching subnets',exact:true})).toBeVisible();
+ await page.getByRole('combobox',{name:'Allocation',exact:true}).selectOption('2');
+ await page.getByLabel('Maximum %',{exact:true}).fill('0');
+ await page.getByRole('button',{name:'Find splits',exact:true}).click();
+ await expect(page).toHaveURL(/slot=2&min=0&max=0/);
+ await expect(page.getByRole('table').locator('tbody tr')).not.toHaveCount(0);
+ await expect(page.getByRole('main')).toContainText('not revenue, adoption or investment rankings');
+ await noOverflow(page);
+ await page.goto('/subnet-news/split-finder?q=unfindable-subnet-xyz');
+ await expect(page.getByRole('heading',{name:'0 matching subnets',exact:true})).toBeVisible();
+ await expect(page.getByRole('main')).toContainText('Missing values are not zero');
+});
+

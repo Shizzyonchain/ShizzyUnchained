@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/subnet-news/seasonality",
     "/subnet-news/holding-periods",
     "/subnet-news/split-compare",
+    "/subnet-news/split-finder",
     "/subnet-news/recovery-math",
     "/subnet-news/search",
     "/subnet-news/watchlist",
@@ -47,5 +48,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const charts: MetadataRoute.Sitemap = chartPaths.map(path => ({ url: `${base}${path}`, changeFrequency: "daily", priority: 0.7 }));
   return [...staticPages, ...charts, ...newsPages];
 }
+
 
 
