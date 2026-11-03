@@ -2,15 +2,13 @@
 import { useEffect } from "react";
 import { Analytics } from "@vercel/analytics/next";
 import { track } from "@vercel/analytics";
-
-const destinations: Record<string, string> = { "/subnet-news": "daily_news", "/sectors": "sectors", "/validators": "validators", "/validators/root": "root", "/video": "videos", "/university": "classes", "/partners": "partners" };
+import { measurementDestination } from "./lib/measurement-destinations";
 export function SiteMeasurement() {
   useEffect(() => {
     const click = (event: MouseEvent) => {
-      const anchor = (event.target as Element | null)?.closest?.("a[href]");
+      const anchor = event.target instanceof Element ? event.target.closest("a[href]") : null;
       if (!anchor) return;
-      const url = new URL(anchor.getAttribute("href")!, location.href);
-      const destination = url.origin === location.origin ? destinations[url.pathname] : ({ "taoflows.app": "taoflows", "saygm.com": "saygm", "engy.ai": "engy", "lium.io": "lium", "t.me": "telegram" } as Record<string, string>)[url.hostname];
+      const destination = measurementDestination(anchor.getAttribute("href")!, location.href);
       if (destination) track("Destination opened", { destination });
     };
     document.addEventListener("click", click);
