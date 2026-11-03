@@ -9,30 +9,30 @@
   "chainReviews": {
     "etao": {
       "status": "DONE",
-      "checkedAt": "2026-11-03T15:44:40.467302+00:00",
-      "fromBlock": 9422872,
-      "toBlock": 9426414,
-      "hash": "0xac783cf1feb864197bbe7c0a864707da6cc20914d0ab699dea7cd84089611e01",
-      "throughTime": "2026-11-03T15:44:00+00:00",
+      "checkedAt": "2026-11-03T19:10:08.544084+00:00",
+      "fromBlock": 9426415,
+      "toBlock": 9427433,
+      "hash": "0x34c786b6b5346368ac8f99b070566357724a6188ece48a9248a190fe4221086c",
+      "throughTime": "2026-11-03T19:07:48+00:00",
       "gaps": [],
-      "evidence": "/evidence/2026-11-03-daily-chain.json",
+      "evidence": "/evidence/2026-11-03-afternoon-chain.json",
       "archiveUpdated": true,
       "eventCount": 0,
-      "newsDisposition": "No new allocation or qualifying burns through this cutoff. Cacheon9422004 is a dated carry-forward already archived, not a second event.77small burns retained only in evidence.",
+      "newsDisposition": "Zero allocation changes, 128 vectors unchanged; one qualifying Vanta alpha burn published and 21 smaller burns retained only in evidence. Contiguous extension of prior permanent review.",
       "liveVerifiedAt": null
     },
     "burns": {
       "status": "DONE",
-      "checkedAt": "2026-11-03T15:44:40.467302+00:00",
-      "fromBlock": 9422872,
-      "toBlock": 9426414,
-      "hash": "0xac783cf1feb864197bbe7c0a864707da6cc20914d0ab699dea7cd84089611e01",
-      "throughTime": "2026-11-03T15:44:00+00:00",
+      "checkedAt": "2026-11-03T19:10:08.544084+00:00",
+      "fromBlock": 9426415,
+      "toBlock": 9427433,
+      "hash": "0x34c786b6b5346368ac8f99b070566357724a6188ece48a9248a190fe4221086c",
+      "throughTime": "2026-11-03T19:07:48+00:00",
       "gaps": [],
-      "evidence": "/evidence/2026-11-03-daily-chain.json",
+      "evidence": "/evidence/2026-11-03-afternoon-chain.json",
       "archiveUpdated": true,
-      "eventCount": 0,
-      "newsDisposition": "No new allocation or qualifying burns through this cutoff. Cacheon9422004 is a dated carry-forward already archived, not a second event.77small burns retained only in evidence.",
+      "eventCount": 1,
+      "newsDisposition": "Zero allocation changes, 128 vectors unchanged; one qualifying Vanta alpha burn published and 21 smaller burns retained only in evidence. Contiguous extension of prior permanent review.",
       "liveVerifiedAt": null
     }
   },
@@ -1882,5 +1882,87 @@
     "news-monitor-2026-11-03/0453-receipt.json",
     "news-monitor-2026-11-03/0153-receipt.json"
   ],
-  "remaining": "Full source/window and pending reconciliation, finalGrok, validation/release/live/one roundup. Available verified news may publish with these explicit gaps; never markfullworkflowcomplete."
+  "remaining": "Full source/window and pending reconciliation, finalGrok, validation/release/live/one roundup. Available verified news may publish with these explicit gaps; never markfullworkflowcomplete.",
+  "monitorSupplements": [
+    {
+      "checkedAt": "2026-11-03T19:07:35.979010+00:00",
+      "identity": "@ShizzyUnchained verified in signed-in account menu",
+      "sourcesReviewed": [
+        {
+          "label": "Fugal launch announcement, November 3 at 12:14 PM Eastern",
+          "url": "https://x.com/fugal_ai/status/2117666691677065469"
+        },
+        {
+          "label": "Yuma Accelerator confirmation, November 3",
+          "url": "https://x.com/YumaGroup/status/2117667596166177065"
+        },
+        {
+          "label": "Official router subnet implementation and scoring documentation",
+          "url": "https://github.com/fugal-ai/fugal-subnet"
+        },
+        {
+          "label": "REAX 1.3 release and qualification thread, November 3",
+          "url": "https://x.com/reaxlabs/status/2117664350655729995"
+        },
+        {
+          "label": "Published model card, provenance and limitations",
+          "url": "https://huggingface.co/decisionmodels/REAX-1.3"
+        },
+        {
+          "label": "Official EU API model listing and price",
+          "url": "https://decisionmodels.io/models/reax-1.3"
+        },
+        {
+          "label": "Open inference engine, including reax13 implementation",
+          "url": "https://github.com/reaxlabs/reax-engine"
+        }
+      ],
+      "announcements": {
+        "Fugal": "2026-11-03T17:14:00Z",
+        "Yuma": "2026-11-03T17:17:00Z",
+        "REAX": "2026-11-03T17:05:00Z"
+      },
+      "disposition": "Added Fugal and REAX three-star updates plus two-star finalized Vanta burn before 5PM Eastern. All prior stories and chain evidence preserved. No new X quote or second roundup.",
+      "mediaReview": "REAX full release graphic inspected: clearly own measurement, not official scores. Yuma17second clip not fully reviewed; no media-dependent claims retained.",
+      "gaps": [
+        "No independent live scoring verification or paid model inference",
+        "Not every active subnet primary timeline individually inspected",
+        "Yuma clip full review pending; earlier unresolved leads preserved in monitor pending record"
+      ],
+      "evidence": "Private monitor evidence in ../news-monitor-2026-11-03/1400-*; no private bookmark lists copied into public audit",
+      "chainExtensionEvidence": "/evidence/2026-11-03-afternoon-chain.json"
+    }
+  ],
+  "priorChainReviewCutoffs": [
+    {
+      "etao": {
+        "status": "DONE",
+        "checkedAt": "2026-11-03T15:44:40.467302+00:00",
+        "fromBlock": 9422872,
+        "toBlock": 9426414,
+        "hash": "0xac783cf1feb864197bbe7c0a864707da6cc20914d0ab699dea7cd84089611e01",
+        "throughTime": "2026-11-03T15:44:00+00:00",
+        "gaps": [],
+        "evidence": "/evidence/2026-11-03-daily-chain.json",
+        "archiveUpdated": true,
+        "eventCount": 0,
+        "newsDisposition": "No new allocation or qualifying burns through this cutoff. Cacheon9422004 is a dated carry-forward already archived, not a second event.77small burns retained only in evidence.",
+        "liveVerifiedAt": null
+      },
+      "burns": {
+        "status": "DONE",
+        "checkedAt": "2026-11-03T15:44:40.467302+00:00",
+        "fromBlock": 9422872,
+        "toBlock": 9426414,
+        "hash": "0xac783cf1feb864197bbe7c0a864707da6cc20914d0ab699dea7cd84089611e01",
+        "throughTime": "2026-11-03T15:44:00+00:00",
+        "gaps": [],
+        "evidence": "/evidence/2026-11-03-daily-chain.json",
+        "archiveUpdated": true,
+        "eventCount": 0,
+        "newsDisposition": "No new allocation or qualifying burns through this cutoff. Cacheon9422004 is a dated carry-forward already archived, not a second event.77small burns retained only in evidence.",
+        "liveVerifiedAt": null
+      }
+    }
+  ]
 }
