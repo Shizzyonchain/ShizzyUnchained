@@ -2,13 +2,49 @@
   "version": 1,
   "date": "2026-11-04",
   "title": "Bittensor Daily News — November 4, 2026",
-  "summary": "SN36 Weir reveals its GPU-rental direction, SN65 TPN publishes a smaller model, and SN75 Hippius reports 1 PB stored. Plus verified allocation changes and a clear distinction between proposed code and live execution.",
+  "summary": "SubConnect estimates $70M in annualized subnet revenue, drawing a response from Barry Silbert. SN4 Targon shows $1.159M in trailing 30-day platform revenue, SN64 Chutes lists DeepSeek V4.1 Flash, and Talisman announces access to mapped-address TAO balances. Earlier verified stories remain below.",
   "publishedAt": "2026-11-04T15:39:12.488147+00:00",
   "coverageStart": "2026-11-03T19:07:48+00:00",
   "coverageEnd": "2026-11-04T16:14:35.740148+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [
+    {
+      "headline": "SubConnect estimates $70M annualized subnet revenue; Barry Silbert highlights the growth",
+      "summary": "On November 4, SubConnect raised its estimate of annualized revenue across revenue-generating Bittensor subnets to $70M, from $50M a month earlier and $35M two months earlier. That is 40% growth in the latest monthly comparison and a doubling across two months. Its graphic dates the snapshots September 1, October 1 and November 1. At 7:44 AM Eastern, Barry Silbert quoted the report and highlighted the 40% growth. This measures an estimated annualized run rate, not $70M already earned, audited ecosystem accounts or profit. SubConnect explicitly says sustaining growth, margins and reduced emission dependence remain the test. Its $100M-plus year-end figure is an expectation, not a completed milestone.",
+      "sources": [
+        {
+          "url": "https://x.com/WeAreSubConnect/status/2117915325681574311",
+          "label": "SubConnect original estimate and November revenue-index graphic"
+        },
+        {
+          "url": "https://x.com/BarrySilbert/status/2117961096409833877",
+          "label": "Barry Silbert’s November 4 response to the revenue index"
+        }
+      ],
+      "rating": 4,
+      "ratingReason": "A material, quantified operating-revenue estimate with dated comparisons; Silbert’s reaction adds context, not independent financial verification.",
+      "status": "verified",
+      "importance": "high"
+    },
+    {
+      "headline": "Talisman announces detection and withdrawal of TAO at mapped EVM addresses",
+      "summary": "On November 4, Talisman explained the distinction between ordinary EVM-key accounts and truncated 0x addresses mapped from native Bittensor accounts. Its follow-up says the wallet now detects TAO balances at those mapped addresses, displays them in the portfolio and offers withdrawal to the native account. This addresses balances that can be difficult to locate after bridges, contract payouts or transfers. The capability is a primary vendor announcement; this review did not connect a wallet, inspect private balances or execute a withdrawal. It is not an announcement that every 0x account is controlled by the same native key.",
+      "sources": [
+        {
+          "url": "https://x.com/wearetalisman/status/2117995037464396083",
+          "label": "Talisman November 4 explanation of mapped Bittensor EVM addresses"
+        },
+        {
+          "url": "https://x.com/wearetalisman/status/2117995069332656144",
+          "label": "Talisman announcement of balance detection and native-account withdrawal"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "A practical wallet capability for accessing otherwise hard-to-find TAO; vendor attribution and untested execution are explicit.",
+      "status": "verified",
+      "importance": "medium"
+    },
     {
       "headline": "Security patch merges into release-487; mainnet activation is separate",
       "summary": "On November 3, Subtensor PR3299 merged into release-487. It tightens delayed-proxy authorization and basket-dividend minting against stale permissions and short-lived price manipulation. This is a verified code merge, not proof of a mainnet upgrade: today’s finalized review used runtime 486. No exploitation or user losses were established in this review.",
@@ -54,6 +90,20 @@
       "ratingReason": "Verified scheduling for original Shizzy coverage, with upcoming and completed videos kept separate.",
       "status": "verified",
       "importance": "medium"
+    },
+    {
+      "headline": "Const argues for protocol-coordinated compute across jurisdictions",
+      "summary": "Commentary dated November 4 at 8:12 AM Eastern: Const argues that protocols can coordinate decentralized inference, compute clusters and training across jurisdictions, and names SN4 Targon’s Engy, SN64 Chutes and Instant Inference in that thesis. The post responds to Elon Musk’s remark about data centers in space. This is a view on infrastructure coordination and political concentration, not a new product launch, proof that jurisdictional risk disappears or a partnership announcement.",
+      "sources": [
+        {
+          "url": "https://x.com/const_reborn/status/2117968318162252056",
+          "label": "Const’s original decentralized-compute commentary, November 4"
+        }
+      ],
+      "rating": 2,
+      "ratingReason": "Relevant founder commentary supplies context; it is kept separate from measured adoption and completed capabilities.",
+      "status": "verified",
+      "importance": "informational"
     }
   ],
   "subnets": [
@@ -75,7 +125,22 @@
     {
       "netuid": 4,
       "name": "Targon",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN4 Targon’s dashboard shows $1.159M in trailing 30-day platform revenue",
+          "summary": "SN4 Targon’s public revenue dashboard, checked November 4, shows $1,158,560 of combined platform revenue over the trailing 30 days, alongside 15,910 total users and 8,183 new workloads in that period. The chart separates VM, Contracts, BM and Sandboxes. These are operator-published operating metrics, distinct from emissions, token valuation and profit. A bookmarked secondary report puts October revenue near $1.2M; this review verified the live trailing-window figure and does not substitute it for a reconstructed October calendar total. The dashboard’s network snapshot is dated November 4 at 17:03 UTC; the revenue window has its own 30-day definition.",
+          "sources": [
+            {
+              "url": "https://stats.targon.com/revenue",
+              "label": "SN4 Targon official platform-revenue dashboard, reviewed November 4"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "A directly visible seven-figure operating-revenue metric gives readers substantive commercial evidence, with the operator attribution and measurement window explicit.",
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
     },
     {
       "netuid": 5,
@@ -495,6 +560,28 @@
           "ratingReason": "A specific model-access plan with a primary team statement; availability and partner-side confirmation remain unverified.",
           "status": "developing",
           "importance": "informational"
+        },
+        {
+          "headline": "SN64 Chutes lists DeepSeek V4.1 Flash at $0.30 input and $1.20 output",
+          "summary": "At 11:04 AM Eastern on November 4, SN64 Chutes announced DeepSeek V4.1 Flash availability. Its public catalog lists deepseek-ai/DeepSeek-V4.1-Flash-1017 as Hot, with prices per million tokens of $0.30 input, $1.20 output and $0.03 cached input. The same catalog lists V4 Pro at $0.85 input and $2.65 output. Developers can choose between the models through Chutes’ API rather than use the larger model for every call. Listing and advertised pricing were directly checked; authenticated inference, uptime and comparative benchmark scores were not independently tested. This is separate from the still-planned Tencent Hy4 integration.",
+          "sources": [
+            {
+              "url": "https://x.com/chutes_ai/status/2118011488614891563",
+              "label": "SN64 Chutes original live-model announcement, November 4"
+            },
+            {
+              "url": "https://chutes.ai/app/chute/chutes-deepseek-ai-deepseek-v4-1-flash-1017",
+              "label": "SN64 Chutes DeepSeek V4.1 Flash listing"
+            },
+            {
+              "url": "https://chutes.ai/app",
+              "label": "SN64 Chutes public model catalog and current pricing"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Concrete available model access and a verified public price comparison help developers choose a service; no benchmark or service-execution claim is inferred.",
+          "status": "verified",
+          "importance": "medium"
         }
       ]
     },
@@ -967,5 +1054,5 @@
       "The 11:02 AM Eastern monitor could not run fresh Grok discovery/omission responses because the signed-in account reached its usage limit. Direct project policies, primary repository changes, account discovery sources and the dated news index were reviewed instead; original-source coverage is not exhaustive."
     ]
   },
-  "updatedAt": "2026-11-04T16:14:35.740148+00:00"
+  "updatedAt": "2026-11-04T17:44:37.037449+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-11-04",
-  "checkedAt": "2026-11-04T15:39:12.488147+00:00",
+  "checkedAt": "2026-11-04T17:44:37.037449+00:00",
   "dailyWorkflowComplete": false,
   "publication": {
     "status": "READY_PRODUCTION_LIVE_AND_SINGLE_ROUNDUP_VERIFIED_WITH_SOURCE_GAPS",
@@ -848,9 +848,14 @@
     {
       "netuid": 4,
       "name": "Targon",
-      "publishedItems": 0,
-      "outcome": "no-cleared-new-story",
-      "sources": [],
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://stats.targon.com/revenue",
+          "label": "SN4 Targon official platform-revenue dashboard, reviewed November 4"
+        }
+      ],
       "datedBrief": null,
       "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
       "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
@@ -1670,12 +1675,24 @@
     {
       "netuid": 64,
       "name": "Chutes",
-      "publishedItems": 1,
+      "publishedItems": 2,
       "outcome": "covered",
       "sources": [
         {
           "url": "https://x.com/chutes_ai/status/2117939031090909447",
           "label": "SN64 Chutes planned-integration announcement, November 4"
+        },
+        {
+          "url": "https://x.com/chutes_ai/status/2118011488614891563",
+          "label": "SN64 Chutes original live-model announcement, November 4"
+        },
+        {
+          "url": "https://chutes.ai/app/chute/chutes-deepseek-ai-deepseek-v4-1-flash-1017",
+          "label": "SN64 Chutes DeepSeek V4.1 Flash listing"
+        },
+        {
+          "url": "https://chutes.ai/app",
+          "label": "SN64 Chutes public model catalog and current pricing"
         }
       ],
       "datedBrief": null,
@@ -2601,8 +2618,8 @@
     },
     {
       "url": "https://x.com/const_reborn/status/2117968318162252056",
-      "outcome": "excluded",
-      "disposition": "Decentralized-compute thesis commentary, no new subnet release or executed change."
+      "outcome": "covered",
+      "disposition": "Const argues for protocol-coordinated compute across jurisdictions"
     },
     {
       "url": "https://x.com/const_reborn/status/2117828138772095201",
@@ -2613,6 +2630,46 @@
       "url": "https://x.com/const_reborn/status/2117649798362992858",
       "outcome": "excluded",
       "disposition": "RSI commentary previously reviewed; no new verified implementation detail."
+    },
+    {
+      "url": "https://x.com/WeAreSubConnect/status/2117915325681574311",
+      "outcome": "covered",
+      "disposition": "SubConnect estimates $70M annualized subnet revenue; Barry Silbert highlights the growth"
+    },
+    {
+      "url": "https://x.com/BarrySilbert/status/2117961096409833877",
+      "outcome": "covered",
+      "disposition": "SubConnect estimates $70M annualized subnet revenue; Barry Silbert highlights the growth"
+    },
+    {
+      "url": "https://stats.targon.com/revenue",
+      "outcome": "covered",
+      "disposition": "SN4 Targon’s dashboard shows $1.159M in trailing 30-day platform revenue"
+    },
+    {
+      "url": "https://x.com/chutes_ai/status/2118011488614891563",
+      "outcome": "covered",
+      "disposition": "SN64 Chutes lists DeepSeek V4.1 Flash at $0.30 input and $1.20 output"
+    },
+    {
+      "url": "https://chutes.ai/app/chute/chutes-deepseek-ai-deepseek-v4-1-flash-1017",
+      "outcome": "covered",
+      "disposition": "SN64 Chutes lists DeepSeek V4.1 Flash at $0.30 input and $1.20 output"
+    },
+    {
+      "url": "https://chutes.ai/app",
+      "outcome": "covered",
+      "disposition": "SN64 Chutes lists DeepSeek V4.1 Flash at $0.30 input and $1.20 output"
+    },
+    {
+      "url": "https://x.com/wearetalisman/status/2117995037464396083",
+      "outcome": "covered",
+      "disposition": "Talisman announces detection and withdrawal of TAO at mapped EVM addresses"
+    },
+    {
+      "url": "https://x.com/wearetalisman/status/2117995069332656144",
+      "outcome": "covered",
+      "disposition": "Talisman announces detection and withdrawal of TAO at mapped EVM addresses"
     }
   ],
   "priorArchiveMonitorReview": {
@@ -2755,6 +2812,85 @@
       },
       "privateDiscoveryEvidence": "Retained only outside public site in news-monitor-2026-11-04/1102-*private.txt",
       "unresolved": "Tensia dossier/NIOME/DittoV15/Affine/Attune/ChipForge/Connito/Leadpoetverifier mismatch/MinosIM2/Yanez/SN39 remain pending exact primary or execution evidence. All prior receipts retained."
+    }
+  ],
+  "bookmarkCorrections": [
+    {
+      "checkedAt": "2026-11-04T17:44:37.037449+00:00",
+      "type": "Shizzy-requested bookmark correction",
+      "identity": "@ShizzyUnchained directly verified",
+      "scope": "Focused bookmark/primary-source supplement; original full-roster and chain cutoff retained, not an exhaustive new daily run.",
+      "sources": [
+        {
+          "url": "https://x.com/WeAreSubConnect/status/2117915325681574311",
+          "outcome": "covered",
+          "headline": "SubConnect estimates $70M annualized subnet revenue; Barry Silbert highlights the growth"
+        },
+        {
+          "url": "https://x.com/BarrySilbert/status/2117961096409833877",
+          "outcome": "covered",
+          "headline": "SubConnect estimates $70M annualized subnet revenue; Barry Silbert highlights the growth"
+        },
+        {
+          "url": "https://stats.targon.com/revenue",
+          "outcome": "covered",
+          "headline": "SN4 Targon’s dashboard shows $1.159M in trailing 30-day platform revenue"
+        },
+        {
+          "url": "https://x.com/chutes_ai/status/2118011488614891563",
+          "outcome": "covered",
+          "headline": "SN64 Chutes lists DeepSeek V4.1 Flash at $0.30 input and $1.20 output"
+        },
+        {
+          "url": "https://chutes.ai/app/chute/chutes-deepseek-ai-deepseek-v4-1-flash-1017",
+          "outcome": "covered",
+          "headline": "SN64 Chutes lists DeepSeek V4.1 Flash at $0.30 input and $1.20 output"
+        },
+        {
+          "url": "https://chutes.ai/app",
+          "outcome": "covered",
+          "headline": "SN64 Chutes lists DeepSeek V4.1 Flash at $0.30 input and $1.20 output"
+        },
+        {
+          "url": "https://x.com/wearetalisman/status/2117995037464396083",
+          "outcome": "covered",
+          "headline": "Talisman announces detection and withdrawal of TAO at mapped EVM addresses"
+        },
+        {
+          "url": "https://x.com/wearetalisman/status/2117995069332656144",
+          "outcome": "covered",
+          "headline": "Talisman announces detection and withdrawal of TAO at mapped EVM addresses"
+        },
+        {
+          "url": "https://x.com/const_reborn/status/2117968318162252056",
+          "outcome": "covered",
+          "headline": "Const argues for protocol-coordinated compute across jurisdictions"
+        }
+      ],
+      "grok": {
+        "status": "BLOCKED_USAGE_LIMIT",
+        "response": "You have reached a Grok usage limit. Try again later.",
+        "evidence": "Private bookmark-news-2026-11-04/grok.txt"
+      },
+      "gaps": [
+        "Bookmark scroll captures have loading/overlap gaps; no claim of exhaustive historical bookmarks.",
+        "Calendar-October Targon total remains pending raw daily reconstruction; live trailing 30-day figure verified.",
+        "Chutes media initially did not fully render; public catalog verifies pricing. No benchmark replication.",
+        "No wallet connection, inference request or withdrawal executed."
+      ],
+      "deduplication": [
+        {
+          "url": "https://x.com/YumaGroup/status/2117667596166177065",
+          "outcome": "already-covered",
+          "reason": "November3 SN70 story already includes confirmed Yuma Accelerator participation; no duplicate new event."
+        },
+        {
+          "url": "https://x.com/KoreanCryptoKOR/status/2117869695911301581",
+          "outcome": "pending",
+          "reason": "Secondary October revenue report; published story instead uses directly verified official trailing-window metric."
+        }
+      ],
+      "social": "No new X post or second daily roundup authorized by this correction; existing roundup preserved."
     }
   ]
 }
