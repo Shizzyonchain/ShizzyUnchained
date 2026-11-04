@@ -15,6 +15,7 @@ type ChannelVideo = {
 };
 
 const channelVideos: ChannelVideo[] = [
+  { id: "1ajAfGr_dh0", title: "AI on Your Terms? | True Performance Network | Bittensor Subnet 65", meta: "55:32 · Livestream replay · November 3, 2026" },
   { id: "3ADXtheo1YE", title: "TAO Ready to Fly? My November Outlook | Bittensor & Subnet Update", meta: "22:12 · Public video · November 2, 2026" },
   { id: "KJBm_SVjIeY", title: "Bittensor Bloodbath! My Next Move in the 10 to 100 TAO Challenge", meta: "22:32 · Public video · October 30, 2026" },
   { id: "RnnWezJOuE8", title: "Bittensor Gets Expressive and Conviction Runs Deep with TAO Templar", meta: "1:17:21 · Livestream replay · October 29, 2026" },
@@ -375,7 +376,7 @@ const channelVideos: ChannelVideo[] = [
   },
 ];
 const liveStreams: ChannelVideo[] = [
-  { id: "1ajAfGr_dh0", title: "AI on Your Terms? | True Performance Network | Bittensor Subnet 65", meta: "Upcoming livestream · November 3, 2026 · 11:30 AM ET / 8:30 AM PT", startsAt: "2026-11-03T16:30:00Z", upcoming: true },
+  { id: "1ajAfGr_dh0", title: "AI on Your Terms? | True Performance Network | Bittensor Subnet 65", meta: "55:32 · Livestream replay · November 3, 2026" },
   { id: "dGwR6XOE9tU", title: "AI Can Write Code. Can It Engineer the Real World? | Carbon SN116", meta: "Rescheduled livestream · November 6, 2026 · 1:30 PM ET / 10:30 AM PT", startsAt: "2026-11-06T18:30:00Z", upcoming: true },
   { id: "STPM5BtE-ts", title: "Can You Prove You’re Human? Yanez Bittensor Subnet 54 with Jose Caldera", meta: "57:00 · Livestream replay · October 27, 2026" },
   { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "Rescheduled livestream · November 5, 2026 · 11:00 AM ET / 8:00 AM PT", startsAt: "2026-11-05T16:00:00Z", upcoming: true },

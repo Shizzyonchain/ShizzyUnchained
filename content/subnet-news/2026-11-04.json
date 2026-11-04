@@ -1,0 +1,890 @@
+{
+  "version": 1,
+  "date": "2026-11-04",
+  "title": "Bittensor Daily News — November 4, 2026",
+  "summary": "SN36 Weir reveals its GPU-rental direction, SN65 TPN publishes a smaller model, and SN75 Hippius reports 1 PB stored. Plus verified allocation changes and a clear distinction between proposed code and live execution.",
+  "publishedAt": "2026-11-04T15:39:12.488147+00:00",
+  "coverageStart": "2026-11-03T19:07:48+00:00",
+  "coverageEnd": "2026-11-04T15:39:12.488147+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [
+    {
+      "headline": "Security patch merges into release-487; mainnet activation is separate",
+      "summary": "On November 3, Subtensor PR3299 merged into release-487. It tightens delayed-proxy authorization and basket-dividend minting against stale permissions and short-lived price manipulation. This is a verified code merge, not proof of a mainnet upgrade: today’s finalized review used runtime 486. No exploitation or user losses were established in this review.",
+      "sources": [
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3299",
+          "label": "Merged security patch, November 3"
+        }
+      ],
+      "rating": 4,
+      "ratingReason": "A substantive protocol-security fix with a verified merge; its release-branch scope and unverified activation are explicit.",
+      "status": "verified",
+      "importance": "high"
+    },
+    {
+      "headline": "Gamma service-credit proposal remains open",
+      "summary": "PR3300, opened November 2 and still open at this review, proposes dollar-valued service credits minted by burning subnet alpha. The credits would be non-transferable and non-redeemable, used for a subnet’s service through a hotkey-keyed deposit. Its launch sequence requires an upgrade and enabling steps. It is not a live payment system or an observed transaction burn.",
+      "sources": [
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3300",
+          "label": "Open gamma proposal and launch conditions"
+        }
+      ],
+      "rating": 2,
+      "ratingReason": "A useful protocol design to follow; code under review is not an activated capability.",
+      "status": "developing",
+      "importance": "informational"
+    },
+    {
+      "headline": "Shizzy interview calendar: SN71 Leadpoet Thursday, SN116 Carbon Friday",
+      "summary": "The official YouTube Live tab now lists SN71 Leadpoet for November 5 at 11:00 AM Eastern / 8:00 AM Pacific and the rescheduled SN116 Carbon conversation for November 6 at 1:30 PM Eastern / 10:30 AM Pacific. Both remain upcoming. The site’s featured stream is SN71 Leadpoet; the completed SN65 TPN episode is in replays.",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=q2pGNLUvCm4",
+          "label": "Shizzy’s upcoming SN71 Leadpoet interview"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dGwR6XOE9tU",
+          "label": "Shizzy’s rescheduled SN116 Carbon interview"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "Verified scheduling for original Shizzy coverage, with upcoming and completed videos kept separate.",
+      "status": "verified",
+      "importance": "medium"
+    }
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": []
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": [
+        {
+          "headline": "SN24 ms.computer owner announces a coldkey swap",
+          "summary": "At finalized block 9,431,616 on November 4, extrinsic 25 emitted ColdkeySwapAnnounced for the verified SN24 ms.computer owner. Adjacent storage still shows the same owner and registration 2,538,424. The event commits to a destination hash; it is not a completed owner transfer, a disclosed buyer or proof of a sale. A later executed swap still requires separate verification.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-04-daily-lifecycle.json",
+              "label": "SN24 ms.computer announcement and adjacent ownership storage"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A specific pending ownership-related action; completion and commercial meaning are unverified.",
+          "status": "developing",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": [
+        {
+          "headline": "SN31 rec4ll raises miners to 55% and the owner to 25%",
+          "summary": "Overnight carry-forward, executed November 3 at 11:47:36 PM Eastern: finalized block 9,430,332, extrinsic 22, changed SN31 rec4ll from approximately 18% owner / 41% validators / 41% miners to 25% / 20% / 55%. The first two slots remained zero. Successful execution and exact integer vectors are archived. Historical yield may lag the new allocation; this event does not by itself measure present staker returns. It is the same previously archived transaction, not another change today.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-04-overnight-chain.json",
+              "label": "SN31 rec4ll finalized allocation execution"
+            },
+            {
+              "url": "https://shizzyunchained.com/subnet-news/etao",
+              "label": "Allocation archive and methodology"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A verified change materially redistributes this subnet’s reward budget; no investment-return inference.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Jacob Robert Steeves",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": [
+        {
+          "headline": "SN36 Weir sets its identity and documents GPU rentals",
+          "summary": "SN36 changed from an unnamed identity to Weir at finalized block 9,432,987 on November 4, followed by another metadata update at 9,433,014. The owner and registration 9,420,559 stayed unchanged across both transactions. Its public site offers prepaid GPU machines with root SSH; the linked miner/validator repository identifies SN36. The site and code are accessible, but no paid rental, delivered GPU capacity or revenue was independently tested. This is the current registration, not continuation of the earlier SN36 project.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-04-daily-lifecycle.json",
+              "label": "Finalized identity and unchanged registration evidence"
+            },
+            {
+              "url": "https://weircompute.com/",
+              "label": "SN36 Weir GPU rental product"
+            },
+            {
+              "url": "https://github.com/weircompute/weir-subnet",
+              "label": "SN36 Weir miner and validator code"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A newly identified compute project with accessible product and code; customer execution and capacity remain unverified.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": [
+        {
+          "headline": "SN44 Score shifts the allocation to 12% owner, 44% miners and 44% validators",
+          "summary": "Overnight carry-forward, executed November 3 at 8:18:36 PM Eastern: finalized block 9,429,287, extrinsic 8, changed SN44 Score’s five-slot vector from approximately 18% owner / 41% validators / 41% miners to 12% / 44% / 44%. The first two slots remained zero. The permanent evidence retains exact integer vectors and successful execution. This allocation change is not a transaction burn or proof that an owner-wallet lock was executed.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-03-late-chain.json",
+              "label": "SN44 Score finalized before/after allocation evidence"
+            },
+            {
+              "url": "https://shizzyunchained.com/subnet-news/etao",
+              "label": "Allocation archive and yield-lag explanation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Verified execution changes reward distribution; the separate proposed lock is not inferred from weights.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": []
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": [
+        {
+          "headline": "SN64 Chutes announces Tencent Hy4 support is coming",
+          "summary": "On November 4 at 6:16 AM Eastern, SN64 Chutes said it is partnering with Tencent Cloud to bring Hy4 to its existing API under a new model ID and the same key. The post says “coming” and “more soon”; it does not give a launch time, model ID or independently tested endpoint. Treat this as an announced integration, not a verified live deployment. The reviewed quote of Tencent’s model promotion does not independently confirm the commercial arrangement.",
+          "sources": [
+            {
+              "url": "https://x.com/chutes_ai/status/2117939031090909447",
+              "label": "SN64 Chutes planned-integration announcement, November 4"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A specific model-access plan with a primary team statement; availability and partner-side confirmation remain unverified.",
+          "status": "developing",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": [
+        {
+          "headline": "SN65 TPN publishes the 2.32 GB TPN-007 model",
+          "summary": "On November 4 at 6:11 AM Eastern, SN65 TPN announced its TPN-007 output. The task was to fit Qwen3.5-4B under a 4.2 GiB ceiling; its public Hugging Face repository contains a 2.32 GB GGUF file. SN65 TPN says it runs in Gratis. The original model URL now redirects to tpn-007-winner. GB and GiB are different units. File availability is verified; retained model quality and local runtime performance were not independently benchmarked.",
+          "sources": [
+            {
+              "url": "https://x.com/TPN_Labs/status/2117937901250175347",
+              "label": "SN65 TPN original announcement, November 4"
+            },
+            {
+              "url": "https://huggingface.co/tpnlabs/tpn-007-winner/tree/main",
+              "label": "SN65 TPN published model files"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A concrete downloadable competition output with a practical local-inference route; performance claims remain untested.",
+          "status": "verified",
+          "importance": "medium"
+        },
+        {
+          "headline": "Watch Shizzy’s completed SN65 TPN interview",
+          "summary": "The November 3 interview with Mikel from SN65 TPN is now a public replay, not an upcoming stream. The 55:32 episode covers the project’s background, model optimization and Gratis. The YouTube description has 25 chapters and verified project links. The site video library now offers the replay for playback.",
+          "sources": [
+            {
+              "url": "https://www.youtube.com/watch?v=1ajAfGr_dh0",
+              "label": "Shizzy’s SN65 TPN interview replay, November 3"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Original Shizzy interview coverage with a verified public replay, chaptered description and correct completed status.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": []
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": [
+        {
+          "headline": "SN75 Hippius reports 1 PB stored",
+          "summary": "Dated November 3 at 2:40 PM Eastern: SN75 Hippius says its distributed storage network holds 1 PB, described as 1,000 TB. That is a team-reported usage milestone. The reviewed announcement does not establish paid storage, unique customer data, replication accounting, utilization economics or monthly revenue. A later “next petabyte” reply describes the next ambition, not a second completed milestone.",
+          "sources": [
+            {
+              "url": "https://x.com/Hippius_cloud/status/2117703450943189143",
+              "label": "SN75 Hippius original storage milestone, November 3"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A specific operating metric worth tracking, with its team attribution and missing commercial denominator explicit.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": [
+        {
+          "headline": "SN91 Cascade describes four cross-subnet connections",
+          "summary": "SN91 Cascade’s November 4 post says SN118 Ditto uses Ephemeris for credit-usage forecasts; SN4 Targon supplied compute credits for architecture testing; SN6 Numinous exchanges knowledge-graph data and forecasts; and SN51 Lium supports GPU rentals for its mixture-of-experts competition. SN6 Numinous also acknowledged the collaboration on November 3. These are reported connections, not four independently measured new production deployments or revenue contracts.",
+          "sources": [
+            {
+              "url": "https://x.com/cascade_sn91/status/2117952751963643949",
+              "label": "SN91 Cascade connection map, November 4"
+            },
+            {
+              "url": "https://x.com/numinous_ai/status/2117626181285806125",
+              "label": "SN6 Numinous collaboration acknowledgement, November 3"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Specific inter-project workflows with a partner acknowledgement; commercial scale and deployment timing are not established.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Thirty Spokes",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": []
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": [
+        {
+          "headline": "SN127 Zils points to small decision models after the Astrid rename",
+          "summary": "Dated follow-up to the November 3 Astrid → Zils identity change: the current SN127 metadata now links zils.ai and its decision-model repository. The public site describes training small models for routing, flagging and matching tasks, and labels its training workspace early access. Its research and illustrated examples are not proof of general customer results. Sector discovery now follows the current stated product rather than the historical trading-project label. No sale or insider-buying conclusion follows from the rename or chart.",
+          "sources": [
+            {
+              "url": "https://zils.ai/",
+              "label": "SN127 Zils current product and early-access disclosures"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-04-daily-lifecycle.json",
+              "label": "SN127 Zils current on-chain identity links"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Clarifies a changed project’s stated direction without treating early access or a rename as proved adoption.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "128 active slots reconciled against finalized owner/identity storage and the shared market feed; 49 dated November 4 SubnetRadar briefs read in browser.",
+      "Signed-in Grok discovery, qualitative discussion review and focused omission query; Const Reborn, TensiaFDN, TensiaBot and relevant account activity reviewed.",
+      "Finalized allocation/burn scan, registration/identity/owner lifecycle interval and 128 current-owner holdings; selected primary announcements, model files, repositories, product sites and official YouTube Videos/Live tabs."
+    ],
+    "gaps": [
+      "Available verified news is published with a source-coverage gap: original X timelines/repositories were not individually exhaustively reviewed for every subnet. The 49 AI-generated Discord digests are discovery, not primary verification; the original Discord link redirected to login. Empty subnet entries do not establish no activity.",
+      "Authenticated TaoStats cross-check is blocked because no local API key is available. No credit balance or indexer completeness was invented. Full private Discord and independently run model/GPU/storage benchmarks are unavailable.",
+      "The promised Tensia dossier and several competition/scoring leads remain unresolved; allegations and unidentified wallets were not promoted to facts. A code merge is not a mainnet deployment, and team-reported adoption figures are not independently audited."
+    ]
+  }
+}

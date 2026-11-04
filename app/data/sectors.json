@@ -1,7 +1,7 @@
 {
-  "reviewedAt": "2026-11-02T15:23:32.520115+00:00",
-  "sourceBlock": 9419000,
-  "evidenceUrl": "/evidence/sectors-2026-11-02.json",
+  "reviewedAt": "2026-11-04T15:35:21.376392+00:00",
+  "sourceBlock": 9433469,
+  "evidenceUrl": "/evidence/sectors-2026-11-04.json",
   "sectors": [
     {
       "id": "robotics",
@@ -623,15 +623,17 @@
     },
     {
       "netuid": 36,
-      "name": "Bittensor",
-      "summary": "Owner-submitted identity changed; no current operating product sector established.",
-      "sectors": [],
-      "source": "https://shizzyunchained.com/evidence/2026-10-27-daily-chain.json",
-      "basis": "Owner-submitted on-chain description",
-      "reviewedAt": "2026-10-27T14:23:12.848652+00:00",
-      "reviewStatus": "unclassified",
+      "name": "Weir",
+      "summary": "GPU marketplace offering full machines with root SSH.",
+      "sectors": [
+        "compute"
+      ],
+      "source": "https://weircompute.com/",
+      "basis": "Current project product page and finalized identity",
+      "reviewedAt": "2026-11-04T15:35:21.376392+00:00",
+      "reviewStatus": "classified",
       "identityStatus": "named",
-      "reviewNote": "No inference of a new product from a display-name edit."
+      "reviewNote": "Current product site and linked SN36 repository; customer rentals were not executed."
     },
     {
       "netuid": 37,
@@ -1113,15 +1115,18 @@
     },
     {
       "netuid": 70,
-      "name": "Unknown",
-      "summary": "New unnamed registration; no current product sector established.",
-      "sectors": [],
-      "source": "https://shizzyunchained.com/evidence/2026-10-26-daily-chain.json",
-      "basis": "Current identity reviewed; no product sector established",
-      "reviewedAt": "2026-10-26T14:24:50.166214+00:00",
-      "reviewStatus": "unclassified",
-      "identityStatus": "unclear-purpose",
-      "reviewNote": "Finalized registration 9364303 replaced the former SN70 project. Current name is absent; retain Unclassified without inheriting old-project claims."
+      "name": "Fugal",
+      "summary": "Cost-aware LLM routing and decentralized router training.",
+      "sectors": [
+        "inference",
+        "training"
+      ],
+      "source": "https://fugalai.com/",
+      "basis": "Current project product page and finalized identity",
+      "reviewedAt": "2026-11-04T15:35:21.376392+00:00",
+      "reviewStatus": "classified",
+      "identityStatus": "named",
+      "reviewNote": "Current router interface and finalized identity; published cost/performance claims not independently benchmarked."
     },
     {
       "netuid": 71,
@@ -1186,17 +1191,17 @@
     {
       "netuid": 75,
       "name": "Hippius",
-      "summary": "Blockchain-backed storage, virtual machines and cloud apps.",
+      "summary": "Distributed storage, virtual machines and cloud services.",
       "sectors": [
         "compute",
         "networks"
       ],
-      "source": "https://github.com/thenervelab/thebrain/blob/main/README.md",
-      "basis": "Project repository",
-      "reviewedAt": "2026-10-22T19:00:36.075929+00:00",
+      "source": "https://hippius.com/",
+      "basis": "Current project product page and finalized identity",
+      "reviewedAt": "2026-11-04T15:35:21.376392+00:00",
       "reviewStatus": "classified",
       "identityStatus": "named",
-      "reviewNote": "Reviewed current owner metadata and available linked primary sources; retained the supported product-focus tags."
+      "reviewNote": "Current storage/cloud product direction retained; latest identity edit does not establish new paid capacity."
     },
     {
       "netuid": 76,
@@ -1954,17 +1959,18 @@
     },
     {
       "netuid": 127,
-      "name": "Astrid",
-      "summary": "Trading competitions ranked through independently replayed trade performance.",
+      "name": "Zils",
+      "summary": "Small decision models trained for routing, flagging and matching tasks.",
       "sectors": [
-        "finance"
+        "training",
+        "inference"
       ],
-      "source": "https://github.com/astridintelligence/sn-127/blob/master/README.md",
-      "basis": "Project repository",
-      "reviewedAt": "2026-10-22T19:00:36.075929+00:00",
+      "source": "https://zils.ai/",
+      "basis": "Current project product page and finalized identity",
+      "reviewedAt": "2026-11-04T15:35:21.376392+00:00",
       "reviewStatus": "classified",
       "identityStatus": "named",
-      "reviewNote": "The repository describes trading-performance competitions; a separate liquidity or exchange product is not established."
+      "reviewNote": "Current early-access product, not the former Astrid trading classification."
     },
     {
       "netuid": 128,

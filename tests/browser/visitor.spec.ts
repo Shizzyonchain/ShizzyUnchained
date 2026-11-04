@@ -343,8 +343,8 @@ test("latest news opens the full edition and retains the archive", async ({ page
 test("scheduled livestreams stay out of recent videos and replays", async ({ page }) => {
   await page.goto("/video");
   const upcoming=page.getByRole("region",{name:"Upcoming livestreams",exact:true});
-  await expect(upcoming.getByRole("button")).toHaveCount(3);
-  await expect(upcoming).toContainText("November 3, 2026");
+  await expect(upcoming.getByRole("button")).toHaveCount(2);
+  await expect(upcoming).not.toContainText("November 3, 2026");
   await expect(upcoming).toContainText("November 6, 2026");
   await expect(upcoming).toContainText("1:30 PM ET / 10:30 AM PT");
   await expect(upcoming).not.toContainText("November 4, 2026");
@@ -352,10 +352,14 @@ test("scheduled livestreams stay out of recent videos and replays", async ({ pag
   await expect(upcoming).not.toContainText("October 28, 2026");
   await expect(upcoming).not.toContainText("October 29, 2026");
   await expect(page.locator(".video-library").getByRole("button",{name:/Leadpoet’s Latest/})).toHaveCount(0);
-  await expect(page.locator(".video-library").getByRole("button",{name:/AI on Your Terms|Engineer the Real World/})).toHaveCount(0);
+  await expect(page.locator(".video-library").getByRole("button",{name:/Engineer the Real World/})).toHaveCount(0);
+  await expect(page.locator(".video-library").getByRole("button",{name:/AI on Your Terms/})).toHaveCount(1);
   const replays=page.getByRole("region",{name:"Livestream replays",exact:true});
   await expect(replays.getByRole("button",{name:/Leadpoet’s Latest/})).toHaveCount(0);
-  await expect(replays.getByRole("button",{name:/AI on Your Terms|Engineer the Real World/})).toHaveCount(0);
+  await expect(replays.getByRole("button",{name:/Engineer the Real World/})).toHaveCount(0);
+  await expect(replays.getByRole("button",{name:/AI on Your Terms/})).toHaveCount(1);
+  await expect(upcoming.getByRole("button",{name:/AI on Your Terms/})).toHaveCount(0);
+  await expect(page.locator(".video-frame iframe")).toHaveAttribute("src",/1ajAfGr_dh0/);
   await expect(replays.getByRole("button",{name:/Yanez/})).toHaveCount(1);
   await expect(replays.getByRole("button",{name:/Gets Expressive/})).toHaveCount(1);
   await expect(upcoming.getByRole("button",{name:/Gets Expressive/})).toHaveCount(0);

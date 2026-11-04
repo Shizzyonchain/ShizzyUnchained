@@ -1,54 +1,2613 @@
 {
   "date": "2026-11-04",
-  "checkedAt": "2026-11-04T07:07:41.714964+00:00",
+  "checkedAt": "2026-11-04T15:39:12.488147+00:00",
   "dailyWorkflowComplete": false,
   "publication": {
-    "status": "ARCHIVE_ONLY_NEWS_PENDING_FULL_EDITION",
-    "reason": "Nov4 full daily report does not exist. No one-story edition or roundup created."
+    "status": "VALIDATED_AWAITING_PRODUCTION_AND_ROUNDUP_VERIFICATION",
+    "dailyWorkflowComplete": false,
+    "validation": {
+      "news": "88reports passed",
+      "holdings": "128current owners at9433469 passed",
+      "sourceText": "PASS",
+      "lint": "0errors;1existingunused-contracts warning",
+      "unitTests": 202,
+      "browserTests": 70,
+      "burnTests": 5,
+      "dependencyAudit": "0vulnerabilities",
+      "build": "Production smoke build passed; normal Vercel production build required"
+    }
   },
   "chainReviews": {
     "etao": {
       "status": "DONE",
-      "checkedAt": "2026-11-04T07:07:41.714964+00:00",
-      "fromBlock": 9430130,
-      "toBlock": 9431023,
-      "hash": "0xf722aeebc83e8d34000b638c8541519c6758d4fc71b754d9d3062e8142ddec8e",
-      "throughTime": "2026-11-04T07:05:48+00:00",
-      "evidence": "/evidence/2026-11-04-overnight-chain.json",
+      "checkedAt": "2026-11-04T15:37:17.992999+00:00",
+      "fromBlock": 9431024,
+      "toBlock": 9433577,
+      "hash": "0xa9f543122e3e658bdb8c77f1b715e49742189353172a6567ba31eaa764d8b728",
+      "throughTime": "2026-11-04T15:36:36+00:00",
+      "evidence": "/evidence/2026-11-04-daily-chain.json",
       "gaps": [],
       "archiveUpdated": true,
-      "eventCount": 1,
-      "newsDisposition": "SN31 rec4ll allocation execution archived; dated carry-forward pending full Nov4 edition. No qualifying burns,28small alpha burns evidence only and17recycling events excluded. No social publication.",
+      "eventCount": 0,
+      "newsDisposition": "Zero new allocation events or qualifying transaction burns. 80 small alpha burns evidence-only; 42 recycling events excluded. Score/rec4ll Nov3 executions covered as carry-forwards, not counted twice.",
       "liveVerifiedAt": null
     },
     "burns": {
       "status": "DONE",
-      "checkedAt": "2026-11-04T07:07:41.714964+00:00",
-      "fromBlock": 9430130,
-      "toBlock": 9431023,
-      "hash": "0xf722aeebc83e8d34000b638c8541519c6758d4fc71b754d9d3062e8142ddec8e",
-      "throughTime": "2026-11-04T07:05:48+00:00",
-      "evidence": "/evidence/2026-11-04-overnight-chain.json",
+      "checkedAt": "2026-11-04T15:37:17.992999+00:00",
+      "fromBlock": 9431024,
+      "toBlock": 9433577,
+      "hash": "0xa9f543122e3e658bdb8c77f1b715e49742189353172a6567ba31eaa764d8b728",
+      "throughTime": "2026-11-04T15:36:36+00:00",
+      "evidence": "/evidence/2026-11-04-daily-chain.json",
       "gaps": [],
       "archiveUpdated": true,
       "eventCount": 0,
-      "newsDisposition": "SN31 rec4ll allocation execution archived; dated carry-forward pending full Nov4 edition. No qualifying burns,28small alpha burns evidence only and17recycling events excluded. No social publication.",
+      "newsDisposition": "Zero new allocation events or qualifying transaction burns. 80 small alpha burns evidence-only; 42 recycling events excluded. Score/rec4ll Nov3 executions covered as carry-forwards, not counted twice.",
       "liveVerifiedAt": null
     }
   },
-  "sourceReview": {
-    "sources": [
+  "ownerHoldings": {
+    "status": "DONE",
+    "block": 9433469,
+    "hash": "0x9b72c3f491ac373bd01a5d2ac0a7ddfbe33433bfa2b04dccc075aa2181b95815",
+    "asOf": "2026-11-04T15:15:00+00:00",
+    "wallets": 128,
+    "evidence": "/evidence/owner-holdings-9433469.json",
+    "validation": "Collector complete and all128 owner coldkeys independently match finalized SubnetOwner; validation and live check pending.",
+    "runtimeReview": "Reviewed486adapter of canonical collector; last-good preserved until complete."
+  },
+  "marketReview": {
+    "source": "https://shizzyunchained.com/api/backend/v1/screener",
+    "observedAt": "2026-11-04T15:18:52.741704+00:00",
+    "basis": "Shared feed change_24h/change_7d are alpha/TAO percentage changes, not USD returns. New registration price history can be discontinuous.",
+    "rows": [
       {
-        "url": "https://x.com/TensiaBot/status/2117841301068521721",
-        "announcedAt": "2026-11-04T04:48:08Z",
-        "disposition": "Discovery independently verified at finalized block9430332 extrinsic22, success and adjacent identity/storage checked."
+        "netuid": 51,
+        "change24hPct": 0.4783689435877045,
+        "change7dPct": -4.193452888842597
+      },
+      {
+        "netuid": 64,
+        "change24hPct": 0.6373759585671231,
+        "change7dPct": -0.050565427215345314
+      },
+      {
+        "netuid": 4,
+        "change24hPct": -1.0708433522804852,
+        "change7dPct": -0.6260399345570071
+      },
+      {
+        "netuid": 44,
+        "change24hPct": 2.2595068117640205,
+        "change7dPct": -5.003145385982689
+      },
+      {
+        "netuid": 8,
+        "change24hPct": 1.0062416849970284,
+        "change7dPct": 6.402854168792734
+      },
+      {
+        "netuid": 120,
+        "change24hPct": 1.1996999489720188,
+        "change7dPct": 1.33600333339275
+      },
+      {
+        "netuid": 53,
+        "change24hPct": -3.999595159487227,
+        "change7dPct": -10.883956239973028
+      },
+      {
+        "netuid": 28,
+        "change24hPct": -1.1563349402855598,
+        "change7dPct": -7.9317831559445064
+      },
+      {
+        "netuid": 3,
+        "change24hPct": -0.22815269666331214,
+        "change7dPct": -3.88767045319984
+      },
+      {
+        "netuid": 9,
+        "change24hPct": 0.2355272347728497,
+        "change7dPct": -2.8799785756961223
+      },
+      {
+        "netuid": 68,
+        "change24hPct": 1.1749349517380887,
+        "change7dPct": 6.4615262673421885
+      },
+      {
+        "netuid": 75,
+        "change24hPct": -4.394502340871931,
+        "change7dPct": -2.369058498098562
+      },
+      {
+        "netuid": 110,
+        "change24hPct": 4.565367130458741,
+        "change7dPct": 3.1097249508495266
+      },
+      {
+        "netuid": 56,
+        "change24hPct": -0.19251054960267835,
+        "change7dPct": 0.3294347557404882
+      },
+      {
+        "netuid": 95,
+        "change24hPct": -1.767625011238393,
+        "change7dPct": -12.422669877459818
+      },
+      {
+        "netuid": 34,
+        "change24hPct": -0.2988933195563414,
+        "change7dPct": -11.180916013037507
+      },
+      {
+        "netuid": 24,
+        "change24hPct": -4.813719632481542,
+        "change7dPct": 16.584053380164406
+      },
+      {
+        "netuid": 93,
+        "change24hPct": -0.011925950613175373,
+        "change7dPct": -3.1222299493132546
+      },
+      {
+        "netuid": 5,
+        "change24hPct": 0.000708741519001195,
+        "change7dPct": -0.09488880719623541
+      },
+      {
+        "netuid": 19,
+        "change24hPct": -0.30073009252320515,
+        "change7dPct": -2.1480499686582566
+      },
+      {
+        "netuid": 107,
+        "change24hPct": -0.1465319036093418,
+        "change7dPct": -7.921353958205024
+      },
+      {
+        "netuid": 62,
+        "change24hPct": -0.21739833500745745,
+        "change7dPct": 0.7291144916801489
+      },
+      {
+        "netuid": 48,
+        "change24hPct": -0.8104304036954165,
+        "change7dPct": 8.787012343146305
+      },
+      {
+        "netuid": 14,
+        "change24hPct": -5.378239470077595,
+        "change7dPct": 5.137952051685872
+      },
+      {
+        "netuid": 41,
+        "change24hPct": 2.133920859161721,
+        "change7dPct": -3.276271056904748
+      },
+      {
+        "netuid": 17,
+        "change24hPct": -4.106547197890393,
+        "change7dPct": -8.21356873208832
+      },
+      {
+        "netuid": 39,
+        "change24hPct": -3.3673093033916257,
+        "change7dPct": -42.06837221577398
+      },
+      {
+        "netuid": 124,
+        "change24hPct": -0.09451004318750075,
+        "change7dPct": -4.923108350931431
+      },
+      {
+        "netuid": 80,
+        "change24hPct": -7.4280550016247675,
+        "change7dPct": -26.699377166547425
+      },
+      {
+        "netuid": 114,
+        "change24hPct": -0.3184034792139228,
+        "change7dPct": -13.039593770795191
+      },
+      {
+        "netuid": 1,
+        "change24hPct": -0.5176531444367205,
+        "change7dPct": -1.5619744933903958
+      },
+      {
+        "netuid": 23,
+        "change24hPct": -4.330492216051042,
+        "change7dPct": -4.547868381504523
+      },
+      {
+        "netuid": 15,
+        "change24hPct": 0.5315588492980797,
+        "change7dPct": -10.814200294664722
+      },
+      {
+        "netuid": 11,
+        "change24hPct": -2.0050361654614135,
+        "change7dPct": -11.811543692621557
+      },
+      {
+        "netuid": 52,
+        "change24hPct": 0.0141266839082095,
+        "change7dPct": -0.09774569929726476
+      },
+      {
+        "netuid": 61,
+        "change24hPct": 0.6582476715341818,
+        "change7dPct": -40.50940512668612
+      },
+      {
+        "netuid": 54,
+        "change24hPct": -0.7946037798324296,
+        "change7dPct": 4.447900193813785
+      },
+      {
+        "netuid": 21,
+        "change24hPct": -2.261121872665936,
+        "change7dPct": 14.836492132184542
+      },
+      {
+        "netuid": 83,
+        "change24hPct": -0.5463702638715047,
+        "change7dPct": -3.242664811921867
+      },
+      {
+        "netuid": 63,
+        "change24hPct": -0.38662839889768547,
+        "change7dPct": -19.189793844225594
+      },
+      {
+        "netuid": 77,
+        "change24hPct": -0.10271998981246401,
+        "change7dPct": -1.207781615812704
+      },
+      {
+        "netuid": 10,
+        "change24hPct": -0.7437138498739494,
+        "change7dPct": 0.13773559710977798
+      },
+      {
+        "netuid": 85,
+        "change24hPct": 0.9530116766636778,
+        "change7dPct": 0.7981700172500523
+      },
+      {
+        "netuid": 112,
+        "change24hPct": 2.5741168380132926,
+        "change7dPct": -10.882496217412484
+      },
+      {
+        "netuid": 81,
+        "change24hPct": -0.8519547547263739,
+        "change7dPct": -1.8817012450332637
+      },
+      {
+        "netuid": 12,
+        "change24hPct": -1.6441272480706746,
+        "change7dPct": -0.587191865529317
+      },
+      {
+        "netuid": 25,
+        "change24hPct": -2.2504553938665515,
+        "change7dPct": -19.828130901966325
+      },
+      {
+        "netuid": 13,
+        "change24hPct": -0.4341771260236166,
+        "change7dPct": -3.773595532858284
+      },
+      {
+        "netuid": 43,
+        "change24hPct": -0.053004297215340765,
+        "change7dPct": 0.6835926310410179
+      },
+      {
+        "netuid": 2,
+        "change24hPct": -3.978411139128187,
+        "change7dPct": 3.3617160513959807
+      },
+      {
+        "netuid": 18,
+        "change24hPct": 0.14190741910773894,
+        "change7dPct": -2.0460086696951167
+      },
+      {
+        "netuid": 97,
+        "change24hPct": -1.49271531703641,
+        "change7dPct": -7.7797196727922415
+      },
+      {
+        "netuid": 50,
+        "change24hPct": -1.5187480430127265,
+        "change7dPct": -2.541754286470653
+      },
+      {
+        "netuid": 71,
+        "change24hPct": -2.821037090403578,
+        "change7dPct": 3.406031142321516
+      },
+      {
+        "netuid": 30,
+        "change24hPct": 0.17543033588512807,
+        "change7dPct": 4.708109178929383
+      },
+      {
+        "netuid": 104,
+        "change24hPct": -0.15990764553280953,
+        "change7dPct": -0.6251939830887748
+      },
+      {
+        "netuid": 117,
+        "change24hPct": -19.774345974239495,
+        "change7dPct": 244.3089309465916
+      },
+      {
+        "netuid": 46,
+        "change24hPct": 4.3831761826647835,
+        "change7dPct": 20.564507235457047
+      },
+      {
+        "netuid": 111,
+        "change24hPct": -1.2797874439139396,
+        "change7dPct": 2.556129473542072
+      },
+      {
+        "netuid": 33,
+        "change24hPct": 0.6303233386274724,
+        "change7dPct": 1.9241469070217543
+      },
+      {
+        "netuid": 32,
+        "change24hPct": -0.05674277797066086,
+        "change7dPct": -0.8660945003723386
+      },
+      {
+        "netuid": 60,
+        "change24hPct": -3.7055923118105447,
+        "change7dPct": -4.35081041192876
+      },
+      {
+        "netuid": 90,
+        "change24hPct": -1.3427065967410736,
+        "change7dPct": -7.574565180680026
+      },
+      {
+        "netuid": 105,
+        "change24hPct": -0.6368635542355484,
+        "change7dPct": 20.083935612067044
+      },
+      {
+        "netuid": 79,
+        "change24hPct": -2.2965117411683114,
+        "change7dPct": -0.9857983831721978
+      },
+      {
+        "netuid": 65,
+        "change24hPct": -6.740181127426897,
+        "change7dPct": 28.289346562173705
+      },
+      {
+        "netuid": 29,
+        "change24hPct": 0.012337619558121567,
+        "change7dPct": -0.05322846182513772
+      },
+      {
+        "netuid": 22,
+        "change24hPct": -2.01350469992388,
+        "change7dPct": -3.5751479625694316
+      },
+      {
+        "netuid": 127,
+        "change24hPct": -0.45095646164899705,
+        "change7dPct": 78.08684676201422
+      },
+      {
+        "netuid": 37,
+        "change24hPct": 0.3591163036310607,
+        "change7dPct": 2.324866282376829
+      },
+      {
+        "netuid": 6,
+        "change24hPct": 0.04715900669657895,
+        "change7dPct": 1.392926036820003
+      },
+      {
+        "netuid": 89,
+        "change24hPct": -0.3965264014239461,
+        "change7dPct": -1.4075667649271288
+      },
+      {
+        "netuid": 49,
+        "change24hPct": -3.5706932730147662,
+        "change7dPct": -4.19558638259099
+      },
+      {
+        "netuid": 88,
+        "change24hPct": -0.6358378344526764,
+        "change7dPct": -7.709103287867709
+      },
+      {
+        "netuid": 66,
+        "change24hPct": -3.6585825462182573,
+        "change7dPct": -2.8314928456451085
+      },
+      {
+        "netuid": 7,
+        "change24hPct": -1.0665040558663583,
+        "change7dPct": 1.7924333670632386
+      },
+      {
+        "netuid": 38,
+        "change24hPct": 2.1150188183963836,
+        "change7dPct": -56.449149633295704
+      },
+      {
+        "netuid": 74,
+        "change24hPct": -0.1742049121531611,
+        "change7dPct": -11.651950718685832
+      },
+      {
+        "netuid": 55,
+        "change24hPct": -0.3644615413264804,
+        "change7dPct": -10.596406688195717
+      },
+      {
+        "netuid": 82,
+        "change24hPct": -1.7918779799020843,
+        "change7dPct": -7.141990987660294
+      },
+      {
+        "netuid": 42,
+        "change24hPct": -0.1883456097974889,
+        "change7dPct": 7.672731066929732
+      },
+      {
+        "netuid": 128,
+        "change24hPct": 1.6903210804559095,
+        "change7dPct": 1.5109363390486983
+      },
+      {
+        "netuid": 72,
+        "change24hPct": -1.7923411964575662,
+        "change7dPct": 5.271975038091473
+      },
+      {
+        "netuid": 27,
+        "change24hPct": -0.2630342345646468,
+        "change7dPct": -0.9969619440057794
+      },
+      {
+        "netuid": 121,
+        "change24hPct": -0.18164386378555655,
+        "change7dPct": -1.0834996638555938
+      },
+      {
+        "netuid": 73,
+        "change24hPct": -4.810875827158552,
+        "change7dPct": -9.220532420290692
+      },
+      {
+        "netuid": 20,
+        "change24hPct": -0.006046566448479091,
+        "change7dPct": -0.7429008842090613
+      },
+      {
+        "netuid": 45,
+        "change24hPct": -0.3724649756328807,
+        "change7dPct": -0.25918378903599093
+      },
+      {
+        "netuid": 118,
+        "change24hPct": -2.0306065834353633,
+        "change7dPct": -6.947486021373611
+      },
+      {
+        "netuid": 123,
+        "change24hPct": 0.2403441247352058,
+        "change7dPct": 1.7544332476786642
+      },
+      {
+        "netuid": 116,
+        "change24hPct": -7.72272390752445,
+        "change7dPct": 33.23064390133011
+      },
+      {
+        "netuid": 106,
+        "change24hPct": 0.8695783582192076,
+        "change7dPct": 3.8708274898778936
+      },
+      {
+        "netuid": 101,
+        "change24hPct": -0.04897437674951175,
+        "change7dPct": -1.4626207042826085
+      },
+      {
+        "netuid": 92,
+        "change24hPct": -4.973215715619956,
+        "change7dPct": 11.78710239433479
+      },
+      {
+        "netuid": 98,
+        "change24hPct": 0.583658123551301,
+        "change7dPct": 2.3105887935672866
+      },
+      {
+        "netuid": 69,
+        "change24hPct": -0.7255107070669583,
+        "change7dPct": -2.3541390825882598
+      },
+      {
+        "netuid": 125,
+        "change24hPct": -0.3750932326752594,
+        "change7dPct": -0.16143288148557344
+      },
+      {
+        "netuid": 102,
+        "change24hPct": -7.9782522113647945,
+        "change7dPct": 14.549158308010243
+      },
+      {
+        "netuid": 58,
+        "change24hPct": 0.27359571493681994,
+        "change7dPct": -21.976389459871697
+      },
+      {
+        "netuid": 94,
+        "change24hPct": -4.9665282813826215,
+        "change7dPct": 13.366539788859589
+      },
+      {
+        "netuid": 31,
+        "change24hPct": 8.54635813831186,
+        "change7dPct": 15.11252423264229
+      },
+      {
+        "netuid": 126,
+        "change24hPct": -4.187522182234949,
+        "change7dPct": -0.7910977369103653
+      },
+      {
+        "netuid": 91,
+        "change24hPct": -4.926426289707164,
+        "change7dPct": -11.655691681380727
+      },
+      {
+        "netuid": 100,
+        "change24hPct": -0.8233244147024391,
+        "change7dPct": 6.707205058279872
+      },
+      {
+        "netuid": 115,
+        "change24hPct": -0.4937622109414278,
+        "change7dPct": 9.587627180020325
+      },
+      {
+        "netuid": 119,
+        "change24hPct": -2.044265011147328,
+        "change7dPct": 1.4274567338890773
+      },
+      {
+        "netuid": 87,
+        "change24hPct": -1.454955199512609,
+        "change7dPct": -1.3636291160490486
+      },
+      {
+        "netuid": 67,
+        "change24hPct": -0.5790094802106397,
+        "change7dPct": -2.008258779301676
+      },
+      {
+        "netuid": 113,
+        "change24hPct": -0.33447022395638776,
+        "change7dPct": 8.39602943239675
+      },
+      {
+        "netuid": 96,
+        "change24hPct": -3.155217532369103,
+        "change7dPct": -3.778140586372033
+      },
+      {
+        "netuid": 109,
+        "change24hPct": 3.621483609975664,
+        "change7dPct": -3.950272649835081
+      },
+      {
+        "netuid": 84,
+        "change24hPct": -2.164826901783295,
+        "change7dPct": 0.3670580264659193
+      },
+      {
+        "netuid": 78,
+        "change24hPct": 0.4322829795889845,
+        "change7dPct": -24.301635033694883
+      },
+      {
+        "netuid": 26,
+        "change24hPct": 0.24336764425491234,
+        "change7dPct": 2.7950310559006213
+      },
+      {
+        "netuid": 47,
+        "change24hPct": -3.2936501486087546,
+        "change7dPct": -4.936093273031097
+      },
+      {
+        "netuid": 122,
+        "change24hPct": -0.7141062609915143,
+        "change7dPct": -17.695243252282914
+      },
+      {
+        "netuid": 57,
+        "change24hPct": -0.20764331643820227,
+        "change7dPct": -6.436984942951911
+      },
+      {
+        "netuid": 40,
+        "change24hPct": -0.10592468971451918,
+        "change7dPct": -5.792307917689158
+      },
+      {
+        "netuid": 59,
+        "change24hPct": 1.2535107391537041,
+        "change7dPct": -16.099019864825035
+      },
+      {
+        "netuid": 108,
+        "change24hPct": 6.5268789846656,
+        "change7dPct": -8.114049056020244
+      },
+      {
+        "netuid": 99,
+        "change24hPct": 0.8528175446646955,
+        "change7dPct": -6.683473887523002
+      },
+      {
+        "netuid": 103,
+        "change24hPct": -27.89486986318015,
+        "change7dPct": -55.047569623234686
+      },
+      {
+        "netuid": 76,
+        "change24hPct": -5.961320231571501,
+        "change7dPct": -24.875767384642206
+      },
+      {
+        "netuid": 36,
+        "change24hPct": 226.72471141229659,
+        "change7dPct": 1165.6234697869259
+      },
+      {
+        "netuid": 70,
+        "change24hPct": 177.44783615316118,
+        "change7dPct": 177.58032328876473
+      },
+      {
+        "netuid": 86,
+        "change24hPct": 3.926466374808549,
+        "change7dPct": -21.34337195382318
+      },
+      {
+        "netuid": 35,
+        "change24hPct": -5.456952688882176,
+        "change7dPct": -38.503243748924774
+      },
+      {
+        "netuid": 16,
+        "change24hPct": -37.68451924945973,
+        "change7dPct": 434.22268677008185
       }
     ],
-    "scope": "Three-hour monitor, not complete daily research. Other daily gates remain pending."
+    "decisions": [
+      {
+        "netuid": 117,
+        "outcome": "excluded",
+        "reason": "Large move reviewed; treasury/reward claims currently rest on secondary digests without authenticated originals. No manipulation or revenue conclusion; retained as a pending source lead.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://subnetradar.com/subnet/117"
+        ]
+      },
+      {
+        "netuid": 127,
+        "outcome": "covered",
+        "reason": "Current Zils identity and changed product purpose covered. The price series is not proof of a sale or privileged buying.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://subnetradar.com/subnet/127"
+        ]
+      },
+      {
+        "netuid": 103,
+        "outcome": "excluded",
+        "reason": "Large negative move reviewed. No verified new operating event or incident tied to this window was established. Price movement alone does not demonstrate insider activity or a causal explanation.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://subnetradar.com/subnet/103"
+        ]
+      },
+      {
+        "netuid": 36,
+        "outcome": "covered",
+        "reason": "Current Weir identity and product sources covered; the large move is not proof of purchases by insiders, customer demand or continuity with the former registration.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://subnetradar.com/subnet/36"
+        ]
+      },
+      {
+        "netuid": 70,
+        "outcome": "excluded",
+        "reason": "Fugal launch already covered in the November3 edition; current router site reviewed. No new independent operating result or cause of the price move established.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://subnetradar.com/subnet/70"
+        ]
+      },
+      {
+        "netuid": 16,
+        "outcome": "excluded",
+        "reason": "Current unnamed registration and a large move were reviewed. No verified project identity or causal announcement was established; do not inherit the prior registration’s product or interpret launch-price history as comparable returns.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://subnetradar.com/subnet/16"
+        ]
+      }
+    ]
   },
-  "pendingCarryForward": [
-    "Score SN44 Nov3 20:18:36 Eastern allocation from prior published archive",
-    "SN31 rec4ll Nov3 23:47:36 Eastern execution, owner18 to25%, validators41 to20%, miners41 to55%",
-    "All unresolved earlier monitor leads retained in private pending receipt"
-  ]
+  "grokReview": {
+    "status": "Discovery and focused omission response read; all material claims independently checked or retained pending.",
+    "conversation": "https://x.com/i/grok?conversation=bd33b683-04a9-48ba-bb43-ab1b54a9c5dd",
+    "topFive": "Corrected qualitative five: SN36Weir, SN65TPN, SN75Hippius, SN91Cascade, SN120Affine. Small search sample, not measured volume/rank; no stars inferred. Affine precise benchmark claim remains unresolved.",
+    "evidence": "daily-news-2026-11-04/grok-discovery.txt",
+    "rejectedAssertions": "Grok mixed launch versus registration dates and owner hotkey versus coldkey terminology; exact finalized evidence takes precedence. It missed official Shizzy schedule confirmations visible on YouTube. No purported Nov4Tensia dossier accepted without primary evidence."
+  },
+  "sourceReview": {
+    "identity": "@ShizzyUnchained directly verified",
+    "briefs": "All49 November4 dated digest pages inspected; 79slots had no indexed November4 brief, which does not prove no activity.",
+    "requiredAccounts": "Const posts throughOct30/replies throughOct21; Tensia original and9visible replies throughDiscovermore, timeline toOct23/replies toOct30; Bot alerts throughNov3morning. Account posts scrolled toNov3morning, substantive replies throughNov2, reposts throughNov3morning; bookmarks scrolled intoNov2overlap. URL-by-URL private discovery reconciliation retained outside public site. No new dossier found; reader identity guesses are not facts.",
+    "taostats": {
+      "status": "BLOCKED",
+      "reason": "No configured local TAOSTATS_API_KEY; no secret extraction from browser or invented quota."
+    },
+    "media": "TPN branding and Cascade/Hippius animated graphics inspected in preceding monitor evidence; no independent benchmark/customer execution. Full audio/listening not performed. Chutes quoted Tencent promotional video observed visually while original team announcement was read; no claim its API or partner contract was tested.",
+    "videos": "OfficialVideos+Live and TPNwatch pages checked: TPN55:32 completed, LeadpoetNov5 11ET, CarbonNov6 13:30ET; latest member videoJSvw2WhaDks8:38Oct28.",
+    "sectors": "All128finalized identity comparisons; four changed-identity rows rechecked against project pages. Unchanged rows retain prior primary reviews; full128website re-audit not claimed."
+  },
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/1/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Apex Clarifies Submission Evaluation and Active Competitions",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/2/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "DaniLabs Team Says Release Coming Soon",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/6/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Team Shares Cascade Post; Members Discuss Numinous Partnership",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/14/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Cacheon channel quiet, no updates",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/15/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "ORO Channel Quiet, No Team Updates",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/16/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "SN16 Active Neurons Grow from 36 to 83",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/17/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Members report pod instability on subnet 404 GEN",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/18/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Zeus Subnet Channel Sees Member Chatter Only",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/21/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Unconfirmed posts detail SN21 v6 training data",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-04-daily-lifecycle.json",
+          "label": "SN24 ms.computer announcement and adjacent ownership storage"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/24/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Emission Spike Dominates SN24 Discord Chatter",
+      "discoveryDisposition": "Selected primary source or dated carry-forward covered above; digest itself is not proof."
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/26/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Perturb team explains registration date check",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/27/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "No Material Updates from Komms Subnet",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/28/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Members Report Full-Screen Mode Width Issue",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/30/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Endure Network Sees Only Member Link Shares",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-04-overnight-chain.json",
+          "label": "SN31 rec4ll finalized allocation execution"
+        },
+        {
+          "url": "https://shizzyunchained.com/subnet-news/etao",
+          "label": "Allocation archive and methodology"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/31/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "SN31 Channel Quiet, Only Greetings Exchanged",
+      "discoveryDisposition": "Selected primary source or dated carry-forward covered above; digest itself is not proof."
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/33/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "ReadyAI Channel Quiet, Members Share Skill Store Link",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/34/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Yugos Team Defends Champion, Cuts Dashboard Load",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 35,
+      "name": "Jacob Robert Steeves",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-04-daily-lifecycle.json",
+          "label": "Finalized identity and unchanged registration evidence"
+        },
+        {
+          "url": "https://weircompute.com/",
+          "label": "SN36 Weir GPU rental product"
+        },
+        {
+          "url": "https://github.com/weircompute/weir-subnet",
+          "label": "SN36 Weir miner and validator code"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/36/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Subnet 36 Channel Shows Only Member Chatter",
+      "discoveryDisposition": "Selected primary source or dated carry-forward covered above; digest itself is not proof."
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-03-late-chain.json",
+          "label": "SN44 Score finalized before/after allocation evidence"
+        },
+        {
+          "url": "https://shizzyunchained.com/subnet-news/etao",
+          "label": "Allocation archive and yield-lag explanation"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/44/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Score Team Removes PPE Block, Clarifies Annotation Policy",
+      "discoveryDisposition": "Selected primary source or dated carry-forward covered above; digest itself is not proof."
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/49/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Members Query Review Rules, Flagged Submission",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/50/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Synth Restricts Price Talk and Investment Discussion",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/51/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Team inquires about B200x8 rental amid member complaints",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/54/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Yanez Working on Voice Score, Shares Emissions Split",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/55/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Niome Team Confirms Leaderboard Update for Miners",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/58/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Attune King Vacated After Hugging Face Errors",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/59/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Subnet 59 Team Warns Against Unclaimed Subnet",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/60/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Bitsec.ai members raise miner and UI topics",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/61/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "RedTeam Denies Sale, Teases New Challenge Release",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/62/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Ridges channel quiet aside from member chatter",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/chutes_ai/status/2117939031090909447",
+          "label": "SN64 Chutes planned-integration announcement, November 4"
+        }
+      ],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "publishedItems": 2,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/TPN_Labs/status/2117937901250175347",
+          "label": "SN65 TPN original announcement, November 4"
+        },
+        {
+          "url": "https://huggingface.co/tpnlabs/tpn-007-winner/tree/main",
+          "label": "SN65 TPN published model files"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1ajAfGr_dh0",
+          "label": "Shizzy’s SN65 TPN interview replay, November 3"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/65/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "TPN Confirms Gratis Launch and Teases Next Competition",
+      "discoveryDisposition": "Selected primary source or dated carry-forward covered above; digest itself is not proof."
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/70/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Fugal owner welcomed to SN70 mainnet",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/71/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Leadpoet Rejudging Baseline After Verifier Mismatch",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/Hippius_cloud/status/2117703450943189143",
+          "label": "SN75 Hippius original storage milestone, November 3"
+        }
+      ],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/80/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "OpenRoboto channel quiet, no material updates",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/82/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Noah channel discusses miner onboarding changes",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/85/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Vidaio members debate emissions, share competition details",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/cascade_sn91/status/2117952751963643949",
+          "label": "SN91 Cascade connection map, November 4"
+        },
+        {
+          "url": "https://x.com/numinous_ai/status/2117626181285806125",
+          "label": "SN6 Numinous collaboration acknowledgement, November 3"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/91/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Members discuss SN6 partnership and validator issues",
+      "discoveryDisposition": "Selected primary source or dated carry-forward covered above; digest itself is not proof."
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/92/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "REAX 1.3 launches, inference share cut",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/95/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Quiet Day for SN95, Mostly Off-Topic Banter",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 99,
+      "name": "Thirty Spokes",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/102/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "ConnitoAI Shifts Validation Weight to Prompt Validation",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/107/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Minos Team Confirms IM2 Challenge Mac M-Series Requirement",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/108/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Quest 2 Submissions Reopen After Evaluator Fix",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/111/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Claims Members Share Testnet Competition Details",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/114/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "SOMA Posts CoT-Compression-12 Results, Opens Round 13",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/116/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Carbon channel quiet, members ask testnet questions",
+      "discoveryDisposition": "Excluded as quiet channel, community-only inquiry, repeated promotion or no cleared new operating event; original digest retained for overlap."
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/117/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Community Posts Describe EveryFrame Treasury, Miner Reward Changes",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/118/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Ditto SN118 Shifts Emissions, Launches Benchmark v15",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/120/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Affine hits SOTA benchmark, drops King gain multiplier",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/126/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "Attelier Update Shared, Emissions Debate Continues",
+      "discoveryDisposition": "Retained pending original evidence."
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://zils.ai/",
+          "label": "SN127 Zils current product and early-access disclosures"
+        },
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-04-daily-lifecycle.json",
+          "label": "SN127 Zils current on-chain identity links"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/127/2026-11-04",
+      "briefDisposition": "Read AI-generated discovery digest; no original Discord verification.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies.",
+      "discoveryHeadline": "SN127 Rebrands as Zils, Incentive Change Ahead",
+      "discoveryDisposition": "Selected primary source or dated carry-forward covered above; digest itself is not proof."
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No November4brief in reviewed index; not a no-news claim.",
+      "xSearchStatus": "Grok roster discovery and selected originals; individual exhaustive timeline search not completed for this slot.",
+      "repositoryStatus": "Selected primary sources as listed; no claim every repository scanned.",
+      "reviewGap": "Market/owner/identity reviewed across128; independent primary-source depth varies."
+    }
+  ],
+  "pendingCarryForward": {
+    "sourceReceipts": [
+      "news-monitor-2026-11-04/0802-pending-for-2026-11-04.json",
+      "news-monitor-2026-11-04/0505-pending-for-2026-11-04.json",
+      "news-monitor-2026-11-04/0205-pending-for-2026-11-04.json"
+    ],
+    "disposition": "All original files retained. Published TPN007, Cascade, Hippius, security/gamma, Weir and overnight allocations. AlreadyNov3REAX/Fugal/Cacheon/Vanta not counted twice. DittoV15,NIOME,EveryFrameTreasury,ChipForge,Affine,Attune,Connito,Leadpoet,Minos,SN39handoff and Tensia dossier remain pending exact primary evidence; no allegations published."
+  },
+  "remaining": [
+    "Original-source depth and authenticated TaoStats access remain explicit gaps; full daily sign-off is not claimed.",
+    "Production READY/live checks and exactly one verified roundup tracked in daily-news-2026-11-04/publication-receipt.json."
+  ],
+  "sourceDispositions": [
+    {
+      "url": "https://x.com/TensiaBot/status/2117974826908274719",
+      "outcome": "covered",
+      "disposition": "SN36 Weir sets its identity and documents GPU rentals; finalized identity evidence takes precedence."
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117971531321991263",
+      "outcome": "pending",
+      "disposition": "SN36 launch alert is not accepted as a new registration. Registration9420559 occurredNov2; no reconstructed launch/start-call execution claim added."
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117841301068521721",
+      "outcome": "covered",
+      "disposition": "SN31 rec4ll raises miners to55%and owner to25%; datedNov3carry-forward."
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117788700629168185",
+      "outcome": "covered",
+      "disposition": "SN44 Score shifts allocation to12/44/44; datedNov3carry-forward. Proposed owner lock not verified."
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117649717488136300",
+      "outcome": "excluded",
+      "disposition": "SN70 Fugal identity/launch alreadyNov3coverage; current product checked forsector maintenance."
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117633859432910875",
+      "outcome": "covered",
+      "disposition": "SN127 Zils purpose follow-up labelsactualNov3rename andcurrent early-access product."
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2117727115093110984",
+      "outcome": "pending",
+      "disposition": "Teaser promises dossier; no supporting case or attributed subject verified. Reader guesses excluded."
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2117968318162252056",
+      "outcome": "excluded",
+      "disposition": "Decentralized-compute thesis commentary, no new subnet release or executed change."
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2117828138772095201",
+      "outcome": "excluded",
+      "disposition": "AI/cyberspace commentary without a new verified operating development."
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2117649798362992858",
+      "outcome": "excluded",
+      "disposition": "RSI commentary previously reviewed; no new verified implementation detail."
+    }
+  ],
+  "priorArchiveMonitorReview": {
+    "date": "2026-11-04",
+    "checkedAt": "2026-11-04T07:07:41.714964+00:00",
+    "dailyWorkflowComplete": false,
+    "publication": {
+      "status": "ARCHIVE_ONLY_NEWS_PENDING_FULL_EDITION",
+      "reason": "Nov4 full daily report does not exist. No one-story edition or roundup created."
+    },
+    "chainReviews": {
+      "etao": {
+        "status": "DONE",
+        "checkedAt": "2026-11-04T07:07:41.714964+00:00",
+        "fromBlock": 9430130,
+        "toBlock": 9431023,
+        "hash": "0xf722aeebc83e8d34000b638c8541519c6758d4fc71b754d9d3062e8142ddec8e",
+        "throughTime": "2026-11-04T07:05:48+00:00",
+        "evidence": "/evidence/2026-11-04-overnight-chain.json",
+        "gaps": [],
+        "archiveUpdated": true,
+        "eventCount": 1,
+        "newsDisposition": "SN31 rec4ll allocation execution archived; dated carry-forward pending full Nov4 edition. No qualifying burns,28small alpha burns evidence only and17recycling events excluded. No social publication.",
+        "liveVerifiedAt": null
+      },
+      "burns": {
+        "status": "DONE",
+        "checkedAt": "2026-11-04T07:07:41.714964+00:00",
+        "fromBlock": 9430130,
+        "toBlock": 9431023,
+        "hash": "0xf722aeebc83e8d34000b638c8541519c6758d4fc71b754d9d3062e8142ddec8e",
+        "throughTime": "2026-11-04T07:05:48+00:00",
+        "evidence": "/evidence/2026-11-04-overnight-chain.json",
+        "gaps": [],
+        "archiveUpdated": true,
+        "eventCount": 0,
+        "newsDisposition": "SN31 rec4ll allocation execution archived; dated carry-forward pending full Nov4 edition. No qualifying burns,28small alpha burns evidence only and17recycling events excluded. No social publication.",
+        "liveVerifiedAt": null
+      }
+    },
+    "sourceReview": {
+      "sources": [
+        {
+          "url": "https://x.com/TensiaBot/status/2117841301068521721",
+          "announcedAt": "2026-11-04T04:48:08Z",
+          "disposition": "Discovery independently verified at finalized block9430332 extrinsic22, success and adjacent identity/storage checked."
+        }
+      ],
+      "scope": "Three-hour monitor, not complete daily research. Other daily gates remain pending."
+    },
+    "pendingCarryForward": [
+      "Score SN44 Nov3 20:18:36 Eastern allocation from prior published archive",
+      "SN31 rec4ll Nov3 23:47:36 Eastern execution, owner18 to25%, validators41 to20%, miners41 to55%",
+      "All unresolved earlier monitor leads retained in private pending receipt"
+    ]
+  }
 }
