@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { currentYieldCheck, yieldCandidates, yieldSnapshotKey } from '../app/lib/validator-yield-check.ts';
+import { currentYieldCheck, yieldCandidates, yieldSnapshotKey, thirtyDayRewardGrowth } from '../app/lib/validator-yield-check.ts';
 test('only the exact fresh provider snapshot can carry a current chain check', () => {
   const timestamp = '2026-10-16T12:00:00Z';
   const check = { providerBlock: 100, providerTimestamp: timestamp };
@@ -34,4 +34,12 @@ test('continuous node checks restart only when yield evidence changes', () => {
   assert.equal(yieldSnapshotKey([{ ...rows[0], name: 'New label' }, rows[1]]), original);
   assert.notEqual(yieldSnapshotKey([{ ...rows[0], yieldBlock: 101 }, rows[1]]), original);
   assert.notEqual(yieldSnapshotKey([{ ...rows[0], timestamps: ['2026-10-19T18:00:00Z'] }, rows[1]]), original);
+});
+
+test('30-day reward display reverses chain annualization without inventing provider compounding', () => {
+  const growth = .031;
+  assert.ok(Math.abs(thirtyDayRewardGrowth({ yieldBasis: 'chain-net', yield30: Math.expm1(Math.log1p(growth) * 365 / 30) }) - growth) < 1e-12);
+  assert.equal(thirtyDayRewardGrowth({ yieldBasis: 'nominator-net', yield30: .45 }), null);
+  for (const yield30 of [null, NaN, Infinity, -1]) assert.equal(thirtyDayRewardGrowth({ yieldBasis: 'chain-net', yield30 }), null);
+  assert.equal(thirtyDayRewardGrowth({ yieldBasis: 'chain-net', yield30: 0 }), 0);
 });

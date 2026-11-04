@@ -178,7 +178,9 @@ test("subnet recommendations show net yield and fail closed when sources fail", 
   await page.getByRole("button", { name: "Find my validator →", exact: true }).click();
   const finder = page.locator('[aria-labelledby="validator-finder-title"]');
   await expect(finder.getByRole("heading", { name: "Smoke Validator 2", exact: true })).toBeVisible();
-  await expect(finder).toContainText("30% APY"); // Already after take; do not reduce to 27.3%.
+  await expect(finder).toContainText("Past 30-day staking growth");
+  await expect(finder).toContainText("100 alpha became about 102.18 alpha."); // Invert the net APY once; do not deduct take again.
+  await expect(finder).toContainText("30% APY"); // Retained in the evidence details.
   contracts.failed.add("/api/validators/recommendations");
   await page.getByRole("button", { name: "Find my validator →", exact: true }).click();
   await expect(finder.getByRole("alert")).toContainText("We could not verify a current choice");
@@ -229,6 +231,8 @@ test("hourly yield and fresh activity produce a dated choice; stale evidence exp
   const finder = page.locator('[aria-labelledby="validator-finder-title"]');
   await expect(finder.getByRole("heading", { name: "Smoke Validator 2", exact: true })).toBeVisible();
   await expect(finder).toContainText("Yield measured:");
+  await expect(finder).toContainText("Not verified");
+  await expect(finder).not.toContainText("100 alpha became");
   await expect(finder).toContainText("30% reported");
   await noOverflow(page);
   expired = true;

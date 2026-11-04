@@ -6,7 +6,7 @@ import { rankValidators, type Candidate, type RankingMode } from "../lib/validat
 import { displayNumber, shortAddress } from "../lib/validator-types";
 import { RecommendationLoading } from "./recommendation-loading";
 import { ValidatorYieldChecks } from "./validator-yield-checks";
-import { yieldCandidates, type YieldChecks } from "../lib/validator-yield-check";
+import { thirtyDayRewardGrowth, yieldCandidates, type YieldChecks } from "../lib/validator-yield-check";
 import styles from "./validators.module.css";
 
 import { limitedHistoryOptions } from "../lib/validator-current-options";
@@ -24,6 +24,11 @@ function YieldValue({ row, days }: { row: Candidate; days: 7 | 30 }) {
   const value = days === 7 ? row.yield7 : row.yield30;
   const apr = days === 7 ? row.apr7 : row.apr30;
   return row.yieldBasis === "chain-net" ? <>{pct(value)} APY<small>{pct(apr ?? null)} APR</small></> : value === null ? <>—</> : <>{pct(value)} reported<small>Compounding method unconfirmed</small></>;
+}
+
+function ThirtyDayGrowth({ row }: { row: Candidate }) {
+  const growth = thirtyDayRewardGrowth(row);
+  return growth === null ? <>Not verified<small>Annualized provider rate is in the details.</small></> : <>{pct(growth)}<small>100 alpha became about {displayNumber(100 * (1 + growth))} alpha.</small></>;
 }
 
 function OperatingPath({ row, compact = false }: { row: Candidate; compact?: boolean }) {
@@ -96,11 +101,12 @@ export function ValidatorFinder({ subnets }: { subnets: { netuid: number; name: 
         <p className={styles.eyebrow}>{limited.length ? "CURRENT OPTION · LIMITED HISTORY" : `OPTION ${index + 1} OF ${shortlist.length}${index === 0 ? " · TOP MATCH" : ""}`}</p>
         <h3>{winner.name === winner.hotkey ? shortAddress(winner.hotkey) : winner.name}</h3>
         <p>{limited.length ? `Active now with at least 90% participation over 7 days, but only ${pct(winner.participation30)} over 30 days. It does not meet our full recommendation standard.` : index === 0 ? "The strongest match for your preference across yield after fees, participation and current activity." : "Another qualifying option, compared using the same yield, participation and current activity checks."}</p>
-        <dl className={styles.choiceFacts}><div><dt>30-day annualized yield</dt><dd><YieldValue row={winner} days={30} /></dd></div><div><dt>Validator fee</dt><dd>{pct(winner.take)}</dd></div></dl>
+        <dl className={styles.choiceFacts}><div><dt>Past 30-day staking growth</dt><dd><ThirtyDayGrowth row={winner} /></dd></div><div><dt>Validator fee</dt><dd>{pct(winner.take)}</dd></div></dl>
+        <p className={styles.source}>Rewards after validator fees, excluding alpha price changes. Past growth is not a forecast.</p>
         <p className={styles.source}>Yield measured: <time dateTime={winner.timestamps[0]}>{evidenceTime(winner.timestamps[0])}</time>. Current activity uses separate snapshots; all required evidence must be within two hours.</p>
         {winner.operation === "delegated" && <div className={styles.choiceOperator}><OperatingPath row={winner} compact /></div>}
         <div className={styles.choiceActions}><Link href={`/validators/${winner.hotkey}`} prefetch={false}>View validator →</Link><button type="button" onClick={async () => { try { await navigator.clipboard.writeText(winner.hotkey); setCopied(winner.hotkey); } catch { setCopied(null); } }}>{copied === winner.hotkey ? "Hotkey copied ✓" : "Copy staking hotkey"}</button></div>
-        <details><summary>Staking hotkey & evidence</summary><p className={styles.address}>{winner.hotkey}</p><p>Use this parent/yield hotkey when choosing this validator. Its operating child may be different.</p><ul>{(limited.length ? winner.excluded : winner.reasons).map(reason => <li key={reason}>{reason}</li>)}</ul><p className={styles.source}>Source timestamps: {winner.timestamps.join(" · ")}</p></details>
+        <details><summary>Staking hotkey, annualized rates & evidence</summary><p>30-day window, annualized: <YieldValue row={winner} days={30} /></p><p className={styles.address}>{winner.hotkey}</p><p>Use this parent/yield hotkey when choosing this validator. Its operating child may be different.</p><ul>{(limited.length ? winner.excluded : winner.reasons).map(reason => <li key={reason}>{reason}</li>)}</ul><p className={styles.source}>Source timestamps: {winner.timestamps.join(" · ")}</p></details>
       </article>) : <article className={styles.primaryChoice}><h3>Not enough current evidence to rank</h3><p>{rows.some(row => row.active && row.permit) ? "Active validator paths were found, but their evidence does not meet the comparison requirements below." : "A current active validator path could not be verified from the available sources."} This does not mean the subnet has no validators.</p><details open><summary>What is blocking a recommendation?</summary>{Array.from(new Set((rows.some(row => row.active && row.permit) ? rows.filter(row => row.active && row.permit) : rows).flatMap(row => row.excluded))).map(reason => <p key={reason}>{reason}</p>)}</details></article>}
       <details className={styles.simpleDetails}><summary>Ranking preferences</summary>
         <div className={styles.tabs} role="group" aria-label="Validator ranking preference">{modes.map(item => <button key={item.value} aria-pressed={mode === item.value} onClick={() => setMode(item.value)}>{item.label}</button>)}</div>

@@ -33,3 +33,10 @@ export function yieldCandidates(candidates: Candidate[], checks: YieldChecks | n
 export function yieldSnapshotKey(candidates: Pick<Candidate, "hotkey" | "yieldBlock" | "timestamps">[]) {
   return candidates.map(row => `${row.hotkey}:${row.yieldBlock ?? ""}:${row.timestamps[0] || ""}`).sort().join("|");
 }
+
+// Invert this site's chain APY annualization; provider compounding is unconfirmed.
+export function thirtyDayRewardGrowth(row: Pick<Candidate, "yieldBasis" | "yield30">) {
+  if (row.yieldBasis !== "chain-net" || row.yield30 === null || !Number.isFinite(row.yield30) || row.yield30 <= -1) return null;
+  const growth = Math.expm1(Math.log1p(row.yield30) * 30 / 365);
+  return Number.isFinite(growth) ? growth : null;
+}
