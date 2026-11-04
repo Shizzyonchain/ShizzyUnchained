@@ -62,3 +62,17 @@ test("delegated paths require every operating snapshot to be fresh and the paren
   assert.equal(rankValidators([{ ...parent, timestamps: [...base.timestamps, "2026-10-15T15:50:00Z"] }], "balanced", now)[0].score, null);
   assert.equal(rankValidators([{ ...parent, yield30: null }], "balanced", now)[0].score, null);
 });
+
+test("hourly historical yield does not invalidate fresh operational evidence", () => {
+  // Production SN2: yield18:28:48, directory19:13:12, parameters19:27:36,
+  // delegation19:30:06 and operator19:05:24. All operational sources agree.
+  const checked = Date.parse("2026-11-04T19:35:00Z");
+  const row = { ...base, operation: "delegated", timestamps: ["2026-11-04T18:28:48Z", "2026-11-04T19:13:12Z", "2026-11-04T19:27:36Z", "2026-11-04T19:30:06Z", "2026-11-04T19:05:24Z"] };
+  assert.notEqual(rankValidators([row], "balanced", checked)[0].score, null);
+  for (const index of [0, 1, 2, 3, 4]) {
+    const timestamps = [...row.timestamps]; timestamps[index] = "2026-11-04T17:34:59Z";
+    assert.equal(rankValidators([{ ...row, timestamps }], "balanced", checked)[0].score, null);
+  }
+  const timestamps = [...row.timestamps]; timestamps[1] = "2026-11-04T18:29:00Z";
+  assert.ok(rankValidators([{ ...row, timestamps }], "balanced", checked)[0].excluded.includes("Operational source snapshots are more than an hour apart"));
+});

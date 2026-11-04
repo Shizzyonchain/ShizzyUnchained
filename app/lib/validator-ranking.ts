@@ -4,6 +4,8 @@ export type Candidate = {
   participation7: number | null; participation30: number | null;
   active: boolean; permit: boolean; updated: number | null; cutoff: number | null;
   stakeShare: number | null; dividends: number | null; registered: string | null;
+  // First timestamp is the historical yield measurement; the remainder describe
+  // current identity, activity parameters, delegation and operating neurons.
   timestamps: string[]; yieldBasis: "nominator-net" | "chain-net" | "unknown";
   yieldBlock?: number;
   apr7?: number | null; apr30?: number | null;
@@ -32,7 +34,10 @@ export function rankValidators(candidates: Candidate[], mode: RankingMode, now: 
     if (!Number.isFinite(created) || now - created < 30 * 86400_000) excluded.push("Hotkey registration history shorter than 30 days or unknown");
     const times = candidate.timestamps.map(t => Date.parse(t));
     if (times.length < 4 || times.some(t => !Number.isFinite(t) || now - t > 2 * 3600_000 || t > now + 60_000)) excluded.push("Required snapshots missing, over two hours old or invalid");
-    else if (Math.max(...times) - Math.min(...times) > 3600_000) excluded.push("Source snapshots are more than an hour apart");
+    // Rolling 7d/30d returns need not be measured at the same instant as current
+    // activity. Keep the two-hour age bound on EVERY source, while requiring
+    // the operational snapshots (including delegation) to agree within an hour.
+    else if (Math.max(...times.slice(1)) - Math.min(...times.slice(1)) > 3600_000) excluded.push("Operational source snapshots are more than an hour apart");
     const consistency = valid(candidate.yield7) && valid(candidate.yield30) && candidate.yield7 > 0 && candidate.yield30 > 0 ? Math.min(candidate.yield7, candidate.yield30) / Math.max(candidate.yield7, candidate.yield30) : null;
     return { ...candidate, excluded, consistency, score: null, reasons: [] } as RankedCandidate;
   });

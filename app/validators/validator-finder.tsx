@@ -19,6 +19,7 @@ const modes: { value: RankingMode; label: string; method: string }[] = [
   { value: "decentralization", label: "Decentralization", method: "Lower subnet stake share 40% · agreement 20% · participation 20% · yield 15% · update recency 5%." },
 ];
 const pct = (value: number | null) => value === null ? "—" : `${displayNumber(value * 100)}%`;
+const evidenceTime = (value: string) => new Date(value).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
 function YieldValue({ row, days }: { row: Candidate; days: 7 | 30 }) {
   const value = days === 7 ? row.yield7 : row.yield30;
   const apr = days === 7 ? row.apr7 : row.apr30;
@@ -89,16 +90,17 @@ export function ValidatorFinder({ subnets }: { subnets: { netuid: number; name: 
     {loading && <RecommendationLoading />}
     {error && <p className={styles.notice} role="alert">{error} {result ? "Last result remains below; freshness checks still apply." : "Try again shortly. We could not verify a current choice."}</p>}
     {result && <div aria-live="polite">
-      <p className={styles.source}>SN{result.netuid} {picked?.name} {result.refreshing ? "· Refreshing in the background" : "· Checked automatically each minute"}</p>
+      <p className={styles.source}>SN{result.netuid} {picked?.name} {result.refreshing ? "· Refreshing in the background" : "· Source dates shown below"}</p>
       {winner ? <article className={styles.primaryChoice}>
         <p className={styles.eyebrow}>{limited.length ? "CURRENT OPTION · LIMITED HISTORY" : eligible.length === 1 ? "ONLY QUALIFYING OPTION" : "OUR TOP MATCH"}</p>
         <h3>{winner.name === winner.hotkey ? shortAddress(winner.hotkey) : winner.name}</h3>
         <p>{limited.length ? `Active now with at least 90% participation over 7 days, but only ${pct(winner.participation30)} over 30 days. It does not meet our full recommendation standard.` : "The strongest match for your preference across yield after fees, participation and current activity."}</p>
         <dl className={styles.choiceFacts}><div><dt>30-day annualized yield</dt><dd><YieldValue row={winner} days={30} /></dd></div><div><dt>Validator fee</dt><dd>{pct(winner.take)}</dd></div></dl>
+        <p className={styles.source}>Yield measured: <time dateTime={winner.timestamps[0]}>{evidenceTime(winner.timestamps[0])}</time>. Current activity uses separate snapshots; all required evidence must be within two hours.</p>
         {winner.operation === "delegated" && <div className={styles.choiceOperator}><OperatingPath row={winner} compact /></div>}
         <div className={styles.choiceActions}><Link href={`/validators/${winner.hotkey}`} prefetch={false}>View validator →</Link><button type="button" onClick={async () => { try { await navigator.clipboard.writeText(winner.hotkey); setCopied(true); } catch { setCopied(false); } }}>{copied ? "Hotkey copied ✓" : "Copy staking hotkey"}</button></div>
         <details><summary>Staking hotkey & evidence</summary><p className={styles.address}>{winner.hotkey}</p><p>Use this parent/yield hotkey when choosing this validator. Its operating child may be different.</p><ul>{(limited.length ? winner.excluded : winner.reasons).map(reason => <li key={reason}>{reason}</li>)}</ul><p className={styles.source}>Source timestamps: {winner.timestamps.join(" · ")}</p></details>
-      </article> : <article className={styles.primaryChoice}><h3>No verified choice right now</h3><p>We could not establish a current active validator with enough comparable evidence for this subnet. Try again after the background refresh.</p><details><summary>What is blocking a recommendation?</summary>{Array.from(new Set(rows.flatMap(row => row.excluded))).map(reason => <p key={reason}>{reason}</p>)}</details></article>}
+      </article> : <article className={styles.primaryChoice}><h3>Not enough current evidence to rank</h3><p>{rows.some(row => row.active && row.permit) ? "Active validator paths were found, but their evidence does not meet the comparison requirements below." : "A current active validator path could not be verified from the available sources."} This does not mean the subnet has no validators.</p><details open><summary>What is blocking a recommendation?</summary>{Array.from(new Set((rows.some(row => row.active && row.permit) ? rows.filter(row => row.active && row.permit) : rows).flatMap(row => row.excluded))).map(reason => <p key={reason}>{reason}</p>)}</details></article>}
       <details className={styles.simpleDetails}><summary>Other options & preferences</summary>
         <div className={styles.tabs} role="group" aria-label="Validator ranking preference">{modes.map(item => <button key={item.value} aria-pressed={mode === item.value} onClick={() => setMode(item.value)}>{item.label}</button>)}</div>
         {limited.length > 0 && <p>Limited-history options are ordered by the lower of their 7-day and 30-day reported yields, then fee. This is not the full recommendation ranking.</p>}

@@ -186,6 +186,31 @@ test("subnet recommendations show net yield and fail closed when sources fail", 
   await noOverflow(page);
 });
 
+test("hourly yield and fresh activity produce a dated choice; stale evidence explains the blocker", async ({ page }) => {
+  let expired = false;
+  await page.route("**/api/validators/recommendations?*", route => {
+    const current = new Date().toISOString();
+    const measured = new Date(Date.now() - (expired ? 121 : 67) * 60_000).toISOString();
+    return route.fulfill({ json: { netuid: 2, candidates: candidates.map(row => ({ ...row, yieldBasis: "nominator-net", timestamps: [measured, current, current, current] })), collectedAt: current, preparedAt: current, coverage: { permitHolders: 2, yieldRows: 2, directoryEntries: 2 } } });
+  });
+  await page.goto("/validators");
+  await page.getByRole("combobox", { name: "Choose your subnet", exact: true }).selectOption("2");
+  const submit = page.getByRole("button", { name: "Find my validator →", exact: true });
+  await submit.click();
+  const finder = page.locator('[aria-labelledby="validator-finder-title"]');
+  await expect(finder.getByRole("heading", { name: "Smoke Validator 2", exact: true })).toBeVisible();
+  await expect(finder).toContainText("Yield measured:");
+  await expect(finder).toContainText("30% reported");
+  await noOverflow(page);
+  expired = true;
+  await submit.click();
+  await expect(finder.getByRole("heading", { name: "Not enough current evidence to rank", exact: true })).toBeVisible();
+  await expect(finder).toContainText("Active validator paths were found");
+  await expect(finder.getByText("Required snapshots missing, over two hours old or invalid", { exact: true }).first()).toBeVisible();
+  await expect(finder.getByRole("button", { name: "Copy staking hotkey", exact: true })).toHaveCount(0);
+  await noOverflow(page);
+});
+
 test("root capital and TWR views name their series and reuse loaded history", async ({ page, contracts }) => {
   await page.goto("/validators/root");
   const compare = page.locator('[aria-labelledby="root-compare-title"]');
