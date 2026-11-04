@@ -3,7 +3,7 @@
   "checkedAt": "2026-11-04T15:39:12.488147+00:00",
   "dailyWorkflowComplete": false,
   "publication": {
-    "status": "VALIDATED_AWAITING_PRODUCTION_AND_ROUNDUP_VERIFICATION",
+    "status": "READY_PRODUCTION_LIVE_AND_SINGLE_ROUNDUP_VERIFIED_WITH_SOURCE_GAPS",
     "dailyWorkflowComplete": false,
     "validation": {
       "news": "88reports passed",
@@ -15,6 +15,22 @@
       "burnTests": 5,
       "dependencyAudit": "0vulnerabilities",
       "build": "Production smoke build passed; normal Vercel production build required"
+    },
+    "verifiedAt": "2026-11-04T15:53:00.405854+00:00",
+    "url": "https://shizzyunchained.com/subnet-news/2026-11-04",
+    "commit": "2cdca37aef2786675728d6b55596fab296b65277",
+    "deployment": "dpl_3HhCUHMYv41EiCsesHNqm6Kd38wr",
+    "roundup": {
+      "status": "PUBLIC_POST_VERIFIED",
+      "identity": "@ShizzyUnchained",
+      "text": "Subtensor has merged proxy and basket-minting security fixes into release-487. Our finalized check still shows runtime 486.\r\n\r\nA code merge, deployment and on-chain execution are separate milestones.\r\n\r\nAlso in today’s Bittensor report:\r\n\r\n• SN65 TPN: a published 2.32 GB model, with Gratis support reported by the team.\r\n• SN36 Weir: a verified identity and public GPU-rental site/code.\r\n• SN75 Hippius: a team-reported 1 PB stored.\r\n• SN91 Cascade: its connections with SN118 Ditto, SN4 Targon, SN6 Numinous and SN51 Lium.\r\n• SN44 Score and SN31 rec4ll: exact overnight reward-allocation changes.\r\n\r\nSources, actual dates and verification gaps, plus the completed TPN interview:\r\nhttps://shizzyunchained.com/subnet-news/2026-11-04",
+      "duplicateCheck": "Recentaccountpostsandnativequeue checked; noNov4dailyroundup. Existingcampaign schedules untouched.",
+      "url": "https://x.com/ShizzyUnchained/status/2118007905098060154",
+      "publishedAt": "2026-11-04T15:50:09.916+00:00",
+      "timeEvidence": "Post ID snowflake timestamp; public page displays10:50AMNov4Eastern",
+      "verifiedAt": "2026-11-04T15:52:10.017246+00:00",
+      "screenshot": "roundup-public.png",
+      "evidence": "roundup-public.txt"
     }
   },
   "chainReviews": {
@@ -30,7 +46,7 @@
       "archiveUpdated": true,
       "eventCount": 0,
       "newsDisposition": "Zero new allocation events or qualifying transaction burns. 80 small alpha burns evidence-only; 42 recycling events excluded. Score/rec4ll Nov3 executions covered as carry-forwards, not counted twice.",
-      "liveVerifiedAt": null
+      "liveVerifiedAt": "2026-11-04T15:53:00.405854+00:00"
     },
     "burns": {
       "status": "DONE",
@@ -44,7 +60,7 @@
       "archiveUpdated": true,
       "eventCount": 0,
       "newsDisposition": "Zero new allocation events or qualifying transaction burns. 80 small alpha burns evidence-only; 42 recycling events excluded. Score/rec4ll Nov3 executions covered as carry-forwards, not counted twice.",
-      "liveVerifiedAt": null
+      "liveVerifiedAt": "2026-11-04T15:53:00.405854+00:00"
     }
   },
   "ownerHoldings": {
@@ -54,8 +70,12 @@
     "asOf": "2026-11-04T15:15:00+00:00",
     "wallets": 128,
     "evidence": "/evidence/owner-holdings-9433469.json",
-    "validation": "Collector complete and all128 owner coldkeys independently match finalized SubnetOwner; validation and live check pending.",
-    "runtimeReview": "Reviewed486adapter of canonical collector; last-good preserved until complete."
+    "validation": "PASS:128current-owner rows and permanent evidence; live shared response equals the complete collector output.",
+    "runtimeReview": "Reviewed486adapter of canonical collector; last-good preserved until complete.",
+    "liveVerifiedAt": "2026-11-04T15:53:00.405854+00:00",
+    "livePanel": "https://shizzyunchained.com/charts/31",
+    "nonzeroAlpha": "2908.601863635",
+    "smallFreeTao": "0.583843689"
   },
   "marketReview": {
     "source": "https://shizzyunchained.com/api/backend/v1/screener",
@@ -773,7 +793,12 @@
     "requiredAccounts": "Const posts throughOct30/replies throughOct21; Tensia original and9visible replies throughDiscovermore, timeline toOct23/replies toOct30; Bot alerts throughNov3morning. Account posts scrolled toNov3morning, substantive replies throughNov2, reposts throughNov3morning; bookmarks scrolled intoNov2overlap. URL-by-URL private discovery reconciliation retained outside public site. No new dossier found; reader identity guesses are not facts.",
     "taostats": {
       "status": "BLOCKED",
-      "reason": "No configured local TAOSTATS_API_KEY; no secret extraction from browser or invented quota."
+      "reason": "No configured local TAOSTATS_API_KEY; no secret extraction from browser or invented quota.",
+      "publicCrossCheck": {
+        "url": "https://taostats.io/subnets/36",
+        "reviewedAt": "2026-11-04T15:53:00.405854+00:00",
+        "outcome": "Public page independently matches Weir, current owner, November2registration and226.72%move. Authenticated API/credits remain unavailable."
+      }
     },
     "media": "TPN branding and Cascade/Hippius animated graphics inspected in preceding monitor evidence; no independent benchmark/customer execution. Full audio/listening not performed. Chutes quoted Tencent promotional video observed visually while original team announcement was read; no claim its API or partner contract was tested.",
     "videos": "OfficialVideos+Live and TPNwatch pages checked: TPN55:32 completed, LeadpoetNov5 11ET, CarbonNov6 13:30ET; latest member videoJSvw2WhaDks8:38Oct28.",
@@ -2501,8 +2526,8 @@
     "disposition": "All original files retained. Published TPN007, Cascade, Hippius, security/gamma, Weir and overnight allocations. AlreadyNov3REAX/Fugal/Cacheon/Vanta not counted twice. DittoV15,NIOME,EveryFrameTreasury,ChipForge,Affine,Attune,Connito,Leadpoet,Minos,SN39handoff and Tensia dossier remain pending exact primary evidence; no allegations published."
   },
   "remaining": [
-    "Original-source depth and authenticated TaoStats access remain explicit gaps; full daily sign-off is not claimed.",
-    "Production READY/live checks and exactly one verified roundup tracked in daily-news-2026-11-04/publication-receipt.json."
+    "Full original-source depth across128, authenticated TaoStats API reconciliation and unresolved pending leads remain gaps. The complete daily workflow is not signed off.",
+    "One November4roundup is verified published. Do not publish another roundup when these gaps are resolved."
   ],
   "sourceDispositions": [
     {
