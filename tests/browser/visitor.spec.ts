@@ -261,7 +261,15 @@ test("archived unavailable evidence is not clickable and partner referrals remai
   const btcc=page.locator('a[href="https://partner.btcc.com/us/c/SHIZZY/94759937"]');
   await expect(btcc).toContainText('SHIZZY');
   await expect(btcc).toHaveAttribute('rel',/sponsored/);
-  await expect(page.locator(".partner-banner")).toHaveCount(8); await noOverflow(page);
+  const kraken=page.locator('#kraken');
+  await expect(kraken).toHaveAttribute('href','https://invite.kraken.com/JDNW/bi12c5ws');
+  await expect(kraken).toHaveAttribute('rel',/sponsored/);
+  await expect(kraken).toContainText('random reward of up to $300');
+  await expect(kraken).toContainText('$200 deposit and $200 in trades');
+  await expect(kraken).toContainText('Eligibility, deadlines, and regional terms apply');
+  await expect.poll(() => kraken.locator('img').evaluate(img => (img as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  await expect(page.locator('.partner-note')).toContainText('commission or referral reward');
+  await expect(page.locator(".partner-banner")).toHaveCount(9); await noOverflow(page);
 });
 
 test("shared privacy footer opens readable notice and wallet controls remain reachable", async ({ page }) => {

@@ -56,6 +56,14 @@ const partners = [
     cta: "Explore BTCC",
   },
   {
+    key: "kraken",
+    name: "Kraken",
+    kicker: "Crypto exchange · Referral welcome offer",
+    description: "Buy, sell, and manage crypto with Kraken. Use Shizzy’s invite link to view the current welcome offer: a random reward of up to $300 after a qualifying $200 deposit and $200 in trades. Eligibility, deadlines, and regional terms apply.",
+    href: "https://invite.kraken.com/JDNW/bi12c5ws",
+    cta: "Explore Kraken & offer",
+  },
+  {
     key: "ledger",
     name: "Ledger",
     kicker: "Hardware security",
@@ -126,7 +134,7 @@ export function PartnerDirectory() { return (
           </div>
           <div className="partner-note">
             <span>Shizzy-approved resources</span>
-            <p>Some links and discount codes are affiliate referrals. If you use them, Shizzy Unchained may earn a commission at no additional cost to you.</p>
+            <p>Some links and discount codes are affiliate referrals. If you use them, Shizzy Unchained may earn a commission or referral reward at no additional cost to you.</p>
           </div>
         </section>
 ); }
