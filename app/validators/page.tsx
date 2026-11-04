@@ -15,5 +15,5 @@ export const metadata: Metadata = withSocialMetadata({
 }, "/validators");
 export default function ValidatorsPage() {
   const subnets = (getSubnetNewsBriefs()[0]?.subnets || []).map(({ netuid, name }) => ({ netuid, name }));
-  return <><div className={styles.header}><SiteHeader hideCurrency /></div><main className={`${styles.page} ${styles.simplePage}`}><header className={styles.simpleHero}><h1>Find your validator.</h1><p>Pick a subnet. Get a clear choice.</p></header><nav className={styles.viewNav} aria-label="Validator views"><span aria-current="page">Subnet staking</span><Link href="/validators/root">Compare Root staking →</Link></nav><ValidatorFinder subnets={subnets} /><div className={styles.simpleDirectory}><OptionalDirectory /></div></main><CreatorFooter /></>;
+  return <><div className={styles.header}><SiteHeader hideCurrency /></div><main className={`${styles.page} ${styles.simplePage}`}><header className={styles.simpleHero}><h1>Find your validator.</h1><p>Pick a subnet. Compare three validator options.</p></header><nav className={styles.viewNav} aria-label="Validator views"><span aria-current="page">Subnet staking</span><Link href="/validators/root">Compare Root staking →</Link></nav><ValidatorFinder subnets={subnets} /><div className={styles.simpleDirectory}><OptionalDirectory /></div></main><CreatorFooter /></>;
 }

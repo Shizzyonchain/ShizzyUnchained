@@ -186,6 +186,35 @@ test("subnet recommendations show net yield and fail closed when sources fail", 
   await noOverflow(page);
 });
 
+test("finder shows three visible choices and discloses a shorter verified shortlist", async ({ page }) => {
+  let count = 4;
+  await page.route("**/api/validators/recommendations?*", route => {
+    const current = new Date().toISOString();
+    const options = Array.from({ length: count }, (_, index) => ({ ...candidates[0], hotkey: `${keys[0].slice(0, -1)}${index + 1}`, name: `Choice ${index + 1}`, yieldBasis: "nominator-net", take: index * .01, timestamps: Array(4).fill(current) }));
+    return route.fulfill({ json: { netuid: 2, candidates: options, collectedAt: current, coverage: { permitHolders: count, yieldRows: count, directoryEntries: count } } });
+  });
+  await page.goto("/validators");
+  await page.getByRole("combobox", { name: "Choose your subnet", exact: true }).selectOption("2");
+  const submit = page.getByRole("button", { name: "Find my validator →", exact: true });
+  await submit.click();
+  const finder = page.locator('[aria-labelledby="validator-finder-title"]');
+  const options = finder.getByRole("article", { name: /Validator option/ });
+  await expect(options).toHaveCount(3);
+  for (let index = 0; index < 3; index++) {
+    await expect(options.nth(index)).toBeVisible();
+    await expect(options.nth(index).getByRole("link", { name: "View validator →", exact: true })).toBeVisible();
+    await expect(options.nth(index).getByRole("button", { name: "Copy staking hotkey", exact: true })).toBeVisible();
+    await expect(options.nth(index)).toContainText("Yield measured:");
+  }
+  await expect(finder).toContainText("Three validator options");
+  await noOverflow(page);
+  count = 2;
+  await submit.click();
+  await expect(options).toHaveCount(2);
+  await expect(finder).toContainText("Only 2 options meet the evidence requirements; three could not be verified.");
+  await noOverflow(page);
+});
+
 test("hourly yield and fresh activity produce a dated choice; stale evidence explains the blocker", async ({ page }) => {
   let expired = false;
   await page.route("**/api/validators/recommendations?*", route => {
