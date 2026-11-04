@@ -5,7 +5,7 @@
   "summary": "SN36 Weir reveals its GPU-rental direction, SN65 TPN publishes a smaller model, and SN75 Hippius reports 1 PB stored. Plus verified allocation changes and a clear distinction between proposed code and live execution.",
   "publishedAt": "2026-11-04T15:39:12.488147+00:00",
   "coverageStart": "2026-11-03T19:07:48+00:00",
-  "coverageEnd": "2026-11-04T15:39:12.488147+00:00",
+  "coverageEnd": "2026-11-04T16:14:35.740148+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [
@@ -297,7 +297,22 @@
     {
       "netuid": 37,
       "name": "Aurelius",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN37 Aurelius merges opt-in renewals with a persistent spending cap",
+          "summary": "PR33 merged into SN37 Aurelius’s main branch on November 4 at 03:19:52 UTC, or November 3 at 10:19:52 PM Eastern. It adds an optional helper to restage a winning entry within an explicit lifetime WT limit and per-evaluation ceiling. The design retains authorization across restarts and uncertain outcomes, stops after a loss or timeout, and waits when evidence or funding is missing. The WT budget is not a TAO-denominated spending claim. The patch does not change coldkey funding, selection or weights. This is merged implementation, not a verified live deployment or uninterrupted-reward guarantee.",
+          "sources": [
+            {
+              "url": "https://github.com/Aurelius-Protocol/Aurelius-Protocol/pull/33",
+              "label": "SN37 Aurelius merged renewal helper and limits"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A practical optional miner workflow with explicit authorization limits; production use and payouts were not tested.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
     },
     {
       "netuid": 38,
@@ -386,7 +401,22 @@
     {
       "netuid": 51,
       "name": "lium.io",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN51 Lium bounds pod edits when a container will not stop",
+          "summary": "SN51 Lium merged PR2048 on November 4 at 15:51:11 UTC, or 10:51:11 AM Eastern. A pod edit or reboot could hang when a remote container-stop command never returned. The patch bounds the edit-swap commands and rollback path; if stopping and killing still fail, it restores the container’s name and fails the edit while retaining its volume. The author explicitly does not claim an overall timeout for every create operation, which can include legitimate long image pulls. This is verified merged code, not an independently exercised rental or confirmed fleet-wide upgrade.",
+          "sources": [
+            {
+              "url": "https://github.com/Datura-ai/lium-io/pull/2048",
+              "label": "SN51 Lium merged bounded pod-edit recovery, November 4"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A concrete rental-reliability fix with explicit limits; merge status does not establish customer execution.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 52,
@@ -534,7 +564,22 @@
     {
       "netuid": 71,
       "name": "Leadpoet",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN71 Leadpoet merges recovery for completed paid Arena work",
+          "summary": "SN71 Leadpoet merged PR1015 on November 4 at 11:32:50 UTC. The patch keeps completed-result delivery running during shutdown, rechecks cancellation and deadlines before provider dispatch, and retains successful sanitized replies when billing persistence fails. Exact same-call retries can reuse the retained result rather than issue another provider request, while unresolved costs remain subject to normal ledger reconciliation. The PR explicitly leaves verifier prompts, judging criteria, historical outcomes and reward rules unchanged. This code merge does not establish a production rollout or resolve the separately reported baseline-verifier mismatch.",
+          "sources": [
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1015",
+              "label": "SN71 Leadpoet merged paid-work recovery patch"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A meaningful reliability change for completed work and duplicate provider requests; deployment and the separate judging issue remain unverified.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 72,
@@ -673,7 +718,22 @@
     {
       "netuid": 92,
       "name": "REAX",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN92 REAX adds 24-hour notice for reward-rule changes",
+          "summary": "The SN92 REAX FAQ’s version 3.8, dated November 4 at 11:45 UTC, requires at least 24 hours’ notice for changes to tiers, shares, targets, pools or scoring. Adding an inference model is exempt, but needs a versioned release stating its pool and scoring; removing or replacing a model is not exempt. The page says already-earned amounts are not taken away. Separately, version 3.7 was decided November 2 and announced November 3: the three full-share days start at award approval, or crowning if approval came first, from the next crowning. Current champions get a one-time adjustment without double payment. These are documented rules; this review did not reconstruct individual payouts.",
+          "sources": [
+            {
+              "url": "https://reax.co/competitions/faq/",
+              "label": "SN92 REAX FAQ v3.8 and dated change log"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Concrete notice and payment-timing rules help miners understand changes; no payout or new allocation execution is inferred.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 93,
@@ -798,7 +858,26 @@
     {
       "netuid": 117,
       "name": "everyframe.studio",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN117 EveryFrame announces a film-contest treasury from unused miner allocation",
+          "summary": "Dated November 3, last edited 3:11 PM Eastern: SN117 EveryFrame says unused miner allocation will fund its AI Film Contest rather than be recycled. Serving fees and a 10–50% output-quality bonus are paid to miners first; the treasury receives the remainder of the miner portion, with owner and validator allocations separate. The team identifies treasury UIDs 156/157 and describes community voting and on-chain awards. Its public dashboard currently shows “Treasury data unavailable,” so this review did not verify balances, completed payouts or actual routing. The promotional split graphic is illustrative, not a fixed whole-subnet percentage. This is a team-announced funding policy, not a qualifying transaction burn or measured creator adoption.",
+          "sources": [
+            {
+              "url": "https://x.com/xeveryframe/status/2117711400084914186",
+              "label": "SN117 EveryFrame original treasury policy, November 3"
+            },
+            {
+              "url": "https://subnet.everyframe.studio/#treasury",
+              "label": "SN117 EveryFrame treasury page and miner-only denominator"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A useful change to competition funding and miner-payment priority, with execution and dashboard limitations explicit.",
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 118,
@@ -884,7 +963,9 @@
     "gaps": [
       "Available verified news is published with a source-coverage gap: original X timelines/repositories were not individually exhaustively reviewed for every subnet. The 49 AI-generated Discord digests are discovery, not primary verification; the original Discord link redirected to login. Empty subnet entries do not establish no activity.",
       "Authenticated TaoStats cross-check is blocked because no local API key is available. No credit balance or indexer completeness was invented. Full private Discord and independently run model/GPU/storage benchmarks are unavailable.",
-      "The promised Tensia dossier and several competition/scoring leads remain unresolved; allegations and unidentified wallets were not promoted to facts. A code merge is not a mainnet deployment, and team-reported adoption figures are not independently audited."
+      "The promised Tensia dossier and several competition/scoring leads remain unresolved; allegations and unidentified wallets were not promoted to facts. A code merge is not a mainnet deployment, and team-reported adoption figures are not independently audited.",
+      "The 11:02 AM Eastern monitor could not run fresh Grok discovery/omission responses because the signed-in account reached its usage limit. Direct project policies, primary repository changes, account discovery sources and the dated news index were reviewed instead; original-source coverage is not exhaustive."
     ]
-  }
+  },
+  "updatedAt": "2026-11-04T16:14:35.740148+00:00"
 }
