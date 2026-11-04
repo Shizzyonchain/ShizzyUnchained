@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-03T19:08:32.885270+00:00",
-  "block": 9427433,
-  "hash": "0x34c786b6b5346368ac8f99b070566357724a6188ece48a9248a190fe4221086c",
-  "chainTime": 1793732868000,
+  "checkedAt": "2026-11-04T04:10:41.921287+00:00",
+  "block": 9430129,
+  "hash": "0x77b10f417e16f53a2efd7d852dc6918e7d23022ddb680892e127abc30a449408",
+  "chainTime": 1793765220000,
   "runtime": 486,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -310,9 +310,9 @@
     "44": [
       "0",
       "0",
-      "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "2213609288845146193",
+      "8116567392432202710",
+      "8116567392432202712"
     ],
     "45": [
       "0",
@@ -1442,6 +1442,30 @@
       "name": "Nodexo",
       "registrationBlock": 5558480,
       "evidence": "/evidence/2026-11-02-news-monitor-1347-chain.json"
+    },
+    {
+      "netuid": 44,
+      "block": 9429287,
+      "hash": "0x1fe3b05f3ac01f96c634df028f656495c9cb988faa297bbc33552d957435bf51",
+      "timestamp": 1793755116000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "2213609288845146193",
+        "8116567392432202710",
+        "8116567392432202712"
+      ],
+      "extrinsic": 8,
+      "name": "Score",
+      "registrationBlock": 3550319,
+      "evidence": "/evidence/2026-11-03-late-chain.json"
     }
   ],
   "names": {
@@ -1712,10 +1736,10 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9427433,
-    "finalizedHash": "0x34c786b6b5346368ac8f99b070566357724a6188ece48a9248a190fe4221086c",
-    "checkedAt": "2026-11-03T19:08:32.885270+00:00",
-    "eventCount": 15,
+    "toBlock": 9430129,
+    "finalizedHash": "0x77b10f417e16f53a2efd7d852dc6918e7d23022ddb680892e127abc30a449408",
+    "checkedAt": "2026-11-04T04:10:41.921287+00:00",
+    "eventCount": 16,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history."

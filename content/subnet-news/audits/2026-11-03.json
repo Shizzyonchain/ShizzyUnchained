@@ -9,30 +9,30 @@
   "chainReviews": {
     "etao": {
       "status": "DONE",
-      "checkedAt": "2026-11-03T19:10:08.544084+00:00",
-      "fromBlock": 9426415,
-      "toBlock": 9427433,
-      "hash": "0x34c786b6b5346368ac8f99b070566357724a6188ece48a9248a190fe4221086c",
-      "throughTime": "2026-11-03T19:07:48+00:00",
+      "checkedAt": "2026-11-04T04:10:41.921287+00:00",
+      "fromBlock": 9427434,
+      "toBlock": 9430129,
+      "hash": "0x77b10f417e16f53a2efd7d852dc6918e7d23022ddb680892e127abc30a449408",
+      "throughTime": "2026-11-04T04:07:00+00:00",
       "gaps": [],
-      "evidence": "/evidence/2026-11-03-afternoon-chain.json",
+      "evidence": "/evidence/2026-11-03-late-chain.json",
       "archiveUpdated": true,
-      "eventCount": 0,
-      "newsDisposition": "Zero allocation changes, 128 vectors unchanged; one qualifying Vanta alpha burn published and 21 smaller burns retained only in evidence. Contiguous extension of prior permanent review.",
+      "eventCount": 1,
+      "newsDisposition": "Score SN44 allocation executed Nov3 20:18:36 Eastern: owner 18% to 12%, miners and validators 41% to 44% each. Archive published around the clock; dated news summary deferred to Nov4 under 5PM cutoff. No qualifying burns; 63 smaller alpha burns retained only in evidence, two recycling events excluded. The proposed owner-wallet lock is not verified by this allocation event.",
       "liveVerifiedAt": null
     },
     "burns": {
       "status": "DONE",
-      "checkedAt": "2026-11-03T19:10:08.544084+00:00",
-      "fromBlock": 9426415,
-      "toBlock": 9427433,
-      "hash": "0x34c786b6b5346368ac8f99b070566357724a6188ece48a9248a190fe4221086c",
-      "throughTime": "2026-11-03T19:07:48+00:00",
+      "checkedAt": "2026-11-04T04:10:41.921287+00:00",
+      "fromBlock": 9427434,
+      "toBlock": 9430129,
+      "hash": "0x77b10f417e16f53a2efd7d852dc6918e7d23022ddb680892e127abc30a449408",
+      "throughTime": "2026-11-04T04:07:00+00:00",
       "gaps": [],
-      "evidence": "/evidence/2026-11-03-afternoon-chain.json",
+      "evidence": "/evidence/2026-11-03-late-chain.json",
       "archiveUpdated": true,
-      "eventCount": 1,
-      "newsDisposition": "Zero allocation changes, 128 vectors unchanged; one qualifying Vanta alpha burn published and 21 smaller burns retained only in evidence. Contiguous extension of prior permanent review.",
+      "eventCount": 0,
+      "newsDisposition": "Score SN44 allocation executed Nov3 20:18:36 Eastern: owner 18% to 12%, miners and validators 41% to 44% each. Archive published around the clock; dated news summary deferred to Nov4 under 5PM cutoff. No qualifying burns; 63 smaller alpha burns retained only in evidence, two recycling events excluded. The proposed owner-wallet lock is not verified by this allocation event.",
       "liveVerifiedAt": null
     }
   },
@@ -1931,6 +1931,16 @@
       ],
       "evidence": "Private monitor evidence in ../news-monitor-2026-11-03/1400-*; no private bookmark lists copied into public audit",
       "chainExtensionEvidence": "/evidence/2026-11-03-afternoon-chain.json"
+    },
+    {
+      "checkedAt": "2026-11-04T04:10:41.921287+00:00",
+      "type": "after-cutoff-chain-review",
+      "evidence": "/evidence/2026-11-03-late-chain.json",
+      "sourceUrls": [
+        "https://x.com/webuildscore/status/2117312844840452368",
+        "https://x.com/TensiaBot/status/2117788700629168185"
+      ],
+      "disposition": "Three-star finalized allocation change, below automatic X quote threshold. No dated Nov3 story added, no social post. Carry forward to Nov4. Full contiguous interval 9427434-9430129 reviewed using runtime486 definitions and success evidence."
     }
   ],
   "priorChainReviewCutoffs": [
@@ -1961,6 +1971,36 @@
         "archiveUpdated": true,
         "eventCount": 0,
         "newsDisposition": "No new allocation or qualifying burns through this cutoff. Cacheon9422004 is a dated carry-forward already archived, not a second event.77small burns retained only in evidence.",
+        "liveVerifiedAt": null
+      }
+    },
+    {
+      "etao": {
+        "status": "DONE",
+        "checkedAt": "2026-11-03T19:10:08.544084+00:00",
+        "fromBlock": 9426415,
+        "toBlock": 9427433,
+        "hash": "0x34c786b6b5346368ac8f99b070566357724a6188ece48a9248a190fe4221086c",
+        "throughTime": "2026-11-03T19:07:48+00:00",
+        "gaps": [],
+        "evidence": "/evidence/2026-11-03-afternoon-chain.json",
+        "archiveUpdated": true,
+        "eventCount": 0,
+        "newsDisposition": "Zero allocation changes, 128 vectors unchanged; one qualifying Vanta alpha burn published and 21 smaller burns retained only in evidence. Contiguous extension of prior permanent review.",
+        "liveVerifiedAt": null
+      },
+      "burns": {
+        "status": "DONE",
+        "checkedAt": "2026-11-03T19:10:08.544084+00:00",
+        "fromBlock": 9426415,
+        "toBlock": 9427433,
+        "hash": "0x34c786b6b5346368ac8f99b070566357724a6188ece48a9248a190fe4221086c",
+        "throughTime": "2026-11-03T19:07:48+00:00",
+        "gaps": [],
+        "evidence": "/evidence/2026-11-03-afternoon-chain.json",
+        "archiveUpdated": true,
+        "eventCount": 1,
+        "newsDisposition": "Zero allocation changes, 128 vectors unchanged; one qualifying Vanta alpha burn published and 21 smaller burns retained only in evidence. Contiguous extension of prior permanent review.",
         "liveVerifiedAt": null
       }
     }
