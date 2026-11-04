@@ -345,7 +345,9 @@ test("scheduled livestreams stay out of recent videos and replays", async ({ pag
   const upcoming=page.getByRole("region",{name:"Upcoming livestreams",exact:true});
   await expect(upcoming.getByRole("button")).toHaveCount(3);
   await expect(upcoming).toContainText("November 3, 2026");
-  await expect(upcoming).toContainText("November 4, 2026");
+  await expect(upcoming).toContainText("November 6, 2026");
+  await expect(upcoming).toContainText("1:30 PM ET / 10:30 AM PT");
+  await expect(upcoming).not.toContainText("November 4, 2026");
   await expect(upcoming).toContainText("November 5, 2026");
   await expect(upcoming).not.toContainText("October 28, 2026");
   await expect(upcoming).not.toContainText("October 29, 2026");
