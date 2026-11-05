@@ -4080,6 +4080,33 @@
         "Rate-limited repository coverage and bounded timelines disclosed.",
         "No independent product security, deployed-validator or model-performance test."
       ]
+    },
+    {
+      "kind": "etao-burns",
+      "checkedAt": "2026-11-05T23:03:11.529528+00:00",
+      "fromBlock": 9441148,
+      "toBlock": 9442967,
+      "throughTime": "2026-11-05T22:55:00+00:00",
+      "complete": true,
+      "gaps": [],
+      "runtime": 488,
+      "runtimeBoundary": {
+        "last486StateBlock": 9442680,
+        "first488StateBlock": 9442681,
+        "first488ExecutionMetadataBlock": 9442682,
+        "reason": "substrate-interface init_runtime explicitly decodes a block with its parent-state runtime metadata. Installed SDK source inspected. The upgrade block therefore uses old execution metadata."
+      },
+      "allocationEvents": 0,
+      "qualifyingBurns": 3,
+      "gammaMintEvents": 0,
+      "all128VectorsReconciled": true,
+      "eventCounts": {
+        "AlphaBurned": 31,
+        "AlphaRecycled": 30
+      },
+      "evidence": "/evidence/2026-11-05-chain-monitor-1754.json",
+      "archiveUpdated": true,
+      "newsDisposition": "After5PMEastern: do not append to Nov5 edition. Three qualifying SN8 burns and finalized runtime488 lead saved for Nov6 full report. All25 existing stories preserved byte-for-byte. No social publication authorized or performed."
     }
   ],
   "sourceReconciliation": [
