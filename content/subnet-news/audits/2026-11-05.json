@@ -2274,9 +2274,30 @@
     {
       "netuid": 80,
       "name": "OpenRoboto",
-      "publishedItems": 0,
-      "outcome": "no-cleared-new-story",
-      "sources": [],
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/openroboto/status/2118355277359817009",
+          "label": "SN80 OpenRoboto November 5 pilot announcement"
+        },
+        {
+          "url": "https://x.com/openroboto/status/2118355315368640556",
+          "label": "SN80 OpenRoboto staged pilot and later deployment"
+        },
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/11/03/3394672/0/en/openroboto-and-vulcan-shield-hungary-launch-commercial-robotics-data-pilot.html",
+          "label": "SN80 OpenRoboto November 3 pilot press release and attributed customer statement"
+        },
+        {
+          "url": "https://www.vulcanshield.com/an-european-production-base-and-a-shorter-path-to-material/",
+          "label": "Vulcan Shield primary confirmation of its Hungarian facility"
+        },
+        {
+          "url": "https://x.com/const_reborn/status/2118371712228073862",
+          "label": "Const commentary on SN80 OpenRoboto industrial pilot"
+        }
+      ],
       "datedBrief": "https://subnetradar.com/subnet-news/80/2026-11-05",
       "discoveryHeadline": "Members Discuss Unverified OpenRoboto Wallet Claims",
       "briefDisposition": "No cleared material development from this digest; not proof of no news.",
@@ -2286,14 +2307,36 @@
       "paginationGap": false,
       "repositoryDisposition": "Selected meaningful changes verified in story sources; remaining commits are discovery/maintenance and not proof of deployment.",
       "xSearchStatus": "Required accounts, owner discovery and selected originals read; no exhaustive individual timeline search claimed.",
-      "reviewGap": "PrivateDiscord unavailable; independent benchmark/deployment evidence varies by story."
+      "reviewGap": "PrivateDiscord unavailable; independent benchmark/deployment evidence varies by story.",
+      "monitorDisposition": "SN80 OpenRoboto announces a commercial data pilot with Vulcan Shield Hungary"
     },
     {
       "netuid": 81,
       "name": "Reliquary",
-      "publishedItems": 0,
-      "outcome": "no-cleared-new-story",
-      "sources": [],
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/reliquary_ai/status/2118369839274438932",
+          "label": "SN81 Reliquary November 5 release announcement"
+        },
+        {
+          "url": "https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary",
+          "label": "SN81 Reliquary model card, license and evaluation protocol"
+        },
+        {
+          "url": "https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary/tree/main",
+          "label": "SN81 Reliquary public weights and tokenizer files"
+        },
+        {
+          "url": "https://app.reliqua.ai/console/run?run=5H47sFL6-teutonic-rl-async-v1-trainer",
+          "label": "SN81 Reliquary recorded training-run dashboard"
+        },
+        {
+          "url": "https://x.com/const_reborn/status/2118372617203622019",
+          "label": "Const commentary on SN81 Reliquary and cross-subnet training"
+        }
+      ],
       "datedBrief": null,
       "discoveryHeadline": null,
       "briefDisposition": "No cleared material development from this digest; not proof of no news.",
@@ -2303,7 +2346,8 @@
       "paginationGap": true,
       "repositoryDisposition": "Selected meaningful changes verified in story sources; remaining commits are discovery/maintenance and not proof of deployment.",
       "xSearchStatus": "Required accounts, owner discovery and selected originals read; no exhaustive individual timeline search claimed.",
-      "reviewGap": "PrivateDiscord unavailable; independent benchmark/deployment evidence varies by story."
+      "reviewGap": "PrivateDiscord unavailable; independent benchmark/deployment evidence varies by story.",
+      "monitorDisposition": "SN81 Reliquary releases open Teutonic-I-Reliquary 9B weights"
     },
     {
       "netuid": 82,
@@ -3776,5 +3820,136 @@
     "editorialCutoff": "Before5PMEasternNov5. Preserve originalpublishedAt/coverageEnd/eventdates and earlier16stories.",
     "roundup": "Already verified once; never repeat for this supplement.",
     "crossReferenceEdit": "Nonmaterial SN127 prior-edition reference clarified; underlying factual claims unchanged."
-  }
+  },
+  "monitorReviews": [
+    {
+      "checkedAt": "2026-11-05T16:40:04.385637+00:00",
+      "windowStart": "2026-11-05T13:33:25.229399+00:00",
+      "kind": "three-hour supplement to existing full edition",
+      "added": [
+        {
+          "netuid": 81,
+          "headline": "SN81 Reliquary releases open Teutonic-I-Reliquary 9B weights",
+          "rating": 4,
+          "sources": [
+            {
+              "url": "https://x.com/reliquary_ai/status/2118369839274438932",
+              "label": "SN81 Reliquary November 5 release announcement"
+            },
+            {
+              "url": "https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary",
+              "label": "SN81 Reliquary model card, license and evaluation protocol"
+            },
+            {
+              "url": "https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary/tree/main",
+              "label": "SN81 Reliquary public weights and tokenizer files"
+            },
+            {
+              "url": "https://app.reliqua.ai/console/run?run=5H47sFL6-teutonic-rl-async-v1-trainer",
+              "label": "SN81 Reliquary recorded training-run dashboard"
+            },
+            {
+              "url": "https://x.com/const_reborn/status/2118372617203622019",
+              "label": "Const commentary on SN81 Reliquary and cross-subnet training"
+            }
+          ]
+        },
+        {
+          "netuid": 80,
+          "headline": "SN80 OpenRoboto announces a commercial data pilot with Vulcan Shield Hungary",
+          "rating": 3,
+          "sources": [
+            {
+              "url": "https://x.com/openroboto/status/2118355277359817009",
+              "label": "SN80 OpenRoboto November 5 pilot announcement"
+            },
+            {
+              "url": "https://x.com/openroboto/status/2118355315368640556",
+              "label": "SN80 OpenRoboto staged pilot and later deployment"
+            },
+            {
+              "url": "https://www.globenewswire.com/news-release/2026/11/03/3394672/0/en/openroboto-and-vulcan-shield-hungary-launch-commercial-robotics-data-pilot.html",
+              "label": "SN80 OpenRoboto November 3 pilot press release and attributed customer statement"
+            },
+            {
+              "url": "https://www.vulcanshield.com/an-european-production-base-and-a-shorter-path-to-material/",
+              "label": "Vulcan Shield primary confirmation of its Hungarian facility"
+            },
+            {
+              "url": "https://x.com/const_reborn/status/2118371712228073862",
+              "label": "Const commentary on SN80 OpenRoboto industrial pilot"
+            }
+          ]
+        }
+      ],
+      "grok": {
+        "conversation": "https://x.com/i/grok?conversation=c1ff6ce5-50c4-468a-81fc-d77cc304aeea",
+        "discovery": "Completed; Reliquary and OpenRoboto verified against primary artifacts. Score allocation already in November4 edition; no duplicate.",
+        "omission": "Returned the same two candidates, no additional cleared primary lead. Its pilot distribution date approximations were not adopted."
+      },
+      "roster": "124 named repository records attempted;22 HTTP200 and no post-cutoff commits in those responses,76 HTTP403,13 HTTP429,1 HTTP404,12 no repository. Rate-limited results are coverage gaps, not no-update findings. 48 subnet briefs plus one general brief indexed for Nov5; subnet briefs unchanged from daily review.",
+      "media": "Reliquary native announcement video excerpts and published comparison table reviewed; benchmark scores attributed to team, no local inference/benchmark rerun. OpenRoboto video excerpts showed a signing/handshake scene, not verified autonomous robot deployment; no audio listening claimed.",
+      "sources": "Native signed-in owner posts, substantive replies, reposts and bookmarks directly reviewed. Relevant public leads followed to originals. Private discovery captures remain outside public repository. Const primary quote posts reviewed. Tensia latest originals unchanged from daily pass; no new independently verified incident adopted.",
+      "pending": "All unresolved prior leads retained in existing local daily pending object; SN44 wallet-lock confirmation still requires finalized proof, distinct from already archived allocation.",
+      "editorialCutoff": "Before5PMEastern. Existing full edition only; original publishedAt/coverageEnd and chain cutoffs preserved.",
+      "social": "At most one strongest new four-star quote, SN81 Reliquary, after READY/live verification. Existing daily roundup must not repeat.",
+      "limitations": [
+        "Public model files/license/protocol verified; no local inference or independent benchmark replication.",
+        "Pilot economics and delivered autonomous robot capability not verified; no separate counterparty pilot page found.",
+        "Rate-limited GitHub and bounded X history prevent exhaustive coverage."
+      ]
+    }
+  ],
+  "sourceReconciliation": [
+    {
+      "url": "https://x.com/reliquary_ai/status/2118369839274438932",
+      "outcome": "covered",
+      "disposition": "SN81 Reliquary releases open Teutonic-I-Reliquary 9B weights"
+    },
+    {
+      "url": "https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary",
+      "outcome": "covered",
+      "disposition": "SN81 Reliquary releases open Teutonic-I-Reliquary 9B weights"
+    },
+    {
+      "url": "https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary/tree/main",
+      "outcome": "covered",
+      "disposition": "SN81 Reliquary releases open Teutonic-I-Reliquary 9B weights"
+    },
+    {
+      "url": "https://app.reliqua.ai/console/run?run=5H47sFL6-teutonic-rl-async-v1-trainer",
+      "outcome": "covered",
+      "disposition": "SN81 Reliquary releases open Teutonic-I-Reliquary 9B weights"
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118372617203622019",
+      "outcome": "covered",
+      "disposition": "SN81 Reliquary releases open Teutonic-I-Reliquary 9B weights"
+    },
+    {
+      "url": "https://x.com/openroboto/status/2118355277359817009",
+      "outcome": "covered",
+      "disposition": "SN80 OpenRoboto announces a commercial data pilot with Vulcan Shield Hungary"
+    },
+    {
+      "url": "https://x.com/openroboto/status/2118355315368640556",
+      "outcome": "covered",
+      "disposition": "SN80 OpenRoboto announces a commercial data pilot with Vulcan Shield Hungary"
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2026/11/03/3394672/0/en/openroboto-and-vulcan-shield-hungary-launch-commercial-robotics-data-pilot.html",
+      "outcome": "covered",
+      "disposition": "SN80 OpenRoboto announces a commercial data pilot with Vulcan Shield Hungary"
+    },
+    {
+      "url": "https://www.vulcanshield.com/an-european-production-base-and-a-shorter-path-to-material/",
+      "outcome": "covered",
+      "disposition": "SN80 OpenRoboto announces a commercial data pilot with Vulcan Shield Hungary"
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118371712228073862",
+      "outcome": "covered",
+      "disposition": "SN80 OpenRoboto announces a commercial data pilot with Vulcan Shield Hungary"
+    }
+  ]
 }

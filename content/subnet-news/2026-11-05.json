@@ -613,12 +613,74 @@
     {
       "netuid": 80,
       "name": "OpenRoboto",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN80 OpenRoboto announces a commercial data pilot with Vulcan Shield Hungary",
+          "summary": "OpenRoboto’s November 5 X announcement follows a November 3 press release describing a commercial robotics-data pilot at a material-preparation workstation in Békéscsaba, Hungary. The planned sequence is to simulate the workstation, capture operators’ first-person demonstrations with OR-S1 headsets, then train and test task-specific robot models. The release includes a statement attributed to Vulcan Shield Hungary’s financial director and explicitly places the current work in simulation and data capture. Model validation, on-site robotic testing and deployment remain later stages. Vulcan Shield’s own website confirms its Hungarian manufacturing facility, but its reviewed press page did not separately announce this pilot. No contract value, received payment or production-robot performance was verified. The named industrial task provides a concrete setting for evaluating the subnet’s robotics data; Const’s November 5 amplification is commentary, not deployment evidence.",
+          "sources": [
+            {
+              "url": "https://x.com/openroboto/status/2118355277359817009",
+              "label": "SN80 OpenRoboto November 5 pilot announcement"
+            },
+            {
+              "url": "https://x.com/openroboto/status/2118355315368640556",
+              "label": "SN80 OpenRoboto staged pilot and later deployment"
+            },
+            {
+              "url": "https://www.globenewswire.com/news-release/2026/11/03/3394672/0/en/openroboto-and-vulcan-shield-hungary-launch-commercial-robotics-data-pilot.html",
+              "label": "SN80 OpenRoboto November 3 pilot press release and attributed customer statement"
+            },
+            {
+              "url": "https://www.vulcanshield.com/an-european-production-base-and-a-shorter-path-to-material/",
+              "label": "Vulcan Shield primary confirmation of its Hungarian facility"
+            },
+            {
+              "url": "https://x.com/const_reborn/status/2118371712228073862",
+              "label": "Const commentary on SN80 OpenRoboto industrial pilot"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A named industrial pilot and specific data-collection task are meaningful commercial progress. Undisclosed economics and later robot validation keep this below a demonstrated production deployment or verified revenue result.",
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 81,
       "name": "Reliquary",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN81 Reliquary releases open Teutonic-I-Reliquary 9B weights",
+          "summary": "Announced November 5 at 10:48 AM Eastern, Teutonic-I-Reliquary is a downloadable 9B reasoning and coding model under Apache-2.0. Its public repository contains four BF16 weight shards, a tokenizer, configuration and usage instructions; the files were uploaded November 4. The team attributes the base to SN3 Teutonic, trainer compute to SN51 Lium, agent sandboxes to SN4 Targon and data, rollouts and evaluations to SN81 Reliquary miners. It reports an October 22–November 2 asynchronous RL run of 158 steps and 15.7 billion trained tokens. Its model card reports 43.6% versus Qwen3.5-9B’s 35.1% on 486 SWE-bench Verified tasks using the same mini-swe harness and protocol; these are team evaluations, not an independently reproduced 500-task leaderboard result. The model leads on five of eight listed benchmarks and trails on GPQA Diamond, MMLU-Pro and TMax. A public recorded-run dashboard supplies checkpoint history; declared GPU models are not hardware attestations. The release gives builders weights and an evaluation protocol to test, while the promised Gumbel-substitution technical report remains forthcoming.",
+          "sources": [
+            {
+              "url": "https://x.com/reliquary_ai/status/2118369839274438932",
+              "label": "SN81 Reliquary November 5 release announcement"
+            },
+            {
+              "url": "https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary",
+              "label": "SN81 Reliquary model card, license and evaluation protocol"
+            },
+            {
+              "url": "https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary/tree/main",
+              "label": "SN81 Reliquary public weights and tokenizer files"
+            },
+            {
+              "url": "https://app.reliqua.ai/console/run?run=5H47sFL6-teutonic-rl-async-v1-trainer",
+              "label": "SN81 Reliquary recorded training-run dashboard"
+            },
+            {
+              "url": "https://x.com/const_reborn/status/2118372617203622019",
+              "label": "Const commentary on SN81 Reliquary and cross-subnet training"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "A usable open-weight model and documented multi-subnet training pipeline are a substantive research deliverable. The rating reflects the released artifact and inspectable protocol, not independent validation of benchmark superiority.",
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
     },
     {
       "netuid": 82,
