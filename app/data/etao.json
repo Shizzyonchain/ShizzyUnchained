@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-04T16:09:41.957078+00:00",
-  "block": 9433738,
-  "hash": "0x39a8592d742f000b9159cdce573651b7263d07cf303ffa7d6545e5974d5b2886",
-  "chainTime": 1793808528000,
+  "checkedAt": "2026-11-05T04:45:50.463630+00:00",
+  "block": 9437478,
+  "hash": "0xa83718081a8847002d51cf2ce53c99d2e27d7dfff0b462b76f0f7c501df68b00",
+  "chainTime": 1793853432001,
   "runtime": 486,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -1760,13 +1760,14 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9433738,
-    "finalizedHash": "0x39a8592d742f000b9159cdce573651b7263d07cf303ffa7d6545e5974d5b2886",
-    "checkedAt": "2026-11-04T16:09:41.957078+00:00",
+    "toBlock": 9437478,
+    "finalizedHash": "0xa83718081a8847002d51cf2ce53c99d2e27d7dfff0b462b76f0f7c501df68b00",
+    "checkedAt": "2026-11-05T04:45:50.463630+00:00",
     "eventCount": 17,
-    "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Each runtime uses its own reviewed event definitions and decoder. Original allocation history and registration labels preserved.",
+    "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Reviewed runtime definitions, positive decoding controls and per-block runtime checks retained. Historical allocation and registration labels preserved.",
     "gaps": [],
-    "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history."
+    "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history.",
+    "evidence": "/evidence/2026-11-04-chain-monitor-2337.json"
   },
   "lifecycleResets": [
     {
