@@ -1,0 +1,971 @@
+{
+  "version": 1,
+  "date": "2026-11-05",
+  "title": "Bittensor Daily News — November 5, 2026",
+  "summary": "Release 487 reaches Subtensor main with Gamma service credits and quantum-resistant wallet code, while the finalized chain still runs 486. SN58 Attune adds a robot-data platform and a proposed miner-reward route; SN38 ChronoLLM previews a 16B point-in-time model. Plus service listings, miner tooling, dated carry-forwards and verified chain archives.",
+  "publishedAt": "2026-11-05T15:27:46.599300+00:00",
+  "coverageStart": "2026-11-04T16:14:35.740148+00:00",
+  "coverageEnd": "2026-11-05T15:27:46.599300+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [
+    {
+      "headline": "Release 487 reaches main; Gamma and wallet authorization still need activation",
+      "summary": "Subtensor PR3294 merged to main at 02:47 UTC on November 5, or 9:47 PM Eastern November 4. The integrated release includes dollar-valued Gamma service credits, ML-DSA/Falcon wallets and key rotation, proxy/basket fixes, lock proxies and burn/recycle allocation slots with a combined 33% cap. Gamma is minted by burning subnet alpha; spending destroys credits, not a second batch of alpha. Credits are non-redeemable and cannot transfer between coldkeys. Gamma requires network-wide and subnet enablement; hashed/post-quantum authorization also defaults disabled. Today’s finalized collector still reports runtime 486 and GitHub’s latest release tag is v486. The merge provides code for integrators to review, not proof of a mainnet upgrade, enabled services, customer demand or executed burns.",
+      "sources": [
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3294",
+          "label": "Release 487 main merge and activation conditions"
+        },
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3300",
+          "label": "Gamma implementation"
+        },
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3220",
+          "label": "Wallet authorization and rotation implementation"
+        },
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-05-daily-chain.json",
+          "label": "Finalized runtime and complete allocation/burn review"
+        }
+      ],
+      "rating": 4,
+      "ratingReason": "A substantial protocol implementation reaches main. The rating reflects the integrated capabilities; live activation remains unverified.",
+      "status": "verified",
+      "importance": "high"
+    },
+    {
+      "headline": "Shizzy’s video refresh: new members update, Leadpoet today and Carbon Friday",
+      "summary": "The channel’s Videos tab now lists the November 4 members-only news/price-action update, verified at 8:02 on the player. The public default remains the completed SN65 TPN interview. The Live tab lists SN71 Leadpoet for November 5 at 11 AM Eastern / 8 AM Pacific and SN116 Carbon for November 6 at 1:30 PM Eastern / 10:30 AM Pacific. Both were upcoming at review, not completed replays. The new members entry remains explicitly restricted and plays through YouTube membership access.",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Uo8S71s9DZc",
+          "label": "Shizzy November 4 members-only video"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=q2pGNLUvCm4",
+          "label": "Shizzy upcoming SN71 Leadpoet interview"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dGwR6XOE9tU",
+          "label": "Shizzy upcoming SN116 Carbon interview"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "Original Shizzy video and schedule coverage with verified membership and upcoming/completed labels.",
+      "status": "verified",
+      "importance": "medium"
+    }
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": [
+        {
+          "headline": "SN1 Apex CLI 4.7.0 displays the scoring version of each round",
+          "summary": "The November 4 v4.7.0 commit adds a Version column and current-round spec version to competition lists, detail panels and the dashboard. The helper reads the round’s pinned version, which can lag the latest release, and displays N/A if absent. This lets miners distinguish installed software from the rules actually attached to a round. The separate claim that spec v0.6.3 will activate at round 20 was not independently confirmed as executed.",
+          "sources": [
+            {
+              "url": "https://github.com/macrocosm-os/apex/commit/00e8ed69f0b1ee4bd9c08fe82e31373b87704249",
+              "label": "SN1 Apex CLI 4.7.0 version-display implementation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful scoring-rule visibility; an ordinary competition-tooling release.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta: a dated 105.306669237-alpha burn joins today’s news",
+          "summary": "Carry-forward from the archive update: a successful AlphaBurned event at block 9,435,999, extrinsic 11, event 194 destroyed 105.306669237 SN8 alpha at 23:41:24 UTC on November 4. It exceeds the 100-native-token per-event publication threshold. The burner is different from the verified subnet owner, so this is not described as an owner buyback. It is one previously archived event, not a second burn or a new event from today’s zero-qualifying-event extension.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-04-chain-monitor-2337.json",
+              "label": "SN8 Vanta finalized event, amount and historical registration evidence"
+            },
+            {
+              "url": "https://shizzyunchained.com/subnet-news/burns",
+              "label": "Qualifying transaction-burn archive"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "An exact qualifying supply event, with actor attribution and dated carry-forward kept precise.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": [
+        {
+          "headline": "SN9 IOTA announces open IOTA Decide 4B weights and distributed-training details",
+          "summary": "November 4 afternoon carry-forward, already published in that edition: Macrocosmos announced SN9 IOTA’s first public model on November 4 at 12:11 PM Eastern. The IOTA Decide 4B v0.4 repository exposes Apache-2.0 weights, a model card and a loader; its file history predates today’s announcement. The text-only model takes a state and a typed question and returns probabilities for the available answers, using one forward pass per question rather than generating a chat response. The team describes fine-tuning Qwen3.5-4B across 16 independently hosted RTX A4000 GPUs using streaming DiLoCo. That training account was not independently reproduced. Builders can inspect and self-host the artifact, but v0.4 requires the bundled letter_decide.py loader: ordinary chat-generation serving changes its behavior. The card reports a 78.6 JevBench composite and says leaderboard listing is pending because the newer question draw has not yet been equated. Accordingly, this report does not endorse the announcement’s top-ten or Pareto-frontier ranking as an established like-for-like result.",
+          "sources": [
+            {
+              "url": "https://x.com/MacrocosmosAI/status/2118028289813971098",
+              "label": "SN9 IOTA original model announcement, November 4"
+            },
+            {
+              "url": "https://huggingface.co/macrocosm-os/iota-decide-4b-v0.4",
+              "label": "SN9 IOTA v0.4 model card, serving requirements and benchmark caveat"
+            },
+            {
+              "url": "https://huggingface.co/macrocosm-os/iota-decide-4b-v0.4/tree/main",
+              "label": "SN9 IOTA public weights and dated file history"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "A substantive public model artifact from decentralized training, with inspectable weights and a practical decision-task interface. The rating rests on the release and disclosed implementation, not an unconfirmed leaderboard rank.",
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Jacob Robert Steeves",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": [
+        {
+          "headline": "SN36 Weir adds manual-review handling for GPU eligibility",
+          "summary": "A November 5 commit adds review paths that can end a GPU’s probation early or account for disputed GPUs in idle-pay calculations. The documentation says disputed GPUs are not offered for rent, and failed checks display PENDING_REVIEW. This separates earning eligibility from sellable capacity in the code. No affected GPU decision, actual payout or customer rental was independently executed.",
+          "sources": [
+            {
+              "url": "https://github.com/weircompute/weir-subnet/commit/6d24cb3c24d1a7bb40d8f17aa56f4bcae21601d8",
+              "label": "SN36 Weir manual-review implementation, November 5"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A specific miner-eligibility improvement, with code distinguished from deployed decisions and rentals.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": [
+        {
+          "headline": "SN38 ChronoLLM previews a 16B point-in-time model; weights are still forthcoming",
+          "summary": "On November 4 at 9:07 AM Eastern, SN38 ChronoLLM said pre-training was almost done for a 16B mixture-of-experts model with a 16K-token context. Its published chart compares model vintages by training-data cutoff and reports gains over prior point-in-time models. These are the team’s measurements, not independently reproduced scores or proof that lookahead bias is eliminated. The practical goal is reasoning over historical information without later data leaking into the task. The original says the model will be released; Const Reborn’s amplification does not turn that preview into four completed releases.",
+          "sources": [
+            {
+              "url": "https://x.com/chronollm/status/2117982127367094388",
+              "label": "SN38 ChronoLLM original November 4 preview and chart"
+            },
+            {
+              "url": "https://x.com/chronollm/status/2117982129761947690",
+              "label": "SN38 ChronoLLM 16K-context clarification"
+            },
+            {
+              "url": "https://x.com/const_reborn/status/2118107257615323291",
+              "label": "Const Reborn commentary on the preview"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Specific model specifications and published team evaluation are useful; public weights and independent reproduction were not established.",
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": [
+        {
+          "headline": "SN41 Almanac updates its prediction-market client and order documentation",
+          "summary": "November 4 PR64 merged a migration to the unified polymarket-client, raising the documented Python requirement to 3.11. The client signs orders locally and posts the signed payload to Almanac; claims, deposits and withdrawals remain on the relayer client. The repository now documents Safe/deposit-wallet signature formats and byte-exact order examples for developers using other languages. This review inspected code and documentation only and did not place an order or test a financial transaction.",
+          "sources": [
+            {
+              "url": "https://github.com/corvxai/almanac/commit/17bdae88902c2880f6a03ed805752bb54c7a8e3c",
+              "label": "SN41 Almanac unified-client merge and order-payload documentation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A useful integration and compatibility change for existing developers, not new verified trading activity.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": []
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": [
+        {
+          "headline": "SN53 engy lists Kimi K3.1 Pro for text and image input",
+          "summary": "The November 4 team announcement, pricing page and public models endpoint list Kimi K3.1 Pro with text/image input and text output. Published USD prices per million tokens are $1.40 input, $7 output and $0.14 cached input. Builders have a specific catalog entry and disclosed costs to compare. No inference or billing test was run, and the advertised 30% discount was not independently reconciled to a like-for-like official baseline.",
+          "sources": [
+            {
+              "url": "https://x.com/engyai/status/2118079568611577990",
+              "label": "SN53 engy November 4 catalog announcement"
+            },
+            {
+              "url": "https://engy.ai/pricing?model=kimi-k3.1-pro",
+              "label": "SN53 engy model pricing"
+            },
+            {
+              "url": "https://api.engy.ai/v1/models",
+              "label": "SN53 engy public model catalog"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A verified API catalog addition with published pricing; no new adoption or independently measured performance claimed.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": [
+        {
+          "headline": "SN58 Attune links Horizon robot-data work to a 70% miner-emission route",
+          "summary": "On November 5, Attune’s 0.3.0 code added Horizon, Robotensor’s robot-data platform, alongside the Vector policy competition. The public site offers phone-controlled simulated robot tasks and first-person recordings through request-access flows. The repository describes 30% of miner emission for Vector and 70% for one Horizon vault, with weekly off-chain contributor payouts by points. That denominator is the miner bucket, not all subnet emission or an eTAO owner/validator split. The checked-in network vault map is empty; code says an unregistered or unset vault share burns. The public rewards page at review showed zero contributors/points and said rewards were being calculated but not yet sent. The platform and code are accessible; a live 70% vault payment, customer adoption and contributor payouts were not verified.",
+          "sources": [
+            {
+              "url": "https://github.com/robotensor/attune-subnet/commit/9c0547bd1bb11ab377a714858d0c8418676a4222",
+              "label": "SN58 Attune November 5 Horizon implementation and miner-bucket denominator"
+            },
+            {
+              "url": "https://horizon.robotensor.ai/",
+              "label": "SN58 Attune Horizon public contribution platform"
+            },
+            {
+              "url": "https://horizon.robotensor.ai/dashboard",
+              "label": "SN58 Attune Horizon dated reward status"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A concrete new data-contribution path and materially documented reward routing, with access, vault activation and unpaid status kept explicit.",
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": []
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": [
+        {
+          "headline": "SN91 Cascade merges a coordinated worker-image upgrade",
+          "summary": "PR410 merged on November 5 at 08:09 UTC. It separates worker-image/runtime pins from the numerical training-contract digest and bundles a later evaluation-window change. Its release-then-activate design keeps behavior unchanged before the coordinated era-boundary switch. Validators therefore need compatible software before activation; the merge alone does not establish a deployed fleet or an active training-contract change.",
+          "sources": [
+            {
+              "url": "https://github.com/TensorLink-AI/cascade/pull/410",
+              "label": "SN91 Cascade gated consensus upgrade and merge"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Meaningful validator coordination and training-operation changes, with the activation boundary preserved.",
+          "status": "verified",
+          "importance": "medium"
+        },
+        {
+          "headline": "SN91 Cascade scopes dashboard results to the v2 era in merged code",
+          "summary": "November 4 PR432 filters dashboard receipts using the v2 go-live block, avoiding a mix of earlier-contract rounds and v2 results after deployment. The PR used status/v2.json with a 9,399,600 fallback and explicitly noted that website publication was still needed at that time. A secondary digest describes the dashboard as updated, but this review did not independently establish deployed totals.",
+          "sources": [
+            {
+              "url": "https://github.com/TensorLink-AI/cascade/pull/432",
+              "label": "SN91 Cascade v2 receipt-filter implementation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful reporting correction; code integration is verified and current website deployment remains separate.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Thirty Spokes",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": [
+        {
+          "headline": "SN108 ChipForge lets miners replace a queued design without losing its place",
+          "summary": "The November 4 Neuron 1.0.2 commit adds miner_cli.py replace, optionally identifying a submission. Documentation says the replacement keeps the original queue position and consumes no extra submission slot, draws new hidden tests and defaults to a limit of three replacements. Once evaluation starts, replacement is unavailable, with a documented 409 response. This gives miners a way to fix a design before a validator picks it up; live server acceptance and the deployed replacement cap were not independently exercised.",
+          "sources": [
+            {
+              "url": "https://github.com/TatsuProject/ChipForge_SN108/commit/c9e1292408aae0bcd056d4e5cdf923b41ec9419a",
+              "label": "SN108 ChipForge Neuron 1.0.2 code and queue-replacement documentation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Concrete participation improvement affecting queued miners, without treating ordinary competition tooling as a breakthrough.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": [
+        {
+          "headline": "SN117 EveryFrame says unused miner allocation will fund film-contest prizes",
+          "summary": "Late-found November 3 follow-up: EveryFrame says serving fees and quality bonuses are paid first, with only the unused miner allocation directed to a contest treasury associated with UIDs 156/157 instead of recycling. Owner and validator buckets are separate. At this November 5 review, its treasury dashboard loaded, labelled the route Active, displayed approximately 2,991 SN117 alpha and said Nothing paid out yet. Those are team-dashboard figures, not an independently finalized balance or payout audit. The funding path therefore remains team-reported; redirected emissions are not individual transaction burns, and proposed creator growth is not verified adoption.",
+          "sources": [
+            {
+              "url": "https://x.com/xeveryframe/status/2117711400084914186",
+              "label": "SN117 EveryFrame original treasury announcement, edited November 3"
+            },
+            {
+              "url": "https://subnet.everyframe.studio/#treasury",
+              "label": "SN117 EveryFrame treasury interface"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A useful miner-payment and contest-funding change, now supported by a loaded team dashboard; no paid award or independently audited adoption established.",
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": [
+        {
+          "headline": "SN127 Zils changes admission for commitments made before a pool opens",
+          "summary": "November 5 PR206 merged a rule that ignores model-body commitments made before a pool’s configured opening block, even after that pool opens. Earlier documentation had said those bodies would be admitted at the first round. Miners must commit after the relevant opening boundary under the new code. Flash and z3 opening blocks remain unset in the checked-in launch configuration; this does not verify a live opening or a deployed validator update.",
+          "sources": [
+            {
+              "url": "https://github.com/ooo-hq/zils/commit/827aee2ba93a98d1a295457eefd5fc625ed2aa23",
+              "label": "SN127 Zils closed-pool commitment rule, November 5"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A consequential submission-admission change for miners; deployed activation and pool openings remain unverified.",
+          "status": "verified",
+          "importance": "medium"
+        },
+        {
+          "headline": "SN127 Zils operator arrangement disclosed; Astrid reports a 400 TAO OTC sale",
+          "summary": "November 4 afternoon carry-forward, already published in that edition: In its November 4 RNS announcement, Astrid Intelligence says Zils, founded by Ken Nicholson, will operate SN127 as an Astrid project. Astrid says it retains the subnet owner key and will recognize its revenues and costs. The issuer also reports selling 200,000 SN127 alpha over the counter at 0.002 TAO each, totaling 400 TAO, with the sold alpha unlocking on an agreed schedule. Its stated remaining position is approximately 3,000 TAO-equivalent, a dated issuer valuation rather than 3,000 liquid TAO. At 1:18 PM Eastern, SN127 Zils described its custom decision-model workflow: customers supply examples, miners compete, validators grade and customers receive an API. The earlier rename and early-access site are already covered above. This follow-up adds the disclosed operator relationship and financing; it does not independently trace settlement, validate a lock schedule, prove customer traffic or establish who bought on the market before the announcement.",
+          "sources": [
+            {
+              "url": "https://www.investegate.co.uk/announcement/rns/astrid-intelligence-plc--astr/subnet-127-update-zils-and-otc-token-sale/9857933",
+              "label": "Astrid Intelligence November 4 RNS: SN127 Zils operation and OTC sale"
+            },
+            {
+              "url": "https://x.com/zils_ai/status/2118045174186070049",
+              "label": "SN127 Zils original product announcement, November 4"
+            },
+            {
+              "url": "https://zils.ai/",
+              "label": "SN127 Zils product and early-access workspace"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Material clarification of the operating relationship and issuer-reported treasury transaction beyond a rename. Settlement and lock execution remain unverified, and the disclosure does not establish public-market insider activity.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "All 128 active slots reconciled against finalized ownership, identities, market snapshot and prior sector sources. Current identity-linked GitHub repositories queried for a seven-day commit overlap: 106 accessible repositories across 124 named identities; missing and failed links retained individually.",
+      "All 48 November 5 SubnetRadar briefs read as discovery, with selected original code, model/service pages and announcements verified. Required Const/Tensia timelines, relevant owner activity and bookmarks reviewed with dated overlap; public posts reconciled URL by URL.",
+      "Complete offline allocation/burn scan and lifecycle review; all 128 current owner wallets refreshed at one finalized block. Official YouTube Videos and Live tabs checked. AlphaGap public landing page, Bittensor Daily and SubnetRadar Moments reviewed for additional leads."
+    ],
+    "gaps": [
+      "Grok daily discovery/top-five request reached a usage limit. The final omission request is also recorded separately; no fresh Grok ranking or exhaustive X census is claimed. Original X timelines were not individually exhaustively searched for every subnet.",
+      "Original Discord sources require login; the dated AI-generated briefs remain discovery. Carbon grading/refund claims, Ditto v16, Affine holdout claims and several other miner notices remain pending original attribution or execution verification. No unsupported misconduct allegation is published.",
+      "Authenticated TaoStats API cross-check is blocked because no configured local API key was found; no endpoint quota or indexer completeness was invented. Public SN113 currently displays Unknown. Repository lists capped at 30 commits can omit older overlap entries; no code tests or independent model/marketplace benchmarks were run."
+    ]
+  }
+}
