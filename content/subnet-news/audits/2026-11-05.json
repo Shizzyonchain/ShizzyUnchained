@@ -1129,9 +1129,14 @@
     {
       "netuid": 15,
       "name": "ORO",
-      "publishedItems": 0,
-      "outcome": "no-cleared-new-story",
-      "sources": [],
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://oroagents.com/blog/oros-next-chapter",
+          "label": "SN15 ORO November 4 strategy and planned simulation launch"
+        }
+      ],
       "datedBrief": "https://subnetradar.com/subnet-news/15/2026-11-05",
       "discoveryHeadline": "ORO channel quiet as miners ask about rules",
       "briefDisposition": "No cleared material development from this digest; not proof of no news.",
@@ -1679,9 +1684,18 @@
     {
       "netuid": 46,
       "name": "Instant",
-      "publishedItems": 0,
-      "outcome": "no-cleared-new-story",
-      "sources": [],
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/Subnet46/sn46-validator/pull/13",
+          "label": "SN46 Instant merged signer-list change"
+        },
+        {
+          "url": "https://github.com/Subnet46/sn46-validator/commit/2909dd9e857dd3e95066ae34a8868f02f897f102",
+          "label": "SN46 Instant signer configuration and verification implementation"
+        }
+      ],
       "datedBrief": null,
       "discoveryHeadline": null,
       "briefDisposition": "No cleared material development from this digest; not proof of no news.",
@@ -2198,9 +2212,18 @@
     {
       "netuid": 75,
       "name": "Hippius",
-      "publishedItems": 0,
-      "outcome": "no-cleared-new-story",
-      "sources": [],
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/Hippius_cloud/status/2118272925166121376",
+          "label": "SN75 Hippius November 5 sharing announcement and encryption explanation"
+        },
+        {
+          "url": "https://docs.hippius.com/use/captures/share-links",
+          "label": "SN75 Hippius share-link controls, analytics and privacy boundaries"
+        }
+      ],
       "datedBrief": null,
       "discoveryHeadline": null,
       "briefDisposition": "No cleared material development from this digest; not proof of no news.",
@@ -2933,9 +2956,18 @@
     {
       "netuid": 114,
       "name": "SOMA",
-      "publishedItems": 0,
-      "outcome": "no-cleared-new-story",
-      "sources": [],
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/SomaSubnet/status/2118402631702085984",
+          "label": "SN114 SOMA November 5 OpenCode subscription announcement"
+        },
+        {
+          "url": "https://thesoma.ai/",
+          "label": "SN114 SOMA supported agents and explicit benchmark-estimate limitations"
+        }
+      ],
       "datedBrief": "https://subnetradar.com/subnet-news/114/2026-11-05",
       "discoveryHeadline": "SOMA team clarifies miner compression and baseline rules",
       "briefDisposition": "Pending original verification for material miner/operating claims; otherwise excluded quiet-channel/member chatter or repeat promotion. Full digest retained.",
@@ -3163,7 +3195,7 @@
     {
       "netuid": 127,
       "name": "Zils",
-      "publishedItems": 2,
+      "publishedItems": 3,
       "outcome": "covered",
       "sources": [
         {
@@ -3181,6 +3213,14 @@
         {
           "url": "https://zils.ai/",
           "label": "SN127 Zils product and early-access workspace"
+        },
+        {
+          "url": "https://github.com/ooo-hq/zils/pull/207",
+          "label": "SN127 Zils merged disk-floor and pruning change"
+        },
+        {
+          "url": "https://github.com/ooo-hq/zils/commit/490744ba87731d276aa62638ce9df0b87e885dae",
+          "label": "SN127 Zils storage safeguards implementation"
         }
       ],
       "datedBrief": "https://subnetradar.com/subnet-news/127/2026-11-05",
@@ -3926,6 +3966,120 @@
       "evidence": "/evidence/2026-11-05-chain-monitor-1150.json",
       "archiveUpdated": true,
       "newsDisposition": "Before5PMEastern: append one newSN8transaction to existing fullNov5edition,preserve all19earlierstories andprior editions. No social publication authorized or performed."
+    },
+    {
+      "checkedAt": "2026-11-05T20:34:28.028365+00:00",
+      "windowStart": "2026-11-05T16:48:23.856498+00:00",
+      "kind": "three-hour supplement to existing full edition",
+      "added": [
+        {
+          "netuid": 75,
+          "headline": "SN75 Hippius adds share-link comments and viewing insights",
+          "summary": "Hippius announced the sharing update on November 5 at 09:23 UTC. Its documentation describes comments, reactions and per-link viewing insights for shared captures. The privacy boundary matters: comments are encrypted with the link key, while reactions and view counts are not encrypted; ordinary link previews also expose the preview image and filename. Owners can toggle these features per link, and detailed recording analytics depend on the plan. This is a documented collaboration feature, not an independently audited security guarantee.",
+          "sources": [
+            {
+              "url": "https://x.com/Hippius_cloud/status/2118272925166121376",
+              "label": "SN75 Hippius November 5 sharing announcement and encryption explanation"
+            },
+            {
+              "url": "https://docs.hippius.com/use/captures/share-links",
+              "label": "SN75 Hippius share-link controls, analytics and privacy boundaries"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A practical, documented collaboration update with clear privacy and plan limits; not a major ecosystem breakthrough.",
+          "status": "verified",
+          "importance": "medium"
+        },
+        {
+          "netuid": 15,
+          "headline": "SN15 ORO outlines a shift from shopping agents to business simulations",
+          "summary": "In its November 4 blog, ORO says it has built an initial set of business simulation environments and is shifting from personal-shopping agents toward AI operating commerce businesses. The planned SN15 task emphasizes long-horizon decisions, delayed consequences and coherent strategy; miners would improve agents against these environments. The team describes public launch as coming soon without an exact date. The announcement establishes a new research direction and claimed internal preparation, not a completed public launch, customer adoption or verified revenue.",
+          "sources": [
+            {
+              "url": "https://oroagents.com/blog/oros-next-chapter",
+              "label": "SN15 ORO November 4 strategy and planned simulation launch"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A concrete change in the planned research and miner task; public launch and business outcomes remain pending.",
+          "status": "developing",
+          "importance": "medium"
+        },
+        {
+          "netuid": 46,
+          "headline": "SN46 Instant merges overlapping signer support for validator key rotation",
+          "summary": "Instant merged validator PR13 on November 5 at 17:18 UTC. PLATFORM_SIGNER can now contain a comma-separated list of approved SS58 keys, letting operators retain an old signer while introducing a new one. Summaries must be signed by a listed key, and verification logs identify which signer was used. This provides an overlap mechanism for key rotation; the merge does not establish that operators have deployed it or that an actual platform-key rotation occurred.",
+          "sources": [
+            {
+              "url": "https://github.com/Subnet46/sn46-validator/pull/13",
+              "label": "SN46 Instant merged signer-list change"
+            },
+            {
+              "url": "https://github.com/Subnet46/sn46-validator/commit/2909dd9e857dd3e95066ae34a8868f02f897f102",
+              "label": "SN46 Instant signer configuration and verification implementation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful validator key-rotation maintenance with a specific operator consequence; merged code is not verified rollout.",
+          "status": "verified",
+          "importance": "informational"
+        },
+        {
+          "netuid": 127,
+          "headline": "SN127 Zils merges disk-space safeguards for model-pool intake",
+          "summary": "Zils merged PR207 on November 5 at 20:12 UTC. The change reduces retention of graded model bodies after they leave the pool from three rounds to one, retaining hashes and sketches, and adds a 60 GiB free-disk floor plus room for the largest model body. Intake below the threshold is deferred to a later round without a failure or backoff penalty; ungraded models awaiting retry retain their weights. This changes validator storage management and miner admission behavior in code. Deployment across validators was not verified.",
+          "sources": [
+            {
+              "url": "https://github.com/ooo-hq/zils/pull/207",
+              "label": "SN127 Zils merged disk-floor and pruning change"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/commit/490744ba87731d276aa62638ce9df0b87e885dae",
+              "label": "SN127 Zils storage safeguards implementation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A bounded operational change affecting disk pressure and deferred model intake, without verified deployment or adoption.",
+          "status": "verified",
+          "importance": "informational"
+        },
+        {
+          "netuid": 114,
+          "headline": "SN114 SOMA announces support for OpenCode subscriptions",
+          "summary": "SOMA announced OpenCode subscription integration on November 5 at 17:58 UTC. Its public site lists OpenCode among supported agents and describes a proxy that compresses conversation context and reasoning before model requests. This gives OpenCode users another route to try the subnet-backed compression product. The same site explicitly labels its displayed savings figures as estimates, with measured benchmark runs still to replace them; no independent savings or task-success benchmark was reproduced for this report.",
+          "sources": [
+            {
+              "url": "https://x.com/SomaSubnet/status/2118402631702085984",
+              "label": "SN114 SOMA November 5 OpenCode subscription announcement"
+            },
+            {
+              "url": "https://thesoma.ai/",
+              "label": "SN114 SOMA supported agents and explicit benchmark-estimate limitations"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A specific supported-agent integration, with estimated economics kept separate from measured performance.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ],
+      "grok": {
+        "conversation": "https://x.com/i/grok?conversation=7cd7d498-d3ce-4040-a0ef-b50b346695c0",
+        "discovery": "Completed; leads checked against primary announcements, documentation and merged code.",
+        "omission": "Completed; additional SOMA OpenCode lead independently checked against original post and public product site."
+      },
+      "roster": "124 named repository records attempted:54 HTTP200,12 no repository,4 HTTP404,40 HTTP403,14 HTTP429. No pagination cap reached in successful responses. Current Nov5 brief index compared with earlier daily pass; original Discord content not accessed.",
+      "sources": "Owner posts, replies, reposts and relevant bookmarks directly inspected with overlap through November4 and older retained leads. Const, TensiaFDN and TensiaBot native timelines inspected; no new independently established incident adopted. Bounded native history is not an exhaustive census. Private discovery captures stay outside public repository.",
+      "media": "SOMA announcement animation inspected as promotion, not a technical demonstration; no audio listening or benchmark replication claimed. Other selected updates verified from complete text/documentation/code.",
+      "editorialCutoff": "Ready before5PMEastern; append to existing full edition, preserve all20 earlier stories and original publication/chain cutoffs.",
+      "social": "No new four-star story cleared; no quote and no second daily roundup. Prior Reliquary quote and roundup preserved.",
+      "pending": "Full prior pending object retained locally. Score lock execution, Targon secondary revenue claim, Chutes uncovered catalog details, and newly observed unnamed Yanez customer claim remain unresolved. SayGM KimiTEE catalog currently states no provider serving; no live-capacity claim published.",
+      "limitations": [
+        "No fresh finalized chain scan in this website-news supplement; no new chain execution claims.",
+        "Rate-limited repository coverage and bounded timelines disclosed.",
+        "No independent product security, deployed-validator or model-performance test."
+      ]
     }
   ],
   "sourceReconciliation": [
@@ -3978,6 +4132,101 @@
       "url": "https://x.com/const_reborn/status/2118371712228073862",
       "outcome": "covered",
       "disposition": "SN80 OpenRoboto announces a commercial data pilot with Vulcan Shield Hungary"
+    },
+    {
+      "url": "https://x.com/Hippius_cloud/status/2118272925166121376",
+      "outcome": "covered",
+      "disposition": "SN75 Hippius adds share-link comments and viewing insights"
+    },
+    {
+      "url": "https://docs.hippius.com/use/captures/share-links",
+      "outcome": "covered",
+      "disposition": "SN75 Hippius adds share-link comments and viewing insights"
+    },
+    {
+      "url": "https://oroagents.com/blog/oros-next-chapter",
+      "outcome": "covered",
+      "disposition": "SN15 ORO outlines a shift from shopping agents to business simulations"
+    },
+    {
+      "url": "https://github.com/Subnet46/sn46-validator/pull/13",
+      "outcome": "covered",
+      "disposition": "SN46 Instant merges overlapping signer support for validator key rotation"
+    },
+    {
+      "url": "https://github.com/Subnet46/sn46-validator/commit/2909dd9e857dd3e95066ae34a8868f02f897f102",
+      "outcome": "covered",
+      "disposition": "SN46 Instant merges overlapping signer support for validator key rotation"
+    },
+    {
+      "url": "https://github.com/ooo-hq/zils/pull/207",
+      "outcome": "covered",
+      "disposition": "SN127 Zils merges disk-space safeguards for model-pool intake"
+    },
+    {
+      "url": "https://github.com/ooo-hq/zils/commit/490744ba87731d276aa62638ce9df0b87e885dae",
+      "outcome": "covered",
+      "disposition": "SN127 Zils merges disk-space safeguards for model-pool intake"
+    },
+    {
+      "url": "https://x.com/SomaSubnet/status/2118402631702085984",
+      "outcome": "covered",
+      "disposition": "SN114 SOMA announces support for OpenCode subscriptions"
+    },
+    {
+      "url": "https://thesoma.ai/",
+      "outcome": "covered",
+      "disposition": "SN114 SOMA announces support for OpenCode subscriptions"
+    },
+    {
+      "url": "https://x.com/chutes_ai/status/2118419185038504301",
+      "outcome": "pending",
+      "disposition": "Weekly recap largely repeats prior PayGo/catalog coverage; uncovered older catalog details retained for primary comparison."
+    },
+    {
+      "url": "https://saygm.com/models/kimi-k3.1-pro-tee",
+      "outcome": "excluded",
+      "disposition": "Catalog explicitly states no provider currently serving; cannot support a live-capacity headline."
+    },
+    {
+      "url": "https://x.com/yanez__ai/status/2118401776328266203",
+      "outcome": "pending",
+      "disposition": "Team claims largest unnamed social-media client under NDA; identity, economics and execution not independently established. Retain for further review."
+    },
+    {
+      "url": "https://x.com/MacrocosmosAI/status/2118351391362077164",
+      "outcome": "excluded",
+      "disposition": "IOTA model already covered; internal control-plane testing is a team statement, not a new production deployment."
+    },
+    {
+      "url": "https://x.com/mentatminds/status/2118370933345792319",
+      "outcome": "excluded",
+      "disposition": "Release487/Gamma merge already covered; no fresh activation proof."
+    },
+    {
+      "url": "https://x.com/openroboto/status/2118355277359817009",
+      "outcome": "excluded",
+      "disposition": "Commercial data pilot already covered, not a new executed robot deployment."
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118371712228073862",
+      "outcome": "excluded",
+      "disposition": "Commentary on already covered OpenRoboto pilot."
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118107257615323291",
+      "outcome": "excluded",
+      "disposition": "Older ChronoLLM commentary; forthcoming model already covered."
+    },
+    {
+      "url": "https://x.com/ShizzyUnchained/status/2118403136842764335",
+      "outcome": "excluded",
+      "disposition": "Owner market-video promotion; not a newly verified subnet catalyst."
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2118072041517502656",
+      "outcome": "pending",
+      "disposition": "Previously retained allegations; no independent finalized proof cleared in this review. No accusation published."
     }
   ]
 }
