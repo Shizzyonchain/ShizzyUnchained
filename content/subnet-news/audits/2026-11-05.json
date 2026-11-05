@@ -979,12 +979,20 @@
     {
       "netuid": 8,
       "name": "Vanta",
-      "publishedItems": 1,
+      "publishedItems": 2,
       "outcome": "covered",
       "sources": [
         {
           "url": "https://shizzyunchained.com/evidence/2026-11-04-chain-monitor-2337.json",
           "label": "SN8 Vanta finalized event, amount and historical registration evidence"
+        },
+        {
+          "url": "https://shizzyunchained.com/subnet-news/burns",
+          "label": "Qualifying transaction-burn archive"
+        },
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-05-chain-monitor-1150.json",
+          "label": "SN8 Vanta finalized burn call, event and historical registration proof"
         },
         {
           "url": "https://shizzyunchained.com/subnet-news/burns",
@@ -1000,7 +1008,8 @@
       "paginationGap": false,
       "repositoryDisposition": "Selected meaningful changes verified in story sources; remaining commits are discovery/maintenance and not proof of deployment.",
       "xSearchStatus": "Required accounts, owner discovery and selected originals read; no exhaustive individual timeline search claimed.",
-      "reviewGap": "PrivateDiscord unavailable; independent benchmark/deployment evidence varies by story."
+      "reviewGap": "PrivateDiscord unavailable; independent benchmark/deployment evidence varies by story.",
+      "monitorDisposition": "SN8 Vanta records a 161.183756238-alpha transaction burn"
     },
     {
       "netuid": 9,
@@ -3898,6 +3907,25 @@
         "Pilot economics and delivered autonomous robot capability not verified; no separate counterparty pilot page found.",
         "Rate-limited GitHub and bounded X history prevent exhaustive coverage."
       ]
+    },
+    {
+      "kind": "etao-burns",
+      "checkedAt": "2026-11-05T16:54:24.152853+00:00",
+      "fromBlock": 9440720,
+      "toBlock": 9441147,
+      "throughTime": "2026-11-05T16:51:00+00:00",
+      "complete": true,
+      "gaps": [],
+      "allocationEvents": 0,
+      "qualifyingBurns": 1,
+      "all128VectorsReconciled": true,
+      "eventCounts": {
+        "AlphaBurned": 8,
+        "AlphaRecycled": 6
+      },
+      "evidence": "/evidence/2026-11-05-chain-monitor-1150.json",
+      "archiveUpdated": true,
+      "newsDisposition": "Before5PMEastern: append one newSN8transaction to existing fullNov5edition,preserve all19earlierstories andprior editions. No social publication authorized or performed."
     }
   ],
   "sourceReconciliation": [

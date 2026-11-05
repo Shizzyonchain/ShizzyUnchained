@@ -130,6 +130,24 @@
           "ratingReason": "An exact qualifying supply event, with actor attribution and dated carry-forward kept precise.",
           "status": "verified",
           "importance": "informational"
+        },
+        {
+          "headline": "SN8 Vanta records a 161.183756238-alpha transaction burn",
+          "summary": "At 11:14:36 AM Eastern on November 5, finalized block 9,440,965 recorded a successful burn_alpha call for 161.183756238 SN8 alpha, extrinsic 13, event 199. The exact call amount matches the AlphaBurned event. The Vanta identity and registration height 1,477,264 were unchanged across execution. The sender differs from the subnet owner, and no matching AddStakeBurn marker appears, so this is not labelled an owner buyback or evidence of trading revenue. It exceeds the 100-native-token threshold as one individual transaction, distinct from miner-emission withholding, recycling and fees. This is a separate event from the November 4 burn already carried into today’s report. The same complete review found no allocation events or differences across all 128 eTAO vectors through block 9,441,147.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-05-chain-monitor-1150.json",
+              "label": "SN8 Vanta finalized burn call, event and historical registration proof"
+            },
+            {
+              "url": "https://shizzyunchained.com/subnet-news/burns",
+              "label": "Qualifying transaction-burn archive"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "An exact qualifying supply event with successful execution and historical identity verified; it does not establish revenue, adoption or price impact.",
+          "status": "verified",
+          "importance": "informational"
         }
       ]
     },
