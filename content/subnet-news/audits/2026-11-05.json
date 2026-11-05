@@ -3,7 +3,7 @@
   "checkedAt": "2026-11-05T15:27:46.599300+00:00",
   "dailyWorkflowComplete": false,
   "publication": {
-    "status": "VALIDATED_PENDING_GIT_PRODUCTION_AND_SINGLE_ROUNDUP",
+    "status": "READY_LIVE_AND_SINGLE_ROUNDUP_VERIFIED_SUPPLEMENT_PENDING",
     "dailyWorkflowComplete": false,
     "validation": {
       "news": "89reports passed",
@@ -20,6 +20,37 @@
       "checkedAt": "2026-11-05T15:32:41.789833+00:00",
       "timezone": "America/New_York",
       "decision": "November5 morning, before5PM. Full16-story edition prepared; no one-story edition or extra quote."
+    },
+    "url": "https://shizzyunchained.com/subnet-news/2026-11-05",
+    "commit": "075c960a1d53ac521c092eb9479c9dd81d48baa5",
+    "deployment": "dpl_AD2TZjNxYdxh4M7emgPy7JE7YQwh",
+    "verifiedAt": "2026-11-05T15:45:38.402431+00:00",
+    "roundup": {
+      "status": "PUBLIC_POST_VERIFIED",
+      "preparedAt": "2026-11-05T15:33:47.158772+00:00",
+      "identity": "@ShizzyUnchained",
+      "destination": "X owner daily news roundup",
+      "edition": "https://shizzyunchained.com/subnet-news/2026-11-05",
+      "copy": "Bittensor’s service-payment code has taken a significant step: release 487 is merged into Subtensor main.\n\nGamma would turn burned subnet alpha into dollar-valued credits for services. The same release integrates quantum-resistant wallet code. Our finalized check still shows runtime 486, so deployment and feature enablement remain separate milestones.\n\nAlso in today’s report:\n\n• SN58 Attune: Horizon’s robot-data platform and its documented 70% route from the miner bucket. Payouts remain unverified.\n• SN38 ChronoLLM: a 16B point-in-time model preview, with weights still forthcoming.\n• SN108 ChipForge: replace a queued design without losing its place.\n• SN53 engy: Kimi K3.1 Pro catalog access and published pricing.\n• SN91 Cascade: a coordinated, gated worker upgrade.\n\nPlus dated SN9 IOTA and SN127 Zils follow-ups, refreshed owner holdings and both chain archives. Sources, actual dates and access gaps:\nhttps://shizzyunchained.com/subnet-news/2026-11-05",
+      "authorization": "Standing one daily roundup after verified live full edition. No other social actions.",
+      "submittingAt": "2026-11-05T15:42:10.362Z",
+      "identityVerified": "Native @ShizzyUnchained profile/account menu and composer screenshot this run",
+      "duplicateCheck": "Fresh profile latestNov4campaign/IOTA; nativeScheduled onlyNov8ItsAI, noNov5dailyroundup; existing edition audit had no roundup",
+      "liveVerified": "READY dpl_AD2TZjNxYdxh4M7emgPy7JE7YQwh; all16headlines,128holdings,both archives and affected histories verified",
+      "exactComposerMatch": true,
+      "url": "https://x.com/ShizzyUnchained/status/2118368314044961165",
+      "verifiedAt": "2026-11-05T15:42:55.818Z",
+      "publicText": "Bittensor’s service-payment code has taken a significant step: release 487 is merged into Subtensor main.\n\nGamma would turn burned subnet alpha into dollar-valued credits for services. The same release integrates quantum-resistant wallet code. Our finalized check still shows runtime 486, so deployment and feature enablement remain separate milestones.\n\nAlso in today’s report:\n\n• SN58 Attune: Horizon’s robot-data platform and its documented 70% route from the miner bucket. Payouts remain unverified.\n• SN38 ChronoLLM: a 16B point-in-time model preview, with weights still forthcoming.\n• SN108 ChipForge: replace a queued design without losing its place.\n• SN53 engy: Kimi K3.1 Pro catalog access and published pricing.\n• SN91 Cascade: a coordinated, gated worker upgrade.\n\nPlus dated SN9 IOTA and SN127 Zils follow-ups, refreshed owner holdings and both chain archives. Sources, actual dates and access gaps:",
+      "exactCopyMatches": true,
+      "publishedAt": "2026-11-05T15:42:18.105Z",
+      "exactPublicBodyMatches": true,
+      "linkVerification": {
+        "rendering": "X displays the terminal URL as the post link card instead of tweetText",
+        "nativeCard": "Bittensor Daily News — November5,2026",
+        "shortUrl": "https://t.co/4sijywQseh",
+        "resolvedUrl": "https://shizzyunchained.com/subnet-news/2026-11-05",
+        "status": 200
+      }
     }
   },
   "chainReviews": {
@@ -35,7 +66,7 @@
       "archiveUpdated": true,
       "eventCount": 0,
       "newsDisposition": "No new allocation events or individual qualifying burns. Counts {'AlphaBurned': 89, 'AlphaRecycled': 48, 'AddStakeBurn': 2}; small burns retained in evidence, recycling excluded and matching AddStakeBurn markers not counted twice. SN8 November4 event carried into news without recounting.",
-      "liveVerifiedAt": null
+      "liveVerifiedAt": "2026-11-05T15:45:38.402431+00:00"
     },
     "burns": {
       "status": "DONE",
@@ -49,7 +80,7 @@
       "archiveUpdated": true,
       "eventCount": 0,
       "newsDisposition": "No new allocation events or individual qualifying burns. Counts {'AlphaBurned': 89, 'AlphaRecycled': 48, 'AddStakeBurn': 2}; small burns retained in evidence, recycling excluded and matching AddStakeBurn markers not counted twice. SN8 November4 event carried into news without recounting.",
-      "liveVerifiedAt": null
+      "liveVerifiedAt": "2026-11-05T15:45:38.402431+00:00"
     }
   },
   "ownerHoldings": {
@@ -60,7 +91,8 @@
     "wallets": 128,
     "evidence": "/evidence/owner-holdings-9440603.json",
     "runtimeReview": "Previously reviewed486 collector adapter; exact decoded holdings and independent SN51/SN64 cross-checks retained; current owner coldkeys independently matched.",
-    "validation": "Collection complete; validation/live verification pending."
+    "validation": "Collection complete; validation/live verification pending.",
+    "liveVerification": "Live owners endpoint exactly matches all128saved rows. Native SN58panel shows254733.80001496alpha,163403.371658872locked,91330.428356088available,0.171767204freeTAO,0frozen/root at9440603. Snapshot date/evidence and exclusions visible."
   },
   "marketReview": {
     "source": "https://shizzyunchained.com/api/backend/v1/screener",
@@ -804,7 +836,20 @@
     "everyframe": "Resolved previous dashboard-unavailable gap: native treasury page loaded Active, approximately2991alpha, no awards paid. Team metrics only; no independent finalized balance query.",
     "additionalDiscovery": "BittensorDailyNovember5 reviewed: useful secondary leads but it mislabeledSN65asGradients and treated release487 code as already available. Primary roster/runtime evidence takes precedence. Ditto/Beam/Attune disputes, TAOPERP leverage, Grayscale governance commentary retained as secondary leads, no unverified allegation or financial promotion published. AlphaGap accessible landing page describes premium feed; full authenticated intelligence not accessed.",
     "discord": "Direct Leadpoet original-message URL opened and redirected to login; no original private Discord messages claimed checked.",
-    "captureLimits": "Successive direct captures retained. Const originals crossedOct30andloadedSep29; replies reachedOct16. Tensia originals reachedOct6; replies remainedboundedtoNov3/Nov4 and do not establish complete seven-day reply coverage. Bot originals reachedOct19; replies returnednoarticles, recordedasaccessgap. Owner originals reachedNov1, replies/repostsNov3; bookmarks reachedOct31. Older unresolved leads preserved. No all-X or complete reply-window coverage claimed."
+    "captureLimits": "Successive direct captures retained. Const originals crossedOct30andloadedSep29; replies reachedOct16. Tensia originals reachedOct6; replies remainedboundedtoNov3/Nov4 and do not establish complete seven-day reply coverage. Bot originals reachedOct19; replies returnednoarticles, recordedasaccessgap. Owner originals reachedNov1, replies/repostsNov3; bookmarks reachedOct31. Older unresolved leads preserved. No all-X or complete reply-window coverage claimed.",
+    "liveHistory": "Affected SN58,38,108,127,117API histories containNovember5stories; nativeSN58history expands7olderitems andoffersLoadolderupdates. Membervideo/default/upcomingstreams verified live.",
+    "lateDiscovery": {
+      "checkedAt": "2026-11-05T15:45:38.402431+00:00",
+      "source": "https://x.com/TerzaInference/status/2118243422435958988",
+      "disposition": "SN103 Terza announces Muse Video access through its miner-served API",
+      "method": "New primary post surfaced in signed-in Home after daily roundup publication. Followed original, inspected animated16second demonstration excerpts, verified current finalizedSN103identity/contact and publicAPIsite. Pricing page did not show a Muse row; execution untested. Added to existing edition before5PM, no second roundup.",
+      "listening": "not_performed",
+      "evidence": [
+        "terza-primary.txt",
+        "terza-demo.png",
+        "terza-pricing.txt"
+      ]
+    }
   },
   "subnets": [
     {
@@ -2629,9 +2674,22 @@
     {
       "netuid": 103,
       "name": "Terza Inference",
-      "publishedItems": 0,
-      "outcome": "no-cleared-new-story",
-      "sources": [],
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/TerzaInference/status/2118243422435958988",
+          "label": "SN103 Terza original Muse Video announcement, November 5"
+        },
+        {
+          "url": "https://terza.si/",
+          "label": "SN103 Terza public API and async-media description"
+        },
+        {
+          "url": "https://terza.si/pricing/",
+          "label": "SN103 Terza public pricing table; video-specific quote not independently shown"
+        }
+      ],
       "datedBrief": "https://subnetradar.com/subnet-news/103/2026-11-05",
       "discoveryHeadline": "Miner Proposal Inquiries Prompt Direct Messages",
       "briefDisposition": "No cleared material development from this digest; not proof of no news.",
@@ -2641,7 +2699,8 @@
       "paginationGap": false,
       "repositoryDisposition": "Selected meaningful changes verified in story sources; remaining commits are discovery/maintenance and not proof of deployment.",
       "xSearchStatus": "Required accounts, owner discovery and selected originals read; no exhaustive individual timeline search claimed.",
-      "reviewGap": "PrivateDiscord unavailable; independent benchmark/deployment evidence varies by story."
+      "reviewGap": "PrivateDiscord unavailable; independent benchmark/deployment evidence varies by story.",
+      "discoveryDisposition": "Late primary announcement cleared as attributed model-access claim; original quiet/member-onlydigest did not include it."
     },
     {
       "netuid": 104,
@@ -3106,8 +3165,7 @@
     "quoteDedup": "Prior IOTAquote2118061037647794669 preserved; no repeat merely because carried into morning report."
   },
   "remaining": [
-    "Validate and deploy intended files; verify live archives/holdings/history/videos and publish exactly one daily roundup.",
-    "Full individual X coverage, authenticated TaoStats and Grok usage remain explicit gaps; dailyWorkflowComplete staysfalse."
+    "Grok usage limit, authenticated TaoStats key absence, bounded source-reply access and individualXtimeline/repository pagination gaps remain disclosed. No claim of exhaustive discovery or full daily workflow sign-off."
   ],
   "sourceDispositions": [
     {
@@ -3704,6 +3762,19 @@
       "url": "https://x.com/TensiaBot/status/2112272735803965707",
       "outcome": "excluded",
       "disposition": "Overlap alert reviewed against finalized lifecycle/allocation evidence and previous editions. Ranking, launch-price or historical identity notification alone adds no new verified event in this daily interval."
+    },
+    {
+      "url": "https://x.com/TerzaInference/status/2118243422435958988",
+      "outcome": "covered",
+      "disposition": "SN103 Terza announces Muse Video access through its miner-served API"
     }
-  ]
+  ],
+  "supplement": {
+    "preparedAt": "2026-11-05T15:45:38.402431+00:00",
+    "stories": 17,
+    "newStory": "SN103 Terza announces Muse Video access through its miner-served API",
+    "editorialCutoff": "Before5PMEasternNov5. Preserve originalpublishedAt/coverageEnd/eventdates and earlier16stories.",
+    "roundup": "Already verified once; never repeat for this supplement.",
+    "crossReferenceEdit": "Nonmaterial SN127 prior-edition reference clarified; underlying factual claims unchanged."
+  }
 }
