@@ -379,7 +379,6 @@ const channelVideos: ChannelVideo[] = [
 const liveStreams: ChannelVideo[] = [
   { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "37:26 · Livestream replay · November 5, 2026" },
   { id: "1ajAfGr_dh0", title: "AI on Your Terms? | True Performance Network | Bittensor Subnet 65", meta: "55:32 · Livestream replay · November 3, 2026" },
-  { id: "dGwR6XOE9tU", title: "AI Can Write Code. Can It Engineer the Real World? | Carbon SN116", meta: "Rescheduled livestream · November 6, 2026 · 1:30 PM ET / 10:30 AM PT", startsAt: "2026-11-06T18:30:00Z", upcoming: true },
   { id: "STPM5BtE-ts", title: "Can You Prove You’re Human? Yanez Bittensor Subnet 54 with Jose Caldera", meta: "57:00 · Livestream replay · October 27, 2026" },
   { id: "RnnWezJOuE8", title: "Bittensor Gets Expressive and Conviction Runs Deep with TAO Templar", meta: "1:17:21 · Livestream replay · October 29, 2026" },
 
