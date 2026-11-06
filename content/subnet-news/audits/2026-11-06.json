@@ -1350,8 +1350,16 @@
           "label": "Merged KMS selection, dependency preflight and isolated command implementation"
         },
         {
-          "url": "https://github.com/taostat/gm-miner/releases/tag/v0.5.21",
-          "label": "Latest published release observed; distinguish merged development code from release"
+          "url": "https://github.com/taostat/gm-miner/releases/tag/v0.5.22",
+          "label": "SN28 SayGM stable 0.5.22 release, published November 6 at 18:19:13 UTC"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/taostat/gm-miner/v0.5.22/cli/src/deploy/kms_roots.rs",
+          "label": "SN28 SayGM tagged KMS-root selection implementation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/taostat/gm-miner/v0.5.22/cli/src/deploy/cvm.rs",
+          "label": "SN28 SayGM tagged Phala command isolation"
         }
       ],
       "datedBrief": "https://subnetradar.com/subnet-news/28/2026-11-06",
@@ -2197,6 +2205,10 @@
         {
           "url": "https://github.com/leadpoet/leadpoet/pull/1088",
           "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1090",
+          "label": "SN71 Leadpoet November 6 redirect-provenance and internal Chat-tool validation merge"
         }
       ],
       "datedBrief": "https://subnetradar.com/subnet-news/71/2026-11-06",
@@ -3055,11 +3067,28 @@
     {
       "netuid": 120,
       "name": "Affine",
-      "publishedItems": 0,
-      "outcome": "no-cleared-new-story",
-      "sources": [],
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://affine.io/llms.txt",
+          "label": "SN120 Affine November 6 miner documentation; live contract takes precedence"
+        },
+        {
+          "url": "https://affine.io/mining.json",
+          "label": "SN120 Affine public mining contract and no_decision policy"
+        },
+        {
+          "url": "https://affine.io/caps.json",
+          "label": "SN120 Affine canonical training token caps"
+        },
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-06-afternoon-news-review.json",
+          "label": "Dated SN120 contract fields and source capture times"
+        }
+      ],
       "datedBrief": "https://subnetradar.com/subnet-news/120/2026-11-06",
-      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "briefDisposition": "Afternoon supplement: primary public contract and miner documentation establish a published no_decision participation policy and separate training/gate caps. Infrastructure execution and migration not independently verified.",
       "repositoryStatus": 403,
       "repository": "AffineFoundation/affine",
       "commitCount": 0,
@@ -3211,6 +3240,10 @@
         {
           "url": "https://github.com/ooo-hq/zils/pull/212",
           "label": "November 6 quota-safe round-subset merge and regression assertions"
+        },
+        {
+          "url": "https://github.com/ooo-hq/zils/pull/214",
+          "label": "SN127 Zils November 6 finished-intake disclosure merge and regression tests"
         }
       ],
       "datedBrief": "https://subnetradar.com/subnet-news/127/2026-11-06",
@@ -4008,6 +4041,117 @@
         "status": "RETURNED_ONE_LEAD_REVIEWED_PENDING",
         "lead": "Microtensor testnet ctx_compress",
         "disposition": "Original article dated14:24:04UTC November6 explicitly concerns testnet576. Public comparison is published;5/36 versus18/36 outside-arena passes and format failures qualify the result. Certificate gated; no independent settlement or model reproduction. Retained as research lead, not silently dropped or assigned to a mainnet slot."
+      }
+    },
+    {
+      "kind": "three-hour-news",
+      "status": "DONE_WITH_SOURCE_GAPS",
+      "checkedAt": "2026-11-06T20:34:47.244798+00:00",
+      "windowStart": "2026-11-06T17:30:00Z",
+      "windowEnd": "2026-11-06T20:34:47.244798+00:00",
+      "easternReadyTime": "2026-11-06T15:34:47.244798-05:00",
+      "newStories": 1,
+      "updatedStories": 4,
+      "highestNewRating": 3,
+      "evidence": "/evidence/2026-11-06-afternoon-news-review.json",
+      "sources": "Signed-in native owner originals, replies, reposts and bookmarks; Const and Tensia timelines; configured repository sweep, direct release/diff review and selected public contracts.",
+      "grokReview": {
+        "conversation": "https://x.com/i/grok?conversation=0335a79f-a624-4421-a774-bff11becc629",
+        "discovery": "Returned leads, reconciled against this and prior editions; no independent census claimed.",
+        "omission": "Final focused query returned usage limit. No completed omission result."
+      },
+      "socialDisposition": "No new four-star development. Same REAX result already owner-quoted and in the verified daily roundup. No quote or second roundup.",
+      "gaps": [
+        "Configured124repositoryrows:53HTTP200,12no-repository,3HTTP404,42HTTP403,14HTTP429. Not exhaustive128official-X coverage.",
+        "Final Grok omission query usage-limited; discovery summaries of SN108 evaluator incident and SN44 threshold adjustment lack newly verified primary originals and remain pending.",
+        "Microtensor is testnet576 research. Certificate access and independent settlement/model reproduction remain unresolved; older media leads carried forward.",
+        "No new complete chain event scan in this news supplement. Existing finalized chain archives and daily holdings are preserved; no visitor RPC added."
+      ],
+      "marketReview": {
+        "source": "https://shizzyunchained.com/api/backend/v1/screener",
+        "observedAt": "2026-11-06T20:28:24+00:00",
+        "activeRows": 128,
+        "basis": "alpha/TAO",
+        "outlierDispositions": [
+          {
+            "netuid": 117,
+            "name": "everyframe.studio",
+            "asOf": "2026-11-06T20:28:24+00:00",
+            "change24hPct": 3.376818813908594,
+            "change7dPct": 99.97297717185859,
+            "basis": "alpha/TAO",
+            "source": "https://shizzyunchained.com/api/backend/v1/screener",
+            "disposition": "excluded_pending_catalyst",
+            "reason": "Seven-day appreciation alone does not establish new news. Configured official miner repository has no17:30UTC-onward commits in accessible response; full official-X coverage not claimed."
+          },
+          {
+            "netuid": 92,
+            "name": "REAX",
+            "asOf": "2026-11-06T20:28:24+00:00",
+            "change24hPct": 36.33505244756137,
+            "change7dPct": 19.789356373072245,
+            "basis": "alpha/TAO",
+            "source": "https://shizzyunchained.com/api/backend/v1/screener",
+            "disposition": "covered",
+            "reason": "Same independent model result already covered at4stars and owner-quoted. No newly verified research result to repeat; no causal market claim."
+          },
+          {
+            "netuid": 78,
+            "name": "Umi",
+            "asOf": "2026-11-06T20:28:24+00:00",
+            "change24hPct": -23.232339309904177,
+            "change7dPct": -28.453344550886403,
+            "basis": "alpha/TAO",
+            "source": "https://shizzyunchained.com/api/backend/v1/screener",
+            "disposition": "excluded_pending_catalyst",
+            "reason": "Official UMI dashboard describes open miner pilot and inactive translation weights/pending calibration; directly fetched page snapshot dated20:31:14UTC. No fresh announcement or cause of decline established. Repository API403."
+          },
+          {
+            "netuid": 36,
+            "name": "Weir",
+            "asOf": "2026-11-06T20:28:24+00:00",
+            "change24hPct": -20.033914377972486,
+            "change7dPct": 1566.2713218158144,
+            "basis": "alpha/TAO",
+            "source": "https://shizzyunchained.com/api/backend/v1/screener",
+            "disposition": "covered",
+            "reason": "Current edition covers fee and price-floor code. Newly reused slot makes seven-day comparison unsuitable as ordinary project growth. No attribution of price move."
+          },
+          {
+            "netuid": 70,
+            "name": "Fugal",
+            "asOf": "2026-11-06T20:28:24+00:00",
+            "change24hPct": -31.11176222913774,
+            "change7dPct": 61.777336944555486,
+            "basis": "alpha/TAO",
+            "source": "https://shizzyunchained.com/api/backend/v1/screener",
+            "disposition": "excluded_pending_catalyst",
+            "reason": "Recently launched router already covered November3-4; current site inspected but no separately dated new development verified. Thin288TAO pool context does not prove catalyst. Repository API403."
+          },
+          {
+            "netuid": 99,
+            "name": null,
+            "asOf": "2026-11-06T20:28:24+00:00",
+            "change24hPct": 344.47146824520576,
+            "change7dPct": 255.11121666150694,
+            "basis": "alpha/TAO",
+            "source": "https://shizzyunchained.com/api/backend/v1/screener",
+            "disposition": "covered",
+            "reason": "Registration reset already covered with finalized evidence; cross-registration returns are not same-project growth. Negative rolling-volume estimate unusable; retain raw observation as data-quality gap."
+          },
+          {
+            "netuid": 16,
+            "name": null,
+            "asOf": "2026-11-06T20:28:24+00:00",
+            "change24hPct": -15.704791914516866,
+            "change7dPct": -28.78422806277358,
+            "basis": "alpha/TAO",
+            "source": "https://shizzyunchained.com/api/backend/v1/screener",
+            "disposition": "excluded_pending_identity",
+            "reason": "Current snapshot lacks project name; no primary verified new identity/event. No sale or launch inferred from return."
+          }
+        ],
+        "limits": "Price does not verify a catalyst. No news linked price uplift or rating change in this run."
       }
     }
   ],

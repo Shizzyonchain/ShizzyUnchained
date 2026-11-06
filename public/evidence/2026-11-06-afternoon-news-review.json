@@ -1,0 +1,160 @@
+{
+  "checkedAt": "2026-11-06T20:34:47.244798+00:00",
+  "sources": {
+    "market": "https://shizzyunchained.com/api/backend/v1/screener",
+    "affineMining": "https://affine.io/mining.json",
+    "affineCaps": "https://affine.io/caps.json",
+    "gmRelease": "https://github.com/taostat/gm-miner/releases/tag/v0.5.22"
+  },
+  "marketBasis": "Alpha/TAO rolling returns from the shared cached node-derived screener. Trading activity does not identify a news catalyst.",
+  "marketOutliers": [
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "time": "2026-11-06T20:28:24+00:00",
+      "block_number": 9449434,
+      "price_tao": 0.006667535,
+      "change_24h": 3.376818813908594,
+      "change_7d": 99.97297717185859,
+      "volume_24h_tao": 1790.313080213,
+      "tao_reserve": 4701.471411409
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "time": "2026-11-06T20:28:24+00:00",
+      "block_number": 9449434,
+      "price_tao": 0.026716934,
+      "change_24h": 36.33505244756137,
+      "change_7d": 19.789356373072245,
+      "volume_24h_tao": 14683.386956021,
+      "tao_reserve": 4210.548411544
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "time": "2026-11-06T20:28:24+00:00",
+      "block_number": 9449434,
+      "price_tao": 0.001350456,
+      "change_24h": -23.232339309904177,
+      "change_7d": -28.453344550886403,
+      "volume_24h_tao": 246.351551665,
+      "tao_reserve": 880.666384333
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "time": "2026-11-06T20:28:24+00:00",
+      "block_number": 9449434,
+      "price_tao": 0.010660454,
+      "change_24h": -20.033914377972486,
+      "change_7d": 1566.2713218158144,
+      "volume_24h_tao": 126.341477627,
+      "tao_reserve": 374.272077678
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "time": "2026-11-06T20:28:24+00:00",
+      "block_number": 9449434,
+      "price_tao": 0.006811164,
+      "change_24h": -31.11176222913774,
+      "change_7d": 61.777336944555486,
+      "volume_24h_tao": 181.869303469,
+      "tao_reserve": 288.103762664
+    },
+    {
+      "netuid": 99,
+      "name": null,
+      "time": "2026-11-06T20:28:24+00:00",
+      "block_number": 9449434,
+      "price_tao": 0.004186779,
+      "change_24h": 344.47146824520576,
+      "change_7d": 255.11121666150694,
+      "volume_24h_tao": -39326.815300709,
+      "tao_reserve": 253.765051114
+    },
+    {
+      "netuid": 16,
+      "name": null,
+      "time": "2026-11-06T20:28:24+00:00",
+      "block_number": 9449434,
+      "price_tao": 0.003024813,
+      "change_24h": -15.704791914516866,
+      "change_7d": -28.78422806277358,
+      "volume_24h_tao": 20.99892655,
+      "tao_reserve": 192.026876626
+    }
+  ],
+  "marketLimits": "SN99 registration reuse makes return comparisons across registrations misleading; its negative rolling-volume observation is not a usable trading-volume estimate. No positive business or investor inference is made from these figures.",
+  "gmRelease": {
+    "tag_name": "v0.5.22",
+    "published_at": "2026-11-06T18:19:13Z",
+    "target_commitish": "e5ad9c8e797702991bb8fca5d9f6d08ca3f88b9e",
+    "draft": false,
+    "prerelease": false
+  },
+  "affine": {
+    "observedAt": "2026-11-06T20:34:47.244798+00:00",
+    "documentationUpdated": "2026-11-06 12:45 CR (UTC-6)",
+    "contractGeneratedAtUnix": 1793997128.6670196,
+    "trainingCaps": {
+      "last_eos_output_tokens": 32767,
+      "max_context_tokens": 36864,
+      "max_model_len": 36864,
+      "max_output_tokens": 32768,
+      "overlong_max_tokens": 32768,
+      "overlong_penalty": 0.5,
+      "overlong_soft_start": 26923,
+      "schema": "sn120-caps-v2",
+      "source": "https://affine.io/caps.json (repo: https://github.com/AffineFoundation/affine/blob/main/caps.json, loader caps.py)"
+    },
+    "noDecision": {
+      "authorized": "Jacob 2026-11-06 12:36 CR",
+      "rule": "Infra failures that leave a candidate never judged (probe fail-closed after run_start, hung checkpoint fetch, or the held-out round closing before a decision) are recorded as no_decision: not a served turn, hotkey stays queued via K1 grant, no credit, no promotion. The candidate-probe deadline is timed from TIMELINE.run_start (fail_closed_s seconds); fetch time is excluded (fetch_fail_closed_s caps a hung fetch). decision field stays red for lifecycle compatibility; chart_status/no_decision flag marks it. A real scored RED/GREEN still consumes the turn."
+    },
+    "probeDeadlineSeconds": 2400,
+    "fetchDeadlineSeconds": 900,
+    "currentGateSettings": {
+      "N": 500,
+      "a_hi": 2.0,
+      "a_lo": 0.5,
+      "a_shrink": 0.5,
+      "bar_z": 1.0,
+      "block_delay": 3,
+      "cap": 0.1,
+      "cap_max": 0.33,
+      "cap_rule": "task-level",
+      "floor": 0.1,
+      "head_blocks": 3,
+      "head_rollouts": 12,
+      "k_cand": 8,
+      "max_context_tokens": 69632,
+      "max_tokens": 65536,
+      "min_cover": 0.95,
+      "min_scored": 100,
+      "n_init": 2.0,
+      "scoring_mode": "separate",
+      "shares": "size",
+      "sigma_run_floor": 0.0,
+      "tau_run": 0.0,
+      "theta_prior_sd": 2.0,
+      "weighting": "irt-info",
+      "z_inclusive": false
+    },
+    "limits": "Public contract/documentation observation only. No miner turn, payment, model improvement or migration independently executed."
+  },
+  "mergeTimesUTC": {
+    "leadpoet1090": "2026-11-06T19:59:13Z",
+    "zils214": "2026-11-06T20:22:28Z"
+  },
+  "sourceDigests": {
+    "1526-gm400.txt": "05e798e02b4c98729602d2543ff20cdd8b1bed60141d072ee5a978ad84217a48",
+    "1526-zil214.txt": "3e89ef680d52b84a564bcbfc9bd03b59d80e5ef0c2c0d17895ac7b7ca5544d64",
+    "1526-lead1090.txt": "0c2abe1ffc97f75135e2a2ec007b0b3b8d7ff008a0c055a7b6f85fd1935abb88",
+    "1526-affine-docs.txt": "b67bee69de8f2e7153f9c27072c7ea5945f51a680d2cd0c2e4e0d905f409c5bc",
+    "1526-affine-mining.txt": "ea5555bab1563f25f0acdfc2bf2a9e5359a18adf214350a4c6e6ecc40f6a14c0",
+    "1526-affine-caps.txt": "c5ada5bcce0cebb74dfda5d3100b61d045354aeb729390adaebf776f61f7a851",
+    "1526-gm-tag-cvm.txt": "35f7f5c25077911362608f8a3f407b365d19bc092a7553adecfe701944f4ba50"
+  }
+}

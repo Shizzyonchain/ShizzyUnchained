@@ -52,9 +52,13 @@
       "importance": "medium"
     },
     {
-      "headline": "Shizzy’s Leadpoet replay is public; today’s Carbon livestream is canceled",
-      "summary": "The completed SN71 Leadpoet interview remains the site’s public default, with the native YouTube player showing 37:26. It covers the move from lead research toward outreach agents. The November 5 members-only news update is separately labelled restricted, with 7:03 on its player. On November 6, Shizzy directly confirmed that today’s SN116 Carbon livestream is canceled. Its previous 1:30 PM Eastern / 10:30 AM Pacific slot is no longer being promoted, and no replacement date has been confirmed. The public replay and membership labels remain as verified earlier; no completed Carbon replay or full audiovisual review is claimed.",
+      "headline": "Shizzy publishes a new TAO episode; the Carbon livestream remains canceled",
+      "summary": "Shizzy published a new 19:04 public episode on X at 18:12:28 UTC November 6. It mixes his opening perspective with the TAO weekly chart, SN92 REAX's Decision Index result, the 10-to-100 TAO portfolio challenge and a rebalance from SN51 Lium into SN80 OpenRoboto through Mentat. These are his recorded views and portfolio discussion, not independently verified execution of every statement in the video. The post explicitly corrects the Carbon reference near the end: today's SN116 Carbon livestream is canceled and no replacement date is confirmed. The completed 37:26 SN71 Leadpoet interview remains the site's public default; the earlier 7:03 members update remains separately restricted. No full audiovisual review or completed Carbon replay is claimed.",
       "sources": [
+        {
+          "url": "https://x.com/ShizzyUnchained/status/2118768494703423702",
+          "label": "Shizzy November 6 public episode, native 19:04 duration and Carbon cancellation correction"
+        },
         {
           "url": "https://www.youtube.com/watch?v=q2pGNLUvCm4",
           "label": "Shizzy completed SN71 Leadpoet public interview"
@@ -69,7 +73,7 @@
         }
       ],
       "rating": 3,
-      "ratingReason": "Original Shizzy coverage and an owner-confirmed cancellation, with replay, restricted access and canceled-event labels kept distinct.",
+      "ratingReason": "Original Shizzy coverage with a new public episode and accurate separation of recorded commentary, the existing public replay, restricted content and the canceled event.",
       "status": "verified",
       "importance": "medium"
     }
@@ -271,20 +275,28 @@
       "name": "SayGM",
       "updates": [
         {
-          "headline": "SN28 SayGM merges registry-selected Phala KMS safeguards for new workers",
-          "summary": "A November 6 gm-miner merge makes new confidential-worker creation select a non-expiring Phala key management (KMS) contract allowed by the registry, using its default or an explicit permitted override. Without an allowed explicit override, missing or invalid registry defaults stop creation, and Phala commands use an isolated working directory so a caller’s local phala.toml cannot change the deployment. This gives operators a clearer, registry-controlled creation path. The manifest is 0.5.22-dev and the latest public release observed was 0.5.21; no mainnet rollout, exploit remediation or independent execution test is claimed.",
+          "headline": "SN28 SayGM releases gmcli 0.5.22 with registry-selected Phala KMS safeguards",
+          "summary": "The November 6 gm-miner changes make new confidential-worker creation select a non-expiring Phala key management (KMS) contract allowed by the registry, using its default or an explicit permitted override. Without an allowed explicit override, missing or invalid defaults stop creation, and Phala commands use an isolated working directory so a local phala.toml cannot alter deployment. At 18:19:13 UTC, the project published stable gmcli 0.5.22, moving these safeguards beyond the earlier development-only merge. The tagged source retains KMS selection and isolated Phala commands, and the release provides platform binaries. No binary was installed and no production worker deployment or exploit remediation was independently tested.",
           "sources": [
             {
               "url": "https://github.com/taostat/gm-miner/pull/399",
               "label": "Merged KMS selection, dependency preflight and isolated command implementation"
             },
             {
-              "url": "https://github.com/taostat/gm-miner/releases/tag/v0.5.21",
-              "label": "Latest published release observed; distinguish merged development code from release"
+              "url": "https://github.com/taostat/gm-miner/releases/tag/v0.5.22",
+              "label": "SN28 SayGM stable 0.5.22 release, published November 6 at 18:19:13 UTC"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/taostat/gm-miner/v0.5.22/cli/src/deploy/kms_roots.rs",
+              "label": "SN28 SayGM tagged KMS-root selection implementation"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/taostat/gm-miner/v0.5.22/cli/src/deploy/cvm.rs",
+              "label": "SN28 SayGM tagged Phala command isolation"
             }
           ],
           "rating": 2,
-          "ratingReason": "Specific miner-deployment safeguards in merged development code, with production rollout unverified.",
+          "ratingReason": "A released operator safeguard with inspectable tagged code and binaries. Production deployment and an independent execution test remain unverified.",
           "status": "verified",
           "importance": "informational"
         }
@@ -674,7 +686,7 @@
       "updates": [
         {
           "headline": "SN71 Leadpoet merges bounded admission-review recovery and prospective judge routes",
-          "summary": "November 5–6 Arena merges add bounded admission recovery, prospective judge routes, provenance-aware training exports and scored-round publication safeguards. PR1088 preserves saved scored rounds when publication reads are temporarily unavailable; genuine malformed evidence keeps its integrity checks. Earlier recovery and database migrations remain operationally gated, and a published/tested DeepSeek image is separate from canonical activation. These merges do not establish a recovered production round or new customer adoption.",
+          "summary": "November 5–6 Arena merges add bounded admission recovery, prospective judge routes, provenance-aware training exports and scored-round publication safeguards. PR1088 preserves saved scored rounds when publication reads are temporarily unavailable; genuine malformed evidence keeps its integrity checks. Earlier recovery and database migrations remain operationally gated, and a published/tested DeepSeek image is separate from canonical activation. These merges do not establish a recovered production round or new customer adoption. At 19:59:13 UTC November 6, PR1090 additionally preserves sanitized redirect destinations in consumed web-response evidence and validates callable Chat tools in internal training targets. This helps retain retrieval provenance and reject undeclared model tool calls; reviewed source is not proof of production rollout or independently executed tests.",
           "sources": [
             {
               "url": "https://github.com/leadpoet/leadpoet/pull/1051",
@@ -743,6 +755,10 @@
             {
               "url": "https://github.com/leadpoet/leadpoet/pull/1088",
               "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1090",
+              "label": "SN71 Leadpoet November 6 redirect-provenance and internal Chat-tool validation merge"
             }
           ],
           "rating": 2,
@@ -1140,7 +1156,34 @@
     {
       "netuid": 120,
       "name": "Affine",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN120 Affine documents queue protection for turns left unjudged by infrastructure failures",
+          "summary": "Affine's November 6 documentation and public mining contract describe a no_decision outcome when infrastructure prevents a candidate from being judged, such as a hung checkpoint fetch or an expired probe. The stated policy leaves the hotkey queued through a K1 grant without credit or model promotion; a genuinely scored RED or GREEN still consumes its turn. The document records authorization at 12:36 CR (18:36 UTC), with a 2,400-second probe deadline measured from run start and a separate 900-second fetch bound. The sampled contract also distinguishes training's 32,768 output-token limit from the current promotion gate's 65,536, with context limits of 36,864 and 69,632 respectively. These are published operator rules and a dated contract snapshot, not an independent replay of a miner turn or proof that a subnet migration has completed.",
+          "sources": [
+            {
+              "url": "https://affine.io/llms.txt",
+              "label": "SN120 Affine November 6 miner documentation; live contract takes precedence"
+            },
+            {
+              "url": "https://affine.io/mining.json",
+              "label": "SN120 Affine public mining contract and no_decision policy"
+            },
+            {
+              "url": "https://affine.io/caps.json",
+              "label": "SN120 Affine canonical training token caps"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-06-afternoon-news-review.json",
+              "label": "Dated SN120 contract fields and source capture times"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A concrete participation safeguard for miners whose work was never judged, supported by published rules and contract fields. No independently verified model result, migration or executed turn is inferred.",
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 121,
@@ -1220,7 +1263,7 @@
       "updates": [
         {
           "headline": "SN127 Zils merges bounded GPU waits and overlapping model intake",
-          "summary": "November 5 merges bound GPU waits to 600 seconds, permit prefetching up to three claims with serial admission and a 60 GiB disk floor, and avoid consuming a daily attempt while another pool owns the GPU. Follow-up PR211 corrects the displayed d3-mini input cap to 8,192; it does not expand context. These are operator safeguards in merged code, with rollout and restored service unverified. On November 6, PR212 adds deterministic family-quota sampling when a test family has more labels than its allocated questions. Added regression assertions check prior draw fingerprints for existing cases; no production round or model-result change was independently verified.",
+          "summary": "November 5 merges bound GPU waits to 600 seconds, permit prefetching up to three claims with serial admission and a 60 GiB disk floor, and avoid consuming a daily attempt while another pool owns the GPU. Follow-up PR211 corrects the displayed d3-mini input cap to 8,192; it does not expand context. These are operator safeguards in merged code, with rollout and restored service unverified. On November 6, PR212 adds deterministic family-quota sampling when a test family has more labels than its allocated questions. Added regression assertions check prior draw fingerprints for existing cases; no production round or model-result change was independently verified. At 20:22:28 UTC November 6, merged PR214 adds each pool's latest finished intake to GET /soup, including graded/rejected hashes and deferred or refused claims identified by UID and committed hash. Only deferral reasons are published; other refusal reasons remain private. This lets miner-facing tools inspect the most recent intake between rounds. The implementation and added tests were read, but no deployed endpoint or live intake was independently exercised.",
           "sources": [
             {
               "url": "https://github.com/ooo-hq/zils/pull/208",
@@ -1241,6 +1284,10 @@
             {
               "url": "https://github.com/ooo-hq/zils/pull/212",
               "label": "November 6 quota-safe round-subset merge and regression assertions"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/pull/214",
+              "label": "SN127 Zils November 6 finished-intake disclosure merge and regression tests"
             }
           ],
           "rating": 2,
