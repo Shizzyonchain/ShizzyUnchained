@@ -131,6 +131,28 @@
           "ratingReason": "Exact qualifying supply events with dates preserved; already archived rather than a new burn announcement.",
           "status": "verified",
           "importance": "informational"
+        },
+        {
+          "headline": "SN8 Vanta records a 222.945066151-alpha transaction burn",
+          "summary": "At 15:35:00 UTC November 6 (10:35 AM Eastern), finalized block 9,447,967, extrinsic 14, event 210 records a successful direct burn_alpha call destroying 222.945066151 SN8 alpha. The event and call amount agree, with the same Vanta registration before and after execution. The burner is different from the registered subnet owner, so this is not labelled an owner buyback. It is a new qualifying individual burn, separate from the previously archived events carried into this morning’s edition. The complete new scan through block 9,448,379 found no eTAO allocation events.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-06-chain-monitor-1157.json",
+              "label": "SN8 finalized burn, successful call and historical registration proof"
+            },
+            {
+              "url": "https://taostats.io/extrinsic/9447967-14",
+              "label": "SN8 direct burn transaction 9447967-14"
+            },
+            {
+              "url": "https://shizzyunchained.com/subnet-news/burns?subnet=8",
+              "label": "SN8 permanent qualifying transaction-burn archive"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "An exact qualifying supply event; it does not establish an owner buyback, adoption or a price effect.",
+          "status": "verified",
+          "importance": "informational"
         }
       ]
     },

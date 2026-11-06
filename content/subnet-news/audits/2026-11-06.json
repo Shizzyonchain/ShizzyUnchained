@@ -996,7 +996,7 @@
     {
       "netuid": 8,
       "name": "Vanta",
-      "publishedItems": 1,
+      "publishedItems": 2,
       "outcome": "covered",
       "sources": [
         {
@@ -1006,6 +1006,18 @@
         {
           "url": "https://shizzyunchained.com/subnet-news/burns",
           "label": "Permanent qualifying transaction-burn archive"
+        },
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-06-chain-monitor-1157.json",
+          "label": "SN8 finalized burn, successful call and historical registration proof"
+        },
+        {
+          "url": "https://taostats.io/extrinsic/9447967-14",
+          "label": "SN8 direct burn transaction 9447967-14"
+        },
+        {
+          "url": "https://shizzyunchained.com/subnet-news/burns?subnet=8",
+          "label": "SN8 permanent qualifying transaction-burn archive"
         }
       ],
       "datedBrief": null,
@@ -3908,6 +3920,29 @@
         "https://shizzyunchained.com/evidence/2026-11-06-model-challenge-review.json"
       ],
       "socialDisposition": "No additional post: existing owner REAX quote/repost and verified daily roundup already cover the story. No repeat merely for a rating correction."
+    }
+  ],
+  "monitorReviews": [
+    {
+      "kind": "etao-burns",
+      "status": "DONE",
+      "checkedAt": "2026-11-06T17:02:30.167734+00:00",
+      "fromBlock": 9447889,
+      "toBlock": 9448379,
+      "throughTime": "2026-11-06T16:57:24+00:00",
+      "runtime": 488,
+      "complete": true,
+      "gaps": [],
+      "all128VectorsReconciled": true,
+      "allocationEvents": 0,
+      "qualifyingBurns": 1,
+      "eventCounts": {
+        "AlphaBurned": 7,
+        "AlphaRecycled": 7
+      },
+      "evidence": "/evidence/2026-11-06-chain-monitor-1157.json",
+      "archiveUpdated": true,
+      "newsDisposition": "Before 5 PM Eastern: one new SN8 burn appended to the existing full November 6 edition. All 23 prior stories preserved, including the corrected SN92 four-star rating. No social action or second roundup."
     }
   ]
 }
