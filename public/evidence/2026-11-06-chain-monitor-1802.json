@@ -1,0 +1,1949 @@
+{
+  "checkedAt": "2026-11-06T23:10:50.065675+00:00",
+  "fromBlock": 9448380,
+  "toBlock": 9450204,
+  "finalizedHash": "0x0ce694f5b3c5017324d6570a0dd1a2aa265a3ff79f9b04401f4968f9861d37f4",
+  "throughTime": "2026-11-06T23:02:24+00:00",
+  "runtime": 488,
+  "complete": true,
+  "gaps": [],
+  "metadataEquality": "Full runtime488 metadata equals reviewed metadata-9442967.json; each block runtime488; historical positive event-decoding controls passed.",
+  "runtimeReview": {
+    "scope": "Offline allocation and qualifying transaction burn decoding only; no account action or social publication",
+    "reviewedRuntimes": [
+      486,
+      488
+    ],
+    "boundary": {
+      "last486StateBlock": 9442680,
+      "first488StateBlock": 9442681,
+      "first488ExecutionMetadataBlock": 9442682,
+      "reason": "substrate-interface init_runtime explicitly decodes a block with its parent-state runtime metadata. Installed SDK source inspected. The upgrade block therefore uses old execution metadata."
+    },
+    "newRuntimeSource": "https://github.com/RaoFoundation/subtensor/releases/tag/v488",
+    "sourceCommit": "b6a81d144078eac18bd25c3af7cb31579bb670f3",
+    "binaryReproduction": "Not performed; runtime number and metadata observed from finalized chain, release tag supplies code for semantic review, no byte-for-byte deployed WASM claim.",
+    "metadata": "Full old/new metadata retained in metadata-9441147.json and metadata-9442967.json. Five original target event definitions identical. Underlying AccountId, u64 TAO/alpha wrappers, NetUid/u16, Vec<u64> and Balances event definitions equal. Emission storage retains Identity NetUid key and five-slot bounded-vector format; portable type IDs differ. Full metadata guard retained within each segment. First488 execution block allows only exact previously inspected complete old/new fixtures, not arbitrary runtime changes.",
+    "semantics": {
+      "burnAlpha": "v488 staking/recycle_alpha.rs takes signed coldkey, caps at available alpha, verifies unlock/collateral, burns alpha and emits actual AlphaBurned; recycling emits separate AlphaRecycled and is excluded.",
+      "addStakeBurn": "Same source uses a transaction, stakes TAO, burns resulting alpha and emits AddStakeBurn after AlphaBurned. Retain existing match-by-netuid/hotkey/amount and count once; TAO input is not TAO burned.",
+      "gamma": "v488 subnets/gamma.rs mint_gamma buys and burns alpha then emits GammaMinted without AlphaBurned. mint_gamma_with_stake calls do_burn_alpha then GammaMinted. GammaMinted added to new-runtime scan targets; if present reconcile with AlphaBurned to prevent double count. No GammaMinted events found through this cutoff.",
+      "allocation": "v488 subnets/emission_weights.rs retains burn/recycle/owner/validator/miner in u64::MAX parts, combined burn/recycle cap33%, validator cap50%, miner floor33%, Root live baseline paid from validator slot and capped by it. Runtime change alone does not establish a changed allocation vector or enabled Gamma services."
+    },
+    "primarySources": [
+      "https://raw.githubusercontent.com/RaoFoundation/subtensor/v488/pallets/subtensor/src/staking/recycle_alpha.rs",
+      "https://raw.githubusercontent.com/RaoFoundation/subtensor/v488/pallets/subtensor/src/subnets/gamma.rs",
+      "https://raw.githubusercontent.com/RaoFoundation/subtensor/v488/pallets/subtensor/src/subnets/emission_weights.rs",
+      "https://raw.githubusercontent.com/RaoFoundation/subtensor/v488/pallets/subtensor/src/macros/events.rs"
+    ],
+    "controls": "Original known eTAO/burn decoding controls retained for every segment; every block runtime checked; all128 end-state vectors compared with public baseline; complete contiguous interval asserted."
+  },
+  "emissionVectors": {
+    "1": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "2": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "3": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "4": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "5": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "6": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "7": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "8": [
+      "0",
+      "0",
+      "0",
+      "9223372036854775807",
+      "9223372036854775808"
+    ],
+    "9": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "10": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "11": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "12": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "13": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "14": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "15": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "16": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "17": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "18": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "19": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "20": [
+      "0",
+      "0",
+      "6087425544324152032",
+      "1291272085159668613",
+      "11068046444225730970"
+    ],
+    "21": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "22": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "23": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "24": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "25": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "26": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "27": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "28": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "29": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "30": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "31": [
+      "0",
+      "0",
+      "4611686018427387903",
+      "3689348814741910323",
+      "10145709240540253389"
+    ],
+    "32": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "33": [
+      "0",
+      "0",
+      "3320413933267719290",
+      "9038904596117680291",
+      "6087425544324152034"
+    ],
+    "34": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "35": [
+      "0",
+      "0",
+      "6087425544324152032",
+      "5534023222112865484",
+      "6825295307272534099"
+    ],
+    "36": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "37": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "38": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "39": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "40": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "41": [
+      "0",
+      "0",
+      "1844674407370955161",
+      "7378697629483820646",
+      "9223372036854775808"
+    ],
+    "42": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "43": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "44": [
+      "0",
+      "0",
+      "2213609288845146193",
+      "8116567392432202710",
+      "8116567392432202712"
+    ],
+    "45": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "46": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "47": [
+      "0",
+      "0",
+      "3320413933267719290",
+      "2324289753287403503",
+      "12802040387154428822"
+    ],
+    "48": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "49": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "50": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "51": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "52": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "53": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "54": [
+      "0",
+      "0",
+      "3320413933267719290",
+      "9038904596117680291",
+      "6087425544324152034"
+    ],
+    "55": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "56": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "57": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "58": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "59": [
+      "0",
+      "0",
+      "5897350293388648813",
+      "6461968235996750768",
+      "6087425544324152034"
+    ],
+    "60": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "61": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "62": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "63": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "64": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "65": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "66": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "67": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "68": [
+      "0",
+      "0",
+      "4796153459164483419",
+      "7563165070220916162",
+      "6087425544324152034"
+    ],
+    "69": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "70": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "71": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "72": [
+      "0",
+      "0",
+      "6087425544324152000",
+      "5534023222112865000",
+      "6825295307272534615"
+    ],
+    "73": [
+      "0",
+      "0",
+      "6087425544324152032",
+      "1106804644422573096",
+      "11252513884962826487"
+    ],
+    "74": [
+      "0",
+      "0",
+      "0",
+      "9223372036854775807",
+      "9223372036854775808"
+    ],
+    "75": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "76": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "9038904596117680291",
+      "6087509988105675080"
+    ],
+    "77": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "78": [
+      "0",
+      "0",
+      "5672373802665687121",
+      "2859245331424980500",
+      "9915124939618883994"
+    ],
+    "79": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "80": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "81": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "82": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "83": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "84": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "85": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "86": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "87": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "88": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "89": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "90": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "91": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "92": [
+      "0",
+      "0",
+      "4796111237273721898",
+      "7563207292111677685",
+      "6087425544324152032"
+    ],
+    "93": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "94": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "95": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "96": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "97": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "98": [
+      "0",
+      "0",
+      "6087425544324152032",
+      "1291272085159668613",
+      "11068046444225730970"
+    ],
+    "99": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "100": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "101": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "102": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "103": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "104": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "105": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "106": [
+      "0",
+      "0",
+      "6087425544324152032",
+      "5534023222112865484",
+      "6825295307272534099"
+    ],
+    "107": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "108": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "109": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "110": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "111": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "112": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "113": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "114": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "115": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "116": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "117": [
+      "0",
+      "0",
+      "6087425544324152032",
+      "6271892985061247549",
+      "6087425544324152034"
+    ],
+    "118": [
+      "0",
+      "0",
+      "3320413933267719290",
+      "9038904596117680291",
+      "6087425544324152034"
+    ],
+    "119": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "120": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "121": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "122": [
+      "0",
+      "0",
+      "3320413933267719291",
+      "3320413933267719291",
+      "11805916207174113033"
+    ],
+    "123": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "124": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "125": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "126": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "127": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ],
+    "128": [
+      "0",
+      "0",
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
+    ]
+  },
+  "allocationEvents": 0,
+  "gammaMintEvents": 0,
+  "eventCounts": {
+    "AlphaBurned": 39,
+    "AlphaRecycled": 30
+  },
+  "qualifyingBurns": [
+    {
+      "record": {
+        "id": "9448708-236",
+        "block": 9448708,
+        "hash": "0x5ca2ec6d9eff718ded4a37c76cc748f8963508bffb77befdf098ef73c38212db",
+        "extrinsic": 29,
+        "eventIndex": 236,
+        "eventName": "SubtensorModule.AlphaBurned",
+        "timestamp": "2026-11-06T18:03:12+00:00",
+        "netuid": 76,
+        "name": "Ormas",
+        "kind": "alpha",
+        "amountRaw": "233230590079",
+        "taoSpentRaw": null,
+        "account": "5CLWmDjLwkDtLQ86y9aiwfzrUCrtnnSWS9oEXianj2jMDCAo",
+        "registeredAt": 9003844
+      },
+      "event": {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 29,
+        "event": {
+          "event_index": "0762",
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5CLWmDjLwkDtLQ86y9aiwfzrUCrtnnSWS9oEXianj2jMDCAo",
+            "5CqaQ34dznCVTdrpcxoiTKcSTbZ87x3oSjJh5G1rTERmcCWK",
+            233230590079,
+            76
+          ]
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "AlphaBurned",
+        "attributes": [
+          "5CLWmDjLwkDtLQ86y9aiwfzrUCrtnnSWS9oEXianj2jMDCAo",
+          "5CqaQ34dznCVTdrpcxoiTKcSTbZ87x3oSjJh5G1rTERmcCWK",
+          233230590079,
+          76
+        ],
+        "topics": []
+      },
+      "sameExtrinsicEvents": [
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 29,
+          "event": {
+            "event_index": "0508",
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5DZVPP2BPdczrXrB86boZy7wdkAFNwhp8H496aBNHYBP3GaB",
+              "amount": 520229
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Withdraw",
+          "attributes": {
+            "who": "5DZVPP2BPdczrXrB86boZy7wdkAFNwhp8H496aBNHYBP3GaB",
+            "amount": 520229
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 29,
+          "event": {
+            "event_index": "0505",
+            "module_id": "Balances",
+            "event_id": "Unreserved",
+            "attributes": {
+              "who": "5E8uNJzAKFQCvyK3QnKj1Bv77W1oDNgRWKxhueoMKTK4UAcD",
+              "amount": 196000000
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Unreserved",
+          "attributes": {
+            "who": "5E8uNJzAKFQCvyK3QnKj1Bv77W1oDNgRWKxhueoMKTK4UAcD",
+            "amount": 196000000
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 29,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5CLWmDjLwkDtLQ86y9aiwfzrUCrtnnSWS9oEXianj2jMDCAo",
+              "5CqaQ34dznCVTdrpcxoiTKcSTbZ87x3oSjJh5G1rTERmcCWK",
+              233230590079,
+              76
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5CLWmDjLwkDtLQ86y9aiwfzrUCrtnnSWS9oEXianj2jMDCAo",
+            "5CqaQ34dznCVTdrpcxoiTKcSTbZ87x3oSjJh5G1rTERmcCWK",
+            233230590079,
+            76
+          ],
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 29,
+          "event": {
+            "event_index": "0d02",
+            "module_id": "Multisig",
+            "event_id": "MultisigExecuted",
+            "attributes": {
+              "approving": "5DZVPP2BPdczrXrB86boZy7wdkAFNwhp8H496aBNHYBP3GaB",
+              "timepoint": {
+                "height": 9448682,
+                "index": 5
+              },
+              "multisig": "5CLWmDjLwkDtLQ86y9aiwfzrUCrtnnSWS9oEXianj2jMDCAo",
+              "call_hash": "0x5520e1d762b1ad5108e3fdc240db13b03a456bcac019172ac8708623f42ed34b",
+              "result": {
+                "Ok": []
+              }
+            }
+          },
+          "event_index": 13,
+          "module_id": "Multisig",
+          "event_id": "MultisigExecuted",
+          "attributes": {
+            "approving": "5DZVPP2BPdczrXrB86boZy7wdkAFNwhp8H496aBNHYBP3GaB",
+            "timepoint": {
+              "height": 9448682,
+              "index": 5
+            },
+            "multisig": "5CLWmDjLwkDtLQ86y9aiwfzrUCrtnnSWS9oEXianj2jMDCAo",
+            "call_hash": "0x5520e1d762b1ad5108e3fdc240db13b03a456bcac019172ac8708623f42ed34b",
+            "result": {
+              "Ok": []
+            }
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 29,
+          "event": {
+            "event_index": "0507",
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5DZVPP2BPdczrXrB86boZy7wdkAFNwhp8H496aBNHYBP3GaB",
+              "amount": 0
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Deposit",
+          "attributes": {
+            "who": "5DZVPP2BPdczrXrB86boZy7wdkAFNwhp8H496aBNHYBP3GaB",
+            "amount": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 29,
+          "event": {
+            "event_index": "0600",
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5DZVPP2BPdczrXrB86boZy7wdkAFNwhp8H496aBNHYBP3GaB",
+              "actual_fee": 520229,
+              "tip": 0
+            }
+          },
+          "event_index": 6,
+          "module_id": "TransactionPayment",
+          "event_id": "TransactionFeePaid",
+          "attributes": {
+            "who": "5DZVPP2BPdczrXrB86boZy7wdkAFNwhp8H496aBNHYBP3GaB",
+            "actual_fee": 520229,
+            "tip": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 29,
+          "event": {
+            "event_index": "0000",
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 2080447552,
+                  "proof_size": 20805
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            }
+          },
+          "event_index": 0,
+          "module_id": "System",
+          "event_id": "ExtrinsicSuccess",
+          "attributes": {
+            "dispatch_info": {
+              "weight": {
+                "ref_time": 2080447552,
+                "proof_size": 20805
+              },
+              "class": "Normal",
+              "pays_fee": "Yes"
+            }
+          },
+          "topics": []
+        }
+      ],
+      "historicalIdentity": {
+        "NetworkRegisteredAt": 9003844,
+        "SubnetIdentitiesV3": {
+          "subnet_name": "Ormas",
+          "github_repo": "https://github.com/heroncovelabs/ormas-subnet",
+          "subnet_contact": "operations@heroncove.us",
+          "subnet_url": "https://ormas.ai",
+          "discord": "ormasheroncovelabs_43871",
+          "description": "Ormas is an Outcomes API for coding work on Bittensor subnet 76, in development. Clients post a change and the test that proves it; miners quote a firm price for the passing result and deliver a branch. Miners will be paid only when independent validators accept the delivery, and clients will be charged the accepted quote and nothing on a miss. Protocol, thin client, reference miner and reference validator: MIT.",
+          "logo_url": "https://ormas.ai/brand/ormas-mark-v3.png",
+          "additional": "Ormas is operated by Heron Cove LLC, which issues invoices and commercial documentation for the service. Registered September 5, 2026; not a continuation of the former subnet 76. Commercial payments and subnet emissions are separate."
+        },
+        "SubnetOwner": "5CLWmDjLwkDtLQ86y9aiwfzrUCrtnnSWS9oEXianj2jMDCAo"
+      },
+      "precedingIdentity": {
+        "NetworkRegisteredAt": 9003844,
+        "SubnetIdentitiesV3": {
+          "subnet_name": "Ormas",
+          "github_repo": "https://github.com/heroncovelabs/ormas-subnet",
+          "subnet_contact": "operations@heroncove.us",
+          "subnet_url": "https://ormas.ai",
+          "discord": "ormasheroncovelabs_43871",
+          "description": "Ormas is an Outcomes API for coding work on Bittensor subnet 76, in development. Clients post a change and the test that proves it; miners quote a firm price for the passing result and deliver a branch. Miners will be paid only when independent validators accept the delivery, and clients will be charged the accepted quote and nothing on a miss. Protocol, thin client, reference miner and reference validator: MIT.",
+          "logo_url": "https://ormas.ai/brand/ormas-mark-v3.png",
+          "additional": "Ormas is operated by Heron Cove LLC, which issues invoices and commercial documentation for the service. Registered September 5, 2026; not a continuation of the former subnet 76. Commercial payments and subnet emissions are separate."
+        },
+        "SubnetOwner": "5CLWmDjLwkDtLQ86y9aiwfzrUCrtnnSWS9oEXianj2jMDCAo"
+      },
+      "identityUnchangedAcrossExecution": true,
+      "ownerBurn": true,
+      "executionReview": {
+        "nestedCallMatchedHotkeyAndSubnet": true,
+        "requestedAmountRaw": "233230590079",
+        "actualBurnedAmountRaw": "233230590079",
+        "amountRule": "Exact request matches event",
+        "buybackFundingVerified": false
+      },
+      "decodedOuterCall": {
+        "call_index": "0x0d01",
+        "call_function": "as_multi",
+        "call_module": "Multisig",
+        "call_args": [
+          {
+            "name": "threshold",
+            "type": "u16",
+            "value": 2
+          },
+          {
+            "name": "other_signatories",
+            "type": "Vec<AccountId>",
+            "value": [
+              "5E8uNJzAKFQCvyK3QnKj1Bv77W1oDNgRWKxhueoMKTK4UAcD",
+              "5HP3JcGJbG3XUpdTeV5UTQYgHYFRFizQVmo86vjP8bXy7Pa3"
+            ]
+          },
+          {
+            "name": "maybe_timepoint",
+            "type": "Option<Timepoint<BlockNumberFor>>",
+            "value": {
+              "height": 9448682,
+              "index": 5
+            }
+          },
+          {
+            "name": "call",
+            "type": "RuntimeCall",
+            "value": {
+              "call_index": "0x0766",
+              "call_function": "burn_alpha",
+              "call_module": "SubtensorModule",
+              "call_args": [
+                {
+                  "name": "hotkey",
+                  "type": "AccountId",
+                  "value": "5CqaQ34dznCVTdrpcxoiTKcSTbZ87x3oSjJh5G1rTERmcCWK"
+                },
+                {
+                  "name": "amount",
+                  "type": "AlphaBalance",
+                  "value": 233230590079
+                },
+                {
+                  "name": "netuid",
+                  "type": "NetUid",
+                  "value": 76
+                }
+              ]
+            }
+          },
+          {
+            "name": "max_weight",
+            "type": "Weight",
+            "value": {
+              "ref_time": 1502068000,
+              "proof_size": 9796
+            }
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "9449718-182",
+        "block": 9449718,
+        "hash": "0xa80de4c0be76ab12b400e3e71746d567ed1ca792dd91c42e8e55b1b6d0af1e8b",
+        "extrinsic": 12,
+        "eventIndex": 182,
+        "eventName": "SubtensorModule.AlphaBurned",
+        "timestamp": "2026-11-06T21:25:12+00:00",
+        "netuid": 46,
+        "name": "Instant",
+        "kind": "alpha",
+        "amountRaw": "158839753801",
+        "taoSpentRaw": null,
+        "account": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+        "registeredAt": 3919107
+      },
+      "event": {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 12,
+        "event": {
+          "event_index": "0762",
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "5CDnZ6oeCrXKoL2VJQuQFxSfr49yQWz2DvdaYx47hr9QdM6D",
+            158839753801,
+            46
+          ]
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "AlphaBurned",
+        "attributes": [
+          "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+          "5CDnZ6oeCrXKoL2VJQuQFxSfr49yQWz2DvdaYx47hr9QdM6D",
+          158839753801,
+          46
+        ],
+        "topics": []
+      },
+      "sameExtrinsicEvents": [
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0508",
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+              "amount": 535037
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Withdraw",
+          "attributes": {
+            "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "amount": 535037
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+              "5CDnZ6oeCrXKoL2VJQuQFxSfr49yQWz2DvdaYx47hr9QdM6D",
+              158839753801,
+              46
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "5CDnZ6oeCrXKoL2VJQuQFxSfr49yQWz2DvdaYx47hr9QdM6D",
+            158839753801,
+            46
+          ],
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0b03",
+            "module_id": "Utility",
+            "event_id": "ItemCompleted",
+            "attributes": null
+          },
+          "event_index": 11,
+          "module_id": "Utility",
+          "event_id": "ItemCompleted",
+          "attributes": null,
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+              "5HK5tp6t2S59DywmHRWPBVJeJ86T61KjurYqeooqj8sREpeN",
+              1040188920358,
+              46
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "5HK5tp6t2S59DywmHRWPBVJeJ86T61KjurYqeooqj8sREpeN",
+            1040188920358,
+            46
+          ],
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0b03",
+            "module_id": "Utility",
+            "event_id": "ItemCompleted",
+            "attributes": null
+          },
+          "event_index": 11,
+          "module_id": "Utility",
+          "event_id": "ItemCompleted",
+          "attributes": null,
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0b01",
+            "module_id": "Utility",
+            "event_id": "BatchCompleted",
+            "attributes": null
+          },
+          "event_index": 11,
+          "module_id": "Utility",
+          "event_id": "BatchCompleted",
+          "attributes": null,
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0507",
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+              "amount": 0
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Deposit",
+          "attributes": {
+            "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "amount": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0600",
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+              "actual_fee": 535037,
+              "tip": 0
+            }
+          },
+          "event_index": 6,
+          "module_id": "TransactionPayment",
+          "event_id": "TransactionFeePaid",
+          "attributes": {
+            "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "actual_fee": 535037,
+            "tip": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0000",
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 3109894370,
+                  "proof_size": 23575
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            }
+          },
+          "event_index": 0,
+          "module_id": "System",
+          "event_id": "ExtrinsicSuccess",
+          "attributes": {
+            "dispatch_info": {
+              "weight": {
+                "ref_time": 3109894370,
+                "proof_size": 23575
+              },
+              "class": "Normal",
+              "pays_fee": "Yes"
+            }
+          },
+          "topics": []
+        }
+      ],
+      "historicalIdentity": {
+        "NetworkRegisteredAt": 3919107,
+        "SubnetIdentitiesV3": {
+          "subnet_name": "Instant",
+          "github_repo": "https://github.com/Subnet46/sn46-validator",
+          "subnet_contact": "admin@bigtensor.com",
+          "subnet_url": "https://instantnetwork.ai",
+          "discord": "https://discord.com/BJ7DkeUmFm",
+          "description": "Lighning Fast Uncensored Inference",
+          "logo_url": "https://instant-network-logo.sebyverse.chatgpt.site/logo.png",
+          "additional": "Decentralized Marketplace for Accelerated Inference"
+        },
+        "SubnetOwner": "5Ft9E2ovN52AVMczVA3713uXmmBPczvUboB4YQpupu3aEYg7"
+      },
+      "precedingIdentity": {
+        "NetworkRegisteredAt": 3919107,
+        "SubnetIdentitiesV3": {
+          "subnet_name": "Instant",
+          "github_repo": "https://github.com/Subnet46/sn46-validator",
+          "subnet_contact": "admin@bigtensor.com",
+          "subnet_url": "https://instantnetwork.ai",
+          "discord": "https://discord.com/BJ7DkeUmFm",
+          "description": "Lighning Fast Uncensored Inference",
+          "logo_url": "https://instant-network-logo.sebyverse.chatgpt.site/logo.png",
+          "additional": "Decentralized Marketplace for Accelerated Inference"
+        },
+        "SubnetOwner": "5Ft9E2ovN52AVMczVA3713uXmmBPczvUboB4YQpupu3aEYg7"
+      },
+      "identityUnchangedAcrossExecution": true,
+      "ownerBurn": false,
+      "executionReview": {
+        "nestedCallMatchedHotkeyAndSubnet": true,
+        "requestedAmountRaw": "18446744073709551615",
+        "actualBurnedAmountRaw": "158839753801",
+        "amountRule": "Runtime v488 do_burn_alpha caps requested amount to available stake; actual AlphaBurned event amount used, never the u64 maximum",
+        "buybackFundingVerified": false
+      },
+      "decodedOuterCall": {
+        "call_index": "0x0b02",
+        "call_function": "batch_all",
+        "call_module": "Utility",
+        "call_args": [
+          {
+            "name": "calls",
+            "type": "Vec<RuntimeCall>",
+            "value": [
+              {
+                "call_index": "0x0766",
+                "call_function": "burn_alpha",
+                "call_module": "SubtensorModule",
+                "call_args": [
+                  {
+                    "name": "hotkey",
+                    "type": "AccountId",
+                    "value": "5CDnZ6oeCrXKoL2VJQuQFxSfr49yQWz2DvdaYx47hr9QdM6D"
+                  },
+                  {
+                    "name": "amount",
+                    "type": "AlphaBalance",
+                    "value": 18446744073709551615
+                  },
+                  {
+                    "name": "netuid",
+                    "type": "NetUid",
+                    "value": 46
+                  }
+                ]
+              },
+              {
+                "call_index": "0x0766",
+                "call_function": "burn_alpha",
+                "call_module": "SubtensorModule",
+                "call_args": [
+                  {
+                    "name": "hotkey",
+                    "type": "AccountId",
+                    "value": "5HK5tp6t2S59DywmHRWPBVJeJ86T61KjurYqeooqj8sREpeN"
+                  },
+                  {
+                    "name": "amount",
+                    "type": "AlphaBalance",
+                    "value": 18446744073709551615
+                  },
+                  {
+                    "name": "netuid",
+                    "type": "NetUid",
+                    "value": 46
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "record": {
+        "id": "9449718-184",
+        "block": 9449718,
+        "hash": "0xa80de4c0be76ab12b400e3e71746d567ed1ca792dd91c42e8e55b1b6d0af1e8b",
+        "extrinsic": 12,
+        "eventIndex": 184,
+        "eventName": "SubtensorModule.AlphaBurned",
+        "timestamp": "2026-11-06T21:25:12+00:00",
+        "netuid": 46,
+        "name": "Instant",
+        "kind": "alpha",
+        "amountRaw": "1040188920358",
+        "taoSpentRaw": null,
+        "account": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+        "registeredAt": 3919107
+      },
+      "event": {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 12,
+        "event": {
+          "event_index": "0762",
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "5HK5tp6t2S59DywmHRWPBVJeJ86T61KjurYqeooqj8sREpeN",
+            1040188920358,
+            46
+          ]
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "AlphaBurned",
+        "attributes": [
+          "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+          "5HK5tp6t2S59DywmHRWPBVJeJ86T61KjurYqeooqj8sREpeN",
+          1040188920358,
+          46
+        ],
+        "topics": []
+      },
+      "sameExtrinsicEvents": [
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0508",
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+              "amount": 535037
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Withdraw",
+          "attributes": {
+            "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "amount": 535037
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+              "5CDnZ6oeCrXKoL2VJQuQFxSfr49yQWz2DvdaYx47hr9QdM6D",
+              158839753801,
+              46
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "5CDnZ6oeCrXKoL2VJQuQFxSfr49yQWz2DvdaYx47hr9QdM6D",
+            158839753801,
+            46
+          ],
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0b03",
+            "module_id": "Utility",
+            "event_id": "ItemCompleted",
+            "attributes": null
+          },
+          "event_index": 11,
+          "module_id": "Utility",
+          "event_id": "ItemCompleted",
+          "attributes": null,
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0762",
+            "module_id": "SubtensorModule",
+            "event_id": "AlphaBurned",
+            "attributes": [
+              "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+              "5HK5tp6t2S59DywmHRWPBVJeJ86T61KjurYqeooqj8sREpeN",
+              1040188920358,
+              46
+            ]
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "5HK5tp6t2S59DywmHRWPBVJeJ86T61KjurYqeooqj8sREpeN",
+            1040188920358,
+            46
+          ],
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0b03",
+            "module_id": "Utility",
+            "event_id": "ItemCompleted",
+            "attributes": null
+          },
+          "event_index": 11,
+          "module_id": "Utility",
+          "event_id": "ItemCompleted",
+          "attributes": null,
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0b01",
+            "module_id": "Utility",
+            "event_id": "BatchCompleted",
+            "attributes": null
+          },
+          "event_index": 11,
+          "module_id": "Utility",
+          "event_id": "BatchCompleted",
+          "attributes": null,
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0507",
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+              "amount": 0
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Deposit",
+          "attributes": {
+            "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "amount": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0600",
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+              "actual_fee": 535037,
+              "tip": 0
+            }
+          },
+          "event_index": 6,
+          "module_id": "TransactionPayment",
+          "event_id": "TransactionFeePaid",
+          "attributes": {
+            "who": "5Ek7jBfCW13KmTAvnqm2cHmkyCNVJaUJ7mZMFaARXK2F6iNp",
+            "actual_fee": 535037,
+            "tip": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 12,
+          "event": {
+            "event_index": "0000",
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 3109894370,
+                  "proof_size": 23575
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            }
+          },
+          "event_index": 0,
+          "module_id": "System",
+          "event_id": "ExtrinsicSuccess",
+          "attributes": {
+            "dispatch_info": {
+              "weight": {
+                "ref_time": 3109894370,
+                "proof_size": 23575
+              },
+              "class": "Normal",
+              "pays_fee": "Yes"
+            }
+          },
+          "topics": []
+        }
+      ],
+      "historicalIdentity": {
+        "NetworkRegisteredAt": 3919107,
+        "SubnetIdentitiesV3": {
+          "subnet_name": "Instant",
+          "github_repo": "https://github.com/Subnet46/sn46-validator",
+          "subnet_contact": "admin@bigtensor.com",
+          "subnet_url": "https://instantnetwork.ai",
+          "discord": "https://discord.com/BJ7DkeUmFm",
+          "description": "Lighning Fast Uncensored Inference",
+          "logo_url": "https://instant-network-logo.sebyverse.chatgpt.site/logo.png",
+          "additional": "Decentralized Marketplace for Accelerated Inference"
+        },
+        "SubnetOwner": "5Ft9E2ovN52AVMczVA3713uXmmBPczvUboB4YQpupu3aEYg7"
+      },
+      "precedingIdentity": {
+        "NetworkRegisteredAt": 3919107,
+        "SubnetIdentitiesV3": {
+          "subnet_name": "Instant",
+          "github_repo": "https://github.com/Subnet46/sn46-validator",
+          "subnet_contact": "admin@bigtensor.com",
+          "subnet_url": "https://instantnetwork.ai",
+          "discord": "https://discord.com/BJ7DkeUmFm",
+          "description": "Lighning Fast Uncensored Inference",
+          "logo_url": "https://instant-network-logo.sebyverse.chatgpt.site/logo.png",
+          "additional": "Decentralized Marketplace for Accelerated Inference"
+        },
+        "SubnetOwner": "5Ft9E2ovN52AVMczVA3713uXmmBPczvUboB4YQpupu3aEYg7"
+      },
+      "identityUnchangedAcrossExecution": true,
+      "ownerBurn": false,
+      "executionReview": {
+        "nestedCallMatchedHotkeyAndSubnet": true,
+        "requestedAmountRaw": "18446744073709551615",
+        "actualBurnedAmountRaw": "1040188920358",
+        "amountRule": "Runtime v488 do_burn_alpha caps requested amount to available stake; actual AlphaBurned event amount used, never the u64 maximum",
+        "buybackFundingVerified": false
+      },
+      "decodedOuterCall": {
+        "call_index": "0x0b02",
+        "call_function": "batch_all",
+        "call_module": "Utility",
+        "call_args": [
+          {
+            "name": "calls",
+            "type": "Vec<RuntimeCall>",
+            "value": [
+              {
+                "call_index": "0x0766",
+                "call_function": "burn_alpha",
+                "call_module": "SubtensorModule",
+                "call_args": [
+                  {
+                    "name": "hotkey",
+                    "type": "AccountId",
+                    "value": "5CDnZ6oeCrXKoL2VJQuQFxSfr49yQWz2DvdaYx47hr9QdM6D"
+                  },
+                  {
+                    "name": "amount",
+                    "type": "AlphaBalance",
+                    "value": 18446744073709551615
+                  },
+                  {
+                    "name": "netuid",
+                    "type": "NetUid",
+                    "value": 46
+                  }
+                ]
+              },
+              {
+                "call_index": "0x0766",
+                "call_function": "burn_alpha",
+                "call_module": "SubtensorModule",
+                "call_args": [
+                  {
+                    "name": "hotkey",
+                    "type": "AccountId",
+                    "value": "5HK5tp6t2S59DywmHRWPBVJeJ86T61KjurYqeooqj8sREpeN"
+                  },
+                  {
+                    "name": "amount",
+                    "type": "AlphaBalance",
+                    "value": 18446744073709551615
+                  },
+                  {
+                    "name": "netuid",
+                    "type": "NetUid",
+                    "value": 46
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "minimumPerEventRaw": "100000000000",
+  "multisigCallHashVerification": {
+    "encodedInnerCall": "0x07662238eef0d176f024b0cfd6844db4e24965b931518862382f0cf6327df4f3bc597f60a04d360000004c00",
+    "computedBlake2_256": "0x5520e1d762b1ad5108e3fdc240db13b03a456bcac019172ac8708623f42ed34b",
+    "multisigEventCallHash": "0x5520e1d762b1ad5108e3fdc240db13b03a456bcac019172ac8708623f42ed34b",
+    "matches": true
+  },
+  "decoderNote": "Library-enriched RuntimeCall call_hash fields are omitted; the independently re-encoded inner call Blake2_256 matches the actual MultisigExecuted event hash. Multisig result Ok, both Utility batch items and the outer extrinsics succeeded.",
+  "burnAmountSource": "https://raw.githubusercontent.com/RaoFoundation/subtensor/v488/pallets/subtensor/src/staking/recycle_alpha.rs",
+  "fundingLimits": "These are explicit alpha-burn executions. No matching AddStakeBurn marker occurs; purchase funding, customer revenue and price effects are not established. Instant sender differs from the registered owner at execution. Ormas multisig matches its registered owner at execution.",
+  "scanEvidenceSha256": "3ca50e5d4e5a89cc55a99bb54eacc839867c6db39602bbbabd0fe6a9c977319e",
+  "burnImplementationSha256": "754047002707c25ce6c0fa7dd12af232b11684683f8f9121c161862a8d70a76e",
+  "smallEvents": "36 below-threshold alpha burns and 30 recycling events retained in local scan evidence; excluded from public qualifying transaction records."
+}
