@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-06T04:54:22.182363+00:00",
-  "block": 9444741,
-  "hash": "0xf464c82f79d08c80d60849a7c5be2a9eff9ccc7848d4b85641fb715719b5224f",
-  "chainTime": 1793940588000,
+  "checkedAt": "2026-11-06T15:20:13.000584+00:00",
+  "block": 9447888,
+  "hash": "0x40ad1ef83e61648f8d711e7e9f24d6d67d23388f8970bef7bf723d744c696bb7",
+  "chainTime": 1793978352000,
   "runtime": 488,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -1591,7 +1591,7 @@
     "96": "Verathos",
     "97": "Ingot",
     "98": "NeverPlayAlone",
-    "99": "Thirty Spokes",
+    "99": "Unknown",
     "100": "Cortex",
     "101": "Tag101",
     "102": "ConnitoAI",
@@ -1624,9 +1624,9 @@
   },
   "observations": [],
   "ownerSnapshot": {
-    "block": 9440602,
-    "hash": "0x7b7d4fcf45dbd8e35c9e7cc1425d103030dd872982f6cb3813ea8c4db8d1ae1f",
-    "checkedAt": "2026-11-05T15:06:54.776716+00:00",
+    "block": 9447793,
+    "hash": "0x0fcc1b9b08c29e0fb1c22f3f79f0269d9504d72369f09e7e7321a7cb072b5a5e",
+    "checkedAt": "2026-11-06T15:06:08.055067+00:00",
     "owners": {
       "1": "5HCFWvRqzSHWRPecN7q8J6c7aKQnrCZTMHstPv39xL1wgDHh",
       "2": "5EcYQ3W77ndrmMWdvVQusoFqY8doxfP3U2zrh7xZQiaz7avY",
@@ -1726,7 +1726,7 @@
       "96": "5CGq1JQhmZmR8w3pXFqycUgX9mcLt8bPwMZ8YDJbEmELpw7X",
       "97": "5GnW8owmMGn83WqL9JNYytmw458UYrTT6Ra5fH8TTUkzEbTb",
       "98": "5EWzZCNsJe72k44Jd9oPUXRRkxVgFAtjyohgSwmTu6F8MBHM",
-      "99": "5DebFXsw76JvoG5j6qQRoyNK79qBEvd6A2trULrA6DGgQLYX",
+      "99": "5HDnT2yz6pJE2dWvKDvmCoXFJvzHCtecupTHSnMcqSxHLkpG",
       "100": "5FX6kmhYwTYRFaZjxEo7k9DaG8qRmqrJtLTMGRgnfjRcXiWU",
       "101": "5H8dNvi1jZRe1dcYN2FdknWKxfGx6u1o9pYm5zRMCZyy2Ex3",
       "102": "5Hf5DCoutc7oKxjpvVr6YvhNmBimiw7YsMwaBH4htSNFJZYA",
@@ -1760,14 +1760,14 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9444741,
-    "finalizedHash": "0xf464c82f79d08c80d60849a7c5be2a9eff9ccc7848d4b85641fb715719b5224f",
-    "checkedAt": "2026-11-06T04:54:22.182363+00:00",
+    "toBlock": 9447888,
+    "finalizedHash": "0x40ad1ef83e61648f8d711e7e9f24d6d67d23388f8970bef7bf723d744c696bb7",
+    "checkedAt": "2026-11-06T15:20:13.000584+00:00",
     "eventCount": 17,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Reviewed runtime definitions, positive decoding controls and per-block runtime checks retained. Historical allocation and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history.",
-    "evidence": "/evidence/2026-11-05-chain-monitor-2349.json"
+    "evidence": "/evidence/2026-11-06-daily-chain.json"
   },
   "lifecycleResets": [
     {
@@ -1808,6 +1808,19 @@
       ],
       "reason": "Finalized lifecycle cleanup removed the prior identity and reset registration/storage; not an owner allocation transaction. New registration at 9420559. New identity unset at reviewed cutoff.",
       "evidence": "/evidence/2026-11-02-chain-monitor-1657.json"
+    },
+    {
+      "netuid": 99,
+      "block": 9447219,
+      "after": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "reason": "Finalized cleanup removed Thirty Spokes identity. Replacement registration at 9447220; new identity unset. No owner allocation event.",
+      "evidence": "/evidence/2026-11-06-daily-lifecycle.json"
     }
   ]
 }

@@ -1,0 +1,1211 @@
+{
+  "version": 1,
+  "date": "2026-11-06",
+  "title": "Bittensor Daily News — November 6, 2026",
+  "summary": "SN92 REAX reaches the top tied rank on the independent Decision Index; SN64 Chutes lists Qwen3.8 open weights. SN99’s Thirty Spokes registration is replaced, with its successor still unnamed. Plus wallet activation facts, SN121’s sealed-reference challenge, miner tooling and Shizzy’s Leadpoet replay and Carbon schedule.",
+  "publishedAt": "2026-11-06T15:23:31.357204+00:00",
+  "coverageStart": "2026-11-05T15:27:46.599300+00:00",
+  "coverageEnd": "2026-11-06T15:23:31.357204+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [
+    {
+      "headline": "OpenTensor explains post-quantum wallets; the shared activation gate remains off",
+      "summary": "The Foundation unveiled ML-DSA-65/Falcon signature options and optional key rotation in a new November6 thread. It says standard post-quantum accounts need no registration deposit, while rotating accounts permanently reserve0.2TAO. Existing wallets remain supported. This explains code already covered in Release487/488; it does not establish enabled mainnet signing. At finalized runtime488 block9446756, timestamp11:32:48UTC, AdminUtils.HashedAccountsEnabled remained false. The reviewed v488 source routes fixed and rotating post-quantum authorization through check_mldsa_authorization, which checks that shared gate. No wallet creation, fund movement or cryptographic audit was performed. A later finalized check at block 9,447,649 (14:31:24 UTC November 6) also reports HashedAccountsEnabled=false.",
+      "sources": [
+        {
+          "url": "https://x.com/opentensor/status/2118654269947785444",
+          "label": "OpenTensor official explanation or reviewed implementation"
+        },
+        {
+          "url": "https://x.com/opentensor/status/2118654365691179324",
+          "label": "OpenTensor official explanation or reviewed implementation"
+        },
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3220",
+          "label": "OpenTensor official explanation or reviewed implementation"
+        },
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3259",
+          "label": "OpenTensor official explanation or reviewed implementation"
+        },
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3304",
+          "label": "OpenTensor official explanation or reviewed implementation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RaoFoundation/subtensor/v488/pallets/hashed-accounts/src/mldsa.rs",
+          "label": "OpenTensor official explanation or reviewed implementation"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/RaoFoundation/subtensor/v488/runtime/src/lib.rs",
+          "label": "OpenTensor official explanation or reviewed implementation"
+        },
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-06-daily-lifecycle.json",
+          "label": "Finalized wallet-gate snapshot"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "Useful new official explanation, but the code was already covered and finalized activation is still disabled; no newly verified activated capability for a four-star quote.",
+      "status": "verified",
+      "importance": "medium"
+    },
+    {
+      "headline": "Shizzy’s Leadpoet replay is public; Carbon is scheduled today",
+      "summary": "The completed SN71 Leadpoet interview is now the site’s public default, with the native YouTube player showing 37:26. It covers the move from lead research toward outreach agents. The November 5 members-only news update is separately labelled restricted, with 7:03 on its player. SN116 Carbon remains scheduled for November 6 at 1:30 PM Eastern / 10:30 AM Pacific; it is upcoming, not a completed replay. The Live and Videos tabs and each relevant watch page were checked; no full audiovisual review is claimed.",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=q2pGNLUvCm4",
+          "label": "Shizzy completed SN71 Leadpoet public interview"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UYK4oIbF45w",
+          "label": "Shizzy November 5 members-only update"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dGwR6XOE9tU",
+          "label": "Shizzy upcoming SN116 Carbon livestream"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "Original Shizzy coverage with native completed, membership and upcoming labels.",
+      "status": "verified",
+      "importance": "medium"
+    }
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta: two previously archived burns enter today’s dated news",
+          "summary": "Two successful SN8 alpha burns already published in the permanent archive now join the full edition: 195.917929437 alpha at block 9,443,166 (23:34:48 UTC November 5), and 125 alpha at block 9,443,324 (00:06:24 UTC November 6, still November 5 Eastern). Each individually exceeds the 100-native-token threshold. They are dated carry-forwards, not new events in today’s extension and not counted twice. The complete new interval found no additional qualifying individual burn.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-05-chain-monitor-2349.json",
+              "label": "SN8 finalized successful event and registration evidence"
+            },
+            {
+              "url": "https://shizzyunchained.com/subnet-news/burns",
+              "label": "Permanent qualifying transaction-burn archive"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Exact qualifying supply events with dates preserved; already archived rather than a new burn announcement.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": [
+        {
+          "headline": "SN17 404—GEN merges opt-in concurrent native proof contexts",
+          "summary": "November 5 PR82 merges opt-in support for one to eight independent native prover contexts. They grow lazily as calls queue; the default remains one. Proof format, ABI and parameter pins stay unchanged, while each initialized context adds memory for its constraint system and proving key. The team reports local artifact tests; a published release and installation by miners were not verified.",
+          "sources": [
+            {
+              "url": "https://github.com/404-Repo/404-gen-subnet/pull/82",
+              "label": "SN17 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Bounded miner SDK capability with explicit resource tradeoff; no independently verified released deployment.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Jacob Robert Steeves",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": [
+        {
+          "headline": "SN36 Weir commits GPU price floor and model-linked activation fee checks",
+          "summary": "November 5 Eastern commits accept GPU prices between half the model cap and the full cap; under-floor GPUs are not rented and earn no idle pay. New activations remember the model, with a seven-day deadline to top up if a higher-fee model is reported. Insufficiently covered GPUs are withheld from earnings and rental; expiry resets activation, restoring prior payment as credit. Legacy activations without model records are exempt. Code and upstream tests were reviewed, without running those tests or verifying live rollout.",
+          "sources": [
+            {
+              "url": "https://github.com/weircompute/weir-subnet/commit/2f4bd6f9b4eb3954d9295480061388299888986a",
+              "label": "SN36 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/weircompute/weir-subnet/commit/62afca9be877b3d039540a1855102415987083ce",
+              "label": "SN36 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Specific marketplace participation changes; code does not establish operator rollout or economic impact.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": [
+        {
+          "headline": "SN49 Nepher pins its simulation sandbox dependency to the installed prebundle",
+          "summary": "November 6 PR12 pins the simulation sandbox’s aiohttp dependency to the version bundled with Isaac Sim 6.1. It avoids replacing the shared copy to satisfy a newer Isaac Lab requirement and breaking extension symlinks. The small code diff was reviewed; a rebuilt image, live rollout or robotics task result was not verified.",
+          "sources": [
+            {
+              "url": "https://github.com/nepher-ai/nepher-subnet/commit/c4c3f11dac137183dc392f27dad89986a328dda7",
+              "label": "SN49 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Bounded operator compatibility fix, not a new robotics capability or adoption milestone.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": [
+        {
+          "headline": "SN50 Synth reports an AI-built forecaster briefly led its hourly competition",
+          "summary": "At 17:25 UTC November 5, SN50 Synth reported that a model built by a Gemini 4 Argon agent topped its live Crypto1h competition the previous day, then fell outside the top 100 while its 24-hour ranking improved. Both the transient lead and reversal matter. This is a team-reported competition observation, not independently reproduced performance or a financial-return promise.",
+          "sources": [
+            {
+              "url": "https://x.com/SynthdataCo/status/2118394310433382400",
+              "label": "SN50 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A useful competitive-model experiment; transient leaderboard results remain a useful competition update.",
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": [
+        {
+          "headline": "SN51 Lium merges container-start and dependency safeguards",
+          "summary": "November 6 UTC merges tighten container-start timing, lock PDM dependencies, handle Redis failures without scoring them as zero and retry repository DNS through a backup helper network. Further fixes preserve customer-ordered disk capacity, expire stale throughput failures and distinguish platform filler shutdown from provider load. The changes and reported upstream tests were reviewed; no independent test run, fleet rollout or repaired customer outcome is claimed.",
+          "sources": [
+            {
+              "url": "https://github.com/Datura-ai/lium-io/commit/7f730ba6a89e5b3b4e85781a0b29096852afc711",
+              "label": "SN51 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/commit/817a5e432012271eeb0ae728fda6664529022c65",
+              "label": "SN51 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/pull/2093",
+              "label": "SN51 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/pull/2116",
+              "label": "SN51 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/pull/2114",
+              "label": "SN51 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/pull/2106",
+              "label": "SN51 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/pull/2109",
+              "label": "SN51 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/pull/2092",
+              "label": "SN51 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/pull/2119",
+              "label": "SN51 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Bounded primary-source development; no independently verified production rollout.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": [
+        {
+          "headline": "SN60 Bitsec announces BitIgnite referrals for Sentios Continuous Coverage",
+          "summary": "At 12:25 PM Eastern November 5, SN60 Bitsec announced BitIgnite referrals for Sentios Continuous Coverage. The original and its graphic describe 10% on an introduced team’s first and further purchases over six months. This is the team’s offer, not evidence of commissions paid or customer sales. No affiliate arrangement or endorsement by Shizzy is implied.",
+          "sources": [
+            {
+              "url": "https://x.com/bitsecai/status/2118394220662628484",
+              "label": "SN60 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Concrete sales-distribution program, with no verified resulting adoption or material security capability.",
+          "status": "developing",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": [
+        {
+          "headline": "SN62 Ridges merges Docker storage metrics for validators",
+          "summary": "November 5 PR538 adds Docker backing-filesystem space and inode metrics, distinguishes them from root-disk measurements and supports a mounted-path override. Remote or inaccessible Docker storage no longer silently falls back to an unrelated local disk. The merge is verified; fleet deployment is not.",
+          "sources": [
+            {
+              "url": "https://github.com/ridgesai/ridges/pull/538",
+              "label": "SN62 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful operator observability with no independently verified service or model-performance result.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": [
+        {
+          "headline": "SN64 Chutes announces Qwen3.8 2.4T A95B at $2 input and $6 output",
+          "summary": "Late-found November 5 announcement, posted at 9:30 AM Eastern: SN64 Chutes says Qwen3.8 2.4T A95B is live, with text-only input, always-on thinking and a 262K-token context. The stated total is 2.4 trillion parameters with 95 billion active per token. Published pricing is $2 per million input tokens and $6 per million output tokens. The post distinguishes these open weights from the Max API’s larger context. This review verified the original announcement, not an inference/billing test; Max benchmark claims are not treated as measurements of this hosted endpoint.",
+          "sources": [
+            {
+              "url": "https://x.com/chutes_ai/status/2118350186892202434",
+              "label": "SN64 Chutes November 5 model, context and pricing announcement"
+            },
+            {
+              "url": "https://x.com/chutes_ai/status/2118350188838375634",
+              "label": "SN64 Chutes linked model access and benchmark attribution"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A concrete inference catalog announcement with useful cost and context details; endpoint performance and adoption were not independently tested.",
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": [
+        {
+          "headline": "SN66 Conjectures prepares a 307-target catalog after two withdrawals",
+          "summary": "November 5 PR194 adds 20 targets to the checked-in catalog, initially taking it from 289 to 309. Follow-up PR195 withdraws two targets after reported solved status, leaving 307 targets and 614 tasks; only open part (iii) of Erdős 12 remains rewarded. The verifier build, sandbox controls, dedicated worker and approved production rollout remain gates. This is a task-catalog change, not 20 solved problems or independent certification of the withdrawn proofs.",
+          "sources": [
+            {
+              "url": "https://github.com/conjectures-io/conjectures-validator/pull/194",
+              "label": "SN66 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/conjectures-io/conjectures-validator/pull/191",
+              "label": "SN66 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/conjectures-io/conjectures-validator/pull/195",
+              "label": "SN66 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Meaningful participation expansion, bounded to competition/task-catalog scope and explicitly gated deployment.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": [
+        {
+          "headline": "SN71 Leadpoet merges bounded admission-review recovery and prospective judge routes",
+          "summary": "November 5–6 Arena merges add bounded admission recovery, prospective judge routes, provenance-aware training exports and scored-round publication safeguards. PR1088 preserves saved scored rounds when publication reads are temporarily unavailable; genuine malformed evidence keeps its integrity checks. Earlier recovery and database migrations remain operationally gated, and a published/tested DeepSeek image is separate from canonical activation. These merges do not establish a recovered production round or new customer adoption.",
+          "sources": [
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1051",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1052",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1054",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1058",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1059",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1061",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1064",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1071",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1072",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1076",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1078",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1077",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1081",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1086",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1087",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/978",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1088",
+              "label": "SN71 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Arena operator safeguards and model-routing changes, not a verified new customer-facing launch.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": [
+        {
+          "headline": "SN88 Investing88 announces Friday MetaTrader expansion alongside a weekly distribution claim",
+          "summary": "At 7:30 PM Eastern November 5, SN88 Investing88 said its Incentivized Conviction weekly distribution was complete, listing nine alpha amounts and a non-perpetual-lock exclusion. It also planned a MetaTrader expansion for Friday November 6. This review did not independently verify the transfers or launch execution; the expansion remains a plan.",
+          "sources": [
+            {
+              "url": "https://x.com/Investing88ai/status/2118501115067273307",
+              "label": "SN88 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Specific near-term product plan and routine team-reported distribution; not independent adoption or financial-return evidence.",
+          "status": "developing",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": [
+        {
+          "headline": "SN89 InfiniteQuant documents the end of HF and Markets, with Agent payments planned",
+          "summary": "The current master README says HF ended and Markets was discontinued effective November 5 at 00:00 UTC; new HF receipts are refused while earlier ones finish grading. It documents 30% of total emission for LF, 50% for Agent competition and 20% for referrers, with weekly agent-book payments planned from November 9 at 08:00 UTC. Those are documented competition policies, not a verified eTAO change or executed payment. Separate code adds 16 reduce-only daily changes beyond the normal 48 from November 7 at 00:00 UTC; deployed activation remains unverified. The effective date is explicit; the first announcement time was not established.",
+          "sources": [
+            {
+              "url": "https://github.com/DeltaCompute24/InfiniteQuant-Subnet/commit/e323bb9ac51e95ea0a9828e21ce287520de87373",
+              "label": "SN89 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/DeltaCompute24/InfiniteQuant-Subnet/blob/master/README.md",
+              "label": "SN89 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Bounded participation safeguard with future effective date; deployment and current environment remain unverified.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": [
+        {
+          "headline": "SN92 REAX 1.3 records 74.0 on the independent Decision Index",
+          "summary": "On November 6, the public Decision Index 0.4.1 shows SN92 REAX 1.3 at 74.0, ahead numerically of GLiDE 27B at 73.4, while the full-results table marks both at tied rank =1. The Full score combines 60% private same-skill tests and 40% private new-domain tasks; public benchmarks are displayed but do not count. Open model files and a two-part engine are available. The model repository was last modified November 3, so today’s development is the independent result and announcement, not a newly uploaded model. The card’s internal 73.71 measurement is a separate public-suite result. No independent rerun, general intelligence superiority or commercial adoption is claimed.",
+          "sources": [
+            {
+              "url": "https://huggingface.co/spaces/multimodalart/jev-decision-index",
+              "label": "Independent November 6 Decision Index and tied-rank table"
+            },
+            {
+              "url": "https://huggingface.co/decisionmodels/REAX-1.3",
+              "label": "SN92 REAX open model card, requirements and internal-measurement limits"
+            },
+            {
+              "url": "https://x.com/const_reborn/status/2118719893105213800",
+              "label": "Const November 6 announcement and context"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-06-model-challenge-review.json",
+              "label": "SN92 dated public-page snapshot and review limits"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A useful independently displayed model result with open artifacts; a leaderboard result does not establish a broad capability or adoption breakthrough.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "updates": [
+        {
+          "headline": "SN99 Thirty Spokes registration is replaced; successor identity remains unset",
+          "summary": "At 13:00:24 UTC November 6, finalized block 9,447,194, extrinsic 48 successfully removed SN99 and queued a replacement registration with a 252.775130692 TAO lock. Cleanup removed the Thirty Spokes identity at block 9,447,219; block 9,447,220 activated the replacement at 13:05:36 UTC. The successor has a different owner key and no identity set at today’s snapshot. This establishes registration replacement, not a negotiated sale or a successor product. Historical Thirty Spokes coverage remains labelled under its old registration.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-06-daily-lifecycle.json",
+              "label": "SN99 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://x.com/TensiaBot/status/2118690081586253871",
+              "label": "SN99 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Verified slot lifecycle affects historical project identity and subnet discovery. No new launched capability, adoption or disclosed sale verified.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": [
+        {
+          "headline": "SN107 Minos merges an optional local ComputeHorde SDK runner",
+          "summary": "PR41 merged at 00:54:31 UTC November 6, still November 5 Eastern. It adds opt-in CONTAINER_RUNNER=chsdk alongside the native default, translating validator Docker jobs and lifecycle handling through the ComputeHorde SDK. The implementation imports the SDK’s local Docker client; it does not establish remote distributed execution or a production rollout. Documentation and relevant implementation were reviewed, without installing or running the upstream software.",
+          "sources": [
+            {
+              "url": "https://github.com/minos-protocol/minos_subnet/pull/41",
+              "label": "SN107 Minos merged local ComputeHorde SDK integration"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A bounded validator compatibility change, with code separated from production execution.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": [
+        {
+          "headline": "SN114 SOMA merges a fix preserving Claude Code’s native request format",
+          "summary": "Late-found November 5 PR244 pins off Anthropic-to-OpenAI translation for Claude Code benchmark requests. Its documentation explains that conversion drops cache-control fields, thinking signatures and system blocks; native Messages requests instead pass through to the upstream gateway. The code also sets medium reasoning effort. The merge is verified; a secondary account of reverted competition uploads and an extended deadline still lacks independently inspected original operational confirmation. No corrected benchmark score or deployment outcome is claimed.",
+          "sources": [
+            {
+              "url": "https://github.com/DendriteHQ/SOMA/pull/244",
+              "label": "SN114 SOMA November 5 native Anthropic request-format fix"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A bounded validator compatibility change, with code separated from production execution.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": []
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": [
+        {
+          "headline": "SN118 Ditto announces a Home dashboard for conversations and agent activity",
+          "summary": "At 6:26 PM Eastern November 5, SN118 Ditto announced a new Home dashboard. Three inspected primary screenshots show conversation continuation, memory-theme cards, saved files and agent activity split into attention, completed and in-progress views. The screenshots use sample content. The team says the dashboard is live at app.heyditto.ai; authenticated end-to-end functionality and adoption were not tested.",
+          "sources": [
+            {
+              "url": "https://x.com/heydittoai/status/2118485011754336751",
+              "label": "SN118 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://app.heyditto.ai/",
+              "label": "SN118 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Concrete user navigation and context-management improvement, supported by three inspected sample screenshots; no major capability breakthrough or adoption proof.",
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": [
+        {
+          "headline": "SN121 sundae_bar opens SBC35 with a committed sealed reference set",
+          "summary": "The official Executive Presentation Strategy Skill challenge opened November 5 at noon Eastern and closes November 7 at noon Eastern. It tests a submitted skill across seven scenarios using a fixed base agent. Inputs, rubric and the SHA256 commitment to the sealed reference set are public during the challenge. Per-scenario/per-grader scores and integrity-gate notes are visible, but quality judges’ written explanations stay withheld until close, when the reference set and full validator outputs are to be published. This primary wording differs from a secondary digest suggesting all judge feedback is immediately available. Payout execution and commercial integration were not tested.",
+          "sources": [
+            {
+              "url": "https://www.sundaebar.ai/lab/challenge/0a387000-cd14-426e-a68c-35302a44c205",
+              "label": "SN121 official SBC35 dates, sealed-reference and feedback rules"
+            },
+            {
+              "url": "https://www.sundaebar.ai/lab",
+              "label": "SN121 live challenge and leaderboard"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-06-model-challenge-review.json",
+              "label": "SN121 dated public-page snapshot and review limits"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A meaningful participation and evaluation-transparency change, bounded to a routine skills competition.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": [
+        {
+          "headline": "SN123 MANTIS adjusts configured competition weights",
+          "summary": "November 6 UTC configuration changes set CADUSD, NZDUSD, CHFUSD and XAGUSD competition weights to zero and raise BURN_PCT from 0.45 to 0.52. This is a documented UID 0 allocation setting, not a verified transaction burn or eTAO event. The FLOW document weight moves from 1.178 to 1.020 while its stated 5% share stays unchanged. Live rollout is unverified.",
+          "sources": [
+            {
+              "url": "https://github.com/Barbariandev/MANTIS/commit/9162ad295da0400eea08c8f27bb255e90be2ac1e",
+              "label": "SN123 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/Barbariandev/MANTIS/commit/ace548a94cadc3a20a02ace50ea4d83b07121e9d",
+              "label": "SN123 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Bounded primary-source development; no independently verified production rollout.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": [
+        {
+          "headline": "SN127 Zils merges bounded GPU waits and overlapping model intake",
+          "summary": "November 5 merges bound GPU waits to 600 seconds, permit prefetching up to three claims with serial admission and a 60 GiB disk floor, and avoid consuming a daily attempt while another pool owns the GPU. Follow-up PR211 corrects the displayed d3-mini input cap to 8,192; it does not expand context. These are operator safeguards in merged code, with rollout and restored service unverified.",
+          "sources": [
+            {
+              "url": "https://github.com/ooo-hq/zils/pull/208",
+              "label": "SN127 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/pull/209",
+              "label": "SN127 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/pull/210",
+              "label": "SN127 primary announcement, implementation or finalized evidence"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/pull/211",
+              "label": "SN127 primary announcement, implementation or finalized evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Specific operator safeguards and intake efficiency; merged code and operator reports do not establish rollout.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "All 128 active slots reconciled against finalized owners, identities, market returns and sector evidence. Identity-linked default repositories queried over a seven-day overlap; individual access and pagination outcomes retained.",
+      "All dated November 6 SubnetRadar briefs in the loaded index read as discovery. Signed-in Grok full-roster discovery and qualitative top-five review returned; selected originals, model cards, independent benchmark and challenge pages verified.",
+      "Const Reborn, TensiaFDN and TensiaBot originals and reply views inspected; owner originals, reposts, replies and bookmarks reviewed as discovery where returned. Complete chain event scan, lifecycle review and 128 owner-wallet collection completed. Videos and Live tabs plus relevant watch pages checked."
+    ],
+    "gaps": [
+      "Repository access was limited by HTTP403/429 responses and some missing links; capped default-branch results are not exhaustive code coverage. Original X timelines were not exhaustively searched for every subnet.",
+      "Original Discord evidence for several brief-only operating and safety claims remains unavailable; Affine migration/evaluation claims and other unresolved leads are retained for follow-up. No unverified misconduct allegation is published.",
+      "Authenticated TaoStats /v1 cross-check lacks a configured API key. Public SN113 still displays Unknown. Independent benchmark reruns, hosted inference tests and full audiovisual listening were not performed.",
+      "The final Grok omission request reached its usage limit after fresh discovery returned. Secondary leads were checked directly where possible; this does not establish exhaustive omission clearance."
+    ]
+  }
+}

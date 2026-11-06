@@ -31,7 +31,9 @@ test("review corrections follow current products rather than legacy descriptions
  assert.ok(tags(24).includes("training")&&!tags(24).includes("inference"));
  assert.ok(tags(74).includes("software")&&!tags(74).includes("agents"));
  assert.ok(tags(96).includes("inference")&&!tags(96).includes("training"));
- assert.ok(tags(99).includes("inference")&&tags(99).includes("optimization"));
+ // Registration 9447220 replaced Thirty Spokes without a successor identity.
+ assert.equal(data.subnets.find(row=>row.netuid===99).name,"Unknown");
+ assert.deepEqual(tags(99),[]);
  assert.ok(tags(104).includes("inference")&&!tags(104).includes("forecasting"));
  assert.ok(tags(94).includes("training")&&tags(94).includes("agents"));
  assert.equal(data.subnets.find(row=>row.netuid===29).basis,"Owner-submitted on-chain description");

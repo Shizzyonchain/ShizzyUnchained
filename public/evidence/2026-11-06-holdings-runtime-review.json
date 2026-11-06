@@ -1,0 +1,10 @@
+{
+  "scope": "Read-only all128ownerholdings collector schema review forruntime488",
+  "sources": [
+    "https://raw.githubusercontent.com/RaoFoundation/subtensor/v486/pallets/subtensor/src/rpc_info/stake_info.rs",
+    "https://raw.githubusercontent.com/RaoFoundation/subtensor/v488/pallets/subtensor/src/rpc_info/stake_info.rs",
+    "https://raw.githubusercontent.com/RaoFoundation/subtensor/v488/runtime/src/lib.rs"
+  ],
+  "finding": "Entire stake_info.rs and runtimeStakeInfoRuntimeApi implementation sections byte-equal between486and488. StakeAvailability retains threeCompactAlphaBalance fields total/locked/available; StakeInfo keeps hotkey/coldkey,CompactNetUid,stake,locked,emission,taoemission,drain,bool. Existing collector SCALE decoding matches that order; exact complete runtime488metadata fixtureguard added before reading. SystemAccountdecodedfields validated bycollector; independent perhotkeySN51/SN64totals required.",
+  "execution": "No signing ortransactions; snapshotnotwholeteamportfolio. No byte-for-byteWASMreproduction."
+}

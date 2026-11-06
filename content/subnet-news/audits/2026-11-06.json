@@ -1,0 +1,3843 @@
+{
+  "date": "2026-11-06",
+  "checkedAt": "2026-11-06T15:23:31.357204+00:00",
+  "dailyWorkflowComplete": false,
+  "publication": {
+    "status": "RELEASE_VALIDATED_AWAITING_PRODUCTION",
+    "dailyWorkflowComplete": false,
+    "validatedAt": "2026-11-06T15:27:30.748405+00:00",
+    "checks": {
+      "newsAnd128Holdings": "PASS",
+      "sourceText": "PASS",
+      "productionSecurityAudit": "PASS",
+      "lint": "PASS",
+      "unitTests": "204PASS",
+      "browserTests": "74PASS desktop and phone",
+      "productionBuild": "PASS",
+      "burnTests": "5PASS",
+      "ownedNewsLinks": "PASS"
+    },
+    "limits": "Daily workflow remains incomplete as an exhaustive-source claim: final Grok omission usage limit, authenticated TaoStats key absent and original Discord/individual-X access gaps. Available sourced edition prepared for publication."
+  },
+  "chainReviews": {
+    "etao": {
+      "status": "DONE",
+      "fromBlock": 9444742,
+      "toBlock": 9447888,
+      "hash": "0x40ad1ef83e61648f8d711e7e9f24d6d67d23388f8970bef7bf723d744c696bb7",
+      "throughTime": "2026-11-06T15:19:12+00:00",
+      "checkedAt": "2026-11-06T15:20:13.000584+00:00",
+      "eventCount": 0,
+      "gaps": [],
+      "archiveUpdated": true,
+      "evidence": "/evidence/2026-11-06-daily-chain.json",
+      "newsDisposition": "No new allocation or qualifying burn events. Counts {'AlphaBurned': 79, 'AlphaRecycled': 48}; all small successful burns retained in evidence only, recycling excluded. Two earlier SN8 events carried into dated news without recounting.",
+      "liveVerifiedAt": null
+    },
+    "burns": {
+      "status": "DONE",
+      "fromBlock": 9444742,
+      "toBlock": 9447888,
+      "hash": "0x40ad1ef83e61648f8d711e7e9f24d6d67d23388f8970bef7bf723d744c696bb7",
+      "throughTime": "2026-11-06T15:19:12+00:00",
+      "checkedAt": "2026-11-06T15:20:13.000584+00:00",
+      "eventCount": 0,
+      "gaps": [],
+      "archiveUpdated": true,
+      "evidence": "/evidence/2026-11-06-daily-chain.json",
+      "newsDisposition": "No new allocation or qualifying burn events. Counts {'AlphaBurned': 79, 'AlphaRecycled': 48}; all small successful burns retained in evidence only, recycling excluded. Two earlier SN8 events carried into dated news without recounting.",
+      "liveVerifiedAt": null
+    }
+  },
+  "ownerHoldings": {
+    "status": "DONE",
+    "block": 9447800,
+    "hash": "0x7681c7714d3ea2728b4a906b45124f003ce38fcd2a4918696e236e30d3df3dab",
+    "asOf": "2026-11-06T15:01:36+00:00",
+    "wallets": 128,
+    "evidence": "/evidence/owner-holdings-9447800.json",
+    "runtimeReview": "Runtime488 full metadata fixture and StakeInfo source/API layout comparison retained; SN51/SN64 independent checks passed. No deployed WASM reproduction claimed.",
+    "validation": "PASS npm run validate:owner-holdings at finalized9447800; live verification pending."
+  },
+  "marketReview": {
+    "source": "https://shizzyunchained.com/api/backend/v1/screener",
+    "observedAt": "2026-11-06T15:00:51.911867+00:00",
+    "basis": "Shared alpha/TAO changes, not USD returns or proof of a catalyst. Registration resets can make historical comparisons discontinuous.",
+    "rows": [
+      {
+        "netuid": 51,
+        "change24hPct": 3.5913251085285074,
+        "change7dPct": -2.121340700868546
+      },
+      {
+        "netuid": 64,
+        "change24hPct": -0.0136453602903005,
+        "change7dPct": 0.6028303375450828
+      },
+      {
+        "netuid": 4,
+        "change24hPct": -0.8256356593762676,
+        "change7dPct": -0.19353082857817192
+      },
+      {
+        "netuid": 8,
+        "change24hPct": 1.8443767566371343,
+        "change7dPct": 5.194577520202371
+      },
+      {
+        "netuid": 44,
+        "change24hPct": 1.212868495181285,
+        "change7dPct": 6.172632885826084
+      },
+      {
+        "netuid": 120,
+        "change24hPct": -0.6356123717276521,
+        "change7dPct": 1.820601804605084
+      },
+      {
+        "netuid": 53,
+        "change24hPct": -6.674811630534518,
+        "change7dPct": -15.99157074012812
+      },
+      {
+        "netuid": 28,
+        "change24hPct": -4.314571570288792,
+        "change7dPct": -19.549277549158116
+      },
+      {
+        "netuid": 3,
+        "change24hPct": -1.0242432416654421,
+        "change7dPct": -1.1993471551776453
+      },
+      {
+        "netuid": 9,
+        "change24hPct": -0.7169346799766002,
+        "change7dPct": 1.2366453711636565
+      },
+      {
+        "netuid": 68,
+        "change24hPct": 0.1896389174746508,
+        "change7dPct": 5.887105139406146
+      },
+      {
+        "netuid": 75,
+        "change24hPct": -2.4682615987351513,
+        "change7dPct": -7.5094731849442695
+      },
+      {
+        "netuid": 110,
+        "change24hPct": 3.0907085913795957,
+        "change7dPct": 6.539231306609138
+      },
+      {
+        "netuid": 56,
+        "change24hPct": -1.148723824706488,
+        "change7dPct": 0.05180776803786534
+      },
+      {
+        "netuid": 95,
+        "change24hPct": -0.5639797113513432,
+        "change7dPct": -8.83650078250585
+      },
+      {
+        "netuid": 34,
+        "change24hPct": -0.240726186260236,
+        "change7dPct": -9.22349174540408
+      },
+      {
+        "netuid": 24,
+        "change24hPct": -2.2787249645917425,
+        "change7dPct": 11.849534171070516
+      },
+      {
+        "netuid": 93,
+        "change24hPct": -1.1278595363999284,
+        "change7dPct": 1.170325429944251
+      },
+      {
+        "netuid": 5,
+        "change24hPct": -0.006621298570720733,
+        "change7dPct": 0.4857015565163988
+      },
+      {
+        "netuid": 107,
+        "change24hPct": -1.0710812075765577,
+        "change7dPct": 8.789577660816384
+      },
+      {
+        "netuid": 41,
+        "change24hPct": 4.047276710447493,
+        "change7dPct": 14.591209154252395
+      },
+      {
+        "netuid": 48,
+        "change24hPct": 6.838187879894925,
+        "change7dPct": 5.311221299762946
+      },
+      {
+        "netuid": 19,
+        "change24hPct": -1.3325937185518966,
+        "change7dPct": -3.9340310235445215
+      },
+      {
+        "netuid": 62,
+        "change24hPct": -0.367119976059944,
+        "change7dPct": -2.697208454254472
+      },
+      {
+        "netuid": 14,
+        "change24hPct": 1.642089093701997,
+        "change7dPct": -1.0423409900145664
+      },
+      {
+        "netuid": 17,
+        "change24hPct": -0.058878158162841004,
+        "change7dPct": -8.559244821260831
+      },
+      {
+        "netuid": 11,
+        "change24hPct": -0.24228051695978411,
+        "change7dPct": -6.792734548904648
+      },
+      {
+        "netuid": 39,
+        "change24hPct": -3.1834099633487587,
+        "change7dPct": -48.614390393759784
+      },
+      {
+        "netuid": 124,
+        "change24hPct": -0.6391425103783985,
+        "change7dPct": -4.884995251194583
+      },
+      {
+        "netuid": 23,
+        "change24hPct": -0.7319765048369139,
+        "change7dPct": -5.481672873880077
+      },
+      {
+        "netuid": 1,
+        "change24hPct": -0.49685796860468023,
+        "change7dPct": -2.007968653950417
+      },
+      {
+        "netuid": 80,
+        "change24hPct": -11.04106627540976,
+        "change7dPct": -13.917332651653984
+      },
+      {
+        "netuid": 15,
+        "change24hPct": -0.7041529360286445,
+        "change7dPct": -3.9306251269458494
+      },
+      {
+        "netuid": 114,
+        "change24hPct": -3.407802064760811,
+        "change7dPct": -8.139426797799013
+      },
+      {
+        "netuid": 54,
+        "change24hPct": 10.65648733956287,
+        "change7dPct": 23.609582940825806
+      },
+      {
+        "netuid": 52,
+        "change24hPct": -0.019476615077496953,
+        "change7dPct": -0.27286160306067264
+      },
+      {
+        "netuid": 61,
+        "change24hPct": 1.0487385678237582,
+        "change7dPct": -18.992087829634404
+      },
+      {
+        "netuid": 21,
+        "change24hPct": -1.9581588010037378,
+        "change7dPct": 6.781540988171532
+      },
+      {
+        "netuid": 83,
+        "change24hPct": -0.44020121852676924,
+        "change7dPct": -3.1164438180986638
+      },
+      {
+        "netuid": 81,
+        "change24hPct": 9.698496037690019,
+        "change7dPct": 8.21812883627036
+      },
+      {
+        "netuid": 77,
+        "change24hPct": -0.10524204367544812,
+        "change7dPct": -1.3193726798394494
+      },
+      {
+        "netuid": 63,
+        "change24hPct": -10.114726259917976,
+        "change7dPct": -19.45876161061455
+      },
+      {
+        "netuid": 112,
+        "change24hPct": -0.05044717140956363,
+        "change7dPct": 0.046304919927593335
+      },
+      {
+        "netuid": 10,
+        "change24hPct": 0.17938228791925942,
+        "change7dPct": -4.526214395929818
+      },
+      {
+        "netuid": 12,
+        "change24hPct": -0.8409420426867977,
+        "change7dPct": -1.1036071295152856
+      },
+      {
+        "netuid": 25,
+        "change24hPct": -0.8398194184161611,
+        "change7dPct": -19.30659345376762
+      },
+      {
+        "netuid": 13,
+        "change24hPct": -0.22215477656958396,
+        "change7dPct": -4.780352087864024
+      },
+      {
+        "netuid": 85,
+        "change24hPct": -6.7574210466592435,
+        "change7dPct": -1.5199430346146177
+      },
+      {
+        "netuid": 43,
+        "change24hPct": -0.035890234519935255,
+        "change7dPct": 0.06423702780155287
+      },
+      {
+        "netuid": 2,
+        "change24hPct": -0.3239939090053006,
+        "change7dPct": 8.946671315968283
+      },
+      {
+        "netuid": 97,
+        "change24hPct": 0.5525632923241357,
+        "change7dPct": -5.52639410185579
+      },
+      {
+        "netuid": 18,
+        "change24hPct": -1.1907156429214463,
+        "change7dPct": -3.646245645305472
+      },
+      {
+        "netuid": 50,
+        "change24hPct": 0.07201332429990967,
+        "change7dPct": -0.3325480722867516
+      },
+      {
+        "netuid": 71,
+        "change24hPct": 1.8664396747466634,
+        "change7dPct": 5.13385527407796
+      },
+      {
+        "netuid": 30,
+        "change24hPct": 6.57894144444968,
+        "change7dPct": 10.071559761002488
+      },
+      {
+        "netuid": 117,
+        "change24hPct": -6.552426885112199,
+        "change7dPct": 117.48982933819913
+      },
+      {
+        "netuid": 104,
+        "change24hPct": -0.1507243070833921,
+        "change7dPct": -0.7332358735781697
+      },
+      {
+        "netuid": 74,
+        "change24hPct": -6.474785527825922,
+        "change7dPct": 28.125031440693224
+      },
+      {
+        "netuid": 111,
+        "change24hPct": -0.5882655366773009,
+        "change7dPct": 1.834799735110285
+      },
+      {
+        "netuid": 46,
+        "change24hPct": -4.6481747366651796,
+        "change7dPct": 17.074388326677752
+      },
+      {
+        "netuid": 60,
+        "change24hPct": 1.2765401816538624,
+        "change7dPct": -0.8904409723267537
+      },
+      {
+        "netuid": 32,
+        "change24hPct": 0.5601589677662696,
+        "change7dPct": -0.6523447428747419
+      },
+      {
+        "netuid": 33,
+        "change24hPct": -2.2871828906340577,
+        "change7dPct": 1.1318579282117596
+      },
+      {
+        "netuid": 90,
+        "change24hPct": -0.05748066631741168,
+        "change7dPct": -5.556250322194269
+      },
+      {
+        "netuid": 65,
+        "change24hPct": -3.1194860978713437,
+        "change7dPct": 30.60911200693075
+      },
+      {
+        "netuid": 29,
+        "change24hPct": -0.003792872434121798,
+        "change7dPct": -0.09923851986226268
+      },
+      {
+        "netuid": 79,
+        "change24hPct": -0.4890489535636696,
+        "change7dPct": -7.511745052879438
+      },
+      {
+        "netuid": 22,
+        "change24hPct": -0.3767028028740386,
+        "change7dPct": -4.1763753831656585
+      },
+      {
+        "netuid": 105,
+        "change24hPct": -2.4208755724074305,
+        "change7dPct": -13.685205943989711
+      },
+      {
+        "netuid": 37,
+        "change24hPct": -0.22047872028521504,
+        "change7dPct": 1.021742086344024
+      },
+      {
+        "netuid": 89,
+        "change24hPct": -0.1647087336479895,
+        "change7dPct": -1.5663558753237856
+      },
+      {
+        "netuid": 7,
+        "change24hPct": -5.646606971142672,
+        "change7dPct": 0.030596660593043844
+      },
+      {
+        "netuid": 6,
+        "change24hPct": -1.43371605227826,
+        "change7dPct": -0.7827749481084076
+      },
+      {
+        "netuid": 88,
+        "change24hPct": -1.4082052340062325,
+        "change7dPct": 0.05436936809539629
+      },
+      {
+        "netuid": 128,
+        "change24hPct": 1.1906251507413117,
+        "change7dPct": 5.93880155481277
+      },
+      {
+        "netuid": 82,
+        "change24hPct": -1.0938546941240743,
+        "change7dPct": -12.429637407905297
+      },
+      {
+        "netuid": 42,
+        "change24hPct": 1.4075916107539999,
+        "change7dPct": 7.025539687656207
+      },
+      {
+        "netuid": 49,
+        "change24hPct": -3.045517777430708,
+        "change7dPct": -3.1735665075841966
+      },
+      {
+        "netuid": 55,
+        "change24hPct": -1.6804454835673428,
+        "change7dPct": -5.2908124084628065
+      },
+      {
+        "netuid": 66,
+        "change24hPct": -1.9981124790871263,
+        "change7dPct": -5.780784991718522
+      },
+      {
+        "netuid": 127,
+        "change24hPct": -1.7953062293038513,
+        "change7dPct": 23.821547242356655
+      },
+      {
+        "netuid": 121,
+        "change24hPct": -0.4325599917579506,
+        "change7dPct": -1.6185656981913135
+      },
+      {
+        "netuid": 20,
+        "change24hPct": -0.7814609915321793,
+        "change7dPct": -0.8150199831405158
+      },
+      {
+        "netuid": 27,
+        "change24hPct": -1.0382162654327036,
+        "change7dPct": -0.9086639312783874
+      },
+      {
+        "netuid": 45,
+        "change24hPct": -1.4954784103184373,
+        "change7dPct": -1.8421774344001671
+      },
+      {
+        "netuid": 73,
+        "change24hPct": -2.48478493783797,
+        "change7dPct": -11.445717313264842
+      },
+      {
+        "netuid": 72,
+        "change24hPct": 0.0245352765144794,
+        "change7dPct": -0.7977429065011921
+      },
+      {
+        "netuid": 38,
+        "change24hPct": -5.824346872055191,
+        "change7dPct": -11.024068350976089
+      },
+      {
+        "netuid": 118,
+        "change24hPct": -2.3415126323533832,
+        "change7dPct": -16.29406938528246
+      },
+      {
+        "netuid": 123,
+        "change24hPct": -1.0844038691446583,
+        "change7dPct": 0.1586916588054502
+      },
+      {
+        "netuid": 116,
+        "change24hPct": -6.292906829148982,
+        "change7dPct": 9.75383396588201
+      },
+      {
+        "netuid": 106,
+        "change24hPct": 0.09201279389274432,
+        "change7dPct": -0.34730400668074934
+      },
+      {
+        "netuid": 101,
+        "change24hPct": -0.0567441514009053,
+        "change7dPct": -2.491487459697265
+      },
+      {
+        "netuid": 58,
+        "change24hPct": 3.5922974734321764,
+        "change7dPct": -1.0093768277267325
+      },
+      {
+        "netuid": 69,
+        "change24hPct": -0.18461068382340884,
+        "change7dPct": -2.7025983921519017
+      },
+      {
+        "netuid": 98,
+        "change24hPct": 0.011710797636479978,
+        "change7dPct": 1.3530789274678867
+      },
+      {
+        "netuid": 92,
+        "change24hPct": -5.125710531494923,
+        "change7dPct": -2.2822655662074776
+      },
+      {
+        "netuid": 125,
+        "change24hPct": 0.08263180817488112,
+        "change7dPct": -0.7611643494671047
+      },
+      {
+        "netuid": 102,
+        "change24hPct": -3.3543753539170047,
+        "change7dPct": 8.44440906892308
+      },
+      {
+        "netuid": 94,
+        "change24hPct": -2.0808545489844645,
+        "change7dPct": 10.788668460622437
+      },
+      {
+        "netuid": 100,
+        "change24hPct": 1.750290189483171,
+        "change7dPct": 8.195436074308006
+      },
+      {
+        "netuid": 126,
+        "change24hPct": -0.4498117521213112,
+        "change7dPct": -1.7301887193182206
+      },
+      {
+        "netuid": 31,
+        "change24hPct": -10.366025730234572,
+        "change7dPct": 5.299339179165269
+      },
+      {
+        "netuid": 91,
+        "change24hPct": -2.4189824902928483,
+        "change7dPct": -10.77809000476935
+      },
+      {
+        "netuid": 115,
+        "change24hPct": -1.5933102463493347,
+        "change7dPct": -5.488155675359284
+      },
+      {
+        "netuid": 119,
+        "change24hPct": 0.06464236965052231,
+        "change7dPct": -0.07620458062476745
+      },
+      {
+        "netuid": 87,
+        "change24hPct": -2.6550868398142518,
+        "change7dPct": -17.728008537363586
+      },
+      {
+        "netuid": 67,
+        "change24hPct": -0.4201425073560243,
+        "change7dPct": -2.733636819247859
+      },
+      {
+        "netuid": 113,
+        "change24hPct": -6.055115849444589,
+        "change7dPct": -2.5996017102500613
+      },
+      {
+        "netuid": 96,
+        "change24hPct": -0.149179142529522,
+        "change7dPct": -6.010928613673793
+      },
+      {
+        "netuid": 109,
+        "change24hPct": -0.07570645360912646,
+        "change7dPct": -7.754762098801996
+      },
+      {
+        "netuid": 84,
+        "change24hPct": -7.803633867704504,
+        "change7dPct": -4.018829171935443
+      },
+      {
+        "netuid": 26,
+        "change24hPct": 2.801830016151598,
+        "change7dPct": -1.8314364691072842
+      },
+      {
+        "netuid": 47,
+        "change24hPct": -0.0462304087312019,
+        "change7dPct": -2.7726709608016895
+      },
+      {
+        "netuid": 122,
+        "change24hPct": 1.3610499747138414,
+        "change7dPct": -12.87373690672418
+      },
+      {
+        "netuid": 57,
+        "change24hPct": -0.19488905915575444,
+        "change7dPct": -7.1045751062251705
+      },
+      {
+        "netuid": 78,
+        "change24hPct": -21.789584325651266,
+        "change7dPct": -36.74958122944922
+      },
+      {
+        "netuid": 40,
+        "change24hPct": 0.3059207495236708,
+        "change7dPct": -6.084457590306992
+      },
+      {
+        "netuid": 59,
+        "change24hPct": -0.6182925452268628,
+        "change7dPct": -11.368764959649377
+      },
+      {
+        "netuid": 108,
+        "change24hPct": -3.497983900906725,
+        "change7dPct": -3.100474047471548
+      },
+      {
+        "netuid": 76,
+        "change24hPct": 0.215241700786351,
+        "change7dPct": -17.731446861025777
+      },
+      {
+        "netuid": 103,
+        "change24hPct": -12.453471089708925,
+        "change7dPct": -38.25677997794052
+      },
+      {
+        "netuid": 36,
+        "change24hPct": -9.593250930352493,
+        "change7dPct": 1659.6938694178673
+      },
+      {
+        "netuid": 70,
+        "change24hPct": -27.98766319511681,
+        "change7dPct": 73.9203683237578
+      },
+      {
+        "netuid": 86,
+        "change24hPct": -3.418228138049083,
+        "change7dPct": -24.320587023369782
+      },
+      {
+        "netuid": 35,
+        "change24hPct": -6.7119473714468745,
+        "change7dPct": -17.44583924459846
+      },
+      {
+        "netuid": 99,
+        "change24hPct": 276.96383585226056,
+        "change7dPct": 335.49678587031144
+      },
+      {
+        "netuid": 16,
+        "change24hPct": -12.050997005908451,
+        "change7dPct": -22.86455007619123
+      }
+    ],
+    "decisions": [
+      {
+        "netuid": 117,
+        "outcome": "excluded",
+        "reason": "November3 treasury claim already covered; fresh brief contains community model discussion without a new confirmed team release. No new payout, adoption or price catalyst established.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://github.com/everyframe-studios/everyframe-miner"
+        ]
+      },
+      {
+        "netuid": 78,
+        "outcome": "excluded",
+        "reason": "Primary current Umi documentation describes cohort-specific admission and attestation receipts, not guaranteed scoring or rewards. Digest C8/reward-cut claims lack verified team execution; no price causation inferred.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://github.com/Umi-BitSign/umi"
+        ]
+      },
+      {
+        "netuid": 36,
+        "outcome": "covered",
+        "reason": "Current GPU eligibility/activation code covered. Seven-day return crosses the reused registration; not a like-for-like prior-project gain or verified rental revenue.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://github.com/weircompute/weir-subnet"
+        ]
+      },
+      {
+        "netuid": 70,
+        "outcome": "excluded",
+        "reason": "Primary Fugal router/attestation documentation reviewed. Earlier launch already covered; community V2 timing lacks confirmed activation. No new catalyst established.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://github.com/fugal-ai/fugal-subnet"
+        ]
+      },
+      {
+        "netuid": 99,
+        "outcome": "covered",
+        "reason": "Finalized registration replacement covered; old Thirty Spokes price history is not a continuous successor-project return or a verified sale price.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://shizzyunchained.com/evidence/2026-11-06-daily-lifecycle.json"
+        ]
+      }
+    ]
+  },
+  "grokReview": {
+    "status": "DISCOVERY_DONE_OMISSION_BLOCKED_USAGE_LIMIT",
+    "identity": "@ShizzyUnchained directly verified",
+    "discovery": "Fresh combined full-roster and qualitative top-five response returned. Attention list: SN92, protocol wallets, SN81, SN64, SN99. Protocol is not a subnet; no fabricated absolute counts. Sampling/rate limitations remain.",
+    "limits": "Discovery only: outdated SN44 allocation date and SN99 sale wording corrected by direct finalized history; SN81/SN80 already covered.",
+    "evidence": "daily-news-2026-11-06/grok-discovery.txt",
+    "omission": "Exact public draft-headline omission prompt submitted; native response reached usage limit. No omission result fabricated.",
+    "omissionEvidence": "daily-news-2026-11-06/grok-omission.txt"
+  },
+  "taostatsReview": {
+    "status": "BLOCKED",
+    "reason": "No configured API key found; no authenticated /v1 endpoint, quota or complete indexer comparison claimed. Public SN113 Unknown checked natively today.",
+    "pending": "Existing cached fallback/gap-repair status remains explicit; no unrelated infrastructure or visitor RPC added."
+  },
+  "lifecycleReview": {
+    "status": "DONE",
+    "fromBlock": 9440603,
+    "toBlock": 9447793,
+    "eventCount": 6,
+    "evidence": "/evidence/2026-11-06-daily-lifecycle.json",
+    "newsDisposition": "SN99 successful queue/removal, subsequent finalization cleanup and replacement covered. Lock distinguished from sale and burn. Runtime transition decoded with parent-state layouts."
+  },
+  "sourceReview": {
+    "repositories": {
+      "configuredRows": 124,
+      "statuses": {
+        "200": 54,
+        "NO_REPOSITORY": 12,
+        "404": 4,
+        "403": 40,
+        "429": 14
+      },
+      "pagination": "30-commit default-branch cap; per-row truncation/access failures retained. SN99 old repository is not evidence for new successor."
+    },
+    "briefs": "50 dated briefs fully read; missing slots are not proof of no announcements.",
+    "requiredAccounts": "Fresh native originals/replies captures; Const originals crossed October30 overlap, replies October30; Tensia originals crossedOctober23, replies loaded toNovember4 only; Bot originals crossedOctober29 and reply view showed olderOctober31/July material. No unobserved coverage claimed.",
+    "ownerDiscovery": "Direct owner posts, native Reposts tab, native Replies tab and bookmarks returned and were reviewed. Private lists remain local. Older unresolved bookmarked leads preserved. Initial guessed repost URL returned no rows, corrected by native tab; no empty-feed inference.",
+    "media": "Prior Ditto three sample screenshots and wallet diagrams retained; REAX independent board and full model card read. Chutes endpoint benchmark graphics not independently reproduced. No audio listening claimed.",
+    "videos": "Native durations7:03 member,37:26 completedLeadpoet. CarbonNov6 13:30ET remains upcoming.",
+    "moments": "Loaded native Moments feed reviewed; derived alerts are leads only. Direct complete lifecycle scan takes precedence over secondary sale wording.",
+    "additionalDiscovery": "BittensorDailyNovember6 read as secondary discovery. SN108 evaluation backlog/pause and SN114 rollback/deadline claims remain pending original operating confirmation; primary SN114 request-format fix covered. SN107 local runner independently verified. SN81 already covered. Moments loaded with date-group inconsistencies; raw alerts not treated as current executed trades, sales or causation. SN99 independently resolved by full lifecycle scan.",
+    "primaryFallback": "HTTP GitHub commit pages recovered SN107/SN114 main and SN108 master after API403; dates and selected code/documents read. SN108 main was not the default branch; master reveals two routine EDA telemetry commits, not verified resolution of the secondary incident.",
+    "taostatsKeyCheck": "Environment and existing site .env.local checked for configured TaoStats key without exposing values; absent. Public SN113 native title Unknown.",
+    "testCorrection": "Existing sector regression hard-coded historical Thirty Spokes tags onSN99. Updated expected current Unknown/no tags after finalized replacement; all earlier evidence preserved."
+  },
+  "pendingCarryForward": {
+    "receipt": "../news-monitor-2026-11-06/0928-pending-for-2026-11-06.json",
+    "disposition": "Full object preserved locally. All15 cleared subnet leads reconciled; follow-ups folded. Wallet lead and two prior SN8 burns included. Unresolved older original-attribution/activation leads retained, not silently dropped.",
+    "newUnresolved": [
+      {
+        "netuid": 120,
+        "source": "https://subnetradar.com/subnet-news/120/2026-11-06",
+        "disposition": "Migration, benchmark correction and submission rollback require original confirmation; no unverified exploit accusation published."
+      },
+      {
+        "netuid": 104,
+        "source": "https://subnetradar.com/subnet-news/104/2026-11-06",
+        "disposition": "Account safety lead retained privately pending primary confirmation; no identifying allegation published."
+      },
+      {
+        "netuid": 79,
+        "source": "https://subnetradar.com/subnet-news/79/2026-11-06",
+        "disposition": "Testnet safety lead retained pending original; no misconduct allegation adopted."
+      },
+      {
+        "netuid": 108,
+        "source": "https://1t1b.ai/2026-11-06/",
+        "disposition": "Evaluation pause/backlog and v2.0.5 resolution not verified from original; telemetry commits alone do not establish recovery."
+      },
+      {
+        "netuid": 114,
+        "source": "https://1t1b.ai/2026-11-06/",
+        "disposition": "Native request-format code fix covered; exact rollback/deadline execution remains unverified."
+      }
+    ]
+  },
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/1/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "macrocosm-os/apex",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "DaniLabsAI/subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "unarbos/teutonic",
+      "commitCount": 2,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "manifold-inc/targon",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/5/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "hone-subnet-org/hone-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/6/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "numinouslabs/numinous",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "entrius/allways",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-05-chain-monitor-2349.json",
+          "label": "SN8 finalized successful event and registration evidence"
+        },
+        {
+          "url": "https://shizzyunchained.com/subnet-news/burns",
+          "label": "Permanent qualifying transaction-burn archive"
+        }
+      ],
+      "datedBrief": null,
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "taoshidev/vanta-network",
+      "commitCount": 1,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "macrocosm-os/iota",
+      "commitCount": 2,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/10/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "Pareton-ai/pareton",
+      "commitCount": 30,
+      "paginationGap": true,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/11/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "trajectoryRL/trajectoryRL",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "backend-developers-ltd/ComputeHorde",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "macrocosm-os/data-universe",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "latent-to/cacheon",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/15/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "ORO-AI/oro",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_IDENTITY_LINK",
+      "repository": null,
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/404-Repo/404-gen-subnet/pull/82",
+          "label": "SN17 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/17/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "404-Repo/404-gen-subnet",
+      "commitCount": 6,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "Orpheus-AI/Zeus",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/19/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "taostat/blockmachine",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "witnessvision/witness_subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "ippcteam/SN21-adtao",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "datura-ai/desearch",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "TrishoolAI/trishool-phase2",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/24/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": "",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "urfoundation/sn",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "0xsigurd/Perturb",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "Komms-protocol/komms-docs",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/28/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "taostat/gm-miner",
+      "commitCount": 23,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "coldint/hotfloat",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "Endure-Network/endure-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/31/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": "",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "It-s-AI/llm-detection",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "afterpartyai/bittensor-conversation-genome-project",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/34/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "BitMind-AI/yugos",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 35,
+      "name": "Jacob Robert Steeves",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": "",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/weircompute/weir-subnet/commit/2f4bd6f9b4eb3954d9295480061388299888986a",
+          "label": "SN36 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/weircompute/weir-subnet/commit/62afca9be877b3d039540a1855102415987083ce",
+          "label": "SN36 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/36/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "weircompute/weir-subnet",
+      "commitCount": 6,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "Aurelius-Protocol/Aurelius-Protocol",
+      "commitCount": 1,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "chronollm/sn38",
+      "commitCount": 2,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 404,
+      "repository": "deprecated/deprecated",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "RalphLabsAI/ralph",
+      "commitCount": 2,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/41/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "corvxai/almanac",
+      "commitCount": 5,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": "",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "GraphiteAI/Graphite-Subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/44/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "score-technologies/turbovision",
+      "commitCount": 4,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "Team-Rizzo/alpharidge-ai",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/46/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "Subnet46/sn46-validator",
+      "commitCount": 5,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "forgenet47/gpuforge",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "qbittensor-labs/quantum-compute",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/nepher-ai/nepher-subnet/commit/c4c3f11dac137183dc392f27dad89986a328dda7",
+          "label": "SN49 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/49/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "nepher-ai/nepher-subnet",
+      "commitCount": 1,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/SynthdataCo/status/2118394310433382400",
+          "label": "SN50 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": null,
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "mode-network/synth-subnet",
+      "commitCount": 1,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/Datura-ai/lium-io/commit/7f730ba6a89e5b3b4e85781a0b29096852afc711",
+          "label": "SN51 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/Datura-ai/lium-io/commit/817a5e432012271eeb0ae728fda6664529022c65",
+          "label": "SN51 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/Datura-ai/lium-io/pull/2093",
+          "label": "SN51 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/Datura-ai/lium-io/pull/2116",
+          "label": "SN51 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/Datura-ai/lium-io/pull/2114",
+          "label": "SN51 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/Datura-ai/lium-io/pull/2106",
+          "label": "SN51 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/Datura-ai/lium-io/pull/2109",
+          "label": "SN51 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/Datura-ai/lium-io/pull/2092",
+          "label": "SN51 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/Datura-ai/lium-io/pull/2119",
+          "label": "SN51 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": null,
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "Datura-ai/lium-io",
+      "commitCount": 30,
+      "paginationGap": true,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "tensorplex-labs/dojo",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/53/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "hanlinai/engy",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/54/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "yanez-compliance/MIID-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/55/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "genomesio/subnet-niome",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "gradients-ai/G.O.D",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_IDENTITY_LINK",
+      "repository": null,
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/58/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "robotensor/attune-subnet",
+      "commitCount": 11,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/59/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_IDENTITY_LINK",
+      "repository": null,
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/bitsecai/status/2118394220662628484",
+          "label": "SN60 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/60/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "Bitsec-AI/sandbox",
+      "commitCount": 9,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/61/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "RedTeamSubnet/RedTeam",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/ridgesai/ridges/pull/538",
+          "label": "SN62 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/62/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "ridgesai/ridges",
+      "commitCount": 7,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "qbittensor-labs/enigma",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/chutes_ai/status/2118350186892202434",
+          "label": "SN64 Chutes November 5 model, context and pricing announcement"
+        },
+        {
+          "url": "https://x.com/chutes_ai/status/2118350188838375634",
+          "label": "SN64 Chutes linked model access and benchmark attribution"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/64/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 403,
+      "repository": "chutesai/chutes",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "taofu-labs/true-performance-network",
+      "commitCount": 3,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/conjectures-io/conjectures-validator/pull/194",
+          "label": "SN66 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/conjectures-io/conjectures-validator/pull/191",
+          "label": "SN66 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/conjectures-io/conjectures-validator/pull/195",
+          "label": "SN66 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/66/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "conjectures-io/conjectures-validator",
+      "commitCount": 30,
+      "paginationGap": true,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "harnyx/harnyx",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "metanova-labs/nova",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "HeraldMedia/herald",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/70/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "fugal-ai/fugal-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1051",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1052",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1054",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1058",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1059",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1061",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1064",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1071",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1072",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1076",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1078",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1077",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1081",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1086",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1087",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/978",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1088",
+          "label": "SN71 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/71/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "leadpoet/leadpoet",
+      "commitCount": 30,
+      "paginationGap": true,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "natixnetwork/streetvision-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": "",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "entrius/gittensor",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "thenervelab/thebrain",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "heroncovelabs/ormas-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "creativebuilds/sn77",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/78/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "Umi-BitSign/umi",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/79/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "taos-im/sn-79",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/80/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "openroboto-ai/openroboto-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "reliquadotai/reliquary",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/82/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "Vora-Inc/NOAH",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "toptensor/CliqueAI",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_IDENTITY_LINK",
+      "repository": null,
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/85/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "vidaio-subnet/vidaio-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": "",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": "",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/Investing88ai/status/2118501115067273307",
+          "label": "SN88 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": null,
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "mobiusfund/investing",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/DeltaCompute24/InfiniteQuant-Subnet/commit/e323bb9ac51e95ea0a9828e21ce287520de87373",
+          "label": "SN89 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/DeltaCompute24/InfiniteQuant-Subnet/blob/master/README.md",
+          "label": "SN89 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": null,
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "DeltaCompute24/InfiniteQuant-Subnet",
+      "commitCount": 28,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "KubeTEE-AI/kubetee-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "TensorLink-AI/cascade",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://huggingface.co/spaces/multimodalart/jev-decision-index",
+          "label": "Independent November 6 Decision Index and tied-rank table"
+        },
+        {
+          "url": "https://huggingface.co/decisionmodels/REAX-1.3",
+          "label": "SN92 REAX open model card, requirements and internal-measurement limits"
+        },
+        {
+          "url": "https://x.com/const_reborn/status/2118719893105213800",
+          "label": "Const November 6 announcement and context"
+        },
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-06-model-challenge-review.json",
+          "label": "SN92 dated public-page snapshot and review limits"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/92/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 429,
+      "repository": "reaxlabs/reax-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "bitcast-network/bitcast",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "cathedralai/cathedral-sandbox",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "actual-computer/actual-subnet-95",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "verathos-ai/verathos",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "DendriteLabs/ingot",
+      "commitCount": 29,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "neverplayalone/neverplayalone_subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-06-daily-lifecycle.json",
+          "label": "SN99 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://x.com/TensiaBot/status/2118690081586253871",
+          "label": "SN99 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": null,
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": null,
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected useful merges covered; other changes are maintenance/discovery, not rollout proof. Prior SN99 repository belongs to historical registration.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "CortexLM/cortex",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "tag101-ai/tag101",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/102/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "Connito-AI/Connito",
+      "commitCount": 1,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "terza-labs/terza-miner",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/104/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "taostatus/taostatus-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/105/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 404,
+      "repository": "https://github.com/orgs/Beam-Network/repositories",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "nodexo-ai/nodexo",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/minos-protocol/minos_subnet/pull/41",
+          "label": "SN107 Minos merged local ComputeHorde SDK integration"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/107/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "API403_RECOVERED_PUBLIC_HTML",
+      "repository": "minos-protocol/minos_subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Default-branch public commit page recovered, relevant merged implementation/docs reviewed; no upstream execution.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/108/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "TatsuProject/ChipForge_SN108",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "API403; public master commit page recovered. Two EDA disk/version telemetry commits are routine; secondary incident remains unresolved, not silently dropped.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": "",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": "",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/111/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "DeSciClaims/Claims",
+      "commitCount": 29,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": "",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "NO_REPOSITORY",
+      "repository": "",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/DendriteHQ/SOMA/pull/244",
+          "label": "SN114 SOMA November 5 native Anthropic request-format fix"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/114/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": "API403_RECOVERED_PUBLIC_HTML",
+      "repository": "DendriteHQ/SOMA",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Default-branch public commit page recovered, relevant merged implementation/docs reviewed; no upstream execution.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "moirai115/MoirAI",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/116/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "carbonphysicsai/Carbon",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/117/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "everyframe-studios/everyframe-miner",
+      "commitCount": 30,
+      "paginationGap": true,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://x.com/heydittoai/status/2118485011754336751",
+          "label": "SN118 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://app.heyditto.ai/",
+          "label": "SN118 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/118/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 404,
+      "repository": "https://github.com/orgs/ditto-assistant/repositories",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "capabilityforge-next/capabilityforge",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/120/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "AffineFoundation/affine",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://www.sundaebar.ai/lab/challenge/0a387000-cd14-426e-a68c-35302a44c205",
+          "label": "SN121 official SBC35 dates, sealed-reference and feedback rules"
+        },
+        {
+          "url": "https://www.sundaebar.ai/lab",
+          "label": "SN121 live challenge and leaderboard"
+        },
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-06-model-challenge-review.json",
+          "label": "SN121 dated public-page snapshot and review limits"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/121/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "sundae-bar/bittensor-subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 404,
+      "repository": "https://github.com/CookingTao",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/Barbariandev/MANTIS/commit/9162ad295da0400eea08c8f27bb255e90be2ac1e",
+          "label": "SN123 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/Barbariandev/MANTIS/commit/ace548a94cadc3a20a02ace50ea4d83b07121e9d",
+          "label": "SN123 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": null,
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "Barbariandev/MANTIS",
+      "commitCount": 2,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": "https://subnetradar.com/subnet-news/124/2026-11-06",
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "swarm-subnet/swarm",
+      "commitCount": 1,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 200,
+      "repository": "Barbariandev/refinery",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 429,
+      "repository": "attelierai/attelierai_subnet",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/ooo-hq/zils/pull/208",
+          "label": "SN127 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/ooo-hq/zils/pull/209",
+          "label": "SN127 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/ooo-hq/zils/pull/210",
+          "label": "SN127 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/ooo-hq/zils/pull/211",
+          "label": "SN127 primary announcement, implementation or finalized evidence"
+        }
+      ],
+      "datedBrief": "https://subnetradar.com/subnet-news/127/2026-11-06",
+      "briefDisposition": "Verified primary-supported development covered; other unverified brief claims retained.",
+      "repositoryStatus": 200,
+      "repository": "ooo-hq/zils",
+      "commitCount": 30,
+      "paginationGap": true,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "publishedItems": 0,
+      "outcome": "no-cleared-new-story",
+      "sources": [],
+      "datedBrief": null,
+      "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
+      "repositoryStatus": 403,
+      "repository": "byteleapai/byteleap-Miner",
+      "commitCount": 0,
+      "paginationGap": false,
+      "repositoryDisposition": "Selected meaningful changes verified; remaining commits maintenance or unresolved discovery.",
+      "xSearchStatus": "Grok broad discovery plus required accounts and selected originals; no exhaustive individual timeline claim.",
+      "reviewGap": "Discord originals unavailable; production/benchmark verification varies by story."
+    }
+  ],
+  "remaining": [
+    "Production READY/live checks and one deduplicated daily roundup pending.",
+    "Grok final omission usage limit, authenticated TaoStats and unverified primary/execution leads retained; no exhaustive research claim."
+  ],
+  "sourceDispositions": [
+    {
+      "url": "https://x.com/const_reborn/status/2118719893105213800",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "covered",
+      "disposition": "SN92 REAX 1.3 records 74.0 on the independent Decision Index",
+      "announcementTimes": [
+        "2026-11-06T14:59:21.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118719895831531635",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-06T14:59:21.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118372617203622019",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "SN81 Reliquary releases open Teutonic-I-Reliquary 9B weights",
+      "announcementTimes": [
+        "2026-11-05T15:59:24.000Z",
+        "2026-11-05T15:48:21.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118372992128368882",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-05T16:00:53.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118371712228073862",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "SN80 OpenRoboto announces a commercial data pilot with Vulcan Shield Hungary",
+      "announcementTimes": [
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118107257615323291",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "SN38 ChronoLLM previews a 16B point-in-time model; weights are still forthcoming",
+      "announcementTimes": [
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118052344223179146",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118002461852192881",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2117968318162252056",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "Const argues for protocol-coordinated compute across jurisdictions",
+      "announcementTimes": [
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2117828138772095201",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2117649798362992858",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2116576126722077003",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2116201368835039637",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "Const frames neutral AI as a strategic crypto use case",
+      "announcementTimes": [
+        "2026-10-30T16:11:38.000Z",
+        "2026-10-30T15:12:40.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2116201664160125026",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2113014591219225052",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "SN97 Ingot’s FP8 result draws Const’s endorsement",
+      "announcementTimes": [
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2113014902206157076",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2112992631194354128",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "SN92 REAX details bug remediation and Friday rules",
+      "announcementTimes": [
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2112567604955238635",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "SN120 Affine opens its video-model dashboard after Const’s first-release post",
+      "announcementTimes": [
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2112567710244913269",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2112350113863516471",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "Const highlights SN88’s Root strategy; comparative returns remain a team claim",
+      "announcementTimes": [
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2112253271335211290",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "SN9 IOTA reports faster decentralized-training merges; Const endorses it",
+      "announcementTimes": [
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2111118261894988232",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "SN1 Apex launches an agent-built incentive competition",
+      "announcementTimes": [
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2110776187782135966",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "Null Consensus offers larger competitions—with a single weight-setting validator",
+      "announcementTimes": [
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2110386245557698831",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "Const highlights SN28 SayGM’s email-free signup",
+      "announcementTimes": [
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2109670215261016454",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "SN65 True Performance Network announces TPN005 as its first release-ready model",
+      "announcementTimes": [
+        null,
+        null
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118719897538564603",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-06T14:59:22.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2118719899103113458",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-06T14:59:22.000Z",
+        "2026-11-06T14:19:54.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2116593082456011246",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "SN81 Reliquary verification overhead prompts founder commentary",
+      "announcementTimes": [
+        "2026-10-31T18:08:09.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2047044226681094653",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-04-22T20:05:50.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2118070852541423648",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-11-04T20:00:17.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2117727115093110984",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-11-03T21:14:24.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2118072041517502656",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-11-04T20:05:01.000Z",
+        "2026-11-04T20:00:17.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2113747965361729570",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-10-23T21:42:41.000Z",
+        "2026-10-23T21:31:31.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2113025580706693456",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-10-21T21:52:11.000Z",
+        "2026-10-21T21:47:24.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2112659603808817393",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-10-20T21:37:55.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2118266592127828399",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-11-05T08:58:05.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2118093545001349497",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-11-04T21:30:28.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2118093358828753322",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-11-04T21:29:43.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2118079367754448993",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-11-04T20:34:07.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaFDN/status/2118077562970911125",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "pending",
+      "disposition": "Unadjudicated allegation/commentary; original proof, attribution and approval requirements remain unresolved. No claim adopted.",
+      "announcementTimes": [
+        "2026-11-04T20:26:57.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2118690081586253871",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "covered",
+      "disposition": "SN99 Thirty Spokes registration is replaced; successor identity remains unset",
+      "announcementTimes": [
+        "2026-11-06T13:00:53.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117974826908274719",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-04T13:38:43.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117971531321991263",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-04T13:25:37.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117841301068521721",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-04T04:48:08.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117788700629168185",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-04T01:19:07.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117649717488136300",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-03T16:06:51.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117645410705580327",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-03T15:49:44.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117633859432910875",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-03T15:03:50.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117631271924904222",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-03T14:53:33.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117531351662416050",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-03T08:16:30.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117348690901787018",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-02T20:10:41.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2117294821811335294",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-02T16:36:37.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2116948988305801719",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-01T17:42:24.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2116875534198095872",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-11-01T12:50:31.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2116312277355753809",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-30T23:32:20.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2116252085897355314",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-30T19:33:09.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2116206053738041844",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-30T16:30:15.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2116040291425591598",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-30T05:31:34.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2115954272336556439",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-29T23:49:45.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2116638729221861515",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-31T21:09:32.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2116601364067545361",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-31T18:41:04.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2116486496261636353",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-31T11:04:37.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2116471231151247391",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-31T10:03:58.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2112338152350167548",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-20T00:20:35.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2112486056264384783",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-20T10:08:18.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2112431876774285375",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-20T06:33:01.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2112303391150117185",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-19T22:02:27.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2112272735803965707",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-19T20:00:39.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2112282062862586267",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-19T20:37:42.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2110796152702488911",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-15T18:13:14.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/const_reborn/status/2110376402600051173",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "already-covered",
+      "disposition": "SN92 REAX identifies its network; competitions are planned for October 16",
+      "announcementTimes": [
+        "2026-10-14T14:25:17.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2110378166581682591",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-10-14T14:32:18.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2074394298192138432",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-07-07T07:25:15.000Z"
+      ]
+    },
+    {
+      "url": "https://x.com/TensiaBot/status/2074180589926678767",
+      "reviewedAt": "2026-11-06T15:23:31.357204+00:00",
+      "outcome": "excluded",
+      "disposition": "Overlap/commentary or derived alert; no additional independently cleared material development. SN99 lifecycle independently covered; SN44/SN31 allocations already archived, not new today.",
+      "announcementTimes": [
+        "2026-07-06T17:16:03.000Z"
+      ]
+    }
+  ]
+}
