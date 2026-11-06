@@ -1342,9 +1342,18 @@
     {
       "netuid": 28,
       "name": "SayGM",
-      "publishedItems": 0,
-      "outcome": "no-cleared-new-story",
-      "sources": [],
+      "publishedItems": 1,
+      "outcome": "covered",
+      "sources": [
+        {
+          "url": "https://github.com/taostat/gm-miner/pull/399",
+          "label": "Merged KMS selection, dependency preflight and isolated command implementation"
+        },
+        {
+          "url": "https://github.com/taostat/gm-miner/releases/tag/v0.5.21",
+          "label": "Latest published release observed; distinguish merged development code from release"
+        }
+      ],
       "datedBrief": "https://subnetradar.com/subnet-news/28/2026-11-06",
       "briefDisposition": "No new primary-cleared story; material operating/safety claims retained for original verification, other chatter/old overlap excluded. Not proof of no news.",
       "repositoryStatus": 200,
@@ -2465,6 +2474,18 @@
         {
           "url": "https://x.com/Investing88ai/status/2118501115067273307",
           "label": "SN88 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://x.com/Investing88ai/status/2118742706650497036",
+          "label": "November 6 team launch announcement; Meta88 explicitly still upcoming"
+        },
+        {
+          "url": "https://github.com/mobiusfund/investing/commit/4ee36e9516af1396a314dcfb7fc72e5c4ca78e57",
+          "label": "Version 1.8.0 MetaTrader implementation and mining documentation"
+        },
+        {
+          "url": "https://meta88.ai/",
+          "label": "Public signals-service preview; onboarding and delivery not tested"
         }
       ],
       "datedBrief": null,
@@ -2555,6 +2576,10 @@
         {
           "url": "https://shizzyunchained.com/evidence/2026-11-06-model-challenge-review.json",
           "label": "SN92 dated public-page snapshot and review limits"
+        },
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-06-midday-news-review.json",
+          "label": "Dated alpha/TAO snapshots, exact comparison window and interpretation limits"
         }
       ],
       "datedBrief": "https://subnetradar.com/subnet-news/92/2026-11-06",
@@ -3182,6 +3207,10 @@
         {
           "url": "https://github.com/ooo-hq/zils/pull/211",
           "label": "SN127 primary announcement, implementation or finalized evidence"
+        },
+        {
+          "url": "https://github.com/ooo-hq/zils/pull/212",
+          "label": "November 6 quota-safe round-subset merge and regression assertions"
         }
       ],
       "datedBrief": "https://subnetradar.com/subnet-news/127/2026-11-06",
@@ -3943,6 +3972,43 @@
       "evidence": "/evidence/2026-11-06-chain-monitor-1157.json",
       "archiveUpdated": true,
       "newsDisposition": "Before 5 PM Eastern: one new SN8 burn appended to the existing full November 6 edition. All 23 prior stories preserved, including the corrected SN92 four-star rating. No social action or second roundup."
+    },
+    {
+      "kind": "three-hour-news",
+      "status": "DONE_WITH_SOURCE_GAPS",
+      "checkedAt": "2026-11-06T17:39:44.045031+00:00",
+      "windowStart": "2026-11-06T14:30:00Z",
+      "windowEnd": "2026-11-06T17:39:44.045031+00:00",
+      "easternReadyTime": "2026-11-06T12:39:44.045031-05:00",
+      "sources": "Identity-verified native owner posts/reposts/replies/bookmarks, Const, Tensia accounts; configured repository sweep and selected primary implementation/product pages.",
+      "newStories": 1,
+      "updatedStories": 3,
+      "highestNewRating": 3,
+      "priceReaction": {
+        "netuid": 92,
+        "basis": "alpha/TAO",
+        "start": "2026-11-06T15:00:12+00:00",
+        "end": "2026-11-06T17:36:12+00:00",
+        "changePct": 36.649600162209836,
+        "ratingBefore": 4,
+        "ratingAfter": 4,
+        "evidence": "/evidence/2026-11-06-midday-news-review.json",
+        "causation": "Not established; both comparison snapshots follow the announcement."
+      },
+      "socialDisposition": "No new four-star development. REAX benchmark and owner quote/reposts plus today’s verified roundup already cover the result. No duplicate quote or second roundup.",
+      "gaps": [
+        "Signed-in Grok initial discovery returned a usage limit. The final omission query returned a Microtensor testnet lead. Its original article and public comparison were read; certificate access is gated (HTTP401), linked arena directory and complete attached figures were not independently reviewed. Testnet settlement and model reproduction remain unverified; lead retained.",
+        "Configured124repositoryrows:54HTTP200,12no-repository,4HTTP404,40HTTP403,14HTTP429; not exhaustive128official-X coverage.",
+        "KYM authentication gates end-to-end MetaTrader onboarding; no account linking, trading or signals test.",
+        "Unresolved older media/original-attribution leads carried forward; no private source list included publicly."
+      ],
+      "evidence": "/evidence/2026-11-06-midday-news-review.json",
+      "grokOmission": {
+        "conversation": "https://x.com/i/grok?conversation=ef5fe87f-24e0-4d1d-bf58-3cad7acd87ec",
+        "status": "RETURNED_ONE_LEAD_REVIEWED_PENDING",
+        "lead": "Microtensor testnet ctx_compress",
+        "disposition": "Original article dated14:24:04UTC November6 explicitly concerns testnet576. Public comparison is published;5/36 versus18/36 outside-arena passes and format failures qualify the result. Certificate gated; no independent settlement or model reproduction. Retained as research lead, not silently dropped or assigned to a mainnet slot."
+      }
     }
   ]
 }
