@@ -11,7 +11,7 @@
   "ecosystem": [
     {
       "headline": "OpenTensor explains post-quantum wallets; the shared activation gate remains off",
-      "summary": "The Foundation unveiled ML-DSA-65/Falcon signature options and optional key rotation in a new November6 thread. It says standard post-quantum accounts need no registration deposit, while rotating accounts permanently reserve0.2TAO. Existing wallets remain supported. This explains code already covered in Release487/488; it does not establish enabled mainnet signing. At finalized runtime488 block9446756, timestamp11:32:48UTC, AdminUtils.HashedAccountsEnabled remained false. The reviewed v488 source routes fixed and rotating post-quantum authorization through check_mldsa_authorization, which checks that shared gate. No wallet creation, fund movement or cryptographic audit was performed. A later finalized check at block 9,447,649 (14:31:24 UTC November 6) also reports HashedAccountsEnabled=false.",
+      "summary": "On November 6, the OpenTensor Foundation explained ML-DSA-65/Falcon signature options and optional key rotation. It says standard post-quantum accounts need no registration deposit, while rotating accounts permanently reserve 0.2 TAO; existing wallets remain supported. This explains code already covered in releases 487/488. It does not establish enabled mainnet signing: HashedAccountsEnabled was still false at finalized runtime 488 block 9,447,649, timestamp 14:31:24 UTC November 6. The reviewed implementation checks that shared gate for fixed and rotating post-quantum authorization. No wallet creation, fund movement or cryptographic audit was performed.",
       "sources": [
         {
           "url": "https://x.com/opentensor/status/2118654269947785444",
