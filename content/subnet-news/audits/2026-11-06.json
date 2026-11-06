@@ -3,7 +3,7 @@
   "checkedAt": "2026-11-06T15:23:31.357204+00:00",
   "dailyWorkflowComplete": false,
   "publication": {
-    "status": "RELEASE_VALIDATED_AWAITING_PRODUCTION",
+    "status": "PUBLISHED_VERIFIED_WITH_SOURCE_GAPS",
     "dailyWorkflowComplete": false,
     "validatedAt": "2026-11-06T15:27:30.748405+00:00",
     "checks": {
@@ -17,7 +17,44 @@
       "burnTests": "5PASS",
       "ownedNewsLinks": "PASS"
     },
-    "limits": "Daily workflow remains incomplete as an exhaustive-source claim: final Grok omission usage limit, authenticated TaoStats key absent and original Discord/individual-X access gaps. Available sourced edition prepared for publication."
+    "limits": "Daily workflow remains incomplete as an exhaustive-source claim: final Grok omission usage limit, authenticated TaoStats key absent and original Discord/individual-X access gaps. Available sourced edition prepared for publication.",
+    "website": "https://shizzyunchained.com/subnet-news/2026-11-06",
+    "commit": "d01bced16b95587d61ad28bd516ca0804d9ef97e",
+    "deployment": "dpl_HmUBKEzxwHeZaawTZEv1b1xwkzTB",
+    "deploymentState": "READY",
+    "websiteVerifiedAt": "2026-11-06T15:33:16.808247+00:00",
+    "all23HeadlinesVerified": true,
+    "affectedSubnetHistories": [
+      8,
+      17,
+      36,
+      49,
+      50,
+      51,
+      60,
+      62,
+      64,
+      66,
+      71,
+      88,
+      89,
+      92,
+      99,
+      107,
+      114,
+      118,
+      121,
+      123,
+      127
+    ],
+    "roundup": {
+      "status": "PUBLISHED_VERIFIED",
+      "url": "https://x.com/ShizzyUnchained/status/2118729100177129513",
+      "publishedAt": "2026-11-06T15:35:56.000Z",
+      "text": "A model result, an inference listing, and a subnet registration reset lead today’s Bittensor news.\n\n• SN92 REAX 1.3 scores 74.0 on the independent Decision Index, with a tied top rank.\n• SN64 Chutes announces Qwen3.8 open weights at $2 input / $6 output per million tokens.\n• SN99’s Thirty Spokes registration is replaced; the successor is still unnamed.\n• Post-quantum wallet code and its activation gate remain separate facts.\n\nPlus SN121’s sealed-reference challenge, miner tooling, my Leadpoet replay and today’s Carbon livestream.\n\nSources, dates and verification limits:\nhttps://shizzyunchained.com/subnet-news/2026-11-06",
+      "linkedEdition": "https://shizzyunchained.com/subnet-news/2026-11-06",
+      "linkRedirectVerified": true
+    }
   },
   "chainReviews": {
     "etao": {
@@ -32,7 +69,7 @@
       "archiveUpdated": true,
       "evidence": "/evidence/2026-11-06-daily-chain.json",
       "newsDisposition": "No new allocation or qualifying burn events. Counts {'AlphaBurned': 79, 'AlphaRecycled': 48}; all small successful burns retained in evidence only, recycling excluded. Two earlier SN8 events carried into dated news without recounting.",
-      "liveVerifiedAt": null
+      "liveVerifiedAt": "2026-11-06T15:33:16.808247+00:00"
     },
     "burns": {
       "status": "DONE",
@@ -46,7 +83,7 @@
       "archiveUpdated": true,
       "evidence": "/evidence/2026-11-06-daily-chain.json",
       "newsDisposition": "No new allocation or qualifying burn events. Counts {'AlphaBurned': 79, 'AlphaRecycled': 48}; all small successful burns retained in evidence only, recycling excluded. Two earlier SN8 events carried into dated news without recounting.",
-      "liveVerifiedAt": null
+      "liveVerifiedAt": "2026-11-06T15:33:16.808247+00:00"
     }
   },
   "ownerHoldings": {
@@ -57,7 +94,12 @@
     "wallets": 128,
     "evidence": "/evidence/owner-holdings-9447800.json",
     "runtimeReview": "Runtime488 full metadata fixture and StakeInfo source/API layout comparison retained; SN51/SN64 independent checks passed. No deployed WASM reproduction claimed.",
-    "validation": "PASS npm run validate:owner-holdings at finalized9447800; live verification pending."
+    "validation": "PASS validator and exact live /api/subnets/owners match for all128. Native SN99/SN51 panels and exact evidence expansion verified.",
+    "liveVerifiedAt": "2026-11-06T15:33:16.808247+00:00",
+    "nativePanels": [
+      99,
+      51
+    ]
   },
   "marketReview": {
     "source": "https://shizzyunchained.com/api/backend/v1/screener",
@@ -796,7 +838,10 @@
     "additionalDiscovery": "BittensorDailyNovember6 read as secondary discovery. SN108 evaluation backlog/pause and SN114 rollback/deadline claims remain pending original operating confirmation; primary SN114 request-format fix covered. SN107 local runner independently verified. SN81 already covered. Moments loaded with date-group inconsistencies; raw alerts not treated as current executed trades, sales or causation. SN99 independently resolved by full lifecycle scan.",
     "primaryFallback": "HTTP GitHub commit pages recovered SN107/SN114 main and SN108 master after API403; dates and selected code/documents read. SN108 main was not the default branch; master reveals two routine EDA telemetry commits, not verified resolution of the secondary incident.",
     "taostatsKeyCheck": "Environment and existing site .env.local checked for configured TaoStats key without exposing values; absent. Public SN113 native title Unknown.",
-    "testCorrection": "Existing sector regression hard-coded historical Thirty Spokes tags onSN99. Updated expected current Unknown/no tags after finalized replacement; all earlier evidence preserved."
+    "testCorrection": "Existing sector regression hard-coded historical Thirty Spokes tags onSN99. Updated expected current Unknown/no tags after finalized replacement; all earlier evidence preserved.",
+    "liveChecks": "All23headlines and21affected native-history API requests at offset0 match. Both archive pages show9447888; all128holdings matchexact; nativeSN99newowner/noalpha/7.502817359freeTAO andSN51datedholdings verified. Leadpoetiframeq2pGNLUvCm4 selected, member7:03 restricted, Carbonupcoming. SN99sectorUnknownUnclassified andhistoricalThirtySpokes labels preserved. Bare SN8 history URL briefly retained prior CDN cache; actual UI offset0 and native panel verifiedcurrent.",
+    "postPublicationWalletSpotCheck": "New Const public commentary2118724976463204572 checked as a lead. Fresh finalized runtime488 block9447975 still HashedAccountsEnabled=false, exactmetadatafixture match. This spot snapshot does not extend allocation/burn/lifecycle scan coverage. No activation claim or extra quote.",
+    "finalScreenshots": "Local cropped live edition and published roundup screenshots retained. Desktop andphone74browser checks pass; nofullAV/listeningclaim."
   },
   "pendingCarryForward": {
     "receipt": "../news-monitor-2026-11-06/0928-pending-for-2026-11-06.json",
@@ -3149,8 +3194,8 @@
     }
   ],
   "remaining": [
-    "Production READY/live checks and one deduplicated daily roundup pending.",
-    "Grok final omission usage limit, authenticated TaoStats and unverified primary/execution leads retained; no exhaustive research claim."
+    "Final Grok omission request blocked by usage limit; authenticatedTaoStats/v1 lacks aconfigured key. Repository403/429 and originalDiscord/individualX coverage gapsremainexplicit.",
+    "Unresolved primary attribution, deployment and incident leads carried to the next daily/monitor review. Available edition, archives, holdings, sectors, videos and one roundup are live verified."
   ],
   "sourceDispositions": [
     {
