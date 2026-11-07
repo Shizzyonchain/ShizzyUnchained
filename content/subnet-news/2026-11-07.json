@@ -5,7 +5,7 @@
   "summary": "ORO releases a long-horizon business benchmark with public run traces; Minos opens its Mac beta with rewards off. Trishool announces REAX-powered EU Mode. Plus Chutes Hy4 pricing, Yanez integration work, verified transaction burns, operator updates and Shizzy’s latest public video.",
   "publishedAt": "2026-11-07T15:16:10.424605+00:00",
   "coverageStart": "2026-11-06T15:23:31.357204+00:00",
-  "coverageEnd": "2026-11-07T15:16:10.424605+00:00",
+  "coverageEnd": "2026-11-07T20:58:37.036204+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [
@@ -169,7 +169,7 @@
       "updates": [
         {
           "headline": "SN17 separates Witness Pod runtime and adds render-cache safeguards",
-          "summary": "Announced or committed 2026-11-06 T 20:55:53 Z. PR83 merged at 20:55:53 UTC. The primary patch describes exact-request render caching, replay evidence separated from final results, and separate gateway/Pod packages. Frozen round inputs govern final saving while Finney membership stays in the gateway. The author reports extensive tests; those tests and a production rollout were not independently run. Fold this into the existing Witness tooling history rather than describe a new proven AI capability.",
+          "summary": "Announced or committed 2026-11-06 T 20:55:53 Z. PR83 merged at 20:55:53 UTC. The primary patch describes exact-request render caching, replay evidence separated from final results, and separate gateway/Pod packages. Frozen round inputs govern final saving while Finney membership stays in the gateway. The author reports extensive tests; those tests and a production rollout were not independently run. Fold this into the existing Witness tooling history rather than describe a new proven AI capability. November 7 follow-up commits reuse valid cached Pod access grants during polling and bound those validation reads by the request deadline. A 20:00:47 UTC commit separates admission POST limits from allocation/status GETs, including lease renewal, and adds bounded structured diagnostics. This addresses polling and admission contention in the implementation; live reliability was not tested.",
           "sources": [
             {
               "url": "https://github.com/404-Repo/404-gen-subnet/pull/83",
@@ -178,6 +178,18 @@
             {
               "url": "https://github.com/404-Repo/404-gen-subnet/commit/0211d8d98ef843db3bb173726cdb4b63cd904a7d",
               "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://github.com/404-Repo/404-gen-subnet/commit/8cc97513c178e7771f16f923716f080877a27d65",
+              "label": "SN17 November 7 gateway implementation"
+            },
+            {
+              "url": "https://github.com/404-Repo/404-gen-subnet/commit/842d371334fe297f9c368a242bda452fe9412e9d",
+              "label": "SN17 November 7 gateway implementation"
+            },
+            {
+              "url": "https://github.com/404-Repo/404-gen-subnet/commit/8c176da03bee76a1d0dffb2f5e83c37b34449396",
+              "label": "SN17 November 7 gateway implementation"
             }
           ],
           "rating": 2,
@@ -636,7 +648,7 @@
       "updates": [
         {
           "headline": "SN71 Leadpoet improves Arena task publication, score retries and evidence matching",
-          "summary": "November 6–7 merges consolidate operator reliability work. Typed admission explanations avoid publishing raw provider prose; identity repair distinguishes missing evidence from transport failure. PR1105 makes daily task-bank publication atomic and requires old writers to be quiesced for migration. PR1106 binds score retries to output content and validates before immutable writes; PR1107 continues evidence matching past unrelated candidates. PR1103 adds bounded upload diagnostics. These are merged implementation changes, not proof of database migration, repaired production rounds, new customers or changed rewards. Earlier saved maintenance leads are folded into this entry.",
+          "summary": "November 6–7 merges consolidate operator reliability work. Typed admission explanations avoid publishing raw provider prose; identity repair distinguishes missing evidence from transport failure. PR1105 makes daily task-bank publication atomic and requires old writers to be quiesced for migration. PR1106 binds score retries to output content and validates before immutable writes; PR1107 continues evidence matching past unrelated candidates. PR1103 adds bounded upload diagnostics. These are merged implementation changes, not proof of database migration, repaired production rounds, new customers or changed rewards. Earlier saved maintenance leads are folded into this entry. PR1110 merged November 7 at 20:19:01 UTC. It records Leadpoet operator authorization to use eligible Arena reasoning and execution trajectories for continued pretraining and supervised fine-tuning of its Sales LLM. The final scope explicitly leaves provider/source rights, miner consent and customer/privacy permissions separate. Dataset readiness remains false pending quality and rights checks; this is not evidence of a training run or a publicly released dataset.",
           "sources": [
             {
               "url": "https://github.com/leadpoet/leadpoet/pull/1096",
@@ -661,6 +673,10 @@
             {
               "url": "https://github.com/leadpoet/leadpoet/pull/1107",
               "label": "Leadpoet primary merged implementation"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1110",
+              "label": "SN71 scoped Arena training authorization and remaining restrictions"
             }
           ],
           "rating": 2,
@@ -1088,7 +1104,26 @@
     {
       "netuid": 127,
       "name": "Zils",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN127 Zils merges an opt-in adapter reward rule tied to paid API use",
+          "summary": "PR216 merged November 7 at 19:48:05 UTC. When enabled, the adapter track credits miners whose delivered customer adapters receive paid API use during the first 30 days after delivery. A configurable revenue cap limits the paid fraction of the adapter reward share using signed platform spend evidence and chain price inputs; unused share routes to the configured burn UID. Free, test-mode and operator use do not earn. The feature is off by default, and the signed ledger is a platform claim rather than independently audited revenue. PR215 also ranks graded job candidates by a smoothed delivery rate before their qualification quality band. These merges establish implementation changes, not mainnet activation, completed payouts, transaction burns or measured customer growth.",
+          "sources": [
+            {
+              "url": "https://github.com/ooo-hq/zils/pull/216",
+              "label": "SN127 paid-use adapter reward implementation, off by default"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/pull/215",
+              "label": "SN127 graded routing delivery-rate implementation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "An actionable change to miner routing and reward eligibility, with explicit revenue-cap and activation boundaries. Reward mechanics merit three stars; no verified production rollout or revenue result supports a higher rating.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 128,
@@ -1105,7 +1140,8 @@
     "gaps": [
       "Grok discovery, qualitative top-five discussion and final omission checks blocked: included usage and credits exhausted. No credits purchased and no ranking invented.",
       "GitHubAPI returned403/429 across the configured repository sweep; selected native/raw primary fallbacks worked. Individual X/Discord coverage is incomplete, not an exhaustive all-project search.",
-      "Authenticated TaoStats/v1 cross-check lacks a configured API key. Public SN113 remains Unknown. Several operating claims, attached-video audio and independent production tests remain unverified; pending leads retained."
+      "Authenticated TaoStats/v1 cross-check lacks a configured API key. Public SN113 remains Unknown. Several operating claims, attached-video audio and independent production tests remain unverified; pending leads retained.",
+      "Afternoon source review extends the edition with explicitly dated merged-code updates. Grok remains at its included usage limit; individual project timelines and private-channel/media coverage are incomplete. Lium October usage figures remain pending original-report verification."
     ]
   }
 }
