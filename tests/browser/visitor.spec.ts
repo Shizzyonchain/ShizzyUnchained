@@ -419,6 +419,8 @@ test("canceled Carbon stream stays out of upcoming, recent videos and replays", 
   await expect(replays.getByRole("button",{name:/Engineer the Real World/})).toHaveCount(0);
   await expect(replays.getByRole("button",{name:/AI on Your Terms/})).toHaveCount(1);
   await expect(upcoming.getByRole("button",{name:/AI on Your Terms/})).toHaveCount(0);
+  await expect(page.locator(".video-frame iframe")).toHaveAttribute("src",/e4glmPHoEvw/);
+  await replays.getByRole("button",{name:/Leadpoet’s Latest/}).click();
   await expect(page.locator(".video-frame iframe")).toHaveAttribute("src",/q2pGNLUvCm4/);
   await expect(replays.getByRole("button",{name:/Yanez/})).toHaveCount(1);
   await expect(replays.getByRole("button",{name:/Gets Expressive/})).toHaveCount(1);

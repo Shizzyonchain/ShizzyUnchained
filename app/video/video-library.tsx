@@ -15,6 +15,7 @@ type ChannelVideo = {
 };
 
 const channelVideos: ChannelVideo[] = [
+  { id: "e4glmPHoEvw", title: "It’s About to Happen… REAX Is Moving. Is TAO Next?", meta: "19:04 · Public video · November 6, 2026" },
   { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "37:26 · Livestream replay · November 5, 2026" },
   { id: "1ajAfGr_dh0", title: "AI on Your Terms? | True Performance Network | Bittensor Subnet 65", meta: "55:32 · Livestream replay · November 3, 2026" },
   { id: "3ADXtheo1YE", title: "TAO Ready to Fly? My November Outlook | Bittensor & Subnet Update", meta: "22:12 · Public video · November 2, 2026" },

@@ -1,0 +1,3921 @@
+{
+  "checkedAt": "2026-11-07T15:20:14.434960+00:00",
+  "report": "https://oroagents.com/benchmarks/smb-bench",
+  "dataset": "https://huggingface.co/datasets/oro-agents/smb-bench",
+  "datasetRevision": "c86efc2752a85505e1316ac93f9ec7ee992664b5",
+  "artifactAvailability": {
+    "publicResultsAndTraces": true,
+    "grader": "manual access gate",
+    "worldGenerator": "not released"
+  },
+  "arithmetic": {
+    "total": 486,
+    "valid": 485,
+    "invalid": 1,
+    "taskWeightedProfit": {
+      "claude-fable-5-1": 5427.232037037037,
+      "claude-opus-5-5": 906.824074074074,
+      "deepseek-v4.1-flash-1017": -3035.9664814814814,
+      "gemini-4-argon": 1501.3390740740742,
+      "glm-5.3": -6453.688240740741,
+      "gpt-6-astra": 7748.980185185185,
+      "gpt-6.1-sol": 5404.227037037037,
+      "grok-4.7": -4722.287592592593,
+      "muse-wonder-1.0": -8290.602407407407
+    },
+    "reference": 6411.912777777778,
+    "tasks": 18,
+    "limits": "Recomputed displayed means from public scored rows, not an independent model run or regrading. by_model config summarizes12changed tasks, while displayed headline means include18tasks."
+  },
+  "scoredRows": [
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-1__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1437214,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-1__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1622524,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-1__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1752851,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-2__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 77911,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-2__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 141075,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-2__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 198300,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-3__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 291951,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-3__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 557719,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-3__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 277961,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-4__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 875740,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-4__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 1047799,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-4__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 1120396,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-5__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 2337906,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-5__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 2445373,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-5__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 2357302,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-6__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 534608,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-6__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 427,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-control-6__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 498766,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-1__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 2045635,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-1__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1503730,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-1__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1406321,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-2__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 182057,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-2__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 231517,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-2__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 298821,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-3__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 393392,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-3__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 449189,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-3__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 437977,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-4__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 565699,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-4__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 576890,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-4__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 750607,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-5__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 2341236,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-5__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 2600401,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-5__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1971179,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-6__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 224843,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-6__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 528744,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-control-6__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 412699,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-1__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1358761,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-1__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1589988,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-1__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1589534,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-2__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 147316,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-2__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 186894,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-2__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 222111,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-3__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 411259,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-3__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 457672,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-3__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 371283,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-4__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 679378,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-4__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 655291,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-4__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 635816,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-5__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1586657,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-5__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1431047,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-5__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1976098,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-6__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 160564,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-6__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 210836,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-control-6__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 269729,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-1__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1339309,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-1__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1912272,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-1__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1148201,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-2__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 202564,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-2__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 232587,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-2__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 263706,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-3__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 309367,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-3__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 328056,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-3__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 380414,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-4__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 321858,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-4__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 278904,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-4__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 553418,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-5__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 435252,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-5__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1705013,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-5__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": -1017613,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-6__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 240287,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-6__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": -570554,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-control-6__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 211538,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-1__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 485434,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-1__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 942092,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-1__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 963466,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-2__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": -26885,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-2__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": -29668,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-2__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": -170144,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-3__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 176588,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-3__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 21656,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-3__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": -985127,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-4__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 156149,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-4__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": -60210,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-4__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": -91140,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-5__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1119390,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-5__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1384008,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-5__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 475424,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-6__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": -111936,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-6__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": -320922,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-control-6__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 122181,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-1__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1551395,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-1__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 2064458,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-1__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 2036197,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-2__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 387779,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-2__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 350646,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-2__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 265172,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-3__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 627012,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-3__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 588708,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-3__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 583442,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-4__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 893926,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-4__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 726656,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-4__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 845853,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-5__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1550388,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-5__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1967344,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-5__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 2256439,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-6__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 501133,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-6__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 615852,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-control-6__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 448268,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-1__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1841887,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-1__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1349300,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-1__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1736359,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-2__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 286981,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-2__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 367700,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-2__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 360976,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-3__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 535480,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-3__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 565407,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-3__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 638020,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-4__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 875655,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-4__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 657603,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-4__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 734498,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-5__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 2586679,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-5__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 2279031,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-5__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 2203045,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-6__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 543187,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-6__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 482948,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-control-6__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 551530,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-1__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1133791,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-1__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1232656,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-1__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 1408333,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-2__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 108321,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-2__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 140418,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-2__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 161644,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-3__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 440025,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-3__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 300980,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-3__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 308867,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-4__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 396009,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-4__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 399469,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-4__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 554014,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-5__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1010257,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-5__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 834474,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-5__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1287727,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-6__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 299829,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-6__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 104387,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-control-6__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 158604,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-1__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 290579,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-1__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 380913,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-1__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-1",
+      "status": "valid",
+      "businessReturnCents": 659705,
+      "referenceReturnCents": 1860654
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-2__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 8429,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-2__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 15061,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-2__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-2",
+      "status": "valid",
+      "businessReturnCents": 99383,
+      "referenceReturnCents": -59821
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-3__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 324971,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-3__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 61021,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-3__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-3",
+      "status": "valid",
+      "businessReturnCents": 269216,
+      "referenceReturnCents": 507482
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-4__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 315554,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-4__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 154596,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-4__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-4",
+      "status": "valid",
+      "businessReturnCents": 144568,
+      "referenceReturnCents": 909757
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-5__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 1087093,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-5__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 433564,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-5__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-5",
+      "status": "valid",
+      "businessReturnCents": 85735,
+      "referenceReturnCents": 2350145
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-6__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 533092,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-6__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": -90981,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-control-6__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-control-6",
+      "status": "valid",
+      "businessReturnCents": 89500,
+      "referenceReturnCents": 462468
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-1__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": 85604,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-1__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -28124,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-1__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": 31230,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-10__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": 1012498,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-10__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -349327,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-10__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": 334223,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-11__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -224754,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-11__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -68168,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-11__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": 58245,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-12__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -713999,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-12__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -98382,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-12__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -291594,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-2__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1295396,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-2__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1198423,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-2__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1423204,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-3__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": 1130541,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-3__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": 598598,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-3__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": 581631,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-4__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -161102,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-4__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -262128,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-4__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -339405,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-5__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": 126222,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-5__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": 112354,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-5__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": 289872,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-6__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": 153806,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-6__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -142603,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-6__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -80594,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-7__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 766538,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-7__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 886098,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-7__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 552467,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-8__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": 142275,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-8__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": 299708,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-8__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": 699033,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-9__r1",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": 1808731,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-9__r2",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": 1082692,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "claude-fable-5-1__smb-bench-public-9__r3",
+      "model": "claude-fable-5-1",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -177979,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-1__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -431374,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-1__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -15461,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-1__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -395314,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-10__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -248432,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-10__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -327897,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-10__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -1410362,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-11__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": 148654,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-11__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -199526,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-11__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": 117926,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-12__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1110021,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-12__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -588255,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-12__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1223408,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-2__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 485183,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-2__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1789579,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-2__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1398087,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-3__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -670299,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-3__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -406362,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-3__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -364956,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-4__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -885237,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-4__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -539084,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-4__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -816047,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-5__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -356363,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-5__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -486242,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-5__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -15364,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-6__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -460233,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-6__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -734664,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-6__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -853078,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-7__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 222470,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-7__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -13141,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-7__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -385522,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-8__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -945690,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-8__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -1182260,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-8__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -1391082,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-9__r1",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -104764,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-9__r2",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": 450192,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "claude-opus-5-5__smb-bench-public-9__r3",
+      "model": "claude-opus-5-5",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -75740,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-1__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -502034,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-1__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -430387,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-1__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -362521,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-10__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -2202511,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-10__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -2391379,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-10__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -1313794,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-11__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -580579,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-11__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -601174,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-11__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -817375,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-12__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1229139,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-12__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1156807,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-12__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1392440,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-2__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": -9154,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-2__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": -407899,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-2__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": -43880,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-3__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -967416,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-3__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -245565,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-3__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -980634,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-4__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -888163,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-4__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -814088,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-4__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -779802,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-5__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -651456,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-5__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -617156,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-5__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -607734,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-6__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -706518,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-6__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -937077,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-6__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -890880,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-7__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -595748,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-7__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -267404,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-7__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -150982,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-8__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -524795,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-8__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -889044,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-8__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -1131623,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-9__r1",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -1483925,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-9__r2",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -1446003,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "deepseek-v4-1-flash-1017__smb-bench-public-9__r3",
+      "model": "deepseek-v4.1-flash-1017",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -1317367,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-1__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -127099,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-1__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": 105929,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-1__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": 87493,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-10__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -590125,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-10__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": 199360,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-10__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -429984,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-11__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": 271399,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-11__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -917432,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-11__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": 103087,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-12__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -635040,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-12__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -164906,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-12__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1220435,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-2__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 931513,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-2__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 406770,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-2__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1969444,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-3__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -436980,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-3__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": 1542685,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-3__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": 505766,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-4__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -363188,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-4__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -961663,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-4__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -1144484,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-5__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": 350953,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-5__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": 254181,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-5__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": 304093,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-6__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -113333,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-6__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -202742,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-6__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -265257,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-7__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 396434,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-7__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 782608,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-7__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 327803,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-8__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -100937,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-8__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -460850,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-8__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": 158321,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-9__r1",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": 1538770,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-9__r2",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -855152,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "gemini-4-argon__smb-bench-public-9__r3",
+      "model": "gemini-4-argon",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -1414350,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-1__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -853350,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-1__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -151094,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-1__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -606426,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-10__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -1530889,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-10__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -2463398,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-10__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -2862303,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-11__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -1164153,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-11__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -605995,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-11__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -728896,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-12__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1030259,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-12__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-12",
+      "status": "failed",
+      "businessReturnCents": null,
+      "referenceReturnCents": null
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-12__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1297628,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-2__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": -365182,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-2__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": -470905,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-2__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 113846,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-3__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -1159938,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-3__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -1604201,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-3__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -1546825,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-4__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -1060688,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-4__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -1041720,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-4__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -774618,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-5__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -474072,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-5__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -810542,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-5__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -692836,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-6__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -761268,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-6__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -648368,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-6__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -951882,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-7__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -641377,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-7__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -857951,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-7__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -1096097,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-8__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -1171978,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-8__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -1162318,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-8__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -500724,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-9__r1",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -2180775,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-9__r2",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -2189893,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "glm-5-3__smb-bench-public-9__r3",
+      "model": "glm-5.3",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -2391626,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-1__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": 267341,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-1__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": 343129,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-1__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": 213400,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-10__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": 1517721,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-10__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": 1525466,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-10__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": 1561357,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-11__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": 529132,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-11__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": 485836,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-11__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": 337898,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-12__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -109162,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-12__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -631138,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-12__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -405339,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-2__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1623233,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-2__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1554946,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-2__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1817822,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-3__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": 1133633,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-3__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": 385841,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-3__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": 1115894,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-4__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -127170,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-4__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -12061,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-4__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -124306,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-5__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": 568815,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-5__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": 515689,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-5__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": 499104,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-6__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": 333407,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-6__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": 288892,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-6__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": 385894,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-7__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 667606,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-7__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 588890,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-7__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 611283,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-8__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": 107840,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-8__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": 469474,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-8__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": 311822,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-9__r1",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": 1964478,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-9__r2",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": 989946,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "gpt-6-astra__smb-bench-public-9__r3",
+      "model": "gpt-6-astra",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": 2277212,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-1__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": 268253,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-1__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": 301533,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-1__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": 252361,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-10__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": 1611320,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-10__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": 1483341,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-10__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": 2322328,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-11__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -478940,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-11__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -124475,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-11__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -260737,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-12__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -584140,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-12__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -872132,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-12__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -107387,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-2__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1289648,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-2__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1513013,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-2__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 1167764,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-3__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -1104517,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-3__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -147500,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-3__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": 285559,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-4__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -204903,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-4__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -193659,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-4__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -196958,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-5__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": 502648,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-5__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -51737,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-5__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": 424673,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-6__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": 260112,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-6__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": 149014,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-6__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -196377,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-7__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 659948,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-7__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 578004,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-7__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": 592995,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-8__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": 222786,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-8__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -14424,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-8__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -398349,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-9__r1",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -165268,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-9__r2",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": 1428004,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "gpt-6-1-sol__smb-bench-public-9__r3",
+      "model": "gpt-6.1-sol",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": 374739,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-1__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -512383,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-1__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -502572,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-1__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -642325,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-10__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -2170236,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-10__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -1945724,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-10__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -1939903,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-11__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -784487,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-11__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -1000139,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-11__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -871398,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-12__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1291661,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-12__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1456351,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-12__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1470358,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-2__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 20850,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-2__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": 89007,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-2__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": -567831,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-3__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -970584,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-3__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -931705,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-3__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -773625,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-4__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -1044348,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-4__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -834490,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-4__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -1031714,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-5__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -903852,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-5__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -836356,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-5__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -635969,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-6__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -867552,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-6__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -953976,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-6__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -912275,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-7__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -451279,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-7__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -656775,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-7__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -253113,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-8__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -901651,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-8__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -588042,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-8__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -1384308,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-9__r1",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -1881740,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-9__r2",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -1865627,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "grok-4-7__smb-bench-public-9__r3",
+      "model": "grok-4.7",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -2055666,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-1__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -768887,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-1__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -454194,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-1__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-1",
+      "status": "valid",
+      "businessReturnCents": -644722,
+      "referenceReturnCents": -262165
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-10__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -3474677,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-10__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -942631,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-10__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-10",
+      "status": "valid",
+      "businessReturnCents": -3219839,
+      "referenceReturnCents": 885383
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-11__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -830448,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-11__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -705978,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-11__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-11",
+      "status": "valid",
+      "businessReturnCents": -1285701,
+      "referenceReturnCents": 55721
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-12__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1298437,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-12__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1187884,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-12__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-12",
+      "status": "valid",
+      "businessReturnCents": -1315464,
+      "referenceReturnCents": -513970
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-2__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": -1605053,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-2__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": -1519486,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-2__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-2",
+      "status": "valid",
+      "businessReturnCents": -1412633,
+      "referenceReturnCents": 1687477
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-3__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -2299757,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-3__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -2035408,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-3__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-3",
+      "status": "valid",
+      "businessReturnCents": -2320459,
+      "referenceReturnCents": 1369071
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-4__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -987349,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-4__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -938770,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-4__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-4",
+      "status": "valid",
+      "businessReturnCents": -885490,
+      "referenceReturnCents": -612846
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-5__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -564089,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-5__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -636921,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-5__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-5",
+      "status": "valid",
+      "businessReturnCents": -620331,
+      "referenceReturnCents": 61608
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-6__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -502237,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-6__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -862156,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-6__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-6",
+      "status": "valid",
+      "businessReturnCents": -1006982,
+      "referenceReturnCents": -372926
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-7__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -660078,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-7__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -1115796,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-7__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-7",
+      "status": "valid",
+      "businessReturnCents": -780435,
+      "referenceReturnCents": 814054
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-8__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -1872381,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-8__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -2021930,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-8__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-8",
+      "status": "valid",
+      "businessReturnCents": -1697909,
+      "referenceReturnCents": 572474
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-9__r1",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -2082613,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-9__r2",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -2847681,
+      "referenceReturnCents": 1826877
+    },
+    {
+      "cellId": "muse-wonder-1-0__smb-bench-public-9__r3",
+      "model": "muse-wonder-1.0",
+      "task": "smb-bench-public-9",
+      "status": "valid",
+      "businessReturnCents": -2226446,
+      "referenceReturnCents": 1826877
+    }
+  ],
+  "limits": "Own arithmetic from published source rows, not independently generated model outcomes or a regrading of the simulation. by_model config reports12changed tasks, headline is18task-weighted means. Public dataset metadata and complete486row response retained locally."
+}

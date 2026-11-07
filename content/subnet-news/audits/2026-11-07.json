@@ -27,48 +27,2574 @@
   ],
   "chainReviews": {
     "etao": {
-      "kind": "etao",
       "status": "DONE",
-      "checkedAt": "2026-11-07T05:08:36.030464+00:00",
-      "fromBlock": 9450205,
-      "toBlock": 9452010,
-      "hash": "0x2f94418928a5f0ca57bb54cf9a73c2f7a5250877750fde0ebf3b153d12a9c00a",
-      "throughTime": "2026-11-07T05:03:36+00:00",
-      "complete": true,
+      "fromBlock": 9452011,
+      "toBlock": 9454993,
+      "hash": "0x3794522df5e907a80237d19846891e236ddfc468d0945ef9ea11d7eb801b57c3",
+      "throughTime": "2026-11-07T15:00:12+00:00",
+      "checkedAt": "2026-11-07T15:09:27.069668+00:00",
+      "eventCount": 0,
       "gaps": [],
-      "runtime": 488,
-      "all128VectorsReconciled": true,
-      "allocationEvents": 0,
-      "qualifyingBurns": 1,
-      "eventCounts": {
-        "AlphaBurned": 31,
-        "AlphaRecycled": 30
-      },
-      "evidence": "/evidence/2026-11-07-chain-monitor-0003.json",
       "archiveUpdated": true,
-      "newsDisposition": "November7 full edition does not yet exist. Publish material permanent archive update now, retain November6 event for next full edition. No one-story edition or social post."
+      "evidence": "/evidence/2026-11-07-daily-chain.json",
+      "newsDisposition": "No new allocation event or qualifying individual burn in extension. Prior SN8/SN46/SN76 permanent events carried into dated news without recounting. Smaller events and recycling retained only in underlying evidence.",
+      "liveVerifiedAt": null
     },
     "burns": {
-      "kind": "burns",
       "status": "DONE",
-      "checkedAt": "2026-11-07T05:08:36.030464+00:00",
-      "fromBlock": 9450205,
-      "toBlock": 9452010,
-      "hash": "0x2f94418928a5f0ca57bb54cf9a73c2f7a5250877750fde0ebf3b153d12a9c00a",
-      "throughTime": "2026-11-07T05:03:36+00:00",
-      "complete": true,
+      "fromBlock": 9452011,
+      "toBlock": 9454993,
+      "hash": "0x3794522df5e907a80237d19846891e236ddfc468d0945ef9ea11d7eb801b57c3",
+      "throughTime": "2026-11-07T15:00:12+00:00",
+      "checkedAt": "2026-11-07T15:09:27.069668+00:00",
+      "eventCount": 0,
       "gaps": [],
-      "runtime": 488,
-      "all128VectorsReconciled": true,
-      "allocationEvents": 0,
-      "qualifyingBurns": 1,
-      "eventCounts": {
-        "AlphaBurned": 31,
-        "AlphaRecycled": 30
-      },
-      "evidence": "/evidence/2026-11-07-chain-monitor-0003.json",
       "archiveUpdated": true,
-      "newsDisposition": "November7 full edition does not yet exist. Publish material permanent archive update now, retain November6 event for next full edition. No one-story edition or social post."
+      "evidence": "/evidence/2026-11-07-daily-chain.json",
+      "newsDisposition": "No new allocation event or qualifying individual burn in extension. Prior SN8/SN46/SN76 permanent events carried into dated news without recounting. Smaller events and recycling retained only in underlying evidence.",
+      "liveVerifiedAt": null
     }
+  },
+  "checkedAt": "2026-11-07T15:16:10.424605+00:00",
+  "publication": {
+    "status": "VALIDATED_AWAITING_PRODUCTION",
+    "dailyWorkflowComplete": false,
+    "validatedAt": "2026-11-07T15:23:06.921982+00:00"
+  },
+  "ownerHoldings": {
+    "status": "DONE",
+    "block": 9454993,
+    "hash": "0x3794522df5e907a80237d19846891e236ddfc468d0945ef9ea11d7eb801b57c3",
+    "asOf": "2026-11-07T15:00:12+00:00",
+    "wallets": 128,
+    "evidence": "/evidence/owner-holdings-9454993.json",
+    "validation": "Collection complete; validator and live verification pending. Runtime488 metadata exactly matched reviewed fixture; stake API/source comparison retained.",
+    "runtimeReviewEvidence": "/evidence/2026-11-06-holdings-runtime-review.json"
+  },
+  "marketReview": {
+    "source": "https://shizzyunchained.com/api/backend/v1/screener",
+    "observedAt": "2026-11-07T15:13:42.310149+00:00",
+    "basis": "alpha/TAO rolling returns, not USD returns or proof of causation",
+    "rows": [
+      {
+        "netuid": 51,
+        "change24hPct": -1.333830367857606,
+        "change7dPct": -4.013757262422847
+      },
+      {
+        "netuid": 64,
+        "change24hPct": -0.1471837787517997,
+        "change7dPct": 0.5938810421415422
+      },
+      {
+        "netuid": 4,
+        "change24hPct": 0.7219429504532958,
+        "change7dPct": 1.726716219058238
+      },
+      {
+        "netuid": 8,
+        "change24hPct": -0.3504771672031794,
+        "change7dPct": 4.536492272837386
+      },
+      {
+        "netuid": 44,
+        "change24hPct": -1.9997503981266316,
+        "change7dPct": 4.091176836341568
+      },
+      {
+        "netuid": 120,
+        "change24hPct": 0.3046479259994443,
+        "change7dPct": 2.472936295284356
+      },
+      {
+        "netuid": 53,
+        "change24hPct": 11.590508631151671,
+        "change7dPct": -5.220910848012651
+      },
+      {
+        "netuid": 28,
+        "change24hPct": 0.32106636260682764,
+        "change7dPct": -18.883399960730127
+      },
+      {
+        "netuid": 3,
+        "change24hPct": -4.049674115138528,
+        "change7dPct": -4.551982087160187
+      },
+      {
+        "netuid": 9,
+        "change24hPct": -0.005987768286597098,
+        "change7dPct": 2.1587696151099873
+      },
+      {
+        "netuid": 68,
+        "change24hPct": -0.4473358812211287,
+        "change7dPct": 6.32337542910388
+      },
+      {
+        "netuid": 110,
+        "change24hPct": 6.844321086138883,
+        "change7dPct": 17.96901395312349
+      },
+      {
+        "netuid": 75,
+        "change24hPct": -3.0334501653500525,
+        "change7dPct": -10.399299330076984
+      },
+      {
+        "netuid": 56,
+        "change24hPct": -0.045310173300913255,
+        "change7dPct": -0.31194423196032733
+      },
+      {
+        "netuid": 95,
+        "change24hPct": -0.15413828899785037,
+        "change7dPct": -8.086459924544862
+      },
+      {
+        "netuid": 34,
+        "change24hPct": 0.05241691100591328,
+        "change7dPct": -8.875666081827195
+      },
+      {
+        "netuid": 24,
+        "change24hPct": 0.2262507779967028,
+        "change7dPct": 9.446391820658219
+      },
+      {
+        "netuid": 93,
+        "change24hPct": 1.2382970919637988,
+        "change7dPct": 6.63033703313909
+      },
+      {
+        "netuid": 5,
+        "change24hPct": 0.21302690186433498,
+        "change7dPct": 0.6203700813037137
+      },
+      {
+        "netuid": 41,
+        "change24hPct": 13.613441702856958,
+        "change7dPct": 26.584942937587382
+      },
+      {
+        "netuid": 107,
+        "change24hPct": 7.863748030781413,
+        "change7dPct": 18.689652427801974
+      },
+      {
+        "netuid": 48,
+        "change24hPct": 0.7706922610712418,
+        "change7dPct": 4.411247896710457
+      },
+      {
+        "netuid": 14,
+        "change24hPct": -0.07044646608314627,
+        "change7dPct": -1.4712609619223205
+      },
+      {
+        "netuid": 19,
+        "change24hPct": -4.927855685743571,
+        "change7dPct": -8.878082362446191
+      },
+      {
+        "netuid": 62,
+        "change24hPct": -7.644665464449148,
+        "change7dPct": -10.43502233765356
+      },
+      {
+        "netuid": 17,
+        "change24hPct": -0.15618952518971,
+        "change7dPct": -9.392357304524658
+      },
+      {
+        "netuid": 23,
+        "change24hPct": 2.733915126402728,
+        "change7dPct": -1.2623080810054734
+      },
+      {
+        "netuid": 39,
+        "change24hPct": 0.15864346683915972,
+        "change7dPct": -36.5485648838904
+      },
+      {
+        "netuid": 124,
+        "change24hPct": -0.19396602913582348,
+        "change7dPct": -3.0092980094825506
+      },
+      {
+        "netuid": 11,
+        "change24hPct": -1.1799489646787944,
+        "change7dPct": 1.7955042352115895
+      },
+      {
+        "netuid": 114,
+        "change24hPct": 5.3589639818967365,
+        "change7dPct": -0.6610685972801466
+      },
+      {
+        "netuid": 1,
+        "change24hPct": -0.07079587519830777,
+        "change7dPct": -1.5653075317015552
+      },
+      {
+        "netuid": 15,
+        "change24hPct": 1.3624952431580641,
+        "change7dPct": -1.8885190339315179
+      },
+      {
+        "netuid": 80,
+        "change24hPct": -2.329205001248329,
+        "change7dPct": -10.302606888676777
+      },
+      {
+        "netuid": 54,
+        "change24hPct": 1.9825663113213872,
+        "change7dPct": 24.358777818713506
+      },
+      {
+        "netuid": 52,
+        "change24hPct": -0.014385535344211395,
+        "change7dPct": -0.19528266875455694
+      },
+      {
+        "netuid": 61,
+        "change24hPct": 1.3150322034491624,
+        "change7dPct": -16.098130954008166
+      },
+      {
+        "netuid": 81,
+        "change24hPct": 2.0484015826021507,
+        "change7dPct": 7.1642493678520305
+      },
+      {
+        "netuid": 83,
+        "change24hPct": -0.6464099362351493,
+        "change7dPct": -3.541043930946622
+      },
+      {
+        "netuid": 77,
+        "change24hPct": -0.15025587903607251,
+        "change7dPct": -1.4914385944417434
+      },
+      {
+        "netuid": 112,
+        "change24hPct": 3.7136990780655887,
+        "change7dPct": 2.7030289285413707
+      },
+      {
+        "netuid": 21,
+        "change24hPct": -12.007451016618939,
+        "change7dPct": -9.641886168022827
+      },
+      {
+        "netuid": 10,
+        "change24hPct": 0.2766455061810892,
+        "change7dPct": -3.593341467862486
+      },
+      {
+        "netuid": 63,
+        "change24hPct": -0.4932676903988697,
+        "change7dPct": -15.155532171806051
+      },
+      {
+        "netuid": 12,
+        "change24hPct": -0.05475430337932056,
+        "change7dPct": -1.11925551591672
+      },
+      {
+        "netuid": 25,
+        "change24hPct": 1.1450184140317834,
+        "change7dPct": 0.7914619785685894
+      },
+      {
+        "netuid": 13,
+        "change24hPct": -0.03746124050295033,
+        "change7dPct": -2.4258962198354026
+      },
+      {
+        "netuid": 85,
+        "change24hPct": 0.35168934963141074,
+        "change7dPct": -3.328787423614062
+      },
+      {
+        "netuid": 43,
+        "change24hPct": -0.011933994894677438,
+        "change7dPct": -0.01923963253060328
+      },
+      {
+        "netuid": 2,
+        "change24hPct": 0.003820511847381937,
+        "change7dPct": 10.00351231872038
+      },
+      {
+        "netuid": 18,
+        "change24hPct": 0.41210687841534105,
+        "change7dPct": -2.810610135250364
+      },
+      {
+        "netuid": 97,
+        "change24hPct": -0.8389932046630363,
+        "change7dPct": -6.318785142190766
+      },
+      {
+        "netuid": 30,
+        "change24hPct": 2.484205972418483,
+        "change7dPct": 11.864084439100337
+      },
+      {
+        "netuid": 71,
+        "change24hPct": -2.531530656246167,
+        "change7dPct": 0.97270940025984
+      },
+      {
+        "netuid": 74,
+        "change24hPct": 4.077236135593771,
+        "change7dPct": 47.555506076060645
+      },
+      {
+        "netuid": 104,
+        "change24hPct": -0.009268532430594976,
+        "change7dPct": -0.7201190871477658
+      },
+      {
+        "netuid": 50,
+        "change24hPct": -10.183585099930887,
+        "change7dPct": -11.914629912175986
+      },
+      {
+        "netuid": 117,
+        "change24hPct": -2.3906740107408853,
+        "change7dPct": 26.53464786690925
+      },
+      {
+        "netuid": 111,
+        "change24hPct": 3.213455615418668,
+        "change7dPct": 3.8058381935172383
+      },
+      {
+        "netuid": 46,
+        "change24hPct": -0.9347719033989189,
+        "change7dPct": 16.973836986134817
+      },
+      {
+        "netuid": 60,
+        "change24hPct": -1.2550499340175705,
+        "change7dPct": -2.613765574613015
+      },
+      {
+        "netuid": 32,
+        "change24hPct": -0.8687814627620339,
+        "change7dPct": -1.1365830436820825
+      },
+      {
+        "netuid": 33,
+        "change24hPct": -0.8881352297999244,
+        "change7dPct": -0.6205415170263824
+      },
+      {
+        "netuid": 90,
+        "change24hPct": 0.06104837791059826,
+        "change7dPct": -5.547401604144691
+      },
+      {
+        "netuid": 29,
+        "change24hPct": -0.00203625085492591,
+        "change7dPct": -0.08477358670462927
+      },
+      {
+        "netuid": 79,
+        "change24hPct": 0.588812528001288,
+        "change7dPct": -7.8853701029237895
+      },
+      {
+        "netuid": 22,
+        "change24hPct": 0.7829225627904548,
+        "change7dPct": -3.6304974965673154
+      },
+      {
+        "netuid": 65,
+        "change24hPct": -2.3247393329934924,
+        "change7dPct": 24.29393639747086
+      },
+      {
+        "netuid": 105,
+        "change24hPct": 0.2953498441626326,
+        "change7dPct": -15.69625698537422
+      },
+      {
+        "netuid": 37,
+        "change24hPct": -0.8986881950444946,
+        "change7dPct": -0.5121299238028321
+      },
+      {
+        "netuid": 88,
+        "change24hPct": 3.54127925727186,
+        "change7dPct": 1.6627835539050864
+      },
+      {
+        "netuid": 89,
+        "change24hPct": -0.06616003576218149,
+        "change7dPct": -1.4557622169144027
+      },
+      {
+        "netuid": 7,
+        "change24hPct": 0.3591651808549194,
+        "change7dPct": 1.4939327260210649
+      },
+      {
+        "netuid": 6,
+        "change24hPct": -0.7584159550690583,
+        "change7dPct": -2.0076236005667902
+      },
+      {
+        "netuid": 128,
+        "change24hPct": 0.2407855098591953,
+        "change7dPct": 6.220667574388569
+      },
+      {
+        "netuid": 82,
+        "change24hPct": -1.1821595037370085,
+        "change7dPct": -15.903038598202325
+      },
+      {
+        "netuid": 49,
+        "change24hPct": 0.2861546801190772,
+        "change7dPct": -3.451876224321372
+      },
+      {
+        "netuid": 42,
+        "change24hPct": -0.042732841607383394,
+        "change7dPct": 6.694102748795381
+      },
+      {
+        "netuid": 66,
+        "change24hPct": -2.091172521626812,
+        "change7dPct": -4.9976026184436355
+      },
+      {
+        "netuid": 55,
+        "change24hPct": 0.5427962190775337,
+        "change7dPct": 0.14020856421343314
+      },
+      {
+        "netuid": 92,
+        "change24hPct": 25.62476140915141,
+        "change7dPct": 15.485041147730081
+      },
+      {
+        "netuid": 27,
+        "change24hPct": 1.325424401911075,
+        "change7dPct": -1.6796784035169046
+      },
+      {
+        "netuid": 20,
+        "change24hPct": -0.014946687226762723,
+        "change7dPct": -0.7595193336346816
+      },
+      {
+        "netuid": 121,
+        "change24hPct": -1.3875489422311194,
+        "change7dPct": -2.978279272168053
+      },
+      {
+        "netuid": 45,
+        "change24hPct": 0.02566083486591872,
+        "change7dPct": -1.7343385419162038
+      },
+      {
+        "netuid": 73,
+        "change24hPct": -0.42034806648384565,
+        "change7dPct": -11.449700672470717
+      },
+      {
+        "netuid": 72,
+        "change24hPct": -0.522334535091662,
+        "change7dPct": -1.2148386474907185
+      },
+      {
+        "netuid": 38,
+        "change24hPct": -2.587063652839829,
+        "change7dPct": -14.320543447931444
+      },
+      {
+        "netuid": 118,
+        "change24hPct": 0.36075552081887885,
+        "change7dPct": -26.379321732630927
+      },
+      {
+        "netuid": 58,
+        "change24hPct": 15.960493608826795,
+        "change7dPct": 8.781638642458017
+      },
+      {
+        "netuid": 123,
+        "change24hPct": -0.8286357966796554,
+        "change7dPct": -0.5853539042832256
+      },
+      {
+        "netuid": 127,
+        "change24hPct": -11.082148252331093,
+        "change7dPct": -19.412742570592723
+      },
+      {
+        "netuid": 106,
+        "change24hPct": -0.622804268122072,
+        "change7dPct": -0.8378685251164794
+      },
+      {
+        "netuid": 101,
+        "change24hPct": -0.2064737941884974,
+        "change7dPct": -1.8779893758743218
+      },
+      {
+        "netuid": 116,
+        "change24hPct": -10.664934517101084,
+        "change7dPct": -8.32102865803297
+      },
+      {
+        "netuid": 69,
+        "change24hPct": -0.12469045254580681,
+        "change7dPct": -2.5759255491972
+      },
+      {
+        "netuid": 98,
+        "change24hPct": -0.0729731451331877,
+        "change7dPct": 1.2836379950010326
+      },
+      {
+        "netuid": 125,
+        "change24hPct": -0.0407069554816642,
+        "change7dPct": -1.1691120347811883
+      },
+      {
+        "netuid": 94,
+        "change24hPct": 3.0906703594558764,
+        "change7dPct": 9.210224712442542
+      },
+      {
+        "netuid": 102,
+        "change24hPct": -3.7850081549920063,
+        "change7dPct": 3.146312491972589
+      },
+      {
+        "netuid": 91,
+        "change24hPct": 9.21562299595894,
+        "change7dPct": -9.988800393103011
+      },
+      {
+        "netuid": 100,
+        "change24hPct": 1.7947271807530671,
+        "change7dPct": 5.060303699603953
+      },
+      {
+        "netuid": 126,
+        "change24hPct": -1.8998894467970346,
+        "change7dPct": -11.131909920159387
+      },
+      {
+        "netuid": 31,
+        "change24hPct": -5.83934004340098,
+        "change7dPct": -1.8111595401002265
+      },
+      {
+        "netuid": 115,
+        "change24hPct": 1.7857323885121092,
+        "change7dPct": -2.1776542112031856
+      },
+      {
+        "netuid": 119,
+        "change24hPct": -0.5115148231393878,
+        "change7dPct": -0.5673982788062242
+      },
+      {
+        "netuid": 87,
+        "change24hPct": -0.06040102776694406,
+        "change7dPct": -25.31887471425371
+      },
+      {
+        "netuid": 67,
+        "change24hPct": -1.3246234737140654,
+        "change7dPct": -3.857755261106781
+      },
+      {
+        "netuid": 96,
+        "change24hPct": -0.2182578207358145,
+        "change7dPct": -8.259452015957555
+      },
+      {
+        "netuid": 113,
+        "change24hPct": -4.216953259015059,
+        "change7dPct": -5.094668614037563
+      },
+      {
+        "netuid": 109,
+        "change24hPct": -7.254665098525278,
+        "change7dPct": -13.36971586762361
+      },
+      {
+        "netuid": 84,
+        "change24hPct": -0.08380367332938352,
+        "change7dPct": -4.4524490776267704
+      },
+      {
+        "netuid": 26,
+        "change24hPct": 0.21574973031283712,
+        "change7dPct": -4.564360404904286
+      },
+      {
+        "netuid": 47,
+        "change24hPct": -0.10325679979063615,
+        "change7dPct": -2.1676725037572186
+      },
+      {
+        "netuid": 122,
+        "change24hPct": -0.2795684629248859,
+        "change7dPct": -12.678999369628531
+      },
+      {
+        "netuid": 57,
+        "change24hPct": -0.4410912697134344,
+        "change7dPct": -7.3728316116564665
+      },
+      {
+        "netuid": 40,
+        "change24hPct": -0.11758570006163767,
+        "change7dPct": -5.207390612511439
+      },
+      {
+        "netuid": 78,
+        "change24hPct": -16.73843660877282,
+        "change7dPct": -40.03867283963691
+      },
+      {
+        "netuid": 59,
+        "change24hPct": 0.059801928031266355,
+        "change7dPct": -8.595657270193708
+      },
+      {
+        "netuid": 108,
+        "change24hPct": -6.233545072549406,
+        "change7dPct": -3.4220379650695665
+      },
+      {
+        "netuid": 76,
+        "change24hPct": 9.920441954379354,
+        "change7dPct": -7.4425595564233715
+      },
+      {
+        "netuid": 103,
+        "change24hPct": 0.7888680362860875,
+        "change7dPct": -48.102171038390814
+      },
+      {
+        "netuid": 36,
+        "change24hPct": -3.205324956193025,
+        "change7dPct": 1525.910395738251
+      },
+      {
+        "netuid": 70,
+        "change24hPct": 36.48773099860482,
+        "change7dPct": 125.94892641263807
+      },
+      {
+        "netuid": 86,
+        "change24hPct": -3.2540520640579738,
+        "change7dPct": -22.926720587153245
+      },
+      {
+        "netuid": 35,
+        "change24hPct": 1.958153514587108,
+        "change7dPct": -9.584972831178565
+      },
+      {
+        "netuid": 99,
+        "change24hPct": 0.044831599661696975,
+        "change7dPct": 249.86314207748404
+      },
+      {
+        "netuid": 16,
+        "change24hPct": -10.888516020405952,
+        "change7dPct": -31.279603672703253
+      }
+    ],
+    "decisions": [
+      {
+        "netuid": 92,
+        "outcome": "covered",
+        "reason": "Earlier REAX1.3 independent leaderboard result already covered. Newly cleared Trishool integration is attributed, not measured customer adoption; the broad window does not isolate either announcement.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://github.com/reaxlabs/reax-subnet"
+        ]
+      },
+      {
+        "netuid": 58,
+        "outcome": "excluded",
+        "reason": "Attune robot/community reports lack a new verified commercial delivery or partnership. Rolling returns alone do not establish a catalyst; prior robotics coverage retained.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://github.com/robotensor/attune-subnet"
+        ]
+      },
+      {
+        "netuid": 78,
+        "outcome": "excluded",
+        "reason": "Current public Umi README distinguishes admission, scoring and active rewards. Fresh digest operational claims lack accessible original confirmation; price decline alone cannot establish their cause or project failure.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://github.com/Umi-BitSign/umi"
+        ]
+      },
+      {
+        "netuid": 36,
+        "outcome": "excluded",
+        "reason": "Current Weir GPU marketplace follows registration reuse; its seven-day return crosses the old registration and is not a like-for-like product gain or verified rental revenue.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://github.com/weircompute/weir-subnet"
+        ]
+      },
+      {
+        "netuid": 70,
+        "outcome": "excluded",
+        "reason": "Current Fugal router documentation and November4 native commit reviewed in monitor; no fresh completed catalyst verified. Small liquidity can magnify moves; community V2 timing is not activation.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://github.com/fugal-ai/fugal-subnet"
+        ]
+      },
+      {
+        "netuid": 99,
+        "outcome": "excluded",
+        "reason": "Unnamed replacement registration already verified in prior edition. Seven-day returns cross the Thirty Spokes reset; they are not a continuous successor-project return or sale price.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener",
+          "https://subnetradar.com/subnet/99"
+        ]
+      }
+    ]
+  },
+  "grokReview": {
+    "status": "BLOCKED",
+    "checkedAt": "2026-11-07T15:16:10.424605+00:00",
+    "identity": "@ShizzyUnchained",
+    "conversation": "https://x.com/i/grok?conversation=d1a3638d-c140-4328-8fa5-bd39c26ae5f4",
+    "reason": "Included usage and available credits exhausted. Full-roster discovery/top-five request returned only quota notice; final omission check blocked by same condition.",
+    "evidence": "daily-news-2026-11-07/grok-daily.txt",
+    "omissionEvidence": "daily-news-2026-11-07/grok-omission-attempt.txt"
+  },
+  "taostatsReview": {
+    "status": "BLOCKED",
+    "reason": "No configured authenticated API key; no /v1 coverage or quota usage claimed. Current public SN113 Unknown verified natively.",
+    "pending": "Historical fallback/backfill remains separately pending; no visitorRPC or infrastructure changes."
+  },
+  "sourceReview": {
+    "repositories": {
+      "configuredRows": 124,
+      "statuses": {
+        "403": 100,
+        "NO_REPOSITORY": 12,
+        "429": 12
+      },
+      "scope": "Seven-day default-branch sweep blocked403/429; selected native/raw fallbacks and earlier verified receipts used."
+    },
+    "briefs": "50dated briefs fully read; substantive unresolved operating/safety leads retained locally, no allegation from secondary summary published.",
+    "requiredAccounts": "Fresh originals/replies loaded views plus prior seven-day overlap. Tensia replies include community amplification of older investigation, not new verified allegation. Const latest wallet/benchmark posts precede current window; deduplicated. Bot latest SN99 already covered. No exhaustive scrolling claim.",
+    "ownerDiscovery": "Fresh owner originals, replies, reposts and bookmarks checked. Relevant video and REAX interview leads retained; unrelated material excluded and private list not published.",
+    "media": "Trishool partnership graphic inspected. ORO report charts and public trace artifacts reviewed; attached45second video not fully audiovisually reviewed. Yanez early-look and old Mark/REAX interview media remain gaps.",
+    "videos": "Both tabs plus latest public watch page checked; add e4glmPHoEvw19:04; keep member7:03,Leadpoet37:26 and canceledCarbon flags.",
+    "moments": "200loaded derived alerts reviewed; mixed date grouping noted. Not proof of owner sales, price causation or a new subnet registration.",
+    "additionalDiscovery": "TAO Daily November7 surfaced Trishool integration and ORO benchmark, both now primary-verified. AlphaGap native dashboard inspected at alphagap.io: derived scores and market columns are discovery, not proof of launches or adoption. No unique primary-cleared additional catalyst.",
+    "marketUi": "Prepublication native0947check:128rows, no blanks across10m/1h/24h/7d in USD and TAO; all8descending sorts passed. Final live check pending."
+  },
+  "pendingCarryForward": {
+    "evidence": "daily-news-2026-11-07/pending-leads-carried.json",
+    "disposition": "All earlier pending receipt chains retained; meaningful lower-rated cleared leads included or folded. SN71 merges consolidated. ORO roadmap superseded by separate benchmark release without claiming mainnet activation. Unresolved operating and media leads carried."
+  },
+  "remaining": [
+    "Full release gate, production READY/live checks and one deduplicated daily roundup pending.",
+    "Grok quota and authenticated TaoStats access remain BLOCKED; incomplete original-channel/media coverage disclosed. Full workflow not claimed complete."
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/1/2026-11-07",
+      "repository": "macrocosm-os/apex",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "DaniLabsAI/subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "unarbos/teutonic",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "manifold-inc/targon",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "hone-subnet-org/hone-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "numinouslabs/numinous",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "entrius/allways",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": "https://subnetradar.com/subnet-news/8/2026-11-07",
+      "repository": "taoshidev/vanta-network",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-07-chain-monitor-0003.json",
+          "label": "Successful finalized burn, exact native amount and registration evidence"
+        },
+        {
+          "url": "https://github.com/taoshidev/vanta-network/commit/da4369158d9b622285d36bbd37638df64fb773b2",
+          "label": "Vanta separate background-priority implementation"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "macrocosm-os/iota",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/10/2026-11-07",
+      "repository": "Pareton-ai/pareton",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "trajectoryRL/trajectoryRL",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "backend-developers-ltd/ComputeHorde",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "macrocosm-os/data-universe",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/14/2026-11-07",
+      "repository": "latent-to/cacheon",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": "https://subnetradar.com/subnet-news/15/2026-11-07",
+      "repository": "ORO-AI/oro",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://x.com/oroagents/status/2118830507450642687",
+          "label": "ORO November6 SMB Bench release"
+        },
+        {
+          "url": "https://oroagents.com/benchmarks/smb-bench",
+          "label": "ORO technical report, method and limitations"
+        },
+        {
+          "url": "https://huggingface.co/datasets/oro-agents/smb-bench",
+          "label": "Public485scored runs, traces and summary data"
+        },
+        {
+          "url": "https://oroagents.com/blog/oros-next-chapter",
+          "label": "November4 planned workload direction"
+        }
+      ]
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": null,
+      "repositoryStatus": "NO_IDENTITY_LINK",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": null,
+      "repository": "404-Repo/404-gen-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://github.com/404-Repo/404-gen-subnet/pull/83",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://github.com/404-Repo/404-gen-subnet/commit/0211d8d98ef843db3bb173726cdb4b63cd904a7d",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "Orpheus-AI/Zeus",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "taostat/blockmachine",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "witnessvision/witness_subnet",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "ippcteam/SN21-adtao",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "datura-ai/desearch",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": "https://subnetradar.com/subnet-news/23/2026-11-07",
+      "repository": "TrishoolAI/trishool-phase2",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://x.com/trishoolai/status/2118720069924536753",
+          "label": "Trishool November6 primary integration announcement and graphic"
+        }
+      ]
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/24/2026-11-07",
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "urfoundation/sn",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "0xsigurd/Perturb",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "Komms-protocol/komms-docs",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/28/2026-11-07",
+      "repository": "taostat/gm-miner",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "coldint/hotfloat",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/30/2026-11-07",
+      "repository": "Endure-Network/endure-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "It-s-AI/llm-detection",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "afterpartyai/bittensor-conversation-genome-project",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "BitMind-AI/yugos",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 35,
+      "name": "Jacob Robert Steeves",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "weircompute/weir-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": null,
+      "repository": "Aurelius-Protocol/Aurelius-Protocol",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://github.com/Aurelius-Protocol/Aurelius-Protocol/pull/34",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://github.com/Aurelius-Protocol/Aurelius-Protocol/commit/b090ed116d6370d8ca111a5c071f3ceea7e773f4",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/38/2026-11-07",
+      "repository": "chronollm/sn38",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/39/2026-11-07",
+      "repository": "deprecated/deprecated",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "RalphLabsAI/ralph",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": null,
+      "repository": "corvxai/almanac",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://github.com/corvxai/almanac/pull/65",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://github.com/corvxai/almanac/commit/24effa4abaa31ad2d87f5ee350feb6d19cb00e46",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "GraphiteAI/Graphite-Subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": "https://subnetradar.com/subnet-news/44/2026-11-07",
+      "repository": "score-technologies/turbovision",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://github.com/score-technologies/turbovision/commit/9b5e92271eda11812095b46481142f2750c547de",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "Team-Rizzo/alpharidge-ai",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": "https://subnetradar.com/subnet-news/46/2026-11-07",
+      "repository": "Subnet46/sn46-validator",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://x.com/thinkinstant/status/2118821815917195267",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://x.com/thinkinstant/status/2118821817406177659",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://instantnetwork.ai/usage",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-06-chain-monitor-1802.json",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "forgenet47/gpuforge",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "qbittensor-labs/quantum-compute",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/49/2026-11-07",
+      "repository": "nepher-ai/nepher-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/50/2026-11-07",
+      "repository": "mode-network/synth-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/51/2026-11-07",
+      "repository": "Datura-ai/lium-io",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "tensorplex-labs/dojo",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/53/2026-11-07",
+      "repository": "hanlinai/engy",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "outcome": "covered",
+      "publishedItems": 2,
+      "datedBrief": "https://subnetradar.com/subnet-news/54/2026-11-07",
+      "repository": "yanez-compliance/MIID-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://x.com/yanez__ai/status/2118764172431474703",
+          "label": "Yanez original announcement or HOL Guard primary pull request"
+        },
+        {
+          "url": "https://x.com/yanez__ai/status/2118845777321898395",
+          "label": "Yanez original announcement or HOL Guard primary pull request"
+        },
+        {
+          "url": "https://github.com/hashgraph-online/hol-guard/pull/7236",
+          "label": "Yanez original announcement or HOL Guard primary pull request"
+        },
+        {
+          "url": "https://github.com/hashgraph-online/hol-guard/pull/7352",
+          "label": "Yanez original announcement or HOL Guard primary pull request"
+        },
+        {
+          "url": "https://x.com/yanez__ai/status/2118401776328266203",
+          "label": "Yanez original announcement or HOL Guard primary pull request"
+        }
+      ]
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/55/2026-11-07",
+      "repository": "genomesio/subnet-niome",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/56/2026-11-07",
+      "repository": "gradients-ai/G.O.D",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": null,
+      "repositoryStatus": "NO_IDENTITY_LINK",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/58/2026-11-07",
+      "repository": "robotensor/attune-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": null,
+      "repositoryStatus": "NO_IDENTITY_LINK",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/60/2026-11-07",
+      "repository": "Bitsec-AI/sandbox",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/61/2026-11-07",
+      "repository": "RedTeamSubnet/RedTeam",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/62/2026-11-07",
+      "repository": "ridgesai/ridges",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "qbittensor-labs/enigma",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": null,
+      "repository": "chutesai/chutes",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://x.com/chutes_ai/status/2118714124116910424",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://chutes.ai/app/chute/chutes-tencent-hy4",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "taofu-labs/true-performance-network",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": "https://subnetradar.com/subnet-news/66/2026-11-07",
+      "repository": "conjectures-io/conjectures-validator",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://github.com/conjectures-io/conjectures-validator/pull/198",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://github.com/conjectures-io/conjectures-validator/commit/468fafbbd592b670168180a3abf174fdae90e0fd",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "harnyx/harnyx",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/68/2026-11-07",
+      "repository": "metanova-labs/nova",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "HeraldMedia/herald",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/70/2026-11-07",
+      "repository": "fugal-ai/fugal-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": "https://subnetradar.com/subnet-news/71/2026-11-07",
+      "repository": "leadpoet/leadpoet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1096",
+          "label": "Leadpoet primary merged implementation"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1095",
+          "label": "Leadpoet primary merged implementation"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1103",
+          "label": "Leadpoet primary merged implementation"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1105",
+          "label": "Leadpoet primary merged implementation"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1106",
+          "label": "Leadpoet primary merged implementation"
+        },
+        {
+          "url": "https://github.com/leadpoet/leadpoet/pull/1107",
+          "label": "Leadpoet primary merged implementation"
+        }
+      ]
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "natixnetwork/streetvision-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "entrius/gittensor",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "thenervelab/thebrain",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": null,
+      "repository": "heroncovelabs/ormas-subnet",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-06-chain-monitor-1802.json",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://taostats.io/extrinsic/9448708-29",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "creativebuilds/sn77",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/78/2026-11-07",
+      "repository": "Umi-BitSign/umi",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "taos-im/sn-79",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/80/2026-11-07",
+      "repository": "openroboto-ai/openroboto-subnet",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "reliquadotai/reliquary",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/82/2026-11-07",
+      "repository": "Vora-Inc/NOAH",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "toptensor/CliqueAI",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": null,
+      "repositoryStatus": "NO_IDENTITY_LINK",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/85/2026-11-07",
+      "repository": "vidaio-subnet/vidaio-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/88/2026-11-07",
+      "repository": "mobiusfund/investing",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "DeltaCompute24/InfiniteQuant-Subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "KubeTEE-AI/kubetee-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "TensorLink-AI/cascade",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": "https://subnetradar.com/subnet-news/92/2026-11-07",
+      "repository": "reaxlabs/reax-subnet",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://x.com/trishoolai/status/2118720069924536753",
+          "label": "Trishool names REAX as its EU-hosted decision-model supplier"
+        }
+      ]
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": null,
+      "repository": "bitcast-network/bitcast",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://github.com/bitcast-network/bitcast/commit/2f56434ffad9d086880b3e412f8a35a12841bbbf",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://github.com/bitcast-network/bitcast/pull/179",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "cathedralai/cathedral-sandbox",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "actual-computer/actual-subnet-95",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "verathos-ai/verathos",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": "https://subnetradar.com/subnet-news/97/2026-11-07",
+      "repository": "DendriteLabs/ingot",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://github.com/DendriteLabs/ingot/commit/6702d97128f0ced43d991b034f37670a888950bb",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "neverplayalone/neverplayalone_subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/99/2026-11-07",
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/100/2026-11-07",
+      "repository": "CortexLM/cortex",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "tag101-ai/tag101",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/102/2026-11-07",
+      "repository": "Connito-AI/Connito",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "terza-labs/terza-miner",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/104/2026-11-07",
+      "repository": "taostatus/taostatus-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/105/2026-11-07",
+      "repository": "https://github.com/orgs/Beam-Network/repositories",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "nodexo-ai/nodexo",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": null,
+      "repository": "minos-protocol/minos_subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://x.com/theminos_ai/status/2118928933513023580",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://x.com/theminos_ai/status/2118929649874932133",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://theminos.ai/macos",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": "https://subnetradar.com/subnet-news/108/2026-11-07",
+      "repository": "TatsuProject/ChipForge_SN108",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://github.com/TatsuProject/ChipForge_SN108/commit/88f7ea73a9291e8a82a103c51666c0788c3cd0dd",
+          "label": "ChipForge dated documentation patch"
+        }
+      ]
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/111/2026-11-07",
+      "repository": "DeSciClaims/Claims",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "",
+      "repositoryStatus": "NO_REPOSITORY",
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/114/2026-11-07",
+      "repository": "DendriteHQ/SOMA",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "moirai115/MoirAI",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/116/2026-11-07",
+      "repository": "carbonphysicsai/Carbon",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": "https://subnetradar.com/subnet-news/117/2026-11-07",
+      "repository": "everyframe-studios/everyframe-miner",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://x.com/xeveryframe/status/2118637807363080622",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        },
+        {
+          "url": "https://everyframe.studio/",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/118/2026-11-07",
+      "repository": "https://github.com/orgs/ditto-assistant/repositories",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "capabilityforge-next/capabilityforge",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/120/2026-11-07",
+      "repository": "AffineFoundation/affine",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "sundae-bar/bittensor-subnet",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "https://github.com/CookingTao",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "Barbariandev/MANTIS",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/124/2026-11-07",
+      "repository": "swarm-subnet/swarm",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "outcome": "covered",
+      "publishedItems": 1,
+      "datedBrief": null,
+      "repository": "Barbariandev/refinery",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": [
+        {
+          "url": "https://github.com/Barbariandev/Refinery/commit/8a54c0c5eb724d57704fbfeaa2bff51b3b2200f1",
+          "label": "Primary announcement, implementation or finalized event evidence"
+        }
+      ]
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "attelierai/attelierai_subnet",
+      "repositoryStatus": 429,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": "https://subnetradar.com/subnet-news/127/2026-11-07",
+      "repository": "ooo-hq/zils",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "outcome": "no-cleared-new-story",
+      "publishedItems": 0,
+      "datedBrief": null,
+      "repository": "byteleapai/byteleap-Miner",
+      "repositoryStatus": 403,
+      "disposition": "Primary-supported stories included; unconfirmed deployment, task/incident and team claims retained as discovery only. Chatter and duplicate history excluded.",
+      "xSearchStatus": "Required accounts and selected originals checked; individual timeline search incomplete.",
+      "sources": []
+    }
+  ],
+  "ratingReview": {
+    "SN15": {
+      "rating": 4,
+      "announcementUtc": "2026-11-06T22:18:53Z",
+      "observedAt": "2026-11-07T15:13:42.310149+00:00",
+      "marketSnapshotTime": "2026-11-07T15:13:12+00:00",
+      "basis": "alpha/TAO",
+      "rolling24hPct": 1.3624952431580641,
+      "volume24hTao": 1818.797120925,
+      "poolTao": 13626.071420295,
+      "decision": "Four stars for substantive research artifact with independently reproduced summary arithmetic, not an ordinary competition change. Broad rolling market window does not isolate announcement response; no price-based bump or causal inference.",
+      "limitations": "Synthetic six-business design,18tasks,485valid scored attempts. Public traces and means; grader manually gated and world generator unreleased. No rerun or independent regrading."
+    }
+  },
+  "lifecycleReview": {
+    "status": "DONE",
+    "fromBlock": 9447794,
+    "toBlock": 9454993,
+    "eventCount": 1,
+    "gaps": [],
+    "checkedAt": "2026-11-07T15:20:43.698334+00:00",
+    "evidence": "/evidence/2026-11-07-daily-lifecycle.json",
+    "newsDisposition": "One successful non-owner coldkey swap retained in evidence. No registration/removal/owner/identity change; no fresh subnet story or inferred sale."
+  },
+  "reviewedRuntime": {
+    "specVersion": 488,
+    "metadata": "Exact equality to reviewed metadata-9442967 fixture; GammaMinted target included.",
+    "holdings": "StakeInfo source and API layout comparison from prior reviewed486/488 retained, full metadata equality at collection. Independent SN51/SN64 holdings checks passed.",
+    "limits": "No byte-for-byte deployed WASM reproduction."
+  },
+  "validation": {
+    "news": "PASS91editions",
+    "ownerHoldings": "PASS128wallets at9454993",
+    "burns": "PASS5tests",
+    "release": "PASS: source text, production dependency audit, lint,205JavaScript tests, isolated production build and74desktop/phone visitor tests. Existing Carbon cancellation checks preserved, latest public default and selectable Leadpoet replay verified."
   }
 }

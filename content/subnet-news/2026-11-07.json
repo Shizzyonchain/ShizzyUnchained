@@ -1,0 +1,1111 @@
+{
+  "version": 1,
+  "date": "2026-11-07",
+  "title": "Bittensor Daily News: November 7, 2026",
+  "summary": "ORO releases a long-horizon business benchmark with public run traces; Minos opens its Mac beta with rewards off. Trishool announces REAX-powered EU Mode. Plus Chutes Hy4 pricing, Yanez integration work, verified transaction burns, operator updates and Shizzy’s latest public video.",
+  "publishedAt": "2026-11-07T15:16:10.424605+00:00",
+  "coverageStart": "2026-11-06T15:23:31.357204+00:00",
+  "coverageEnd": "2026-11-07T15:16:10.424605+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [
+    {
+      "headline": "Shizzy’s November 6 public update joins the video library",
+      "summary": "The public YouTube upload “It’s About to Happen… REAX Is Moving. Is TAO Next?” is 19:04 and was recorded November 6. Its description covers TAO’s weekly chart, the 10-to-100 TAO portfolio, a LIUM/OpenRoboto rebalance, REAX and quantum-wallet news. The native title, duration, description and public availability were checked, without claiming a full audiovisual review. Both Videos and Live tabs were checked; the prior Leadpoet replay and November 5 member video remain available. Carbon’s owner-requested cancellation stays in effect.",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=e4glmPHoEvw",
+          "label": "Shizzy November6 public video"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=q2pGNLUvCm4",
+          "label": "Existing public Leadpoet replay"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UYK4oIbF45w",
+          "label": "Existing November5 members-only update"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "Original Shizzy video coverage, with recording date, public/member distinction and native duration preserved.",
+      "status": "verified",
+      "importance": "medium"
+    }
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta’s 129.006214956 alpha burn enters the dated edition",
+          "summary": "Successful finalized block 9,450,472, extrinsic 24, event 202 records 129.006214956 alpha burned at 23:56 UTC November 6. It belongs to the current Vanta registration and individually exceeds 100 alpha. This direct burn was already published in the permanent archive; it is carried into today’s full news without recounting it or inferring buyback funding. Separate November 6 source maintenance lowers priority of intensive background work, but no measured validator performance gain was established.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-07-chain-monitor-0003.json",
+              "label": "Successful finalized burn, exact native amount and registration evidence"
+            },
+            {
+              "url": "https://github.com/taoshidev/vanta-network/commit/da4369158d9b622285d36bbd37638df64fb773b2",
+              "label": "Vanta separate background-priority implementation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Verified qualifying supply event with permanent execution evidence; purchase funding, revenue and performance gains not inferred.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": [
+        {
+          "headline": "SN15 ORO publishes SMB Bench, testing delayed consequences across 90 simulated buying days",
+          "summary": "Announced November 6 at 22:18:53 UTC, SMB Bench v1.0 assigns models a produce wholesaler’s purchasing desk across 18 tasks: six synthetic businesses in normal, customer-response and supplier-disruption quarters. ORO publishes 485 scored runs from nine models, their tool traces and a reproducible summary script. Our independent arithmetic on its public scored rows matches the displayed mean simulated quarterly profit: GPT-6 Astra $7,749 versus the fixed buying rule’s $6,412; the other eight models finish below that rule on average. These are simulation scores, not earned business revenue. ORO’s earlier November 4 direction article described a forthcoming subnet workload; this benchmark release does not establish that mainnet replacement. Regrading requires access to a separately gated bundle, and the world generator is not released. No independent model run or regrading was performed.",
+          "sources": [
+            {
+              "url": "https://x.com/oroagents/status/2118830507450642687",
+              "label": "ORO November6 SMB Bench release"
+            },
+            {
+              "url": "https://oroagents.com/benchmarks/smb-bench",
+              "label": "ORO technical report, method and limitations"
+            },
+            {
+              "url": "https://huggingface.co/datasets/oro-agents/smb-bench",
+              "label": "Public485scored runs, traces and summary data"
+            },
+            {
+              "url": "https://oroagents.com/blog/oros-next-chapter",
+              "label": "November4 planned workload direction"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-07-oro-benchmark-review.json",
+              "label": "Independent summary-arithmetic check and source-row snapshot"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "A substantive new long-horizon research artifact with inspectable run-level evidence; displayed result arithmetic independently reproduced. Limited to synthetic wholesaler tasks, with gated regrading and no independent rerun. Rating reflects research substance, not a competition payout or price multiplier.",
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": [
+        {
+          "headline": "SN17 separates Witness Pod runtime and adds render-cache safeguards",
+          "summary": "Announced or committed 2026-11-06 T 20:55:53 Z. PR83 merged at 20:55:53 UTC. The primary patch describes exact-request render caching, replay evidence separated from final results, and separate gateway/Pod packages. Frozen round inputs govern final saving while Finney membership stays in the gateway. The author reports extensive tests; those tests and a production rollout were not independently run. Fold this into the existing Witness tooling history rather than describe a new proven AI capability.",
+          "sources": [
+            {
+              "url": "https://github.com/404-Repo/404-gen-subnet/pull/83",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://github.com/404-Repo/404-gen-subnet/commit/0211d8d98ef843db3bb173726cdb4b63cd904a7d",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful verified code or operator update; no independently tested production rollout or consequential new adoption milestone.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": [
+        {
+          "headline": "SN23 Trishool announces REAX-powered EU Mode security",
+          "summary": "At 15:00:03 UTC November 6, Trishool announced that REAX decision models now power EU Mode, its team’s AI security product, using GPU servers in EU data centres. The stated purpose is to keep security checking within the same regional data boundary as the application. This is a specific cross-subnet integration claim, recovered just before the previous coverage cutoff. The original post and partnership graphic were inspected; no contract size, paying-user total, regional compliance certification or end-to-end routing test was verified.",
+          "sources": [
+            {
+              "url": "https://x.com/trishoolai/status/2118720069924536753",
+              "label": "Trishool November6 primary integration announcement and graphic"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Concrete attributed integration and regional hosting detail; no independent usage, commercial scale or compliance verification.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Jacob Robert Steeves",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": [
+        {
+          "headline": "SN37 Aurelius adds reviewed runtime 488 funding compatibility",
+          "summary": "Announced or committed 2026-11-07 T 00:59:23 Z. PR34 merged on November 6 Eastern. The miner funding client adds runtime 488 to exact code/metadata identity pins while retaining older reviewed profiles and refusal for unknown identities. Documentation reports codec/test and keyless finalized-chain checks; it explicitly says no wallet, transfer, real funding purchase or PyPI release was involved. Source and verification documentation were read; tests and live funding were not independently executed.",
+          "sources": [
+            {
+              "url": "https://github.com/Aurelius-Protocol/Aurelius-Protocol/pull/34",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://github.com/Aurelius-Protocol/Aurelius-Protocol/commit/b090ed116d6370d8ca111a5c071f3ceea7e773f4",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful miner compatibility with explicit identity safeguards; no demonstrated new adoption or commercial transaction.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": [
+        {
+          "headline": "SN41 Almanac merges Polymarket Protocol V2 client support",
+          "summary": "Announced or committed 2026-11-06 T 20:52:44 Z. PR65 merged at 20:52:44 UTC. The client distinguishes V2 position IDs and signing domains from existing V1 markets, checks wallet readiness before signing, and adds migration/approval handling and updated order documentation. The documentation says legacy Safe wallets cannot trade V2 markets. This is a repository integration, not an independently tested trading session or verified commercial rollout. No account, approvals, wallet or trading action was performed.",
+          "sources": [
+            {
+              "url": "https://github.com/corvxai/almanac/pull/65",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://github.com/corvxai/almanac/commit/24effa4abaa31ad2d87f5ee350feb6d19cb00e46",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful verified code or operator update; no independently tested production rollout or consequential new adoption milestone.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": [
+        {
+          "headline": "SN44 Score lowers Profile2 tiebreak threshold in source",
+          "summary": "Announced or committed 2026-11-05 T 07:59:54 Z. Late-cleared primary commit 9 b 5 e 92271 eda 11812095 b 46481142 f 2750 c 547 de changes Profile2 similarity threshold from 0.045 to 0.041 in validator scoring and its expected test value. Profiles 1 and 3 remain 0.039 and 0.05. This resolves the exact-threshold source gap. The two-line patch does not establish new person/vehicle/petrol task placement or a deployed validator rollout. No test run was performed.",
+          "sources": [
+            {
+              "url": "https://github.com/score-technologies/turbovision/commit/9b5e92271eda11812095b46481142f2750c547de",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Minor but concrete competition anti-copy parameter change with exact before/after source; not a 4-star product or security breakthrough.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": [
+        {
+          "headline": "SN46 Instant announces a first buyback; two alpha burns are independently finalized",
+          "summary": "Announced or committed 2026-11-06 T 21:44:21 Z. At 21:44:21 UTC the official team announced its first buyback and burn, linked a usage dashboard and described crypto payments and further listings as upcoming. Independent finalized block 9449718 verifies two successful alpha burns at 21:25:12 UTC,158.839753801 and 1040.188920358 alpha, totaling 1199.028674159. The team-linked dashboard shows partial token coverage and rounds the burn total; its dollar figure is not verified TAO spend or revenue. The burn transaction itself does not establish purchase funding or customer revenue. Keep the first-buyback label attributed to the team.",
+          "sources": [
+            {
+              "url": "https://x.com/thinkinstant/status/2118821815917195267",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://x.com/thinkinstant/status/2118821817406177659",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://instantnetwork.ai/usage",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-06-chain-monitor-1802.json",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A newly attributed milestone with exact independently verified burns and an inspectable usage dashboard. Size, untraced purchase funding and no sharp verified news-linked price response do not justify 4 stars.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": []
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": [
+        {
+          "headline": "SN54 Yanez develops Pulse biometric approvals for HOL Guard",
+          "summary": "Yanez’s November 6 17:55UTC announcement describes Pulse biometric confirmation for HOL Guard AI-agent approvals. PR7236 merged November 6 at 06:01:42UTC into feature/yanez-pulse, rather than the default branch. A 23:19UTC team follow-up says a second PR is integrated, but linked CLI/daemon PR7352 remained open at review. The four-PR integration is in development; neither a mainline release nor production adoption was verified. The early-look video was not fully audiovisually reviewed.",
+          "sources": [
+            {
+              "url": "https://x.com/yanez__ai/status/2118764172431474703",
+              "label": "Yanez original announcement or HOL Guard primary pull request"
+            },
+            {
+              "url": "https://x.com/yanez__ai/status/2118845777321898395",
+              "label": "Yanez original announcement or HOL Guard primary pull request"
+            },
+            {
+              "url": "https://github.com/hashgraph-online/hol-guard/pull/7236",
+              "label": "Yanez original announcement or HOL Guard primary pull request"
+            },
+            {
+              "url": "https://github.com/hashgraph-online/hol-guard/pull/7352",
+              "label": "Yanez original announcement or HOL Guard primary pull request"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Concrete early integration progress with primary code evidence, but feature-branch work and open CLI/daemon PRleave commercial/mainline rollout unverified. Three-star development lead, not automatic X quote.",
+          "status": "developing",
+          "importance": "medium"
+        },
+        {
+          "headline": "SN54 Yanez says it signed its largest client so far",
+          "summary": "In a November 5 17:55UTC post, Yanez says it signed its largest client so far, describing an unnamed household name in social media under NDA. No customer name, contract amount, counterparty confirmation, recognized revenue or executed buyback was verified. The later secondary 20% buyback allocation claim lacks a checked direct original and is excluded. The attached 10-second video was not fully audiovisually reviewed.",
+          "sources": [
+            {
+              "url": "https://x.com/yanez__ai/status/2118401776328266203",
+              "label": "Yanez original announcement or HOL Guard primary pull request"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A potentially useful business update exists as a direct issuer claim, with limited disclosed corroboration. Two stars until substantive particulars are verifiable.",
+          "status": "developing",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": [
+        {
+          "headline": "SN64 Chutes lists Tencent Hy4 on its existing API",
+          "summary": "Announced or committed 2026-11-06 T 14:36:25 Z. A late-cleared 14:36:25 UTC official announcement says Hy4 is available through the existing Chutes API. The direct listing independently displays model ID tencent/Hy4, input $0.525, output $1.5625 and cached-input $0.025 per million tokens. Tencent documents vision and computer-use capabilities; no inference or performance test was run. A catalog link labelled open weights does not establish weight availability: the direct Hugging Face model API returned 401. The November 4 teaser is now followed by a hosted listing, but this is not an independently reproduced new model breakthrough.",
+          "sources": [
+            {
+              "url": "https://x.com/chutes_ai/status/2118714124116910424",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://chutes.ai/app/chute/chutes-tencent-hy4",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A usable public listing and exact pricing advance the earlier teaser; no independent capability benchmark or model-weight verification supports 4 stars.",
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": [
+        {
+          "headline": "SN66 Conjectures merges 10 GiB chat-log uploads with bounded validation",
+          "summary": "Announced or committed 2026-11-06 T 21:13:31 Z. PR198 merged at 21:13:31 UTC. The changes raise compressed chat-log ZIP upload capacity to 10 GiB, add chunked storage and isolate archive validation with wall-time, memory and indexing budgets. This is a code-level intake capacity and validation update. It does not establish that the production service has deployed it, that a 10 GiB upload succeeded, or that any customer data was provided.",
+          "sources": [
+            {
+              "url": "https://github.com/conjectures-io/conjectures-validator/pull/198",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://github.com/conjectures-io/conjectures-validator/commit/468fafbbd592b670168180a3abf174fdae90e0fd",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful verified code or operator update; no independently tested production rollout or consequential new adoption milestone.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": [
+        {
+          "headline": "SN71 Leadpoet improves Arena task publication, score retries and evidence matching",
+          "summary": "November 6–7 merges consolidate operator reliability work. Typed admission explanations avoid publishing raw provider prose; identity repair distinguishes missing evidence from transport failure. PR1105 makes daily task-bank publication atomic and requires old writers to be quiesced for migration. PR1106 binds score retries to output content and validates before immutable writes; PR1107 continues evidence matching past unrelated candidates. PR1103 adds bounded upload diagnostics. These are merged implementation changes, not proof of database migration, repaired production rounds, new customers or changed rewards. Earlier saved maintenance leads are folded into this entry.",
+          "sources": [
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1096",
+              "label": "Leadpoet primary merged implementation"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1095",
+              "label": "Leadpoet primary merged implementation"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1103",
+              "label": "Leadpoet primary merged implementation"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1105",
+              "label": "Leadpoet primary merged implementation"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1106",
+              "label": "Leadpoet primary merged implementation"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1107",
+              "label": "Leadpoet primary merged implementation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Consolidated operator safeguards with practical failure-handling consequences; production activation remains unverified.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": [
+        {
+          "headline": "SN76 Ormas records a 233.230590079 alpha owner-multisig burn",
+          "summary": "Announced or committed 2026-11-06 T 18:03:12 Z. Finalized block 9448708, extrinsic 29, event 236 records 233.230590079 alpha burned at 18:03:12 UTC November 6. The registered owner multisig completed successfully, with the inner call hash independently re-encoded and matched. This is a direct alpha burn; no buyback purchase or customer-revenue funding was established. The already-live permanent archive contains the evidence; the dated news summary waits for November 7.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-06-chain-monitor-1802.json",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://taostats.io/extrinsic/9448708-29",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Verified individual burn above the 100 alpha reporting threshold, with exact execution evidence. A modest token-supply event does not establish new product execution or adoption.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": [
+        {
+          "headline": "SN92 REAX is named as Trishool’s EU Mode model supplier",
+          "summary": "At 15:00:03 UTC November 6, Trishool announced that REAX decision models now power EU Mode, its team’s AI security product, using GPU servers in EU data centres. The stated purpose is to keep security checking within the same regional data boundary as the application. This is a specific cross-subnet integration claim, recovered just before the previous coverage cutoff. The original post and partnership graphic were inspected; no contract size, paying-user total, regional compliance certification or end-to-end routing test was verified.",
+          "sources": [
+            {
+              "url": "https://x.com/trishoolai/status/2118720069924536753",
+              "label": "Trishool names REAX as its EU-hosted decision-model supplier"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Companion subnet-history entry for the same integration, not a second independent adoption milestone.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": [
+        {
+          "headline": "SN93 Bitcast merges bounded token refreshes and public-address checks",
+          "summary": "Announced or committed 2026-11-07 T 11:48:35 Z. PR179 adds a 0-60 second API-token reuse window, default 60 seconds, and combines simultaneous refreshes. Validators reject nonpublic or multicast axon destinations before querying them; the default ingestion URL changes to HTTPS. The README says the hosted V1 miner requires a separate image release. This is a code update, not verified network-wide deployment or evidence of an active incident.",
+          "sources": [
+            {
+              "url": "https://github.com/bitcast-network/bitcast/commit/2f56434ffad9d086880b3e412f8a35a12841bbbf",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://github.com/bitcast-network/bitcast/pull/179",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Narrow operational reliability and destination-validation improvement; no verified adoption or material incident.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": [
+        {
+          "headline": "SN97 Ingot adds a PyTorch toolkit for its quantized miner models",
+          "summary": "Announced or committed 2026-11-06 T 22:42:29 Z. Commit 6702 d 97128 landed at 22:42:29 UTC. The toolkit loads the q2 model into PyTorch, supports training and packing it back into the submitted format, and adds numerical/basis checks and teacher-data helpers. Its own documentation says the starter loop does not improve the current king: training loss does not fall in the cited setup and held-out loss rises after codes flip. Code and documentation were reviewed; no miner or training run was executed.",
+          "sources": [
+            {
+              "url": "https://github.com/DendriteLabs/ingot/commit/6702d97128f0ced43d991b034f37670a888950bb",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful verified code or operator update; no independently tested production rollout or consequential new adoption milestone.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": [
+        {
+          "headline": "SN107 Minos opens its macOS research app to public beta with rewards off",
+          "summary": "Announced or committed 2026-11-07 T 04:50:00 Z. Minos announced that its Mac app moved from limited testers to public beta. Its official page specifies Apple Silicon and macOS 14 or newer. The prototype uses a participant's AI service to prepare literature briefs, checks evidence locally and sends an evidence bundle to its test platform. Subnet rewards are inactive, and the page explicitly says the present workflow does not register or submit work on chain. No client installation, production-reward activation or clinical performance was verified.",
+          "sources": [
+            {
+              "url": "https://x.com/theminos_ai/status/2118928933513023580",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://x.com/theminos_ai/status/2118929649874932133",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://theminos.ai/macos",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A concrete public testing opportunity and wider access, with rewards and on-chain execution still unavailable. Useful participation change, three stars; broad later price move does not prove news causation or remove this limit.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": [
+        {
+          "headline": "SN108 ChipForge documents 500 GB recommended disk and full-machine evaluation windows",
+          "summary": "The November 6 17:42:55 UTC documentation commit raises recommended SSD capacity to 500 GB while retaining a 300 GBminimum,16 physical cores/32 threads and 64 GBRAM. It documents automatic cleanup of older evaluator versions, free-disk display and a full-machine evaluation window currently up to seven hours. This is a primary documentation change, not independent confirmation of the digest’s Quest 2 v 5 queue reset or restored submissions. Operators have a clearer capacity requirement; no validator was installed or benchmarked.",
+          "sources": [
+            {
+              "url": "https://github.com/TatsuProject/ChipForge_SN108/commit/88f7ea73a9291e8a82a103c51666c0788c3cd0dd",
+              "label": "ChipForge dated documentation patch"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Concrete operator sizing guidance; queue recovery and fleet rollout remain unverified.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": [
+        {
+          "headline": "SN117 EveryFrame announces provider-matched list pricing and render refunds",
+          "summary": "Announced or committed 2026-11-06 T 09:33:10 Z. A late-cleared 09:33:10 UTC official post says list prices now match providers without markup while miners still compete to undercut them on the API. It also says a bug charging some image-start renders above their quote was fixed and affected users refunded. These are attributed team claims; no customer billing records or refunds were independently audited. The 23:35:48 UTC snapshot shows alpha/TAO up 3.67% over 24 hours and 103.73% over 7 days; those windows do not isolate a reaction to this pricing announcement.",
+          "sources": [
+            {
+              "url": "https://x.com/xeveryframe/status/2118637807363080622",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            },
+            {
+              "url": "https://everyframe.studio/",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A relevant pricing and billing update with clear attribution; seven-day price appreciation is not proof that this announcement caused it or a reason for an automatic star bump.",
+          "status": "developing",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": [
+        {
+          "headline": "SN125 Refinery documents text-based refiner decisions and operator rejection records",
+          "summary": "Announced or committed 2026-11-06 T 23:33:26 Z. At 23:33:26 UTC, the project committed a prospective rule against document-keyed lookup data in refiner submissions, randomized per-run document labels, and a review-file mechanism that can skip rejected submissions and publish reasons. Corpus-level statistics remain allowed. The documentation acknowledges that random labels alone do not prevent content-hash lookup and that fresh per-round sampling remains deferred. The rule relies on operator review; no named misconduct, automatic detection, or deployed enforcement was independently established.",
+          "sources": [
+            {
+              "url": "https://github.com/Barbariandev/Refinery/commit/8a54c0c5eb724d57704fbfeaa2bff51b3b2200f1",
+              "label": "Primary announcement, implementation or finalized event evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful verified code or operator update; no independently tested production rollout or consequential new adoption milestone.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "All128slots reconciled against current finalized owner/identity snapshots, market returns and sector records;124configured repository rows queried over a seven-day overlap, with failures retained.",
+      "All50loaded November7 SubnetRadar briefs read for discovery; TAO Daily and native Moments reviewed. Selected primary announcements, code patches, product pages and ORO run-level artifacts examined.",
+      "Signed-in @ShizzyUnchained verified; direct originals, replies, reposts and bookmarks inspected. Const Reborn, TensiaFDN and TensiaBot originals/reply views checked alongside saved overlap evidence. Both YouTube Videos and Live tabs checked."
+    ],
+    "gaps": [
+      "Grok discovery, qualitative top-five discussion and final omission checks blocked: included usage and credits exhausted. No credits purchased and no ranking invented.",
+      "GitHubAPI returned403/429 across the configured repository sweep; selected native/raw primary fallbacks worked. Individual X/Discord coverage is incomplete, not an exhaustive all-project search.",
+      "Authenticated TaoStats/v1 cross-check lacks a configured API key. Public SN113 remains Unknown. Several operating claims, attached-video audio and independent production tests remain unverified; pending leads retained."
+    ]
+  }
+}
