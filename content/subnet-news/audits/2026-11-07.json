@@ -38,7 +38,7 @@
       "archiveUpdated": true,
       "evidence": "/evidence/2026-11-07-daily-chain.json",
       "newsDisposition": "No new allocation event or qualifying individual burn in extension. Prior SN8/SN46/SN76 permanent events carried into dated news without recounting. Smaller events and recycling retained only in underlying evidence.",
-      "liveVerifiedAt": null
+      "liveVerifiedAt": "2026-11-07T15:27:46.801257+00:00"
     },
     "burns": {
       "status": "DONE",
@@ -52,14 +52,33 @@
       "archiveUpdated": true,
       "evidence": "/evidence/2026-11-07-daily-chain.json",
       "newsDisposition": "No new allocation event or qualifying individual burn in extension. Prior SN8/SN46/SN76 permanent events carried into dated news without recounting. Smaller events and recycling retained only in underlying evidence.",
-      "liveVerifiedAt": null
+      "liveVerifiedAt": "2026-11-07T15:27:46.801257+00:00"
     }
   },
-  "checkedAt": "2026-11-07T15:16:10.424605+00:00",
+  "checkedAt": "2026-11-07T15:29:42.045519+00:00",
   "publication": {
-    "status": "VALIDATED_AWAITING_PRODUCTION",
+    "status": "PUBLISHED_VERIFIED_WITH_RESEARCH_GAPS",
     "dailyWorkflowComplete": false,
-    "validatedAt": "2026-11-07T15:23:06.921982+00:00"
+    "publishedEdition": "https://shizzyunchained.com/subnet-news/2026-11-07",
+    "deploymentId": "dpl_66oDnkjeqCxkUmBQawWHVWfcs7HA",
+    "commit": "c38cad708c97b4762969b8add529d81a34aefae3",
+    "productionState": "READY",
+    "liveVerifiedAt": "2026-11-07T15:27:46.801257+00:00",
+    "items": 22,
+    "subnetHistoryCount": 20,
+    "roundup": {
+      "status": "VERIFIED_PUBLISHED",
+      "url": "https://x.com/ShizzyUnchained/status/2119089622294622701",
+      "publishedAt": "2026-11-07T15:28:31.000Z",
+      "text": "Can AI run a business for 90 days without losing the plot?\n\nSN15 ORO’s new SMB Bench puts agents at a simulated produce-buying desk. Eight of nine tested models finish below a simple fixed buying rule on average. ORO published the run traces, and I reproduced the headline averages from its scored data.\n\nAlso in today’s Bittensor report:\n• SN107 Minos opens its Mac beta, with rewards still off.\n• SN23 Trishool names SN92 REAX as its EU Mode model supplier.\n• SN46 Instant’s two finalized burns total 1,199.028674159 alpha.\n\nThe November 7 edition and my latest public video are on my site.",
+      "urlPolicy": "No URLs in copy under latest November6 owner instruction.",
+      "doNotRepeat": true
+    },
+    "researchGaps": [
+      "Grok included usage exhausted; discovery/top-five/final-omission attempts blocked.",
+      "Authenticated TaoStats/v1 access unavailable: no configured key.",
+      "Individual project X/Discord and attached-media coverage remains incomplete; unresolved leads preserved."
+    ]
   },
   "ownerHoldings": {
     "status": "DONE",
@@ -68,7 +87,7 @@
     "asOf": "2026-11-07T15:00:12+00:00",
     "wallets": 128,
     "evidence": "/evidence/owner-holdings-9454993.json",
-    "validation": "Collection complete; validator and live verification pending. Runtime488 metadata exactly matched reviewed fixture; stake API/source comparison retained.",
+    "validation": "PASS128wallet validator; live owner API exact match and browser smoke checks.",
     "runtimeReviewEvidence": "/evidence/2026-11-06-holdings-runtime-review.json"
   },
   "marketReview": {
@@ -805,15 +824,16 @@
     "videos": "Both tabs plus latest public watch page checked; add e4glmPHoEvw19:04; keep member7:03,Leadpoet37:26 and canceledCarbon flags.",
     "moments": "200loaded derived alerts reviewed; mixed date grouping noted. Not proof of owner sales, price causation or a new subnet registration.",
     "additionalDiscovery": "TAO Daily November7 surfaced Trishool integration and ORO benchmark, both now primary-verified. AlphaGap native dashboard inspected at alphagap.io: derived scores and market columns are discovery, not proof of launches or adoption. No unique primary-cleared additional catalyst.",
-    "marketUi": "Prepublication native0947check:128rows, no blanks across10m/1h/24h/7d in USD and TAO; all8descending sorts passed. Final live check pending."
+    "marketUi": "Postdeployment native128rows in bothUSDandTAO,zero blank return cells,all8returncolumn descending sorts passed. Local live-return-checks.json."
   },
   "pendingCarryForward": {
     "evidence": "daily-news-2026-11-07/pending-leads-carried.json",
     "disposition": "All earlier pending receipt chains retained; meaningful lower-rated cleared leads included or folded. SN71 merges consolidated. ORO roadmap superseded by separate benchmark release without claiming mainnet activation. Unresolved operating and media leads carried."
   },
   "remaining": [
-    "Full release gate, production READY/live checks and one deduplicated daily roundup pending.",
-    "Grok quota and authenticated TaoStats access remain BLOCKED; incomplete original-channel/media coverage disclosed. Full workflow not claimed complete."
+    "Grok included usage exhausted; discovery/top-five/final-omission attempts blocked.",
+    "Authenticated TaoStats/v1 access unavailable: no configured key.",
+    "Individual project X/Discord and attached-media coverage remains incomplete; unresolved leads preserved."
   ],
   "subnets": [
     {
@@ -2595,6 +2615,17 @@
     "news": "PASS91editions",
     "ownerHoldings": "PASS128wallets at9454993",
     "burns": "PASS5tests",
-    "release": "PASS: source text, production dependency audit, lint,205JavaScript tests, isolated production build and74desktop/phone visitor tests. Existing Carbon cancellation checks preserved, latest public default and selectable Leadpoet replay verified."
+    "release": "PASS: UTF8source check, production dependency audit, lint,205JavaScript tests,isolated production build,74desktop/phone tests. Same gate passed in pre-push hook."
+  },
+  "completedWithResearchGaps": true,
+  "liveVerification": {
+    "checkedAt": "2026-11-07T15:27:46.801257+00:00",
+    "headlines": "All22items verified on dated edition",
+    "subnetHistory": "All20affected panels contain today’s correct-SN items and older entries. Four previously cached URLs served old date initially; fresh supported offset0/limit20 requests verified new version.",
+    "archives": "Both public archives and permanent evidence verified through9454993",
+    "ownerHoldings": "Live API exact match to all128wallet snapshot at9454993",
+    "videos": "Latestpublic19:04isdefault;member7:03andLeadpoet37:26retained;Carbonabsent",
+    "marketUi": "Postdeployment native128rows in bothUSDandTAO,zero blank return cells,all8returncolumn descending sorts passed. Local live-return-checks.json.",
+    "limits": "Trading flow card may display an honestly delayed snapshot separately from live screener. No comprehensive production runtime-error scan claimed."
   }
 }
