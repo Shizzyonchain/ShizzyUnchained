@@ -10,7 +10,7 @@ export async function getTaoHistory(): Promise<FxPoint[]> {
     const anchor = Math.floor((now - offset) / 300) * 300;
     return [anchor - 1800, anchor + 600];
   })];
-  const results = await Promise.allSettled(windows.map(async ([start, end]) => {
+  const results = await Promise.allSettled(windows.map(async ([start, end], index) => {
     const url = new URL("https://api.exchange.coinbase.com/products/TAO-USD/candles");
     url.searchParams.set("granularity", "60");
     url.searchParams.set("start", new Date(start * 1000).toISOString());
@@ -19,7 +19,10 @@ export async function getTaoHistory(): Promise<FxPoint[]> {
     if (!response.ok) throw new Error(`History HTTP ${response.status}`);
     const raw: unknown = await response.json();
     if (!Array.isArray(raw)) throw new Error("Invalid history");
-    return completeCandleWindow(raw, now);
+    // Historical Coinbase windows can omit several consecutive no-trade minutes.
+    // Carry only within a bounded, completed window, never beyond its last tick.
+    // Keep the live window's stricter five-minute gap limit unchanged.
+    return completeCandleWindow(raw, now, index === 0 ? 300 : 900);
   }));
   const points = new Map<number, FxPoint>();
   for (const result of results) {

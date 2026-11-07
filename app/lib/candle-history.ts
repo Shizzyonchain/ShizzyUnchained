@@ -3,7 +3,7 @@ import type { FxPoint } from "./currency-returns";
 // Coinbase omits no-tick minutes. Carry the last close across short INTERNAL
 // gaps only: a later completed candle must bound the gap. Never extend the tail
 // of a stalled feed, interpolate future prices, or bridge separate fetch windows.
-export function completeCandleWindow(raw: unknown, now: number): FxPoint[] {
+export function completeCandleWindow(raw: unknown, now: number, maxInternalGapSeconds = 300): FxPoint[] {
   if (!Array.isArray(raw)) return [];
   const points = new Map<number, FxPoint>();
   for (const candle of raw) {
@@ -15,7 +15,7 @@ export function completeCandleWindow(raw: unknown, now: number): FxPoint[] {
   const result: FxPoint[] = [];
   sorted.forEach((point, index) => {
     const previous = sorted[index - 1];
-    if (previous && point.time - previous.time <= 300) {
+    if (previous && point.time - previous.time <= maxInternalGapSeconds) {
       for (let time = previous.time + 60; time < point.time; time += 60) {
         result.push({ time, usd: previous.usd, carriedFrom: previous.time });
       }
