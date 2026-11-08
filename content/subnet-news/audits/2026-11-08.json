@@ -3,51 +3,39 @@
   "dailyWorkflowComplete": false,
   "preparedAt": "2026-11-08T15:13:59.984175+00:00",
   "coverageStart": "2026-11-07T20:58:37.036204+00:00",
-  "coverageEnd": "2026-11-08T17:24:48+00:00",
+  "coverageEnd": "2026-11-08T18:04:36+00:00",
   "chainReviews": {
     "etao": {
-      "kind": "etao",
       "status": "DONE",
-      "checkedAt": "2026-11-08T17:28:32.067797+00:00",
-      "fromBlock": 9462214,
-      "toBlock": 9462914,
-      "hash": "0x67edf9873499e85c20d7c0f9975dbd9b98d310b7f0fdbd8e10ff44459e957f2c",
-      "throughTime": "2026-11-08T17:24:48+00:00",
-      "runtime": 488,
-      "complete": true,
+      "checkedAt": "2026-11-08T18:07:45.303568+00:00",
+      "fromBlock": 9462915,
+      "toBlock": 9463111,
+      "hash": "0xd8085b50d9bc4179cfed19f59e6c732b73068df691bf35190c5b61dcbec7696f",
+      "throughTime": "2026-11-08T18:04:36+00:00",
+      "evidence": "/evidence/2026-11-08-news-monitor-1301-chain.json",
       "gaps": [],
-      "all128VectorsReconciled": true,
-      "allocationEvents": 0,
-      "gammaMintEvents": 0,
-      "qualifyingBurns": 2,
-      "eventCounts": {
-        "AlphaBurned": 17
-      },
-      "evidence": "/evidence/2026-11-08-chain-monitor-1224.json",
       "archiveUpdated": true,
-      "newsDisposition": "Before5PMEastern: merge two additional SN8 burns into today’s existing story, preserving all eight stories and prior history. No additional roundup or social post."
+      "complete": true,
+      "allocationEvents": 0,
+      "qualifyingBurns": 0,
+      "newsDisposition": "No new qualifying chain events; extend both archives alongside substantive website code follow-ups.",
+      "kind": "etao"
     },
     "burns": {
-      "kind": "burns",
       "status": "DONE",
-      "checkedAt": "2026-11-08T17:28:32.067797+00:00",
-      "fromBlock": 9462214,
-      "toBlock": 9462914,
-      "hash": "0x67edf9873499e85c20d7c0f9975dbd9b98d310b7f0fdbd8e10ff44459e957f2c",
-      "throughTime": "2026-11-08T17:24:48+00:00",
-      "runtime": 488,
-      "complete": true,
+      "checkedAt": "2026-11-08T18:07:45.303568+00:00",
+      "fromBlock": 9462915,
+      "toBlock": 9463111,
+      "hash": "0xd8085b50d9bc4179cfed19f59e6c732b73068df691bf35190c5b61dcbec7696f",
+      "throughTime": "2026-11-08T18:04:36+00:00",
+      "evidence": "/evidence/2026-11-08-news-monitor-1301-chain.json",
       "gaps": [],
-      "all128VectorsReconciled": true,
-      "allocationEvents": 0,
-      "gammaMintEvents": 0,
-      "qualifyingBurns": 2,
-      "eventCounts": {
-        "AlphaBurned": 17
-      },
-      "evidence": "/evidence/2026-11-08-chain-monitor-1224.json",
       "archiveUpdated": true,
-      "newsDisposition": "Before5PMEastern: merge two additional SN8 burns into today’s existing story, preserving all eight stories and prior history. No additional roundup or social post."
+      "complete": true,
+      "allocationEvents": 0,
+      "qualifyingBurns": 0,
+      "newsDisposition": "No new qualifying chain events; extend both archives alongside substantive website code follow-ups.",
+      "kind": "burns"
     }
   },
   "marketReview": {
@@ -2012,6 +2000,721 @@
       "evidence": "/evidence/2026-11-08-chain-monitor-1224.json",
       "archiveUpdated": true,
       "newsDisposition": "Before5PMEastern: merge two additional SN8 burns into today’s existing story, preserving all eight stories and prior history. No additional roundup or social post."
+    },
+    {
+      "kind": "three-hour-news",
+      "checkedAt": "2026-11-08T18:07:45.303568+00:00",
+      "coverageStart": "2026-11-08T14:50:00Z",
+      "coverageEnd": "2026-11-08T18:04:36+00:00",
+      "findings": [
+        {
+          "netuid": 127,
+          "source": "https://github.com/ooo-hq/zils/pull/219",
+          "mergedAt": "2026-11-08T15:58:29Z",
+          "rating": 3,
+          "disposition": "Updated existing SN127 story; primary merged implementation and added tests inspected; no deployment or payout restoration verified."
+        },
+        {
+          "netuid": 71,
+          "source": "https://github.com/leadpoet/leadpoet/pull/1124",
+          "mergedAt": "2026-11-08T17:51:48Z",
+          "rating": 2,
+          "disposition": "Updated existing SN71 story with frozen-input contract and gateway/scorer release requirement; no actual release verified."
+        },
+        {
+          "netuid": 71,
+          "source": "https://github.com/leadpoet/leadpoet/pull/1122",
+          "mergedAt": "2026-11-08T18:01:18Z",
+          "rating": 2,
+          "disposition": "Updated existing SN71 story with bounded diagnostic correction; no scoring, reward or adoption claim."
+        }
+      ],
+      "repositoryCoverage": {
+        "200": 48,
+        "NO_REPOSITORY": 12,
+        "404": 2,
+        "403": 48,
+        "429": 14
+      },
+      "marketReview": {
+        "source": "https://shizzyunchained.com/api/backend/v1/screener",
+        "observedAt": "2026-11-08T18:03:44.426972+00:00",
+        "basis": "alpha/TAO",
+        "rows": [
+          {
+            "netuid": 51,
+            "change24hPct": 1.5541281559304774,
+            "change7dPct": 0.4154142749830802
+          },
+          {
+            "netuid": 64,
+            "change24hPct": 0.229213350562923,
+            "change7dPct": 0.4960295312867666
+          },
+          {
+            "netuid": 4,
+            "change24hPct": 0.2240521172548918,
+            "change7dPct": -0.9966299960132221
+          },
+          {
+            "netuid": 8,
+            "change24hPct": 2.0781333997923888,
+            "change7dPct": 6.343583864999989
+          },
+          {
+            "netuid": 44,
+            "change24hPct": -1.0790335593698697,
+            "change7dPct": 2.48914758618365
+          },
+          {
+            "netuid": 120,
+            "change24hPct": -0.09601835383745379,
+            "change7dPct": 1.937145875904234
+          },
+          {
+            "netuid": 53,
+            "change24hPct": -3.579332474140632,
+            "change7dPct": -7.010385827447713
+          },
+          {
+            "netuid": 28,
+            "change24hPct": 2.6115524094165887,
+            "change7dPct": -14.173099635067818
+          },
+          {
+            "netuid": 3,
+            "change24hPct": 0.4277944870405457,
+            "change7dPct": -4.045137400765864
+          },
+          {
+            "netuid": 9,
+            "change24hPct": 0.09180258346302543,
+            "change7dPct": 2.25657987911651
+          },
+          {
+            "netuid": 68,
+            "change24hPct": -0.08371356075679254,
+            "change7dPct": 5.299207933123292
+          },
+          {
+            "netuid": 110,
+            "change24hPct": -0.6843076552699021,
+            "change7dPct": 18.49499362464627
+          },
+          {
+            "netuid": 75,
+            "change24hPct": -0.7611108002985573,
+            "change7dPct": -11.48228284610464
+          },
+          {
+            "netuid": 95,
+            "change24hPct": 0.031065950157438214,
+            "change7dPct": -7.932702123359966
+          },
+          {
+            "netuid": 56,
+            "change24hPct": -1.2522162952622637,
+            "change7dPct": -2.166569342149051
+          },
+          {
+            "netuid": 34,
+            "change24hPct": 0.1266832888016867,
+            "change7dPct": -0.46996119173315376
+          },
+          {
+            "netuid": 24,
+            "change24hPct": 1.7918854183331643,
+            "change7dPct": -2.368849956091345
+          },
+          {
+            "netuid": 93,
+            "change24hPct": -0.8783286007538749,
+            "change7dPct": 3.2281335878959587
+          },
+          {
+            "netuid": 5,
+            "change24hPct": 0.2558973246247381,
+            "change7dPct": 0.806532266076597
+          },
+          {
+            "netuid": 107,
+            "change24hPct": -3.34575094440987,
+            "change7dPct": 15.831831259164137
+          },
+          {
+            "netuid": 41,
+            "change24hPct": -5.227353002506522,
+            "change7dPct": 13.596389908228803
+          },
+          {
+            "netuid": 48,
+            "change24hPct": -0.22556694087879098,
+            "change7dPct": 0.673334087052128
+          },
+          {
+            "netuid": 14,
+            "change24hPct": 0.010908828547345827,
+            "change7dPct": -3.0198784004987065
+          },
+          {
+            "netuid": 19,
+            "change24hPct": 0.1826418903278011,
+            "change7dPct": -8.5058294331278
+          },
+          {
+            "netuid": 62,
+            "change24hPct": -0.1108362557589497,
+            "change7dPct": -10.384877860940309
+          },
+          {
+            "netuid": 17,
+            "change24hPct": -0.196113648454876,
+            "change7dPct": -9.360312956434608
+          },
+          {
+            "netuid": 23,
+            "change24hPct": 1.073933114970161,
+            "change7dPct": 0.7985143138637916
+          },
+          {
+            "netuid": 114,
+            "change24hPct": 5.899480761278521,
+            "change7dPct": 5.494874326746806
+          },
+          {
+            "netuid": 11,
+            "change24hPct": 2.576432837954216,
+            "change7dPct": 3.2421408495995716
+          },
+          {
+            "netuid": 80,
+            "change24hPct": 9.175726062518265,
+            "change7dPct": -1.1750716900024725
+          },
+          {
+            "netuid": 39,
+            "change24hPct": -0.03356726388247137,
+            "change7dPct": -39.92313748560758
+          },
+          {
+            "netuid": 124,
+            "change24hPct": -0.6794487137755512,
+            "change7dPct": -3.769574961965903
+          },
+          {
+            "netuid": 1,
+            "change24hPct": -0.3763504282936371,
+            "change7dPct": -1.982519371598545
+          },
+          {
+            "netuid": 15,
+            "change24hPct": -1.3758236771133234,
+            "change7dPct": -0.4709692196768895
+          },
+          {
+            "netuid": 52,
+            "change24hPct": -0.03973264228066033,
+            "change7dPct": -0.18185180208883467
+          },
+          {
+            "netuid": 54,
+            "change24hPct": -2.240711501794758,
+            "change7dPct": 15.14246578536793
+          },
+          {
+            "netuid": 61,
+            "change24hPct": -0.2288969037400773,
+            "change7dPct": -13.727203512265548
+          },
+          {
+            "netuid": 83,
+            "change24hPct": -0.5387922474576531,
+            "change7dPct": -3.638838569461193
+          },
+          {
+            "netuid": 21,
+            "change24hPct": 3.9964022279126135,
+            "change7dPct": -7.0498333820422125
+          },
+          {
+            "netuid": 81,
+            "change24hPct": -2.480068361913967,
+            "change7dPct": 6.882944157867678
+          },
+          {
+            "netuid": 77,
+            "change24hPct": -0.24268752492319076,
+            "change7dPct": -1.6899462718807938
+          },
+          {
+            "netuid": 112,
+            "change24hPct": -1.5260058830677576,
+            "change7dPct": 6.2745185774460115
+          },
+          {
+            "netuid": 10,
+            "change24hPct": -0.14242083146081078,
+            "change7dPct": -2.5536292955802806
+          },
+          {
+            "netuid": 63,
+            "change24hPct": -1.3962375911912552,
+            "change7dPct": -11.793514777801404
+          },
+          {
+            "netuid": 12,
+            "change24hPct": -0.03913800880477296,
+            "change7dPct": -1.1368952607964993
+          },
+          {
+            "netuid": 13,
+            "change24hPct": -0.12361141391340666,
+            "change7dPct": -2.4737829265204008
+          },
+          {
+            "netuid": 25,
+            "change24hPct": -0.38899778135946367,
+            "change7dPct": -1.2178724953469253
+          },
+          {
+            "netuid": 85,
+            "change24hPct": -0.10130116022757737,
+            "change7dPct": -3.667827601218981
+          },
+          {
+            "netuid": 43,
+            "change24hPct": -0.04673044900931701,
+            "change7dPct": -0.05165887442822501
+          },
+          {
+            "netuid": 2,
+            "change24hPct": -2.247784443897253,
+            "change7dPct": 8.052455934721007
+          },
+          {
+            "netuid": 18,
+            "change24hPct": 0.2789644380839077,
+            "change7dPct": -2.7331973403305865
+          },
+          {
+            "netuid": 97,
+            "change24hPct": -0.5397982077134743,
+            "change7dPct": -5.42710121451235
+          },
+          {
+            "netuid": 74,
+            "change24hPct": 3.996353668479133,
+            "change7dPct": 56.446093305463734
+          },
+          {
+            "netuid": 30,
+            "change24hPct": -0.9744538423341285,
+            "change7dPct": 10.853487765520244
+          },
+          {
+            "netuid": 71,
+            "change24hPct": -0.21310703781740717,
+            "change7dPct": 3.880867114307473
+          },
+          {
+            "netuid": 117,
+            "change24hPct": 3.299681845329115,
+            "change7dPct": 23.55470063666943
+          },
+          {
+            "netuid": 104,
+            "change24hPct": -0.005536628303594625,
+            "change7dPct": -0.4410261859453802
+          },
+          {
+            "netuid": 50,
+            "change24hPct": -0.12221395866980417,
+            "change7dPct": -11.235910170378373
+          },
+          {
+            "netuid": 111,
+            "change24hPct": -0.4353119447842301,
+            "change7dPct": 3.5039103515876238
+          },
+          {
+            "netuid": 46,
+            "change24hPct": -0.038881532598924955,
+            "change7dPct": 18.957059675490832
+          },
+          {
+            "netuid": 32,
+            "change24hPct": 0.32766512436982387,
+            "change7dPct": -0.37752022140952474
+          },
+          {
+            "netuid": 60,
+            "change24hPct": -1.1677006268529215,
+            "change7dPct": -0.562031090570794
+          },
+          {
+            "netuid": 33,
+            "change24hPct": -0.8471359068500423,
+            "change7dPct": -1.4279732048271219
+          },
+          {
+            "netuid": 79,
+            "change24hPct": 4.033934918583071,
+            "change7dPct": -3.355094807369763
+          },
+          {
+            "netuid": 90,
+            "change24hPct": -2.058292971662681,
+            "change7dPct": -6.949064479449532
+          },
+          {
+            "netuid": 29,
+            "change24hPct": -0.003194200609373621,
+            "change7dPct": -0.04386248492351803
+          },
+          {
+            "netuid": 22,
+            "change24hPct": 0.2789857927366549,
+            "change7dPct": -2.243679228473741
+          },
+          {
+            "netuid": 65,
+            "change24hPct": -3.098487154712586,
+            "change7dPct": 18.48476565871623
+          },
+          {
+            "netuid": 105,
+            "change24hPct": -1.6212866586653174,
+            "change7dPct": -23.029970283601386
+          },
+          {
+            "netuid": 92,
+            "change24hPct": 9.060479576207701,
+            "change7dPct": 34.40444791028772
+          },
+          {
+            "netuid": 88,
+            "change24hPct": 1.322411068146654,
+            "change7dPct": 2.9782088666903825
+          },
+          {
+            "netuid": 37,
+            "change24hPct": -0.003864116247920168,
+            "change7dPct": -1.5415052966289249
+          },
+          {
+            "netuid": 89,
+            "change24hPct": -0.09470351982562439,
+            "change7dPct": -1.262968941201118
+          },
+          {
+            "netuid": 7,
+            "change24hPct": -1.1072840422611987,
+            "change7dPct": 1.4080604545030753
+          },
+          {
+            "netuid": 128,
+            "change24hPct": 0.737540967545623,
+            "change7dPct": 7.101534891642185
+          },
+          {
+            "netuid": 6,
+            "change24hPct": -0.010971421770740985,
+            "change7dPct": -3.0848896641191312
+          },
+          {
+            "netuid": 49,
+            "change24hPct": -1.104568343017394,
+            "change7dPct": -4.574639491939844
+          },
+          {
+            "netuid": 82,
+            "change24hPct": -1.6243608816701445,
+            "change7dPct": -13.548064232969391
+          },
+          {
+            "netuid": 42,
+            "change24hPct": -1.466381949266154,
+            "change7dPct": 4.511714208694573
+          },
+          {
+            "netuid": 66,
+            "change24hPct": 0.25160727386383863,
+            "change7dPct": -4.038198795961718
+          },
+          {
+            "netuid": 55,
+            "change24hPct": -2.3448678227248068,
+            "change7dPct": -3.127089357341333
+          },
+          {
+            "netuid": 127,
+            "change24hPct": 13.618752496674333,
+            "change7dPct": -7.619998880559657
+          },
+          {
+            "netuid": 27,
+            "change24hPct": -0.48635950099079,
+            "change7dPct": -2.876478997871833
+          },
+          {
+            "netuid": 20,
+            "change24hPct": -0.060146736995679254,
+            "change7dPct": -0.27986355886014436
+          },
+          {
+            "netuid": 121,
+            "change24hPct": -0.37567422925899424,
+            "change7dPct": -3.0418612544916135
+          },
+          {
+            "netuid": 45,
+            "change24hPct": -0.07924067475325575,
+            "change7dPct": -2.5315628616994608
+          },
+          {
+            "netuid": 73,
+            "change24hPct": -0.40708496044746434,
+            "change7dPct": -11.37599194727548
+          },
+          {
+            "netuid": 72,
+            "change24hPct": -0.039270463420308356,
+            "change7dPct": -2.1240536569341075
+          },
+          {
+            "netuid": 58,
+            "change24hPct": 1.441865048590815,
+            "change7dPct": 16.42000957597659
+          },
+          {
+            "netuid": 38,
+            "change24hPct": -1.1618437911236585,
+            "change7dPct": -15.128620858501817
+          },
+          {
+            "netuid": 118,
+            "change24hPct": -5.948657960341163,
+            "change7dPct": -22.203344775377644
+          },
+          {
+            "netuid": 123,
+            "change24hPct": -0.11975602861226785,
+            "change7dPct": -2.1502295938821194
+          },
+          {
+            "netuid": 106,
+            "change24hPct": 0.10816533077860706,
+            "change7dPct": -1.1041267293774983
+          },
+          {
+            "netuid": 101,
+            "change24hPct": 0.8306814204397293,
+            "change7dPct": -0.9625473603297028
+          },
+          {
+            "netuid": 116,
+            "change24hPct": -0.728401495570531,
+            "change7dPct": -9.312393698572583
+          },
+          {
+            "netuid": 98,
+            "change24hPct": -0.00356229349829877,
+            "change7dPct": -13.48890114435406
+          },
+          {
+            "netuid": 69,
+            "change24hPct": -0.15609343137736756,
+            "change7dPct": -2.27064630467468
+          },
+          {
+            "netuid": 125,
+            "change24hPct": -0.44361784967599793,
+            "change7dPct": -0.397837231513141
+          },
+          {
+            "netuid": 94,
+            "change24hPct": 1.0701994417218823,
+            "change7dPct": 9.447769501477982
+          },
+          {
+            "netuid": 102,
+            "change24hPct": -0.4990539115467063,
+            "change7dPct": 0.20073571142920707
+          },
+          {
+            "netuid": 100,
+            "change24hPct": 0.2242087023984117,
+            "change7dPct": 9.240859967140112
+          },
+          {
+            "netuid": 91,
+            "change24hPct": 3.850508028467047,
+            "change7dPct": -8.003056983533996
+          },
+          {
+            "netuid": 126,
+            "change24hPct": -0.8581039878500587,
+            "change7dPct": -13.539811224951602
+          },
+          {
+            "netuid": 31,
+            "change24hPct": -1.820835159552046,
+            "change7dPct": -2.8257187475603747
+          },
+          {
+            "netuid": 115,
+            "change24hPct": -0.01240455509750252,
+            "change7dPct": -3.28967793323084
+          },
+          {
+            "netuid": 119,
+            "change24hPct": 0.34519125367795533,
+            "change7dPct": -1.6980465795133879
+          },
+          {
+            "netuid": 87,
+            "change24hPct": -1.8170343945733471,
+            "change7dPct": -24.231705679402964
+          },
+          {
+            "netuid": 67,
+            "change24hPct": -0.4379546430199434,
+            "change7dPct": -3.621349019003023
+          },
+          {
+            "netuid": 96,
+            "change24hPct": -0.15177584902598565,
+            "change7dPct": -8.468766065432112
+          },
+          {
+            "netuid": 113,
+            "change24hPct": -0.1875952518994864,
+            "change7dPct": -19.636825670258325
+          },
+          {
+            "netuid": 84,
+            "change24hPct": -0.057742042302873595,
+            "change7dPct": -4.240122688378248
+          },
+          {
+            "netuid": 109,
+            "change24hPct": -6.145425887735832,
+            "change7dPct": -23.179619715084716
+          },
+          {
+            "netuid": 26,
+            "change24hPct": -0.055136403692725294,
+            "change7dPct": -4.178523965566985
+          },
+          {
+            "netuid": 47,
+            "change24hPct": -0.0370356870412847,
+            "change7dPct": -2.3448125885838227
+          },
+          {
+            "netuid": 122,
+            "change24hPct": 0.1000778425308103,
+            "change7dPct": -12.208278627962727
+          },
+          {
+            "netuid": 57,
+            "change24hPct": -0.055260445966734205,
+            "change7dPct": -3.5465000076872224
+          },
+          {
+            "netuid": 40,
+            "change24hPct": 0.10883252490270942,
+            "change7dPct": -4.13805095311209
+          },
+          {
+            "netuid": 59,
+            "change24hPct": -4.401838198575713,
+            "change7dPct": -15.270619023132198
+          },
+          {
+            "netuid": 78,
+            "change24hPct": -25.54146766496064,
+            "change7dPct": -58.435723312154394
+          },
+          {
+            "netuid": 108,
+            "change24hPct": -0.5290626494248948,
+            "change7dPct": -3.5541907417820884
+          },
+          {
+            "netuid": 76,
+            "change24hPct": 7.453336989758311,
+            "change7dPct": -23.413693267747465
+          },
+          {
+            "netuid": 70,
+            "change24hPct": 16.4298162168577,
+            "change7dPct": 178.63031166518255
+          },
+          {
+            "netuid": 103,
+            "change24hPct": -1.7305378230099324,
+            "change7dPct": -46.180086017475766
+          },
+          {
+            "netuid": 36,
+            "change24hPct": -0.19412791613125682,
+            "change7dPct": 1730.202467032334
+          },
+          {
+            "netuid": 86,
+            "change24hPct": -3.211398478532736,
+            "change7dPct": -28.065805024289077
+          },
+          {
+            "netuid": 35,
+            "change24hPct": -1.8597135254287898,
+            "change7dPct": -9.023011806312006
+          },
+          {
+            "netuid": 99,
+            "change24hPct": 0.1034143937939905,
+            "change7dPct": 262.49452148227294
+          },
+          {
+            "netuid": 16,
+            "change24hPct": -11.169444804469391,
+            "change7dPct": -39.82622773473708
+          }
+        ],
+        "storyComparison": [
+          {
+            "netuid": 71,
+            "beforeTime": "2026-11-08T14:51:32.215887+00:00",
+            "afterTime": "2026-11-08T18:03:44.426972+00:00",
+            "beforeTao": 0.003837187,
+            "afterTao": 0.003813878,
+            "observedChangePct": -0.6074501972408441,
+            "volume24hTao": 108.111414894,
+            "poolTao": 4917.999021649,
+            "limits": "Comparison brackets merges; 24h volume is not event-window volume. Temporal association does not establish causation. No rating bump: bounded operator/competition mechanics remain below four stars."
+          },
+          {
+            "netuid": 127,
+            "beforeTime": "2026-11-08T14:51:32.215887+00:00",
+            "afterTime": "2026-11-08T18:03:44.426972+00:00",
+            "beforeTao": 0.003367409,
+            "afterTao": 0.003515496,
+            "observedChangePct": 4.397654101417436,
+            "volume24hTao": 1779.450190376,
+            "poolTao": 3728.754961358,
+            "limits": "Comparison brackets merges; 24h volume is not event-window volume. Temporal association does not establish causation. No rating bump: bounded operator/competition mechanics remain below four stars."
+          }
+        ]
+      },
+      "grok": "Weekly quota100percent, zero extra credits; discovery and omission queries unavailable.",
+      "coverageLimits": [
+        "124 configured repository rows are not exhaustive128-subnet X coverage.",
+        "Repository403/429/404 and unconfigured sources retained.",
+        "No independent upstream tests or live deployments verified.",
+        "SubnetRadar native index body unavailable this check; prior full-brief review retained."
+      ],
+      "social": "No new four-star story; no quote or additional roundup."
     }
   ],
   "priorArchiveAudit": {

@@ -5,7 +5,7 @@
   "summary": "TrajectoryRL merges a default-on miner-share burn mode; Zils tightens customer-model delivery gates. Plus 404-GEN deployment requirements, Leadpoet and Reliquary operator fixes, THOR’s finalized owner change and qualifying Vanta and Ormas burns. Code changes, operational plans and executed transactions are kept distinct.",
   "publishedAt": "2026-11-08T15:13:59.984175+00:00",
   "coverageStart": "2026-11-07T20:58:37.036204+00:00",
-  "coverageEnd": "2026-11-08T17:24:48+00:00",
+  "coverageEnd": "2026-11-08T18:04:36+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [],
@@ -435,7 +435,7 @@
       "updates": [
         {
           "headline": "SN71 Leadpoet consolidates Arena evidence, routing and restart safeguards",
-          "summary": "November 7–8 merges tighten listed-parent public-company evidence, preserve sanitized private upstream evidence separately from worker-visible content, and retain blank provider plaintext without awarding thinking credit. Prospective admission can explicitly bind an approved Kimi alternate; older markerless clients retain Sol and the ordinary DeepSeek primary remains unchanged. Incomplete guarded restarts invoke rollback, retries reuse verified evidence, and ampersand company LinkedIn slugs are normalized while encoded namespaces, separators and double-encoding remain rejected. Frozen scoring outcomes are preserved. Live schema, image and gateway release gates remain; no production migration, repaired round, training readiness or customer adoption is independently established.",
+          "summary": "November 7–8 merges tighten listed-parent public-company evidence, preserve sanitized private upstream evidence separately from worker-visible content, and retain blank provider plaintext without awarding thinking credit. Prospective admission can explicitly bind an approved Kimi alternate; older markerless clients retain Sol and the ordinary DeepSeek primary remains unchanged. Incomplete guarded restarts invoke rollback, retries reuse verified evidence, and ampersand company LinkedIn slugs are normalized while encoded namespaces, separators and double-encoding remain rejected. Frozen scoring outcomes are preserved. Live schema, image and gateway release gates remain; no production migration, repaired round, training readiness or customer adoption is independently established. Later November 8 merges preserve older scorers’ company-input grammar, cache hashes and accepted-result replay after the LinkedIn URL expansion. Operators must pair the corrected gateway with its scorer image and keep existing rounds pinned. A separate fix keeps bounded capture warnings visible after chain-library logging setup. Deployment remains unverified.",
           "sources": [
             {
               "url": "https://github.com/leadpoet/leadpoet/pull/1111",
@@ -456,6 +456,14 @@
             {
               "url": "https://github.com/leadpoet/leadpoet/pull/1121",
               "label": "Leadpoet primary merged operator safeguards"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1124",
+              "label": "SN71 Leadpoet merged frozen-input compatibility correction"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1122",
+              "label": "SN71 Leadpoet merged bounded capture-diagnostic correction"
             }
           ],
           "rating": 2,
@@ -803,7 +811,7 @@
       "updates": [
         {
           "headline": "SN127 Zils requires every customer question family to pass before model delivery",
-          "summary": "PR218, merged November 8 at 03:34 UTC, replaces pooled acceptance with per-question-family accuracy and baseline Brier-improvement gates. A strong decision family can no longer hide a weak one; failed families are named. Migration retains per-decision no-regression, while single-decision and legacy unscored rows preserve prior behavior. Separately, November 7 PR217 updates miner terms for mainnet SN127: only opted-in open-tier training splits go to assigned miners for z3-mini; data and trained adapters must be deleted within seven days and cannot be served or redistributed by miners. Outside admission remains closed pending rehearsal. The reward rubric is unchanged by PR218, and no new customer delivery or miner earnings were verified.",
+          "summary": "PR218, merged November 8 at 03:34 UTC, replaces pooled acceptance with per-question-family accuracy and baseline Brier-improvement gates. A strong decision family can no longer hide a weak one; failed families are named. Migration retains per-decision no-regression, while single-decision and legacy unscored rows preserve prior behavior. Separately, November 7 PR217 updates miner terms for mainnet SN127: only opted-in open-tier training splits go to assigned miners for z3-mini; data and trained adapters must be deleted within seven days and cannot be served or redistributed by miners. Outside admission remains closed pending rehearsal. The reward rubric is unchanged by PR218, and no new customer delivery or miner earnings were verified. Later on November 8, PR219 fixes a separate reward gate: when a fine-tune’s admission blend contains a pruned, ungraded member, scoring can use the best remaining gradable base instead of excluding that fine-tune indefinitely. A rebuilt blend that fails evaluation still blocks it. The merge does not establish deployment or repayment of previously excluded miners.",
           "sources": [
             {
               "url": "https://github.com/ooo-hq/zils/pull/218",
@@ -812,10 +820,14 @@
             {
               "url": "https://github.com/ooo-hq/zils/pull/217",
               "label": "Zils primary merged gate and mainnet terms"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/pull/219",
+              "label": "SN127 Zils November 8 merged pruned-base reward-gate correction"
             }
           ],
           "rating": 3,
-          "ratingReason": "Useful customer-model acceptance safeguard and concrete participation terms. Merged rules do not establish opened admission, paid demand or successful delivery.",
+          "ratingReason": "Useful customer-model acceptance safeguard and concrete participation terms. Merged rules do not establish opened admission, paid demand or successful delivery. The later pruned-base correction is a bounded reward-eligibility fix, with no verified live payout outcome.",
           "status": "verified",
           "importance": "medium"
         }
