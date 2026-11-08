@@ -1,0 +1,840 @@
+{
+  "version": 1,
+  "date": "2026-11-08",
+  "title": "Bittensor Daily News: November 8, 2026",
+  "summary": "TrajectoryRL merges a default-on miner-share burn mode; Zils tightens customer-model delivery gates. Plus 404-GEN deployment requirements, Leadpoet and Reliquary operator fixes, THOR’s finalized owner change and qualifying Vanta and Ormas burns. Code changes, operational plans and executed transactions are kept distinct.",
+  "publishedAt": "2026-11-08T15:13:59.984175+00:00",
+  "coverageStart": "2026-11-07T20:58:37.036204+00:00",
+  "coverageEnd": "2026-11-08T15:04:12+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta records two qualifying alpha burns of 125 and 166.666666666 alpha",
+          "summary": "At 06:39:00 and 09:45:36 UTC November 8, two successful direct burn_alpha calls burn 125 and 166.666666666 alpha respectively, in finalized blocks 9,459,687 (extrinsic 6, event 152) and 9,460,620 (extrinsic 30, event 228). Each request matches its event amount and individually exceeds the 100-alpha threshold. The wallet differs from Vanta’s registered owner, so these count toward all-wallet subnet burns, not owner-wallet burns. Registration 1,477,264 is unchanged. The permanent archive already contains both events; no buyback or revenue funding is inferred.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-08-chain-monitor-0619.json",
+              "label": "Permanent finalized execution and registration evidence"
+            },
+            {
+              "url": "https://shizzyunchained.com/subnet-news/burns?subnet=8",
+              "label": "Permanent finalized execution and registration evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Qualifying finalized supply events with exact native amounts and preserved historical registration labels, without a new product, purchase-funding or adoption claim.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": [
+        {
+          "headline": "SN11 TrajectoryRL merges a default-on miner-share burn mode",
+          "summary": "The November 8 merge of PR347 adds BURN_ALL, enabled by default in version 0.7.8, and routes weight ticks through the existing burn helper instead of the seated winner. The intended denominator is 100% of the miner share, not all subnet emissions; the team describes owner and validator shares as unaffected. Setting BURN_ALL=0 restores the normal path. This is verified merged code and a stated direction for validators. Production rollout, the live RecycleOrBurn setting and actual emission withholding were not independently verified. It is not an executed transaction burn or a new five-slot eTAO allocation event.",
+          "sources": [
+            {
+              "url": "https://github.com/trajectoryRL/trajectoryRL/pull/347",
+              "label": "TrajectoryRL primary merged implementation and final diff"
+            },
+            {
+              "url": "https://github.com/trajectoryRL/trajectoryRL/pull/347/files",
+              "label": "TrajectoryRL primary merged implementation and final diff"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Material participation and reward-direction change for miners, with code evidence but no verified activation. It does not establish a product launch or completed transaction burn.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": [
+        {
+          "headline": "SN17 404-GEN changes Pod authentication and bounds final-save rendering",
+          "summary": "November 7–8 source changes replace cached Pod bearer grants with allocation-bound signed-hotkey authentication and fixed round deadlines. The documented SDK is 0.2.19; matching gateway and Pod images are required, and existing grant-dependent Pods need replacement. Follow-ups deduplicate reconnects, separate read-only ownership lookup from lifecycle mutations, and retain the last completed ownership result during a delayed poll while still fencing explicit ownership loss. A November 8 13:03 UTC commit gives final-save rendering batches 150 seconds, retains 30-second previews and returns HTTP504 render_timeout for retry rather than validation rejection. Documentation requires witness client 0.2.19 and renderer client 0.1.5 or compatible later versions. No production artifacts were built or deployed by that commit; code does not prove the separately reported gateway incident has recovered.",
+          "sources": [
+            {
+              "url": "https://github.com/404-Repo/404-gen-subnet/pull/84",
+              "label": "404-GEN primary implementation and deployment requirements"
+            },
+            {
+              "url": "https://github.com/404-Repo/404-gen-subnet/pull/85",
+              "label": "404-GEN primary implementation and deployment requirements"
+            },
+            {
+              "url": "https://github.com/404-Repo/404-gen-subnet/pull/89",
+              "label": "404-GEN primary implementation and deployment requirements"
+            },
+            {
+              "url": "https://github.com/404-Repo/404-gen-subnet/commit/8c44f025c058c6c0a5582b26128cf472454a3320",
+              "label": "404-GEN primary implementation and deployment requirements"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Concrete miner and operator compatibility requirements, consolidated across reliability fixes. Live rollout, recovery and team test results were not independently reproduced.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Jacob Robert Steeves",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": []
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": [
+        {
+          "headline": "SN71 Leadpoet consolidates Arena evidence, routing and restart safeguards",
+          "summary": "November 7–8 merges tighten listed-parent public-company evidence, preserve sanitized private upstream evidence separately from worker-visible content, and retain blank provider plaintext without awarding thinking credit. Prospective admission can explicitly bind an approved Kimi alternate; older markerless clients retain Sol and the ordinary DeepSeek primary remains unchanged. Incomplete guarded restarts invoke rollback, retries reuse verified evidence, and ampersand company LinkedIn slugs are normalized while encoded namespaces, separators and double-encoding remain rejected. Frozen scoring outcomes are preserved. Live schema, image and gateway release gates remain; no production migration, repaired round, training readiness or customer adoption is independently established.",
+          "sources": [
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1111",
+              "label": "Leadpoet primary merged operator safeguards"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1112",
+              "label": "Leadpoet primary merged operator safeguards"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1115",
+              "label": "Leadpoet primary merged operator safeguards"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1120",
+              "label": "Leadpoet primary merged operator safeguards"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1121",
+              "label": "Leadpoet primary merged operator safeguards"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Bounded evidence fidelity and failure-handling consequences for operators, with no independently verified production outcome or broad security/accuracy claim.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": [
+        {
+          "headline": "SN76 Ormas records a 1,283.866996239 alpha owner-multisig burn",
+          "summary": "At 04:51:36 UTC November 8 (23:51:36 Eastern November 7), finalized block 9,459,150, extrinsic 11, event 190 records 1,283.866996239 alpha burned by the registered-owner multisig. The inner burn_alpha request, event amount, independently encoded call hash, MultisigExecuted Ok and outer success match. Ormas’s registration 9,003,844 is unchanged. This event was already added to the permanent Burns archive and is carried into the morning edition without recounting it. Purchase or revenue funding is not established.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-08-chain-monitor-0017.json",
+              "label": "Permanent finalized execution and registration evidence"
+            },
+            {
+              "url": "https://shizzyunchained.com/subnet-news/burns?subnet=76",
+              "label": "Permanent finalized execution and registration evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Qualifying finalized supply events with exact native amounts and preserved historical registration labels, without a new product, purchase-funding or adoption claim.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": [
+        {
+          "headline": "SN81 Reliquary fixes order-audit exposure and drand warm-up",
+          "summary": "November 8 PR471 values the work a charged failure can actually forfeit within its own settlement period, including the prompt/output price ratio. New generation orders default to a 30-minute hold instead of 72 minutes. Charged-failure and short-completion limits remain, and the existing corpus-validator rule is unchanged. PR470 moves drand initialization before auditing each order to avoid fallback over-auditing. These merged implementation fixes do not independently establish rollout, measured customer savings or the economic guarantees described by the team.",
+          "sources": [
+            {
+              "url": "https://github.com/reliquadotai/reliquary/pull/471",
+              "label": "Reliquary primary merged audit implementation"
+            },
+            {
+              "url": "https://github.com/reliquadotai/reliquary/pull/470",
+              "label": "Reliquary primary merged audit implementation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful operator settlement and reliability fixes; production activation, actual costs and team tests were not independently reproduced.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": [
+        {
+          "headline": "SN112 THOR completes a finalized owner coldkey change",
+          "summary": "At 21:53:48 UTC November 7, finalized block 9,457,061, extrinsic 12, event 198 records a successful ColdkeySwapped. The owner changes from 5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm to 5FLYvgSLABgFkgK3m1KQJNm1wEHUimp1xRxePsedRG6N2yQC. THOR’s name and registration block 5,633,022 are unchanged, so this is an owner-key change within the same subnet registration. Before/after storage and extrinsic success were independently checked. No sale agreement, buyer identity, price or pilot launch is established by this transaction.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-08-thor-owner-change.json",
+              "label": "Finalized event, successful execution and exact before/after owner storage"
+            },
+            {
+              "url": "https://x.com/TensiaBot/status/2119186731412963574",
+              "label": "TensiaBot discovery alert"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Verified permanent ownership history. The execution does not by itself establish an off-chain sale or a new commercial milestone.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": []
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": [
+        {
+          "headline": "SN127 Zils requires every customer question family to pass before model delivery",
+          "summary": "PR218, merged November 8 at 03:34 UTC, replaces pooled acceptance with per-question-family accuracy and baseline Brier-improvement gates. A strong decision family can no longer hide a weak one; failed families are named. Migration retains per-decision no-regression, while single-decision and legacy unscored rows preserve prior behavior. Separately, November 7 PR217 updates miner terms for mainnet SN127: only opted-in open-tier training splits go to assigned miners for z3-mini; data and trained adapters must be deleted within seven days and cannot be served or redistributed by miners. Outside admission remains closed pending rehearsal. The reward rubric is unchanged by PR218, and no new customer delivery or miner earnings were verified.",
+          "sources": [
+            {
+              "url": "https://github.com/ooo-hq/zils/pull/218",
+              "label": "Zils primary merged gate and mainnet terms"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/pull/217",
+              "label": "Zils primary merged gate and mainnet terms"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Useful customer-model acceptance safeguard and concrete participation terms. Merged rules do not establish opened admission, paid demand or successful delivery.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "All128active slots reconciled with finalized owners/identities, full market snapshot and sector classifications.124configured repository rows queried over seven days; access failures retained.",
+      "All46loaded November8subnet briefs opened natively and summarized; required Const/Tensia/owner discovery reviewed against overnight receipts and the preceding edition.",
+      "Finalized eTAO/burn extension9461092–9462213, all128owner holdings at9462213, full daily lifecycle extension and retained prior qualifying burn evidence.",
+      "Both signed-in YouTube Videos and Live inventories checked. Latest public/member/replays unchanged; Carbon cancellation retained."
+    ],
+    "gaps": [
+      "Grok discovery, top-five discussion and final omission checks are BLOCKED:100% weekly use, $0 extra credits; native reset November 9 at 5:14 PM. No new queries or exhaustive X coverage claimed.",
+      "The seven-day repository sweep reached54HTTP200,40HTTP403,14HTTP429,4HTTP404 and12unconfigured rows. Pagination and selected original-channel/media gaps remain; prior primary-verified monitor evidence supplements this pass.",
+      "Authenticated TaoStats /v1 access is unavailable because no API key is configured. Moments/activity refresh returned HTTP504; no empty-event conclusion is inferred.",
+      "Discord brief summaries are discovery only. Unresolved original-message verification includes gateway/validator incidents, planned competition changes and Lium October metrics. Private security reviews and member allegations are not published as findings. Saved interview media was not completely listened to or transcribed."
+    ]
+  }
+}

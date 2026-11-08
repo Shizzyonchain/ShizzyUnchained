@@ -1,0 +1,210 @@
+{
+  "checkedAt": "2026-11-07T23:53:23.914201+00:00",
+  "netuid": 112,
+  "event": {
+    "block": 9457061,
+    "hash": "0x865ee3055ae8485931475d55e2120798ac818aaff9485560ba39adad8ed33737",
+    "timestamp": 1794088428000,
+    "eventIndex": 198,
+    "event": {
+      "phase": "ApplyExtrinsic",
+      "extrinsic_idx": 12,
+      "event": {
+        "event_index": "0748",
+        "module_id": "SubtensorModule",
+        "event_id": "ColdkeySwapped",
+        "attributes": {
+          "old_coldkey": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
+          "new_coldkey": "5FLYvgSLABgFkgK3m1KQJNm1wEHUimp1xRxePsedRG6N2yQC"
+        }
+      },
+      "event_index": 7,
+      "module_id": "SubtensorModule",
+      "event_id": "ColdkeySwapped",
+      "attributes": {
+        "old_coldkey": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
+        "new_coldkey": "5FLYvgSLABgFkgK3m1KQJNm1wEHUimp1xRxePsedRG6N2yQC"
+      },
+      "topics": []
+    },
+    "sameExtrinsicEvents": [
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 12,
+        "event": {
+          "event_index": "0508",
+          "module_id": "Balances",
+          "event_id": "Withdraw",
+          "attributes": {
+            "who": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
+            "amount": 6735859
+          }
+        },
+        "event_index": 5,
+        "module_id": "Balances",
+        "event_id": "Withdraw",
+        "attributes": {
+          "who": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
+          "amount": 6735859
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 12,
+        "event": {
+          "event_index": "0004",
+          "module_id": "System",
+          "event_id": "KilledAccount",
+          "attributes": {
+            "account": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm"
+          }
+        },
+        "event_index": 0,
+        "module_id": "System",
+        "event_id": "KilledAccount",
+        "attributes": {
+          "account": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm"
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 12,
+        "event": {
+          "event_index": "0502",
+          "module_id": "Balances",
+          "event_id": "Transfer",
+          "attributes": {
+            "from": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
+            "to": "5FLYvgSLABgFkgK3m1KQJNm1wEHUimp1xRxePsedRG6N2yQC",
+            "amount": 31592105016
+          }
+        },
+        "event_index": 5,
+        "module_id": "Balances",
+        "event_id": "Transfer",
+        "attributes": {
+          "from": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
+          "to": "5FLYvgSLABgFkgK3m1KQJNm1wEHUimp1xRxePsedRG6N2yQC",
+          "amount": 31592105016
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 12,
+        "event": {
+          "event_index": "0748",
+          "module_id": "SubtensorModule",
+          "event_id": "ColdkeySwapped",
+          "attributes": {
+            "old_coldkey": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
+            "new_coldkey": "5FLYvgSLABgFkgK3m1KQJNm1wEHUimp1xRxePsedRG6N2yQC"
+          }
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "ColdkeySwapped",
+        "attributes": {
+          "old_coldkey": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
+          "new_coldkey": "5FLYvgSLABgFkgK3m1KQJNm1wEHUimp1xRxePsedRG6N2yQC"
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 12,
+        "event": {
+          "event_index": "0600",
+          "module_id": "TransactionPayment",
+          "event_id": "TransactionFeePaid",
+          "attributes": {
+            "who": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
+            "actual_fee": 6735859,
+            "tip": 0
+          }
+        },
+        "event_index": 6,
+        "module_id": "TransactionPayment",
+        "event_id": "TransactionFeePaid",
+        "attributes": {
+          "who": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
+          "actual_fee": 6735859,
+          "tip": 0
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 12,
+        "event": {
+          "event_index": "0000",
+          "module_id": "System",
+          "event_id": "ExtrinsicSuccess",
+          "attributes": {
+            "dispatch_info": {
+              "weight": {
+                "ref_time": 172886545000,
+                "proof_size": 719179
+              },
+              "class": "Normal",
+              "pays_fee": "Yes"
+            }
+          }
+        },
+        "event_index": 0,
+        "module_id": "System",
+        "event_id": "ExtrinsicSuccess",
+        "attributes": {
+          "dispatch_info": {
+            "weight": {
+              "ref_time": 172886545000,
+              "proof_size": 719179
+            },
+            "class": "Normal",
+            "pays_fee": "Yes"
+          }
+        },
+        "topics": []
+      }
+    ]
+  },
+  "utc": "2026-11-07T21:53:48+00:00",
+  "states": [
+    {
+      "label": "before",
+      "hash": "0x964e2340357558bb8f14c0ae63e9c9251c454cff020141c9822518902bab6946",
+      "owner": "5HDswRwsoc9xfzpQRD7PfEGESUmHhdFm9dNH8Y65K59vJEAm",
+      "registeredAt": 5633022,
+      "identity": {
+        "subnet_name": "THOR",
+        "github_repo": "",
+        "subnet_contact": "",
+        "subnet_url": "https://thormachines.ai/",
+        "discord": "",
+        "description": "Home of Open Source Robotics.",
+        "logo_url": "https://thormachines.ai/thor.png",
+        "additional": "Reputation is what other people know about you. Honor is what you know about yourself."
+      }
+    },
+    {
+      "label": "after",
+      "hash": "0x865ee3055ae8485931475d55e2120798ac818aaff9485560ba39adad8ed33737",
+      "owner": "5FLYvgSLABgFkgK3m1KQJNm1wEHUimp1xRxePsedRG6N2yQC",
+      "registeredAt": 5633022,
+      "identity": {
+        "subnet_name": "THOR",
+        "github_repo": "",
+        "subnet_contact": "",
+        "subnet_url": "https://thormachines.ai/",
+        "discord": "",
+        "description": "Home of Open Source Robotics.",
+        "logo_url": "https://thormachines.ai/thor.png",
+        "additional": "Reputation is what other people know about you. Honor is what you know about yourself."
+      }
+    }
+  ],
+  "execution": "ExtrinsicSuccess verified",
+  "finding": "Owner coldkey changed for the same subnet registration. No sale, buyer/seller identity, price or off-chain agreement established."
+}
