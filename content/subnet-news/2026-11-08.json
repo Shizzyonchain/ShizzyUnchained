@@ -5,7 +5,7 @@
   "summary": "TrajectoryRL merges a default-on miner-share burn mode; Zils tightens customer-model delivery gates. Plus 404-GEN deployment requirements, Leadpoet and Reliquary operator fixes, THOR’s finalized owner change and qualifying Vanta and Ormas burns. Code changes, operational plans and executed transactions are kept distinct.",
   "publishedAt": "2026-11-08T15:13:59.984175+00:00",
   "coverageStart": "2026-11-07T20:58:37.036204+00:00",
-  "coverageEnd": "2026-11-08T18:04:36+00:00",
+  "coverageEnd": "2026-11-08T21:12:24+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [],
@@ -435,7 +435,7 @@
       "updates": [
         {
           "headline": "SN71 Leadpoet consolidates Arena evidence, routing and restart safeguards",
-          "summary": "November 7–8 merges tighten listed-parent public-company evidence, preserve sanitized private upstream evidence separately from worker-visible content, and retain blank provider plaintext without awarding thinking credit. Prospective admission can explicitly bind an approved Kimi alternate; older markerless clients retain Sol and the ordinary DeepSeek primary remains unchanged. Incomplete guarded restarts invoke rollback, retries reuse verified evidence, and ampersand company LinkedIn slugs are normalized while encoded namespaces, separators and double-encoding remain rejected. Frozen scoring outcomes are preserved. Live schema, image and gateway release gates remain; no production migration, repaired round, training readiness or customer adoption is independently established. Later November 8 merges preserve older scorers’ company-input grammar, cache hashes and accepted-result replay after the LinkedIn URL expansion. Operators must pair the corrected gateway with its scorer image and keep existing rounds pinned. A separate fix keeps bounded capture warnings visible after chain-library logging setup. Deployment remains unverified.",
+          "summary": "November 7–8 merges tighten listed-parent public-company evidence, preserve sanitized private upstream evidence separately from worker-visible content, and retain blank provider plaintext without awarding thinking credit. Prospective admission can explicitly bind an approved Kimi alternate; older markerless clients retain Sol and the ordinary DeepSeek primary remains unchanged. Incomplete guarded restarts invoke rollback, retries reuse verified evidence, and ampersand company LinkedIn slugs are normalized while encoded namespaces, separators and double-encoding remain rejected. Frozen scoring outcomes are preserved. Live schema, image and gateway release gates remain; no production migration, repaired round, training readiness or customer adoption is independently established. Later November 8 merges preserve older scorers’ company-input grammar, cache hashes and accepted-result replay after the LinkedIn URL expansion. Operators must pair the corrected gateway with its scorer image and keep existing rounds pinned. A separate fix keeps bounded capture warnings visible after chain-library logging setup. Deployment remains unverified. Further November 8 merges add finite, owner-approved recovery after a proven provider rate limit or an expired execution. A recovered provider attempt may receive one separately verified scorer correction on a different runtime. Execution recovery can cross an operational phase only within the same frozen grading floor, preserving accepted work, billing and quota limits. These changes install recovery authority in code; reopening rounds and granting attempts remain separate operator actions. No production recovery or migration is verified.",
           "sources": [
             {
               "url": "https://github.com/leadpoet/leadpoet/pull/1111",
@@ -464,10 +464,26 @@
             {
               "url": "https://github.com/leadpoet/leadpoet/pull/1122",
               "label": "SN71 Leadpoet merged bounded capture-diagnostic correction"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1126",
+              "label": "SN71 Leadpoet November 8 merged finite provider-fault recovery"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1127",
+              "label": "SN71 Leadpoet November 8 merged finite execution recovery"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1130",
+              "label": "SN71 Leadpoet November 8 merged same-grading-floor phase recovery"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/pull/1132",
+              "label": "SN71 Leadpoet November 8 merged bounded scorer correction after provider recovery"
             }
           ],
           "rating": 2,
-          "ratingReason": "Bounded evidence fidelity and failure-handling consequences for operators, with no independently verified production outcome or broad security/accuracy claim.",
+          "ratingReason": "Bounded evidence fidelity and failure-handling consequences for operators, with no independently verified production outcome or broad security/accuracy claim. Finite operator recovery is useful for interrupted work, but code merges do not establish production execution or wider adoption.",
           "status": "verified",
           "importance": "informational"
         }
