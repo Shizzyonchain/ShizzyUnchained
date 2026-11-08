@@ -5,7 +5,7 @@
   "summary": "TrajectoryRL merges a default-on miner-share burn mode; Zils tightens customer-model delivery gates. Plus 404-GEN deployment requirements, Leadpoet and Reliquary operator fixes, THOR’s finalized owner change and qualifying Vanta and Ormas burns. Code changes, operational plans and executed transactions are kept distinct.",
   "publishedAt": "2026-11-08T15:13:59.984175+00:00",
   "coverageStart": "2026-11-07T20:58:37.036204+00:00",
-  "coverageEnd": "2026-11-08T15:04:12+00:00",
+  "coverageEnd": "2026-11-08T17:24:48+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [],
@@ -50,8 +50,8 @@
       "name": "Vanta",
       "updates": [
         {
-          "headline": "SN8 Vanta records two qualifying alpha burns of 125 and 166.666666666 alpha",
-          "summary": "At 06:39:00 and 09:45:36 UTC November 8, two successful direct burn_alpha calls burn 125 and 166.666666666 alpha respectively, in finalized blocks 9,459,687 (extrinsic 6, event 152) and 9,460,620 (extrinsic 30, event 228). Each request matches its event amount and individually exceeds the 100-alpha threshold. The wallet differs from Vanta’s registered owner, so these count toward all-wallet subnet burns, not owner-wallet burns. Registration 1,477,264 is unchanged. The permanent archive already contains both events; no buyback or revenue funding is inferred.",
+          "headline": "SN8 Vanta records four qualifying alpha burns on November 8",
+          "summary": "Four successful direct burn_alpha calls on November 8 each individually exceed the 100-alpha threshold: 125 alpha at 06:39:00 UTC, 166.666666666 alpha at 09:45:36 UTC, 187.5 alpha at 16:18:24 UTC and 199.847267161 alpha at 17:19:00 UTC. The later executions are finalized blocks 9,462,584 (extrinsic 27, event 266) and 9,462,886 (extrinsic 8, event 180). Each signed request matches its event amount. All four come from a wallet different from Vanta’s registered owner, so they count toward all-wallet subnet burns, not owner-wallet burns. Vanta’s registration 1,477,264 is unchanged. The earlier two events remain in the archive without recounting; purchase, buyback or revenue funding is not inferred.",
           "sources": [
             {
               "url": "https://shizzyunchained.com/evidence/2026-11-08-chain-monitor-0619.json",
@@ -60,6 +60,10 @@
             {
               "url": "https://shizzyunchained.com/subnet-news/burns?subnet=8",
               "label": "Permanent finalized execution and registration evidence"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-08-chain-monitor-1224.json",
+              "label": "Additional November 8 finalized direct burns, exact amounts and registration evidence"
             }
           ],
           "rating": 2,
