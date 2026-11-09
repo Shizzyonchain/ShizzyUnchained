@@ -2,13 +2,90 @@
   "version": 1,
   "date": "2026-11-09",
   "title": "Bittensor Daily News: November 9, 2026",
-  "summary": "SN75 Hippius confirms iPhone availability after a November 6 App Store release. SN114 SOMA sets an 11% emission burn allocation. Plus SN117 EveryFrame’s everycli upgrade, SN111 Claims’ evaluation, SN51 Lium’s GPU and usage update, SN28 SayGM’s pricing notice, operator changes and verified overnight burns.",
+  "summary": "OpenTensor and Injective’s Bangkok Hacker House closes applications November 10. Chutes adds GLM 5.2 Fast, TAO.com announces Arena, and TaoStats reaches its migration deadline. Plus Hippius on iPhone, SOMA’s 11% allocation burn, Score’s vision results, Yanez’s limited BioVault alpha and newly reviewed miner/operator changes.",
   "publishedAt": "2026-11-09T15:11:09.351347+00:00",
   "coverageStart": "2026-11-08T21:12:24+00:00",
-  "coverageEnd": "2026-11-09T15:48:41.761725+00:00",
+  "coverageEnd": "2026-11-09T18:22:15.072436+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
-  "ecosystem": [],
+  "ecosystem": [
+    {
+      "headline": "OpenTensor and Injective set November 10 deadline for Bangkok Hacker House",
+      "summary": "OpenTensor and Injective reminded builders on November 9 that applications close November 10 for their December 1–10 Bangkok Hacker House. The official program lists accommodation, meals and flight subsidies, with a December 9 demo day. Selected teams may be considered for milestone grants; acceptance and funding are not guaranteed. Applicants must be building on Injective and attend the full program. The published page does not specify the application closing hour or timezone. This is an upcoming builder program, not evidence that participating projects have shipped.",
+      "sources": [
+        {
+          "url": "https://x.com/opentensor/status/2119792938033045678",
+          "label": "Primary OpenTensor application reminder"
+        },
+        {
+          "url": "https://x.com/injective/status/2119787369926938847",
+          "label": "Primary co-host announcement"
+        },
+        {
+          "url": "https://injectivehackerhouse.com/",
+          "label": "Official dates, eligibility and support"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "A time-sensitive, primary-confirmed builder opportunity with concrete dates. The event and any resulting products or funding remain future outcomes.",
+      "status": "verified",
+      "importance": "medium"
+    },
+    {
+      "headline": "TAO.com announces Arena opening round with a 17.12 TAO prize pool",
+      "summary": "TAO.com announced Arena on November 9. Its live rules date the opening round from November 6 at 14:30 UTC through November 22 at 23:00 UTC, so the round did not first begin today. The native prize pool is 17.12 TAO, split 50%/30%/20%; the promoted dollar value can change with TAO. Ranking uses eligible realized and unrealized P&L measured in TAO, subject to wallet, trade-size and anti-abuse rules. Entry is advertised as free. No wallet was connected and no entry or trade was made during this review.",
+      "sources": [
+        {
+          "url": "https://x.com/taodotcom/status/2119830679114375168",
+          "label": "Primary Arena announcement"
+        },
+        {
+          "url": "https://www.tao.com/arena",
+          "label": "Live opening-round rules and native prize pool"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "A concrete product and competition announcement with native rules inspected. Routine competitions are capped at three stars; the prize is denominated in TAO rather than a fixed dollar payout.",
+      "status": "verified",
+      "importance": "medium"
+    },
+    {
+      "headline": "TaoStats reaches its November 9 legacy API migration deadline",
+      "summary": "TaoStats reminded users on November 6 that its legacy API endpoints were due to retire on Monday, November 9. The original October migration guide moves consumers from /api/ routes to /v1/ on the same host and retains existing API keys and authentication. It also documents stricter parameters and pagination changes, including a default of 50 and a maximum of 200 results. This is the previously announced deadline arriving, not a new API launch today. An authenticated legacy-endpoint shutdown check was unavailable, so retirement execution and its exact hour are not independently confirmed.",
+      "sources": [
+        {
+          "url": "https://x.com/taostats/status/2118629474078195884",
+          "label": "Primary deadline reminder"
+        },
+        {
+          "url": "https://taostats.io/blog/api-migration-guide",
+          "label": "Official migration guide"
+        },
+        {
+          "url": "https://taostats.io/blog/taostats-new-api-launch",
+          "label": "Original October API launch notice"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "An actionable deadline for data integrations, supported by the provider’s guide and reminder. Published retirement plans are distinguished from a verified shutdown.",
+      "status": "verified",
+      "importance": "medium"
+    },
+    {
+      "headline": "Yuma reports October Large Cap Fund performance",
+      "summary": "Yuma’s November 9 Large Cap Fund disclosure reports an October return of −16.9% in USD, against −20.9% for its TAO benchmark. That is a 4.0 percentage-point difference while both USD returns were negative. Yuma separately reports +5.0% measured in TAO; that is a different currency basis, not a positive dollar return. These are manager-reported monthly figures and the accompanying chart, not an independently audited NAV or a forecast of future performance.",
+      "sources": [
+        {
+          "url": "https://x.com/YumaGroup/status/2119852641849073838",
+          "label": "Primary manager disclosure and October chart"
+        }
+      ],
+      "rating": 2,
+      "ratingReason": "A dated manager disclosure worth recording, with currency bases kept separate. No independent NAV reconciliation or new product execution supports a higher rating.",
+      "status": "verified",
+      "importance": "informational"
+    }
+  ],
   "subnets": [
     {
       "netuid": 1,
@@ -200,6 +277,24 @@
           "ratingReason": "Useful official pricing notice and dated public tariff snapshot. Missing before/after terms prevent a verified savings percentage or broad commercial-impact claim.",
           "status": "verified",
           "importance": "informational"
+        },
+        {
+          "headline": "SN28 SayGM changes worker-removal and Phala CVM teardown behavior",
+          "summary": "SayGM merged an operator change on November 9: gmcli worker remove now deletes the associated Phala CVM by default after successful worker deregistration, with --keep-cvm available to preserve it. The implementation adds preflight checks and distinguishes a successful deregistration followed by failed teardown. A separate merge refreshes compiled Chutes TEE measurement references. Operators should distinguish these merged changes from the later dev-testnet release preparation; a production rollout was not verified. No worker, CVM or account was changed during this review.",
+          "sources": [
+            {
+              "url": "https://github.com/taostat/gm-miner/commit/4f1f725c780bbf74799f544871770a2e9284d584",
+              "label": "Primary worker-removal implementation"
+            },
+            {
+              "url": "https://github.com/taostat/gm-miner/commit/bbecde45d9f074f1a0101371b36e9504da30f069",
+              "label": "Primary TEE reference update"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A narrowly scoped but consequential operator behavior change, directly reviewed in code. It is not a verified mainnet release or a demonstrated service improvement.",
+          "status": "verified",
+          "importance": "informational"
         }
       ]
     },
@@ -329,6 +424,20 @@
           "ratingReason": "Qualifying executed supply event. Purchase input is distinguished from burned alpha; funding and business adoption are not inferred.",
           "status": "verified",
           "importance": "informational"
+        },
+        {
+          "headline": "SN44 Score reports three vision skills above their first-week targets",
+          "summary": "Score published first-week November evaluation figures on November 9: person detection 90.6%, vehicle detection 90.2% and worksite PPE 90.9%, each against a 90% goal. Room dirtiness was 85.8% against 90%, beverage 71.1% against 90%, and cricket delivery 73.0% against 85%. The attached card and post are the team’s own evaluation report. The underlying test sets, metric comparability and live customer outcomes were not independently reproduced; these percentages should not be read as universal real-world accuracy.",
+          "sources": [
+            {
+              "url": "https://x.com/webuildscore/status/2119851595949387988",
+              "label": "Primary first-week metrics and evaluation card"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A specific six-task progress disclosure with both met and unmet goals retained. Team-reported evaluation figures do not by themselves establish external benchmark superiority or adoption.",
+          "status": "verified",
+          "importance": "medium"
         }
       ]
     },
@@ -368,7 +477,7 @@
       "updates": [
         {
           "headline": "SN51 Lium adds GB200 pricing support and changes idle Spot-pay code",
-          "summary": "November 9 PR2149 adds GB200 as its own GPU family, initially using B200 rental rates and idle caps. Its provider notes require GPU splitting with a minimum of one for idle pay on four-GPU GB200/GB300 trays. Separate merged changes cap idle Spot pay at 80% of the comparable Secure idle rate while retaining the filler-revenue bound, and allow eligible free GPUs on partly rented Spot nodes to receive idle pay without double-paying rented GPUs. Download slowness now requires all measured endpoints to fail the threshold. These are verified code and documentation changes; deployed versions, current payouts, customer savings and installation were not independently tested. Separately, the team’s public statistics page, updated 15:12:37 UTC November 9, displayed $2.6 million billed to renters,1.08 million GPU-hours and28,721 rentals over a rolling 30 days, with 75% utilisation. These are team-reported operational counters, not independently audited revenue or the unverified calendar-October figures.",
+          "summary": "November 9 PR2149 adds GB200 as its own GPU family, initially using B200 rental rates and idle caps. Its provider notes require GPU splitting with a minimum of one for idle pay on four-GPU GB200/GB300 trays. Separate merged changes cap idle Spot pay at 80% of the comparable Secure idle rate while retaining the filler-revenue bound, and allow eligible free GPUs on partly rented Spot nodes to receive idle pay without double-paying rented GPUs. Download slowness now requires all measured endpoints to fail the threshold. These are verified code and documentation changes; deployed versions, current payouts, customer savings and installation were not independently tested. Separately, the team’s public statistics page, updated 15:12:37 UTC November 9, displayed $2.6 million billed to renters,1.08 million GPU-hours and28,721 rentals over a rolling 30 days, with 75% utilisation. These are team-reported operational counters, not independently audited revenue or the unverified calendar-October figures. A later November 9 merge distinguishes host GPU loss from other reset failures, provides a compatibility fallback for older backends and lets newer Redis drop records override stale local state. Deployment and a measured reliability improvement were not independently verified.",
           "sources": [
             {
               "url": "https://github.com/Datura-ai/lium-io/commit/b21e8a5bb23f594beed4fbe0eec9b73e2a3528b2",
@@ -389,6 +498,10 @@
             {
               "url": "https://lium.io/stats",
               "label": "SN51 Lium team-reported public network statistics, November 9 snapshot"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/commit/f169794c166c27532e6d7c54b2ded2b0104a48b8",
+              "label": "Later primary GPU-loss diagnostic merge"
             }
           ],
           "rating": 3,
@@ -426,7 +539,26 @@
     {
       "netuid": 54,
       "name": "Yanez",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN54 Yanez announces limited BioVault password-manager alpha",
+          "summary": "Late-found November 3 news: Yanez announced a limited BioVault alpha that stores passwords and notes in a browser and requires a fresh face approval in YID to unlock. Access was offered by request rather than as an unrestricted public release. Its version 0.15 guide, updated November 3, says the alpha has not had an independent security review. It documents split browser/server keys and a recovery kit, while warning that losing the required keys or kit can make recovery impossible. Neither the product nor its biometric security was independently tested during this review.",
+          "sources": [
+            {
+              "url": "https://x.com/yanez__ai/status/2117676939561595141",
+              "label": "Primary November 3 limited-alpha announcement"
+            },
+            {
+              "url": "https://biovault.yanez.ai/guide",
+              "label": "Version 0.15 product, encryption and recovery guide"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A concrete limited product alpha, supported by the team’s announcement and detailed guide. Limited access, recovery dependencies and the absence of an independent security review constrain the rating.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 55,
@@ -461,7 +593,26 @@
     {
       "netuid": 61,
       "name": "RedTeam",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN61 RedTeam reports CEO appearance at the House of Lords",
+          "summary": "RedTeam said on November 9 that its CEO, @oli_innerworks, represented the project at the House of Lords the preceding week, discussing cybersecurity. Its announcement quotes Mark Jeffrey’s November 8 event post. The team’s statement establishes what it is reporting; an official parliamentary record and exact event date were not independently verified in this pass. The appearance is not evidence of a government endorsement, procurement contract or adopted policy.",
+          "sources": [
+            {
+              "url": "https://x.com/_redteam_/status/2119789375798026251",
+              "label": "Primary team statement"
+            },
+            {
+              "url": "https://x.com/markjeffrey/status/2119558876882481337",
+              "label": "Quoted event post"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A primary team-confirmed outreach appearance, with its institutional significance bounded. The rolling token move does not establish a causal response or justify a four-star rating.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
     },
     {
       "netuid": 62,
@@ -476,7 +627,30 @@
     {
       "netuid": 64,
       "name": "Chutes",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN64 Chutes announces GLM 5.2 Fast support",
+          "summary": "Chutes announced zai-org/GLM-5.2-Fast on November 9 through its existing OpenAI-compatible endpoint and API keys. Its listing quotes $2.45 per million input tokens and $7.70 per million output tokens. The announcement advertises a one-million-token context and maximum 128K output. The public model catalog independently lists the Fast model; it marks confidential compute false, so this must not be confused with the separate TEE variant. No paid inference, latency test or benchmark reproduction was performed.",
+          "sources": [
+            {
+              "url": "https://x.com/chutes_ai/status/2119807595112182224",
+              "label": "Primary Chutes announcement"
+            },
+            {
+              "url": "https://chutes.ai/app/chute/chutes-zai-org-glm-5-2-fast",
+              "label": "Primary model listing and prices"
+            },
+            {
+              "url": "https://llm.chutes.ai/v1/models",
+              "label": "Public model catalog"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A usable model-listing and integration update with a directly checked catalog. Advertised limits are provider claims, and no new adoption or independently measured performance was established.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 65,
@@ -529,7 +703,7 @@
       "updates": [
         {
           "headline": "SN71 Leadpoet merges optional weekly Arena reward decay without a floor",
-          "summary": "November 9 PR1147 adds an optional model-tenure clock: when enabled, occupied slot rewards halve every 140 settlement epochs, approximately seven days, without a four-halving floor. Removed allocation follows the existing burn path rather than going to other holders. Only genuinely new promoted model sources reset the replaced slots; daily documents, restarts and repackaging do not. The switch defaults off in the reviewed service code and requires coordinated validator and gateway activation. Older markerless states retain their previous floor. Follow-up judge recovery and drain guards were also merged. No live activation receipt or executed five-slot eTAO change was verified.",
+          "summary": "November 9 PR1147 adds an optional model-tenure clock: when enabled, occupied slot rewards halve every 140 settlement epochs, approximately seven days, without a four-halving floor. Removed allocation follows the existing burn path rather than going to other holders. Only genuinely new promoted model sources reset the replaced slots; daily documents, restarts and repackaging do not. The switch defaults off in the reviewed service code and requires coordinated validator and gateway activation. Older markerless states retain their previous floor. Follow-up judge recovery and drain guards were also merged. No live activation receipt or executed five-slot eTAO change was verified. Later November 9 merges normalize genesis hashes for reward-clock scope and restore paired restart recovery. A separate attribution change accepts reversed legal-name/initialism labels only alongside verified company bindings and refreshes deferred industry guidance. These are code changes, not verified production payouts.",
           "sources": [
             {
               "url": "https://github.com/leadpoet/leadpoet/commit/a876e3bf4c9e3c05bafd8886f6069179d6534117",
@@ -542,6 +716,14 @@
             {
               "url": "https://github.com/leadpoet/leadpoet/commit/04d771779cd56915aeb459399866f58d450adf31",
               "label": "Primary merged implementation and documentation"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/commit/a589502d4fb003482b3be8178f03faeaadfaabba",
+              "label": "Later primary reward-clock and restart merge"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/commit/e00868acb3d813b5cbe25e7401595a47ebf0c070",
+              "label": "Primary company-attribution merge"
             }
           ],
           "rating": 3,
@@ -710,7 +892,22 @@
     {
       "netuid": 97,
       "name": "Ingot",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN97 Ingot tightens challenger KL margin and revises evaluation weighting",
+          "summary": "Ingot merged a November 9 evaluation change reducing the challenger KL margin from 3% to 2% relative to the incumbent’s own KL. Within each domain, KL is now weighted across answer tokens before domains are combined by their sample shares, replacing the earlier mean of per-sample normalized values. The 800-sample mix shifts terminal tasks from 300 to 330 and math from 50 to 20, alongside a dataset revision. Dashboard rescoring is intended to make older duels comparable. This is reviewed merged code, not independently verified production activation, model superiority or changed payouts.",
+          "sources": [
+            {
+              "url": "https://github.com/DendriteLabs/ingot/commit/9031c6bb900f1e4e0b7f1bebd265b55b15cde3dd",
+              "label": "Primary merged evaluation implementation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A substantive, inspectable change to miner evaluation and the challenger threshold. Production activation and economic effects remain unverified, preventing an upgrade based solely on the merge.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 98,
@@ -916,7 +1113,7 @@
       "updates": [
         {
           "headline": "SN127 Zils merges customer training-data cleanup around jobs",
-          "summary": "November 9 PR222 adds cleanup of customer training rows, photos and partial downloads before claim and after job completion; finite round fleets remove their last-round rows. A completed frozen candidate can still be delivered after its training rows are removed. This does not erase candidate artifacts, raw outputs or logs. Seven-day archive cleanup and stopping an unbounded fleet remain manual responsibilities. The change follows the previously covered delivery gates; it is verified implementation, not independent proof that every deployed miner erased its data. Later on November 9, PR223 adds an incumbent-ensemble guard: a new greedy combination must improve on the current ensemble by at least 0.5 score points on the same decision items before replacing it. The guard does not preserve an ensemble that cannot be rebuilt because a member is unknown or was not graded this round; identical membership needs no extra comparison. The merged implementation does not establish production rollout, an actual missed payment or a repaired round.",
+          "summary": "November 9 PR222 adds cleanup of customer training rows, photos and partial downloads before claim and after job completion; finite round fleets remove their last-round rows. A completed frozen candidate can still be delivered after its training rows are removed. This does not erase candidate artifacts, raw outputs or logs. Seven-day archive cleanup and stopping an unbounded fleet remain manual responsibilities. The change follows the previously covered delivery gates; it is verified implementation, not independent proof that every deployed miner erased its data. Later on November 9, PR223 adds an incumbent-ensemble guard: a new greedy combination must improve on the current ensemble by at least 0.5 score points on the same decision items before replacing it. The guard does not preserve an ensemble that cannot be rebuilt because a member is unknown or was not graded this round; identical membership needs no extra comparison. The merged implementation does not establish production rollout, an actual missed payment or a repaired round. A later November 9 merge also reports the miner’s installed commit during job claims and surfaces coordinator upgrade refusals. The documented admission window requires matching coordinator support; the merge alone does not prove fleet-wide activation.",
           "sources": [
             {
               "url": "https://github.com/ooo-hq/zils/commit/74650a74b90c7bc4d6650e039bdb4530a3352a36",
@@ -929,6 +1126,10 @@
             {
               "url": "https://github.com/ooo-hq/zils/blob/b09c87381eab32aef93ef18c615d26de089fcad2/zils/soup_round.py",
               "label": "SN127 Zils exact0.5point margin and same-item comparison"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/commit/82264d3e45e5bb11045243700c40c34708f21856",
+              "label": "Later primary miner-version admission merge"
             }
           ],
           "rating": 2,
@@ -950,14 +1151,19 @@
       "All47loaded November9subnet briefs read natively; required Const/Tensia/owner originals, replies, reposts and bookmarks compared with earlier reports and pending leads. Exact source dispositions and access gaps retained.",
       "Contiguous eTAO/burn extension9468329–9469368 and lifecycle review9462214–9469368, plus prior overnight qualifying events. All128owner wallets collected at9469368.",
       "Both YouTube Videos and Live inventories checked. Latest public/member/replays unchanged; owner removals and Carbon cancellation preserved. All128rendered market rows checked inUSDandTAO, all four return sorts exercised without blanks.",
-      "Final native X omission pass added primary SN75 Hippius and SN28 SayGM announcements; Apple/Google listings and pricing units checked. Chain and lifecycle coverage extended through9469511."
+      "Final native X omission pass added primary SN75 Hippius and SN28 SayGM announcements; Apple/Google listings and pricing units checked. Chain and lifecycle coverage extended through9469511.",
+      "November 9 catch-up: eighteen required X accounts inspected in native loaded timelines, plus owner posts/replies/reposts and relevant bookmarks. Direct originals, product pages, API guides and selected merged patches support ten additions and three expanded briefs; full seven-day timeline coverage remains incomplete.",
+      "Combined finalized eTAO/burn scan 9469512–9470297, all 128 allocation vectors and owner wallets reconciled. No new allocation change or individually qualifying burn; three successful coldkey-swap announcements did not affect a current subnet owner and were not executed transfers."
     ],
     "gaps": [
-      "Grok discovery, top-five discussion and omission checks are BLOCKED:100% weekly use and$0extra credits, with native reset November9 at17:14Eastern. No queries completed or exhaustive X coverage claimed.",
+      "Earlier Grok blockage was overstated from the usage meter without a submitted-query test. Two actual queries succeeded around 12:32 PM Eastern. During this catch-up, fresh Auto and Fast discovery/top-five queries and a Fast omission query were submitted and explicitly rejected for exhausted included usage/credits. No completed response is claimed for those later checks. Timeline pagination and full audiovisual review gaps remain.",
       "The seven-day124-row repository sweep returned53HTTP200,42HTTP403,14HTTP429,3HTTP404 and12unconfigured sources. Pagination and individual X timeline/media coverage gaps remain. Prior primary-verified monitor evidence supplements this pass.",
       "Authenticated TaoStats/v1 cross-check is BLOCKED because no API key is configured. Public SN113display remainsUnknown. Market snapshots and rendered rows are available; independent backup attribution and historical repair remain unverified.",
       "All47loaded November9 briefs were reviewed as discovery, not original team statements. Selected incidents, team metrics, commercial claims and saved interview media await original-source or complete audiovisual review. The fresh rec4ll product page rendered blank, so its limits remain a dated prior observation.",
-      "SN75 Hippius was not installed or independently security-audited; its iPhone release predates the November9announcement. SN28 SayGM’s exact before/after price reduction and full promotional audio remain unverified."
+      "SN75 Hippius was not installed or independently security-audited; its iPhone release predates the November9announcement. SN28 SayGM’s exact before/after price reduction and full promotional audio remain unverified.",
+      "Late-found BioVault announcement retains its November 3 date. RedTeam appearance remains a team report without an independently checked parliamentary event record. Fund returns and Score evaluation figures are issuer/team reports. Promotional media and product performance were not fully independently tested."
     ]
-  }
+  },
+  "correctedAt": "2026-11-09T18:22:15.072436+00:00",
+  "correctionNote": "Added ten verified or explicitly source-labelled omissions and extended three existing briefs. Corrected the earlier Grok access explanation: a usage meter alone did not establish a failed query; later queries were tested directly."
 }
