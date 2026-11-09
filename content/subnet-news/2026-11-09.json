@@ -2,10 +2,10 @@
   "version": 1,
   "date": "2026-11-09",
   "title": "Bittensor Daily News: November 9, 2026",
-  "summary": "SN114 SOMA sets an 11% emission burn allocation. SN117 EveryFrame publishes everycli 1.0.0 upgrade requirements; SN111 Claims begins its weekly evaluation. SN31 rec4ll publishes free memory limits, SN71 Leadpoet adds optional reward-decay code, and SN51 Lium expands GPU support. Plus operator changes and finalized SN8 Vanta, SN44 Score and SN53 engy burns. Code, published terms and executed transactions are distinguished.",
+  "summary": "SN75 Hippius confirms iPhone availability after a November 6 App Store release. SN114 SOMA sets an 11% emission burn allocation. Plus SN117 EveryFrame’s everycli upgrade, SN111 Claims’ evaluation, SN51 Lium’s GPU and usage update, SN28 SayGM’s pricing notice, operator changes and verified overnight burns.",
   "publishedAt": "2026-11-09T15:11:09.351347+00:00",
   "coverageStart": "2026-11-08T21:12:24+00:00",
-  "coverageEnd": "2026-11-09T15:15:20.310361+00:00",
+  "coverageEnd": "2026-11-09T15:28:46.064603+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [],
@@ -182,7 +182,26 @@
     {
       "netuid": 28,
       "name": "SayGM",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN28 SayGM announces list-price cuts; exact reduction remains unverified",
+          "summary": "At 09:00 UTC November 9, SN28 SayGM posted that it is cutting list prices. The current public table labels rates in USD per million tokens and distinguishes recent finalized results from eligible miner offers. During this review, Claude Opus 5.5 displayed $4 input, $0.20 cached input and $20 output per million tokens. Without a directly comparable prior tariff or an effective-time notice, this scan cannot quantify the reduction or say every listed model became cheaper. The six-second attached video is promotional; no complete audio review, paid inference, invoice or provider-performance test was performed.",
+          "sources": [
+            {
+              "url": "https://x.com/say_gm_/status/2119716638069317781",
+              "label": "SN28 SayGM dated price-cut announcement"
+            },
+            {
+              "url": "https://saygm.com/#pricing",
+              "label": "SN28 SayGM current public price units and model table"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful official pricing notice and dated public tariff snapshot. Missing before/after terms prevent a verified savings percentage or broad commercial-impact claim.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
     },
     {
       "netuid": 29,
@@ -550,7 +569,38 @@
     {
       "netuid": 75,
       "name": "Hippius",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN75 Hippius confirms iPhone availability, following its earlier Android release",
+          "summary": "At 08:57 UTC November 9, SN75 Hippius announced mobile availability. The official download page links to working Apple and Google Play listings from T34 Corporation. Apple’s public metadata dates the iPhone release to November 6, with version 1.2.0 updated at 14:56:56 UTC that day and iOS 15.1 required; this is a late-found release, not a claim it first shipped today. Android availability was already covered September 21 and is not a second launch. The product and store pages describe automatic photo/video backup and access to desktop files, with encryption before upload. Listings and announcement media were checked, but no app was installed, backup performed or encryption implementation independently audited. Availability does not establish downloads, paid adoption or customer revenue.",
+          "sources": [
+            {
+              "url": "https://x.com/Hippius_cloud/status/2119715926123917608",
+              "label": "SN75 Hippius November 9 mobile announcement"
+            },
+            {
+              "url": "https://hippius.com/mobile-app",
+              "label": "SN75 Hippius official requirements and download links"
+            },
+            {
+              "url": "https://apps.apple.com/app/hippius/id6794237382",
+              "label": "Apple App Store listing from T34 Corporation"
+            },
+            {
+              "url": "https://itunes.apple.com/lookup?id=6794237382&country=us",
+              "label": "Apple public release-date and version metadata"
+            },
+            {
+              "url": "https://play.google.com/store/apps/details?id=com.hippius.mobile",
+              "label": "Existing Android app listing from T34 Corporation"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "Meaningful product distribution expansion to iPhone, with an accessible store listing replacing the previously upcoming iOS status. The November 6 release and November 9 announcement are distinguished. No price-based uplift, independent security certification or adoption claim.",
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
     },
     {
       "netuid": 76,
@@ -891,13 +941,15 @@
       "All128active slots reconciled to finalized owner/identity storage, market rows and retained sectors;124configured repository rows queried over seven days.",
       "All47loaded November9subnet briefs read natively; required Const/Tensia/owner originals, replies, reposts and bookmarks compared with earlier reports and pending leads. Exact source dispositions and access gaps retained.",
       "Contiguous eTAO/burn extension9468329–9469368 and lifecycle review9462214–9469368, plus prior overnight qualifying events. All128owner wallets collected at9469368.",
-      "Both YouTube Videos and Live inventories checked. Latest public/member/replays unchanged; owner removals and Carbon cancellation preserved. All128rendered market rows checked inUSDandTAO, all four return sorts exercised without blanks."
+      "Both YouTube Videos and Live inventories checked. Latest public/member/replays unchanged; owner removals and Carbon cancellation preserved. All128rendered market rows checked inUSDandTAO, all four return sorts exercised without blanks.",
+      "Final native X omission pass added primary SN75 Hippius and SN28 SayGM announcements; Apple/Google listings and pricing units checked. Chain and lifecycle coverage extended through9469511."
     ],
     "gaps": [
       "Grok discovery, top-five discussion and omission checks are BLOCKED:100% weekly use and$0extra credits, with native reset November9 at17:14Eastern. No queries completed or exhaustive X coverage claimed.",
       "The seven-day124-row repository sweep returned53HTTP200,42HTTP403,14HTTP429,3HTTP404 and12unconfigured sources. Pagination and individual X timeline/media coverage gaps remain. Prior primary-verified monitor evidence supplements this pass.",
       "Authenticated TaoStats/v1 cross-check is BLOCKED because no API key is configured. Public SN113display remainsUnknown. Market snapshots and rendered rows are available; independent backup attribution and historical repair remain unverified.",
-      "All47loaded November9 briefs were reviewed as discovery, not original team statements. Selected incidents, team metrics, commercial claims and saved interview media await original-source or complete audiovisual review. The fresh rec4ll product page rendered blank, so its limits remain a dated prior observation."
+      "All47loaded November9 briefs were reviewed as discovery, not original team statements. Selected incidents, team metrics, commercial claims and saved interview media await original-source or complete audiovisual review. The fresh rec4ll product page rendered blank, so its limits remain a dated prior observation.",
+      "SN75 Hippius was not installed or independently security-audited; its iPhone release predates the November9announcement. SN28 SayGM’s exact before/after price reduction and full promotional audio remain unverified."
     ]
   }
 }

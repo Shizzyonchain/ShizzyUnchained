@@ -1,36 +1,62 @@
 {
   "date": "2026-11-09",
   "dailyWorkflowComplete": false,
-  "publicationStatus": "VALIDATED_AWAITING_READY_AND_LIVE",
+  "publicationStatus": "INITIAL_PUBLICATION_LIVE_TWO_LATE_CLEARED_LEADS_AWAITING_RELEASE",
   "preparedAt": "2026-11-09T15:11:09.351347+00:00",
   "coverageStart": "2026-11-08T21:12:24+00:00",
-  "coverageEnd": "2026-11-09T15:15:20.310361+00:00",
+  "coverageEnd": "2026-11-09T15:28:46.064603+00:00",
   "chainReviews": {
     "etao": {
       "status": "DONE",
-      "checkedAt": "2026-11-09T14:58:28.089082+00:00",
-      "fromBlock": 9468329,
-      "toBlock": 9469368,
-      "hash": "0xbd551d435e2952901554181091ea5dc44bfab5f1b54d873508db68c0f0ba7c04",
-      "throughTime": "2026-11-09T14:56:00+00:00",
-      "evidence": "/evidence/2026-11-09-daily-chain.json",
-      "gaps": [],
-      "archiveUpdated": true,
-      "eventCount": 1,
-      "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
-    },
-    "burns": {
-      "status": "DONE",
-      "checkedAt": "2026-11-09T14:58:28.089082+00:00",
-      "fromBlock": 9468329,
-      "toBlock": 9469368,
-      "hash": "0xbd551d435e2952901554181091ea5dc44bfab5f1b54d873508db68c0f0ba7c04",
-      "throughTime": "2026-11-09T14:56:00+00:00",
-      "evidence": "/evidence/2026-11-09-daily-chain.json",
+      "checkedAt": "2026-11-09T15:25:38.220712+00:00",
+      "fromBlock": 9469369,
+      "toBlock": 9469511,
+      "hash": "0xb3a501c2ab3db971c16b34635d243a0abad553eb946d36c6cfb6c0abd8eccbda",
+      "throughTime": "2026-11-09T15:24:36+00:00",
+      "evidence": "/evidence/2026-11-09-daily-extension.json",
       "gaps": [],
       "archiveUpdated": true,
       "eventCount": 0,
-      "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
+      "newsDisposition": "No new allocation, lifecycle or individually qualifying transaction burn in extension. Initial reviewed SOMA change and prior seven overnight transaction burns preserved in edition and archives.",
+      "earlierDailyStage": {
+        "status": "DONE",
+        "checkedAt": "2026-11-09T14:58:28.089082+00:00",
+        "fromBlock": 9468329,
+        "toBlock": 9469368,
+        "hash": "0xbd551d435e2952901554181091ea5dc44bfab5f1b54d873508db68c0f0ba7c04",
+        "throughTime": "2026-11-09T14:56:00+00:00",
+        "evidence": "/evidence/2026-11-09-daily-chain.json",
+        "gaps": [],
+        "archiveUpdated": true,
+        "eventCount": 1,
+        "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
+      }
+    },
+    "burns": {
+      "status": "DONE",
+      "checkedAt": "2026-11-09T15:25:38.220712+00:00",
+      "fromBlock": 9469369,
+      "toBlock": 9469511,
+      "hash": "0xb3a501c2ab3db971c16b34635d243a0abad553eb946d36c6cfb6c0abd8eccbda",
+      "throughTime": "2026-11-09T15:24:36+00:00",
+      "evidence": "/evidence/2026-11-09-daily-extension.json",
+      "gaps": [],
+      "archiveUpdated": true,
+      "eventCount": 0,
+      "newsDisposition": "No new allocation, lifecycle or individually qualifying transaction burn in extension. Initial reviewed SOMA change and prior seven overnight transaction burns preserved in edition and archives.",
+      "earlierDailyStage": {
+        "status": "DONE",
+        "checkedAt": "2026-11-09T14:58:28.089082+00:00",
+        "fromBlock": 9468329,
+        "toBlock": 9469368,
+        "hash": "0xbd551d435e2952901554181091ea5dc44bfab5f1b54d873508db68c0f0ba7c04",
+        "throughTime": "2026-11-09T14:56:00+00:00",
+        "evidence": "/evidence/2026-11-09-daily-chain.json",
+        "gaps": [],
+        "archiveUpdated": true,
+        "eventCount": 0,
+        "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
+      }
     }
   },
   "marketReview": {
@@ -745,6 +771,24 @@
         "observedAt": "2026-11-09T14:56:29.517244+00:00",
         "comparison": "rolling24h/7d alpha/TAO; not an announcement-aligned event study"
       }
+    ],
+    "newsReactionAssessment": [
+      {
+        "netuid": 75,
+        "announcementAt": "2026-11-09T08:57:00Z",
+        "observedAt": "2026-11-09T14:56:29.517244+00:00",
+        "basis": "alpha/TAO",
+        "comparisonWindow": "Rolling24h/7d, not announcement-aligned; no causal event study or price uplift",
+        "ratingInfluencedByPrice": false
+      },
+      {
+        "netuid": 28,
+        "announcementAt": "2026-11-09T09:00:00Z",
+        "observedAt": "2026-11-09T14:56:29.517244+00:00",
+        "basis": "alpha/TAO",
+        "comparisonWindow": "Rolling24h/7d, not announcement-aligned; no causal event study or price uplift",
+        "ratingInfluencedByPrice": false
+      }
     ]
   },
   "ownerHoldings": {
@@ -801,6 +845,29 @@
       "tensia": "November8bookpromotion excluded; November7Liumstatistics pending original team message; olderTHORevent alreadycovered",
       "owner": "Native profiles/replies/reposts/bookmarks crossed previous report cutoff; source/media gaps retained. No full individual subnetXsearch claimed.",
       "olderConst": "A multi-page scroll reachedOctober19/16/15/14; intermediate virtualized content not retained, so this is an explicit pagination gap, not continuous7daycoverage."
+    },
+    "latePrimaryLeads": [
+      {
+        "netuid": 75,
+        "announcementAt": "2026-11-09T08:57:00Z",
+        "actualReleaseAt": "2026-11-06T08:00:00Z",
+        "versionUpdatedAt": "2026-11-06T14:56:56Z",
+        "source": "https://x.com/Hippius_cloud/status/2119715926123917608",
+        "disposition": "Added late-found iPhone availability; earlier Android launch deduplicated against September21. First attached image inspected; product/store pages independently available. No complete audiovisual/security test."
+      },
+      {
+        "netuid": 28,
+        "announcementAt": "2026-11-09T09:00:00Z",
+        "source": "https://x.com/say_gm_/status/2119716638069317781",
+        "disposition": "Added bounded pricing announcement/current units. No prior comparison or full audio, so no quantified cut claimed."
+      }
+    ],
+    "lifecycleExtension": {
+      "status": "DONE",
+      "fromBlock": 9469369,
+      "toBlock": 9469511,
+      "events": 0,
+      "evidence": "/evidence/2026-11-09-daily-extension.json"
     }
   },
   "pendingCarryForward": {
@@ -1085,11 +1152,13 @@
     {
       "netuid": 28,
       "name": "SayGM",
-      "outcome": "no-cleared-new-story",
-      "headlines": [],
+      "outcome": "covered",
+      "headlines": [
+        "SN28 SayGM announces list-price cuts; exact reduction remains unverified"
+      ],
       "repository": "taostat/gm-miner",
       "repositoryStatus": 200,
-      "xReview": "Required discovery accounts reviewed separately; no complete individual subnet X timeline search claimed.",
+      "xReview": "Original official announcement directly inspected in final omission pass; linked product and store/price evidence checked.",
       "disposition": "Primary-supported new information included; older covered material excluded; unresolved secondary or inaccessible sources carried."
     },
     {
@@ -1569,11 +1638,13 @@
     {
       "netuid": 75,
       "name": "Hippius",
-      "outcome": "no-cleared-new-story",
-      "headlines": [],
+      "outcome": "covered",
+      "headlines": [
+        "SN75 Hippius confirms iPhone availability, following its earlier Android release"
+      ],
       "repository": "thenervelab/thebrain",
       "repositoryStatus": 403,
-      "xReview": "Required discovery accounts reviewed separately; no complete individual subnet X timeline search claimed.",
+      "xReview": "Original official announcement directly inspected in final omission pass; linked product and store/price evidence checked.",
       "disposition": "Primary-supported new information included; older covered material excluded; unresolved secondary or inaccessible sources carried."
     },
     {
@@ -2116,7 +2187,7 @@
     }
   ],
   "remaining": [
-    "Release validation, READY/live and single roundup pending.",
+    "Publish cleared SN75/SN28 additions, verify READY/live, then one roundup. No roundup has been sent.",
     "Grok, authenticated TaoStats, selected original/media and timeline access remain explicit blockers to exhaustive full-workflow sign-off."
   ],
   "validation": {
@@ -2124,8 +2195,8 @@
     "productionDependenciesAudit": "0vulnerabilities",
     "lint": "0errors;existingunusedcontracts warning",
     "unitTests": 205,
-    "browserTests": "74existingcases plus2new desktop/mobileburn-allocationcases passed",
-    "productionBuild": "pending final result",
+    "browserTests": 76,
+    "productionBuild": "PASS",
     "reactReview": "Both display components retain server/client separation, labelled search, stable keys and directfive-slot indices; no new fetches/hooks/visitorRPC."
   }
 }
