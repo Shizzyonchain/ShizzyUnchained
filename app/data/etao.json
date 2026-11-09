@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-09T18:04:05.622993+00:00",
-  "block": 9470297,
-  "hash": "0x7196fcffd06673c945f771fc366528b5c931b1683d97176802e50ac770b01583",
-  "chainTime": 1794247308001,
+  "checkedAt": "2026-11-09T21:55:21.130625+00:00",
+  "block": 9471431,
+  "hash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
+  "chainTime": 1794260916000,
   "runtime": 488,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -548,9 +548,9 @@
     "78": [
       "0",
       "0",
-      "5672373802665687121",
-      "2859245331424980500",
-      "9915124939618883994"
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
     ],
     "79": [
       "0",
@@ -1594,7 +1594,7 @@
     "75": "Hippius",
     "76": "Ormas",
     "77": "Liquidity",
-    "78": "Umi",
+    "78": "Unknown",
     "79": "MVTRX",
     "80": "OpenRoboto",
     "81": "Reliquary",
@@ -1648,9 +1648,9 @@
   },
   "observations": [],
   "ownerSnapshot": {
-    "block": 9470297,
-    "hash": "0x7196fcffd06673c945f771fc366528b5c931b1683d97176802e50ac770b01583",
-    "checkedAt": "2026-11-09T18:05:10.869254+00:00",
+    "block": 9471431,
+    "hash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
+    "checkedAt": "2026-11-09T21:55:21.130625+00:00",
     "owners": {
       "1": "5HCFWvRqzSHWRPecN7q8J6c7aKQnrCZTMHstPv39xL1wgDHh",
       "2": "5EcYQ3W77ndrmMWdvVQusoFqY8doxfP3U2zrh7xZQiaz7avY",
@@ -1729,7 +1729,7 @@
       "75": "5DAQpczEK4vzBn1waHkC4BZGqGPZ1dwPxKVsj36JDofHAw3a",
       "76": "5CLWmDjLwkDtLQ86y9aiwfzrUCrtnnSWS9oEXianj2jMDCAo",
       "77": "5GxxsUeYRyJSJKCuPeG1jZZiCummHJttmTNsfgDRSfxVnhGi",
-      "78": "5GvYz1tBVJdVGtdeJFAcDbiRQcmKDcXicT98pxnKzU3cxVQ3",
+      "78": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
       "79": "5Fxp7QBG81X7PLdMkAe1RLCvqqfQSw9rJC5ppEQs9FP8qez9",
       "80": "5CG1eFiaZkWTCUEjD23i7Uiu6AjTkLkgkCu3EyXKFFAkkT2T",
       "81": "5GnpQR4Nt3f5AQqBXuhf7GkkaEHhAVQrVk4EsK4daZDmkAQT",
@@ -1784,14 +1784,14 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9470297,
-    "finalizedHash": "0x7196fcffd06673c945f771fc366528b5c931b1683d97176802e50ac770b01583",
-    "checkedAt": "2026-11-09T18:04:05.622993+00:00",
+    "toBlock": 9471431,
+    "finalizedHash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
+    "checkedAt": "2026-11-09T21:55:21.130625+00:00",
     "eventCount": 18,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Reviewed runtime definitions, positive decoding controls and per-block runtime checks retained. Historical allocation and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history.",
-    "evidence": "/evidence/2026-11-09-news-catchup-chain.json"
+    "evidence": "/evidence/2026-11-09-monitor-1644-chain.json"
   },
   "lifecycleResets": [
     {
@@ -1845,6 +1845,19 @@
       ],
       "reason": "Finalized cleanup removed Thirty Spokes identity. Replacement registration at 9447220; new identity unset. No owner allocation event.",
       "evidence": "/evidence/2026-11-06-daily-lifecycle.json"
+    },
+    {
+      "netuid": 78,
+      "block": 9471122,
+      "after": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "reason": "Umi deregistered; identity removed at 9471122, replacement registration 9471124 has no identity. Default vector reset, not an owner allocation event. Historical Umi allocation retained.",
+      "evidence": "/evidence/2026-11-09-monitor-1644-lifecycle.json"
     }
   ]
 }

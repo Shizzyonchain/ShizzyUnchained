@@ -8,85 +8,117 @@
   "chainReviews": {
     "etao": {
       "status": "DONE",
-      "checkedAt": "2026-11-09T18:04:05.622993+00:00",
-      "fromBlock": 9469512,
-      "toBlock": 9470297,
-      "hash": "0x7196fcffd06673c945f771fc366528b5c931b1683d97176802e50ac770b01583",
-      "throughTime": "2026-11-09T18:01:48.001000+00:00",
-      "evidence": "/evidence/2026-11-09-news-catchup-chain.json",
+      "checkedAt": "2026-11-09T21:55:21.130625+00:00",
+      "fromBlock": 9470298,
+      "toBlock": 9471431,
+      "hash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
+      "throughTime": "2026-11-09T21:48:36+00:00",
+      "evidence": "/evidence/2026-11-09-monitor-1644-chain.json",
       "gaps": [],
+      "complete": true,
       "archiveUpdated": true,
-      "eventCount": 0,
-      "newsDisposition": "No new allocation events or individual burns of at least 100 native tokens; all historical records and labels preserved. Smaller burns and excluded recycling retained in permanent scan evidence.",
+      "allocationEvents": 0,
+      "qualifyingBurns": 4,
+      "newsDisposition": "Four successful qualifying burns and a verified SN78 registration replacement. News selection and Eastern cutoff recorded separately; no second roundup or automatic four-star quote.",
+      "kind": "etao",
       "earlierDailyStage": {
         "status": "DONE",
-        "checkedAt": "2026-11-09T15:25:38.220712+00:00",
-        "fromBlock": 9469369,
-        "toBlock": 9469511,
-        "hash": "0xb3a501c2ab3db971c16b34635d243a0abad553eb946d36c6cfb6c0abd8eccbda",
-        "throughTime": "2026-11-09T15:24:36+00:00",
-        "evidence": "/evidence/2026-11-09-daily-extension.json",
+        "checkedAt": "2026-11-09T18:04:05.622993+00:00",
+        "fromBlock": 9469512,
+        "toBlock": 9470297,
+        "hash": "0x7196fcffd06673c945f771fc366528b5c931b1683d97176802e50ac770b01583",
+        "throughTime": "2026-11-09T18:01:48.001000+00:00",
+        "evidence": "/evidence/2026-11-09-news-catchup-chain.json",
         "gaps": [],
         "archiveUpdated": true,
         "eventCount": 0,
-        "newsDisposition": "No new allocation, lifecycle or individually qualifying transaction burn in extension. Initial reviewed SOMA change and prior seven overnight transaction burns preserved in edition and archives.",
+        "newsDisposition": "No new allocation events or individual burns of at least 100 native tokens; all historical records and labels preserved. Smaller burns and excluded recycling retained in permanent scan evidence.",
         "earlierDailyStage": {
           "status": "DONE",
-          "checkedAt": "2026-11-09T14:58:28.089082+00:00",
-          "fromBlock": 9468329,
-          "toBlock": 9469368,
-          "hash": "0xbd551d435e2952901554181091ea5dc44bfab5f1b54d873508db68c0f0ba7c04",
-          "throughTime": "2026-11-09T14:56:00+00:00",
-          "evidence": "/evidence/2026-11-09-daily-chain.json",
-          "gaps": [],
-          "archiveUpdated": true,
-          "eventCount": 1,
-          "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
-        },
-        "liveVerified": true
-      },
-      "liveVerified": false
-    },
-    "burns": {
-      "status": "DONE",
-      "checkedAt": "2026-11-09T18:04:05.622993+00:00",
-      "fromBlock": 9469512,
-      "toBlock": 9470297,
-      "hash": "0x7196fcffd06673c945f771fc366528b5c931b1683d97176802e50ac770b01583",
-      "throughTime": "2026-11-09T18:01:48.001000+00:00",
-      "evidence": "/evidence/2026-11-09-news-catchup-chain.json",
-      "gaps": [],
-      "archiveUpdated": true,
-      "eventCount": 0,
-      "newsDisposition": "No new allocation events or individual burns of at least 100 native tokens; all historical records and labels preserved. Smaller burns and excluded recycling retained in permanent scan evidence.",
-      "earlierDailyStage": {
-        "status": "DONE",
-        "checkedAt": "2026-11-09T15:25:38.220712+00:00",
-        "fromBlock": 9469369,
-        "toBlock": 9469511,
-        "hash": "0xb3a501c2ab3db971c16b34635d243a0abad553eb946d36c6cfb6c0abd8eccbda",
-        "throughTime": "2026-11-09T15:24:36+00:00",
-        "evidence": "/evidence/2026-11-09-daily-extension.json",
-        "gaps": [],
-        "archiveUpdated": true,
-        "eventCount": 0,
-        "newsDisposition": "No new allocation, lifecycle or individually qualifying transaction burn in extension. Initial reviewed SOMA change and prior seven overnight transaction burns preserved in edition and archives.",
-        "earlierDailyStage": {
-          "status": "DONE",
-          "checkedAt": "2026-11-09T14:58:28.089082+00:00",
-          "fromBlock": 9468329,
-          "toBlock": 9469368,
-          "hash": "0xbd551d435e2952901554181091ea5dc44bfab5f1b54d873508db68c0f0ba7c04",
-          "throughTime": "2026-11-09T14:56:00+00:00",
-          "evidence": "/evidence/2026-11-09-daily-chain.json",
+          "checkedAt": "2026-11-09T15:25:38.220712+00:00",
+          "fromBlock": 9469369,
+          "toBlock": 9469511,
+          "hash": "0xb3a501c2ab3db971c16b34635d243a0abad553eb946d36c6cfb6c0abd8eccbda",
+          "throughTime": "2026-11-09T15:24:36+00:00",
+          "evidence": "/evidence/2026-11-09-daily-extension.json",
           "gaps": [],
           "archiveUpdated": true,
           "eventCount": 0,
-          "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
+          "newsDisposition": "No new allocation, lifecycle or individually qualifying transaction burn in extension. Initial reviewed SOMA change and prior seven overnight transaction burns preserved in edition and archives.",
+          "earlierDailyStage": {
+            "status": "DONE",
+            "checkedAt": "2026-11-09T14:58:28.089082+00:00",
+            "fromBlock": 9468329,
+            "toBlock": 9469368,
+            "hash": "0xbd551d435e2952901554181091ea5dc44bfab5f1b54d873508db68c0f0ba7c04",
+            "throughTime": "2026-11-09T14:56:00+00:00",
+            "evidence": "/evidence/2026-11-09-daily-chain.json",
+            "gaps": [],
+            "archiveUpdated": true,
+            "eventCount": 1,
+            "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
+          },
+          "liveVerified": true
         },
-        "liveVerified": true
-      },
-      "liveVerified": false
+        "liveVerified": false
+      }
+    },
+    "burns": {
+      "status": "DONE",
+      "checkedAt": "2026-11-09T21:55:21.130625+00:00",
+      "fromBlock": 9470298,
+      "toBlock": 9471431,
+      "hash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
+      "throughTime": "2026-11-09T21:48:36+00:00",
+      "evidence": "/evidence/2026-11-09-monitor-1644-chain.json",
+      "gaps": [],
+      "complete": true,
+      "archiveUpdated": true,
+      "allocationEvents": 0,
+      "qualifyingBurns": 4,
+      "newsDisposition": "Four successful qualifying burns and a verified SN78 registration replacement. News selection and Eastern cutoff recorded separately; no second roundup or automatic four-star quote.",
+      "kind": "burns",
+      "earlierDailyStage": {
+        "status": "DONE",
+        "checkedAt": "2026-11-09T18:04:05.622993+00:00",
+        "fromBlock": 9469512,
+        "toBlock": 9470297,
+        "hash": "0x7196fcffd06673c945f771fc366528b5c931b1683d97176802e50ac770b01583",
+        "throughTime": "2026-11-09T18:01:48.001000+00:00",
+        "evidence": "/evidence/2026-11-09-news-catchup-chain.json",
+        "gaps": [],
+        "archiveUpdated": true,
+        "eventCount": 0,
+        "newsDisposition": "No new allocation events or individual burns of at least 100 native tokens; all historical records and labels preserved. Smaller burns and excluded recycling retained in permanent scan evidence.",
+        "earlierDailyStage": {
+          "status": "DONE",
+          "checkedAt": "2026-11-09T15:25:38.220712+00:00",
+          "fromBlock": 9469369,
+          "toBlock": 9469511,
+          "hash": "0xb3a501c2ab3db971c16b34635d243a0abad553eb946d36c6cfb6c0abd8eccbda",
+          "throughTime": "2026-11-09T15:24:36+00:00",
+          "evidence": "/evidence/2026-11-09-daily-extension.json",
+          "gaps": [],
+          "archiveUpdated": true,
+          "eventCount": 0,
+          "newsDisposition": "No new allocation, lifecycle or individually qualifying transaction burn in extension. Initial reviewed SOMA change and prior seven overnight transaction burns preserved in edition and archives.",
+          "earlierDailyStage": {
+            "status": "DONE",
+            "checkedAt": "2026-11-09T14:58:28.089082+00:00",
+            "fromBlock": 9468329,
+            "toBlock": 9469368,
+            "hash": "0xbd551d435e2952901554181091ea5dc44bfab5f1b54d873508db68c0f0ba7c04",
+            "throughTime": "2026-11-09T14:56:00+00:00",
+            "evidence": "/evidence/2026-11-09-daily-chain.json",
+            "gaps": [],
+            "archiveUpdated": true,
+            "eventCount": 0,
+            "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
+          },
+          "liveVerified": true
+        },
+        "liveVerified": false
+      }
     }
   },
   "marketReview": {
@@ -1585,12 +1617,11 @@
   },
   "ownerHoldings": {
     "status": "DONE",
-    "block": 9470297,
-    "hash": "0x7196fcffd06673c945f771fc366528b5c931b1683d97176802e50ac770b01583",
-    "asOf": "2026-11-09T18:01:48.001000+00:00",
-    "evidence": "/evidence/owner-holdings-9470297.json",
+    "block": 9471431,
+    "hash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
+    "asOf": "2026-11-09T21:48:36+00:00",
+    "evidence": "/evidence/owner-holdings-9471431.json",
     "wallets": 128,
-    "validation": "All 128 current addresses match the allocation owner snapshot; same finalized cutoff as both chain archives. Publication validator and live verification pending.",
     "liveVerified": false
   },
   "grokReview": {
@@ -3795,5 +3826,287 @@
     },
     "evidence": "daily-news-2026-11-09/grok-quota.txt",
     "leads": []
+  },
+  "laterMonitorReviews": [
+    {
+      "kind": "three-hour-news-monitor",
+      "date": "2026-11-09",
+      "checkedAt": "2026-11-09T21:55:21.130625+00:00",
+      "dailyWorkflowComplete": false,
+      "chainReviews": {
+        "etao": {
+          "status": "DONE",
+          "checkedAt": "2026-11-09T21:55:21.130625+00:00",
+          "fromBlock": 9470298,
+          "toBlock": 9471431,
+          "hash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
+          "throughTime": "2026-11-09T21:48:36+00:00",
+          "evidence": "/evidence/2026-11-09-monitor-1644-chain.json",
+          "gaps": [],
+          "complete": true,
+          "archiveUpdated": true,
+          "allocationEvents": 0,
+          "qualifyingBurns": 4,
+          "newsDisposition": "Four successful qualifying burns and a verified SN78 registration replacement. News selection and Eastern cutoff recorded separately; no second roundup or automatic four-star quote.",
+          "kind": "etao",
+          "earlierDailyStage": {
+            "status": "DONE",
+            "checkedAt": "2026-11-09T18:04:05.622993+00:00",
+            "fromBlock": 9469512,
+            "toBlock": 9470297,
+            "hash": "0x7196fcffd06673c945f771fc366528b5c931b1683d97176802e50ac770b01583",
+            "throughTime": "2026-11-09T18:01:48.001000+00:00",
+            "evidence": "/evidence/2026-11-09-news-catchup-chain.json",
+            "gaps": [],
+            "archiveUpdated": true,
+            "eventCount": 0,
+            "newsDisposition": "No new allocation events or individual burns of at least 100 native tokens; all historical records and labels preserved. Smaller burns and excluded recycling retained in permanent scan evidence.",
+            "earlierDailyStage": {
+              "status": "DONE",
+              "checkedAt": "2026-11-09T15:25:38.220712+00:00",
+              "fromBlock": 9469369,
+              "toBlock": 9469511,
+              "hash": "0xb3a501c2ab3db971c16b34635d243a0abad553eb946d36c6cfb6c0abd8eccbda",
+              "throughTime": "2026-11-09T15:24:36+00:00",
+              "evidence": "/evidence/2026-11-09-daily-extension.json",
+              "gaps": [],
+              "archiveUpdated": true,
+              "eventCount": 0,
+              "newsDisposition": "No new allocation, lifecycle or individually qualifying transaction burn in extension. Initial reviewed SOMA change and prior seven overnight transaction burns preserved in edition and archives.",
+              "earlierDailyStage": {
+                "status": "DONE",
+                "checkedAt": "2026-11-09T14:58:28.089082+00:00",
+                "fromBlock": 9468329,
+                "toBlock": 9469368,
+                "hash": "0xbd551d435e2952901554181091ea5dc44bfab5f1b54d873508db68c0f0ba7c04",
+                "throughTime": "2026-11-09T14:56:00+00:00",
+                "evidence": "/evidence/2026-11-09-daily-chain.json",
+                "gaps": [],
+                "archiveUpdated": true,
+                "eventCount": 1,
+                "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
+              },
+              "liveVerified": true
+            },
+            "liveVerified": false
+          }
+        },
+        "burns": {
+          "status": "DONE",
+          "checkedAt": "2026-11-09T21:55:21.130625+00:00",
+          "fromBlock": 9470298,
+          "toBlock": 9471431,
+          "hash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
+          "throughTime": "2026-11-09T21:48:36+00:00",
+          "evidence": "/evidence/2026-11-09-monitor-1644-chain.json",
+          "gaps": [],
+          "complete": true,
+          "archiveUpdated": true,
+          "allocationEvents": 0,
+          "qualifyingBurns": 4,
+          "newsDisposition": "Four successful qualifying burns and a verified SN78 registration replacement. News selection and Eastern cutoff recorded separately; no second roundup or automatic four-star quote.",
+          "kind": "burns",
+          "earlierDailyStage": {
+            "status": "DONE",
+            "checkedAt": "2026-11-09T18:04:05.622993+00:00",
+            "fromBlock": 9469512,
+            "toBlock": 9470297,
+            "hash": "0x7196fcffd06673c945f771fc366528b5c931b1683d97176802e50ac770b01583",
+            "throughTime": "2026-11-09T18:01:48.001000+00:00",
+            "evidence": "/evidence/2026-11-09-news-catchup-chain.json",
+            "gaps": [],
+            "archiveUpdated": true,
+            "eventCount": 0,
+            "newsDisposition": "No new allocation events or individual burns of at least 100 native tokens; all historical records and labels preserved. Smaller burns and excluded recycling retained in permanent scan evidence.",
+            "earlierDailyStage": {
+              "status": "DONE",
+              "checkedAt": "2026-11-09T15:25:38.220712+00:00",
+              "fromBlock": 9469369,
+              "toBlock": 9469511,
+              "hash": "0xb3a501c2ab3db971c16b34635d243a0abad553eb946d36c6cfb6c0abd8eccbda",
+              "throughTime": "2026-11-09T15:24:36+00:00",
+              "evidence": "/evidence/2026-11-09-daily-extension.json",
+              "gaps": [],
+              "archiveUpdated": true,
+              "eventCount": 0,
+              "newsDisposition": "No new allocation, lifecycle or individually qualifying transaction burn in extension. Initial reviewed SOMA change and prior seven overnight transaction burns preserved in edition and archives.",
+              "earlierDailyStage": {
+                "status": "DONE",
+                "checkedAt": "2026-11-09T14:58:28.089082+00:00",
+                "fromBlock": 9468329,
+                "toBlock": 9469368,
+                "hash": "0xbd551d435e2952901554181091ea5dc44bfab5f1b54d873508db68c0f0ba7c04",
+                "throughTime": "2026-11-09T14:56:00+00:00",
+                "evidence": "/evidence/2026-11-09-daily-chain.json",
+                "gaps": [],
+                "archiveUpdated": true,
+                "eventCount": 0,
+                "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
+              },
+              "liveVerified": true
+            },
+            "liveVerified": false
+          }
+        }
+      },
+      "grok": {
+        "conversation": "https://x.com/i/grok?conversation=0a92edb1-8350-4104-9524-ced487b02acd",
+        "mode": "Auto",
+        "discovery": "Completed",
+        "topFive": "Completed; approximate attention synthesis, not a measured ranking. Its initial site view was stale.",
+        "omission": "Completed after supplying actual 25 published headlines.",
+        "correction": "Successful current queries do not retroactively erase earlier explicit usage rejections."
+      },
+      "registrationReview": {
+        "netuid": 78,
+        "oldName": "Umi",
+        "oldRegisteredAt": 7966145,
+        "removedBlock": 9471098,
+        "identityRemovedBlock": 9471122,
+        "newRegisteredAt": 9471124,
+        "newName": "Unknown",
+        "oldOwner": "5GvYz1tBVJdVGtdeJFAcDbiRQcmKDcXicT98pxnKzU3cxVQ3",
+        "newOwner": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+        "lockedRegistrationTAORaw": "85943556872",
+        "evidence": "/evidence/2026-11-09-monitor-1644-lifecycle.json",
+        "sourceDiscrepancy": "Secondary alert names a different old owner. Public reporting uses independently queried historical chain owner, not that alert value."
+      },
+      "researchGaps": [
+        "Full seven-day X pagination and audiovisual review not completed on every source.",
+        "Configured repository requests: 22 HTTP200,76 HTTP403,13 HTTP429,1 HTTP404 and12unconfigured. A failed request is not no activity.",
+        "Root basket and Affine incident leads lack direct original evidence in this pass; retained pending."
+      ],
+      "socialPosts": 0,
+      "quoteDisposition": "No newly verified four-star story; transaction burns and registration changes do not automatically merit an X quote.",
+      "editorialCutoff": {
+        "checkedAt": "2026-11-09T22:01:18.833927+00:00",
+        "easternTime": "2026-11-09T17:01:18.833927-05:00",
+        "timezone": "America/New_York; EST on November9",
+        "decision": "Final publication clock check was after 5 PM Eastern. Preserve all25 November9 stories; carry newly cleared five stories and three Vanta burns into November10. Publish material archives, holdings and SN78 sector reset now.",
+        "targetEdition": "2026-11-10"
+      },
+      "validation": "205 JS tests and76 desktop/phone checks passed on candidate; final archive-only publication also runs tracked pre-push gate.",
+      "newsAdditions": [
+        {
+          "netuid": 78,
+          "announcementAt": "2026-11-09T20:47:12Z",
+          "item": {
+            "headline": "SN78 Umi deregisters; a new unnamed subnet takes the slot",
+            "summary": "Finalized November 9 events removed Umi at block 9471098 (20:42 UTC), cleared its identity at 9471122 and registered a replacement at 9471124 (20:47:12 UTC). The replacement has no on-chain identity at reviewed block 9471431. Historical storage identifies the outgoing owner as 5GvYz1…cxVQ3 and the new owner as 5GQWJ3…EJuE. The successful registration queued 85.943556872 TAO as a lock, not a verified sale price or transaction burn. The SN78 number persists, but Umi history and the replacement are separate registrations. The allocation vector reset to the default during cleanup; no owner allocation-change event occurred.",
+            "rating": 3,
+            "ratingReason": "A finalized registration replacement changes which project a netuid identifies. Exact historical identity, owner and reset evidence matters more than a secondary alert, whose outgoing-owner value did not match the direct historical query.",
+            "sources": [
+              {
+                "url": "https://shizzyunchained.com/evidence/2026-11-09-monitor-1644-lifecycle.json",
+                "label": "Finalized lifecycle events and historical identity/owner snapshots"
+              },
+              {
+                "url": "https://shizzyunchained.com/evidence/2026-11-09-monitor-1644-chain.json",
+                "label": "Finalized vector reconciliation"
+              }
+            ],
+            "status": "verified",
+            "importance": "medium"
+          }
+        },
+        {
+          "netuid": 41,
+          "announcementAt": "2026-11-09T21:01:36+00:00",
+          "item": {
+            "headline": "SN41 Almanac records a 44,220.614304990 alpha buyback-and-burn",
+            "summary": "A successful add_stake_burn call at finalized block 9471196 on November 9 used 459 TAO to buy and burn 44,220.614304990 Almanac alpha. The matching AlphaBurned and AddStakeBurn describe one operation and are counted once. The TAO is buyback input, not TAO destroyed. Historical identity and registration were unchanged across execution. The initiating wallet differs from the currently verified owner; this is a subnet burn, without an unsupported claim that the team funded it.",
+            "rating": 2,
+            "ratingReason": "A directly decoded qualifying transaction with exact units and execution checks. Its size alone does not establish customer revenue, adoption or investment merit.",
+            "sources": [
+              {
+                "url": "https://shizzyunchained.com/evidence/2026-11-09-monitor-1644-chain.json",
+                "label": "Finalized burn, successful call and historical identity evidence"
+              }
+            ],
+            "status": "verified",
+            "importance": "informational"
+          }
+        },
+        {
+          "netuid": 50,
+          "announcementAt": "2026-11-09T19:34:33.659Z",
+          "item": {
+            "headline": "SN50 Synth confirms Forge partnership ahead of mainnet",
+            "summary": "Forge announced its partnership with Synth on November 9 and said Synth had committed capital before mainnet. Synth later quoted the announcement and replied “We’re in,” directly corroborating participation. Neither original specifies the amount or terms, and this review did not verify a transfer, live lending market or mainnet activation. The development is a confirmed partnership announcement with a stated capital commitment, rather than an executed funding total.",
+            "rating": 2,
+            "ratingReason": "Both counterpart originals establish participation, but unspecified capital and pre-mainnet plans do not establish deployed financing or a live product.",
+            "sources": [
+              {
+                "url": "https://x.com/ForgeLending/status/2119824647218724904",
+                "label": "Primary Forge announcement"
+              },
+              {
+                "url": "https://x.com/SynthdataCo/status/2119876315457437798",
+                "label": "Primary Synth confirmation"
+              }
+            ],
+            "status": "verified",
+            "importance": "informational"
+          }
+        },
+        {
+          "netuid": null,
+          "announcementAt": "2026-11-09T18:19:15.799Z",
+          "item": {
+            "headline": "Sami Kassab publishes internal ecosystem revenue and demand estimates",
+            "summary": "In a November 9 reflection, Sami Kassab estimated ecosystem annualized revenue near $54 million, versus roughly $20 million at the end of 2025. He explicitly attributes the current figure to an internal dashboard that is not yet public. He also reports tracked team buybacks equal to 4.7% of TAO emissions and total demand offsets of 10.9% when registration and transaction fees are included. These are his research estimates, not independently reconciled financial statements or evidence that each fee is a transaction burn. The underlying dataset, coverage and methodology remain unavailable for reproduction.",
+            "rating": 2,
+            "ratingReason": "A substantive dated research disclosure, bounded by the author’s explicit internal-dashboard limitation. No independent revenue or demand-offset reconciliation supports treating the estimates as established network totals.",
+            "sources": [
+              {
+                "url": "https://x.com/Old_Samster/status/2119857366178902447",
+                "label": "Primary research article and internal-dashboard disclosure"
+              }
+            ],
+            "status": "verified",
+            "importance": "informational"
+          }
+        },
+        {
+          "netuid": 28,
+          "announcementAt": "2026-11-09T21:24:26Z",
+          "item": {
+            "headline": "SN28 SayGM promotes v0.5.24 version and exposes worker image standing",
+            "summary": "SayGM merged its v0.5.24 stable-version promotion on November 9 after dev preparation. An earlier merge makes gmcli worker list show each worker’s release tag and image standing, including supported, deprecated with a grace-end epoch, revoked, unknown or not reported. A failed image lookup still prints the list with a warning. These are reviewed repository changes; the version bump alone does not prove every production worker upgraded or that a particular deployment is supported.",
+            "rating": 2,
+            "ratingReason": "A useful operator compatibility diagnostic and explicit version promotion, supported by code. No fleet-wide activation or service-performance claim is inferred.",
+            "sources": [
+              {
+                "url": "https://github.com/taostat/gm-miner/commit/afa323730ed1e6f8ded3c17c7b6e5ce2ed9414b0",
+                "label": "Primary stable-version promotion"
+              },
+              {
+                "url": "https://github.com/taostat/gm-miner/commit/99df328ac8bb57720130ffd742a489870402c890",
+                "label": "Primary worker image-standing implementation"
+              }
+            ],
+            "status": "verified",
+            "importance": "informational"
+          }
+        }
+      ],
+      "marketReview": {
+        "observedAt": "2026-11-09T21:56:29.630085+00:00",
+        "source": "https://shizzyunchained.com/api/backend/v1/screener",
+        "basis": "alpha/TAO",
+        "ratingInfluencedByPrice": false,
+        "limitation": "Rolling snapshot is not an announcement-aligned event study; SN78 registration reset makes cross-registration return comparison unsuitable. No price-based star upgrade."
+      }
+    }
+  ],
+  "ownerHoldingsEarlierMonitor": {
+    "status": "DONE",
+    "block": 9470297,
+    "hash": "0x7196fcffd06673c945f771fc366528b5c931b1683d97176802e50ac770b01583",
+    "asOf": "2026-11-09T18:01:48.001000+00:00",
+    "evidence": "/evidence/owner-holdings-9470297.json",
+    "wallets": 128,
+    "validation": "All 128 current addresses match the allocation owner snapshot; same finalized cutoff as both chain archives. Publication validator and live verification pending.",
+    "liveVerified": false
   }
 }

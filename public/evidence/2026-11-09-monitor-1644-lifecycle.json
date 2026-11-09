@@ -1,0 +1,707 @@
+{
+  "fromBlock": 9470298,
+  "toBlock": 9471431,
+  "finalizedHash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
+  "complete": true,
+  "errors": [],
+  "events": [
+    {
+      "block": 9471098,
+      "hash": "0x505761167c729b30d05599c46b1cdf0836fe5cd7cbe9709ec88bfcddc656dbe6",
+      "timestamp": 1794256920000,
+      "eventIndex": 151,
+      "event": {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 6,
+        "event": {
+          "event_index": "0701",
+          "module_id": "SubtensorModule",
+          "event_id": "NetworkRemoved",
+          "attributes": 78
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "NetworkRemoved",
+        "attributes": 78,
+        "topics": []
+      },
+      "sameExtrinsicEvents": [
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0508",
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+              "amount": 1731779
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Withdraw",
+          "attributes": {
+            "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+            "amount": 1731779
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0701",
+            "module_id": "SubtensorModule",
+            "event_id": "NetworkRemoved",
+            "attributes": 78
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "NetworkRemoved",
+          "attributes": 78,
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0003",
+            "module_id": "System",
+            "event_id": "NewAccount",
+            "attributes": {
+              "account": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi"
+            }
+          },
+          "event_index": 0,
+          "module_id": "System",
+          "event_id": "NewAccount",
+          "attributes": {
+            "account": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi"
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0500",
+            "module_id": "Balances",
+            "event_id": "Endowed",
+            "attributes": {
+              "account": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi",
+              "free_balance": 85943556872
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Endowed",
+          "attributes": {
+            "account": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi",
+            "free_balance": 85943556872
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0502",
+            "module_id": "Balances",
+            "event_id": "Transfer",
+            "attributes": {
+              "from": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+              "to": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi",
+              "amount": 85943556872
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Transfer",
+          "attributes": {
+            "from": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+            "to": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi",
+            "amount": 85943556872
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "078d",
+            "module_id": "SubtensorModule",
+            "event_id": "NetworkRegistrationQueued",
+            "attributes": {
+              "coldkey": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+              "hotkey": "5EptHKWioJ3j4UnVcraXdnKhhQonvXgiGGR4UK7AcVqzg5kz",
+              "mechid": 1,
+              "identity": null,
+              "lock_amount": 85943556872,
+              "median_subnet_alpha_price": {
+                "bits": 76474455825880680
+              },
+              "registration_block": 9471098
+            }
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "NetworkRegistrationQueued",
+          "attributes": {
+            "coldkey": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+            "hotkey": "5EptHKWioJ3j4UnVcraXdnKhhQonvXgiGGR4UK7AcVqzg5kz",
+            "mechid": 1,
+            "identity": null,
+            "lock_amount": 85943556872,
+            "median_subnet_alpha_price": {
+              "bits": 76474455825880680
+            },
+            "registration_block": 9471098
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0507",
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+              "amount": 0
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Deposit",
+          "attributes": {
+            "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+            "amount": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0600",
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+              "actual_fee": 1731779,
+              "tip": 0
+            }
+          },
+          "event_index": 6,
+          "module_id": "TransactionPayment",
+          "event_id": "TransactionFeePaid",
+          "attributes": {
+            "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+            "actual_fee": 1731779,
+            "tip": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0000",
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 7026839000,
+                  "proof_size": 18677
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            }
+          },
+          "event_index": 0,
+          "module_id": "System",
+          "event_id": "ExtrinsicSuccess",
+          "attributes": {
+            "dispatch_info": {
+              "weight": {
+                "ref_time": 7026839000,
+                "proof_size": 18677
+              },
+              "class": "Normal",
+              "pays_fee": "Yes"
+            }
+          },
+          "topics": []
+        }
+      ]
+    },
+    {
+      "block": 9471098,
+      "hash": "0x505761167c729b30d05599c46b1cdf0836fe5cd7cbe9709ec88bfcddc656dbe6",
+      "timestamp": 1794256920000,
+      "eventIndex": 155,
+      "event": {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 6,
+        "event": {
+          "event_index": "078d",
+          "module_id": "SubtensorModule",
+          "event_id": "NetworkRegistrationQueued",
+          "attributes": {
+            "coldkey": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+            "hotkey": "5EptHKWioJ3j4UnVcraXdnKhhQonvXgiGGR4UK7AcVqzg5kz",
+            "mechid": 1,
+            "identity": null,
+            "lock_amount": 85943556872,
+            "median_subnet_alpha_price": {
+              "bits": 76474455825880680
+            },
+            "registration_block": 9471098
+          }
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "NetworkRegistrationQueued",
+        "attributes": {
+          "coldkey": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+          "hotkey": "5EptHKWioJ3j4UnVcraXdnKhhQonvXgiGGR4UK7AcVqzg5kz",
+          "mechid": 1,
+          "identity": null,
+          "lock_amount": 85943556872,
+          "median_subnet_alpha_price": {
+            "bits": 76474455825880680
+          },
+          "registration_block": 9471098
+        },
+        "topics": []
+      },
+      "sameExtrinsicEvents": [
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0508",
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+              "amount": 1731779
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Withdraw",
+          "attributes": {
+            "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+            "amount": 1731779
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0701",
+            "module_id": "SubtensorModule",
+            "event_id": "NetworkRemoved",
+            "attributes": 78
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "NetworkRemoved",
+          "attributes": 78,
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0003",
+            "module_id": "System",
+            "event_id": "NewAccount",
+            "attributes": {
+              "account": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi"
+            }
+          },
+          "event_index": 0,
+          "module_id": "System",
+          "event_id": "NewAccount",
+          "attributes": {
+            "account": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi"
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0500",
+            "module_id": "Balances",
+            "event_id": "Endowed",
+            "attributes": {
+              "account": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi",
+              "free_balance": 85943556872
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Endowed",
+          "attributes": {
+            "account": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi",
+            "free_balance": 85943556872
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0502",
+            "module_id": "Balances",
+            "event_id": "Transfer",
+            "attributes": {
+              "from": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+              "to": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi",
+              "amount": 85943556872
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Transfer",
+          "attributes": {
+            "from": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+            "to": "5EYCAe5jLQhn6ofDSwNJ2Wvws8MKscMC3h4W3SnjLBenvoYi",
+            "amount": 85943556872
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "078d",
+            "module_id": "SubtensorModule",
+            "event_id": "NetworkRegistrationQueued",
+            "attributes": {
+              "coldkey": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+              "hotkey": "5EptHKWioJ3j4UnVcraXdnKhhQonvXgiGGR4UK7AcVqzg5kz",
+              "mechid": 1,
+              "identity": null,
+              "lock_amount": 85943556872,
+              "median_subnet_alpha_price": {
+                "bits": 76474455825880680
+              },
+              "registration_block": 9471098
+            }
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "NetworkRegistrationQueued",
+          "attributes": {
+            "coldkey": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+            "hotkey": "5EptHKWioJ3j4UnVcraXdnKhhQonvXgiGGR4UK7AcVqzg5kz",
+            "mechid": 1,
+            "identity": null,
+            "lock_amount": 85943556872,
+            "median_subnet_alpha_price": {
+              "bits": 76474455825880680
+            },
+            "registration_block": 9471098
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0507",
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+              "amount": 0
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Deposit",
+          "attributes": {
+            "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+            "amount": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0600",
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+              "actual_fee": 1731779,
+              "tip": 0
+            }
+          },
+          "event_index": 6,
+          "module_id": "TransactionPayment",
+          "event_id": "TransactionFeePaid",
+          "attributes": {
+            "who": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+            "actual_fee": 1731779,
+            "tip": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 6,
+          "event": {
+            "event_index": "0000",
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 7026839000,
+                  "proof_size": 18677
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            }
+          },
+          "event_index": 0,
+          "module_id": "System",
+          "event_id": "ExtrinsicSuccess",
+          "attributes": {
+            "dispatch_info": {
+              "weight": {
+                "ref_time": 7026839000,
+                "proof_size": 18677
+              },
+              "class": "Normal",
+              "pays_fee": "Yes"
+            }
+          },
+          "topics": []
+        }
+      ]
+    },
+    {
+      "block": 9471122,
+      "hash": "0xecc61026bc9b5b792fb6b5b1ef058bb4c8f3849e66112acc80d56ed48f7cdb66",
+      "timestamp": 1794257208000,
+      "eventIndex": 169,
+      "event": {
+        "phase": "Finalization",
+        "extrinsic_idx": null,
+        "event": {
+          "event_index": "0750",
+          "module_id": "SubtensorModule",
+          "event_id": "SubnetIdentityRemoved",
+          "attributes": 78
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "SubnetIdentityRemoved",
+        "attributes": 78,
+        "topics": []
+      },
+      "sameExtrinsicEvents": []
+    },
+    {
+      "block": 9471124,
+      "hash": "0x3f89710b40df7270d753703a9b344bb391a3dd646beefce690d1ca6088713b2b",
+      "timestamp": 1794257232000,
+      "eventIndex": 203,
+      "event": {
+        "phase": "Finalization",
+        "extrinsic_idx": null,
+        "event": {
+          "event_index": "077e",
+          "module_id": "SubtensorModule",
+          "event_id": "NetworkDissolveCleanupCompleted",
+          "attributes": {
+            "netuid": 78
+          }
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "NetworkDissolveCleanupCompleted",
+        "attributes": {
+          "netuid": 78
+        },
+        "topics": []
+      },
+      "sameExtrinsicEvents": []
+    },
+    {
+      "block": 9471124,
+      "hash": "0x3f89710b40df7270d753703a9b344bb391a3dd646beefce690d1ca6088713b2b",
+      "timestamp": 1794257232000,
+      "eventIndex": 211,
+      "event": {
+        "phase": "Finalization",
+        "extrinsic_idx": null,
+        "event": {
+          "event_index": "075f",
+          "module_id": "SubtensorModule",
+          "event_id": "SubnetOwnerHotkeySet",
+          "attributes": [
+            78,
+            "5EptHKWioJ3j4UnVcraXdnKhhQonvXgiGGR4UK7AcVqzg5kz"
+          ]
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "SubnetOwnerHotkeySet",
+        "attributes": [
+          78,
+          "5EptHKWioJ3j4UnVcraXdnKhhQonvXgiGGR4UK7AcVqzg5kz"
+        ],
+        "topics": []
+      },
+      "sameExtrinsicEvents": []
+    },
+    {
+      "block": 9471124,
+      "hash": "0x3f89710b40df7270d753703a9b344bb391a3dd646beefce690d1ca6088713b2b",
+      "timestamp": 1794257232000,
+      "eventIndex": 273,
+      "event": {
+        "phase": "Finalization",
+        "extrinsic_idx": null,
+        "event": {
+          "event_index": "0700",
+          "module_id": "SubtensorModule",
+          "event_id": "NetworkAdded",
+          "attributes": [
+            78,
+            1
+          ]
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "NetworkAdded",
+        "attributes": [
+          78,
+          1
+        ],
+        "topics": []
+      },
+      "sameExtrinsicEvents": []
+    }
+  ],
+  "sn78Snapshots": [
+    {
+      "block": 9471097,
+      "hash": "0x607d064cd00cf5de135b38ef447a15d716583145542b8da38b468b33a29b9633",
+      "time": 1794256908000,
+      "fields": {
+        "NetworkRegisteredAt": 7966145,
+        "SubnetIdentitiesV3": {
+          "subnet_name": "Umi",
+          "github_repo": "https://github.com/Umi-BitSign/umi",
+          "subnet_contact": "",
+          "subnet_url": "https://www.umi.vision",
+          "discord": "https://discord.gg/8pexneWef",
+          "description": "Universal motion to meaning",
+          "logo_url": "https://www.umi.vision/logo-white.png",
+          "additional": ""
+        },
+        "SubnetOwner": "5GvYz1tBVJdVGtdeJFAcDbiRQcmKDcXicT98pxnKzU3cxVQ3",
+        "SubnetEmissionWeights": [
+          0,
+          0,
+          5672373802665687121,
+          2859245331424980500,
+          9915124939618883994
+        ]
+      }
+    },
+    {
+      "block": 9471098,
+      "hash": "0x505761167c729b30d05599c46b1cdf0836fe5cd7cbe9709ec88bfcddc656dbe6",
+      "time": 1794256920000,
+      "fields": {
+        "NetworkRegisteredAt": 7966145,
+        "SubnetIdentitiesV3": {
+          "subnet_name": "Umi",
+          "github_repo": "https://github.com/Umi-BitSign/umi",
+          "subnet_contact": "",
+          "subnet_url": "https://www.umi.vision",
+          "discord": "https://discord.gg/8pexneWef",
+          "description": "Universal motion to meaning",
+          "logo_url": "https://www.umi.vision/logo-white.png",
+          "additional": ""
+        },
+        "SubnetOwner": "5GvYz1tBVJdVGtdeJFAcDbiRQcmKDcXicT98pxnKzU3cxVQ3",
+        "SubnetEmissionWeights": [
+          0,
+          0,
+          5672373802665687121,
+          2859245331424980500,
+          9915124939618883994
+        ]
+      }
+    },
+    {
+      "block": 9471122,
+      "hash": "0xecc61026bc9b5b792fb6b5b1ef058bb4c8f3849e66112acc80d56ed48f7cdb66",
+      "time": 1794257208000,
+      "fields": {
+        "NetworkRegisteredAt": 0,
+        "SubnetIdentitiesV3": null,
+        "SubnetOwner": "5C4hrfjw9DjXZTzV3MwzrrAr9P1MJhSrvWGWqi1eSuyUpnhM",
+        "SubnetEmissionWeights": [
+          0,
+          0,
+          3320329489486196244,
+          7563207292111677685,
+          7563207292111677686
+        ]
+      }
+    },
+    {
+      "block": 9471124,
+      "hash": "0x3f89710b40df7270d753703a9b344bb391a3dd646beefce690d1ca6088713b2b",
+      "time": 1794257232000,
+      "fields": {
+        "NetworkRegisteredAt": 9471124,
+        "SubnetIdentitiesV3": null,
+        "SubnetOwner": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+        "SubnetEmissionWeights": [
+          0,
+          0,
+          3320329489486196244,
+          7563207292111677685,
+          7563207292111677686
+        ]
+      }
+    },
+    {
+      "block": 9471431,
+      "hash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
+      "time": 1794260916000,
+      "fields": {
+        "NetworkRegisteredAt": 9471124,
+        "SubnetIdentitiesV3": null,
+        "SubnetOwner": "5GQWJ35LDDZ1rEgdMhSUiWZ48emaVDvuAPjEXyVNo5uMEJuE",
+        "SubnetEmissionWeights": [
+          0,
+          0,
+          3320329489486196244,
+          7563207292111677685,
+          7563207292111677686
+        ]
+      }
+    }
+  ],
+  "metadataReview": "Every block runtime version read; metadata and target event definitions loaded separately per observed runtime before decoding. No cross-runtime portable-type equality assumed."
+}
