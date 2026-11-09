@@ -5,7 +5,7 @@
   "summary": "SN75 Hippius confirms iPhone availability after a November 6 App Store release. SN114 SOMA sets an 11% emission burn allocation. Plus SN117 EveryFrame’s everycli upgrade, SN111 Claims’ evaluation, SN51 Lium’s GPU and usage update, SN28 SayGM’s pricing notice, operator changes and verified overnight burns.",
   "publishedAt": "2026-11-09T15:11:09.351347+00:00",
   "coverageStart": "2026-11-08T21:12:24+00:00",
-  "coverageEnd": "2026-11-09T15:28:46.064603+00:00",
+  "coverageEnd": "2026-11-09T15:48:41.761725+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [],
@@ -916,15 +916,23 @@
       "updates": [
         {
           "headline": "SN127 Zils merges customer training-data cleanup around jobs",
-          "summary": "November 9 PR222 adds cleanup of customer training rows, photos and partial downloads before claim and after job completion; finite round fleets remove their last-round rows. A completed frozen candidate can still be delivered after its training rows are removed. This does not erase candidate artifacts, raw outputs or logs. Seven-day archive cleanup and stopping an unbounded fleet remain manual responsibilities. The change follows the previously covered delivery gates; it is verified implementation, not independent proof that every deployed miner erased its data.",
+          "summary": "November 9 PR222 adds cleanup of customer training rows, photos and partial downloads before claim and after job completion; finite round fleets remove their last-round rows. A completed frozen candidate can still be delivered after its training rows are removed. This does not erase candidate artifacts, raw outputs or logs. Seven-day archive cleanup and stopping an unbounded fleet remain manual responsibilities. The change follows the previously covered delivery gates; it is verified implementation, not independent proof that every deployed miner erased its data. Later on November 9, PR223 adds an incumbent-ensemble guard: a new greedy combination must improve on the current ensemble by at least 0.5 score points on the same decision items before replacing it. The guard does not preserve an ensemble that cannot be rebuilt because a member is unknown or was not graded this round; identical membership needs no extra comparison. The merged implementation does not establish production rollout, an actual missed payment or a repaired round.",
           "sources": [
             {
               "url": "https://github.com/ooo-hq/zils/commit/74650a74b90c7bc4d6650e039bdb4530a3352a36",
               "label": "Primary merged implementation and documentation"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/commit/b09c87381eab32aef93ef18c615d26de089fcad2",
+              "label": "SN127 Zils merged incumbent-ensemble guard, November 9 at15:33:18UTC"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/blob/b09c87381eab32aef93ef18c615d26de089fcad2/zils/soup_round.py",
+              "label": "SN127 Zils exact0.5point margin and same-item comparison"
             }
           ],
           "rating": 2,
-          "ratingReason": "Concrete data-lifecycle implementation with retained artifacts and manual responsibilities disclosed. No blanket security or erasure guarantee.",
+          "ratingReason": "Concrete training-data lifecycle and model-selection safeguards, with retained artifacts, manual responsibilities and current-ensemble eligibility disclosed. No blanket erasure guarantee or production payout repair is inferred.",
           "status": "verified",
           "importance": "informational"
         }

@@ -4,7 +4,7 @@
   "publicationStatus": "PUBLISHED_READY_LIVE_ROUNDUP_VERIFIED_WITH_DISCLOSED_RESEARCH_GAPS",
   "preparedAt": "2026-11-09T15:11:09.351347+00:00",
   "coverageStart": "2026-11-08T21:12:24+00:00",
-  "coverageEnd": "2026-11-09T15:28:46.064603+00:00",
+  "coverageEnd": "2026-11-09T15:48:41.761725+00:00",
   "chainReviews": {
     "etao": {
       "status": "DONE",
@@ -2402,5 +2402,27 @@
     "verifiedAt": "2026-11-09T15:31:54.007710+00:00"
   },
   "retryPolicy": "Website edition and exactly one roundup verified. Reconcile newly cleared facts without a second roundup. Inspect native outcome before any uncertain replay.",
-  "copyReview": "Rec4ll privacy wording is limited to captured source-text encryption and plaintext processing; no unsupported vector/metadata assertion. Hippius iPhone November6release distinguished from November9announcement and prior Android launch."
+  "copyReview": "Rec4ll privacy wording is limited to captured source-text encryption and plaintext processing; no unsupported vector/metadata assertion. Hippius iPhone November6release distinguished from November9announcement and prior Android launch.",
+  "monitorUpdates": [
+    {
+      "checkedAt": "2026-11-09T15:48:41.761725+00:00",
+      "netuid": 127,
+      "status": "PRIMARY_MERGED_CODE_NOT_ROLLOUT",
+      "source": "https://github.com/ooo-hq/zils/commit/b09c87381eab32aef93ef18c615d26de089fcad2",
+      "mergedAt": "2026-11-09T15:33:18Z",
+      "change": "Added0.5score-point incumbent-ensemble guard to existingZilsbrief;all15stories preserved.",
+      "rating": 2,
+      "market": {
+        "netuid": 127,
+        "baseline": "2026-11-09T14:56:29.517244+00:00",
+        "observation": "2026-11-09T15:45:55.422895+00:00",
+        "deltaAlphaTAOPct": 0.13463375161089086,
+        "volume24hTAO": 2912.726041586,
+        "liquidityTAO": 3613.501903323
+      },
+      "priceAssessment": "0.13%alpha/TAOchange between14:56and15:45snapshots straddles merge;not announcement-aligned causal evidence or rating uplift.",
+      "quote": "NONE;not4stars. No secondroundup.",
+      "limits": "Grokquota100%,53repositoryHTTP200/42HTTP403/14HTTP429/3HTTP404/12unconfigured;selectedchannel/media gaps preserved."
+    }
+  ]
 }
