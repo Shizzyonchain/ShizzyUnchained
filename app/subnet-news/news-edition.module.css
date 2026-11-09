@@ -5,3 +5,5 @@
 .publication p{font:700 27px/1.15 Georgia,"Times New Roman",serif;color:#eee;margin:0 0 6px;letter-spacing:-.5px;text-transform:none}.publication span{font:10px/1.5 monospace;text-transform:uppercase;color:#999}.masthead{padding:12px 0 0;border-bottom:0}.dateline{margin-top:14px}.legacyHeadline{font:700 clamp(32px,4vw,54px)/1.1 Georgia,serif;text-transform:none;letter-spacing:-1px;margin:24px 0}.paper .lead :global(.news-item h1){color:#fff}.paper .lead :global(.news-item){padding-top:22px}
 @media(max-width:720px){.publication p{font-size:24px}.topline{gap:12px}.publication{width:100%}.masthead{padding:8px 0 0}.dateline{margin-top:12px}.paper .lead :global(.news-item){padding-top:18px}.paper .lead :global(.news-item h1){font-size:34px;line-height:1.08;letter-spacing:-.8px;margin:12px 0 14px}}
 
+.paper .masthead:has(.correction)+.lead :global(.news-item){padding-top:8px}
+
