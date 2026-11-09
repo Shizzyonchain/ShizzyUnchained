@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
   "dailyWorkflowComplete": false,
-  "publicationStatus": "INITIAL_PUBLICATION_LIVE_TWO_LATE_CLEARED_LEADS_AWAITING_RELEASE",
+  "publicationStatus": "PUBLISHED_READY_LIVE_ROUNDUP_VERIFIED_WITH_DISCLOSED_RESEARCH_GAPS",
   "preparedAt": "2026-11-09T15:11:09.351347+00:00",
   "coverageStart": "2026-11-08T21:12:24+00:00",
   "coverageEnd": "2026-11-09T15:28:46.064603+00:00",
@@ -30,7 +30,8 @@
         "archiveUpdated": true,
         "eventCount": 1,
         "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
-      }
+      },
+      "liveVerified": true
     },
     "burns": {
       "status": "DONE",
@@ -56,7 +57,8 @@
         "archiveUpdated": true,
         "eventCount": 0,
         "newsDisposition": "One verified SN114allocation change and no individually qualifying transaction burn in new extension; seven earlier finalized overnight burns under SN8/SN44/SN53carried into this edition without recounting. Prior history preserved."
-      }
+      },
+      "liveVerified": true
     }
   },
   "marketReview": {
@@ -779,7 +781,10 @@
         "observedAt": "2026-11-09T14:56:29.517244+00:00",
         "basis": "alpha/TAO",
         "comparisonWindow": "Rolling24h/7d, not announcement-aligned; no causal event study or price uplift",
-        "ratingInfluencedByPrice": false
+        "ratingInfluencedByPrice": false,
+        "volume24hTAO": 4632.38359283,
+        "liquidityTAO": 33966.989664474,
+        "source": "https://shizzyunchained.com/api/backend/v1/screener"
       },
       {
         "netuid": 28,
@@ -787,7 +792,10 @@
         "observedAt": "2026-11-09T14:56:29.517244+00:00",
         "basis": "alpha/TAO",
         "comparisonWindow": "Rolling24h/7d, not announcement-aligned; no causal event study or price uplift",
-        "ratingInfluencedByPrice": false
+        "ratingInfluencedByPrice": false,
+        "volume24hTAO": 7298.01211158,
+        "liquidityTAO": 26114.799887524,
+        "source": "https://shizzyunchained.com/api/backend/v1/screener"
       }
     ]
   },
@@ -798,7 +806,8 @@
     "asOf": "2026-11-09T14:56:00+00:00",
     "evidence": "/evidence/owner-holdings-9469368.json",
     "wallets": 128,
-    "validation": "Exact runtime488metadatafixture, reviewed stake API/source equality, all current owner addresses match; release validation and live panel pending."
+    "validation": "DONE: reviewed runtime488 metadata and unchanged stake API/source guards;128current owner addresses match; validator passed; live owners endpoint exactly matches published snapshot; native SN1 panel confirms287750.522503759alpha and0.160797968freeTAO at9469368.",
+    "liveVerified": true
   },
   "grokReview": {
     "status": "BLOCKED",
@@ -2187,16 +2196,211 @@
     }
   ],
   "remaining": [
-    "Publish cleared SN75/SN28 additions, verify READY/live, then one roundup. No roundup has been sent.",
-    "Grok, authenticated TaoStats, selected original/media and timeline access remain explicit blockers to exhaustive full-workflow sign-off."
+    "Grok discovery, top-five discussion and omission checks remain BLOCKED by the weekly quota until17:14Eastern.",
+    "Authenticated TaoStats/v1 cross-check remains BLOCKED by missing configured API access.",
+    "Selected original Discord claims, complete audiovisual review and continuous seven-day individual timelines remain documented research gaps. No exhaustive coverage claim."
   ],
   "validation": {
     "sourceText": "PASS",
-    "productionDependenciesAudit": "0vulnerabilities",
-    "lint": "0errors;existingunusedcontracts warning",
+    "productionDependenciesAudit": "0 vulnerabilities",
+    "lint": "PASS, one pre-existing unused contracts warning",
     "unitTests": 205,
     "browserTests": 76,
     "productionBuild": "PASS",
     "reactReview": "Both display components retain server/client separation, labelled search, stable keys and directfive-slot indices; no new fetches/hooks/visitorRPC."
-  }
+  },
+  "availablePublicationComplete": true,
+  "completedAt": "2026-11-09T15:34:43.719682+00:00",
+  "roundup": {
+    "status": "VERIFIED_PUBLIC",
+    "account": "@ShizzyUnchained",
+    "edition": "2026-11-09",
+    "url": "https://x.com/ShizzyUnchained/status/2119815329345884456",
+    "publishedAt": "2026-11-09T15:32:13.000Z",
+    "verifiedAt": "2026-11-09T15:33:00.293Z",
+    "text": "SN75 Hippius is on iPhone. Apple dates the release to Nov 6; today’s announcement follows its earlier Android launch.\r\n\r\nUsers can access files and back up photos from either mobile platform. Both store listings are available; the developer’s on-device encryption claim was not independently audited.\r\n\r\nAlso in today’s report: SN114 SOMA sets an 11% burn allocation, cutting validators from about 41% to 30%; SN111 Claims starts evaluation; SN117 EveryFrame releases its CLI upgrade; plus verified transaction burns.\r\n\r\nAll 15 updates, exact dates and primary sources:\r\nhttps://shizzyunchained.com/subnet-news/2026-11-09",
+    "exactBodyVerified": true,
+    "nativeCard": "https://t.co/VNuy5WYBy0",
+    "postingOperations": 1,
+    "linkVerification": {
+      "checkedAt": "2026-11-09T15:33:39.453133+00:00",
+      "shortUrl": "https://t.co/VNuy5WYBy0",
+      "resolvedUrl": "https://shizzyunchained.com/subnet-news/2026-11-09",
+      "status": 200
+    },
+    "noAdditionalRoundupAuthorized": true
+  },
+  "liveVerification": {
+    "status": "LIVE_VERIFIED",
+    "checkedAt": "2026-11-09T15:31:54.007710+00:00",
+    "requests": [
+      {
+        "path": "/subnet-news",
+        "status": 200,
+        "bytes": 173550
+      },
+      {
+        "path": "/subnet-news/2026-11-09",
+        "status": 200,
+        "bytes": 175639
+      },
+      {
+        "path": "/subnet-news/etao",
+        "status": 200,
+        "bytes": 139442
+      },
+      {
+        "path": "/subnet-news/burns",
+        "status": 200,
+        "bytes": 110943
+      },
+      {
+        "path": "/video",
+        "status": 200,
+        "bytes": 198831
+      },
+      {
+        "path": "/sectors",
+        "status": 200,
+        "bytes": 91112
+      },
+      {
+        "path": "/api/subnets/owners",
+        "status": 200,
+        "bytes": 60590
+      },
+      {
+        "path": "/evidence/2026-11-09-daily-chain.json",
+        "status": 200,
+        "bytes": 295107
+      },
+      {
+        "path": "/evidence/2026-11-09-daily-extension.json",
+        "status": 200,
+        "bytes": 201677
+      },
+      {
+        "path": "/evidence/2026-11-09-daily-lifecycle.json",
+        "status": 200,
+        "bytes": 17279
+      },
+      {
+        "path": "/evidence/2026-11-09-daily-allocation.json",
+        "status": 200,
+        "bytes": 10070
+      },
+      {
+        "path": "/evidence/owner-holdings-9469368.json",
+        "status": 200,
+        "bytes": 158586
+      },
+      {
+        "path": "/api/subnets/4/news",
+        "status": 200,
+        "bytes": 9175
+      },
+      {
+        "path": "/api/subnets/8/news",
+        "status": 200,
+        "bytes": 10404
+      },
+      {
+        "path": "/api/subnets/28/news",
+        "status": 200,
+        "bytes": 10711
+      },
+      {
+        "path": "/api/subnets/31/news",
+        "status": 200,
+        "bytes": 3038
+      },
+      {
+        "path": "/api/subnets/36/news",
+        "status": 200,
+        "bytes": 8471
+      },
+      {
+        "path": "/api/subnets/44/news",
+        "status": 200,
+        "bytes": 7930
+      },
+      {
+        "path": "/api/subnets/51/news",
+        "status": 200,
+        "bytes": 10952
+      },
+      {
+        "path": "/api/subnets/53/news",
+        "status": 200,
+        "bytes": 9253
+      },
+      {
+        "path": "/api/subnets/66/news",
+        "status": 200,
+        "bytes": 9674
+      },
+      {
+        "path": "/api/subnets/71/news",
+        "status": 200,
+        "bytes": 16040
+      },
+      {
+        "path": "/api/subnets/75/news",
+        "status": 200,
+        "bytes": 9233
+      },
+      {
+        "path": "/api/subnets/111/news",
+        "status": 200,
+        "bytes": 8515
+      },
+      {
+        "path": "/api/subnets/114/news",
+        "status": 200,
+        "bytes": 8094
+      },
+      {
+        "path": "/api/subnets/117/news",
+        "status": 200,
+        "bytes": 10318
+      },
+      {
+        "path": "/api/subnets/127/news",
+        "status": 200,
+        "bytes": 12692
+      }
+    ],
+    "items": 15,
+    "allHeadlinesPresent": true,
+    "holdingsExact": true,
+    "chainThrough": 9469511,
+    "subnetHistory": [
+      4,
+      8,
+      28,
+      31,
+      36,
+      44,
+      51,
+      53,
+      66,
+      71,
+      75,
+      111,
+      114,
+      117,
+      127
+    ],
+    "olderHistoryRetained": true,
+    "videos": "Latestpublic19:04/member7:03/Leadpoet37:26 present;Carboncancellation preserved"
+  },
+  "deployment": {
+    "id": "dpl_CevdwaHhxhhhg7jHEy3gN4Mmpqta",
+    "commit": "1a34158d587ee5a1d5bf1885616805d186656530",
+    "state": "READY",
+    "productionAlias": "https://shizzyunchained.com",
+    "verifiedAt": "2026-11-09T15:31:54.007710+00:00"
+  },
+  "retryPolicy": "Website edition and exactly one roundup verified. Reconcile newly cleared facts without a second roundup. Inspect native outcome before any uncertain replay.",
+  "copyReview": "Rec4ll privacy wording is limited to captured source-text encryption and plaintext processing; no unsupported vector/metadata assertion. Hippius iPhone November6release distinguished from November9announcement and prior Android launch."
 }
