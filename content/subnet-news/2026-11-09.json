@@ -1,0 +1,903 @@
+{
+  "version": 1,
+  "date": "2026-11-09",
+  "title": "Bittensor Daily News: November 9, 2026",
+  "summary": "SN114 SOMA sets an 11% emission burn allocation. SN117 EveryFrame publishes everycli 1.0.0 upgrade requirements; SN111 Claims begins its weekly evaluation. SN31 rec4ll publishes free memory limits, SN71 Leadpoet adds optional reward-decay code, and SN51 Lium expands GPU support. Plus operator changes and finalized SN8 Vanta, SN44 Score and SN53 engy burns. Code, published terms and executed transactions are distinguished.",
+  "publishedAt": "2026-11-09T15:11:09.351347+00:00",
+  "coverageStart": "2026-11-08T21:12:24+00:00",
+  "coverageEnd": "2026-11-09T15:15:20.310361+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": [
+        {
+          "headline": "SN4 Targon documents 13.1.0 network persistence and recovery",
+          "summary": "The November 9 documentation update consolidates 13.1.0 instructions for persistent static networking, bonds and VLAN configuration, including recovery and reboot behavior. This is an operator documentation change, not a newly verified binary release or a production fleet upgrade. Operators should check the applicable version and existing network configuration before applying the documented steps; no installation or network change was performed during this review.",
+          "sources": [
+            {
+              "url": "https://github.com/manifold-inc/targon/commit/5752bfa50ec5c49df8585f766184aeebf3876d51",
+              "label": "Primary merged implementation and documentation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful deployment guidance without an independently verified rollout or measured service improvement.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta records five qualifying alpha burns across the overnight window",
+          "summary": "Five finalized successful direct burn_alpha calls remove 200.070080868,496.426519683,655.757208060,272.892643668 and 120.022948968 alpha, totaling 1,745.169401247 alpha. Their UTC times are November 9 01:02:48,02:39:00,04:15:12,07:54:00 and 08:24:24; the first three occurred November 8 Eastern. Event IDs 9465202-176,9465683-205,9466164-202,9467258-183 and 9467410-335 preserve exact execution evidence. The wallet differs from the registered owner and registration 1,477,264 is unchanged. These archived events are carried into the morning report, not counted as new executions. No buyback or revenue funding is inferred.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-09-chain-0020.json",
+              "label": "Earlier three finalized SN8 Vanta burn executions"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-09-chain-0628.json",
+              "label": "Later two finalized SN8 Vanta burn executions"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Individually qualifying native-token burns with execution and historical identity verified. No product or commercial outcome is inferred.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": [
+        {
+          "headline": "SN31 rec4ll publishes a free tier with explicit memory and processing limits",
+          "summary": "First directly verified November 8 at 22:22 Eastern, the public product page offered 20 databases,8 million vectors,50 GiB estimated vector storage,1,000 embeddings/hour and 10,000 queries/hour shared by search and generation, without a card or deposit. The page says source text is encrypted at rest but independent operators see plaintext during processing; vectors and metadata are not encrypted. These published limits are useful for evaluating persistent AI memory, but no API request, reliability test or signup was performed. The original announcement time is unconfirmed. A fresh November 9 page visit returned an empty rendered body, so current availability was not re-established; the published terms are retained as a dated observation.",
+          "sources": [
+            {
+              "url": "https://rec4ll.com/",
+              "label": "SN31 rec4ll published product and free-tier terms"
+            },
+            {
+              "url": "https://rec4ll.com/uptime",
+              "label": "SN31 rec4ll team uptime dashboard"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Concrete published access terms, with a dated observation and current rendering gap. No independent scale, adoption or reliability result supports a higher rating.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Jacob Robert Steeves",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": [
+        {
+          "headline": "SN36 Weir adds seven-day hotkey activation-fee quotes",
+          "summary": "A November 9 07:55 UTC source change moves GPU activation fees into platform configuration and implements hotkey-bound seven-day quotes. An open quote uses the lower of its quoted fee and the current model fee. Missing configured fees stop new activations while preserving already activated GPUs. Removed hardcoded fee values are not current price quotations. No payment, live quote issuance or deployed fee schedule was tested. At 09:56 Eastern the cached alpha/TAO snapshot showed+15.99% over 24 hours and+2,125.30% over seven days; the latter crosses recent slot reuse and cannot establish a reaction to this commit.",
+          "sources": [
+            {
+              "url": "https://github.com/weircompute/weir-subnet/commit/47dc4bf1efdeb5b8220d7ef3f6585512fc46fcb2",
+              "label": "Primary merged implementation and documentation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful bounded operator change. The rolling price move crosses a registration reset, with limited liquidity, and is not an announcement-aligned causal study or an automatic star increase.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": [
+        {
+          "headline": "SN44 Score records a finalized buyback-and-burn",
+          "summary": "At 05:41:48 UTC November 9, finalized block 9,466,597, extrinsic 9, event 175 records 4,349.820044482 alpha destroyed through the successful buyback path with 137.911407 TAO input. The TAO enters the subnet pool; it is not TAO destroyed. Before/after identity storage retains the existing registration, and the executing wallet is not the registered subnet owner. No customer-revenue funding or off-chain identity is established. This event was already verified in the permanent archive and is carried into this edition without recounting it.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-09-chain-0628.json",
+              "label": "Finalized SN44 Score execution, amount and historical identity evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Qualifying executed supply event. Purchase input is distinguished from burned alpha; funding and business adoption are not inferred.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": [
+        {
+          "headline": "SN51 Lium adds GB200 pricing support and changes idle Spot-pay code",
+          "summary": "November 9 PR2149 adds GB200 as its own GPU family, initially using B200 rental rates and idle caps. Its provider notes require GPU splitting with a minimum of one for idle pay on four-GPU GB200/GB300 trays. Separate merged changes cap idle Spot pay at 80% of the comparable Secure idle rate while retaining the filler-revenue bound, and allow eligible free GPUs on partly rented Spot nodes to receive idle pay without double-paying rented GPUs. Download slowness now requires all measured endpoints to fail the threshold. These are verified code and documentation changes; deployed versions, current payouts, customer savings and installation were not independently tested. Separately, the team’s public statistics page, updated 15:12:37 UTC November 9, displayed $2.6 million billed to renters,1.08 million GPU-hours and28,721 rentals over a rolling 30 days, with 75% utilisation. These are team-reported operational counters, not independently audited revenue or the unverified calendar-October figures.",
+          "sources": [
+            {
+              "url": "https://github.com/Datura-ai/lium-io/commit/b21e8a5bb23f594beed4fbe0eec9b73e2a3528b2",
+              "label": "Primary merged implementation and documentation"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/commit/9ba5b98a21fb379be873f2e8765b7a279da9b941",
+              "label": "Primary merged implementation and documentation"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/commit/fbb74ed2d53a5739809ed284ccfea11fb0c847fc",
+              "label": "Primary merged implementation and documentation"
+            },
+            {
+              "url": "https://github.com/Datura-ai/lium-io/commit/4ed1e3fcf70875cd2a2521336c4f82ca6b5db2fb",
+              "label": "Primary merged implementation and documentation"
+            },
+            {
+              "url": "https://lium.io/stats",
+              "label": "SN51 Lium team-reported public network statistics, November 9 snapshot"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Concrete hardware eligibility and payment-formula consequences for operators. No verified live rollout or new revenue record is established.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": [
+        {
+          "headline": "SN53 engy records a finalized buyback-and-burn",
+          "summary": "At 09:13:00 UTC November 9, finalized block 9,467,653, extrinsic 8, event 199 records 10,707.973763420 alpha destroyed through the successful buyback path with 292.02 TAO input. The TAO enters the subnet pool; it is not TAO destroyed. Before/after identity storage retains the existing registration, and the executing wallet is not the registered subnet owner. No customer-revenue funding or off-chain identity is established. This event was already verified in the permanent archive and is carried into this edition without recounting it.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-09-chain-0628.json",
+              "label": "Finalized SN53 engy execution, amount and historical identity evidence"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Qualifying executed supply event. Purchase input is distinguished from burned alpha; funding and business adoption are not inferred.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": [
+        {
+          "headline": "SN66 Conjectures removes individual chat-log JSON size caps",
+          "summary": "November 9 PR201 removes per-file JSON byte caps and validates artifact-index entries as a stream. The prior 10 GiB ZIP limit remains, along with 20,000 ZIP entries,64 MiB JSONL line limits,24 levels of JSON nesting and isolated validation resource budgets. Large packages still require multipart upload and adequate scratch storage. This extends the previously covered package-size change; it does not make uploads unlimited or establish that production accepts every package.",
+          "sources": [
+            {
+              "url": "https://github.com/conjectures-io/conjectures-validator/commit/b1c6245dd76451006ef18c636d3f269712fe31de",
+              "label": "Primary merged implementation and documentation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Specific submission compatibility change, with the remaining limits retained. No production upload or performance test was performed.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": [
+        {
+          "headline": "SN71 Leadpoet merges optional weekly Arena reward decay without a floor",
+          "summary": "November 9 PR1147 adds an optional model-tenure clock: when enabled, occupied slot rewards halve every 140 settlement epochs, approximately seven days, without a four-halving floor. Removed allocation follows the existing burn path rather than going to other holders. Only genuinely new promoted model sources reset the replaced slots; daily documents, restarts and repackaging do not. The switch defaults off in the reviewed service code and requires coordinated validator and gateway activation. Older markerless states retain their previous floor. Follow-up judge recovery and drain guards were also merged. No live activation receipt or executed five-slot eTAO change was verified.",
+          "sources": [
+            {
+              "url": "https://github.com/leadpoet/leadpoet/commit/a876e3bf4c9e3c05bafd8886f6069179d6534117",
+              "label": "Primary merged implementation and documentation"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/commit/c120453542afc4af9227039c45d72ad34cc423b6",
+              "label": "Primary merged implementation and documentation"
+            },
+            {
+              "url": "https://github.com/leadpoet/leadpoet/commit/04d771779cd56915aeb459399866f58d450adf31",
+              "label": "Primary merged implementation and documentation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Material proposed incentive behavior supported by merged code, with default-off activation explicitly preserved. Not evidence of an executed transaction burn or active allocation change.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Umi",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": [
+        {
+          "headline": "SN111 Claims releases the weekly sample and starts evaluation",
+          "summary": "The November 9 mainnet round closed intake at 12:00 UTC and released its sample at 14:32 UTC. At 15:03 UTC its public dashboard showed evaluation in progress,31 miners,32 packages and 29 accepted packages; scores appear only after publication. The progress panel describes 320 papers and 30 pipelines, which is a different counter from accepted packages. No winner, completed evaluation or reward distribution is established. The following weekly intake remains a separate round. This updates the earlier overnight submissions-open and queued states rather than announcing another competition.",
+          "sources": [
+            {
+              "url": "https://dashboard.claims111.ai/competition/round_20261109T120000Z_mainnet",
+              "label": "SN111 Claims live mainnet round status"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Verified timed progression in a routine competition. No score, payout or broader commercial milestone is inferred.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": [
+        {
+          "headline": "SN114 SOMA sets an 11% emission burn allocation",
+          "summary": "At 12:18:12 UTC November 9, finalized block 9,468,579, extrinsic 8, event 171 executes a successful proxied allocation change. The full vector moves from 0% burn /0% recycle /about 18% owner /about 41% validators /about 41% miners to 11% burn /0% recycle /about 18% owner /30% validators /about 41% miners. Exact integer vectors and before/after storage are preserved in the evidence; small normalization differences are rounded here. SOMA’s registration, identity and owner remain unchanged. This configures the division of future alpha emissions, not a separately executed transaction burn. Root’s live baseline is paid from and capped by the validator bucket; alpha validators share the remainder, and historical yield can lag the change.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-09-daily-allocation.json",
+              "label": "Finalized SN114 SOMA vectors and successful proxy execution"
+            },
+            {
+              "url": "https://taostats.io/extrinsic/9468579-8",
+              "label": "SN114 SOMA allocation transaction"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Executed material reward-direction change, with full event/storage proof. No guaranteed yield, price outcome or already-destroyed token amount is inferred.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": [
+        {
+          "headline": "SN117 EveryFrame publishes everycli 1.0.0 and separate worker-upgrade requirements",
+          "summary": "The November 9 13:39 UTC merge publishes version 1.0.0, redesigned miner health checks and job diagnostics. Its release notes describe optional price-based offers, provider routes for additional models and updated Phala provisioning. Automatic offers default off and pause when complete current prices are unavailable. CLI updating alone does not update the deployed worker or enable offers; the notes require a compatible signed worker for the new capabilities and review of Miner Terms. Existing manual offers are preserved. These are released source and documented requirements, not an independently installed client, verified provider availability or demonstrated miner profit.",
+          "sources": [
+            {
+              "url": "https://github.com/everyframe-studio/everyframe-miner/commit/7d9be8a5759a19de57b479f62b9972aec54c19b3",
+              "label": "Primary merged implementation and documentation"
+            },
+            {
+              "url": "https://github.com/everyframe-studio/everyframe-miner/commit/02a24d422ce27c2f8da38d16b0ef244c865760d9",
+              "label": "Primary merged implementation and documentation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Useful operator release with explicit upgrade and activation boundaries. No independently measured production scale or performance breakthrough.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": [
+        {
+          "headline": "SN127 Zils merges customer training-data cleanup around jobs",
+          "summary": "November 9 PR222 adds cleanup of customer training rows, photos and partial downloads before claim and after job completion; finite round fleets remove their last-round rows. A completed frozen candidate can still be delivered after its training rows are removed. This does not erase candidate artifacts, raw outputs or logs. Seven-day archive cleanup and stopping an unbounded fleet remain manual responsibilities. The change follows the previously covered delivery gates; it is verified implementation, not independent proof that every deployed miner erased its data.",
+          "sources": [
+            {
+              "url": "https://github.com/ooo-hq/zils/commit/74650a74b90c7bc4d6650e039bdb4530a3352a36",
+              "label": "Primary merged implementation and documentation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Concrete data-lifecycle implementation with retained artifacts and manual responsibilities disclosed. No blanket security or erasure guarantee.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "All128active slots reconciled to finalized owner/identity storage, market rows and retained sectors;124configured repository rows queried over seven days.",
+      "All47loaded November9subnet briefs read natively; required Const/Tensia/owner originals, replies, reposts and bookmarks compared with earlier reports and pending leads. Exact source dispositions and access gaps retained.",
+      "Contiguous eTAO/burn extension9468329–9469368 and lifecycle review9462214–9469368, plus prior overnight qualifying events. All128owner wallets collected at9469368.",
+      "Both YouTube Videos and Live inventories checked. Latest public/member/replays unchanged; owner removals and Carbon cancellation preserved. All128rendered market rows checked inUSDandTAO, all four return sorts exercised without blanks."
+    ],
+    "gaps": [
+      "Grok discovery, top-five discussion and omission checks are BLOCKED:100% weekly use and$0extra credits, with native reset November9 at17:14Eastern. No queries completed or exhaustive X coverage claimed.",
+      "The seven-day124-row repository sweep returned53HTTP200,42HTTP403,14HTTP429,3HTTP404 and12unconfigured sources. Pagination and individual X timeline/media coverage gaps remain. Prior primary-verified monitor evidence supplements this pass.",
+      "Authenticated TaoStats/v1 cross-check is BLOCKED because no API key is configured. Public SN113display remainsUnknown. Market snapshots and rendered rows are available; independent backup attribution and historical repair remain unverified.",
+      "All47loaded November9 briefs were reviewed as discovery, not original team statements. Selected incidents, team metrics, commercial claims and saved interview media await original-source or complete audiovisual review. The fresh rec4ll product page rendered blank, so its limits remain a dated prior observation."
+    ]
+  }
+}

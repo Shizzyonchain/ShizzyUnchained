@@ -1,0 +1,315 @@
+{
+  "verified": [
+    {
+      "item": {
+        "block": 9468579,
+        "hash": "0xf4e2847994efa0a499d13c2fe1fcfc7aa230a6c51eb8c388af85729c88831664",
+        "timestamp": 1794226692000,
+        "eventIndex": 171,
+        "event": {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 8,
+          "event": {
+            "event_index": "079e",
+            "module_id": "SubtensorModule",
+            "event_id": "SubnetEmissionWeightsSet",
+            "attributes": {
+              "netuid": 114,
+              "weights": [
+                2029141848108050677,
+                0,
+                3320413933267719290,
+                5534023222112865484,
+                7563165070220916164
+              ]
+            }
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "SubnetEmissionWeightsSet",
+          "attributes": {
+            "netuid": 114,
+            "weights": [
+              2029141848108050677,
+              0,
+              3320413933267719290,
+              5534023222112865484,
+              7563165070220916164
+            ]
+          },
+          "topics": []
+        },
+        "sameExtrinsicEvents": [
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0508",
+              "module_id": "Balances",
+              "event_id": "Withdraw",
+              "attributes": {
+                "who": "5ES1TTSJshceSXgwVMXZNjxNjvoLM7s8kpDPe2EWj6w3Ad8e",
+                "amount": 332332
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5ES1TTSJshceSXgwVMXZNjxNjvoLM7s8kpDPe2EWj6w3Ad8e",
+              "amount": 332332
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "079e",
+              "module_id": "SubtensorModule",
+              "event_id": "SubnetEmissionWeightsSet",
+              "attributes": {
+                "netuid": 114,
+                "weights": [
+                  2029141848108050677,
+                  0,
+                  3320413933267719290,
+                  5534023222112865484,
+                  7563165070220916164
+                ]
+              }
+            },
+            "event_index": 7,
+            "module_id": "SubtensorModule",
+            "event_id": "SubnetEmissionWeightsSet",
+            "attributes": {
+              "netuid": 114,
+              "weights": [
+                2029141848108050677,
+                0,
+                3320413933267719290,
+                5534023222112865484,
+                7563165070220916164
+              ]
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "1000",
+              "module_id": "Proxy",
+              "event_id": "ProxyExecuted",
+              "attributes": {
+                "result": {
+                  "Ok": []
+                }
+              }
+            },
+            "event_index": 16,
+            "module_id": "Proxy",
+            "event_id": "ProxyExecuted",
+            "attributes": {
+              "result": {
+                "Ok": []
+              }
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0507",
+              "module_id": "Balances",
+              "event_id": "Deposit",
+              "attributes": {
+                "who": "5ES1TTSJshceSXgwVMXZNjxNjvoLM7s8kpDPe2EWj6w3Ad8e",
+                "amount": 15000
+              }
+            },
+            "event_index": 5,
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5ES1TTSJshceSXgwVMXZNjxNjvoLM7s8kpDPe2EWj6w3Ad8e",
+              "amount": 15000
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0600",
+              "module_id": "TransactionPayment",
+              "event_id": "TransactionFeePaid",
+              "attributes": {
+                "who": "5ES1TTSJshceSXgwVMXZNjxNjvoLM7s8kpDPe2EWj6w3Ad8e",
+                "actual_fee": 317332,
+                "tip": 0
+              }
+            },
+            "event_index": 6,
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5ES1TTSJshceSXgwVMXZNjxNjvoLM7s8kpDPe2EWj6w3Ad8e",
+              "actual_fee": 317332,
+              "tip": 0
+            },
+            "topics": []
+          },
+          {
+            "phase": "ApplyExtrinsic",
+            "extrinsic_idx": 8,
+            "event": {
+              "event_index": "0000",
+              "module_id": "System",
+              "event_id": "ExtrinsicSuccess",
+              "attributes": {
+                "dispatch_info": {
+                  "weight": {
+                    "ref_time": 1268934846,
+                    "proof_size": 13696
+                  },
+                  "class": "Normal",
+                  "pays_fee": "Yes"
+                }
+              }
+            },
+            "event_index": 0,
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 1268934846,
+                  "proof_size": 13696
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            },
+            "topics": []
+          }
+        ]
+      },
+      "before": {
+        "SubnetEmissionWeights": [
+          0,
+          0,
+          3320329489486196244,
+          7563207292111677685,
+          7563207292111677686
+        ],
+        "NetworkRegisteredAt": 7312241,
+        "SubnetIdentitiesV3": {
+          "subnet_name": "SOMA",
+          "github_repo": "https://github.com/DendriteHQ/SOMA",
+          "subnet_contact": "https://x.com/SomaSubnet",
+          "subnet_url": "https://thesoma.ai",
+          "discord": "https://discord.gg/durr4Sg6sM",
+          "description": "Context compression layer delivered through MCP infrastructure",
+          "logo_url": "https://thesoma.ai/images/1200x1200.png",
+          "additional": ""
+        },
+        "SubnetOwner": "5FHrQMjzzAhmL5zS9ys87ZrGCwG3vsVT9hXAUWZQ8SNdRqig"
+      },
+      "after": {
+        "SubnetEmissionWeights": [
+          2029141848108050677,
+          0,
+          3320413933267719290,
+          5534023222112865484,
+          7563165070220916164
+        ],
+        "NetworkRegisteredAt": 7312241,
+        "SubnetIdentitiesV3": {
+          "subnet_name": "SOMA",
+          "github_repo": "https://github.com/DendriteHQ/SOMA",
+          "subnet_contact": "https://x.com/SomaSubnet",
+          "subnet_url": "https://thesoma.ai",
+          "discord": "https://discord.gg/durr4Sg6sM",
+          "description": "Context compression layer delivered through MCP infrastructure",
+          "logo_url": "https://thesoma.ai/images/1200x1200.png",
+          "additional": ""
+        },
+        "SubnetOwner": "5FHrQMjzzAhmL5zS9ys87ZrGCwG3vsVT9hXAUWZQ8SNdRqig"
+      },
+      "extrinsic": {
+        "extrinsic_hash": "0xbe7d034fc8d4f14d7c307eec04b3bf45ddb868f1cb10ae150c425dce719b9e6d",
+        "extrinsic_length": 196,
+        "address": "5ES1TTSJshceSXgwVMXZNjxNjvoLM7s8kpDPe2EWj6w3Ad8e",
+        "signature": {
+          "Sr25519": "0xeccdcb503a5602417510eb95803afbb755678439b7b968c6e8d7db305c851631a4d6c724dfebc824c984400814cd8de1cf32197aaeac1a429b933ca5864f0c80"
+        },
+        "era": "00",
+        "nonce": 31,
+        "tip": 0,
+        "mode": {
+          "mode": "Disabled"
+        },
+        "call": {
+          "call_index": "0x1000",
+          "call_function": "proxy",
+          "call_module": "Proxy",
+          "call_args": [
+            {
+              "name": "real",
+              "type": "AccountIdLookupOf",
+              "value": "5FHrQMjzzAhmL5zS9ys87ZrGCwG3vsVT9hXAUWZQ8SNdRqig"
+            },
+            {
+              "name": "force_proxy_type",
+              "type": "Option<ProxyType>",
+              "value": "NonTransfer"
+            },
+            {
+              "name": "call",
+              "type": "RuntimeCall",
+              "value": {
+                "call_index": "0x1372",
+                "call_function": "sudo_set_subnet_emission_weights",
+                "call_module": "AdminUtils",
+                "call_args": [
+                  {
+                    "name": "netuid",
+                    "type": "NetUid",
+                    "value": 114
+                  },
+                  {
+                    "name": "uids",
+                    "type": "Vec<u16>",
+                    "value": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      4
+                    ]
+                  },
+                  {
+                    "name": "values",
+                    "type": "Vec<u64>",
+                    "value": [
+                      2029141848108050677,
+                      0,
+                      3320413933267719290,
+                      5534023222112865484,
+                      7563165070220916164
+                    ]
+                  }
+                ],
+                "call_hash": "0x972c053ebf6baa2a76428c0c033c5a8a8b3c98748bd186a7fe059da16f9fd39e"
+              }
+            }
+          ],
+          "call_hash": "0x839bbe91230456e1b4941102dcbb861837f153593ef01e5435c26f7b3416877c"
+        }
+      }
+    }
+  ],
+  "note": "Exact preceding/at-execution vectors, registration/name/owner, ProxyExecuted Ok and outer success; full five-slot order burn/recycle/owner/validator/miner."
+}

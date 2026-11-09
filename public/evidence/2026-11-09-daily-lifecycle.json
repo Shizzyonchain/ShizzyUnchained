@@ -1,0 +1,609 @@
+{
+  "checkedAt": "2026-11-09T14:57:23.634683+00:00",
+  "fromBlock": 9462214,
+  "toBlock": 9469368,
+  "finalizedHash": "0xbd551d435e2952901554181091ea5dc44bfab5f1b54d873508db68c0f0ba7c04",
+  "runtime": 488,
+  "source": "Opentensor archive RPC",
+  "scannedThrough": 9469368,
+  "events": [
+    {
+      "block": 9463829,
+      "hash": "0x9328d78374042b303412859b553be424d1136fc9152c082b0b308b6b26d16e4b",
+      "timestamp": 1794169692000,
+      "eventIndex": 197,
+      "event": {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 13,
+        "event": {
+          "event_index": "077f",
+          "module_id": "SubtensorModule",
+          "event_id": "ColdkeySwapCleared",
+          "attributes": {
+            "who": "5DebFXsw76JvoG5j6qQRoyNK79qBEvd6A2trULrA6DGgQLYX"
+          }
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "ColdkeySwapCleared",
+        "attributes": {
+          "who": "5DebFXsw76JvoG5j6qQRoyNK79qBEvd6A2trULrA6DGgQLYX"
+        },
+        "topics": []
+      },
+      "sameExtrinsicEvents": [
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 13,
+          "event": {
+            "event_index": "0508",
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5DebFXsw76JvoG5j6qQRoyNK79qBEvd6A2trULrA6DGgQLYX",
+              "amount": 188343
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Withdraw",
+          "attributes": {
+            "who": "5DebFXsw76JvoG5j6qQRoyNK79qBEvd6A2trULrA6DGgQLYX",
+            "amount": 188343
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 13,
+          "event": {
+            "event_index": "077f",
+            "module_id": "SubtensorModule",
+            "event_id": "ColdkeySwapCleared",
+            "attributes": {
+              "who": "5DebFXsw76JvoG5j6qQRoyNK79qBEvd6A2trULrA6DGgQLYX"
+            }
+          },
+          "event_index": 7,
+          "module_id": "SubtensorModule",
+          "event_id": "ColdkeySwapCleared",
+          "attributes": {
+            "who": "5DebFXsw76JvoG5j6qQRoyNK79qBEvd6A2trULrA6DGgQLYX"
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 13,
+          "event": {
+            "event_index": "0507",
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5DebFXsw76JvoG5j6qQRoyNK79qBEvd6A2trULrA6DGgQLYX",
+              "amount": 0
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Deposit",
+          "attributes": {
+            "who": "5DebFXsw76JvoG5j6qQRoyNK79qBEvd6A2trULrA6DGgQLYX",
+            "amount": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 13,
+          "event": {
+            "event_index": "0600",
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5DebFXsw76JvoG5j6qQRoyNK79qBEvd6A2trULrA6DGgQLYX",
+              "actual_fee": 188343,
+              "tip": 0
+            }
+          },
+          "event_index": 6,
+          "module_id": "TransactionPayment",
+          "event_id": "TransactionFeePaid",
+          "attributes": {
+            "who": "5DebFXsw76JvoG5j6qQRoyNK79qBEvd6A2trULrA6DGgQLYX",
+            "actual_fee": 188343,
+            "tip": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 13,
+          "event": {
+            "event_index": "0000",
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 753157000,
+                  "proof_size": 8276
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            }
+          },
+          "event_index": 0,
+          "module_id": "System",
+          "event_id": "ExtrinsicSuccess",
+          "attributes": {
+            "dispatch_info": {
+              "weight": {
+                "ref_time": 753157000,
+                "proof_size": 8276
+              },
+              "class": "Normal",
+              "pays_fee": "Yes"
+            }
+          },
+          "topics": []
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "metadataReview": "Every block runtime version read; metadata and target event definitions loaded separately per observed runtime before decoding. No cross-runtime portable-type equality assumed.",
+  "runtimeLayouts": [
+    {
+      "runtime": 488,
+      "firstReviewedBlockHash": "0xf267549cfcffaf3ef1953dd8d50c10fbc27471ea8a8266e1a0fbaaaff42430ce",
+      "portableTypesSha256": "4c8a6304234106a9bab0519d67386f30216d535d1dfb5c83ca6e19a15032985a",
+      "events": [
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "NetworkAdded",
+            "fields": [
+              {
+                "name": null,
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": []
+              },
+              {
+                "name": null,
+                "type": 42,
+                "typeName": "u16",
+                "docs": []
+              }
+            ],
+            "index": 0,
+            "docs": [
+              "a new network is added."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "NetworkRemoved",
+            "fields": [
+              {
+                "name": null,
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": []
+              }
+            ],
+            "index": 1,
+            "docs": [
+              "a network is removed."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "ColdkeySwapAnnounced",
+            "fields": [
+              {
+                "name": "who",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The account ID of the coldkey that made the announcement."
+                ]
+              },
+              {
+                "name": "new_coldkey_hash",
+                "type": 14,
+                "typeName": "T::Hash",
+                "docs": [
+                  "The hash of the new coldkey."
+                ]
+              }
+            ],
+            "index": 70,
+            "docs": [
+              "A coldkey swap announcement has been made."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "ColdkeySwapReset",
+            "fields": [
+              {
+                "name": "who",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The account ID of the coldkey for which the swap has been reset."
+                ]
+              }
+            ],
+            "index": 71,
+            "docs": [
+              "A coldkey swap has been reset."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "ColdkeySwapped",
+            "fields": [
+              {
+                "name": "old_coldkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The account ID of old coldkey."
+                ]
+              },
+              {
+                "name": "new_coldkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The account ID of new coldkey."
+                ]
+              }
+            ],
+            "index": 72,
+            "docs": [
+              "A coldkey has been swapped."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "ColdkeySwapDisputed",
+            "fields": [
+              {
+                "name": "coldkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The account ID of the coldkey that was disputed."
+                ]
+              }
+            ],
+            "index": 73,
+            "docs": [
+              "A coldkey swap has been disputed."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "SubnetIdentitySet",
+            "fields": [
+              {
+                "name": null,
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": []
+              }
+            ],
+            "index": 79,
+            "docs": [
+              "The identity of a subnet has been set"
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "SubnetIdentityRemoved",
+            "fields": [
+              {
+                "name": null,
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": []
+              }
+            ],
+            "index": 80,
+            "docs": [
+              "The identity of a subnet has been removed"
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "DissolveNetworkScheduled",
+            "fields": [
+              {
+                "name": "account",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The account ID schedule the dissolve network extrinsic"
+                ]
+              },
+              {
+                "name": "netuid",
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": [
+                  "network ID will be dissolved"
+                ]
+              },
+              {
+                "name": "execution_block",
+                "type": 4,
+                "typeName": "BlockNumberFor<T>",
+                "docs": [
+                  "extrinsic execution block number"
+                ]
+              }
+            ],
+            "index": 81,
+            "docs": [
+              "A dissolve network extrinsic scheduled."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "SubnetOwnerHotkeySet",
+            "fields": [
+              {
+                "name": null,
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": []
+              },
+              {
+                "name": null,
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": []
+              }
+            ],
+            "index": 95,
+            "docs": [
+              "The owner hotkey for a subnet has been set.",
+              "",
+              "Parameters:",
+              "(netuid, new_hotkey)"
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "NetworkDissolveCleanupCompleted",
+            "fields": [
+              {
+                "name": "netuid",
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": [
+                  "The subnet ID"
+                ]
+              }
+            ],
+            "index": 126,
+            "docs": [
+              "data for a dissolved network has been cleaned up."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "ColdkeySwapCleared",
+            "fields": [
+              {
+                "name": "who",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The account ID of the coldkey that cleared the announcement."
+                ]
+              }
+            ],
+            "index": 127,
+            "docs": [
+              "A coldkey swap announcement has been cleared."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "SubnetOwnerChanged",
+            "fields": [
+              {
+                "name": "netuid",
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": [
+                  "The subnet whose owner changed."
+                ]
+              },
+              {
+                "name": "old_coldkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The previous owner coldkey."
+                ]
+              },
+              {
+                "name": "new_coldkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The new owner coldkey."
+                ]
+              }
+            ],
+            "index": 139,
+            "docs": [
+              "Subnet ownership was reassigned by lock conviction."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "NetworkRegistrationQueued",
+            "fields": [
+              {
+                "name": "coldkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The network registration information."
+                ]
+              },
+              {
+                "name": "hotkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The hotkey that registered the network."
+                ]
+              },
+              {
+                "name": "mechid",
+                "type": 42,
+                "typeName": "u16",
+                "docs": [
+                  "The mechanism that registered the network."
+                ]
+              },
+              {
+                "name": "identity",
+                "type": 69,
+                "typeName": "Option<SubnetIdentityOfV3>",
+                "docs": [
+                  "The identity that registered the network."
+                ]
+              },
+              {
+                "name": "lock_amount",
+                "type": 6,
+                "typeName": "TaoBalance",
+                "docs": [
+                  "The lock amount that registered the network."
+                ]
+              },
+              {
+                "name": "median_subnet_alpha_price",
+                "type": 58,
+                "typeName": "U64F64",
+                "docs": [
+                  "The median subnet alpha price that registered the network."
+                ]
+              },
+              {
+                "name": "registration_block",
+                "type": 7,
+                "typeName": "u64",
+                "docs": [
+                  "The block at which the network was registered."
+                ]
+              }
+            ],
+            "index": 141,
+            "docs": [
+              "A network registration cost has been queued."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "NetworkRegistrationCancelled",
+            "fields": [
+              {
+                "name": "coldkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "Registrant whose escrow was refunded or legacy lock released."
+                ]
+              },
+              {
+                "name": "hotkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "Intended subnet owner hotkey."
+                ]
+              },
+              {
+                "name": "lock_id",
+                "type": 4,
+                "typeName": "u32",
+                "docs": [
+                  "Identifier of the cancelled queue entry."
+                ]
+              },
+              {
+                "name": "error",
+                "type": 27,
+                "typeName": "DispatchError",
+                "docs": [
+                  "Settlement failure that triggered cancellation."
+                ]
+              }
+            ],
+            "index": 153,
+            "docs": [
+              "A queued registration failed terminally; its escrow was refunded or",
+              "its pre-upgrade balance lock was released. No subnet was created."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "complete": true,
+  "completedAt": "2026-11-09T15:01:44.964024+00:00"
+}

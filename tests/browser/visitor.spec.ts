@@ -718,3 +718,21 @@ test("toolkit answers research questions and opens a working tool on mobile",asy
  await expect(page.getByRole('heading',{name:'A 50% drop needs a 100% comeback.',exact:true})).toBeVisible();
 });
 
+
+test("eTAO shows burn and recycle allocations alongside reward recipients", async ({ page }) => {
+  await page.goto("/subnet-news/etao");
+  const allocationSnapshot = JSON.parse(readFileSync(new URL("../../app/data/etao.json", import.meta.url), "utf8"));
+  const change = allocationSnapshot.changes.find((row: { after: string[] }) => BigInt(row.after[0]) > BigInt(0));
+  expect(change, "Exercise a real reviewed nonzero burn allocation").toBeTruthy();
+  const transaction = page.getByRole("article").filter({ has: page.getByRole("link", { name: new RegExp(`^Transaction ${change.block}-${change.extrinsic} `) }) });
+  for (const label of ["Burn", "Recycle", "Owner", "Validators", "Miners"]) {
+    await expect(transaction.locator("dt").getByText(label, { exact: true })).toBeVisible();
+  }
+  const percent = `${(Number(change.after[0]) / 18446744073709551615 * 100).toFixed(2)}%`;
+  await expect(transaction.locator("dl > div").filter({ has: page.getByText("Burn", { exact: true }) })).toContainText(percent);
+  await page.getByLabel("Find a subnet", { exact: true }).fill(`SN${change.netuid}`);
+  const current = page.getByRole("article").filter({ has: page.getByRole("heading", { name: new RegExp(`^SN${change.netuid} .*${change.name}$`) }) }).last();
+  await expect(current.locator("dl > div").filter({ has: page.getByText("Burn", { exact: true }) })).toContainText(percent);
+  await expect(page.getByRole("main")).not.toContainText("slots remain zero");
+  await expect(page.getByRole("main")).toContainText("does not prove a specific amount has already been destroyed");
+});
