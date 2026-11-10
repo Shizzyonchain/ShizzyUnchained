@@ -5,6 +5,7 @@ import { basename, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateChainReviews } from "./news-chain-review.mjs";
 import { validateMarketReview } from "./news-market-review.mjs";
+import { validateEditorialOrder } from "../app/lib/news-editorial-order.mjs";
 
 const root = resolve(fileURLToPath(new URL("..", import.meta.url)));
 const reportsDirectory = join(root, "content", "subnet-news");
@@ -94,6 +95,7 @@ function validate(value, filename) {
     if (!Array.isArray(subnet.updates)) fail(`subnets[${index}].updates must be an array.`);
     subnet.updates.forEach((entry, itemIndex) => item(entry, `subnets[${index}].updates[${itemIndex}]`));
   });
+  validateEditorialOrder(value);
   object(value.coverage, "coverage");
   for (const field of ["searched", "gaps"]) {
     if (!Array.isArray(value.coverage[field]) || !value.coverage[field].every((entry) => typeof entry === "string")) {

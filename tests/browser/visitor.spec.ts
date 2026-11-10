@@ -410,6 +410,10 @@ test("latest news opens the full edition and retains the archive", async ({ page
   }
   const headline=page.getByRole("heading",{level:1});
   await expect(headline).toBeVisible();
+  if (brief.storyOrder) {
+    await expect(headline).toHaveText(brief.storyOrder[0]);
+    expect(await page.locator(".news-item h1, .news-item h3").allTextContents()).toEqual(brief.storyOrder);
+  }
   await expect(page.getByRole("region",{name:"Main story"}).getByRole("heading",{level:1})).toHaveCount(1);
   const headlineBounds=await headline.boundingBox();
   expect(headlineBounds!.y).toBeLessThan(520);
@@ -417,6 +421,7 @@ test("latest news opens the full edition and retains the archive", async ({ page
   await noOverflow(page);
   await page.goto(`/subnet-news/${dates[0]}`);
   await expect(page.locator(".news-item")).toHaveCount(count);
+  if (brief.storyOrder) await expect(page.getByRole("heading",{level:1})).toHaveText(brief.storyOrder[0]);
   await page.getByRole("combobox",{name:"Choose news edition"}).selectOption(dates[1]);
   await expect(page).toHaveURL(new RegExp(`/subnet-news/${dates[1]}$`));
   await expect(page.getByText("From the archive",{exact:true})).toBeVisible();

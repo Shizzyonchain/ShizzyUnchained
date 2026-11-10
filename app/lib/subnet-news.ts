@@ -9,6 +9,7 @@ export type NewsStatus = "verified" | "developing" | "rumor";
 import type { NewsSource } from "./news-source";
 export type { NewsSource } from "./news-source";
 import { newsSourceIssue } from "./news-source-links.mjs";
+import { validateEditorialOrder } from "./news-editorial-order.mjs";
 
 export type NewsItem = {
   headline: string;
@@ -51,6 +52,7 @@ export type SubnetNewsBrief = {
   title: string;
   summary: string;
   publishedAt: string;
+  storyOrder?: string[];
   correctedAt?: string;
   correctionNote?: string;
   coverageStart: string;
@@ -183,6 +185,7 @@ export function validateSubnetNewsBrief(value: unknown): asserts value is Subnet
     if (!Array.isArray(subnet.updates)) throw new Error(`Subnet News: subnets[${index}].updates must be an array.`);
     subnet.updates.forEach((item, itemIndex) => assertNewsItem(item, `subnets[${index}].updates[${itemIndex}]`));
   });
+  validateEditorialOrder(value);
   if (!isRecord(value.coverage)) throw new Error("Subnet News: coverage must be an object.");
   for (const field of ["searched", "gaps"] as const) {
     if (!Array.isArray(value.coverage[field]) || !(value.coverage[field] as unknown[]).every((entry) => typeof entry === "string")) {
