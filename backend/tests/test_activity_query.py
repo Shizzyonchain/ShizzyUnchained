@@ -60,7 +60,8 @@ async def test_activity_price_lookups_are_bounded_before_enrichment():
     database = RecordingDatabase()
     app.state.db = database
 
-    await chain_activity(netuid=58, limit=200)
+    result = await chain_activity(netuid=58, limit=200)
+    assert result["query_version"] == "activity-bounded-2026-11-10"
 
     event_query, summary_query = database.queries[:2]
     # PostgreSQL must select the requested page before historical-price enrichment.

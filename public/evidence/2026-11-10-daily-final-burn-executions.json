@@ -1,0 +1,237 @@
+[
+  {
+    "record": {
+      "id": "9476549-160",
+      "block": 9476549,
+      "hash": "0x50e0a1cf653545c7a96260e02ae1fc3cb46535d39c4119fc5213bcca50db5164",
+      "extrinsic": 6,
+      "eventIndex": 160,
+      "eventName": "SubtensorModule.AlphaBurned",
+      "timestamp": "2026-11-10T14:52:12+00:00",
+      "netuid": 8,
+      "name": "Vanta",
+      "kind": "alpha",
+      "amountRaw": "131741583863",
+      "taoSpentRaw": null,
+      "account": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+      "registeredAt": 1477264
+    },
+    "event": {
+      "phase": "ApplyExtrinsic",
+      "extrinsic_idx": 6,
+      "event": {
+        "event_index": "0762",
+        "module_id": "SubtensorModule",
+        "event_id": "AlphaBurned",
+        "attributes": [
+          "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+          "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+          131741583863,
+          8
+        ]
+      },
+      "event_index": 7,
+      "module_id": "SubtensorModule",
+      "event_id": "AlphaBurned",
+      "attributes": [
+        "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+        "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+        131741583863,
+        8
+      ],
+      "topics": []
+    },
+    "sameExtrinsicEvents": [
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 6,
+        "event": {
+          "event_index": "0508",
+          "module_id": "Balances",
+          "event_id": "Withdraw",
+          "attributes": {
+            "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "amount": 273865
+          }
+        },
+        "event_index": 5,
+        "module_id": "Balances",
+        "event_id": "Withdraw",
+        "attributes": {
+          "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+          "amount": 273865
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 6,
+        "event": {
+          "event_index": "0762",
+          "module_id": "SubtensorModule",
+          "event_id": "AlphaBurned",
+          "attributes": [
+            "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+            131741583863,
+            8
+          ]
+        },
+        "event_index": 7,
+        "module_id": "SubtensorModule",
+        "event_id": "AlphaBurned",
+        "attributes": [
+          "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+          "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo",
+          131741583863,
+          8
+        ],
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 6,
+        "event": {
+          "event_index": "0507",
+          "module_id": "Balances",
+          "event_id": "Deposit",
+          "attributes": {
+            "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "amount": 0
+          }
+        },
+        "event_index": 5,
+        "module_id": "Balances",
+        "event_id": "Deposit",
+        "attributes": {
+          "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+          "amount": 0
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 6,
+        "event": {
+          "event_index": "0600",
+          "module_id": "TransactionPayment",
+          "event_id": "TransactionFeePaid",
+          "attributes": {
+            "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+            "actual_fee": 273865,
+            "tip": 0
+          }
+        },
+        "event_index": 6,
+        "module_id": "TransactionPayment",
+        "event_id": "TransactionFeePaid",
+        "attributes": {
+          "who": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+          "actual_fee": 273865,
+          "tip": 0
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 6,
+        "event": {
+          "event_index": "0000",
+          "module_id": "System",
+          "event_id": "ExtrinsicSuccess",
+          "attributes": {
+            "dispatch_info": {
+              "weight": {
+                "ref_time": 1610225000,
+                "proof_size": 9796
+              },
+              "class": "Normal",
+              "pays_fee": "Yes"
+            }
+          }
+        },
+        "event_index": 0,
+        "module_id": "System",
+        "event_id": "ExtrinsicSuccess",
+        "attributes": {
+          "dispatch_info": {
+            "weight": {
+              "ref_time": 1610225000,
+              "proof_size": 9796
+            },
+            "class": "Normal",
+            "pays_fee": "Yes"
+          }
+        },
+        "topics": []
+      }
+    ],
+    "extrinsic": {
+      "extrinsic_hash": "0xce254be13d4077581f0259ab829a6d9a0741cc77ca4f298e42afacd55ce40696",
+      "extrinsic_length": 150,
+      "address": "5EjfvkK5NzwDegKAub73rXDrgwUxnEuo26Dsi4mGJ6FV7jc5",
+      "signature": {
+        "Sr25519": "0x6832e3260727d81e055b5fd22a125acb6db0d39ebc13797bf7ad0e1782a4f313835f64cdf715bd6a06548cb20d25ca10b684b60ee6678d862ec3ebe720db8f8d"
+      },
+      "era": "00",
+      "nonce": 26860,
+      "tip": 0,
+      "mode": {
+        "mode": "Disabled"
+      },
+      "call": {
+        "call_index": "0x0766",
+        "call_function": "burn_alpha",
+        "call_module": "SubtensorModule",
+        "call_args": [
+          {
+            "name": "hotkey",
+            "type": "AccountId",
+            "value": "5FeNwZ5oAqcJMitNqGx71vxGRWJhsdTqxFGVwPRfg8h2UZmo"
+          },
+          {
+            "name": "amount",
+            "type": "AlphaBalance",
+            "value": 131741583863
+          },
+          {
+            "name": "netuid",
+            "type": "NetUid",
+            "value": 8
+          }
+        ],
+        "call_hash": "0x2abffc8efaa9c2916b49091b6e26a4be5647b6c3903e9ea927a6b1806ad8b004"
+      }
+    },
+    "historicalIdentity": {
+      "NetworkRegisteredAt": 1477264,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "Vanta",
+        "github_repo": "https://github.com/taoshidev/vanta-network",
+        "subnet_contact": "",
+        "subnet_url": "https://www.vantanetwork.io/",
+        "discord": "tl_arrash",
+        "description": "The first decentralized & trustless liquidity and execution engine for prop firms and traders",
+        "logo_url": "https://website-git-ken-vanta-taoshi.vercel.app/black-white.png",
+        "additional": "Vanta Network is the first decentralized, trustless liquidity and execution engine for prop firms and traders. It live-trades top-performing miners who deposit alpha for funding, rewards them based on verifiable performance, and uses profits to buy back alpha, creating a transparent, risk-adjusted, and incentive-aligned trading ecosystem."
+      },
+      "SubnetOwner": "5F6tnxzAAxbhaWRmeUmB63JEM3VXBNSmqb3AwYJVDStQjw8y"
+    },
+    "precedingIdentity": {
+      "NetworkRegisteredAt": 1477264,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "Vanta",
+        "github_repo": "https://github.com/taoshidev/vanta-network",
+        "subnet_contact": "",
+        "subnet_url": "https://www.vantanetwork.io/",
+        "discord": "tl_arrash",
+        "description": "The first decentralized & trustless liquidity and execution engine for prop firms and traders",
+        "logo_url": "https://website-git-ken-vanta-taoshi.vercel.app/black-white.png",
+        "additional": "Vanta Network is the first decentralized, trustless liquidity and execution engine for prop firms and traders. It live-trades top-performing miners who deposit alpha for funding, rewards them based on verifiable performance, and uses profits to buy back alpha, creating a transparent, risk-adjusted, and incentive-aligned trading ecosystem."
+      },
+      "SubnetOwner": "5F6tnxzAAxbhaWRmeUmB63JEM3VXBNSmqb3AwYJVDStQjw8y"
+    },
+    "identityUnchangedAcrossExecution": true,
+    "ownerBurn": false
+  }
+]

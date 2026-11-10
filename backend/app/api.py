@@ -616,6 +616,7 @@ async def chain_activity(
         "data": [dict(row) for row in rows],
         "summary": summary_data,
         "collecting_since": collecting_since,
+        "query_version": "activity-bounded-2026-11-10",
     }
 
 

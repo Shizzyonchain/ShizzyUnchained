@@ -2,10 +2,10 @@
   "version": 1,
   "date": "2026-11-10",
   "title": "Bittensor Daily News: November 10, 2026",
-  "summary": "SN58 Attune enables Gamma and offers robotics-data access. SN24’s Quasar to ms.computer transition gets a dated catch-up; SN78’s replacement remains unnamed. Plus Swarm’s finalized allocation and buyback, Almanac fees, Sami Kassab and Stillcore research, Yuma’s October results, protocol fixes and operator updates.",
+  "summary": "SN58 Attune offers robotics data through Gamma. SN124 Swarm announces a four-part operating plan and changes its validator/miner split; SN24’s Quasar to ms.computer transition gets a dated catch-up. Plus Apex/URnetwork test results, Hippius’s free tier, EveryFrame and Terza offerings, detailed Sami/Stillcore/Yuma research, and verified burns.",
   "publishedAt": "2026-11-10T14:58:09.603000+00:00",
   "coverageStart": "2026-11-09T18:22:15.072436+00:00",
-  "coverageEnd": "2026-11-10T14:47:44.101379+00:00",
+  "coverageEnd": "2026-11-10T15:19:24+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [
@@ -150,7 +150,30 @@
     {
       "netuid": 1,
       "name": "Apex",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN1 Apex and SN25 URnetwork report latency gains in round-one tests",
+          "summary": "On November9, both Apex and URnetwork reported round-one latency-test results: p95 request time fell from19.6to7.1seconds, described as roughly63%, and larger downloads were about twice as fast in their tests. Apex says14other solutions exceeded the20% target. URnetwork says the winning code is the starting point for round two, not that every customer’s production traffic already achieves this improvement. The linked public result API identifies an elected provisional reward winner, approved integrity/source review and an active reviewed-source promotion datedNovember10 07:56UTC; settlement remains pending with no settlement receipts. The review read the result data but did not independently rerun the benchmark or verify a reward payout.",
+          "sources": [
+            {
+              "url": "https://x.com/urnetwork/status/2119878753727701246",
+              "label": "Full primary URnetwork result announcement"
+            },
+            {
+              "url": "https://x.com/Apex_SN1/status/2119893388593934578",
+              "label": "Primary Apex counterpart confirmation"
+            },
+            {
+              "url": "https://api.bringyour.com/competition/v2/rounds/01a1855d-49bd-0250-90db-d0c0885f0e46/result",
+              "label": "Public result, review, source and settlement states"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A routine competition with a concrete reported engineering result and approved source progression. The competition cap remains three; tests and source state are separate from fleet-wide performance and paid rewards.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 2,
@@ -187,18 +210,40 @@
       "name": "Vanta",
       "updates": [
         {
-          "headline": "SN8 Vanta records another qualifying direct alpha burn",
-          "summary": "A successful direct burn_alpha call at finalized block 9474860, extrinsic 28, event 216 on November 10 at 09:14:24 UTC removed 145.543240996 alpha. The execution, unchanged Vanta identity and registration, and exact native amount were independently checked. The wallet differs from the registered owner. Smaller burns remain in the underlying event evidence and do not enter public qualifying totals. This is a transaction burn, separate from emissions withholding, recycling and fees; its revenue source is not inferred.",
+          "headline": "SN8 Vanta records two qualifying direct alpha burns",
+          "summary": "Two successful direct burn_alpha calls on November 10 removed 145.543240996 alpha at 09:14:24 UTC, block9474860 extrinsic28 event216, and 131.741583863 alpha at 14:52:12 UTC, block9476549. Together they total 277.284824859 alpha. Independent event, call and historical identity checks confirm successful execution without a Vanta registration change. Both wallets differ from the registered owner, so owner funding or customer-revenue provenance is not inferred. Smaller events remain only in the new underlying scan evidence. These are explicit transaction burns, separate from emissions withholding, recycling and fees.",
           "sources": [
             {
               "url": "https://shizzyunchained.com/evidence/2026-11-10-daily-burn-executions.json",
               "label": "Finalized successful Vanta burn and historical identity"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-10-daily-final-burn-executions.json",
+              "label": "Later finalized Vanta burn and independent execution proof"
             }
           ],
           "rating": 2,
           "ratingReason": "A verified bounded transaction update with exact units; the amount alone does not establish an adoption milestone.",
           "status": "verified",
           "importance": "informational"
+        },
+        {
+          "headline": "SN8 Vanta removes Classic-account cooldowns and account-count limits",
+          "summary": "Vanta announced November 9 at 19:10 UTC that customers can buy multiple Classic accounts without the previous cooldown or account-count limit. A separate 19:52 UTC original says self-authored strategies can use its API under the same rules, split and weekly-reward structure. These are team-published participation terms; no account was purchased and no API trading or payout test was performed.",
+          "sources": [
+            {
+              "url": "https://x.com/VantaTrading/status/2119870297579069910",
+              "label": "Primary Classic-account policy announcement"
+            },
+            {
+              "url": "https://x.com/VantaTrading/status/2119880728066547944",
+              "label": "Primary API-strategy participation announcement"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Meaningful access and participation changes for the existing product, distinct from the separately verified alpha burns.",
+          "status": "verified",
+          "importance": "medium"
         }
       ]
     },
@@ -270,7 +315,26 @@
     {
       "netuid": 22,
       "name": "Desearch",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN22 Desearch shares a reproducible research-report example",
+          "summary": "The November10 13:01UTC team post links a guide publishedNovember9. Its Python example searches five sub-questions, deduplicates URLs and near-identical titles, selects dated quoted findings, and exports Markdown, a sources CSV and rawJSON. It describes rebuilding a stored sample offline without making API calls. Returned publication dates can reflect page updates, and the guide explicitly limits coverage to returned sources. This is a documented example workflow, not a new search-engine release or an independently executed live API benchmark.",
+          "sources": [
+            {
+              "url": "https://x.com/desearch_ai/status/2120139669707063556",
+              "label": "Primary dated guide announcement"
+            },
+            {
+              "url": "https://www.desearch.ai/use-cases/deep-research-report",
+              "label": "Full official reproducible example and limitations"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A useful bounded developer/documentation addition, with no claimed new protocol capability or measured adoption.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
     },
     {
       "netuid": 23,
@@ -320,7 +384,30 @@
     {
       "netuid": 25,
       "name": "UR",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN25 URnetwork carries Apex’s latency-test winner into round two",
+          "summary": "On November9, both Apex and URnetwork reported round-one latency-test results: p95 request time fell from19.6to7.1seconds, described as roughly63%, and larger downloads were about twice as fast in their tests. Apex says14other solutions exceeded the20% target. URnetwork says the winning code is the starting point for round two, not that every customer’s production traffic already achieves this improvement. The linked public result API identifies an elected provisional reward winner, approved integrity/source review and an active reviewed-source promotion datedNovember10 07:56UTC; settlement remains pending with no settlement receipts. The review read the result data but did not independently rerun the benchmark or verify a reward payout.",
+          "sources": [
+            {
+              "url": "https://x.com/urnetwork/status/2119878753727701246",
+              "label": "Full primary URnetwork result announcement"
+            },
+            {
+              "url": "https://x.com/Apex_SN1/status/2119893388593934578",
+              "label": "Primary Apex counterpart confirmation"
+            },
+            {
+              "url": "https://api.bringyour.com/competition/v2/rounds/01a1855d-49bd-0250-90db-d0c0885f0e46/result",
+              "label": "Public result, review, source and settlement states"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "The same joint SN1/SN25 development is included under both affected subnet histories, not counted as two executions or a new production benchmark.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 26,
@@ -337,8 +424,8 @@
       "name": "SayGM",
       "updates": [
         {
-          "headline": "SN28 SayGM promotes v0.5.24 version and exposes worker image standing",
-          "summary": "SayGM merged its v0.5.24 stable-version promotion on November 9 after dev preparation. An earlier merge makes gmcli worker list show each worker’s release tag and image standing, including supported, deprecated with a grace-end epoch, revoked, unknown or not reported. A failed image lookup still prints the list with a warning. These are reviewed repository changes; the version bump alone does not prove every production worker upgraded or that a particular deployment is supported.",
+          "headline": "SN28 SayGM updates workers and reports an interrupted-image request fix",
+          "summary": "SayGM merged its v0.5.24 stable-version promotion on November 9 after dev preparation. An earlier merge makes gmcli worker list show each worker’s release tag and image standing, including supported, deprecated with a grace-end epoch, revoked, unknown or not reported. A failed image lookup still prints the list with a warning. These are reviewed repository changes; the version bump alone does not prove every production worker upgraded or that a particular deployment is supported. Separately, a November 9 at23:17UTC team reply reports a bug that kept an interrupted image request paused while charge status was checked. The team says the pause now clears within15minutes or through Continue. This is a provider-reported fix, without an independent paid generation or billing test.",
           "rating": 2,
           "ratingReason": "A useful operator compatibility diagnostic and explicit version promotion, supported by code. No fleet-wide activation or service-performance claim is inferred.",
           "sources": [
@@ -349,6 +436,10 @@
             {
               "url": "https://github.com/taostat/gm-miner/commit/99df328ac8bb57720130ffd742a489870402c890",
               "label": "Primary worker image-standing implementation"
+            },
+            {
+              "url": "https://x.com/say_gm_/status/2119932341112238139",
+              "label": "Primary interrupted-request bug-fix explanation"
             }
           ],
           "status": "verified",
@@ -707,7 +798,30 @@
     {
       "netuid": 75,
       "name": "Hippius",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN75 Hippius follows its mobile launch with a 10 GB free Drive tier",
+          "summary": "On November 10 at10:28UTC, Hippius highlighted the first10GB of storage free for its iPhone and Android app users. The current official pricing page independently lists a Free Drive plan with10GB storage. This follows the mobile availability already covered in the November9 edition, rather than another newly dated app launch. The team also says paid upgrades currently use its website rather than an in-app upgrade flow. On-device encryption remains the developer’s description; no signup, upgrade, key-recovery or encryption audit was performed.",
+          "sources": [
+            {
+              "url": "https://x.com/Hippius_cloud/status/2120101364533723279",
+              "label": "Primary free-tier announcement"
+            },
+            {
+              "url": "https://hippius.com/pricing",
+              "label": "Official current Free Drive plan"
+            },
+            {
+              "url": "https://x.com/Hippius_cloud/status/2120063689646911511",
+              "label": "Primary website-upgrade clarification"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Specific usable access terms and a practical product limitation add information beyond the previously reported mobile launch.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 76,
@@ -881,7 +995,26 @@
     {
       "netuid": 103,
       "name": "Terza Inference",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN103 Terza lists Fable5.2 with miner-specific token prices",
+          "summary": "Terza’s November10 12:29UTC original advertises Claude Fable5.2 at$1.69 per million input tokens and$8.47 per million output tokens, with1M context and Messages/Chat Completions compatibility. The current public pricing page lists claude-fable-5-2 with three quotes from one miner and those lowest input/output rates. These are provider listings and observed quotes, not an independently authenticated upstream model, a vendor endorsement or an executed inference/billing test. The advertised comparison with official-provider prices was not independently reproduced and is not used as a verified discount claim.",
+          "sources": [
+            {
+              "url": "https://x.com/TerzaInference/status/2120131796444786847",
+              "label": "Full primary model and pricing announcement"
+            },
+            {
+              "url": "https://terza.si/pricing/",
+              "label": "Current public miner-specific quote listing"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A concrete model-access and pricing addition to the existing inference marketplace; supply breadth, model provenance and actual delivery remain separate checks.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 104,
@@ -926,7 +1059,30 @@
     {
       "netuid": 112,
       "name": "THOR",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN112 THOR details its demand-funded robotics labelling pilot",
+          "summary": "On November10 at14:01UTC, THOR said its first jobs come from signed robotics labelling contracts and linked its demand-first economics documentation. The docs describe a private beta with qualified, whitelisted firms, a full worker-reward reserve funded from alpha already held, staged verification/acceptance payments, and customer receipts allocated to separate SN112 alpha purchases. Signed contracts, collected receipts and executed buybacks are explicitly different milestones. The documented plan also proposes changing miner-burn/emissions routing into a disclosed multisig. The public revenue dashboard displayed0USDC deposits and customer receipts with an empty All transaction ledger. Its displayed contract is labelledEthereum chain1, while the docs describe a BittensorEVM deposit contract, leaving deployment/network reconciliation unresolved. This review did not establish executed customer payments, deployed policy changes or buybacks from this announcement.",
+          "sources": [
+            {
+              "url": "https://x.com/THORMachines/status/2120154882049286466",
+              "label": "Primary customer-demand and economics announcement"
+            },
+            {
+              "url": "https://thormachines.ai/docs/thor-data/economics",
+              "label": "Full primary private-pilot, reserve, payment and buyback design"
+            },
+            {
+              "url": "https://thormachines.ai/dashboard/revenue",
+              "label": "Actual public contract labels and receipt/execution reporting state"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Meaningful published operating and funding details for the pilot, with contract receipts, deployment network and policy execution explicitly unresolved. No customer-adoption or realized-revenue milestone is inferred.",
+          "status": "developing",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 113,
@@ -951,7 +1107,30 @@
     {
       "netuid": 117,
       "name": "everyframe.studio",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN117 EveryFrame adds model offerings for short video and animated images",
+          "summary": "EveryFrame’s November9 21:16UTC original advertises Gemini Omni1.2 with clips up to15seconds, generated audio and speech,1080p, vertical or widescreen formats, and reference/first/last-frame controls. Its published example is$0.82 for10seconds at720p, compared with$1.00 for its earlier Omni1.1 offering. A separately dated16:46UTC original, included as a missed earlier update, advertises GPT Image2.6,12-frame GIFs, photo-to-GIF and circle-to-edit, with stills from$0.04. These are the provider’s model labels, availability claims and example prices. The public product shell was accessible, but no generation, quality benchmark, vendor-licensing relationship or paid billing test was independently established.",
+          "sources": [
+            {
+              "url": "https://x.com/xeveryframe/status/2119901898580881658",
+              "label": "Full primary video-offering announcement"
+            },
+            {
+              "url": "https://x.com/xeveryframe/status/2119834048054915265",
+              "label": "Full primary animated-image offering announcement"
+            },
+            {
+              "url": "https://app.everyframe.studio/",
+              "label": "Official public product shell"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Meaningful additions and published example costs in an existing creator product; advertised output quality and generation availability are not independently tested.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 118,
@@ -988,9 +1167,13 @@
       "name": "Swarm",
       "updates": [
         {
-          "headline": "SN124 Swarm shifts validator/miner allocations and executes an alpha buyback",
-          "summary": "At 14:33:12 UTC November 10, finalized block 9476454, extrinsic 7, event 186 successfully changed Swarm’s five-slot allocation from 0% burn / 0% recycle / about 18% owner / 41% validators / 41% miners to 0% / 0% / about 18% / 49% / 33%. Exact raw vectors, unchanged identity/registration and successful proxy execution are preserved. This redirects future emissions; it is not an 8% transaction burn. Root’s baseline is paid from and capped by the validator bucket, and historical yield estimates can lag. Separately, successful block 9476305 at 14:03:24 UTC used 19.9 TAO in add_stake_burn and actually burned 2,366.605401253 Swarm alpha. Its marker records one raw alpha unit more than AlphaBurned; the archive retains the actual burned amount. TAO is the purchase input, not destroyed TAO; the initiating wallet is not the registered owner and no team funding or customer-revenue source is inferred.",
+          "headline": "SN124 Swarm announces a four-part operating plan and executes its allocation change",
+          "summary": "On November 10 at 14:09 UTC, Swarm announced four changes: a 20 TAO buyback-and-burn, an ongoing buyback programme, intelligence supplied exclusively to paying clients, and an increased allocation for stakers. The written original establishes an operating-policy announcement, not independently verified customer contracts, revenue or future purchases. At 14:33:12 UTC November 10, finalized block 9476454, extrinsic 7, event 186 successfully changed Swarm’s five-slot allocation from 0% burn / 0% recycle / about 18% owner / 41% validators / 41% miners to 0% / 0% / about 18% / 49% / 33%. Exact raw vectors, unchanged identity/registration and successful proxy execution are preserved. This redirects future emissions; it is not an 8% transaction burn. Root’s baseline is paid from and capped by the validator bucket, and historical yield estimates can lag. Separately, successful block 9476305 at 14:03:24 UTC used 19.9 TAO in add_stake_burn and actually burned 2,366.605401253 Swarm alpha. Its marker records one raw alpha unit more than AlphaBurned; the archive retains the actual burned amount. TAO is the purchase input, not destroyed TAO; the initiating wallet is not the registered owner and no team funding or customer-revenue source is inferred.",
           "sources": [
+            {
+              "url": "https://x.com/SwarmSubnet/status/2120156956245528829",
+              "label": "Full original four-part Swarm announcement; attached video not fully reviewed"
+            },
             {
               "url": "https://shizzyunchained.com/evidence/2026-11-10-daily-allocation.json",
               "label": "Full allocation event, exact vectors and historical storage"
@@ -1000,10 +1183,10 @@
               "label": "Independent successful burn-call and amount verification"
             }
           ],
-          "rating": 3,
-          "ratingReason": "Meaningful changes to participant economics and a qualifying executed buyback merit operational coverage. No product-adoption, guaranteed-yield or investment claim is inferred.",
+          "rating": 4,
+          "ratingReason": "A material announced operating shift links paid-client work, an ongoing buyback policy and changed validator/miner economics. Execution is independently established for the allocation and qualifying burn; client demand and future buybacks remain separately unverified.",
           "status": "verified",
-          "importance": "medium"
+          "importance": "high"
         }
       ]
     },
@@ -1060,7 +1243,8 @@
       "128 active subnet rows reconciled with finalized owner/identity and current market data; 106 official sites loaded, 19 missing configured websites and 3 site errors retained individually.",
       "18 required ecosystem accounts, active Injective partner and verified fund/researcher accounts reviewed through native X Posts/Replies/Reposts; actual bounded windows retained in the audit.",
       "Real Grok Auto discovery, attention and omission queries submitted; primary source and finalized chain verification override inconsistent generated claims.",
-      "Complete finalized chain and lifecycle intervals, prior pending leads, public channel Videos and Live tabs, source repositories and sector classification review."
+      "Complete finalized chain and lifecycle intervals, prior pending leads, public channel Videos and Live tabs, source repositories and sector classification review.",
+      "Direct native source checks expanded to66 exact official-site-linked accounts and primary team profiles; unsuccessful loads, bounded histories and unreviewed media remain individually recorded."
     ],
     "gaps": [
       "Primary SN24 Discord requires login; testing, launch timing and sale claims remain unconfirmed.",
@@ -1069,5 +1253,7 @@
       "Authenticated TaoStats v1 credit/entitlement reconciliation was not completed; no paid provider usage or direct account access is claimed.",
       "The site audit includes actual desktop rendering and automated desktop/phone tests; a native production phone viewport and a fresh synthetic wallet lookup remain unverified."
     ]
-  }
+  },
+  "correctedAt": "2026-11-10T15:53:50.984557+00:00",
+  "correctionNote": "Added direct team-source follow-ups and the later finalized review through15:19:24UTC to this same edition; original publication and earlier evidence preserved. No additional daily roundup or quote."
 }
