@@ -1,5 +1,6 @@
 import "server-only";
 import type { FxPoint } from "./currency-returns";
+import { recentFxTrades } from "./recent-fx-trades";
 import { completeCandleWindow } from "./candle-history";
 
 export async function getTaoHistory(): Promise<FxPoint[]> {
@@ -10,7 +11,7 @@ export async function getTaoHistory(): Promise<FxPoint[]> {
     const anchor = Math.floor((now - offset) / 300) * 300;
     return [anchor - 1800, anchor + 600];
   })];
-  const results = await Promise.allSettled(windows.map(async ([start, end], index) => {
+  const candleTasks = windows.map(async ([start, end], index) => {
     const url = new URL("https://api.exchange.coinbase.com/products/TAO-USD/candles");
     url.searchParams.set("granularity", "60");
     url.searchParams.set("start", new Date(start * 1000).toISOString());
@@ -23,7 +24,13 @@ export async function getTaoHistory(): Promise<FxPoint[]> {
     // Carry only within a bounded, completed window, never beyond its last tick.
     // Keep the live window's stricter five-minute gap limit unchanged.
     return completeCandleWindow(raw, now, index === 0 ? 300 : 900);
-  }));
+  });
+  const tradeTask = (async () => {
+    const response = await fetch("https://api.exchange.coinbase.com/products/TAO-USD/trades?limit=100", { next: { revalidate: 10 }, signal: AbortSignal.timeout(6000) });
+    if (!response.ok) throw new Error(`Recent FX trades HTTP ${response.status}`);
+    return recentFxTrades(await response.json(), Date.now() / 1000);
+  })();
+  const results = await Promise.allSettled([...candleTasks, tradeTask]);
   const points = new Map<number, FxPoint>();
   for (const result of results) {
     if (result.status === "fulfilled") for (const point of result.value) points.set(point.time, point);

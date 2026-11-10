@@ -1,7 +1,7 @@
 "use client";
 import { matchesSubnetQuery } from "./lib/subnet-search";
 import { quoteFresh, quoteUsable, type TaoQuote } from "./lib/fx-price";
-import { marketVolume, tradingVolume } from "./lib/market-volume";
+import { finalizedMarketVolume, subnetDisplayName, tradingVolume, type TradingVolumeSnapshot } from "./lib/market-volume";
 
 import { CSSProperties, FormEvent, ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
@@ -12,6 +12,8 @@ import { calendarBars, dollarBars, priceBars, mergeChartCandles, withLiveCandle 
 import { SiteHeader } from "./site-header";
 import { LivestreamBanner } from "./livestream-banner";
 import { MembershipPromo } from "./membership-promo";
+import registrations from "./data/market-registrations.json";
+import { registrationHistory } from "./lib/registration-history";
 import { currencyReturns, type FxPoint, type ReturnHistory } from "./lib/currency-returns";
 import { mergeFxHistory } from "./lib/merge-fx-history";
 import { compareLiquidation, liquidationExplanation, liquidationPercent } from "./lib/liquidation";
@@ -341,13 +343,15 @@ export function Dashboard({
   const hasInitialRows = serverRows.length > 0;
   const initialSnapshotRef = useRef(serverRows);
   const [view, setView] = useState<DashboardView>(initialView);
+  const [dailyTrading, setDailyTrading] = useState<TradingVolumeSnapshot | null>(null);
   const [walletHistoryAddress, setWalletHistoryAddress] = useState<string | null>(null);
   const [currency, setCurrency] = useState<"usd" | "tao">(initialCurrency);
   const [taoQuote, setTaoQuote] = useState<TaoQuote | null>(initialTaoQuote ?? (initialTaoUsd > 0 ? { usd: initialTaoUsd, updatedAt: 0, source: "unverified" } : null));
   const [fxNow, setFxNow] = useState(initialNow);
   const taoUsd = quoteUsable(taoQuote, fxNow) ? taoQuote!.usd : 0;
   const fxFresh = quoteFresh(taoQuote, fxNow);
-  const [rawRows, setRows] = useState<ScreenerRow[]>(serverRows);
+  const [sourceRows, setRows] = useState<ScreenerRow[]>(serverRows);
+  const rawRows = useMemo(() => sourceRows.map(row => registrationHistory(row, registrations)), [sourceRows]);
   const [dollarHistory, setDollarHistory] = useState<FxPoint[]>(initialDollarHistory);
   const rows = useMemo(() => rawRows.map(row => currencyReturns({ ...row, name: row.name?.trim() || "Unknown" }, currency, dollarHistory)), [rawRows, currency, dollarHistory]);
   const [dataState, setDataState] = useState<"loading" | "live" | "stale" | "error">(
@@ -783,8 +787,7 @@ export function Dashboard({
   const chartNote = (chartData.notice ? `${chartData.notice} · ` : "") + (timeframe === "1w" || timeframe === "1mo" ? "Calendar candles from daily history · UTC · Current period incomplete · " : "") + (showTaoChart ? (chartData.method === "extended-price" ? "Coinbase recent candles · TaoStats older price history · Historical candle volume unavailable" : chartData.method === "taostats-price" ? "TaoStats historical TAO/USD price candles · Candle volume unavailable" : "Coinbase TAO/USD candles · Volume in TAO")
     : chartData.method === "taostats-alpha" ? `TaoStats candles${currency === "usd" ? ` · USD candles use historical TAO/USD rates; high/low are estimates${missingUsdPeriods > 2 ? ` · ${missingUsdPeriods} periods lack USD quotes; TAO mode retains those subnet candles` : ""}` : " · Alpha/TAO"}`
     : `${chartData.method === "boundary" ? "Interval-boundary prices; wicks and volume are estimates" : "Sampled on-chain prices; volume is estimated"}${currency === "usd" ? " · USD estimates use matching historical TAO/USD candles" : " · Alpha/TAO"}`);
-  const volumeCoverage = marketVolume(rows);
-  const totalVolume = volumeCoverage.total;
+  const totalVolume = finalizedMarketVolume(dailyTrading, fxNow);
   const rankedMovers = rows.filter(row => row.netuid > 0 && row.change_1h != null && row.change_1h !== "" && Number.isFinite(Number(row.change_1h))).sort((a, b) => Number(b.change_1h || 0) - Number(a.change_1h || 0));
   const weakestMover = rankedMovers[rankedMovers.length - 1];
   const advancingMarkets = rows.filter((row) => Number(row.change_1h || 0) > 0).length;
@@ -1083,12 +1086,12 @@ export function Dashboard({
               </div>
               <div>
                 <OverviewHelp title="24h volume" />
-                <strong>{!hasMarketData || totalVolume === null ? "—" : money(totalVolume)}</strong>
-                <small>{hasMarketData ? (totalVolume === null ? `Incomplete history · ${volumeCoverage.available} of ${volumeCoverage.markets} markets` : dataState === "stale" ? "Last finalized snapshot" : `Across ${volumeCoverage.markets} markets`) : "Loading market service"}</small>
+                <strong>{totalVolume === null ? "—" : money(totalVolume)}</strong>
+                <small>{totalVolume === null ? "Waiting for complete trading data" : dailyTrading && (dailyTrading.delayed || fxNow - Date.parse(dailyTrading.asOf) > 900000) ? `Last verified · ${new Date(dailyTrading.asOf).toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", timeZone: "UTC" })} UTC · feed delayed` : "Buys + sells · 128 subnets · 24 hours"}</small>
               </div>
               <div>
                 <OverviewHelp title="Top mover" />
-                <strong className={changeClass(rankedMovers[0]?.change_1h)}>{rankedMovers[0]?.name || "—"}</strong>
+                <strong className={changeClass(rankedMovers[0]?.change_1h)}>{rankedMovers[0] ? subnetDisplayName(rankedMovers[0]) : "—"}</strong>
                 <small className={changeClass(rankedMovers[0]?.change_1h)}>{rankedMovers[0] ? `${Number(rankedMovers[0].change_1h || 0) > 0 ? "+" : ""}${fmt(rankedMovers[0].change_1h)}% · 1 Hour · ${currency.toUpperCase()}` : "Waiting for market data"}</small>
               </div>
               <SentimentTile rows={rawRows} state={dataState} initialNow={initialNow} />
@@ -1147,7 +1150,7 @@ export function Dashboard({
             <div className="sentiment-dialog-head"><h2 id="pulse-help-heading">{pulseHelp}</h2><button type="button" aria-label="Close network pulse explanation" onClick={() => pulseDialog.current?.close()}>✕</button></div>
             <MetricExplanation title={pulseHelp} />
           </dialog>
-          <MarketSignals rows={rawRows} initialNow={initialNow} />
+          <MarketSignals rows={rawRows} initialNow={initialNow} onDailyTrading={setDailyTrading} />
           <div className="home-promo-row">
             <Link className="insiders-home-cta tao-heads-home-cta" href={taoHeadsCommunity.path} aria-label={`Explore ${taoHeadsCommunity.name}`}>
               <Image

@@ -50,7 +50,7 @@ const guides: Record<string, Guide> = {
     meaning: "How much TAO was traded across subnet markets in the last 24 hours?",
     example: [["Subnet A volume", "80 TAO"], ["Subnet B volume", "120 TAO"], ["Combined volume", "200 TAO"]],
     takeaway: "Volume is trading activity—not market value, available liquidity or profit.",
-    details: "Sums reported rolling 24-hour volume across the current subnet snapshot. TAO mode shows TAO; USD mode converts the total at the current TAO/USD reference price, rather than using each trade’s historical dollar price. Missing history may make the total incomplete. A dash means it is not ready.",
+    details: "Sums TAO-to-alpha buys and alpha-to-TAO sells from the same complete rolling 24-hour trade window as Buyers vs Sellers. This remains valid when a subnet slot is re-registered; it does not subtract lifetime counters across different registrations. TAO mode shows TAO; USD mode converts the total at the current TAO/USD reference price, rather than using each trade’s historical dollar price. A complete window covering all 128 subnet slots is required. If refresh fails, the last verified snapshot is retained for at most six hours with its UTC time and a delayed label. A dash means no usable trading snapshot is available.",
   },
 };
 

@@ -45,15 +45,18 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
   }, { auto: true }],
 });
 
-test("a reset volume counter never renders negative turnover or a complete network total", async ({ page }) => {
+test("a reset subnet counter does not hide complete finalized network turnover", async ({ page }) => {
+  await page.route("**/api/tao-history", route => route.fulfill({json:{data:[{time:Date.parse(stamp)/1000-3630,usd:250},{time:Date.parse(stamp)/1000-30,usd:250}]}}));
   await page.route("**/api/backend/v1/screener", route => route.fulfill({ json: {
-    data: markets.map(row => ({ ...row, time: new Date().toISOString(), volume_24h_tao: row.netuid === 78 ? "-201640.896099794" : "10" })),
+    data: markets.map(row => ({ ...row, time: new Date().toISOString(), volume_24h_tao: row.netuid === 78 ? "-201640.896099794" : "10", name: row.netuid === 78 ? "Unknown" : row.name, price_tao: row.netuid === 78 ? "2" : row.price_tao })),
     cached_at: new Date().toISOString(),
   } }));
   await page.goto("/");
   const tile = page.getByRole("button", { name: "About 24h volume", exact: true }).locator("..");
-  await expect(tile).toContainText("Incomplete history · 127 of 128 markets");
-  await expect(tile.locator("strong")).toHaveText("—");
+  await expect(tile).toContainText("Buys + sells · 128 subnets · 24 hours");
+  await expect(tile.locator("strong")).toHaveText("$250,000");
+  const mover = page.getByRole("button", { name: "About Top mover", exact: true }).locator("..");
+  await expect(mover.locator("strong")).toHaveText("SN78");
   const row = page.locator(".screener tbody tr").filter({ hasText: "SN78" });
   await expect(row.locator("td").nth(11)).toHaveText("—");
   await noOverflow(page);

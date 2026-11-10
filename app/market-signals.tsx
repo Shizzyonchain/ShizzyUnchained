@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { freshSignalRows, sectorHeat, volumeAlerts, type SignalRow } from "./lib/market-signals";
 import { sectorPriceRows } from "./lib/currency-returns";
+import { type TradingVolumeSnapshot } from "./lib/market-volume";
 import styles from "./market-signals.module.css";
 type Buying={buy:number;sell:number;asOf:string;count:number;trades?:number;windowStart?:string;delayed?:boolean;source?:string};
 type Payload={buying:Buying|null;sectors:{id:string;name:string}[];tags:{netuid:number;sectors:string[]}[]};
@@ -16,7 +17,7 @@ function TradeComparison({alert,period}:{alert:{netuid:number;name:string;volume
  <div className={styles.comparisonBars} aria-hidden="true"><span>Before</span><div><i style={{width:`${100/alert.ratio}%`}}/></div><span>Now</span><div><i style={{width:"100%"}}/></div></div>
  </Link>;
 }
-export function MarketSignals({rows,initialNow=0}:{rows:SignalRow[];initialNow?:number}){
+export function MarketSignals({rows,initialNow=0,onDailyTrading}:{rows:SignalRow[];initialNow?:number;onDailyTrading?:(snapshot:TradingVolumeSnapshot|null)=>void}){
  const [surgePeriod,setSurgePeriod]=useState<"1h"|"24h">("1h");
  const [buyPeriod,setBuyPeriod]=useState<"1h"|"24h">("24h");
  const [hourly,setHourly]=useState<Buying|null>(null);
@@ -38,6 +39,7 @@ export function MarketSignals({rows,initialNow=0}:{rows:SignalRow[];initialNow?:
   const resume=()=>{if(!document.hidden)void refresh();};document.addEventListener("visibilitychange",resume);
   void refresh();return()=>{controller.abort();clearTimeout(timer);document.removeEventListener("visibilitychange",resume);};
  },[buyPeriod]);
+ useEffect(()=>{onDailyTrading?.(payload?.buying??null);},[payload?.buying,onDailyTrading]);
  const dialog=useRef<HTMLDialogElement>(null);
  const [detail,setDetail]=useState<"buyers"|"sectors"|"volume">("buyers");
  const open=(kind:typeof detail)=>{setDetail(kind);dialog.current?.showModal();};
