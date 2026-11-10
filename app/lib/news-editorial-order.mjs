@@ -17,5 +17,11 @@ export function validateEditorialOrder(report) {
   if (lead.status !== "verified" || (stories.some(item => (item.rating ?? 0) >= 3) && (lead.rating ?? 0) < 3)) {
     throw new Error("Subnet News: storyOrder must start with a verified main story.");
   }
+  const ratings = new Map(stories.map(item => [item.headline, item.rating ?? 0]));
+  let briefsStarted = false;
+  for (const headline of order) {
+    if (ratings.get(headline) < 3) briefsStarted = true;
+    else if (briefsStarted) throw new Error("Subnet News: minor briefs must follow the main stories in storyOrder.");
+  }
   return new Map(order.map((headline, index) => [headline, index]));
 }

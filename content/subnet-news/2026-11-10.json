@@ -61,7 +61,7 @@
     },
     {
       "headline": "Stillcore publishes its Commanding Heights thesis",
-      "summary": "Stillcore argues that an open market commissioning, grading and paying for intelligence can capture value as individual models become commodities. Its November9 paper connects compute and storage, distributed pretraining, post-training and paid inference, and uses Reliquary as an example of a model pipeline drawing on separate subnets. It cites a SubConnect estimate of roughly $70 million annualized subnet revenue at November4, then projects $100 million by end2026 and $1 billion by end2027. Figure6 compares those run rates with about $300 million annual issuance valued at the fixed November6 TAO price; the resulting approximate23%,33% and3.3-times ratios are scenario comparisons, not measured cash coverage or current network break-even. Hatched bars identify forecasts, and projected revenue excludes Gamma burns. The paper also discloses that Stillcore and its principals own TAO and named subnet tokens. These are attributed investment arguments and unaudited third-party/firm estimates, not verified future returns or endorsements by the public figures quoted. Its future-tense Gamma discussion predates the separately verified global activation; no subnet adoption is established by this paper. Figures 2 and 3 map the subnet supply chain and Reliquary’s use of Teutonic, Targon and Lium; the cited 43.6% versus 35.1% same-size SWE-bench comparison is attributed to the report and team, not a reproduced benchmark. Figures 4 and 5 compare model-control and funding structures and group public AI commentary; the named commentators have not endorsed TAO. All six numbered figures were inspected across the original review and this morning’s follow-up. The report’s future-tense Gamma discussion is updated separately below with actual global and SN58 activation evidence.",
+      "summary": "Stillcore argues that an open market commissioning, grading and paying for intelligence can capture value as individual models become commodities. Its November9 paper connects compute and storage, distributed pretraining, post-training and paid inference, and uses Reliquary as an example of a model pipeline drawing on separate subnets. It cites a SubConnect estimate of roughly $70 million annualized subnet revenue at November4, then projects $100 million by end2026 and $1 billion by end2027. Figure6 compares those run rates with about $300 million annual issuance valued at the fixed November6 TAO price; the resulting approximate23%,33% and3.3-times ratios are scenario comparisons, not measured cash coverage or current network break-even. Hatched bars identify forecasts, and projected revenue excludes Gamma burns. The paper also discloses that Stillcore and its principals own TAO and named subnet tokens. These are attributed investment arguments and unaudited third-party/firm estimates, not verified future returns or endorsements by the public figures quoted. Its future-tense Gamma discussion predates the separately verified global activation; no subnet adoption is established by this paper. Figures 2 and 3 map the subnet supply chain and Reliquary’s use of Teutonic, Targon and Lium; the cited 43.6% versus 35.1% same-size SWE-bench comparison is attributed to the report and team, not a reproduced benchmark. Figures 4 and 5 compare model-control and funding structures and group public AI commentary; the named commentators have not endorsed TAO. All six numbered figures were inspected across the original review and this morning’s follow-up. The report’s future-tense Gamma discussion is covered by this edition’s Gamma lead and network-activation report.",
       "sources": [
         {
           "url": "https://x.com/stillcorecap/status/2119957635629777080",
@@ -97,7 +97,7 @@
     },
     {
       "headline": "Bittensor enables the network-wide Gamma switch; subnet opt-in remains separate",
-      "summary": "On November 9 at 20:27:48 UTC, successful finalized extrinsic 9471027-5 enabled Gamma globally. The flag changed from false to true, with successful sudo and multisig outcomes. This was already quoted by Shizzy and is carried into the next morning edition without another quote. SN58 opted in separately the following morning, as reported below. Official documentation distinguishes network enablement, subnet enablement and oracle requirements; availability is separate from credit minting, spending and customer revenue.",
+      "summary": "On November 9 at 20:27:48 UTC, successful finalized extrinsic 9471027-5 enabled Gamma globally. The flag changed from false to true, with successful sudo and multisig outcomes. This was already quoted by Shizzy and is carried into the next morning edition without another quote. SN58 opted in separately the following morning, as covered in the lead story. Official documentation distinguishes network enablement, subnet enablement and oracle requirements; availability is separate from credit minting, spending and customer revenue.",
       "sources": [
         {
           "url": "https://x.com/Rapido_ai/status/2119889949478777186",
@@ -1317,7 +1317,7 @@
       "updates": [
         {
           "headline": "SN127 Zils documents admission tracks and worker safeguards",
-          "summary": "November 9 documentation describes mainnet SN127 admission and an 80% Soup / 20% customer-job adapter launch structure, with two larger Soup pools not yet open and their shares burned according to the docs. Registration is admission, not proof of completed paid jobs, customer payments or independently observed live weights. The merged queue heartbeat tolerates transient server errors until three consecutive failed renewals, resets the counter on success and stops immediately on refusal. Qualification documentation also caps runs at three per hotkey per30days. Reconcile this with the existing pending80/20launch documentation item; no deployment or completed paid job is inferred. A documentation merge clarifies that qualification jobs are queued only while a worker is online and sending heartbeats. Only runs trained by that hotkey count toward its three-run limit in30days, and customer jobs require three passing qualification reports in the relevant size band. Merge this with the existing SN127 lease/admission pending item rather than publish another launch story. The change is documentation; no production enforcement change or completed customer job is established.",
+          "summary": "November 9 documentation describes SN127 mainnet admission and an 80% Soup / 20% customer-job adapter launch structure. It says two larger Soup pools are not yet open and their shares are burned. These are documented launch terms, without independently verified live weights or completed paid jobs. Qualification jobs are queued only while a worker is online and sending heartbeats; only runs trained by that hotkey count toward its three qualification runs per 30 days. Customer jobs require three passing qualification reports in the relevant size band. Merged queue-heartbeat code tolerates transient server errors until three consecutive failed renewals, resets the counter on success and stops immediately on refusal. These source changes do not verify production deployment, customer payments or payouts.",
           "sources": [
             {
               "url": "https://github.com/ooo-hq/zils/commit/de9512bc5e4dc5edff7ab9c18f6d0b6ce77bc3d9",
@@ -1366,7 +1366,7 @@
       "The site audit includes actual desktop rendering and automated desktop/phone tests; a native production phone viewport and a fresh synthetic wallet lookup remain unverified."
     ]
   },
-  "correctedAt": "2026-11-10T18:09:44.941400+00:00",
+  "correctedAt": "2026-11-10T18:14:04.106053+00:00",
   "correctionNote": "Gamma now leads; all source follow-ups and finalized coverage are retained.",
   "storyOrder": [
     "Gamma reaches SN58: Attune offers robotics data for credits",
@@ -1389,7 +1389,6 @@
     "SN70 Fugal prepares a pinned v2 release and repairs monitoring tools",
     "SN50 Synth confirms Forge partnership ahead of mainnet",
     "SN41 Almanac reports October fees and a verified alpha buyback",
-    "SN8 Vanta records two qualifying direct alpha burns",
     "SN1 Apex and SN25 URnetwork report latency gains in round-one tests",
     "SN25 URnetwork carries Apex’s latency-test winner into round two",
     "SN89 InfiniteQuant schedules a lower LF bond threshold and stricter drawdown rules",
@@ -1397,6 +1396,7 @@
     "SN127 Zils documents admission tracks and worker safeguards",
     "TaoStats announces PIN protection as an alternative to biometrics",
     "Shizzy publishes Can TAO Hold? and the site adds the public replay",
+    "SN8 Vanta records two qualifying direct alpha burns",
     "SN21 AdTAO clarifies its baseline gate, earning seats and receipt-history limits",
     "SN22 Desearch shares a reproducible research-report example",
     "SN28 SayGM updates workers and reports an interrupted-image request fix",

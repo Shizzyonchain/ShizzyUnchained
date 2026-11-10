@@ -31,4 +31,6 @@ test('new editions reject missing, stale, incomplete or duplicated editorial ord
  for(const storyOrder of [['A'],['A','A'],['A','Missing']]) assert.throws(()=>validateEditorialOrder({...brief,storyOrder}));
  assert.throws(()=>validateEditorialOrder({...brief,storyOrder:['B','A']}),/verified main story/);
  assert.equal(validateEditorialOrder({...brief,storyOrder:['A','B']}).size,2);
+ const minor={headline:'Minor',rating:2,status:'verified'};
+ assert.throws(()=>validateEditorialOrder({...brief,highlights:[a,b,minor],storyOrder:['A','Minor','B']}),/minor briefs must follow/);
 });
