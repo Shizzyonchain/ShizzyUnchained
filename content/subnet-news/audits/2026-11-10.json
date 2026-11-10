@@ -5355,10 +5355,8 @@
     {
       "netuid": 39,
       "name": "deprecated",
-      "headlines": [
-        "SN39 Fugal repairs its reveal watcher and offline consensus audit"
-      ],
-      "outcome": "covered",
+      "headlines": [],
+      "outcome": "no-cleared-current-update",
       "sourceReview": "Current finalized identity/alias and configured primary website checked individually; repository and dated secondary observations retained locally. Individual complete X/media coverage is not claimed.",
       "evidence": [
         "daily-news-2026-11-10/all128-primary-websites.json",
@@ -6755,8 +6753,10 @@
     {
       "netuid": 70,
       "name": "Fugal",
-      "headlines": [],
-      "outcome": "no-cleared-new-story",
+      "headlines": [
+        "SN70 Fugal prepares a pinned v2 release and repairs monitoring tools"
+      ],
+      "outcome": "covered",
       "sourceReview": "Current finalized identity/alias and configured primary website checked individually; repository and dated secondary observations retained locally. Individual complete X/media coverage is not claimed.",
       "evidence": [
         "daily-news-2026-11-10/all128-primary-websites.json",
@@ -11517,8 +11517,8 @@
         "outcome": "Published opt-in auction plus selected audit/parser guards; no activation, payment or burn inferred."
       },
       {
-        "subnet": 39,
-        "outcome": "Published watcher/offline-audit fixes at two stars; no live consensus change inferred."
+        "subnet": 70,
+        "outcome": "Published pinned prospective v2 release and watcher/offline-audit fixes under current Finney70; deprecated39 excluded."
       },
       {
         "subnet": 67,
@@ -11539,6 +11539,10 @@
       {
         "subnet": 81,
         "outcome": "Additional delivery-artifact accounting commit retained as unresolved detail; no unsupported claim added."
+      },
+      {
+        "subnet": 39,
+        "outcome": "Deprecated identity; stale former Fugal mapping corrected before push. Current repository explicitly configures Finney70."
       }
     ]
   }

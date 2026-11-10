@@ -534,22 +534,7 @@
     {
       "netuid": 39,
       "name": "deprecated",
-      "updates": [
-        {
-          "headline": "SN39 Fugal repairs its reveal watcher and offline consensus audit",
-          "summary": "November 10 source fixes make the watcher read the score field from the reveal object rather than treating the entire object as a number, resolving a TypeError. The separate offline consensus-audit utility now compares the complete set of weighted UIDs, including the burn UID, so an all-burn result does not produce a false 100% divergence warning. This utility is not called by the validator’s consensus path, so the patch does not establish a change in live consensus or emissions. The nightly rehearsal also targets the main branch instead of a deleted release branch. Implementation and changelog were inspected; deployment and an independent upstream test run were not verified.",
-          "rating": 2,
-          "ratingReason": "Specific monitoring and offline-tooling repairs are minor operational updates, without overstating a consensus or network-launch change.",
-          "sources": [
-            {
-              "url": "https://github.com/fugal-ai/fugal-subnet/commit/2790cb74cffc19b0ba0569058e41cab7ae12d47b",
-              "label": "Primary watcher and offline-audit fixes"
-            }
-          ],
-          "status": "verified",
-          "importance": "informational"
-        }
-      ]
+      "updates": []
     },
     {
       "netuid": 40,
@@ -807,7 +792,26 @@
     {
       "netuid": 70,
       "name": "Fugal",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN70 Fugal prepares a pinned v2 release and repairs monitoring tools",
+          "summary": "November 10 deployment configurations explicitly identify Fugal as Finney subnet70 and pin a v2 miner image by digest, with a planned activation at block9484920. That block is later than this report’s finalized9476685 cutoff, so this is release preparation, not verified activation. Testnet uses subnet552 and its own activation block. November 10 source fixes make the watcher read the score field from the reveal object rather than treating the entire object as a number, resolving a TypeError. The separate offline consensus-audit utility now compares the complete set of weighted UIDs, including the burn UID, so an all-burn result does not produce a false 100% divergence warning. This utility is not called by the validator’s consensus path, so the patch does not establish a change in live consensus or emissions. The nightly rehearsal also targets the main branch instead of a deleted release branch. Implementation and changelog were inspected; deployment and an independent upstream test run were not verified.",
+          "rating": 3,
+          "ratingReason": "A concrete pinned v2 release and prospective activation block are meaningful operator preparation, distinct from minor monitoring fixes; deployment and activation remain unverified.",
+          "sources": [
+            {
+              "url": "https://github.com/fugal-ai/fugal-subnet/commit/2790cb74cffc19b0ba0569058e41cab7ae12d47b",
+              "label": "Primary watcher and offline-audit fixes"
+            },
+            {
+              "url": "https://github.com/fugal-ai/fugal-subnet/commit/807c637854bba148424b38f5fcd2813c9671a8c9",
+              "label": "Primary pinned v2 configurations; explicitly Finney subnet70"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 71,
