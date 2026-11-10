@@ -149,3 +149,12 @@ def test_basket_market_trades_include_root_legs_once_but_exclude_internal_routes
         SUCCESS,
     ]
     assert trade_totals(rows) == {"buy": 600, "sell": 300, "trades": 3}
+
+
+def test_runtime488_gamma_counts_tao_purchase_without_stake_mint_or_failed_call():
+    gamma = {"netuid": 24, "coldkey": "cold", "hotkey": "hot", "spender": "spender", "daily_spend_cap": None, "tao": 5000000000, "alpha": 700, "value": 800, "gamma": 900}
+    assert trade_totals([event("GammaMinted", gamma), SUCCESS]) == {"buy": 5000000000, "sell": 0, "trades": 1}
+    assert trade_totals([event("GammaMinted", {**gamma, "tao": 0}), event("AlphaBurned", ["cold", "hot", 700, 24]), SUCCESS]) == {"buy": 0, "sell": 0, "trades": 0}
+    assert trade_totals([event("GammaMinted", gamma), event("ExtrinsicFailed", {}, "System"), event("ExtrinsicSuccess", {}, "System", idx=0)]) == {"buy": 0, "sell": 0, "trades": 0}
+    with pytest.raises(ValueError, match="GammaMinted"):
+        trade_totals([event("GammaMinted", {"tao": 500}), SUCCESS])

@@ -104,6 +104,16 @@ def trade_totals(records):
                     if len(pair) == 2:
                         routed.update(pair)
             basket(e)
+            if name == "GammaMinted":
+                # Runtime488 swaps TAO directly without emitting StakeAdded.
+                # The stake-funded variant sets tao=0.
+                expected = {"netuid", "coldkey", "hotkey", "spender", "daily_spend_cap", "tao", "alpha", "value", "gamma"}
+                if not isinstance(a, dict) or set(a) != expected:
+                    raise ValueError("Unreviewed GammaMinted trade layout")
+                netuid, tao = scale_int(a["netuid"]), scale_int(a["tao"])
+                if 1 <= netuid <= 128 and tao > 0:
+                    result["buy"] += tao
+                    result["trades"] += 1
             if name == "TransactionFeePaidWithAlpha":
                 if not isinstance(a, dict) or not {"who", "netuid", "alpha_fee"} <= a.keys():
                     raise ValueError("Unreviewed alpha fee layout")

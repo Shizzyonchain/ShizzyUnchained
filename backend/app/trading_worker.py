@@ -12,7 +12,9 @@ log = logging.getLogger("shizzy.trading")
 # 72323e13249c9e25c7e792a2b3c08502c84651d5: stake/event semantics unchanged;
 # only GetStakeAvailabilityV1 read-weight accounting and version changed.
 # Evidence: public/evidence/2026-10-26-chain-monitor-2048.json.
-REVIEWED_TRADE_RUNTIMES = frozenset({484, 486})
+# Runtime488 source/metadata review: public/evidence/2026-11-10-trade-runtime-review.json.
+# GammaMinted TAO purchases have a separate event; stake-funded minting has tao=0.
+REVIEWED_TRADE_RUNTIMES = frozenset({484, 486, 488})
 
 
 def require_trade_runtime(version):

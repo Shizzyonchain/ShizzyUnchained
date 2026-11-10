@@ -1,0 +1,23 @@
+{
+  "reviewedAt": "2026-11-10T07:49:46.430912+00:00",
+  "runtimes": [
+    486,
+    488
+  ],
+  "sourceCommit": "b6a81d144078eac18bd25c3af7cb31579bb670f3",
+  "scope": "Finalized trade index only. No transaction or account action.",
+  "metadata": "Retained finalized runtime486 block9441147 and488 block9442967 metadata: StakeAdded, StakeRemoved, StakeSwapped, StakeMoved, StakeTransferred, TransactionFeePaidWithAlpha and BasketSwapped fields and recursively normalized portable types equal.",
+  "sourceReview": [
+    "add_stake.rs, move_stake.rs and order_swap.rs unchanged between v486 and v488.",
+    "remove_stake/stake_utils changes include root pending-dividend settlement and weights; nonroot event amount fields and successful execution filters unchanged.",
+    "v488 do_mint_gamma calls buy_and_burn_alpha, a direct TAO/alpha swap with TAO input net of refund, then emits GammaMinted without StakeAdded. Count positive tao once.",
+    "do_mint_gamma_with_stake burns existing alpha and emits tao=0; exclude from TAO volume. Failed extrinsics excluded."
+  ],
+  "primarySources": [
+    "https://github.com/RaoFoundation/subtensor/releases/tag/v488",
+    "https://github.com/RaoFoundation/subtensor/blob/v488/pallets/subtensor/src/subnets/gamma.rs",
+    "https://github.com/RaoFoundation/subtensor/blob/v488/pallets/subtensor/src/staking/stake_utils.rs",
+    "https://github.com/RaoFoundation/subtensor/blob/v488/pallets/subtensor/src/macros/events.rs"
+  ],
+  "limitations": "No byte-for-byte deployed WASM reproduction. Worker activation and contiguous history repair require live verification; unknown runtimes remain blocked."
+}

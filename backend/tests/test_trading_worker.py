@@ -38,9 +38,9 @@ async def test_missing_provenance_reads_exact_pinned_timestamp_and_hash():
 def test_reviewed_runtime_upgrade_resumes_worker_but_unknown_versions_still_stop():
     import pytest
     from app.trading_worker import require_trade_runtime
-    for version in [484, 486]:
+    for version in [484, 486, 488]:
         require_trade_runtime(version)
-    for version in [483, 485, 487, None]:
+    for version in [483, 485, 487, 489, None]:
         with pytest.raises(ValueError, match="runtime review"):
             require_trade_runtime(version)
 
