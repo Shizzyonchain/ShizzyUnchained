@@ -1,5 +1,7 @@
 # Subnet News publishing
 
+Read `docs/NEWS_HOUSE_STYLE.md` before writing or reviewing an edition. It is the canonical editorial structure and presentation standard; preserve the current rating rubric, research requirements, publishing scope and approval gates.
+
 Subnet News is a repository-backed daily publication. Each report is a validated JSON file in `content/subnet-news/YYYY-MM-DD.json`. The website builds the latest report, dated archive pages, source links, verification labels, and coverage gaps from those files.
 
 ## Daily 10 AM workflow
@@ -58,7 +60,7 @@ On every daily news run, directly review @TensiaFDN (https://x.com/TensiaFDN) an
 - Begin each window at the previous report's `coverageEnd`. If publishing after the usual 10 AM run, extend to the actual research cutoff and state that timestamp so later posts are not silently omitted or counted twice.
 - Search X by current project account, name, aliases and SN number. Run the required signed-in Grok discovery and omission check when accessible; follow its links to original posts and verify author/date. Never publish an unsupported Grok claim as verified.
 - Search recent Bittensor and TAO mentions from infrastructure providers, exchanges, bridges and other partner accounts outside the subnet roster. Check both sides of partnership announcements before publication.
-- Starting September 4, 2026, assign every item a 1–5 star rating and a concise rationale. Rank the published feed by stars, with 5-star stories first. Use price action when it materially confirms market attention, record the observation time, and do not let price alone determine the rating.
+- Starting September 4, 2026, assign every item a 1–5 star rating and a concise rationale. Choose the lead and complete running order under docs/NEWS_HOUSE_STYLE.md and docs/NEWS_EDITORIAL_ORDER.md; stars measure significance and do not mechanically sort the page. Use price action when it materially confirms market attention, record the observation time, and do not let price alone determine the rating.
 - Use the public project feed, dated Discord briefs and GitHub as additional discovery sources. If signed-in X or Grok is blocked, record the exact gap; do not claim exhaustive X coverage. X-only stories available solely through a secondary feed stay developing.
 - Check both YouTube Videos and Live tabs on every combined news/video update. Match the actual video ID, title and duration before editing the site, and verify the selected embed afterward.
 - Do not restore the Shiz Cat TAO replay (`X1N2TGCSKhk`), removed from the site at the owner's request on September 16, 2026. The promoted stream's `listed` flag controls its library entry separately from the banner's `enabled` flag; set `listed: true` for the next approved stream when replacing this entry.

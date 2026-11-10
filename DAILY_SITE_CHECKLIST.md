@@ -1,5 +1,7 @@
 # Required daily site checklist
 
+Read `docs/NEWS_HOUSE_STYLE.md` before preparing the edition. Record its `editorialReview` sign-off in the dated audit, including the deliberate lead, story classifications, complete order, copy/attribution review and actual layout checks or gaps.
+
 Use this checklist for every request to do today's news. Read `SUBNET_NEWS_PUBLISHING.md` for the detailed requirements. Complete news AND the video refresh unless the owner explicitly narrows the request. Never treat a collected link, a successful push, or a partial promotion update as completion.
 
 Copy the checklist into dated research notes with the actual date, coverage window, check times, evidence paths and outcomes. Mark each item DONE, BLOCKED (specific reason), or NOT APPLICABLE (specific reason). An unchecked item remains unfinished. Do not claim exhaustive coverage or promise that nothing can ever be missed.

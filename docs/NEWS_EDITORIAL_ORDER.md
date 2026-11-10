@@ -1,5 +1,7 @@
 # Daily edition running order
 
+Read [NEWS_HOUSE_STYLE.md](NEWS_HOUSE_STYLE.md) for the canonical story structure, classifications, presentation, updates/corrections and editorial sign-off. This document supplies the explicit running-order implementation rules.
+
 Owner correction November 10, 2026: Gamma activation and the concrete SN58 service offering should lead the edition, ahead of Sami Kassab's research. A shared four-star rating does not make those stories equally suitable as the main headline.
 
 For every edition from November 10 onward, provide a `storyOrder` array containing every distinct published headline exactly once. The first headline selects the verified main story. The publisher, runtime reader and edition renderer validate this order. Earlier editions retain their historical ordering.
