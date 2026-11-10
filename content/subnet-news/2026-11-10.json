@@ -1,0 +1,1069 @@
+{
+  "version": 1,
+  "date": "2026-11-10",
+  "title": "Bittensor Daily News: November 10, 2026",
+  "summary": "SN58 Attune enables Gamma and offers robotics-data access. SN24’s Quasar to ms.computer transition gets a dated catch-up; SN78’s replacement remains unnamed. Plus Swarm’s finalized allocation and buyback, Almanac fees, Sami Kassab and Stillcore research, Yuma’s October results, protocol fixes and operator updates.",
+  "publishedAt": "2026-11-10T14:47:44.101379+00:00",
+  "coverageStart": "2026-11-09T18:22:15.072436+00:00",
+  "coverageEnd": "2026-11-10T14:47:44.101379+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [
+    {
+      "headline": "Sami Kassab publishes internal ecosystem revenue and demand estimates",
+      "summary": "Sami Kassab, founder and managing partner of Unsupervised Capital, published November 9 research estimating ecosystem annualized revenue near $54 million, compared with roughly $20 million at the end of 2025. This is an annualized estimate from an internal dashboard, not audited realized revenue or a public reproducible dataset. His accompanying 90-day trailing chart estimates demand equal to 10.9% of TAO issuance: team buybacks 4.7%, miner registration 3.2%, subnet registration 2.1% and transaction fees 0.9%. The chart runs from June 2025 into November 2026. It is useful because it separates sources of demand instead of treating token issuance alone as the network economy, but the components are not all permanent burns, external customer revenue or independently verified cash flows. His goal of reaching 100% offset is an aspiration, not an achieved break-even result. Rounded $20 million and $54 million imply about 2.7 times, while the article describes roughly 2.5 times; retain that approximation difference rather than invent precision.",
+      "rating": 4,
+      "ratingReason": "Substantive ecosystem research separates four demand mechanisms and supplies a dated revenue benchmark. It materially improves the economic discussion; private-input confidence remains separately qualified, and no measured price reaction affected the score.",
+      "sources": [
+        {
+          "url": "https://x.com/Old_Samster/status/2119857366178902447",
+          "label": "Primary research article and internal-dashboard disclosure"
+        },
+        {
+          "url": "https://x.com/Old_Samster/status/2119858857124266294",
+          "label": "Primary accompanying chart; 90-day trailing component estimates"
+        },
+        {
+          "url": "https://www.unsupervised.capital/team",
+          "label": "Official author affiliation and role"
+        }
+      ],
+      "status": "verified",
+      "importance": "high"
+    },
+    {
+      "headline": "Root dividend price-gate fix merges into release-489",
+      "summary": "PR3319 changes the all-holdings gate to weighted basket price impact and separates problematic deferred origins from healthy settlement. The primary PR describes a0.1% holding-NAV budget and separate2% incoming-value and mint-ratio limits, with recovery regressions. Merge is into release-489. Our fresh finalized block9473251 still runs488, so this is preparation for a fix, without a claim that live baskets have been repaired.",
+      "sources": [
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3319",
+          "label": "Primary research or implementation"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "Useful primary confirmation of an unresolved protocol issue and a proposed implementation remedy. Live execution and user recovery are unverified.",
+      "status": "verified",
+      "importance": "medium"
+    },
+    {
+      "headline": "SDK hashed-account key erasure change merges into release-489",
+      "summary": "PR3317 changes core-owned derived Ed25519 signing keys to a wiping owner and removes an intermediate master-seed copy. Published regression vectors check unchanged key and signature outputs. Its scope is the core-owned derived key, not every temporary or caller buffer. This is a source-branch merge; packaged SDK distribution, installed-client uptake and exploit activity were not verified.",
+      "sources": [
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3317",
+          "label": "Primary research or implementation"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "A concrete published SDK security improvement with explicit limits, without an unsupported live-remediation or compromised-wallet claim.",
+      "status": "verified",
+      "importance": "medium"
+    },
+    {
+      "headline": "Stillcore publishes its Commanding Heights thesis",
+      "summary": "Stillcore argues that an open market commissioning, grading and paying for intelligence can capture value as individual models become commodities. Its November9 paper connects compute and storage, distributed pretraining, post-training and paid inference, and uses Reliquary as an example of a model pipeline drawing on separate subnets. It cites a SubConnect estimate of roughly $70 million annualized subnet revenue at November4, then projects $100 million by end2026 and $1 billion by end2027. Figure6 compares those run rates with about $300 million annual issuance valued at the fixed November6 TAO price; the resulting approximate23%,33% and3.3-times ratios are scenario comparisons, not measured cash coverage or current network break-even. Hatched bars identify forecasts, and projected revenue excludes Gamma burns. The paper also discloses that Stillcore and its principals own TAO and named subnet tokens. These are attributed investment arguments and unaudited third-party/firm estimates, not verified future returns or endorsements by the public figures quoted. Its future-tense Gamma discussion predates the separately verified global activation; no subnet adoption is established by this paper. Figures 2 and 3 map the subnet supply chain and Reliquary’s use of Teutonic, Targon and Lium; the cited 43.6% versus 35.1% same-size SWE-bench comparison is attributed to the report and team, not a reproduced benchmark. Figures 4 and 5 compare model-control and funding structures and group public AI commentary; the named commentators have not endorsed TAO. All six numbered figures were inspected across the original review and this morning’s follow-up. The report’s future-tense Gamma discussion is updated separately below with actual global and SN58 activation evidence.",
+      "sources": [
+        {
+          "url": "https://x.com/stillcorecap/status/2119957635629777080",
+          "label": "Primary research or implementation"
+        }
+      ],
+      "rating": 4,
+      "ratingReason": "A substantial original investment-research thesis connects production, ownership and economic demand across Bittensor. The rating reflects analytical significance, not confirmation of its forecasts or a price target.",
+      "status": "verified",
+      "importance": "high"
+    },
+    {
+      "headline": "Yuma reports October Large Cap performance in USD and TAO",
+      "summary": "Yuma reported an October decline of16.9% in USD for its Large Cap Fund versus20.9% for TAO, a4.0percentage-point smaller loss. The same comparison corresponds to approximately5.0% relative appreciation measured in TAO, so the positive TAO figure does not mean a positive dollar month. Yuma also reports a5.5% decline since launch and says this was the strongest October TAO result among its three funds. Its chart shows daily USD changes as bars and cumulative USD performance as a line for October1-31. These are manager-reported results; this review did not reproduce fund NAV, fee treatment, custody or subscription/redemption-adjusted returns. The claim is historical performance, not external customer revenue or a return forecast.",
+      "sources": [
+        {
+          "url": "https://x.com/YumaGroup/status/2119852641849073838",
+          "label": "Primary research or implementation"
+        },
+        {
+          "url": "https://x.com/YumaGroup/status/2119852644646711776",
+          "label": "Primary research or implementation"
+        },
+        {
+          "url": "https://www.yumaai.com/asset-management",
+          "label": "Primary research or implementation"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "A concrete first-party fund disclosure explains relative performance and currency basis; no new funding, adoption or verified protocol execution is inferred.",
+      "status": "verified",
+      "importance": "medium"
+    },
+    {
+      "headline": "Bittensor enables the network-wide Gamma switch; subnet opt-in remains separate",
+      "summary": "On November 9 at 20:27:48 UTC, successful finalized extrinsic 9471027-5 enabled Gamma globally. The flag changed from false to true, with successful sudo and multisig outcomes. This was already quoted by Shizzy and is carried into the next morning edition without another quote. SN58 opted in separately the following morning, as reported below. Official documentation distinguishes network enablement, subnet enablement and oracle requirements; availability is separate from credit minting, spending and customer revenue.",
+      "sources": [
+        {
+          "url": "https://x.com/Rapido_ai/status/2119889949478777186",
+          "label": "Original observer screenshot, followed to independent finalized verification"
+        },
+        {
+          "url": "https://www.bittensor.com/docs/guides/gamma",
+          "label": "Official protocol guide"
+        },
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-10-gamma-events.json",
+          "label": "Full finalized Gamma-event review"
+        }
+      ],
+      "rating": 4,
+      "ratingReason": "Independently verified execution of a network-wide protocol activation advances the previously reported merged Gamma implementation. The rating reflects that material protocol change, not adoption or a price reaction. Per-subnet opt-in and service readiness remain separate gates.",
+      "status": "verified",
+      "importance": "high"
+    },
+    {
+      "headline": "TaoStats announces PIN protection as an alternative to biometrics",
+      "summary": "On November 10 at 09:00 UTC, TaoStats announced that its app now offers PIN or biometric protection under Settings > Security > Protection. This is the provider’s release announcement, not an independently installed version or a security audit. No account security setting was changed during this review.",
+      "sources": [
+        {
+          "url": "https://x.com/taostats/status/2120079017428533677",
+          "label": "Primary TaoStats release announcement"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "A meaningful user-facing app choice, with security effectiveness and installed-version availability separately untested.",
+      "status": "verified",
+      "importance": "medium"
+    },
+    {
+      "headline": "Shizzy publishes Can TAO Hold? and the site adds the public replay",
+      "summary": "The official channel’s November 9 public video, “Can TAO Hold? Bittensor Price Action vs. Real Progress,” is 18:35. Its watch page, public availability and initial playback were checked, and it is added as the latest item and default player in the video library. No complete audiovisual review or transcript verification is claimed. Carbon remains canceled, and no replacement date is promoted.",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=AsNyOPEElo4",
+          "label": "Official public video and verified native duration"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "Shizzy videos retain the standing three-star rating. This is an availability/library update rather than an independently verified new chain event.",
+      "status": "verified",
+      "importance": "medium"
+    }
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta records another qualifying direct alpha burn",
+          "summary": "A successful direct burn_alpha call at finalized block 9474860, extrinsic 28, event 216 on November 10 at 09:14:24 UTC removed 145.543240996 alpha. The execution, unchanged Vanta identity and registration, and exact native amount were independently checked. The wallet differs from the registered owner. Smaller burns remain in the underlying event evidence and do not enter public qualifying totals. This is a transaction burn, separate from emissions withholding, recycling and fees; its revenue source is not inferred.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-10-daily-burn-executions.json",
+              "label": "Finalized successful Vanta burn and historical identity"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A verified bounded transaction update with exact units; the amount alone does not establish an adoption milestone.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": [
+        {
+          "headline": "SN24 catch-up: Quasar became ms.computer; launch timing remains unconfirmed",
+          "summary": "Dated background, not a new November 10 rename: Successful SubnetIdentitySet at finalized block 9378507 changes Quasar to ms.computer and updates the website field. Full-window owner and registration comparisons found no executed ownership/registration change for this SN. Discord channel-claim commentary does not establish a subnet sale. The large dated alpha/TAO move does not independently establish its cause or a product launch. On November 1, block 9409822 changed the owner hotkey while the owner coldkey and registration 2538424 stayed unchanged. On November 4, block 9431616 announced a coldkey swap, without proving a completed transfer or sale. This morning’s full finalized lifecycle review found no newer SN24 identity or ownership execution in its covered interval. The official @ms_computer profile links ms.computer, whose page still presents “coming soon.” Community reports about testing, miner onboarding and a launch this week could not be confirmed from the primary Discord channel because it requires login. No sale, buyer, launch date or misconduct allegation is established.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-10-28-daily-chain.json",
+              "label": "Finalized evidence"
+            },
+            {
+              "url": "https://x.com/TensiaBot/status/2115232422585421993",
+              "label": "Detector"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-01-sn24-hotkey.json",
+              "label": "Finalized event and storage evidence"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-04-daily-lifecycle.json",
+              "label": "SN24 ms.computer announcement and adjacent ownership storage"
+            },
+            {
+              "url": "https://x.com/ms_computer",
+              "label": "Current official project profile"
+            },
+            {
+              "url": "https://ms.computer/",
+              "label": "Current project website"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "A verified project rename is major identity news under the owner’s rubric. The dated catch-up makes the old and new names explicit while keeping routine key changes, sale claims and unconfirmed launch timing separate.",
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": [
+        {
+          "headline": "SN28 SayGM promotes v0.5.24 version and exposes worker image standing",
+          "summary": "SayGM merged its v0.5.24 stable-version promotion on November 9 after dev preparation. An earlier merge makes gmcli worker list show each worker’s release tag and image standing, including supported, deprecated with a grace-end epoch, revoked, unknown or not reported. A failed image lookup still prints the list with a warning. These are reviewed repository changes; the version bump alone does not prove every production worker upgraded or that a particular deployment is supported.",
+          "rating": 2,
+          "ratingReason": "A useful operator compatibility diagnostic and explicit version promotion, supported by code. No fleet-wide activation or service-performance claim is inferred.",
+          "sources": [
+            {
+              "url": "https://github.com/taostat/gm-miner/commit/afa323730ed1e6f8ded3c17c7b6e5ce2ed9414b0",
+              "label": "Primary stable-version promotion"
+            },
+            {
+              "url": "https://github.com/taostat/gm-miner/commit/99df328ac8bb57720130ffd742a489870402c890",
+              "label": "Primary worker image-standing implementation"
+            }
+          ],
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Jacob Robert Steeves",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": [
+        {
+          "headline": "SN36 Weir adds a GPU UUID format check to validator inventory",
+          "summary": "Commit3171d70 rejects GPU UUIDs outside the supported NVIDIA format with BAD_GPU_ID, assigns no weight and omits those GPUs from sellable inventory. Simulation IDs remain allowed when timing is off. This is validation code with regression coverage, not hardware attestation or proof that live validators deployed it.",
+          "sources": [
+            {
+              "url": "https://github.com/weircompute/weir-subnet/commit/3171d702e49fcd827332e1d30f00a40f166493c8",
+              "label": "Primary research or implementation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A specific miner inventory and reward eligibility change. Format validation does not prove physical GPU authenticity.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": [
+        {
+          "headline": "SN41 Almanac reports October fees and a verified alpha buyback",
+          "summary": "On November 9, Almanac reported October fees of $109,440, its first six-figure month, with 32% month-over-month volume/revenue growth and 111% growth in average trade size. Its chart labels $109,440 October buyback/burn value. These are team-reported business metrics, not independently audited customer revenue or a demonstrated one-to-one funding reconciliation. A successful add_stake_burn call at finalized block 9471196 on November 9 used 459 TAO to buy and burn 44,220.614304990 Almanac alpha. The matching AlphaBurned and AddStakeBurn describe one operation and are counted once. The TAO is buyback input, not TAO destroyed. Historical identity and registration were unchanged across execution. The initiating wallet differs from the currently verified owner; this is a subnet burn, without an unsupported claim that the team funded it.",
+          "rating": 3,
+          "ratingReason": "A first reported six-figure monthly fee result and a separately verified buyback change the operating picture; private revenue inputs and dollar funding reconciliation remain attributed and unaudited.",
+          "sources": [
+            {
+              "url": "https://x.com/almnc_ai/status/2119898602944496085",
+              "label": "Primary October report and chart"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-09-monitor-1644-chain.json",
+              "label": "Finalized burn, successful call and historical identity evidence"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": [
+        {
+          "headline": "SN50 Synth confirms Forge partnership ahead of mainnet",
+          "summary": "Forge announced its partnership with Synth on November 9 and said Synth had committed capital before mainnet. Synth later quoted the announcement and replied “We’re in,” directly corroborating participation. Neither original specifies the amount or terms, and this review did not verify a transfer, live lending market or mainnet activation. The development is a confirmed partnership announcement with a stated capital commitment, rather than an executed funding total.",
+          "rating": 3,
+          "ratingReason": "Both counterparties confirm a meaningful pre-mainnet partnership and capital commitment. Undisclosed size and terms limit the financing conclusions, without reducing the announcement to housekeeping.",
+          "sources": [
+            {
+              "url": "https://x.com/ForgeLending/status/2119824647218724904",
+              "label": "Primary Forge announcement"
+            },
+            {
+              "url": "https://x.com/SynthdataCo/status/2119876315457437798",
+              "label": "Primary Synth confirmation"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": [
+        {
+          "headline": "SN51 Lium binds remembered filler load to the original container ID",
+          "summary": "The validator now remembers container IDs rather than names alone. A replacement container reusing a filler name does not count as the validator own load. The patch includes replacement-container regression coverage. Merge-only evidence, with fleet deployment unverified.",
+          "sources": [
+            {
+              "url": "https://github.com/Datura-ai/lium-io/commit/1334aa7c26fac19c048d097791d78772fd55d223",
+              "label": "Primary research or implementation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "A concrete resource-accounting correction useful to operators, without a new capacity or revenue claim.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": [
+        {
+          "headline": "SN58 Attune enables Gamma and offers robotics training data for service credits",
+          "summary": "At 13:57 UTC November 10, Robotensor announced that Attune’s first Gamma service is available: customers can arrange direct team access to Horizon robotics data using Attune Gamma. Horizon collects phone-controlled simulated robot demonstrations and first-person recordings of everyday tasks. Finalized block 9475959, extrinsic 15, event 208 at 12:54:12 UTC independently confirms successful SN58 opt-in. A full event scan from global activation block 9471027 through finalized 9476439 found the global activation and this subnet opt-in, with no GammaMinted, GammaSpent or GammaSpendSkipped events. Thus configuration and the team’s availability announcement are established; paid customer use or revenue was not demonstrated through that cutoff. “First subnet” is the team’s claim, consistent with the sole enabled entry in the reviewed state. Model access, bring-your-own-model playground usage and broader robotics services remain future plans.",
+          "sources": [
+            {
+              "url": "https://x.com/robotensor_ai/status/2120153784089207083",
+              "label": "Primary full Robotensor article"
+            },
+            {
+              "url": "https://x.com/robotensor_ai/status/2120154072695157066",
+              "label": "Primary service announcement"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-10-gamma-events.json",
+              "label": "Successful opt-in and full Gamma-event interval"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-10-gamma-state.json",
+              "label": "Finalized global and subnet state"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "A substantive service-payment integration follows network-wide protocol activation, with independent execution proof and a specific robotics-data offering. Customer usage remains separately unverified; no price-based star adjustment is applied.",
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": [
+        {
+          "headline": "SN66 Conjectures retires source27 from active admissions",
+          "summary": "The validator merge pins a tasks revision where Math30Catalog.source27 is retired, and reduces the default tier from307 to306 targets. Tests distinguish readable historical tasks from admissible active tasks. This confirms a source-selection change in code, not a newly solved mathematical result or production rollout.",
+          "sources": [
+            {
+              "url": "https://github.com/conjectures-io/conjectures-validator/commit/3dcd0960035ca9091894f85c94b0e3423fad7028",
+              "label": "Primary research or implementation"
+            },
+            {
+              "url": "https://github.com/conjectures-io/conjectures-tasks/blob/4a10571b0e196007207b02b585fad5e46f16abd6/tiers/tier-1/retired-source-theorems.json",
+              "label": "Primary research or implementation"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Useful admission eligibility correction for participants, with no unsupported reason inferred for retirement.",
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": []
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Unknown",
+      "updates": [
+        {
+          "headline": "SN78 Umi deregisters; a new unnamed subnet takes the slot",
+          "summary": "Finalized November 9 events removed Umi at block 9471098 (20:42 UTC), cleared its identity at 9471122 and registered a replacement at 9471124 (20:47:12 UTC). The replacement has no on-chain identity at reviewed block 9471431. Historical storage identifies the outgoing owner as 5GvYz1…cxVQ3 and the new owner as 5GQWJ3…EJuE. The successful registration queued 85.943556872 TAO as a lock, not a verified sale price or transaction burn. The SN78 number persists, but Umi history and the replacement are separate registrations. The allocation vector reset to the default during cleanup; no owner allocation-change event occurred.",
+          "rating": 4,
+          "ratingReason": "A finalized project/registration replacement changes what SN78 represents. This is major identity and operating-context news, while the successor name and product remain unverified.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-09-monitor-1644-lifecycle.json",
+              "label": "Finalized lifecycle events and historical identity/owner snapshots"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-09-monitor-1644-chain.json",
+              "label": "Finalized vector reconciliation"
+            }
+          ],
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": [
+        {
+          "headline": "SN89 InfiniteQuant code schedules a3% agent-book drawdown limit for November16",
+          "summary": "The code changes the elimination rule from8% to3% at day ends from November16 00:00 UTC. Equity strictly below97% of the unchanged all-time end-of-day high eliminates a book; the high is not reset at cutover, and exactly3% survives the strict comparison. Tests cover replays across the boundary. Live deployment and any individual account outcome remain unverified.",
+          "sources": [
+            {
+              "url": "https://github.com/DeltaCompute24/InfiniteQuant-Subnet/commit/1aa6599e27bf4c245b2c1217fa803890a6263a2f",
+              "label": "Primary research or implementation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A dated prospective participation rule changes how existing and new books are assessed; it is competition mechanics rather than a new investment result.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": []
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": [
+        {
+          "headline": "SN124 Swarm shifts validator/miner allocations and executes an alpha buyback",
+          "summary": "At 14:33:12 UTC November 10, finalized block 9476454, extrinsic 7, event 186 successfully changed Swarm’s five-slot allocation from 0% burn / 0% recycle / about 18% owner / 41% validators / 41% miners to 0% / 0% / about 18% / 49% / 33%. Exact raw vectors, unchanged identity/registration and successful proxy execution are preserved. This redirects future emissions; it is not an 8% transaction burn. Root’s baseline is paid from and capped by the validator bucket, and historical yield estimates can lag. Separately, successful block 9476305 at 14:03:24 UTC used 19.9 TAO in add_stake_burn and actually burned 2,366.605401253 Swarm alpha. Its marker records one raw alpha unit more than AlphaBurned; the archive retains the actual burned amount. TAO is the purchase input, not destroyed TAO; the initiating wallet is not the registered owner and no team funding or customer-revenue source is inferred.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-10-daily-allocation.json",
+              "label": "Full allocation event, exact vectors and historical storage"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-10-daily-burn-executions.json",
+              "label": "Independent successful burn-call and amount verification"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Meaningful changes to participant economics and a qualifying executed buyback merit operational coverage. No product-adoption, guaranteed-yield or investment claim is inferred.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": [
+        {
+          "headline": "SN127 Zils documents admission tracks and worker safeguards",
+          "summary": "November 9 documentation describes mainnet SN127 admission and an 80% Soup / 20% customer-job adapter launch structure, with two larger Soup pools not yet open and their shares burned according to the docs. Registration is admission, not proof of completed paid jobs, customer payments or independently observed live weights. The merged queue heartbeat tolerates transient server errors until three consecutive failed renewals, resets the counter on success and stops immediately on refusal. Qualification documentation also caps runs at three per hotkey per30days. Reconcile this with the existing pending80/20launch documentation item; no deployment or completed paid job is inferred. A documentation merge clarifies that qualification jobs are queued only while a worker is online and sending heartbeats. Only runs trained by that hotkey count toward its three-run limit in30days, and customer jobs require three passing qualification reports in the relevant size band. Merge this with the existing SN127 lease/admission pending item rather than publish another launch story. The change is documentation; no production enforcement change or completed customer job is established.",
+          "sources": [
+            {
+              "url": "https://github.com/ooo-hq/zils/commit/de9512bc5e4dc5edff7ab9c18f6d0b6ce77bc3d9",
+              "label": "Primary admission and launch-track documentation"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/commit/1f8ff93d2b1f789ff9c360c48e95ca161b7ba837",
+              "label": "Primary research or implementation"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/commit/863ce046fc1809c3c429ef65accbcbb2c30a62b1",
+              "label": "Primary research or implementation"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/commit/680949181502b8ff029be2742726e1b312522e46",
+              "label": "Primary research or implementation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Useful participation rules distinguish registration, qualifying workers and launch-track allocation; source changes do not establish completed paid work.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "coverage": {
+    "searched": [
+      "128 active subnet rows reconciled with finalized owner/identity and current market data; 106 official sites loaded, 19 missing configured websites and 3 site errors retained individually.",
+      "18 required ecosystem accounts, active Injective partner and verified fund/researcher accounts reviewed through native X Posts/Replies/Reposts; actual bounded windows retained in the audit.",
+      "Real Grok Auto discovery, attention and omission queries submitted; primary source and finalized chain verification override inconsistent generated claims.",
+      "Complete finalized chain and lifecycle intervals, prior pending leads, public channel Videos and Live tabs, source repositories and sector classification review."
+    ],
+    "gaps": [
+      "Primary SN24 Discord requires login; testing, launch timing and sale claims remain unconfirmed.",
+      "Some original subnet social posts and attached media, including selected older carried leads, remain unreviewed or inaccessible. Secondary digests and repository errors are discovery gaps, not evidence of no news.",
+      "The mapped fund/people review includes verified native accounts and official public pages, but unresolved identities, unreviewed PDFs and portions of seven-day timeline history remain pending.",
+      "Authenticated TaoStats v1 credit/entitlement reconciliation was not completed; no paid provider usage or direct account access is claimed.",
+      "The site audit includes actual desktop rendering and automated desktop/phone tests; a native production phone viewport and a fresh synthetic wallet lookup remain unverified."
+    ]
+  }
+}

@@ -1,0 +1,654 @@
+{
+  "checkedAt": "2026-11-10T14:30:52.001805+00:00",
+  "fromBlock": 9471027,
+  "toBlock": 9476439,
+  "finalizedHash": "0x15f169a1284b10254123140737497f1a6747f11454549db8d4d489f0c941cf5a",
+  "runtime": 488,
+  "source": "Opentensor archive RPC",
+  "scannedThrough": 9476439,
+  "events": [
+    {
+      "block": 9471027,
+      "hash": "0x62a453d8cf6310660758466b443ae573c9240ce9ef6752cffcf72e4edb9866e2",
+      "timestamp": 1794256068000,
+      "eventIndex": 160,
+      "event": {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 5,
+        "event": {
+          "event_index": "1312",
+          "module_id": "AdminUtils",
+          "event_id": "GammaEnabledSet",
+          "attributes": {
+            "enabled": true
+          }
+        },
+        "event_index": 19,
+        "module_id": "AdminUtils",
+        "event_id": "GammaEnabledSet",
+        "attributes": {
+          "enabled": true
+        },
+        "topics": []
+      },
+      "sameExtrinsicEvents": [
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 5,
+          "event": {
+            "event_index": "0508",
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+              "amount": 227629
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Withdraw",
+          "attributes": {
+            "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+            "amount": 227629
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 5,
+          "event": {
+            "event_index": "0505",
+            "module_id": "Balances",
+            "event_id": "Unreserved",
+            "attributes": {
+              "who": "5E7RCRrPVS8TckCDjr92B5ciGziwz2kfvxe4URy3L7AgirGJ",
+              "amount": 196000000
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Unreserved",
+          "attributes": {
+            "who": "5E7RCRrPVS8TckCDjr92B5ciGziwz2kfvxe4URy3L7AgirGJ",
+            "amount": 196000000
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 5,
+          "event": {
+            "event_index": "1312",
+            "module_id": "AdminUtils",
+            "event_id": "GammaEnabledSet",
+            "attributes": {
+              "enabled": true
+            }
+          },
+          "event_index": 19,
+          "module_id": "AdminUtils",
+          "event_id": "GammaEnabledSet",
+          "attributes": {
+            "enabled": true
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 5,
+          "event": {
+            "event_index": "0c00",
+            "module_id": "Sudo",
+            "event_id": "Sudid",
+            "attributes": {
+              "sudo_result": {
+                "Ok": []
+              }
+            }
+          },
+          "event_index": 12,
+          "module_id": "Sudo",
+          "event_id": "Sudid",
+          "attributes": {
+            "sudo_result": {
+              "Ok": []
+            }
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 5,
+          "event": {
+            "event_index": "0d02",
+            "module_id": "Multisig",
+            "event_id": "MultisigExecuted",
+            "attributes": {
+              "approving": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+              "timepoint": {
+                "height": 9471025,
+                "index": 3
+              },
+              "multisig": "5DcSqBNqCmfdJZRGFSwwcRb2dZdJHZuKK8Tb1Gx8gbmF5E8s",
+              "call_hash": "0x6d5f45d91e407d8fd4f8904b944f936ccdc093a201764aba6fa81384218e6048",
+              "result": {
+                "Ok": []
+              }
+            }
+          },
+          "event_index": 13,
+          "module_id": "Multisig",
+          "event_id": "MultisigExecuted",
+          "attributes": {
+            "approving": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+            "timepoint": {
+              "height": 9471025,
+              "index": 3
+            },
+            "multisig": "5DcSqBNqCmfdJZRGFSwwcRb2dZdJHZuKK8Tb1Gx8gbmF5E8s",
+            "call_hash": "0x6d5f45d91e407d8fd4f8904b944f936ccdc093a201764aba6fa81384218e6048",
+            "result": {
+              "Ok": []
+            }
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 5,
+          "event": {
+            "event_index": "0507",
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+              "amount": 0
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Deposit",
+          "attributes": {
+            "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+            "amount": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 5,
+          "event": {
+            "event_index": "0600",
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+              "actual_fee": 227629,
+              "tip": 0
+            }
+          },
+          "event_index": 6,
+          "module_id": "TransactionPayment",
+          "event_id": "TransactionFeePaid",
+          "attributes": {
+            "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+            "actual_fee": 227629,
+            "tip": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 5,
+          "event": {
+            "event_index": "0000",
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 910128329,
+                  "proof_size": 20922
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            }
+          },
+          "event_index": 0,
+          "module_id": "System",
+          "event_id": "ExtrinsicSuccess",
+          "attributes": {
+            "dispatch_info": {
+              "weight": {
+                "ref_time": 910128329,
+                "proof_size": 20922
+              },
+              "class": "Normal",
+              "pays_fee": "Yes"
+            }
+          },
+          "topics": []
+        }
+      ]
+    },
+    {
+      "block": 9475959,
+      "hash": "0x3f64b0a26b62260877b7ccd683f6da613d16afe108b8605f3a571f58a2698305",
+      "timestamp": 1794315252000,
+      "eventIndex": 208,
+      "event": {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 15,
+        "event": {
+          "event_index": "1311",
+          "module_id": "AdminUtils",
+          "event_id": "SubnetGammaEnabledSet",
+          "attributes": {
+            "netuid": 58,
+            "enabled": true
+          }
+        },
+        "event_index": 19,
+        "module_id": "AdminUtils",
+        "event_id": "SubnetGammaEnabledSet",
+        "attributes": {
+          "netuid": 58,
+          "enabled": true
+        },
+        "topics": []
+      },
+      "sameExtrinsicEvents": [
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 15,
+          "event": {
+            "event_index": "0508",
+            "module_id": "Balances",
+            "event_id": "Withdraw",
+            "attributes": {
+              "who": "5DCsuLtioCCfgiNQvfe3kiUBDXMs6X4y9PrEiAX7rMZ2e5E3",
+              "amount": 117960
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Withdraw",
+          "attributes": {
+            "who": "5DCsuLtioCCfgiNQvfe3kiUBDXMs6X4y9PrEiAX7rMZ2e5E3",
+            "amount": 117960
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 15,
+          "event": {
+            "event_index": "1311",
+            "module_id": "AdminUtils",
+            "event_id": "SubnetGammaEnabledSet",
+            "attributes": {
+              "netuid": 58,
+              "enabled": true
+            }
+          },
+          "event_index": 19,
+          "module_id": "AdminUtils",
+          "event_id": "SubnetGammaEnabledSet",
+          "attributes": {
+            "netuid": 58,
+            "enabled": true
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 15,
+          "event": {
+            "event_index": "0507",
+            "module_id": "Balances",
+            "event_id": "Deposit",
+            "attributes": {
+              "who": "5DCsuLtioCCfgiNQvfe3kiUBDXMs6X4y9PrEiAX7rMZ2e5E3",
+              "amount": 0
+            }
+          },
+          "event_index": 5,
+          "module_id": "Balances",
+          "event_id": "Deposit",
+          "attributes": {
+            "who": "5DCsuLtioCCfgiNQvfe3kiUBDXMs6X4y9PrEiAX7rMZ2e5E3",
+            "amount": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 15,
+          "event": {
+            "event_index": "0600",
+            "module_id": "TransactionPayment",
+            "event_id": "TransactionFeePaid",
+            "attributes": {
+              "who": "5DCsuLtioCCfgiNQvfe3kiUBDXMs6X4y9PrEiAX7rMZ2e5E3",
+              "actual_fee": 117960,
+              "tip": 0
+            }
+          },
+          "event_index": 6,
+          "module_id": "TransactionPayment",
+          "event_id": "TransactionFeePaid",
+          "attributes": {
+            "who": "5DCsuLtioCCfgiNQvfe3kiUBDXMs6X4y9PrEiAX7rMZ2e5E3",
+            "actual_fee": 117960,
+            "tip": 0
+          },
+          "topics": []
+        },
+        {
+          "phase": "ApplyExtrinsic",
+          "extrinsic_idx": 15,
+          "event": {
+            "event_index": "0000",
+            "module_id": "System",
+            "event_id": "ExtrinsicSuccess",
+            "attributes": {
+              "dispatch_info": {
+                "weight": {
+                  "ref_time": 471620000,
+                  "proof_size": 8478
+                },
+                "class": "Normal",
+                "pays_fee": "Yes"
+              }
+            }
+          },
+          "event_index": 0,
+          "module_id": "System",
+          "event_id": "ExtrinsicSuccess",
+          "attributes": {
+            "dispatch_info": {
+              "weight": {
+                "ref_time": 471620000,
+                "proof_size": 8478
+              },
+              "class": "Normal",
+              "pays_fee": "Yes"
+            }
+          },
+          "topics": []
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "metadataReview": "Every block runtime version read; metadata and target event definitions loaded separately per observed runtime before decoding. No cross-runtime portable-type equality assumed.",
+  "runtimeLayouts": [
+    {
+      "runtime": 488,
+      "firstReviewedBlockHash": "0x62a453d8cf6310660758466b443ae573c9240ce9ef6752cffcf72e4edb9866e2",
+      "portableTypesSha256": "4c8a6304234106a9bab0519d67386f30216d535d1dfb5c83ca6e19a15032985a",
+      "events": [
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "GammaMinted",
+            "fields": [
+              {
+                "name": "netuid",
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": [
+                  "Subnet of the alpha and the gamma."
+                ]
+              },
+              {
+                "name": "coldkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "Coldkey that burned the alpha and owns the deposit."
+                ]
+              },
+              {
+                "name": "hotkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "Hotkey of the deposit credited."
+                ]
+              },
+              {
+                "name": "spender",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The deposit's spender."
+                ]
+              },
+              {
+                "name": "daily_spend_cap",
+                "type": 74,
+                "typeName": "Option<GammaBalance>",
+                "docs": [
+                  "The deposit's daily spend cap."
+                ]
+              },
+              {
+                "name": "tao",
+                "type": 6,
+                "typeName": "TaoBalance",
+                "docs": [
+                  "TAO taken from the coldkey's balance; zero when minting with stake."
+                ]
+              },
+              {
+                "name": "alpha",
+                "type": 43,
+                "typeName": "AlphaBalance",
+                "docs": [
+                  "Alpha burned."
+                ]
+              },
+              {
+                "name": "value",
+                "type": 6,
+                "typeName": "TaoBalance",
+                "docs": [
+                  "TAO value of the alpha burned."
+                ]
+              },
+              {
+                "name": "gamma",
+                "type": 75,
+                "typeName": "GammaBalance",
+                "docs": [
+                  "Gamma credited."
+                ]
+              }
+            ],
+            "index": 160,
+            "docs": [
+              "Gamma was minted for burned alpha."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "GammaSpent",
+            "fields": [
+              {
+                "name": "netuid",
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": [
+                  "Subnet of the deposit."
+                ]
+              },
+              {
+                "name": "coldkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "Coldkey owning the deposit."
+                ]
+              },
+              {
+                "name": "hotkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "Hotkey of the deposit."
+                ]
+              },
+              {
+                "name": "spender",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The deposit's spender, which signed the spend."
+                ]
+              },
+              {
+                "name": "amount",
+                "type": 75,
+                "typeName": "GammaBalance",
+                "docs": [
+                  "Gamma spent."
+                ]
+              },
+              {
+                "name": "reference",
+                "type": 1,
+                "typeName": "[u8; 32]",
+                "docs": [
+                  "The spend entry's reference."
+                ]
+              }
+            ],
+            "index": 165,
+            "docs": [
+              "Gamma was spent from a deposit and burned."
+            ]
+          }
+        },
+        {
+          "pallet": "SubtensorModule",
+          "index": 7,
+          "event": {
+            "name": "GammaSpendSkipped",
+            "fields": [
+              {
+                "name": "netuid",
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": [
+                  "Subnet of the spend."
+                ]
+              },
+              {
+                "name": "hotkey",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "Hotkey of the entry."
+                ]
+              },
+              {
+                "name": "spender",
+                "type": 0,
+                "typeName": "T::AccountId",
+                "docs": [
+                  "The spender that signed the spend."
+                ]
+              },
+              {
+                "name": "amount",
+                "type": 75,
+                "typeName": "GammaBalance",
+                "docs": [
+                  "The entry's amount."
+                ]
+              },
+              {
+                "name": "reference",
+                "type": 1,
+                "typeName": "[u8; 32]",
+                "docs": [
+                  "The spend entry's reference."
+                ]
+              },
+              {
+                "name": "reason",
+                "type": 27,
+                "typeName": "sp_runtime::DispatchError",
+                "docs": [
+                  "Why the entry was skipped."
+                ]
+              }
+            ],
+            "index": 166,
+            "docs": [
+              "A spend entry was skipped, and spent nothing."
+            ]
+          }
+        },
+        {
+          "pallet": "AdminUtils",
+          "index": 19,
+          "event": {
+            "name": "SubnetGammaEnabledSet",
+            "fields": [
+              {
+                "name": "netuid",
+                "type": 41,
+                "typeName": "NetUid",
+                "docs": [
+                  "The network identifier."
+                ]
+              },
+              {
+                "name": "enabled",
+                "type": 10,
+                "typeName": "bool",
+                "docs": [
+                  "Whether gamma minting is enabled on it."
+                ]
+              }
+            ],
+            "index": 17,
+            "docs": [
+              "Gamma minting was enabled or disabled on a subnet."
+            ]
+          }
+        },
+        {
+          "pallet": "AdminUtils",
+          "index": 19,
+          "event": {
+            "name": "GammaEnabledSet",
+            "fields": [
+              {
+                "name": "enabled",
+                "type": 10,
+                "typeName": "bool",
+                "docs": [
+                  "Whether gamma minting is enabled."
+                ]
+              }
+            ],
+            "index": 18,
+            "docs": [
+              "Gamma minting was enabled or disabled network-wide."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "complete": true,
+  "completedAt": "2026-11-10T14:34:20.390709+00:00"
+}

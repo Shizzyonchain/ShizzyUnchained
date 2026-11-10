@@ -1,0 +1,698 @@
+{
+  "checkedAt": "2026-11-10T14:24:59.882258+00:00",
+  "finalizedHash": "0xad8a0904a3f813ee8e3eae3065e009f0c825645f4dcc9aa7e45393d913c99dbf",
+  "finalizedBlock": 9476410,
+  "currentTime": 1794320664000,
+  "runtime": 488,
+  "snapshots": [
+    {
+      "block": 9471026,
+      "hash": "0x31acb0210b8c26e08f23fbaf2f1ab734da2f16576e8cbb7058d3ff7c1d1ac017",
+      "time": 1794256056000,
+      "GammaEnabled": false
+    },
+    {
+      "block": 9471027,
+      "hash": "0x62a453d8cf6310660758466b443ae573c9240ce9ef6752cffcf72e4edb9866e2",
+      "time": 1794256068000,
+      "GammaEnabled": true
+    },
+    {
+      "block": 9476410,
+      "hash": "0xad8a0904a3f813ee8e3eae3065e009f0c825645f4dcc9aa7e45393d913c99dbf",
+      "time": 1794320664000,
+      "GammaEnabled": true
+    }
+  ],
+  "execution": {
+    "extrinsic": {
+      "extrinsic_hash": "0x02aac47f2eeeebc89646e7f3aa2048c6d9fc0c68aa379da9f6b9fdf32e7057ca",
+      "extrinsic_length": 193,
+      "address": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+      "signature": {
+        "Sr25519": "0xe296e08b7eed7a31019899b2f6d2ec875ae5fc1f4aeac8b66110e307945a5c6b6593562872f1e37a3f83ee08b4936790dcb34746f2a8b10bcae94cc983ba8689"
+      },
+      "era": "00",
+      "nonce": 159,
+      "tip": 0,
+      "mode": {
+        "mode": "Disabled"
+      },
+      "call": {
+        "call_index": "0x0d01",
+        "call_function": "as_multi",
+        "call_module": "Multisig",
+        "call_args": [
+          {
+            "name": "threshold",
+            "type": "u16",
+            "value": 2
+          },
+          {
+            "name": "other_signatories",
+            "type": "Vec<AccountId>",
+            "value": [
+              "5E7RCRrPVS8TckCDjr92B5ciGziwz2kfvxe4URy3L7AgirGJ",
+              "5FevFjov8435t5XC2MUSRpFYxtthE8pZy1toHpgAAia3ZphG"
+            ]
+          },
+          {
+            "name": "maybe_timepoint",
+            "type": "Option<Timepoint<BlockNumberFor>>",
+            "value": {
+              "height": 9471025,
+              "index": 3
+            }
+          },
+          {
+            "name": "call",
+            "type": "RuntimeCall",
+            "value": {
+              "call_index": "0x0c00",
+              "call_function": "sudo",
+              "call_module": "Sudo",
+              "call_args": [
+                {
+                  "name": "call",
+                  "type": "RuntimeCall",
+                  "value": {
+                    "call_index": "0x1376",
+                    "call_function": "sudo_set_gamma_enabled",
+                    "call_module": "AdminUtils",
+                    "call_args": [
+                      {
+                        "name": "enabled",
+                        "type": "bool",
+                        "value": true
+                      }
+                    ],
+                    "call_hash": "0xa299382bf1ac1e1e033c23478064df6bd491b53ac2891354fdc2a08cf1aad605"
+                  }
+                }
+              ],
+              "call_hash": "0xf9fcdd05008da2b62a24acf04f898b11e9648a6d48f17db2b20cbcf1e1c95741"
+            }
+          },
+          {
+            "name": "max_weight",
+            "type": "Weight",
+            "value": {
+              "ref_time": 331829000,
+              "proof_size": 9913
+            }
+          }
+        ],
+        "call_hash": "0xed5fa3d6f4896e017e944c40a55d1d87954d781bf7da32e0fe29f027c89cc8f7"
+      }
+    },
+    "events": [
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 5,
+        "event": {
+          "event_index": "0508",
+          "module_id": "Balances",
+          "event_id": "Withdraw",
+          "attributes": {
+            "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+            "amount": 227629
+          }
+        },
+        "event_index": 5,
+        "module_id": "Balances",
+        "event_id": "Withdraw",
+        "attributes": {
+          "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+          "amount": 227629
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 5,
+        "event": {
+          "event_index": "0505",
+          "module_id": "Balances",
+          "event_id": "Unreserved",
+          "attributes": {
+            "who": "5E7RCRrPVS8TckCDjr92B5ciGziwz2kfvxe4URy3L7AgirGJ",
+            "amount": 196000000
+          }
+        },
+        "event_index": 5,
+        "module_id": "Balances",
+        "event_id": "Unreserved",
+        "attributes": {
+          "who": "5E7RCRrPVS8TckCDjr92B5ciGziwz2kfvxe4URy3L7AgirGJ",
+          "amount": 196000000
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 5,
+        "event": {
+          "event_index": "1312",
+          "module_id": "AdminUtils",
+          "event_id": "GammaEnabledSet",
+          "attributes": {
+            "enabled": true
+          }
+        },
+        "event_index": 19,
+        "module_id": "AdminUtils",
+        "event_id": "GammaEnabledSet",
+        "attributes": {
+          "enabled": true
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 5,
+        "event": {
+          "event_index": "0c00",
+          "module_id": "Sudo",
+          "event_id": "Sudid",
+          "attributes": {
+            "sudo_result": {
+              "Ok": []
+            }
+          }
+        },
+        "event_index": 12,
+        "module_id": "Sudo",
+        "event_id": "Sudid",
+        "attributes": {
+          "sudo_result": {
+            "Ok": []
+          }
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 5,
+        "event": {
+          "event_index": "0d02",
+          "module_id": "Multisig",
+          "event_id": "MultisigExecuted",
+          "attributes": {
+            "approving": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+            "timepoint": {
+              "height": 9471025,
+              "index": 3
+            },
+            "multisig": "5DcSqBNqCmfdJZRGFSwwcRb2dZdJHZuKK8Tb1Gx8gbmF5E8s",
+            "call_hash": "0x6d5f45d91e407d8fd4f8904b944f936ccdc093a201764aba6fa81384218e6048",
+            "result": {
+              "Ok": []
+            }
+          }
+        },
+        "event_index": 13,
+        "module_id": "Multisig",
+        "event_id": "MultisigExecuted",
+        "attributes": {
+          "approving": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+          "timepoint": {
+            "height": 9471025,
+            "index": 3
+          },
+          "multisig": "5DcSqBNqCmfdJZRGFSwwcRb2dZdJHZuKK8Tb1Gx8gbmF5E8s",
+          "call_hash": "0x6d5f45d91e407d8fd4f8904b944f936ccdc093a201764aba6fa81384218e6048",
+          "result": {
+            "Ok": []
+          }
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 5,
+        "event": {
+          "event_index": "0507",
+          "module_id": "Balances",
+          "event_id": "Deposit",
+          "attributes": {
+            "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+            "amount": 0
+          }
+        },
+        "event_index": 5,
+        "module_id": "Balances",
+        "event_id": "Deposit",
+        "attributes": {
+          "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+          "amount": 0
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 5,
+        "event": {
+          "event_index": "0600",
+          "module_id": "TransactionPayment",
+          "event_id": "TransactionFeePaid",
+          "attributes": {
+            "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+            "actual_fee": 227629,
+            "tip": 0
+          }
+        },
+        "event_index": 6,
+        "module_id": "TransactionPayment",
+        "event_id": "TransactionFeePaid",
+        "attributes": {
+          "who": "5GRCukV2rZmSVfJhAXoLjcrU1pMVCf2Ra1ydbiCFZdaQXDXo",
+          "actual_fee": 227629,
+          "tip": 0
+        },
+        "topics": []
+      },
+      {
+        "phase": "ApplyExtrinsic",
+        "extrinsic_idx": 5,
+        "event": {
+          "event_index": "0000",
+          "module_id": "System",
+          "event_id": "ExtrinsicSuccess",
+          "attributes": {
+            "dispatch_info": {
+              "weight": {
+                "ref_time": 910128329,
+                "proof_size": 20922
+              },
+              "class": "Normal",
+              "pays_fee": "Yes"
+            }
+          }
+        },
+        "event_index": 0,
+        "module_id": "System",
+        "event_id": "ExtrinsicSuccess",
+        "attributes": {
+          "dispatch_info": {
+            "weight": {
+              "ref_time": 910128329,
+              "proof_size": 20922
+            },
+            "class": "Normal",
+            "pays_fee": "Yes"
+          }
+        },
+        "topics": []
+      }
+    ]
+  },
+  "subnetGammaEnabled": {
+    "58": true
+  },
+  "subnetGammaPrice": {
+    "1": {
+      "bits": 110884532804024523
+    },
+    "2": {
+      "bits": 69291010664083903
+    },
+    "3": {
+      "bits": 390408100566664703
+    },
+    "4": {
+      "bits": 1082100085824803005
+    },
+    "5": {
+      "bits": 225732150970778856
+    },
+    "6": {
+      "bits": 39341907143105557
+    },
+    "7": {
+      "bits": 42848493353998983
+    },
+    "8": {
+      "bits": 648232936346726309
+    },
+    "9": {
+      "bits": 428479799206311781
+    },
+    "10": {
+      "bits": 79202021550845199
+    },
+    "11": {
+      "bits": 126684665093752289
+    },
+    "12": {
+      "bits": 86428909410436309
+    },
+    "13": {
+      "bits": 72063731368064964
+    },
+    "14": {
+      "bits": 171794818598793977
+    },
+    "15": {
+      "bits": 332703512605388982
+    },
+    "16": {
+      "bits": 41299357621058626
+    },
+    "17": {
+      "bits": 118130123812656045
+    },
+    "18": {
+      "bits": 64293533044127817
+    },
+    "19": {
+      "bits": 151246550633268138
+    },
+    "20": {
+      "bits": 41798584072551877
+    },
+    "21": {
+      "bits": 78844563137750839
+    },
+    "22": {
+      "bits": 50625811281333054
+    },
+    "23": {
+      "bits": 124769677712279818
+    },
+    "24": {
+      "bits": 240629484575876507
+    },
+    "25": {
+      "bits": 75415659227150895
+    },
+    "26": {
+      "bits": 26890380713772525
+    },
+    "27": {
+      "bits": 40988919558310733
+    },
+    "28": {
+      "bits": 492472090584494936
+    },
+    "29": {
+      "bits": 46175402369512045
+    },
+    "30": {
+      "bits": 61406998216868457
+    },
+    "31": {
+      "bits": 61126449264383071
+    },
+    "32": {
+      "bits": 45355222093350440
+    },
+    "33": {
+      "bits": 54927742485374374
+    },
+    "34": {
+      "bits": 224339161024134415
+    },
+    "35": {
+      "bits": 9189289945993271
+    },
+    "36": {
+      "bits": 221346851337642641
+    },
+    "37": {
+      "bits": 48122066552068687
+    },
+    "38": {
+      "bits": 93229303717798171
+    },
+    "39": {
+      "bits": 130485139015311678
+    },
+    "40": {
+      "bits": 30915622607104631
+    },
+    "41": {
+      "bits": 187517139659029857
+    },
+    "42": {
+      "bits": 40048623794640459
+    },
+    "43": {
+      "bits": 72954888798545509
+    },
+    "44": {
+      "bits": 597982872574462923
+    },
+    "45": {
+      "bits": 40329074916757132
+    },
+    "46": {
+      "bits": 60329769842416400
+    },
+    "47": {
+      "bits": 28336436817067901
+    },
+    "48": {
+      "bits": 154088586282629229
+    },
+    "49": {
+      "bits": 97605989369719304
+    },
+    "50": {
+      "bits": 56893850355318702
+    },
+    "51": {
+      "bits": 2253326789470490758
+    },
+    "52": {
+      "bits": 110730132925863239
+    },
+    "53": {
+      "bits": 496009755282538335
+    },
+    "54": {
+      "bits": 96340180903198648
+    },
+    "55": {
+      "bits": 36757927621072936
+    },
+    "56": {
+      "bits": 264073710807096862
+    },
+    "57": {
+      "bits": 36995913412485934
+    },
+    "58": {
+      "bits": 245176106863409568
+    },
+    "59": {
+      "bits": 121743332781696486
+    },
+    "60": {
+      "bits": 48196276277434727
+    },
+    "61": {
+      "bits": 110171377664612928
+    },
+    "62": {
+      "bits": 137524297161692843
+    },
+    "63": {
+      "bits": 76415449473076618
+    },
+    "64": {
+      "bits": 1255518967882131490
+    },
+    "65": {
+      "bits": 48615584073925438
+    },
+    "66": {
+      "bits": 42432112852624687
+    },
+    "67": {
+      "bits": 49220454056419296
+    },
+    "68": {
+      "bits": 313930386550684632
+    },
+    "69": {
+      "bits": 90936758898177884
+    },
+    "70": {
+      "bits": 158405847640672090
+    },
+    "71": {
+      "bits": 69107025799897733
+    },
+    "72": {
+      "bits": 38487966318533440
+    },
+    "73": {
+      "bits": 44899017119009278
+    },
+    "74": {
+      "bits": 78798139514042579
+    },
+    "75": {
+      "bits": 317876055181470185
+    },
+    "76": {
+      "bits": 61364448335784108
+    },
+    "77": {
+      "bits": 83782785525311905
+    },
+    "78": {
+      "bits": 78324205064451731
+    },
+    "79": {
+      "bits": 55633409664755759
+    },
+    "80": {
+      "bits": 266034312604500007
+    },
+    "81": {
+      "bits": 95774301941435339
+    },
+    "82": {
+      "bits": 630545940330632332
+    },
+    "83": {
+      "bits": 125947168633231179
+    },
+    "84": {
+      "bits": 37755544546293160
+    },
+    "85": {
+      "bits": 79217779693145371
+    },
+    "86": {
+      "bits": 17708470123314581
+    },
+    "87": {
+      "bits": 49535342219019878
+    },
+    "88": {
+      "bits": 45198779954379556
+    },
+    "89": {
+      "bits": 53715371376349534
+    },
+    "90": {
+      "bits": 270298277392199268
+    },
+    "91": {
+      "bits": 69578440367424657
+    },
+    "92": {
+      "bits": 466087138923874218
+    },
+    "93": {
+      "bits": 262144803289905346
+    },
+    "94": {
+      "bits": 66314156074421850
+    },
+    "95": {
+      "bits": 535218319930120762
+    },
+    "96": {
+      "bits": 53764176241129087
+    },
+    "97": {
+      "bits": 206482277617658976
+    },
+    "98": {
+      "bits": 39350269856295507
+    },
+    "99": {
+      "bits": 77458072599205217
+    },
+    "100": {
+      "bits": 61093994260159217
+    },
+    "101": {
+      "bits": 61049847365015268
+    },
+    "102": {
+      "bits": 72045184853254591
+    },
+    "103": {
+      "bits": 72635414703987503
+    },
+    "104": {
+      "bits": 73600192991099540
+    },
+    "105": {
+      "bits": 89768915194038911
+    },
+    "106": {
+      "bits": 39035186573848560
+    },
+    "107": {
+      "bits": 526969542269656773
+    },
+    "108": {
+      "bits": 77492735228299171
+    },
+    "109": {
+      "bits": 33804113248876285
+    },
+    "110": {
+      "bits": 556782827437266555
+    },
+    "111": {
+      "bits": 75543787773393010
+    },
+    "112": {
+      "bits": 156531642516345493
+    },
+    "113": {
+      "bits": 36420538837785119
+    },
+    "114": {
+      "bits": 314376048303137433
+    },
+    "115": {
+      "bits": 40360311838163898
+    },
+    "116": {
+      "bits": 565250858600431169
+    },
+    "117": {
+      "bits": 114210567523558417
+    },
+    "118": {
+      "bits": 58015674723115307
+    },
+    "119": {
+      "bits": 39923134030124581
+    },
+    "120": {
+      "bits": 788145144044988943
+    },
+    "121": {
+      "bits": 61090158839723993
+    },
+    "122": {
+      "bits": 48632492388752521
+    },
+    "123": {
+      "bits": 40617762256549077
+    },
+    "124": {
+      "bits": 155271600070139768
+    },
+    "125": {
+      "bits": 42371240448155476
+    },
+    "126": {
+      "bits": 77149824932131978
+    },
+    "127": {
+      "bits": 59617019361901316
+    },
+    "128": {
+      "bits": 52866542549716329
+    }
+  }
+}

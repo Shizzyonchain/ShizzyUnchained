@@ -531,7 +531,12 @@ async def chain_activity(
     where = "WHERE ($1::integer IS NULL OR e.netuid=$1 OR e.destination_netuid=$1)"
     summary_where = "WHERE ($1::integer IS NULL OR e.netuid=$1 OR e.destination_netuid=$1)"
     rows = await app.state.db.fetch(
-        f"""SELECT e.block_number,e.event_index,e.time,e.event_type,e.netuid,
+        f"""WITH selected_events AS MATERIALIZED (
+              SELECT e.* FROM chain_events e
+              {where}
+              ORDER BY e.block_number DESC,e.event_index DESC LIMIT $2
+            )
+            SELECT e.block_number,e.event_index,e.time,e.event_type,e.netuid,
                    e.destination_netuid,e.coldkey,e.destination_coldkey,e.hotkey,
                    e.destination_hotkey,e.amount_alpha,e.amount_tao,e.perpetual,
                    CASE WHEN e.amount_alpha IS NOT NULL
@@ -540,7 +545,7 @@ async def chain_activity(
                    END AS tao_value,
                    s.name,s.symbol,ds.name AS destination_name,
                    ds.symbol AS destination_symbol
-            FROM chain_events e
+            FROM selected_events e
             LEFT JOIN subnets s ON s.netuid=e.netuid
             LEFT JOIN subnets ds ON ds.netuid=e.destination_netuid
             LEFT JOIN LATERAL (
@@ -548,8 +553,7 @@ async def chain_activity(
               WHERE netuid=e.netuid AND time <= e.time
               ORDER BY time DESC LIMIT 1
             ) ep ON true
-            {where}
-            ORDER BY e.block_number DESC,e.event_index DESC LIMIT $2""",
+            ORDER BY e.block_number DESC,e.event_index DESC""",
         netuid, limit,
     )
     summary = await app.state.db.fetchrow(
@@ -557,6 +561,7 @@ async def chain_activity(
               SELECT time,event_type,netuid,destination_netuid,amount_alpha,amount_tao
               FROM chain_events
               WHERE time >= now()-interval '24 hours'
+                AND ($1::integer IS NULL OR netuid=$1 OR destination_netuid=$1)
             )
             SELECT
               COALESCE(SUM(amount_alpha) FILTER (
@@ -592,7 +597,8 @@ async def chain_activity(
             FROM recent_events e
             LEFT JOIN LATERAL (
               SELECT price_tao FROM subnet_price_samples
-              WHERE netuid=e.netuid AND time <= e.time
+              WHERE e.event_type IN ('StakeLocked','StakeUnlocked')
+                AND netuid=e.netuid AND time <= e.time
               ORDER BY time DESC LIMIT 1
             ) ep ON true
             {summary_where}""",

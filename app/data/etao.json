@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-09T21:55:21.130625+00:00",
-  "block": 9471431,
-  "hash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
-  "chainTime": 1794260916000,
+  "checkedAt": "2026-11-10T14:38:59.929533+00:00",
+  "block": 9476478,
+  "hash": "0xe60f744162ca67f0498da109f88e40615ac138bfd1ba5e1ecc87405e0ba3aefc",
+  "chainTime": 1794321480000,
   "runtime": 488,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -870,9 +870,9 @@
     "124": [
       "0",
       "0",
-      "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "3320413933267719290",
+      "9038904596117680291",
+      "6087425544324152034"
     ],
     "125": [
       "0",
@@ -1514,6 +1514,30 @@
       "name": "SOMA",
       "registrationBlock": 7312241,
       "evidence": "/evidence/2026-11-09-daily-allocation.json"
+    },
+    {
+      "netuid": 124,
+      "block": 9476454,
+      "hash": "0x10abd0e078f73975926f0a3e8f0b25b54f2d6acc429dc6947b439537cf805d01",
+      "timestamp": 1794321192000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "3320413933267719290",
+        "9038904596117680291",
+        "6087425544324152034"
+      ],
+      "extrinsic": 7,
+      "name": "Swarm",
+      "registrationBlock": 5813454,
+      "evidence": "/evidence/2026-11-10-daily-allocation.json"
     }
   ],
   "names": {
@@ -1648,9 +1672,9 @@
   },
   "observations": [],
   "ownerSnapshot": {
-    "block": 9471431,
-    "hash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
-    "checkedAt": "2026-11-09T21:55:21.130625+00:00",
+    "block": 9476286,
+    "hash": "0x313736aa2bba80cbe901b094d459797c5c4644706072fd76139d47ab1226a8de",
+    "checkedAt": "2026-11-10T14:47:44.101379+00:00",
     "owners": {
       "1": "5HCFWvRqzSHWRPecN7q8J6c7aKQnrCZTMHstPv39xL1wgDHh",
       "2": "5EcYQ3W77ndrmMWdvVQusoFqY8doxfP3U2zrh7xZQiaz7avY",
@@ -1784,14 +1808,14 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9471431,
-    "finalizedHash": "0x52aac99641697c8b39a26d13b269e140ff47aed642e8192a172e8fb269e8d8ed",
-    "checkedAt": "2026-11-09T21:55:21.130625+00:00",
-    "eventCount": 18,
+    "toBlock": 9476478,
+    "finalizedHash": "0xe60f744162ca67f0498da109f88e40615ac138bfd1ba5e1ecc87405e0ba3aefc",
+    "checkedAt": "2026-11-10T14:38:59.929533+00:00",
+    "eventCount": 19,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Reviewed runtime definitions, positive decoding controls and per-block runtime checks retained. Historical allocation and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history.",
-    "evidence": "/evidence/2026-11-09-monitor-1644-chain.json"
+    "evidence": "/evidence/2026-11-10-daily-extension.json"
   },
   "lifecycleResets": [
     {

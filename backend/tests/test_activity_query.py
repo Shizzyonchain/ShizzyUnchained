@@ -56,6 +56,24 @@ async def test_activity_summary_filters_history_before_price_join():
 
 
 @pytest.mark.asyncio
+async def test_activity_price_lookups_are_bounded_before_enrichment():
+    database = RecordingDatabase()
+    app.state.db = database
+
+    await chain_activity(netuid=58, limit=200)
+
+    event_query, summary_query = database.queries[:2]
+    # PostgreSQL must select the requested page before historical-price enrichment.
+    assert "selected_events AS MATERIALIZED" in event_query
+    assert event_query.index("LIMIT $2") < event_query.index("LEFT JOIN LATERAL")
+    assert "FROM selected_events e" in event_query
+    # Only lock/unlock totals use historical prices; moves must not trigger lookups.
+    assert "WHERE e.event_type IN ('StakeLocked','StakeUnlocked')" in summary_query
+    recent = summary_query[:summary_query.index("SELECT\n              COALESCE")]
+    assert "netuid=$1 OR destination_netuid=$1" in recent
+
+
+@pytest.mark.asyncio
 async def test_screener_uses_yield_metrics_from_latest_sample():
     database = RecordingDatabase()
     app.state.db = database
