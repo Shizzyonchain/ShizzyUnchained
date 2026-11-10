@@ -28,7 +28,11 @@ test('directory classifications have dated source evidence and no inherited clas
 
 test("review corrections follow current products rather than legacy descriptions",()=>{
  const tags=n=>data.subnets.find(row=>row.netuid===n).sectors;
- assert.ok(tags(24).includes("training")&&!tags(24).includes("inference"));
+ // The current ms.computer website is still coming soon; Quasar's old product
+ // classification must not silently describe the renamed team's current product.
+ assert.equal(data.subnets.find(row=>row.netuid===24).name,"ms.computer");
+ assert.deepEqual(tags(24),[]);
+ assert.equal(data.subnets.find(row=>row.netuid===24).source,"https://ms.computer/");
  assert.ok(tags(74).includes("software")&&!tags(74).includes("agents"));
  assert.ok(tags(96).includes("inference")&&!tags(96).includes("training"));
  // Registration 9447220 replaced Thirty Spokes without a successor identity.
