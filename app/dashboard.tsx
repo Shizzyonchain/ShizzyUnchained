@@ -1,6 +1,7 @@
 "use client";
 import { matchesSubnetQuery } from "./lib/subnet-search";
 import { quoteFresh, quoteUsable, type TaoQuote } from "./lib/fx-price";
+import { marketVolume, tradingVolume } from "./lib/market-volume";
 
 import { CSSProperties, FormEvent, ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
@@ -782,7 +783,8 @@ export function Dashboard({
   const chartNote = (chartData.notice ? `${chartData.notice} · ` : "") + (timeframe === "1w" || timeframe === "1mo" ? "Calendar candles from daily history · UTC · Current period incomplete · " : "") + (showTaoChart ? (chartData.method === "extended-price" ? "Coinbase recent candles · TaoStats older price history · Historical candle volume unavailable" : chartData.method === "taostats-price" ? "TaoStats historical TAO/USD price candles · Candle volume unavailable" : "Coinbase TAO/USD candles · Volume in TAO")
     : chartData.method === "taostats-alpha" ? `TaoStats candles${currency === "usd" ? ` · USD candles use historical TAO/USD rates; high/low are estimates${missingUsdPeriods > 2 ? ` · ${missingUsdPeriods} periods lack USD quotes; TAO mode retains those subnet candles` : ""}` : " · Alpha/TAO"}`
     : `${chartData.method === "boundary" ? "Interval-boundary prices; wicks and volume are estimates" : "Sampled on-chain prices; volume is estimated"}${currency === "usd" ? " · USD estimates use matching historical TAO/USD candles" : " · Alpha/TAO"}`);
-  const totalVolume = rows.reduce((sum, r) => sum + Number(r.volume_24h_tao || 0), 0);
+  const volumeCoverage = marketVolume(rows);
+  const totalVolume = volumeCoverage.total;
   const rankedMovers = rows.filter(row => row.netuid > 0 && row.change_1h != null && row.change_1h !== "" && Number.isFinite(Number(row.change_1h))).sort((a, b) => Number(b.change_1h || 0) - Number(a.change_1h || 0));
   const weakestMover = rankedMovers[rankedMovers.length - 1];
   const advancingMarkets = rows.filter((row) => Number(row.change_1h || 0) > 0).length;
@@ -1081,8 +1083,8 @@ export function Dashboard({
               </div>
               <div>
                 <OverviewHelp title="24h volume" />
-                <strong>{!hasMarketData || totalVolume === 0 ? "—" : money(totalVolume)}</strong>
-                <small>{hasMarketData ? (dataState === "stale" ? "Last finalized snapshot" : totalVolume === 0 ? "Collecting trade history" : `Across ${rows.length} markets`) : "Loading market service"}</small>
+                <strong>{!hasMarketData || totalVolume === null ? "—" : money(totalVolume)}</strong>
+                <small>{hasMarketData ? (totalVolume === null ? `Incomplete history · ${volumeCoverage.available} of ${volumeCoverage.markets} markets` : dataState === "stale" ? "Last finalized snapshot" : `Across ${volumeCoverage.markets} markets`) : "Loading market service"}</small>
               </div>
               <div>
                 <OverviewHelp title="Top mover" />
@@ -1476,7 +1478,7 @@ export function Dashboard({
                         >
                           {r.conviction_locked_alpha == null ? "—" : <>{compactAlpha(r.conviction_locked_alpha)} α<small>{fmt(r.conviction_locked_pct, 2)}% of α-out</small></>}
                         </td>
-                        <td>{money(r.volume_24h_tao)}</td>
+                        <td>{tradingVolume(r.volume_24h_tao) === null ? "—" : money(r.volume_24h_tao)}</td>
                         <td>{money(r.tao_reserve)}</td>
                         <td className={`liquidation-column ${changeClass(r.liquidation_diff_pct)}`} data-help={r.liquidation_price_tao == null ? "A fresh payout estimate is unavailable." : `Estimated liquidation price: ${fmt(r.liquidation_price_tao, 6)} τ per α. ${liquidationExplanation}`}>
                           {liquidationPercent(r.liquidation_diff_pct)}

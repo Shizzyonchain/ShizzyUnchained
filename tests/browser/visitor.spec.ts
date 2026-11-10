@@ -44,6 +44,20 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
     expect(errors, "Uncaught browser errors").toEqual([]);
   }, { auto: true }],
 });
+
+test("a reset volume counter never renders negative turnover or a complete network total", async ({ page }) => {
+  await page.route("**/api/backend/v1/screener", route => route.fulfill({ json: {
+    data: markets.map(row => ({ ...row, time: new Date().toISOString(), volume_24h_tao: row.netuid === 78 ? "-201640.896099794" : "10" })),
+    cached_at: new Date().toISOString(),
+  } }));
+  await page.goto("/");
+  const tile = page.getByRole("button", { name: "About 24h volume", exact: true }).locator("..");
+  await expect(tile).toContainText("Incomplete history · 127 of 128 markets");
+  await expect(tile.locator("strong")).toHaveText("—");
+  const row = page.locator(".screener tbody tr").filter({ hasText: "SN78" });
+  await expect(row.locator("td").nth(11)).toHaveText("—");
+  await noOverflow(page);
+});
 const search = (page: Page) => page.getByRole("searchbox", { name: "Search subnets by name or subnet number" });
 
 test('news archive search keeps filters in the URL, finds history and handles empty results', async ({ page }) => {

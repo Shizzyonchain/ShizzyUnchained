@@ -280,7 +280,8 @@ async def _refresh_screener(current_app: FastAPI):
                   END AS conviction_locked_pct,
                   (l.price_tao * l.circulating_alpha)
                     AS market_cap_tao,
-                  l.volume_tao - COALESCE(v24.volume_tao,l.volume_tao) AS volume_24h_tao,
+                  CASE WHEN l.volume_tao >= v24.volume_tao
+                       THEN l.volume_tao - v24.volume_tao END AS volume_24h_tao,
                   p10.price_tao AS price_10m_tao,p10.time AS time_10m,
                   p1.price_tao AS price_1h_tao,p1.time AS time_1h,
                   p24.price_tao AS price_24h_tao,p24.time AS time_24h,
@@ -298,11 +299,14 @@ async def _refresh_screener(current_app: FastAPI):
                   p24.emission_share AS emission_share_24h,
                   100 * (l.emission_share - p24.emission_share)
                     AS emission_change_24h,
-                  l.volume_tao - p1.volume_tao AS volume_1h_tao,
-                  (l.volume_tao - p1.volume_tao) /
-                    NULLIF(p1.volume_tao - p2.volume_tao,0) AS volume_acceleration_1h,
-                  (l.volume_tao - p24.volume_tao) /
-                    NULLIF(p24.volume_tao - p48.volume_tao,0) AS volume_acceleration_24h
+                  CASE WHEN l.volume_tao >= p1.volume_tao
+                       THEN l.volume_tao - p1.volume_tao END AS volume_1h_tao,
+                  CASE WHEN l.volume_tao >= p1.volume_tao AND p1.volume_tao > p2.volume_tao
+                       THEN (l.volume_tao - p1.volume_tao) /
+                         (p1.volume_tao - p2.volume_tao) END AS volume_acceleration_1h,
+                  CASE WHEN l.volume_tao >= p24.volume_tao AND p24.volume_tao > p48.volume_tao
+                       THEN (l.volume_tao - p24.volume_tao) /
+                         (p24.volume_tao - p48.volume_tao) END AS volume_acceleration_24h
            FROM latest l LEFT JOIN subnets s USING(netuid)
            {liquidation_join("l")}
            LEFT JOIN LATERAL (
@@ -341,6 +345,7 @@ async def _refresh_screener(current_app: FastAPI):
            LEFT JOIN LATERAL (
              SELECT volume_tao FROM subnet_price_samples
              WHERE netuid=l.netuid AND time <= l.time - interval '24 hours'
+               AND time >= l.time - interval '24 hours 10 minutes'
              ORDER BY time DESC LIMIT 1
            ) v24 ON true
            ORDER BY market_cap_tao DESC NULLS LAST"""
