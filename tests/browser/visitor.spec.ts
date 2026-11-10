@@ -745,13 +745,26 @@ test("eTAO shows burn and recycle allocations alongside reward recipients", asyn
   expect(change, "Exercise a real reviewed nonzero burn allocation").toBeTruthy();
   const transaction = page.getByRole("article").filter({ has: page.getByRole("link", { name: new RegExp(`^Transaction ${change.block}-${change.extrinsic} `) }) });
   for (const label of ["Burn", "Recycle", "Owner", "Validators", "Miners"]) {
-    await expect(transaction.locator("dt").getByText(label, { exact: true })).toBeVisible();
+    await expect(transaction.getByRole("button", { name: `Explain ${label}`, exact: true })).toBeVisible();
   }
   const percent = `${(Number(change.after[0]) / 18446744073709551615 * 100).toFixed(2)}%`;
-  await expect(transaction.locator("dl > div").filter({ has: page.getByText("Burn", { exact: true }) })).toContainText(percent);
+  await expect(transaction.locator("dl > div").filter({ has: page.getByRole("button", { name: "Explain Burn", exact: true }) })).toContainText(percent);
+  const burnHelp = transaction.getByRole("button", { name: "Explain Burn", exact: true });
+  await burnHelp.focus();
+  await expect(page.getByRole("tooltip")).toContainText("Burned alpha still counts toward total issuance");
+  await burnHelp.press("Escape");
+  await expect(page.getByRole("tooltip")).toHaveCount(0);
+  const recycleHelp = transaction.getByRole("button", { name: "Explain Recycle", exact: true });
+  await recycleHelp.click();
+  await expect(page.getByRole("tooltip")).toContainText("removed from outstanding alpha and total issuance");
+  const tipBounds = await page.getByRole("tooltip").boundingBox();
+  expect(tipBounds).toBeTruthy();
+  expect(tipBounds!.x).toBeGreaterThanOrEqual(0);
+  expect(tipBounds!.x + tipBounds!.width).toBeLessThanOrEqual(page.viewportSize()!.width);
+  await recycleHelp.press("Escape");
   await page.getByLabel("Find a subnet", { exact: true }).fill(`SN${change.netuid}`);
   const current = page.getByRole("article").filter({ has: page.getByRole("heading", { name: new RegExp(`^SN${change.netuid} .*${change.name}$`) }) }).last();
-  await expect(current.locator("dl > div").filter({ has: page.getByText("Burn", { exact: true }) })).toContainText(percent);
+  await expect(current.locator("dl > div").filter({ has: page.getByRole("button", { name: "Explain Burn", exact: true }) })).toContainText(percent);
   await expect(page.getByRole("main")).not.toContainText("slots remain zero");
   await expect(page.getByRole("main")).toContainText("does not prove a specific amount has already been destroyed");
 });
