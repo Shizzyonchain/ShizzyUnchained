@@ -310,7 +310,26 @@
     {
       "netuid": 21,
       "name": "AdTAO",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN21 AdTAO clarifies its baseline gate, earning seats and receipt-history limits",
+          "summary": "November 10 documentation requires a score strictly above 1.05 times baseline and predictions for at least 90% of the outcomes scored for that baseline, preventing a submission from simply skipping difficult cases. One hotkey per coldkey earns for the day: highest standing wins, then earlier commitment and then the hotkey tie-breaker; other hotkeys may still run and score. The documentation distinguishes 28-day standing from the separate 35-day absence/charge eligibility window. It also discloses that the daily basis map contains 6,116 settled episodes only through August 23 and has not been rebuilt; later receipts expose per-outcome efficiency basis and account goal basis separately. These are documentation clarifications and data-coverage disclosures, not new customer results or verified payouts.",
+          "rating": 2,
+          "ratingReason": "Useful bounded rule and data-documentation clarifications, rather than a new subnet identity, product launch or executed economic change.",
+          "sources": [
+            {
+              "url": "https://github.com/ippcteam/SN21-adtao/commit/997e64fb108d53909f88b079f3194a6d0ae684d1",
+              "label": "Primary baseline and earning-seat documentation"
+            },
+            {
+              "url": "https://github.com/ippcteam/SN21-adtao/commit/cf16a538fc497a246272cec94b9d790cf9121e53",
+              "label": "Primary receipt-map cutoff disclosure"
+            }
+          ],
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
     },
     {
       "netuid": 22,
@@ -515,7 +534,22 @@
     {
       "netuid": 39,
       "name": "deprecated",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN39 Fugal repairs its reveal watcher and offline consensus audit",
+          "summary": "November 10 source fixes make the watcher read the score field from the reveal object rather than treating the entire object as a number, resolving a TypeError. The separate offline consensus-audit utility now compares the complete set of weighted UIDs, including the burn UID, so an all-burn result does not produce a false 100% divergence warning. This utility is not called by the validator’s consensus path, so the patch does not establish a change in live consensus or emissions. The nightly rehearsal also targets the main branch instead of a deleted release branch. Implementation and changelog were inspected; deployment and an independent upstream test run were not verified.",
+          "rating": 2,
+          "ratingReason": "Specific monitoring and offline-tooling repairs are minor operational updates, without overstating a consensus or network-launch change.",
+          "sources": [
+            {
+              "url": "https://github.com/fugal-ai/fugal-subnet/commit/2790cb74cffc19b0ba0569058e41cab7ae12d47b",
+              "label": "Primary watcher and offline-audit fixes"
+            }
+          ],
+          "status": "verified",
+          "importance": "informational"
+        }
+      ]
     },
     {
       "netuid": 40,
@@ -870,7 +904,30 @@
     {
       "netuid": 81,
       "name": "Reliquary",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN81 Reliquary codes an opt-in price auction and tightens completion audits",
+          "summary": "A November 10 implementation and design document add an order-job auction that offers work to cheaper active miners first, limits work in flight according to the audit backlog, and settles verified output tokens at a common period price under the job’s cap. The feature is off unless an administrator explicitly enables auction pricing; the design still lists rollout and tuning questions. The inspected settlement and lease code supports the described mechanism, but no live order, realized price reduction, payment or associated burn was verified. A separate guard forces very short drawn completions through audit instead of allowing an unaudited pass when they are too short to be charged for refusal. Another patch expands accepted chat-template parsing. These are coded changes, not evidence that every production job now uses the auction; upstream tests were not executed by this review.",
+          "rating": 3,
+          "ratingReason": "A substantive opt-in work-allocation and pricing mechanism plus concrete audit guards warrants operational coverage. Activation and economic results remain unverified.",
+          "sources": [
+            {
+              "url": "https://github.com/reliquadotai/reliquary/commit/9619e7c56e53c3f5cafc96c6363ba7413a56fa74",
+              "label": "Primary opt-in auction design and implementation"
+            },
+            {
+              "url": "https://github.com/reliquadotai/reliquary/commit/2a9fba158a8124451e93880490780cfe77df9a18",
+              "label": "Primary short-completion audit guard"
+            },
+            {
+              "url": "https://github.com/reliquadotai/reliquary/commit/62160703f831117294e45a4bca97d2729f9b3eda",
+              "label": "Primary chat-template parser compatibility fix"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 82,
@@ -912,16 +969,20 @@
       "name": "InfiniteQuant",
       "updates": [
         {
-          "headline": "SN89 InfiniteQuant code schedules a3% agent-book drawdown limit for November16",
-          "summary": "The code changes the elimination rule from8% to3% at day ends from November16 00:00 UTC. Equity strictly below97% of the unchanged all-time end-of-day high eliminates a book; the high is not reset at cutover, and exactly3% survives the strict comparison. Tests cover replays across the boundary. Live deployment and any individual account outcome remain unverified.",
+          "headline": "SN89 InfiniteQuant schedules a lower LF bond threshold and stricter drawdown rules",
+          "summary": "The code changes the elimination rule from8% to3% at day ends from November16 00:00 UTC. Equity strictly below97% of the unchanged all-time end-of-day high eliminates a book; the high is not reset at cutover, and exactly3% survives the strict comparison. Tests cover replays across the boundary. Live deployment and any individual account outcome remain unverified. A separate November 10 commit reduces the LF eligibility threshold from 1,000 to 500 alpha per UID starting with the November 11 00:00 UTC snapshot, which is November 10 at 7 PM Eastern. November 9 and 10 snapshots retain the 1,000-alpha threshold when replayed. The calculation divides a coldkey’s alpha across its hotkeys; configuration can override the defaults. This is a coded eligibility rule, without a verified payment, escrow transfer or burn.",
           "sources": [
             {
               "url": "https://github.com/DeltaCompute24/InfiniteQuant-Subnet/commit/1aa6599e27bf4c245b2c1217fa803890a6263a2f",
               "label": "Primary research or implementation"
+            },
+            {
+              "url": "https://github.com/DeltaCompute24/InfiniteQuant-Subnet/commit/6c58e7ee3615ee90c6e949009d5bbdcf53a28c49",
+              "label": "Primary dated LF eligibility-threshold implementation"
             }
           ],
           "rating": 3,
-          "ratingReason": "A dated prospective participation rule changes how existing and new books are assessed; it is competition mechanics rather than a new investment result.",
+          "ratingReason": "Meaningful prospective participation changes affect eligibility and book elimination. Source changes are verified separately from operator rollout or individual account outcomes.",
           "status": "verified",
           "importance": "medium"
         }
@@ -935,7 +996,34 @@
     {
       "netuid": 91,
       "name": "cascade",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN91 Cascade fixes evaluation history and adds checkpoint-integrity guards",
+          "summary": "November 10 source changes keep enough history for the full 4,096-point context at a 720-step evaluation horizon; shorter series retain their available history without changing eligibility. Separate changes cache up to four private-evaluation checkpoints on the GPU host and verify SHA-256 before reuse. The documented host and validator release must match: a capability preflight holds a round when required fields are missing rather than silently falling back or penalizing a miner. Dashboard lineage also restarts at the v2 activation instead of carrying the old model’s generation history into a fresh initialization. These are source changes and operator requirements, without independently verified fleet deployment or improved forecasting accuracy. Relevant implementation and documentation were inspected; upstream tests were not run in this review.",
+          "rating": 3,
+          "ratingReason": "Concrete evaluation fairness, reproducibility and operator-compatibility changes are meaningful operational news, without a performance-breakthrough claim.",
+          "sources": [
+            {
+              "url": "https://github.com/TensorLink-AI/cascade/commit/e20c6a4d0ecfb2cba87bc0407028bf0a8919197f",
+              "label": "Primary evaluation-history correction"
+            },
+            {
+              "url": "https://github.com/TensorLink-AI/cascade/commit/51fd9612089b8b6d5ef93d785523bea3cf8f3f5f",
+              "label": "Primary checkpoint-cache and integrity implementation"
+            },
+            {
+              "url": "https://github.com/TensorLink-AI/cascade/commit/7c13fc0b8985cb6e82dfac72e0c90daea41f5564",
+              "label": "Primary private-evaluation compatibility requirements"
+            },
+            {
+              "url": "https://github.com/TensorLink-AI/cascade/commit/83b20dd40353c2621600676c3825d84c4b372051",
+              "label": "Primary dashboard lineage correction"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 92,
@@ -1102,7 +1190,26 @@
     {
       "netuid": 116,
       "name": "Carbon",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN116 Carbon reports a testnet grading pause and fixes queue starvation",
+          "summary": "Carbon’s November 10 source notice says BurstThermal and Cooling testnet grading is paused while a fix awaits release. Uploads remain accepted and queued; the notice explicitly asks users not to resubmit those jobs. A different, small subset of requeued RibbedBracket and Motor uploads cannot be graded after a provider failure and should be submitted again using the same model, counting as a normal submission. Other requeued uploads are described as grading normally. The accompanying scheduler patch tracks already-served queue places and falls back to round-robin to prevent a frozen host entry from starving other tasks. These are a published operational notice and source fix, not independently verified restoration of grading or a mainnet rollout.",
+          "rating": 3,
+          "ratingReason": "A concrete service interruption and task-specific recovery instructions materially affect participants. The code fix does not prove recovery has deployed.",
+          "sources": [
+            {
+              "url": "https://github.com/carbonphysicsai/Carbon/commit/5da09bb2cc8b188bb8a782ac970ec99b1d78dad4",
+              "label": "Primary testnet known-issues and resubmission notice"
+            },
+            {
+              "url": "https://github.com/carbonphysicsai/Carbon/commit/23d672d7ebecaa8cf5a359e9906bfae3bfae9b32",
+              "label": "Primary queue-starvation fix"
+            }
+          ],
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
     },
     {
       "netuid": 117,
@@ -1244,7 +1351,8 @@
       "18 required ecosystem accounts, active Injective partner and verified fund/researcher accounts reviewed through native X Posts/Replies/Reposts; actual bounded windows retained in the audit.",
       "Real Grok Auto discovery, attention and omission queries submitted; primary source and finalized chain verification override inconsistent generated claims.",
       "Complete finalized chain and lifecycle intervals, prior pending leads, public channel Videos and Live tabs, source repositories and sector classification review.",
-      "Direct native source checks expanded to66 exact official-site-linked accounts and primary team profiles; unsuccessful loads, bounded histories and unreviewed media remain individually recorded."
+      "Direct native source checks expanded to66 exact official-site-linked accounts and primary team profiles; unsuccessful loads, bounded histories and unreviewed media remain individually recorded.",
+      "Existing authenticated GitHub access recovered 57 public repositories after initial unauthenticated errors. Selected primary code/documentation follow-ups were read and reconciled; scope and activation limits are explicit."
     ],
     "gaps": [
       "Primary SN24 Discord requires login; testing, launch timing and sale claims remain unconfirmed.",
@@ -1254,6 +1362,6 @@
       "The site audit includes actual desktop rendering and automated desktop/phone tests; a native production phone viewport and a fresh synthetic wallet lookup remain unverified."
     ]
   },
-  "correctedAt": "2026-11-10T15:53:50.984557+00:00",
+  "correctedAt": "2026-11-10T16:11:48.257532+00:00",
   "correctionNote": "Updated with direct team-source follow-ups and finalized evidence through 15:19 UTC."
 }
