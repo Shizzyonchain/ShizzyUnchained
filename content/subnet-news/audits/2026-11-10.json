@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "dailyWorkflowComplete": false,
-  "publicationStatus": "PREPARED_WITH_DISCLOSED_GAPS",
+  "publicationStatus": "PUBLISHED_READY_LIVE_ROUNDUP_AND_ONE_QUOTE_VERIFIED_WITH_DISCLOSED_GAPS",
   "preparedAt": "2026-11-10T14:47:44.101379+00:00",
   "coverageStart": "2026-11-09T18:22:15.072436+00:00",
   "coverageEnd": "2026-11-10T14:47:44.101379+00:00",
@@ -18,7 +18,8 @@
       "gaps": [],
       "archiveUpdated": true,
       "eventCount": 1,
-      "newsDisposition": "Full contiguous scans reconciled; SN124 allocation and two qualifying burns in new interval published; prior archives and historical registration labels preserved."
+      "newsDisposition": "Full contiguous scans reconciled; SN124 allocation and two qualifying burns in new interval published; prior archives and historical registration labels preserved.",
+      "liveVerified": true
     },
     "burns": {
       "status": "DONE",
@@ -32,7 +33,8 @@
       "gaps": [],
       "archiveUpdated": true,
       "eventCount": 2,
-      "newsDisposition": "Full contiguous scans reconciled; SN124 allocation and two qualifying burns in new interval published; prior archives and historical registration labels preserved."
+      "newsDisposition": "Full contiguous scans reconciled; SN124 allocation and two qualifying burns in new interval published; prior archives and historical registration labels preserved.",
+      "liveVerified": true
     }
   },
   "marketReview": {
@@ -767,7 +769,8 @@
     "asOf": "2026-11-10T13:59:36+00:00",
     "evidence": "/evidence/owner-holdings-9476286.json",
     "wallets": 128,
-    "validation": "Exact reviewed runtime metadata and owner/stake schema; all128 owner addresses match; release and live verification pending."
+    "validation": "128 live holdings at9476286 match currently verified owner addresses; native SN58 panel displays13:59UTC owner and14:38UTC burn cutoff.",
+    "liveVerified": true
   },
   "homepageReview": {
     "status": "DONE",
@@ -784,12 +787,26 @@
   "fullSiteReview": {
     "status": "BLOCKED",
     "evidence": "site-audit-2026-11-10",
-    "reason": "Production phone viewport, full chart history/paging interactions and synthetic wallet lookup are not fully verified. HTTP route inventory and native sampled flows do not establish every flow. Activity query patch requires production recovery verification.",
+    "reason": "Actual production phone viewport, full chart paging and fresh synthetic wallet lookup remain unverified. Activity endpoint recovered in two live checks, but backend query patch deployment is unconfirmed pending hosting identification.",
     "activity": {
-      "status": "PATCHED_PENDING_DEPLOYMENT",
+      "status": "AVAILABLE_LIVE_PATCH_DEPLOYMENT_UNCONFIRMED",
       "observed": "Two production backend relay timeouts after8002ms at14:07/14:38UTC.",
       "change": "Materialize limited selected event page before price joins; filter summary by subnet and restrict historical-price lookups to locks/unlocks.",
-      "verification": "87backend tests and Ruff passed. Actual production recovery remains pending."
+      "verification": "87backend tests and Ruff passed. Actual production recovery remains pending.",
+      "liveChecks": [
+        {
+          "status": 200,
+          "limit": 200,
+          "upstreamMs": 5444
+        },
+        {
+          "status": 200,
+          "limit": 50,
+          "upstreamMs": 1079
+        }
+      ],
+      "hostingGap": "Signed-in Render workspace has no services. Vercel trace inspection403; no existing Vercel CLI. Backend patch execution/deployment not proven by transient HTTP recovery. Asked owner for actual production backend workspace; no account/permission/configuration change.",
+      "requiredAction": "Identify the production backend hosting account/workspace to verify deployed query patch."
     },
     "viewports": {
       "native": {
@@ -800,7 +817,18 @@
       "automatedDesktop": "1440x1000",
       "automatedPhone": "390x844",
       "productionPhone": "BLOCKED: no native resizing capability exposed; synthetic tests are not live-device coverage."
-    }
+    },
+    "completedNativeFlows": [
+      "Homepage all128rendered return cells in both currencies and all four sorts",
+      "Market map128nodes plus period control",
+      "Charts SN51 loaded10m303/1h300/daily200/monthly22intervals; monthlyTAO22; historicalUSDgaps labelled",
+      "News archive search Quasar and liveNov10edition; SN58datedhistory",
+      "RecoveryMath75%=>300%recovery; holding6months38completedwindows; allocationcompareA/Bswap; splitfinder submittedvalidatorbucket",
+      "Watchlist addedSN1then removed, restored original empty state",
+      "Rootrecommendations138basketsreviewed/24qualify/53child-onlyexcluded with dated history",
+      "Wallet saved snapshot/stale date and privacy controls inspected without exporting private balances; no fresh private lookup or saved-wallet deletion",
+      "Native video library and official channel Videos/Live,18:35watch duration and initial playback; no full listening claimed"
+    ]
   },
   "grokReview": {
     "status": "DONE",
@@ -5144,7 +5172,16 @@
     "disposition": "Cleared primary-supported items included. All original pending files preserved; unresolved product/media/launch claims remain pending without new quotes."
   },
   "validation": {
-    "status": "PENDING"
+    "status": "PASS",
+    "jsTests": 210,
+    "backendTests": 87,
+    "ruff": "PASS",
+    "browserCases": 78,
+    "productionAudit": "0 vulnerabilities",
+    "lint": "PASS with pre-existing unused browser contracts warning",
+    "build": "PASS smoke build; real production build READY",
+    "releaseEvidence": "site-audit-2026-11-10/daily-release-third.log",
+    "earlierFailedAttempts": "First gate caught malformed per-subnet evidence and stale sector expectation; second caught outdated default-video expectation. All corrected before push; no hook bypass."
   },
   "sourceReview": {
     "officialWebsites": {
@@ -5623,5 +5660,39 @@
       "status": "BLOCKED",
       "disposition": "Selected relevant reports reconciled in edition. Official-page availability does not establish full letter/PDF/timeline review; remaining bylines and documents retained pending."
     }
-  ]
+  ],
+  "availablePublicationComplete": true,
+  "completedAt": "2026-11-10T15:12:16.864458+00:00",
+  "deployment": {
+    "id": "dpl_E2znjgYZGgmWpmjLwuf2EtJsYxWh",
+    "state": "READY",
+    "commit": "00487f80fc2deb9757c3299ab6e61056af864071",
+    "productionAliasesVerified": true
+  },
+  "roundup": {
+    "status": "published",
+    "text": "Gamma gets a robotics-data offering on SN58. SN124 changes its validator/miner split. And the SN24 Quasar to ms.computer transition gets a dated catch-up.\n\nToday’s report also unpacks Sami Kassab, Stillcore and Yuma’s research, plus verified burns and protocol updates.\n\nhttps://shizzyunchained.com/subnet-news/2026-11-10",
+    "nativeText": "Gamma gets a robotics-data offering on SN58. SN124 changes its validator/miner split. And the SN24 Quasar to ms.computer transition gets a dated catch-up.\n\n\nToday’s report also unpacks Sami Kassab, Stillcore and Yuma’s research, plus verified burns and protocol updates.\n\n\nhttps://shizzyunchained.com/subnet-news/2026-11-10",
+    "sendingAt": "2026-11-10T15:04:39.373Z",
+    "url": "https://x.com/ShizzyUnchained/status/2120170780667375792",
+    "verifiedAt": "2026-11-10T15:05:05.610Z"
+  },
+  "quote": {
+    "status": "published",
+    "sourceUrl": "https://x.com/robotensor_ai/status/2120154072695157066",
+    "text": "Gamma has a concrete service offering on SN58.\n\n@robotensor_ai says Attune now accepts Gamma for Horizon robotics data. We verified the subnet opt-in on chain.\n\nData access is arranged with the team. Customer spending is the next thing to watch; model and playground access are still planned.",
+    "nativeText": "Gamma has a concrete service offering on SN58.\n\n\n@robotensor_ai says Attune now accepts Gamma for Horizon robotics data. We verified the subnet opt-in on chain.\n\n\nData access is arranged with the team. Customer spending is the next thing to watch; model and playground access are still planned.",
+    "sendingAt": "2026-11-10T15:06:33.323Z",
+    "url": "https://x.com/ShizzyUnchained/status/2120171289608355924",
+    "verifiedAt": "2026-11-10T15:07:57.879Z",
+    "publicText": "Gamma has a concrete service offering on SN58.\n\n\n@robotensor_ai\n says Attune now accepts Gamma for Horizon robotics data. We verified the subnet opt-in on chain.\n\nData access is arranged with the team. Customer spending is the next thing to watch; model and playground access are still planned."
+  },
+  "liveVerification": {
+    "report": "https://shizzyunchained.com/subnet-news/2026-11-10",
+    "nativeEvidence": "site-audit-2026-11-10/nov10-news-live.txt/png",
+    "video": "New18:35 public video is the live default; canceled Carbon not restored.",
+    "subnetHistory": "SN58 new integration and global activation both visible, direct source and archived cutoff retained.",
+    "ownerAPI": "/api/subnets/owners returns128holdings at9476286 with matching current owners. Earlier /api/owners probe was the wrong path, not a production route defect.",
+    "market": "128 rendered rows both USD/TAO;10m128,1h128,24h127,7d126. SN78/SN99 legitimate new-registration gaps only."
+  }
 }
