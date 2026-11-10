@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "dailyWorkflowComplete": false,
-  "publicationStatus": "PUBLISHED_WITH_CODE_FOLLOWUPS_PENDING_READY_VERIFICATION",
+  "publicationStatus": "PUBLISHED_LIVE_WITH_SPECIFIC_AUDIT_GAPS",
   "preparedAt": "2026-11-10T14:47:44.101379+00:00",
   "coverageStart": "2026-11-09T18:22:15.072436+00:00",
   "coverageEnd": "2026-11-10T15:19:24+00:00",
@@ -819,10 +819,10 @@
     "evidence": "site-audit-2026-11-10",
     "reason": "Production phone viewport, full chart paging and fresh synthetic wallet lookup remain unverified. Activity backend deployment is now confirmed through exact commit-linked deployment records; live requests recovered.",
     "activity": {
-      "status": "DEPLOYMENT_CONFIRMED_LIVE_RECOVERED",
+      "status": "FIX_LIVE_VERIFIED",
       "observed": "Two production backend relay timeouts after8002ms at14:07/14:38UTC.",
       "change": "Materialize limited selected event page before price joins; filter summary by subnet and restrict historical-price lookups to locks/unlocks.",
-      "verification": "87backend tests and Ruff passed. Actual production recovery remains pending.",
+      "verification": "87 backend tests and Ruff passed. Exact live query version verified. The original 200-item request returns 200 events; native production page displays the loaded activity list.",
       "liveChecks": [
         {
           "status": 200,
@@ -835,7 +835,6 @@
           "upstreamMs": 1079
         }
       ],
-      "hostingGap": "Signed-in Render workspace has no services. Vercel trace inspection403; no existing Vercel CLI. Backend patch execution/deployment not proven by transient HTTP recovery. Asked owner for actual production backend workspace; no account/permission/configuration change.",
       "requiredAction": null,
       "backendDeployment": {
         "githubDeployment": 7685518607,
@@ -849,7 +848,55 @@
         "state": "success",
         "time": "2026-11-10T14:57:46Z"
       },
-      "resolution": "Authoritative GitHub deployment metadata confirms the tested commit reached the actual API and indexer. Live200responses verified. Earlier empty Render workspace was a discovery gap; no new credentials or scope were requested."
+      "resolution": "Authoritative GitHub deployment metadata confirms the tested commit reached the actual API and indexer. Live200responses verified. Earlier empty Render workspace was a discovery gap; no new credentials or scope were requested.",
+      "queryVersion": "activity-bounded-2026-11-10",
+      "finalLiveCheck": {
+        "checkedAt": "2026-11-10T16:15:42.482527+00:00",
+        "url": "https://shizzyunchained.com/api/backend/v1/activity?limit=200",
+        "status": 200,
+        "queryVersion": "activity-bounded-2026-11-10",
+        "eventCount": 200,
+        "seconds": 1.374,
+        "responseShape": "data array, summary object, collecting_since, query_version",
+        "nativeProof": "activity-final-native.txt; activity-final-native.png"
+      },
+      "deployedMarkerCommit": "24b26853568898a830ced88784ca79990ba205cc",
+      "latestDeploymentStatuses": {
+        "api": [
+          {
+            "state": "success",
+            "environment": "main - shizzy-subtensor-api",
+            "created_at": "2026-11-10T16:03:00Z",
+            "environment_url": "https://shizzy-subtensor-api.onrender.com",
+            "log_url": "https://dashboard.render.com/web/srv-d9du4b3rjlhs73bc942g/deploys/dep-dbpk0295efls73bdtjvg"
+          },
+          {
+            "state": "in_progress",
+            "environment": "main - shizzy-subtensor-api",
+            "created_at": "2026-11-10T16:02:18Z",
+            "environment_url": "https://shizzy-subtensor-api.onrender.com",
+            "log_url": "https://dashboard.render.com/web/srv-d9du4b3rjlhs73bc942g/deploys/dep-dbpk0295efls73bdtjvg"
+          }
+        ],
+        "indexer": [
+          {
+            "state": "success",
+            "environment": "main - shizzy-subtensor-indexer",
+            "created_at": "2026-11-10T16:02:56Z",
+            "environment_url": "",
+            "log_url": "https://dashboard.render.com/worker/srv-d9du4b3rjlhs73bc9460/deploys/dep-dbpk0295efls73bdtk60"
+          },
+          {
+            "state": "in_progress",
+            "environment": "main - shizzy-subtensor-indexer",
+            "created_at": "2026-11-10T16:02:18Z",
+            "environment_url": "",
+            "log_url": "https://dashboard.render.com/worker/srv-d9du4b3rjlhs73bc9460/deploys/dep-dbpk0295efls73bdtk60"
+          }
+        ]
+      },
+      "nativeProof": "site-audit-2026-11-10/activity-final-native.txt; activity-final-native.png",
+      "hostingGapResolved": "Authoritative existing GitHub deployment records identify the actual Render API and indexer and confirm successful deployment. No new credentials or permissions were required."
     },
     "viewports": {
       "native": {
@@ -9495,7 +9542,8 @@
     "lint": "PASS with pre-existing unused browser contracts warning",
     "build": "PASS smoke build; real production build READY",
     "releaseEvidence": "site-audit-2026-11-10/daily-release-third.log",
-    "earlierFailedAttempts": "First gate caught malformed per-subnet evidence and stale sector expectation; second caught outdated default-video expectation. All corrected before push; no hook bypass."
+    "earlierFailedAttempts": "First gate caught malformed per-subnet evidence and stale sector expectation; second caught outdated default-video expectation. All corrected before push; no hook bypass.",
+    "finalReleaseEvidence": "site-audit-2026-11-10/code-followups-release-corrected.log"
   },
   "sourceReview": {
     "officialWebsites": {
@@ -9979,10 +10027,11 @@
   "availablePublicationComplete": true,
   "completedAt": "2026-11-10T15:12:16.864458+00:00",
   "deployment": {
-    "id": "dpl_E2znjgYZGgmWpmjLwuf2EtJsYxWh",
+    "id": "dpl_CfoFZ8SZXvADJ3c1zgyA61NLatZn",
     "state": "READY",
-    "commit": "00487f80fc2deb9757c3299ab6e61056af864071",
-    "productionAliasesVerified": true
+    "commit": "56c6f620cd280013311ac60aa6cf905c5c36d97b",
+    "productionAliasesVerified": true,
+    "readyAt": "2026-11-10T16:15:56.817000+00:00"
   },
   "roundup": {
     "status": "published",
@@ -10011,7 +10060,10 @@
     "video": "New18:35 public video is the live default; canceled Carbon not restored.",
     "subnetHistory": "SN58 new integration and global activation both visible, direct source and archived cutoff retained.",
     "ownerAPI": "/api/subnets/owners returns128holdings at9476286 with matching current owners. Earlier /api/owners probe was the wrong path, not a production route defect.",
-    "market": "128 rendered rows both USD/TAO;10m128,1h128,24h127,7d126. SN78/SN99 legitimate new-registration gaps only."
+    "market": "128 rendered rows both USD/TAO;10m128,1h128,24h127,7d126. SN78/SN99 legitimate new-registration gaps only.",
+    "subnetHistoryFollowup": "Current SN70 Fugal history directly displays the November10 release-preparation story and preserves earlier historical occupants. No new Fugal story appears under deprecated SN39.",
+    "activity": "Exact deployed query marker confirmed; 200-item request succeeds and native activity page visibly loads live events.",
+    "latestHomepage": "Native final homepage shows positive 24h trading volume, named MVTRX top mover and populated returns; evidence homepage-completion-native.png and homepage-completion-text.txt."
   },
   "publicationTimestamps": {
     "draftPreparedAt": "2026-11-10T14:47:44.101379+00:00",
@@ -10020,7 +10072,7 @@
     "firstNativeReportVerifiedAt": "2026-11-10T15:00:26Z",
     "note": "Report publishedAt aligned with first READY production availability; social times are actual native time-element values."
   },
-  "correctedAt": "2026-11-10T16:11:48.257532+00:00",
+  "correctedAt": "2026-11-10T16:17:48.941546+00:00",
   "subnetSourceReview": [
     {
       "account": "xeveryframe",
@@ -11483,10 +11535,25 @@
     }
   ],
   "correctionPublication": {
-    "status": "PREPARED_CODE_FOLLOWUPS",
+    "status": "LIVE_VERIFIED",
     "preparedAt": "2026-11-10T16:11:48.257532+00:00",
     "newFinalizedCutoff": "2026-11-10T15:19:24+00:00",
-    "quoteLimit": "Existing single SN58quote and single dailyroundup retained; no additional social publication."
+    "quoteLimit": "Existing single SN58quote and single dailyroundup retained; no additional social publication.",
+    "verifiedAt": "2026-11-10T16:17:48.941546+00:00",
+    "deployment": {
+      "id": "dpl_CfoFZ8SZXvADJ3c1zgyA61NLatZn",
+      "state": "READY",
+      "commit": "56c6f620cd280013311ac60aa6cf905c5c36d97b",
+      "productionAliasesVerified": true,
+      "readyAt": "2026-11-10T16:15:56.817000+00:00"
+    },
+    "totalUpdates": 34,
+    "subnetsWithUpdates": 25,
+    "nativeEvidence": [
+      "site-audit-2026-11-10/news-code-followups-live.txt",
+      "site-audit-2026-11-10/fugal-sn70-history-final.txt"
+    ],
+    "releaseEvidence": "site-audit-2026-11-10/code-followups-release-corrected.log"
   },
   "repositoryAuthenticatedFollowup": {
     "checkedAt": "2026-11-10T16:11:48.257532+00:00",
