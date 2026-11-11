@@ -1,0 +1,905 @@
+{
+  "version": 1,
+  "date": "2026-11-11",
+  "title": "Bittensor Daily News: November 11, 2026",
+  "summary": "Const reports an SN3 owner-key compromise. SN51 lium falls and Mentat reports a liquidation; Gamma records mint-and-spend transactions, while Chutes previews Parallax throughput.",
+  "publishedAt": "2026-11-11T17:44:16.791925+00:00",
+  "coverageStart": "2026-11-10T15:19:24+00:00",
+  "coverageEnd": "2026-11-11T17:40:00+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [
+    {
+      "headline": "Gamma records mint-and-spend transactions as six more subnets opt in",
+      "summary": "The finalized interval from block 9476686 through 9484458 contains successful Gamma opt-ins for SN103, SN53, SN81, SN80, SN25 and SN117. It also contains two GammaMinted events, one each on SN103 and SN53, and six GammaSpent events: one on SN103 and five on SN53. This advances the evidence beyond the configuration-only picture in the previous edition.\n\nThese are verified protocol transactions. They do not independently establish an outside paying customer, delivered service, recurring revenue or adoption at scale. SN58’s earlier activation and announced robotics-data offering remain dated November 10 developments, not new launches today. Engy separately announced on November 11 at 16:50 UTC that engy.ai accepts Gamma. That is a team availability statement alongside the independently observed SN53 transactions.",
+      "sources": [
+        {
+          "url": "https://shizzyunchained.com/evidence/2026-11-11-chain-executions.json",
+          "label": "Independently decoded successful Gamma executions"
+        },
+        {
+          "url": "https://x.com/opentensor/status/2120270882811875419",
+          "label": "OpenTensor’s Gamma announcement"
+        },
+        {
+          "url": "https://x.com/engyai/status/2120559727226896811",
+          "label": "Primary Engy acceptance announcement"
+        }
+      ],
+      "rating": 4,
+      "ratingReason": "Verified use of the new payment mechanism across additional subnets is a consequential implementation follow-up. Small transaction counts are not evidence of commercial scale.",
+      "status": "verified",
+      "importance": "high"
+    },
+    {
+      "headline": "Tensia adds configurable Telegram burn alerts",
+      "summary": "Tensia announced burn alerts on November 10 covering wallet burns and buybacks, changes to emission burn allocations, and miner-burn switches. Its post describes subnet filters and configurable thresholds. These categories track different mechanisms and should not be added together as if all represented tokens destroyed in successful transactions. Our public burn archive continues to require at least 100 native tokens per individual qualifying transaction event.",
+      "sources": [
+        {
+          "url": "https://x.com/TensiaFDN/status/2120249905956405540",
+          "label": "Primary feature announcement"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "A useful monitoring capability with distinct economic categories; no claim of independent end-to-end alert testing.",
+      "status": "verified",
+      "importance": "medium"
+    }
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": [
+        {
+          "headline": "SN3 Teutonic: Const reports owner-key compromise after stake transfer and sale",
+          "summary": "Const said in Bittensor’s SN3 Discord channel on November 11 that a key appeared compromised and estimated the loss at about 2,000 TAO. He said he had not sold the stake and that the cause was still unknown. He described the affected key as one obtained during the project takeover, for which he had not completed his usual protective setup.\n\nIndependent finalized-chain checks confirm a successful transfer of 101,141 alpha from the SN3 owner address at 15:18:48 UTC, followed by a successful unstake from the receiving address at 15:26:36 UTC. The latter event records 2,068.012572293 TAO removed and 101,090.070679789 alpha. These transactions corroborate the movements, not who controlled the key or the method of compromise. Const’s statement that he would swap the key is a plan, not verified recovery. No Bittensor protocol breach or connection to lium’s selloff has been established.",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1493243812263362660/1570101273909403772",
+              "label": "Const’s original SN3 disclosure; Discord login may be required"
+            },
+            {
+              "url": "https://taostats.io/extrinsic/9483882-0015",
+              "label": "Successful stake transfer"
+            },
+            {
+              "url": "https://taostats.io/extrinsic/9483921-0003",
+              "label": "Successful unstake"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-11-sn3-transactions.json",
+              "label": "Independent finalized transaction decoding"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "An owner-key compromise reported by the affected principal, with independently corroborated stake movements, is material security news. The cause and attribution remain unresolved.",
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta records five qualifying alpha burns",
+          "summary": "Five successful finalized events in the reviewed interval burned 135.301437364, 136.950043549, 14,720.75, 250 and 250.076946388 Vanta alpha. The largest occurred at block 9479710. Exact calls, amounts and unchanged historical project identity are retained in the evidence. These are transaction burns, not miner-emission withholding, fees or recycling. The transactions do not by themselves identify the source of funding or prove customer revenue. Each event separately meets the archive’s 100-alpha threshold.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-11-chain-executions.json",
+              "label": "Successful burn events and historical identity"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A material executed token-supply update with an unusually large individual burn, while revenue attribution remains unverified.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": [
+        {
+          "headline": "SN25 UR details subscription-cycle and provider-subsidy accounting changes",
+          "summary": "UR’s November 11 notice moves Pro data grants to each network’s own monthly subscription cycle and says a paid period’s revenue will count once across its cycle grants. The notice says some revenue previously counted twice, while long-running Google Play subscriptions could be undercounted. SN25 pool rewards remain based on completed usage, and the change concerns the operator’s separate provider-subsidy accounting. The notice says rollout confirmation will be added later, so this is a documented release change, not independently confirmed completed deployment.",
+          "sources": [
+            {
+              "url": "https://github.com/urfoundation/sn/commit/500bf28a67ad9f7f18c37787c067281167f74612",
+              "label": "Primary repository change and release documentation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A meaningful product or operational change with concrete implementation evidence; production deployment and outcomes remain separately qualified.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": [
+        {
+          "headline": "SN31 rec4ll changes its owner, validator and miner allocations",
+          "summary": "At 8:31 a.m. Eastern on November 11, a successful finalized transaction changed the burn / recycle / owner / validator / miner allocation from 0.00% / 0.00% / 25.00% / 20.00% / 55.00% to 0.00% / 0.00% / 18.00% / 41.00% / 41.00%. The project identity, registration and owner address were unchanged across the event. This redirects future emissions; it is not a transaction burn. Root’s baseline is paid from and capped by the validator bucket, while historical yield estimates can lag the new settings.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-11-chain-executions.json",
+              "label": "Exact before/after vectors and successful execution"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A meaningful change in participant economics, without implying a product launch or guaranteed future yield.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Jacob Robert Steeves",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": [
+        {
+          "headline": "SN51 lium falls 9.45%; Mentat reports liquidation of a 160.42 TAO debt",
+          "summary": "At the 17:12:48 UTC November 11 market snapshot, lium traded at 0.110548272 TAO per alpha, down 9.45% from 0.122082812 TAO at 17:12:36 UTC the previous day. The snapshot records 25,896.45 TAO of 24-hour trading volume and 182,491.49 TAO in pool reserves. These are alpha-versus-TAO figures, not dollar returns.\n\nMentat reported that a 9.2% price decline pushed a position past its 60% loan-to-value liquidation threshold. Its account says 160.42 TAO of debt was repaid, 1,597.50 alpha was seized including the penalty, and 824.25 alpha remained. The attached receipt identifies block 9481779; the underlying contract transaction has not been independently reproduced. This establishes a platform-reported lending consequence alongside the measured market move. Wallet identities, a connection to SN3’s incident, and a single cause for the broader decline are not established.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-11-market.json",
+              "label": "Dated market snapshot; archived evidence accompanies the edition"
+            },
+            {
+              "url": "https://x.com/MentatLend_/status/2120519827697631577",
+              "label": "Primary liquidation report and receipt"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "A substantial move in a major subnet with a concrete reported lending consequence merits prominent coverage. Price alone does not establish causation or mechanically raise a rating.",
+          "status": "verified",
+          "importance": "high"
+        }
+      ]
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": [
+        {
+          "headline": "SN59 changes its owner, validator and miner allocations",
+          "summary": "At 10:20 a.m. Eastern on November 10, a successful finalized transaction changed the burn / recycle / owner / validator / miner allocation from 0.00% / 0.00% / 31.97% / 35.03% / 33.00% to 0.00% / 0.00% / 33.00% / 31.99% / 35.01%. The project identity, registration and owner address were unchanged across the event. This redirects future emissions; it is not a transaction burn. Root’s baseline is paid from and capped by the validator bucket, while historical yield estimates can lag the new settings.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-11-chain-executions.json",
+              "label": "Exact before/after vectors and successful execution"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A meaningful change in participant economics, without implying a product launch or guaranteed future yield.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": [
+        {
+          "headline": "SN64 Chutes previews Parallax throughput on a single RTX 5090",
+          "summary": "Chutes reported almost 18,000 tokens per second with 256 concurrent requests on one RTX 5090 on November 11. Its attached image identifies Parallax 8B on an unoptimised vLLM fork and explicitly calls the result a preview, not a formal benchmark.\n\nThe team attributes the design to a small model, four-bit expert math and a fixed-size cache for most attention. The result has not been reproduced here; it should not be treated as a measured service-wide speedup or cost saving across arbitrary models and workloads.",
+          "sources": [
+            {
+              "url": "https://x.com/chutes_ai/status/2120532426862571607",
+              "label": "Primary preview and inspected benchmark image"
+            },
+            {
+              "url": "https://x.com/chutes_ai/status/2120532429102293042",
+              "label": "Team technical explanation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A substantive technical preview with explicit benchmark limitations; independent reproduction and production impact remain unverified.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": []
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": [
+        {
+          "headline": "SN81 Reliquary changes restart recovery to keep order auditing moving",
+          "summary": "A November 11 merged fix parallelizes verdict reads and runs failure reconciliation behind the main auditor. The commit reports that sequential reads of about 10,000 verdicts had delayed auditing for roughly ten minutes after restarts. This is a verified code change addressing an operational delay reported by the maintainers, not independent evidence that all deployed instances have recovered.",
+          "sources": [
+            {
+              "url": "https://github.com/reliquadotai/reliquary/commit/26b0887b90333fc15f4d7052d229e091d0f55a5e",
+              "label": "Primary repository change and release documentation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A meaningful product or operational change with concrete implementation evidence; production deployment and outcomes remain separately qualified.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": [
+        {
+          "headline": "SN108 ChipForge separates weight updates from long design evaluations",
+          "summary": "ChipForge’s November 11 Neuron 1.0.10 change introduces an independent loop for on-chain weight submissions while design evaluations continue. The team’s commit describes an earlier multi-hour submission gap and delayed recognition of a completed probation period. The code checks on a 60-second default cadence while retaining chain rate limits. The merge and documented fix are verified; live validator adoption and realized payout timing are not.",
+          "sources": [
+            {
+              "url": "https://github.com/TatsuProject/ChipForge_SN108/commit/91cc393de06994f15cc2396f0468a74ca3efd10b",
+              "label": "Primary repository change and release documentation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A meaningful product or operational change with concrete implementation evidence; production deployment and outcomes remain separately qualified.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": [
+        {
+          "headline": "SN117 Everyframe releases everycli 1.1.3 with LTX 2.5 routes",
+          "summary": "The November 11 release notes add 14 LTX 2.5 routes across native LTX, Fal and WaveSpeed, and address Google Nano Banana image-delivery failures. The notes distinguish CLI and worker updates: updating the CLI alone does not update the deployed worker. The public release and changes are verified; generation quality and a completed production rollout were not independently tested.",
+          "sources": [
+            {
+              "url": "https://github.com/everyframe-studio/everyframe-miner/commit/6dfaa325f16b6625edfaa08931a96170e1bdbe14",
+              "label": "Primary repository change and release documentation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A meaningful product or operational change with concrete implementation evidence; production deployment and outcomes remain separately qualified.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": [
+        {
+          "headline": "SN124 Swarm consolidates its competition around Sentinel",
+          "summary": "A November 10 merged change retires the Search and Rescue and Swarm SAR families and assigns Sentinel the full competition reward share, up from 85%. Sentinel tasks drones with patrolling a solar park, reporting intruders and returning to their dock. This is a change to the project’s internal competition allocation, separate from the subnet-wide owner/validator/miner split reported yesterday. The repository merge is verified; deployment across validators is not independently established.",
+          "sources": [
+            {
+              "url": "https://github.com/swarm-subnet/swarm/commit/9a75ad00b018d68307fc748d52070c335f8523ea",
+              "label": "Primary repository change and release documentation"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "A meaningful product or operational change with concrete implementation evidence; production deployment and outcomes remain separately qualified.",
+          "status": "verified",
+          "importance": "medium"
+        }
+      ]
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "storyOrder": [
+    "SN3 Teutonic: Const reports owner-key compromise after stake transfer and sale",
+    "SN51 lium falls 9.45%; Mentat reports liquidation of a 160.42 TAO debt",
+    "Gamma records mint-and-spend transactions as six more subnets opt in",
+    "SN64 Chutes previews Parallax throughput on a single RTX 5090",
+    "SN59 changes its owner, validator and miner allocations",
+    "SN31 rec4ll changes its owner, validator and miner allocations",
+    "SN8 Vanta records five qualifying alpha burns",
+    "Tensia adds configurable Telegram burn alerts",
+    "SN117 Everyframe releases everycli 1.1.3 with LTX 2.5 routes",
+    "SN124 Swarm consolidates its competition around Sentinel",
+    "SN25 UR details subscription-cycle and provider-subsidy accounting changes",
+    "SN108 ChipForge separates weight updates from long design evaluations",
+    "SN81 Reliquary changes restart recovery to keep order auditing moving"
+  ],
+  "coverage": {
+    "searched": [
+      "Finalized chain events and current owner holdings, all 128 configured subnet website records, authenticated public repositories, selected original ecosystem and subnet announcements, original SN3 Discord discussion and inspected attached images.",
+      "Three actual Grok Auto queries completed: discovery, qualitative attention and omission checks. Results were verified independently and corrected where necessary.",
+      "Native Videos and Live tabs checked; no newer public replay than the existing library was found. The newly listed members video is not used as public footage."
+    ],
+    "gaps": [
+      "Individual full X/Discord histories and attached media were not completed for every active subnet; unavailable or unreviewed originals remain pending rather than no-news findings.",
+      "The 18 required ecosystem profiles were reviewed in bounded native windows, but complete seven-day Posts/Replies/Reposts histories and all fund principals were not completed.",
+      "Most secondary subnet briefs returned access errors. Primary website availability and repository activity do not establish exhaustive news coverage.",
+      "SN3 compromise cause and recovery, the underlying Mentat contract liquidation, and the identity and causal role of wallets behind lium selling remain unverified.",
+      "Authenticated TaoStats entitlement review and the remaining full-site audit interactions are incomplete; the repaired trade collector and sampled homepage were verified separately."
+    ]
+  }
+}

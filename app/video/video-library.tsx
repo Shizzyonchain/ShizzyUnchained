@@ -15,6 +15,7 @@ type ChannelVideo = {
 };
 
 const channelVideos: ChannelVideo[] = [
+  { id: "UYK4oIbF45w", title: "11/5/26 Bittensor News Updates & TAO Price Action | Members Video", meta: "7:04 · Members-only video · November 5 edition", membersOnly: true },
   { id: "AsNyOPEElo4", title: "Can TAO Hold? Bittensor Price Action vs. Real Progress", meta: "18:35 · Public video · November 9, 2026" },
   { id: "e4glmPHoEvw", title: "It’s About to Happen… REAX Is Moving. Is TAO Next?", meta: "19:04 · Public video · November 6, 2026" },
   { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "37:26 · Livestream replay · November 5, 2026" },

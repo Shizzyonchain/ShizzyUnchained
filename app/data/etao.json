@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-10T15:20:25.242310+00:00",
-  "block": 9476685,
-  "hash": "0x95507cb33a79b44cd05fd03b8b7792e680e19ffc6835d689ec6501e525abc6cb",
-  "chainTime": 1794323964000,
+  "checkedAt": "2026-11-11T17:40:31.905325+00:00",
+  "block": 9484458,
+  "hash": "0x2c47f380a557df698403bf675572504bf09e90aee66c048dc38729c5445eb7af",
+  "chainTime": 1794417240000,
   "runtime": 488,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -219,9 +219,9 @@
     "31": [
       "0",
       "0",
-      "4611686018427387903",
-      "3689348814741910323",
-      "10145709240540253389"
+      "3320413933267719290",
+      "7563165070220916162",
+      "7563165070220916163"
     ],
     "32": [
       "0",
@@ -415,9 +415,9 @@
     "59": [
       "0",
       "0",
-      "5897350293388648813",
-      "6461968235996750768",
-      "6087425544324152034"
+      "6087425544324152032",
+      "5901113429179685561",
+      "6458205100205714022"
     ],
     "60": [
       "0",
@@ -1538,6 +1538,54 @@
       "name": "Swarm",
       "registrationBlock": 5813454,
       "evidence": "/evidence/2026-11-10-daily-allocation.json"
+    },
+    {
+      "netuid": 59,
+      "block": 9476692,
+      "hash": "0x9138df07f0617a84e5b6563f3d42553790b4b2d7ab52e0f8f6e281aa62c22b02",
+      "timestamp": 1794324048000,
+      "before": [
+        "0",
+        "0",
+        "5897350293388648813",
+        "6461968235996750768",
+        "6087425544324152034"
+      ],
+      "after": [
+        "0",
+        "0",
+        "6087425544324152032",
+        "5901113429179685561",
+        "6458205100205714022"
+      ],
+      "extrinsic": 19,
+      "name": "Unknown",
+      "registrationBlock": 8938771,
+      "evidence": "/evidence/2026-11-11-chain-executions.json"
+    },
+    {
+      "netuid": 31,
+      "block": 9483345,
+      "hash": "0x429bfbf4ec34e70724ff428f1394e03bb63127d454930bfaa3ad6225d1039724",
+      "timestamp": 1794403884000,
+      "before": [
+        "0",
+        "0",
+        "4611686018427387903",
+        "3689348814741910323",
+        "10145709240540253389"
+      ],
+      "after": [
+        "0",
+        "0",
+        "3320413933267719290",
+        "7563165070220916162",
+        "7563165070220916163"
+      ],
+      "extrinsic": 8,
+      "name": "rec4ll",
+      "registrationBlock": 7173591,
+      "evidence": "/evidence/2026-11-11-chain-executions.json"
     }
   ],
   "names": {
@@ -1672,9 +1720,9 @@
   },
   "observations": [],
   "ownerSnapshot": {
-    "block": 9476286,
-    "hash": "0x313736aa2bba80cbe901b094d459797c5c4644706072fd76139d47ab1226a8de",
-    "checkedAt": "2026-11-10T14:47:44.101379+00:00",
+    "block": 9484515,
+    "hash": "0x410a324524eae57cff0971a5abd99efc34b9406e6b0af1240ad01da152432e45",
+    "checkedAt": "2026-11-11T17:40:31.905325+00:00",
     "owners": {
       "1": "5HCFWvRqzSHWRPecN7q8J6c7aKQnrCZTMHstPv39xL1wgDHh",
       "2": "5EcYQ3W77ndrmMWdvVQusoFqY8doxfP3U2zrh7xZQiaz7avY",
@@ -1808,14 +1856,14 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9476685,
-    "finalizedHash": "0x95507cb33a79b44cd05fd03b8b7792e680e19ffc6835d689ec6501e525abc6cb",
-    "checkedAt": "2026-11-10T15:20:25.242310+00:00",
-    "eventCount": 19,
+    "toBlock": 9484458,
+    "finalizedHash": "0x2c47f380a557df698403bf675572504bf09e90aee66c048dc38729c5445eb7af",
+    "checkedAt": "2026-11-11T17:40:31.905325+00:00",
+    "eventCount": 21,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Reviewed runtime definitions, positive decoding controls and per-block runtime checks retained. Historical allocation and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history.",
-    "evidence": "/evidence/2026-11-10-daily-final-chain.json"
+    "evidence": "/evidence/2026-11-11-chain-scan.json"
   },
   "lifecycleResets": [
     {
