@@ -1,0 +1,44 @@
+{
+  "reviewedAt": "2026-11-11T16:51:48.375639+00:00",
+  "runtime": 490,
+  "sourceCommit": "d967d13588834f4f5aaa8ef4c8fc1a865d581462",
+  "scope": "Finalized external TAO flow collector only",
+  "sourceReview": [
+    "Compared v488...v490 official source. Existing stake/routed stake, fee and GammaMinted event definitions unchanged; events.rs adds SubnetGammaEmissionSet and GammaEmissionMinted.",
+    "add_stake.rs, move_stake.rs and order_swap.rs absent from changed file list. remove_stake.rs changes legacy storage cleanup, not emitted native amount fields.",
+    "stake_utils.rs changes legacy share reads and same-subnet lease transfers; external TAO event accounting unchanged. Basket flush changes internal alpha dividend valuation and chunking.",
+    "GammaEmissionMinted converts emission alpha into target alpha through TAO. This is internal alpha-to-alpha routing, excluded by the existing external-TAO metric. GammaMinted paid TAO path remains included; stake-funded mint excluded."
+  ],
+  "liveReadOnlyValidation": {
+    "runtime": 490,
+    "blocks": [
+      {
+        "number": 9484328,
+        "hash": "0xd158bc527c1ffc8f6339279944b002878370f81b1d4b046dfb0622ee99c651ac",
+        "buyRao": 5000000000,
+        "sellRao": 0,
+        "trades": 1
+      },
+      {
+        "number": 9484329,
+        "hash": "0x2aa517b805a05e5872d396a4555d8717b425c4c0d296e4ac933a360dfed17c35",
+        "buyRao": 0,
+        "sellRao": 4841083113,
+        "trades": 2
+      },
+      {
+        "number": 9484330,
+        "hash": "0xad273e88f7046373360de375d3adc2cda9463f87566c14c8c7f36b74f38d5eda",
+        "buyRao": 0,
+        "sellRao": 0,
+        "trades": 0
+      }
+    ]
+  },
+  "primarySources": [
+    "https://github.com/RaoFoundation/subtensor/compare/v488...v490",
+    "https://github.com/RaoFoundation/subtensor/blob/v490/pallets/subtensor/src/macros/events.rs",
+    "https://github.com/RaoFoundation/subtensor/blob/v490/pallets/subtensor/src/subnets/gamma.rs"
+  ],
+  "limitations": "Source review and live decoded finalized sample, not byte-for-byte WASM reproduction or exhaustive event replay. Unknown runtimes remain blocked. Contiguous history recovery must be verified after deployment."
+}
