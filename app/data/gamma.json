@@ -1,0 +1,372 @@
+{
+  "hash": "0xa3ddaac8554cbf664845366153debd1c5be60f981ad0b221a5c32668c8261942",
+  "block": 9485026,
+  "checkedAt": "2026-11-11T19:08:16.785028+00:00",
+  "chainTime": 1794424056000,
+  "runtime": 490,
+  "enabled": true,
+  "subnets": [
+    {
+      "netuid": 25,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "UR",
+        "github_repo": "https://github.com/urfoundation/sn",
+        "subnet_contact": "brien@ur.io",
+        "subnet_url": "https://ur.xyz/",
+        "discord": "xcolwell",
+        "description": "The Privacy Protocol",
+        "logo_url": "https://ur.xyz/onchain-identity.svg",
+        "additional": ""
+      },
+      "NetworkRegisteredAt": 2998801,
+      "SubnetOwner": "5HTeZ5168DjjGWZgbvzGfysEAj9fnexF24gYFKJHENU5cc8a",
+      "SubnetGammaPrice": {
+        "bits": 75256254505162751
+      },
+      "SubnetGammaEmission": [],
+      "services": [
+        {
+          "hotkey": "5CyQFykVpfa9xgZVGgBsiNUpjbo1EihBTSkPvDC1FZbL1wxG",
+          "service": {
+            "url": "https://api.bringyour.com/pay/gamma/services.json",
+            "spender": "5EUQU938kFzJsVBjn9ch5RNNG4191j7mSz5Djf5vghrmWgUC"
+          }
+        }
+      ],
+      "provider": "URnetwork / UR",
+      "offering": "VPN subscriptions and data packs",
+      "description": "URnetwork publishes a Gamma payment API for its decentralized VPN and proxy service. Its service manifest links an OpenAPI interface and SN25 deposit payments; x402 is a separate supported payment option.",
+      "workflow": "Choose a plan or data pack through the provider API, using an SN25 deposit and the published service identity. The terms specify the required daily spending cap for each purchase.",
+      "terms": "Provider terms checked November 11: monthly Pro 5 Gamma; yearly Pro 40; 256 GiB 0.75; 1 TiB 3; 10 TiB 20. Plans renew automatically. Unless disabled, depleted data triggers a new pack, and a free account reaching its client limit upgrades to Pro. These are provider terms, not a recommendation to authorize recurring spending.",
+      "source": "https://api.bringyour.com/pay/gamma/terms",
+      "activity": []
+    },
+    {
+      "netuid": 53,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "engy",
+        "github_repo": "https://github.com/hanlinai/engy",
+        "subnet_contact": "ning@engy.ai",
+        "subnet_url": "https://engy.ai",
+        "discord": "",
+        "description": "Verified inference for frontier open models.",
+        "logo_url": "https://engy.ai/icon.svg",
+        "additional": ""
+      },
+      "NetworkRegisteredAt": 4203869,
+      "SubnetOwner": "5H8SFVCxk52ag1YSC5bQw7B84NRNhAtYWAP81jEPfuJ3VL8Q",
+      "SubnetGammaPrice": {
+        "bits": 492530880475643757
+      },
+      "SubnetGammaEmission": [],
+      "services": [
+        {
+          "hotkey": "5DXSBCCKH5ENuyHFNaAvtaMfbhEEWpjSJB4rzc4mJfsc1uvJ",
+          "service": {
+            "url": "https://engy.ai/services.json",
+            "spender": "5H8SFVCxk52ag1YSC5bQw7B84NRNhAtYWAP81jEPfuJ3VL8Q"
+          }
+        }
+      ],
+      "provider": "Engy",
+      "offering": "Inference credits",
+      "description": "Engy says it accepts Gamma for its inference platform. The registered manifest describes a credit purchase rather than a separate on-chain payment for every generated token.",
+      "workflow": "Create an order on the Engy website or account API, then authorize that order with the deposit hotkey. The manifest specifies btauth/1 signatures. Gamma becomes Engy inference credits under its own service terms.",
+      "terms": "The manifest advertises max_spend 100000. This is a provider-declared limit, not a customer price or a required deposit. Model pricing and the credit conversion need checking in the order quote. The OpenAPI URL returned HTTP 403 during this review.",
+      "source": "https://x.com/engyai/status/2120559727226896811",
+      "activity": [
+        {
+          "block": 9478389,
+          "hash": "0x131f0d9143cf0f353019d9413c85283eb613b7d79ba13af6f85ec79eaa136b34",
+          "eventIndex": 180,
+          "extrinsicIndex": 12,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 53,
+            "coldkey": "5FWwFBofZ8AwfdrDwtBFFJUxjAsN3LWFuGusM1v9PjTJmHSE",
+            "hotkey": "5Hpru1Ati7Wfrixfkc96cpqVHTbMWhb2KqQXN615ccTREKgb",
+            "spender": "5FWwFBofZ8AwfdrDwtBFFJUxjAsN3LWFuGusM1v9PjTJmHSE",
+            "daily_spend_cap": null,
+            "tao": 0,
+            "alpha": 1000000000,
+            "value": 25993175,
+            "gamma": 5686319800
+          }
+        },
+        {
+          "block": 9478505,
+          "hash": "0x458a5d2a562d49d1a93895120a2b0ee4a3ee1fa0ea13c879ca1ea2eaeb615ec6",
+          "eventIndex": 334,
+          "extrinsicIndex": 10,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 53,
+            "coldkey": "5FWwFBofZ8AwfdrDwtBFFJUxjAsN3LWFuGusM1v9PjTJmHSE",
+            "hotkey": "5Hpru1Ati7Wfrixfkc96cpqVHTbMWhb2KqQXN615ccTREKgb",
+            "spender": "5FWwFBofZ8AwfdrDwtBFFJUxjAsN3LWFuGusM1v9PjTJmHSE",
+            "amount": 1000000000,
+            "reference": "0xdc703fcc934bfdae1b2090f3cb4e12218795a1b3b88405a3750fbd1c854cdce4"
+          }
+        },
+        {
+          "block": 9478550,
+          "hash": "0xee5e587209dbd460e6dca7070e138ec1ebadd4aace36bbbef0979e889fa6fa38",
+          "eventIndex": 231,
+          "extrinsicIndex": 27,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 53,
+            "coldkey": "5FWwFBofZ8AwfdrDwtBFFJUxjAsN3LWFuGusM1v9PjTJmHSE",
+            "hotkey": "5Hpru1Ati7Wfrixfkc96cpqVHTbMWhb2KqQXN615ccTREKgb",
+            "spender": "5FWwFBofZ8AwfdrDwtBFFJUxjAsN3LWFuGusM1v9PjTJmHSE",
+            "amount": 1000000000,
+            "reference": "0xb2f460faf76f5b65784452ba64c1077bc95ea365c14be3fc2c21ae223824a056"
+          }
+        },
+        {
+          "block": 9479559,
+          "hash": "0x54fa19925f8073c71937cd12cb95f897d1980432e9d4bb5dba8600fe96d043ff",
+          "eventIndex": 259,
+          "extrinsicIndex": 23,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 53,
+            "coldkey": "5FWwFBofZ8AwfdrDwtBFFJUxjAsN3LWFuGusM1v9PjTJmHSE",
+            "hotkey": "5Hpru1Ati7Wfrixfkc96cpqVHTbMWhb2KqQXN615ccTREKgb",
+            "spender": "5FWwFBofZ8AwfdrDwtBFFJUxjAsN3LWFuGusM1v9PjTJmHSE",
+            "amount": 1000000000,
+            "reference": "0x660d31d6b868fed166a6fdb9461c47e5a7e7df181fe131fad2bc2aed561118ec"
+          }
+        },
+        {
+          "block": 9484138,
+          "hash": "0x4e73287486bc760ab21e2c5b7d4af5d8209090a507a43afc9f46193bfd7d4cba",
+          "eventIndex": 175,
+          "extrinsicIndex": 13,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 53,
+            "coldkey": "5FWwFBofZ8AwfdrDwtBFFJUxjAsN3LWFuGusM1v9PjTJmHSE",
+            "hotkey": "5Hpru1Ati7Wfrixfkc96cpqVHTbMWhb2KqQXN615ccTREKgb",
+            "spender": "5H8SFVCxk52ag1YSC5bQw7B84NRNhAtYWAP81jEPfuJ3VL8Q",
+            "amount": 1000000000,
+            "reference": "0x12b652555e1dfc7e6990196b12d0fa988a1b04adee28b1f409b143dc53281bce"
+          }
+        },
+        {
+          "block": 9484248,
+          "hash": "0xc8ef67effda43d5bd06857ff7fd8cb262418f2ba9625159fac4f3e8b346596e1",
+          "eventIndex": 551,
+          "extrinsicIndex": 136,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 53,
+            "coldkey": "5FWwFBofZ8AwfdrDwtBFFJUxjAsN3LWFuGusM1v9PjTJmHSE",
+            "hotkey": "5Hpru1Ati7Wfrixfkc96cpqVHTbMWhb2KqQXN615ccTREKgb",
+            "spender": "5H8SFVCxk52ag1YSC5bQw7B84NRNhAtYWAP81jEPfuJ3VL8Q",
+            "amount": 1000000000,
+            "reference": "0xc08a7f7b1f667ce4833a4eb982ea0d14c4d062063d2c7aaeea31eed7d570838e"
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 58,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "Attune",
+        "github_repo": "https://github.com/robotensor/attune-subnet",
+        "subnet_contact": "hello@robotensor.ai",
+        "subnet_url": "https://attune.robotensor.ai",
+        "discord": "https://discord.com/channels/799672011265015819/1550516268002578432",
+        "description": "The open frontier for adaptive robot intelligence",
+        "logo_url": "https://www.robotensor.ai/logo/logo.png",
+        "additional": ""
+      },
+      "NetworkRegisteredAt": 8511017,
+      "SubnetOwner": "5DCsuLtioCCfgiNQvfe3kiUBDXMs6X4y9PrEiAX7rMZ2e5E3",
+      "SubnetGammaPrice": {
+        "bits": 246780662605523912
+      },
+      "SubnetGammaEmission": [],
+      "services": [
+        {
+          "hotkey": "5DsnuvVczKJvrFphbzNnuRhiGhH48co7im1EzzvnWibWBp9S",
+          "service": {
+            "url": "https://api.robotensor.ai/services.json",
+            "spender": "5DCsuLtioCCfgiNQvfe3kiUBDXMs6X4y9PrEiAX7rMZ2e5E3"
+          }
+        }
+      ],
+      "provider": "Robotensor / Attune",
+      "offering": "Robotics data, policies and playground listings",
+      "description": "Robotensor operates Attune on SN58. Its registered manifest lists simulation and egocentric robot data, pre-training and post-training data, robot policies and playground runs. Listing a category does not demonstrate that every product is available today.",
+      "workflow": "The manifest points to api.robotensor.ai/v1 and an OpenAPI specification. The earlier team announcement offered negotiated robotics-data access. Confirm the specific dataset, license, delivery method and Gamma quote with Robotensor before funding access.",
+      "terms": "No public Gamma price schedule appears in the reviewed manifest. Its OpenAPI endpoint returned HTTP 403. We have not purchased data or verified delivery, model access or playground execution.",
+      "source": "https://api.robotensor.ai/services.json",
+      "activity": []
+    },
+    {
+      "netuid": 80,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "OpenRoboto",
+        "github_repo": "https://github.com/openroboto-ai/openroboto-subnet",
+        "subnet_contact": "riccardo@openroboto.ai",
+        "subnet_url": "https://www.openroboto.ai/",
+        "discord": "https://discord.gg/N4F7UhEBY",
+        "description": "An open competition on Bittensor for continuously improving robotics models and collecting egocentric data",
+        "logo_url": "https://www.openroboto.ai/logo.png",
+        "additional": ""
+      },
+      "NetworkRegisteredAt": 7151800,
+      "SubnetOwner": "5CG1eFiaZkWTCUEjD23i7Uiu6AjTkLkgkCu3EyXKFFAkkT2T",
+      "SubnetGammaPrice": {
+        "bits": 257361679130575372
+      },
+      "SubnetGammaEmission": [],
+      "services": [],
+      "provider": "OpenRoboto",
+      "offering": "Gamma enabled; service details unverified",
+      "description": "The registered subnet identity describes robotics model improvement and egocentric data collection. Gamma is enabled, but no service publisher entry was returned for SN80 at this finalized snapshot.",
+      "workflow": "There is no verified Gamma-specific ordering flow in this review. The subnet identity explains the project, not what a Gamma payment currently buys.",
+      "terms": "Provider billing identity, product availability, Gamma pricing and customer access still need primary-source confirmation. We do not infer an offering from the enabled flag.",
+      "source": "https://www.openroboto.ai/",
+      "activity": []
+    },
+    {
+      "netuid": 81,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "Reliquary",
+        "github_repo": "https://github.com/reliquadotai/reliquary",
+        "subnet_contact": "RomAI",
+        "subnet_url": "https://www.reliqua.ai/",
+        "discord": "https://discord.com/channels/799672011265015819/1493247592551678012",
+        "description": "The RL layer of Bittensor",
+        "logo_url": "https://www.reliqua.ai/reliquary-logo.png",
+        "additional": "0"
+      },
+      "NetworkRegisteredAt": 5203057,
+      "SubnetOwner": "5GnpQR4Nt3f5AQqBXuhf7GkkaEHhAVQrVk4EsK4daZDmkAQT",
+      "SubnetGammaPrice": {
+        "bits": 92391690954885446
+      },
+      "SubnetGammaEmission": [],
+      "services": [],
+      "provider": "Reliqua / Reliquary",
+      "offering": "Gamma enabled; service details unverified",
+      "description": "The registered identity calls Reliquary the reinforcement-learning layer of Bittensor. Its Gamma switch is on, but the service registry returned no publisher entry for SN81.",
+      "workflow": "A Gamma-specific customer workflow has not been verified. Reinforcement-learning infrastructure is the stated project focus, not proof of a currently purchasable Gamma service.",
+      "terms": "Service endpoints, billing operator, published price terms and delivered usage remain unverified in this review.",
+      "source": "https://www.reliqua.ai/",
+      "activity": []
+    },
+    {
+      "netuid": 103,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "Terza Inference",
+        "github_repo": "https://github.com/terza-labs/terza-miner",
+        "subnet_contact": "X: https://x.com/TerzaInference | Telegram: https://t.me/rimaterza",
+        "subnet_url": "https://terza.si",
+        "discord": "",
+        "description": "Terza Inference is a decentralized AI inference marketplace on Bittensor.",
+        "logo_url": "https://terza.si/logo.png",
+        "additional": "X: @TerzaInference (https://x.com/TerzaInference) | Telegram: @rimaterza | Dashboard: https://terza.si/dashboard/"
+      },
+      "NetworkRegisteredAt": 9321589,
+      "SubnetOwner": "5HZJ7QuYrNWhbWccjAcVTuTGMGmkcLs5ctWSe8AuYWuPweAN",
+      "SubnetGammaPrice": {
+        "bits": 74524101719489629
+      },
+      "SubnetGammaEmission": [],
+      "services": [
+        {
+          "hotkey": "5FCSL8R69CXweUjewpoGUpDnYFcFg3Q1J4tQbNHj23SbLgUc",
+          "service": {
+            "url": "https://terza.si",
+            "spender": "5CXMghXHQEDf7xgp2KHfXitDPo55yG1xLtq6jASxqjMSrHv1"
+          }
+        }
+      ],
+      "provider": "Terza Inference",
+      "offering": "Inference marketplace",
+      "description": "Terza describes itself in its on-chain identity as a decentralized AI inference marketplace. A service publisher and spender are registered, with terza.si as the service URL.",
+      "workflow": "The registered URL resolves to the project website rather than a machine-readable Gamma service manifest. Mint and spend events verify that the Gamma payment path was exercised, but do not identify the model, request or customer behind it.",
+      "terms": "Gamma-specific order steps, inference pricing and delivery records were not independently verified. Do not equate the observed transactions with external customer revenue.",
+      "source": "https://terza.si",
+      "activity": [
+        {
+          "block": 9477009,
+          "hash": "0x4a90f7902a88d26e34b2ab9b02a70f1a0187a363631e4ab4ab0b61c0d9c8ae63",
+          "eventIndex": 245,
+          "extrinsicIndex": 11,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 103,
+            "coldkey": "5GeRaijjCS9pHHgHFid4MuAqMRtW1imS7arBuxeQRvgSgzyC",
+            "hotkey": "5GpE6BzryYDYxfnhjbQWWCj7Th1B9ak2ztoo5hBC9HEnwhUi",
+            "spender": "5CXMghXHQEDf7xgp2KHfXitDPo55yG1xLtq6jASxqjMSrHv1",
+            "daily_spend_cap": null,
+            "tao": 2000000,
+            "alpha": 479604977,
+            "value": 1932741,
+            "gamma": 417339334
+          }
+        },
+        {
+          "block": 9477012,
+          "hash": "0x16b232711cd8f6826e9d57901f00db8de8c4f4a44cd3e115f79467c6b96e194f",
+          "eventIndex": 226,
+          "extrinsicIndex": 24,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 103,
+            "coldkey": "5GeRaijjCS9pHHgHFid4MuAqMRtW1imS7arBuxeQRvgSgzyC",
+            "hotkey": "5GpE6BzryYDYxfnhjbQWWCj7Th1B9ak2ztoo5hBC9HEnwhUi",
+            "spender": "5CXMghXHQEDf7xgp2KHfXitDPo55yG1xLtq6jASxqjMSrHv1",
+            "amount": 417339334,
+            "reference": "0x77a60576632dac148a7b2a0ba17ed41eb5c71c3f9e688b8774108862011f50a6"
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 117,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "everyframe.studio",
+        "github_repo": "https://github.com/everyframe-studios/everyframe-miner",
+        "subnet_contact": "contact@everyframe.studio",
+        "subnet_url": "https://everyframe.studio/",
+        "discord": "https://discord.com/channels/799672011265015819/1544011415692644444",
+        "description": "Every frame gets craft",
+        "logo_url": "https://avatars.githubusercontent.com/u/327085870?s=200&v=4",
+        "additional": ""
+      },
+      "NetworkRegisteredAt": 5710859,
+      "SubnetOwner": "5FFDV7LGKVsVvyVbzSduzxQDPfBuJYHBM2QJPia5ikDivsXd",
+      "SubnetGammaPrice": {
+        "bits": 87776804319407500
+      },
+      "SubnetGammaEmission": [],
+      "services": [
+        {
+          "hotkey": "5G9K4zDrdcAE8F1MaaZNxLGXuhMApR5ENZGTs2wAEhiptHEf",
+          "service": {
+            "url": "https://app.everyframe.studio/services.json",
+            "spender": "5FFDV7LGKVsVvyVbzSduzxQDPfBuJYHBM2QJPia5ikDivsXd"
+          }
+        }
+      ],
+      "provider": "EveryFrame",
+      "offering": "Video, image and audio generation credits",
+      "description": "EveryFrame publishes a Gamma service manifest for AI video, image and audio generation for agents. It says SN117 Gamma adds EveryFrame credits.",
+      "workflow": "The manifest exposes an MCP endpoint at app.everyframe.studio/api/v1/mcp. Its published flow is to fund platform credits with SN117 Gamma, then use the provider generation service.",
+      "terms": "The manifest advertises max_spend 1000, which is not a per-video price. Per-model prices, conversion terms and successful generation were not verified through a purchase.",
+      "source": "https://app.everyframe.studio/services.json",
+      "activity": []
+    }
+  ],
+  "activityCoverage": {
+    "fromBlock": 9476686,
+    "toBlock": 9485026,
+    "note": "Contiguous event scan from the prior daily cutoff, extended to the configuration snapshot. Not lifetime totals. Successful transactions do not establish independent customers or service delivery."
+  }
+}

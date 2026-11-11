@@ -119,7 +119,7 @@ test('TAO seasonality filters full months and reveals underlying years without m
   await november.click();
   await expect(november.locator('..')).toContainText('2023');
   await noOverflow(page);
-  await expect(page.getByRole('navigation', { name: 'Subnet news tools' }).getByRole('link', { name: 'Seasonality', exact: false })).toHaveAttribute('aria-current', 'page');
+  await expect(page.getByRole('navigation', { name: 'Subnet news tools' }).getByRole('link', { name: 'Seasonality', exact: false })).toHaveCount(0);
 });
 test('cached server snapshots hydrate safely after freshness expires',async({page})=>{
  await page.clock.install({time:new Date(Date.now()+20*60_000)});
@@ -731,15 +731,15 @@ test("toolkit answers research questions and opens a working tool on mobile",asy
  await expect(page).toHaveURL(/\/subnet-news\/toolkit$/);
  await expect(page.getByRole('link',{name:'Bittensor Toolkit →',exact:true})).toHaveAttribute('aria-current','page');
  await expect(page.getByRole('link',{name:'Daily news',exact:true})).not.toHaveAttribute('aria-current','page');
- await expect(page.getByRole('main').getByRole('article')).toHaveCount(10);
- await expect(page.getByRole('main')).toContainText('No wallet connection or cross-device sync.');
+ await expect(page.getByRole('main').getByRole('article')).toHaveCount(5);
+ await expect(page.getByRole('main')).toContainText('Enabled status, service listings and actual usage are reported separately.');
  await page.getByRole('navigation',{name:'Toolkit categories'}).getByRole('link',{name:'Check what changed on chain ↓',exact:true}).click();
  await expect(page).toHaveURL(/#chain$/);
  await expect(page.getByRole('heading',{name:'Check what changed on chain',exact:true})).toBeInViewport();
  await noOverflow(page);
  await page.screenshot({path:`../brand-workday-2026-11-02/toolkit-${test.info().project.name}.png`,fullPage:true});
- await page.getByRole('main').getByRole('link',{name:'Recovery Math →',exact:true}).click();
- await expect(page.getByRole('heading',{name:'A 50% drop needs a 100% comeback.',exact:true})).toBeVisible();
+ await page.getByRole('main').getByRole('link',{name:'Gamma →',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'Gamma',exact:true})).toBeVisible();
 });
 
 
@@ -772,4 +772,19 @@ test("eTAO shows burn and recycle allocations alongside reward recipients", asyn
   await expect(current.locator("dl > div").filter({ has: page.getByRole("button", { name: "Explain Burn", exact: true }) })).toContainText(percent);
   await expect(page.getByRole("main")).not.toContainText("slots remain zero");
   await expect(page.getByRole("main")).toContainText("does not prove a specific amount has already been destroyed");
+});
+
+
+test("Gamma separates service status from activity and simplifies news navigation",async({page})=>{
+ await page.goto('/subnet-news/gamma');
+ const nav=page.getByRole('navigation',{name:'Subnet news tools'});
+ await expect(nav.getByRole('link')).toHaveCount(6);
+ await expect(nav.getByRole('link',{name:'Gamma →',exact:true})).toHaveAttribute('aria-current','page');
+ await expect(nav.getByRole('link',{name:/Watchlist|Recovery|Split|Seasonality|Holding/})).toHaveCount(0);
+ await expect(page.locator('main article')).toHaveCount(7);
+ await expect(page.locator('#sn80')).toContainText('No registered service found');
+ await expect(page.locator('#sn53')).toContainText('Mint/spend activity verified');
+ await page.locator('#sn25 summary').click();
+ await expect(page.locator('#sn25 details')).toContainText('5EUQU938');
+ await noOverflow(page);
 });

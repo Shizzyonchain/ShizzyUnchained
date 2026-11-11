@@ -9,25 +9,14 @@ export function SubnetNewsHeader() {
   const etaoActive = pathname === "/subnet-news/etao" || pathname.startsWith("/subnet-news/etao/");
   const burnsActive = pathname === "/subnet-news/burns";
   const returnsActive = pathname === "/subnet-news/tao-returns";
-  const seasonalityActive = pathname === "/subnet-news/seasonality";
-  const compareActive = pathname === "/subnet-news/split-compare";
-  const recoveryActive = pathname === "/subnet-news/recovery-math";
   const searchActive = pathname === "/subnet-news/search";
-  const watchlistActive = pathname === "/subnet-news/watchlist";
-  const holdingActive = pathname === "/subnet-news/holding-periods";
-  const finderActive = pathname === "/subnet-news/split-finder";
   const toolkitActive = pathname === "/subnet-news/toolkit";
   const tabs = [
-    { href: "/subnet-news", label: "Daily news", active: !etaoActive && !burnsActive && !returnsActive && !seasonalityActive && !compareActive && !recoveryActive && !searchActive && !watchlistActive && !holdingActive && !finderActive && !toolkitActive },
+    { href: "/subnet-news", label: "Daily news", active: pathname === "/subnet-news" || /^\/subnet-news\/\d{4}-\d{2}-\d{2}$/.test(pathname) },
+    { href: "/subnet-news/gamma", label: "Gamma →", active: pathname === "/subnet-news/gamma" },
     { href: "/subnet-news/etao", label: "eTAO Changes →", active: etaoActive },
     { href: "/subnet-news/burns", label: "Burns →", active: burnsActive },
     { href: "/subnet-news/tao-returns", label: "TAO Returns →", active: returnsActive },
-    { href: "/subnet-news/holding-periods", label: "Holding Returns →", active: holdingActive },
-    { href: "/subnet-news/seasonality", label: "Seasonality →", active: seasonalityActive },
-    { href: "/subnet-news/split-finder", label: "Split Finder →", active: finderActive },
-    { href: "/subnet-news/split-compare", label: "Split Compare →", active: compareActive },
-    { href: "/subnet-news/recovery-math", label: "Recovery Math →", active: recoveryActive },
-    { href: "/subnet-news/watchlist", label: "Watchlist →", active: watchlistActive },
     { href: "/subnet-news/search", label: "News Search →", active: searchActive },
   ];
   return <><SiteHeader /><div className={styles.toolkit}><Link href="/subnet-news/toolkit" aria-current={toolkitActive ? "page" : undefined}>Bittensor Toolkit →</Link><span>Find the right tool for your question.</span></div><nav aria-label="Subnet news tools" className={styles.nav}>

@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/validators/root",
     "/subnet-news",
     "/subnet-news/toolkit",
+    "/subnet-news/gamma",
     "/subnet-news/etao",
     "/subnet-news/burns",
     "/subnet-news/tao-returns",
