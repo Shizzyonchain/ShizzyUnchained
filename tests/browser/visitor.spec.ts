@@ -739,7 +739,7 @@ test("toolkit answers research questions and opens a working tool on mobile",asy
  await noOverflow(page);
  await page.screenshot({path:`../brand-workday-2026-11-02/toolkit-${test.info().project.name}.png`,fullPage:true});
  await page.getByRole('main').getByRole('link',{name:'Gamma →',exact:true}).click();
- await expect(page.getByRole('heading',{name:'Gamma',exact:true})).toBeVisible();
+ await expect(page.getByRole('heading',{name:'Who’s using Gamma?',exact:true})).toBeVisible();
 });
 
 
@@ -784,7 +784,9 @@ test("Gamma separates service status from activity and simplifies news navigatio
  await expect(page.locator('main article')).toHaveCount(7);
  await expect(page.locator('#sn80')).toContainText('No registered service found');
  await expect(page.locator('#sn53')).toContainText('Mint/spend activity verified');
- await page.locator('#sn25 summary').click();
- await expect(page.locator('#sn25 details')).toContainText('5EUQU938');
+ await page.locator('#sn25 summary').filter({hasText:'Service identities'}).click();
+ await expect(page.locator('#sn25 details').filter({hasText:'5EUQU938'})).toBeVisible();
+ await expect(page.getByRole('heading',{name:'Who pays whom',exact:true})).toBeVisible();
+ await expect(page.getByRole('region',{name:'Daily Gamma usage'})).toContainText('Unavailable');
  await noOverflow(page);
 });
