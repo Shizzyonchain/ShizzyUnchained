@@ -790,3 +790,16 @@ test("Gamma separates service status from activity and simplifies news navigatio
  await expect(page.getByRole('region',{name:'Daily Gamma usage'})).toContainText('Unavailable');
  await noOverflow(page);
 });
+
+
+test("trading scores never treat missing return history as a flat market", async ({ page }) => {
+  await page.route('**/api/backend/v1/screener', route => route.fulfill({json:{data:markets.map(row => row.netuid === 51 ? {...row,price_10m_tao:null,price_1h_tao:null,price_24h_tao:null,time_1h:null,time_24h:null} : row)}}));
+  await page.goto('/charts/51?currency=TAO');
+  const signals=page.locator('.trading-signals');
+  await expect(signals).toContainText('Incomplete price history');
+  await expect(signals).toContainText('1d unavailable');
+  await expect(signals).toContainText('Incomplete market history');
+  await expect(signals).not.toContainText('Positive alignment');
+  await expect(signals).not.toContainText('1d +0.00%');
+  await noOverflow(page);
+});

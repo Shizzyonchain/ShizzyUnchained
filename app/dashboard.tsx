@@ -24,6 +24,7 @@ import { SubnetYield } from "./subnet-yield";
 import { SubnetMarketSnapshot } from "./subnet-market-snapshot";
 import { SubnetOwner } from "./subnet-owner";
 import { MarketSignals } from "./market-signals";
+import { numberOrNull } from "./lib/market-signals";
 import { SentimentTile } from "./sentiment-tile";
 import { OverviewHelp } from "./overview-help";
 import { MetricExplanation } from "./metric-explanation";
@@ -942,20 +943,20 @@ export function Dashboard({
   const clampScore = (value: number) => Math.round(Math.max(0, Math.min(100, value)));
   const signalData = active
     ? (() => {
-        const change10 = Number(active.change_10m || 0),
-          change1h = Number(active.change_1h || 0),
-          change24 = Number(active.change_24h || 0);
+        const change10 = numberOrNull(active.change_10m),
+          change1h = numberOrNull(active.change_1h),
+          change24 = numberOrNull(active.change_24h);
         const liquidityFlow = Number(active.liquidity_change_1h || 0),
           emissionFlow = Number(active.emission_change_1h || 0);
         const volumeAcceleration = Number(active.volume_acceleration_1h || 0);
         const marketCap = Number(active.market_cap_tao || 0),
           liquidity = Number(active.tao_reserve || 0);
         const coverage = marketCap > 0 ? (liquidity / marketCap) * 100 : 0;
-        const momentum = clampScore(50 + (change10 * 0.2 + change1h * 0.45 + change24 * 0.35) * 6);
+        const momentum = change10 === null || change1h === null || change24 === null ? null : clampScore(50 + (change10 * 0.2 + change1h * 0.45 + change24 * 0.35) * 6);
         const liquidityScore = clampScore(50 + liquidityFlow * 8);
         const emissionScore = clampScore(50 + emissionFlow * 40);
         const activityScore = clampScore(Number.isFinite(volumeAcceleration) ? volumeAcceleration * 50 : 0);
-        const risk = clampScore(78 - coverage * 1.6 + Math.abs(change1h) * 5);
+        const risk = change1h === null || numberOrNull(active.market_cap_tao) === null || marketCap <= 0 || numberOrNull(active.tao_reserve) === null ? null : clampScore(78 - coverage * 1.6 + Math.abs(change1h) * 5);
         return {
           change10,
           change1h,
@@ -1291,21 +1292,18 @@ export function Dashboard({
                         <article>
                           <div>
                             <span>Momentum</span>
-                            <strong>{signalData.momentum}</strong>
+                            <strong>{signalData.momentum ?? "—"}</strong>
                           </div>
                           <i
                             style={
                               {
-                                "--score": `${signalData.momentum}%`,
+                                "--score": `${signalData.momentum ?? 0}%`,
                               } as CSSProperties
                             }
                           />
-                          <p className={signalData.momentum >= 55 ? "positive" : signalData.momentum <= 45 ? "negative" : ""}>{signalData.momentum >= 55 ? "Positive alignment" : signalData.momentum <= 45 ? "Negative alignment" : "Mixed direction"}</p>
+                          <p className={signalData.momentum === null ? "" : signalData.momentum >= 55 ? "positive" : signalData.momentum <= 45 ? "negative" : ""}>{signalData.momentum === null ? "Incomplete price history" : signalData.momentum >= 55 ? "Positive alignment" : signalData.momentum <= 45 ? "Negative alignment" : "Mixed direction"}</p>
                           <small>
-                            10m {signalData.change10 >= 0 ? "+" : ""}
-                            {fmt(signalData.change10)}% · 1h {signalData.change1h >= 0 ? "+" : ""}
-                            {fmt(signalData.change1h)}% · 1d {signalData.change24 >= 0 ? "+" : ""}
-                            {fmt(signalData.change24)}%
+                            {([['10m', signalData.change10], ['1h', signalData.change1h], ['1d', signalData.change24]] as const).map(([label, value]) => `${label} ${value === null ? 'unavailable' : `${value >= 0 ? '+' : ''}${fmt(value)}%`}`).join(' · ')}
                           </small>
                         </article>
                         <article>
@@ -1356,18 +1354,18 @@ export function Dashboard({
                         <article className="risk-signal">
                           <div>
                             <span>Risk</span>
-                            <strong>{signalData.risk}</strong>
+                            <strong>{signalData.risk ?? "—"}</strong>
                           </div>
                           <i
                             style={
                               {
-                                "--score": `${signalData.risk}%`,
+                                "--score": `${signalData.risk ?? 0}%`,
                               } as CSSProperties
                             }
                           />
-                          <p className={signalData.risk >= 65 ? "negative" : signalData.risk <= 35 ? "positive" : ""}>{signalData.risk >= 65 ? "Higher market risk" : signalData.risk <= 35 ? "Lower relative risk" : "Moderate market risk"}</p>
+                          <p className={signalData.risk === null ? "" : signalData.risk >= 65 ? "negative" : signalData.risk <= 35 ? "positive" : ""}>{signalData.risk === null ? "Incomplete market history" : signalData.risk >= 65 ? "Higher market risk" : signalData.risk <= 35 ? "Lower relative risk" : "Moderate market risk"}</p>
                           <small>
-                            {fmt(signalData.coverage)}% liquidity coverage · {fmt(Math.abs(signalData.change1h))}% 1h volatility
+                            {signalData.risk === null ? "Needs valid liquidity and one-hour return data" : `${fmt(signalData.coverage)}% liquidity coverage · ${fmt(Math.abs(signalData.change1h!))}% 1h volatility`}
                           </small>
                         </article>
                       </div>
