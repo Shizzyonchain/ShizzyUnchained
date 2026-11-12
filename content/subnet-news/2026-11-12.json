@@ -1,0 +1,1044 @@
+{
+  "version": 1,
+  "date": "2026-11-12",
+  "title": "Bittensor Daily News: November 12, 2026",
+  "summary": "SN51 Lium reports higher GPU spending and customer activity. SN75 Hippius shows its public model registry, SN45 AlphaRidge changes event discovery incentives, and SN117 EveryFrame records Gamma payments.",
+  "coverageStart": "2026-11-11T17:40:00+00:00",
+  "coverageEnd": "2026-11-12T14:40:00+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [
+    {
+      "headline": "Taostats publishes a practical guide to multisig and proxy wallets",
+      "summary": "Taostats’ November 11 guide explains how its Actions interface creates and uses multisignature wallets and restricted proxies. Multisig requires a chosen signing threshold, while proxy types limit which operations a delegated wallet can perform. The article links the relevant setup and transaction tools.\n\nThe practical distinction is between separating approvals and delegating limited day-to-day work. Neither removes risk: losing enough signers can lock a multisig, and a staking proxy can still incur trading losses. This is an educational guide to existing tools, not a newly deployed chain security feature.",
+      "sources": [
+        {
+          "url": "https://taostats.io/blog/securing-your-bittensor-wallets-with-taostats",
+          "label": "Primary Taostats security guide"
+        }
+      ],
+      "rating": 3,
+      "ratingReason": "Three stars: timely, concrete operational guidance for wallet users. Four would overstate a guide to existing functionality as a new security capability.",
+      "status": "verified",
+      "importance": "medium",
+      "ratingAssessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "education",
+        "consequence": "Three stars: timely, concrete operational guidance for wallet users. Four would overstate a guide to existing functionality as a new security capability.",
+        "evidence": "Primary Taostats security guide",
+        "scope": "Published guide and linked existing Taostats Actions.",
+        "uncertainty": "No wallet configuration or transaction performed.",
+        "adjacentRatingReason": "Three stars: timely, concrete operational guidance for wallet users. Four would overstate a guide to existing functionality as a new security capability."
+      }
+    }
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta records five more qualifying alpha burns",
+          "summary": "Five successful SN8 AlphaBurned events destroyed 133.333333333, 225.004624293, 172.276442599, 207.546885395 and 139.895298531 alpha in the reviewed interval. Each exceeds the archive’s 100-alpha per-event threshold. These are transaction burns, kept separate from emission withholding, recycling and fees.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-12-chain-executions.json",
+              "label": "Successful finalized burn events"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Three stars: verified token destruction is a useful economic update, but these individual burns do not establish a major change in the subnet’s operating model.",
+          "status": "verified",
+          "importance": "medium",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "transaction-burn",
+            "consequence": "Three stars: verified token destruction is a useful economic update, but these individual burns do not establish a major change in the subnet’s operating model.",
+            "evidence": "Successful finalized burn events",
+            "scope": "Five qualifying native-alpha transaction events.",
+            "uncertainty": "No price-causation or source-of-funds claim.",
+            "adjacentRatingReason": "Three stars: verified token destruction is a useful economic update, but these individual burns do not establish a major change in the subnet’s operating model."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": [
+        {
+          "headline": "SN17 404 improves recovery when validation workers stall",
+          "summary": "404 published changes that retain already-collected validation outcomes when a later checkpoint cannot be read and replace workers that stop progressing for 45 minutes. The code also allows preferred data centers to be configured. These are reliability improvements in the evaluation pipeline, not a change to the competition winner or evidence of faster production generation.",
+          "sources": [
+            {
+              "url": "https://github.com/404-Repo/404-gen-subnet/commit/9fd95d9616cccfe93e8a5b89a6b47e54279e6501",
+              "label": "Primary validation-recovery change"
+            }
+          ],
+          "rating": 2,
+          "ratingReason": "Two stars: a bounded reliability repair rather than a new product or scoring mechanism.",
+          "status": "verified",
+          "importance": "informational",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "maintenance",
+            "consequence": "Two stars: a bounded reliability repair rather than a new product or scoring mechanism.",
+            "evidence": "Primary validation-recovery change",
+            "scope": "Validation-service recovery code.",
+            "uncertainty": "Production performance not measured.",
+            "adjacentRatingReason": "Two stars: a bounded reliability repair rather than a new product or scoring mechanism."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Unknown",
+      "updates": [
+        {
+          "headline": "SN35 receives a new registration after the previous subnet is removed",
+          "summary": "The chain removed the previous SN35 registration at block 9,485,498 and added a replacement at block 9,485,521. The new registration has different owner keys and no published subnet identity at the reviewed cutoff. The queued registration recorded 85.943564944 TAO locked; that is a protocol registration amount, not evidence of a negotiated purchase price.\n\nThe new operator’s project name and public channels remain unresolved. Historical price comparisons across the replacement are invalid, and the website now excludes the crossing 24-hour and seven-day returns. A new registration does not establish the identity of its beneficial owner or continuity with the former project.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-12-sn35-registration.json",
+              "label": "Finalized registration and identity boundary evidence"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "Four stars: replacement of the registered subnet and its controlling keys materially changes what occupies SN35. Five is not supported; the new project and operating scope remain unknown.",
+          "status": "verified",
+          "importance": "high",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "substantive-identity-change",
+            "consequence": "Four stars: replacement of the registered subnet and its controlling keys materially changes what occupies SN35. Five is not supported; the new project and operating scope remain unknown.",
+            "evidence": "Finalized registration and identity boundary evidence",
+            "scope": "Finalized removal and replacement of the SN35 registration, not merely a contact edit.",
+            "uncertainty": "Beneficial owner, new project identity and off-chain sale terms unknown.",
+            "adjacentRatingReason": "Four stars: replacement of the registered subnet and its controlling keys materially changes what occupies SN35. Five is not supported; the new project and operating scope remain unknown."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": [
+        {
+          "headline": "SN36 Weir publishes its GPU miner agent and connection procedure",
+          "summary": "Weir published a miner agent and revised setup documentation on November 12. Operators register control endpoints privately with Weir support, and validators check GPU authenticity and performance. The guide describes a 14-day record of passed checks for idle-reward eligibility.\n\nThis clarifies how outside machines enter the GPU rental system. It is not permissionless self-onboarding: coordination with the operator remains part of the documented process, and live onboarding was not tested in this review.",
+          "sources": [
+            {
+              "url": "https://github.com/weircompute/weir-subnet/commit/8ac213da8f597a5e85dafd4af43431f3c46cd0a7",
+              "label": "Primary miner-agent release"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Three stars: concrete participation tooling with a bounded onboarding consequence. Four is not established as a new marketplace launch.",
+          "status": "verified",
+          "importance": "medium",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "Three stars: concrete participation tooling with a bounded onboarding consequence. Four is not established as a new marketplace launch.",
+            "evidence": "Primary miner-agent release",
+            "scope": "Miner-agent publication and setup documentation.",
+            "uncertainty": "No machine enrolled or live rental tested.",
+            "adjacentRatingReason": "Three stars: concrete participation tooling with a bounded onboarding consequence. Four is not established as a new marketplace launch."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": [
+        {
+          "headline": "SN45 AlphaRidge publishes an event-discovery redesign",
+          "summary": "AlphaRidge’s November 11 version 4.0 documentation changes the subnet’s focus from analyzing supplied articles to finding events in finance, technology, politics and sports. Miners submit signed claims with source URLs; the coordination service records arrival, novelty and scoring, while validators check supporting pages and the ledger.\n\nThe published rules distinguish a trusted-source discovery from an unconfirmed scoop. They describe a five-times reward for a scoop later confirmed by a trusted source and a two-times debt when it is not. This is a released mechanism and code change, not independent confirmation that every production validator has upgraded or that the approach improves news accuracy.",
+          "sources": [
+            {
+              "url": "https://github.com/Team-Rizzo/alpharidge-ai/commit/4fa77cafb63b465c340cee369c1d27a751df6e54",
+              "label": "Primary version 4.0 code and documentation"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "Four stars: a redesign of the subnet’s work and verification incentives is more consequential than maintenance. Five is not established by a code release without exceptional demonstrated reach.",
+          "status": "verified",
+          "importance": "high",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "Four stars: a redesign of the subnet’s work and verification incentives is more consequential than maintenance. Five is not established by a code release without exceptional demonstrated reach.",
+            "evidence": "Primary version 4.0 code and documentation",
+            "scope": "Published version 4.0 mechanism and implementation.",
+            "uncertainty": "Production rollout and accuracy outcomes not independently established.",
+            "adjacentRatingReason": "Four stars: a redesign of the subnet’s work and verification incentives is more consequential than maintenance. Five is not established by a code release without exceptional demonstrated reach."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GPUForge",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": [
+        {
+          "headline": "SN51 Lium reports $2.70 million in GPU spending over 31 days",
+          "summary": "Lium’s November 12 operating update reports $2.70 million in GPU spending for October 10 through November 9, compared with $1.45 million in the preceding 31-day period. Billed customers rose from 1,391 to 2,394, while rentals increased from 18,039 to 29,300. These are Lium’s reported operating figures, not independently audited financial results.\n\nThe report puts 77.7% of usage outside the web application, up from 68.9%, and eight-GPU rentals at 5,536 versus 3,072. That points to a larger role for programmatic workloads and multi-GPU jobs within its reported activity. Its $34.6 million annualized spending run rate extrapolates the latest seven days; it is not realized annual revenue or profit. The post’s rental-growth percentage differs from its chart, so the absolute counts are used here.",
+          "sources": [
+            {
+              "url": "https://x.com/lium_io/status/2120797867325685979",
+              "label": "Lium original operating update and inspected charts"
+            },
+            {
+              "url": "https://x.com/lium_io/status/2120797874015617258",
+              "label": "Lium follow-up"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "Four stars: a substantial quantified change in actual reported usage matters more than a routine catalog update. Five is not established by one provider-reported period or an annualized extrapolation.",
+          "status": "verified",
+          "importance": "high",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "reported-adoption",
+            "consequence": "Four stars: a substantial quantified change in actual reported usage matters more than a routine catalog update. Five is not established by one provider-reported period or an annualized extrapolation.",
+            "evidence": "Lium original operating update and inspected charts; Lium follow-up",
+            "scope": "SN51 customer, rental and GPU-spending metrics for two consecutive 31-day periods.",
+            "uncertainty": "Team-reported figures; rental percentage conflict; spending is not profit.",
+            "adjacentRatingReason": "Four stars: a substantial quantified change in actual reported usage matters more than a routine catalog update. Five is not established by one provider-reported period or an annualized extrapolation."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": [
+        {
+          "headline": "SN71 Leadpoet announces a Hermes plugin for outbound customer discovery",
+          "summary": "Leadpoet announced on November 11 that its customer-discovery workflow is available through a plugin for Nous Research’s Hermes agent. The team says users can supply a website, find companies showing buying signals, and have the agent draft and send outreach emails. Its follow-up provides installation and enable commands and a /customers entry point.\n\nThis is Leadpoet’s product-availability claim, not confirmation of a commercial partnership with Nous Research. The installation path and end-to-end email delivery were not tested here, and no customer or revenue result is implied.",
+          "sources": [
+            {
+              "url": "https://x.com/LeadpoetAI/status/2120594837095219420",
+              "label": "Primary Leadpoet availability announcement"
+            },
+            {
+              "url": "https://x.com/LeadpoetAI/status/2120594839548928020",
+              "label": "Primary installation instructions"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "Four stars: putting lead discovery and outreach inside an agent workflow is a substantive product integration, beyond a routine model listing. Five is not established by this team announcement: a strategic partnership, deployment scale and customer outcomes are not demonstrated.",
+          "status": "developing",
+          "importance": "high",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product-integration-announcement",
+            "consequence": "An agent entry point combines lead discovery and outbound outreach for prospective business users.",
+            "evidence": "Direct dated team announcement and installation instructions.",
+            "scope": "Leadpoet-reported Hermes plugin availability; no confirmed strategic partnership.",
+            "uncertainty": "Counterparty confirmation, installation and email delivery not independently verified; attached demonstration not continuously reviewed.",
+            "adjacentRatingReason": "Four stars: putting lead discovery and outreach inside an agent workflow is a substantive product integration, beyond a routine model listing. Five is not established by this team announcement: a strategic partnership, deployment scale and customer outcomes are not demonstrated."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": [
+        {
+          "headline": "SN75 Hippius highlights a public registry for models and containers",
+          "summary": "Hippius highlighted its Hub on November 12 as a distributed registry for AI models and containers. The public site was accessible during this review and listed 11,639 model entries and 1,766 containers, with formats including GGUF, safetensors, ONNX and PyTorch. These are registry counts, not unique customers or newly trained models.\n\nThe team says developers can redirect huggingface_hub workflows by changing an import, while the registry exposes Docker, ORAS and Hippius tooling. The visible catalog includes Cascade model checkpoints and Reliquary-task containers. This verifies a usable public catalog and the team’s integration description, not an independent test of uploads, artifact delivery or decentralization guarantees.",
+          "sources": [
+            {
+              "url": "https://x.com/Hippius_cloud/status/2120726964650807361",
+              "label": "Hippius primary announcement"
+            },
+            {
+              "url": "https://hub.hippius.com/",
+              "label": "Public registry inspected November 12"
+            }
+          ],
+          "rating": 4,
+          "ratingReason": "Four stars: a substantive shared model-and-container distribution capability exceeds a minor feature. Five is not established because exceptional ecosystem-wide adoption is not shown.",
+          "status": "verified",
+          "importance": "high",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "Four stars: a substantive shared model-and-container distribution capability exceeds a minor feature. Five is not established because exceptional ecosystem-wide adoption is not shown.",
+            "evidence": "Hippius primary announcement; Public registry inspected November 12",
+            "scope": "Public registry and documented developer integration.",
+            "uncertainty": "Read-only catalog inspected; no upload, pull execution or independent architecture audit.",
+            "adjacentRatingReason": "Four stars: a substantive shared model-and-container distribution capability exceeds a minor feature. Five is not established because exceptional ecosystem-wide adoption is not shown."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": [
+        {
+          "headline": "SN89 InfiniteQuant adds runner signatures to agent-book receipts",
+          "summary": "InfiniteQuant published a requirement for an allowed book runner to countersign receipts received from November 11 at 22:00 UTC. The signature binds the receipt to an algorithm hash, data watermark and book-state hash. Earlier receipts are left unchanged. This is a code-level validation rule; deployment across all validators was not independently checked.",
+          "sources": [
+            {
+              "url": "https://github.com/DeltaCompute24/InfiniteQuant-Subnet/commit/e01816b388144395bda31a01a0a3a4f789c20273",
+              "label": "Primary receipt-verification change"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Three stars: a meaningful change to which trading-agent receipts qualify. Its bounded validation scope does not establish a major product launch.",
+          "status": "verified",
+          "importance": "medium",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "engineering",
+            "consequence": "Three stars: a meaningful change to which trading-agent receipts qualify. Its bounded validation scope does not establish a major product launch.",
+            "evidence": "Primary receipt-verification change",
+            "scope": "Receipt-validation implementation and configured effective time.",
+            "uncertainty": "Network-wide rollout not verified.",
+            "adjacentRatingReason": "Three stars: a meaningful change to which trading-agent receipts qualify. Its bounded validation scope does not establish a major product launch."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": [
+        {
+          "headline": "SN94 Cathedral adds code for persistent encrypted workspaces",
+          "summary": "Cathedral published a sealed-data-volume implementation that lets workspace data survive a restart of the same guest build. It uses a separate encrypted volume instead of placing persistent work on a scratch disk whose key changes at each boot.\n\nThe release explicitly says this phase is not deployed on a live host. Persistence across a new build remains outside this phase. The practical advance is implementation of restart persistence under the documented threat model, not an independently audited security guarantee.",
+          "sources": [
+            {
+              "url": "https://github.com/cathedralai/cathedral-sandbox/commit/6d85cf49689ea3b3027055ceeb939f2bec16415e",
+              "label": "Primary sealed-volume code and deployment limitations"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Three stars: a substantive implementation milestone with clear limits. Four as a live capability is not supported because the release explicitly says deployment has not happened.",
+          "status": "verified",
+          "importance": "medium",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "engineering",
+            "consequence": "Three stars: a substantive implementation milestone with clear limits. Four as a live capability is not supported because the release explicitly says deployment has not happened.",
+            "evidence": "Primary sealed-volume code and deployment limitations",
+            "scope": "Published persistent-workspace implementation.",
+            "uncertainty": "Not live; new-build migration and independent security testing remain unverified.",
+            "adjacentRatingReason": "Three stars: a substantive implementation milestone with clear limits. Four as a live capability is not supported because the release explicitly says deployment has not happened."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": [
+        {
+          "headline": "SN111 Claims raises the owner allocation and publishes miner-burn rules",
+          "summary": "A finalized SN111 allocation change at block 9,486,570 moves the owner share from approximately 18% to 26% and the miner share from approximately 41% to 33%, leaving validators near 41%. The five-slot vector assigns zero directly to the burn and recycle buckets.\n\nSeparately, Claims published a validator policy directing 87.5758% of its miner-weight vector to an owner UID configured for burning and 12.4242% to miner hotkeys. Weekly winners are assigned 70%, 20% and 10% of that smaller miner pool. These validator weights are a different layer from the owner/validator/miner split. The document reports an encrypted commitment accepted at block 9,486,540; its eventual reveal and effective payout weights were not independently verified here.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-12-chain-executions.json",
+              "label": "Exact finalized before-and-after allocation"
+            },
+            {
+              "url": "https://github.com/DeSciClaims/Claims/commit/50c68b9af2631e30fc0d1f43b3bf2a8cef9c7601",
+              "label": "Primary validator burn-policy document"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Three stars: a meaningful subnet-specific distribution change, with finalized allocation evidence. It does not establish an ecosystem-wide protocol change or a completed transaction burn.",
+          "status": "verified",
+          "importance": "medium",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "protocol",
+            "consequence": "Three stars: a meaningful subnet-specific distribution change, with finalized allocation evidence. It does not establish an ecosystem-wide protocol change or a completed transaction burn.",
+            "evidence": "Exact finalized before-and-after allocation; Primary validator burn-policy document",
+            "scope": "One finalized emission allocation and a separately documented validator policy.",
+            "uncertainty": "Validator commitment reveal and resulting earnings not verified.",
+            "adjacentRatingReason": "Three stars: a meaningful subnet-specific distribution change, with finalized allocation evidence. It does not establish an ecosystem-wide protocol change or a completed transaction burn."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": [
+        {
+          "headline": "SN116 Carbon explains decaying rewards for winning physics models",
+          "summary": "Carbon published its miner-emission rules on November 12. A qualifying leading model receives its challenge’s full share for 24 hours; without a further qualifying improvement, the rate halves each day and the unpaid portion is burned. A verified improvement can restart the reward period, while a challenger can replace the incumbent.\n\nThe article’s constant-emission example approaches two full-share days of cumulative payment from a single win. These are competition rules, not an income forecast or proof of mainnet payments. The article describes four equal launch shares, while the reviewed repository describes two initial challenges; the exact launch allocation remains unresolved and is not presented as settled.",
+          "sources": [
+            {
+              "url": "https://x.com/carbonphysicsai/status/2120857194400801116",
+              "label": "Primary Carbon emission-rules article"
+            },
+            {
+              "url": "https://github.com/carbonphysicsai/Carbon/commit/af0e367fd31ec9696e05f681f8805da587a27e94",
+              "label": "Primary repository policy document"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Three stars under the competition cap: useful incentive rules, with conflicting launch-share descriptions explicitly unresolved.",
+          "status": "verified",
+          "importance": "medium",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "routine-competition",
+            "consequence": "Three stars under the competition cap: useful incentive rules, with conflicting launch-share descriptions explicitly unresolved.",
+            "evidence": "Primary Carbon emission-rules article; Primary repository policy document",
+            "scope": "Published competition rules and reward-decay explanation.",
+            "uncertainty": "Launch-share discrepancy and mainnet activation not resolved.",
+            "adjacentRatingReason": "Three stars under the competition cap: useful incentive rules, with conflicting launch-share descriptions explicitly unresolved."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": [
+        {
+          "headline": "SN117 EveryFrame records three Gamma mints and three spends",
+          "summary": "Three successful Gamma mint-and-spend pairs for SN117 appear in the finalized interval reviewed today. A further mint and spend occurred on SN53 Engy. Seven subnets remain Gamma-enabled at the snapshot: SN25, SN53, SN58, SN80, SN81, SN103 and SN117.\n\nEveryFrame’s registered service describes converting Gamma into credits for image, video and audio generation. The transactions establish use of the payment mechanism, but wallet counts are not customer counts, and a spend event alone does not verify delivered output or external revenue. No subnet-to-subnet Gamma emission allocations were configured in the seven enabled entries at the cutoff.",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-12-chain-executions.json",
+              "label": "Successful finalized Gamma events"
+            },
+            {
+              "url": "https://app.everyframe.studio/services.json",
+              "label": "Registered EveryFrame service manifest"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Three stars: a concrete extension of observed usage to SN117 deserves coverage, but a handful of payments is not another network-wide launch or proof of commercial scale.",
+          "status": "verified",
+          "importance": "medium",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "protocol",
+            "consequence": "Three stars: a concrete extension of observed usage to SN117 deserves coverage, but a handful of payments is not another network-wide launch or proof of commercial scale.",
+            "evidence": "Successful finalized Gamma events; Registered EveryFrame service manifest",
+            "scope": "Eight new finalized Gamma events through block 9490861.",
+            "uncertainty": "Customer identity, service delivery and commercial status unknown.",
+            "adjacentRatingReason": "Three stars: a concrete extension of observed usage to SN117 deserves coverage, but a handful of payments is not another network-wide launch or proof of commercial scale."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "storyOrder": [
+    "SN51 Lium reports $2.70 million in GPU spending over 31 days",
+    "SN75 Hippius highlights a public registry for models and containers",
+    "SN71 Leadpoet announces a Hermes plugin for outbound customer discovery",
+    "SN45 AlphaRidge publishes an event-discovery redesign",
+    "SN117 EveryFrame records three Gamma mints and three spends",
+    "SN111 Claims raises the owner allocation and publishes miner-burn rules",
+    "SN35 receives a new registration after the previous subnet is removed",
+    "SN8 Vanta records five more qualifying alpha burns",
+    "SN36 Weir publishes its GPU miner agent and connection procedure",
+    "SN116 Carbon explains decaying rewards for winning physics models",
+    "Taostats publishes a practical guide to multisig and proxy wallets",
+    "SN94 Cathedral adds code for persistent encrypted workspaces",
+    "SN89 InfiniteQuant adds runner signatures to agent-book receipts",
+    "SN17 404 improves recovery when validation workers stall"
+  ],
+  "coverage": {
+    "searched": [
+      "All 128 current subnet identity/website records; authenticated public repository review; bounded native team and ecosystem timelines; owner bookmarks and recent posts/replies; original Lium media and selected primary product/policy sources.",
+      "Contiguous finalized lifecycle, emission-allocation, qualifying burn and Gamma event review; owner holdings refreshed at one recorded finalized block.",
+      "Actual signed-in Grok discovery and qualitative attention queries; final omission query completed; uncorroborated suggestions retained as unresolved leads."
+    ],
+    "gaps": [
+      "Discord signed out during this run; official team-channel and price-move investigations remain blocked until access is restored.",
+      "X profiles and public repositories were reviewed in bounded windows. Complete seven-day Posts/Replies/Reposts and all attached media were not reviewed for every subnet or fund principal; unresolved leads remain pending.",
+      "Some official websites, repositories and most secondary briefs were inaccessible. These access gaps are not findings of no news.",
+      "SN35’s new project identity, Carbon’s conflicting launch-share descriptions, and the cause of several large token moves remain unresolved.",
+      "The full site audit is still in progress. Tested market repairs do not establish that every route and interaction passed."
+    ]
+  },
+  "publishedAt": "2026-11-12T15:00:00Z"
+}

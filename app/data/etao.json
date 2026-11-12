@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-11T17:40:31.905325+00:00",
-  "block": 9484458,
-  "hash": "0x2c47f380a557df698403bf675572504bf09e90aee66c048dc38729c5445eb7af",
-  "chainTime": 1794417240000,
+  "checkedAt": "2026-11-12T14:45:01.839908+00:00",
+  "block": 9490861,
+  "hash": "0x17ba2083227eda8fe63da02f30fb5c44560c7029dcecac138015013d6a085f3a",
+  "chainTime": 1794494076000,
   "runtime": 488,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -247,9 +247,9 @@
     "35": [
       "0",
       "0",
-      "6087425544324152032",
-      "5534023222112865484",
-      "6825295307272534099"
+      "3320329489486196244",
+      "7563207292111677685",
+      "7563207292111677686"
     ],
     "36": [
       "0",
@@ -779,9 +779,9 @@
     "111": [
       "0",
       "0",
-      "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "4796153459164483419",
+      "7563165070220916164",
+      "6087425544324152032"
     ],
     "112": [
       "0",
@@ -1586,6 +1586,30 @@
       "name": "rec4ll",
       "registrationBlock": 7173591,
       "evidence": "/evidence/2026-11-11-chain-executions.json"
+    },
+    {
+      "netuid": 111,
+      "block": 9486570,
+      "hash": "0xeda366f794c59d69b0bba712f5d658b1e345b80ffa13755e54b83f135c374d6b",
+      "timestamp": 1794442584000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "4796153459164483419",
+        "7563165070220916164",
+        "6087425544324152032"
+      ],
+      "extrinsic": 16,
+      "name": "Claims",
+      "registrationBlock": 5615562,
+      "evidence": "/evidence/2026-11-12-chain-executions.json"
     }
   ],
   "names": {
@@ -1623,7 +1647,7 @@
     "32": "ItsAI",
     "33": "ReadyAI",
     "34": "Yugos",
-    "35": "Jacob Robert Steeves",
+    "35": "Unknown",
     "36": "Weir",
     "37": "Aurelius",
     "38": "ChronoLLM",
@@ -1720,9 +1744,9 @@
   },
   "observations": [],
   "ownerSnapshot": {
-    "block": 9484515,
-    "hash": "0x410a324524eae57cff0971a5abd99efc34b9406e6b0af1240ad01da152432e45",
-    "checkedAt": "2026-11-11T17:40:31.905325+00:00",
+    "block": 9490728,
+    "hash": "0xe262ac3e49044d883ef085b8d4af7317cccfa9b077bc3955ff98de152d608de8",
+    "checkedAt": "2026-11-12T14:45:01.839908+00:00",
     "owners": {
       "1": "5HCFWvRqzSHWRPecN7q8J6c7aKQnrCZTMHstPv39xL1wgDHh",
       "2": "5EcYQ3W77ndrmMWdvVQusoFqY8doxfP3U2zrh7xZQiaz7avY",
@@ -1758,7 +1782,7 @@
       "32": "5DWgkCSvq4brWSNLDU9FBgTk1ZpAQ2y6t3ky97CvEVuS9Qad",
       "33": "5HinUfk5SqBUAbkMtgdNoum3VJvwrLgdvwW5sbXA1UPYZ8uB",
       "34": "5DthmKBR83sUdudSfgFnsxBkTYtYTFLJUgovNfb1TSKVLiTH",
-      "35": "5FjUeckLxMbRud6sHU127ZTFkqoAHmsdapD5s5hvmyLhruTZ",
+      "35": "5GCPKEJb3cYV2cbDQmsf8WooXmpfhJj62DfRYbowpYUtngSn",
       "36": "5Gn72TbvTvqFpcpiquaSKZL6TjtAN6uBzWW5W3uV7WZXjM6P",
       "37": "5GRBbS3aDep7cvR1NRm9Awp5HAF1o4HC7t59Y8HoheLZ6ZaP",
       "38": "5DHBH14hxY3a7X3kHNWWt7FcjXj8XHZrZy7Lcm4mKkzLNGSd",
@@ -1856,14 +1880,14 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9484458,
-    "finalizedHash": "0x2c47f380a557df698403bf675572504bf09e90aee66c048dc38729c5445eb7af",
-    "checkedAt": "2026-11-11T17:40:31.905325+00:00",
-    "eventCount": 21,
+    "toBlock": 9490861,
+    "finalizedHash": "0x17ba2083227eda8fe63da02f30fb5c44560c7029dcecac138015013d6a085f3a",
+    "checkedAt": "2026-11-12T14:45:01.839908+00:00",
+    "eventCount": 22,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Reviewed runtime definitions, positive decoding controls and per-block runtime checks retained. Historical allocation and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history.",
-    "evidence": "/evidence/2026-11-11-chain-scan.json"
+    "evidence": "/evidence/2026-11-12-chain-scan.json"
   },
   "lifecycleResets": [
     {

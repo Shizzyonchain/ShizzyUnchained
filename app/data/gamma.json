@@ -1,8 +1,8 @@
 {
-  "hash": "0xa3ddaac8554cbf664845366153debd1c5be60f981ad0b221a5c32668c8261942",
-  "block": 9485026,
-  "checkedAt": "2026-11-11T19:08:16.785028+00:00",
-  "chainTime": 1794424056000,
+  "hash": "0x45794d04f8caf0f0d1540a58c9bbb6af98bb1183bf4379633203adbba7a62194",
+  "block": 9490698,
+  "checkedAt": "2026-11-12T14:14:55.899231+00:00",
+  "chainTime": 1794492120000,
   "runtime": 490,
   "enabled": true,
   "subnets": [
@@ -21,7 +21,7 @@
       "NetworkRegisteredAt": 2998801,
       "SubnetOwner": "5HTeZ5168DjjGWZgbvzGfysEAj9fnexF24gYFKJHENU5cc8a",
       "SubnetGammaPrice": {
-        "bits": 75256254505162751
+        "bits": 74007025664505122
       },
       "SubnetGammaEmission": [],
       "services": [
@@ -56,7 +56,7 @@
       "NetworkRegisteredAt": 4203869,
       "SubnetOwner": "5H8SFVCxk52ag1YSC5bQw7B84NRNhAtYWAP81jEPfuJ3VL8Q",
       "SubnetGammaPrice": {
-        "bits": 492530880475643757
+        "bits": 492342027605101567
       },
       "SubnetGammaEmission": [],
       "services": [
@@ -167,6 +167,39 @@
             "amount": 1000000000,
             "reference": "0xc08a7f7b1f667ce4833a4eb982ea0d14c4d062063d2c7aaeea31eed7d570838e"
           }
+        },
+        {
+          "block": 9489034,
+          "hash": "0x048fd6d8d95a7913390571470d94eb0dff9b83872aa2375e6e30f8cf87890c4f",
+          "eventIndex": 158,
+          "extrinsicIndex": 6,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 53,
+            "coldkey": "5HmL7289aNpt3dTLr4Uyt9VcGTH8HAc5DbKzx4NzwF1n8R6N",
+            "hotkey": "5CZyF3Xy2WvEGe8mu93BhYTmomWE65Qvq9z2fjLYzXydue1y",
+            "spender": "5H8SFVCxk52ag1YSC5bQw7B84NRNhAtYWAP81jEPfuJ3VL8Q",
+            "daily_spend_cap": null,
+            "tao": 5500000,
+            "alpha": 201779405,
+            "value": 5448399,
+            "gamma": 1170222495
+          }
+        },
+        {
+          "block": 9489049,
+          "hash": "0xb6d00fb7f1b9a433e30d97a64e28de9f4bf6dc672eacce41f7c9f72ff4c49fd6",
+          "eventIndex": 190,
+          "extrinsicIndex": 13,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 53,
+            "coldkey": "5HmL7289aNpt3dTLr4Uyt9VcGTH8HAc5DbKzx4NzwF1n8R6N",
+            "hotkey": "5CZyF3Xy2WvEGe8mu93BhYTmomWE65Qvq9z2fjLYzXydue1y",
+            "spender": "5H8SFVCxk52ag1YSC5bQw7B84NRNhAtYWAP81jEPfuJ3VL8Q",
+            "amount": 1000000000,
+            "reference": "0xf1cd521abadc6714211abae73c32e54c4213e795aef984d7cf04881cebe5daaa"
+          }
         }
       ]
     },
@@ -185,7 +218,7 @@
       "NetworkRegisteredAt": 8511017,
       "SubnetOwner": "5DCsuLtioCCfgiNQvfe3kiUBDXMs6X4y9PrEiAX7rMZ2e5E3",
       "SubnetGammaPrice": {
-        "bits": 246780662605523912
+        "bits": 253436937042808331
       },
       "SubnetGammaEmission": [],
       "services": [
@@ -220,7 +253,7 @@
       "NetworkRegisteredAt": 7151800,
       "SubnetOwner": "5CG1eFiaZkWTCUEjD23i7Uiu6AjTkLkgkCu3EyXKFFAkkT2T",
       "SubnetGammaPrice": {
-        "bits": 257361679130575372
+        "bits": 259430091752509729
       },
       "SubnetGammaEmission": [],
       "services": [],
@@ -247,7 +280,7 @@
       "NetworkRegisteredAt": 5203057,
       "SubnetOwner": "5GnpQR4Nt3f5AQqBXuhf7GkkaEHhAVQrVk4EsK4daZDmkAQT",
       "SubnetGammaPrice": {
-        "bits": 92391690954885446
+        "bits": 92733647187119930
       },
       "SubnetGammaEmission": [],
       "services": [],
@@ -274,7 +307,7 @@
       "NetworkRegisteredAt": 9321589,
       "SubnetOwner": "5HZJ7QuYrNWhbWccjAcVTuTGMGmkcLs5ctWSe8AuYWuPweAN",
       "SubnetGammaPrice": {
-        "bits": 74524101719489629
+        "bits": 74660084873438484
       },
       "SubnetGammaEmission": [],
       "services": [
@@ -343,7 +376,7 @@
       "NetworkRegisteredAt": 5710859,
       "SubnetOwner": "5FFDV7LGKVsVvyVbzSduzxQDPfBuJYHBM2QJPia5ikDivsXd",
       "SubnetGammaPrice": {
-        "bits": 87776804319407500
+        "bits": 95354321662921928
       },
       "SubnetGammaEmission": [],
       "services": [
@@ -361,12 +394,112 @@
       "workflow": "The manifest exposes an MCP endpoint at app.everyframe.studio/api/v1/mcp. Its published flow is to fund platform credits with SN117 Gamma, then use the provider generation service.",
       "terms": "The manifest advertises max_spend 1000, which is not a per-video price. Per-model prices, conversion terms and successful generation were not verified through a purchase.",
       "source": "https://app.everyframe.studio/services.json",
-      "activity": []
+      "activity": [
+        {
+          "block": 9486153,
+          "hash": "0xe55f89c08d59abaedef90931e9b4ebc36c5e92560dd7a8452e94e398c1608e86",
+          "eventIndex": 148,
+          "extrinsicIndex": 4,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5GBA5FLiHe53XDqU3opXb78qkHcusuM3qN2ZSTECMJKEYWTx",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "daily_spend_cap": null,
+            "tao": 25700000,
+            "alpha": 4677161173,
+            "value": 23657953,
+            "gamma": 5118603231
+          }
+        },
+        {
+          "block": 9486303,
+          "hash": "0xa7c93cf98cc7305adbee699c93bed5797ba5848f70d23347c189053d848ae12a",
+          "eventIndex": 140,
+          "extrinsicIndex": 4,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5GBA5FLiHe53XDqU3opXb78qkHcusuM3qN2ZSTECMJKEYWTx",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "amount": 5118603231,
+            "reference": "0xf2ad74cee7017af26a7607e0bab845dc9b3797d3322ef4cdbb954f66d63963ab"
+          }
+        },
+        {
+          "block": 9487860,
+          "hash": "0x0f7a301cd8f57071731645dfaa6db1bee1a4bbcc5f19f518749d40a8a6e8e331",
+          "eventIndex": 218,
+          "extrinsicIndex": 27,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5GzhK44jNHeRzFqX3GkH2GZcbccTTsJLJnsmpqezbURTFsrp",
+            "hotkey": "5DxxJeHk2fuh7q7iXaFiGXHfrh2P1wwAiz8VxTDvPc85c2H7",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "daily_spend_cap": null,
+            "tao": 23800000,
+            "alpha": 4475607001,
+            "value": 23786563,
+            "gamma": 5105613626
+          }
+        },
+        {
+          "block": 9487861,
+          "hash": "0x9b2b3f9b04bab5b94ab674af4a2c40e769c32c279aec0ac9300e998ff5842c1c",
+          "eventIndex": 224,
+          "extrinsicIndex": 4,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5GzhK44jNHeRzFqX3GkH2GZcbccTTsJLJnsmpqezbURTFsrp",
+            "hotkey": "5DxxJeHk2fuh7q7iXaFiGXHfrh2P1wwAiz8VxTDvPc85c2H7",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "amount": 5105613626,
+            "reference": "0x816b2d3d76301e329778419c0bfaeb3a49685850c33e7c70e41dafc8d8e9ef1f"
+          }
+        },
+        {
+          "block": 9489021,
+          "hash": "0x7d4f3c7893b1172171fa3906c809285e76bd31e410c0504b73b7a44bbfb0347f",
+          "eventIndex": 137,
+          "extrinsicIndex": 2,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5GBA5FLiHe53XDqU3opXb78qkHcusuM3qN2ZSTECMJKEYWTx",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "daily_spend_cap": null,
+            "tao": 24300000,
+            "alpha": 4557447020,
+            "value": 23832351,
+            "gamma": 5118779527
+          }
+        },
+        {
+          "block": 9489022,
+          "hash": "0xd325193fb91c0cce457deee725c5a146f674444774ca95c253d6a5dce99072df",
+          "eventIndex": 140,
+          "extrinsicIndex": 3,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5GBA5FLiHe53XDqU3opXb78qkHcusuM3qN2ZSTECMJKEYWTx",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "amount": 5118779527,
+            "reference": "0x6685aa7a7105e75dee6e6cabf207ef771ca46ae2394d1b8a40266ccf66dba8a2"
+          }
+        }
+      ]
     }
   ],
   "activityCoverage": {
     "fromBlock": 9476686,
-    "toBlock": 9485026,
+    "toBlock": 9490861,
     "note": "Contiguous event scan from the prior daily cutoff, extended to the configuration snapshot. Not lifetime totals. Successful transactions do not establish independent customers or service delivery."
   }
 }

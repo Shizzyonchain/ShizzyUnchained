@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 import { validateChainReviews } from "./news-chain-review.mjs";
 import { validateMarketReview } from "./news-market-review.mjs";
 import { validateEditorialOrder } from "../app/lib/news-editorial-order.mjs";
+import { validateNewsRating } from "./news-rating.mjs";
 
 const root = resolve(fileURLToPath(new URL("..", import.meta.url)));
 const reportsDirectory = join(root, "content", "subnet-news");
@@ -27,8 +28,9 @@ function string(value, field) {
   if (typeof value !== "string" || !value.trim()) fail(`${field} must be a non-empty string.`);
 }
 
-function item(value, field) {
+function item(value, field, date) {
   object(value, field);
+  validateNewsRating(value, date, field);
   string(value.headline, `${field}.headline`);
   string(value.summary, `${field}.summary`);
   if (!importances.has(value.importance)) fail(`${field}.importance is invalid.`);
@@ -82,9 +84,9 @@ function validate(value, filename) {
   for (const field of ["highlights", "upcomingUnlocks", "ecosystem", "subnets"]) {
     if (!Array.isArray(value[field])) fail(`${field} must be an array.`);
   }
-  value.highlights.forEach((entry, index) => item(entry, `highlights[${index}]`));
+  value.highlights.forEach((entry, index) => item(entry, `highlights[${index}]`, value.date));
   value.upcomingUnlocks.forEach((entry, index) => unlock(entry, `upcomingUnlocks[${index}]`));
-  value.ecosystem.forEach((entry, index) => item(entry, `ecosystem[${index}]`));
+  value.ecosystem.forEach((entry, index) => item(entry, `ecosystem[${index}]`, value.date));
   const netuids = new Set();
   value.subnets.forEach((subnet, index) => {
     object(subnet, `subnets[${index}]`);
@@ -93,7 +95,7 @@ function validate(value, filename) {
     netuids.add(subnet.netuid);
     string(subnet.name, `subnets[${index}].name`);
     if (!Array.isArray(subnet.updates)) fail(`subnets[${index}].updates must be an array.`);
-    subnet.updates.forEach((entry, itemIndex) => item(entry, `subnets[${index}].updates[${itemIndex}]`));
+    subnet.updates.forEach((entry, itemIndex) => item(entry, `subnets[${index}].updates[${itemIndex}]`, value.date));
   });
   validateEditorialOrder(value);
   object(value.coverage, "coverage");
