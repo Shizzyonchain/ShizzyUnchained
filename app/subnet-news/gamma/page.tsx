@@ -16,7 +16,7 @@ const today = activity.events.filter(e => e.date === activity.today);
 const units = (n: number) => (n / 1e9).toLocaleString("en-US", { maximumFractionDigits: 9 });
 const sum = (events: typeof activity.events, key: "amount" | "gamma" | "alpha") => events.reduce((n, e) => n + (e.attributes[key] ?? 0), 0);
 const name = (n: number | null) => data.subnets.find(s => s.netuid === n)?.SubnetIdentitiesV3.subnet_name ?? `SN${n}`;
-const executionEvidence = (block: number) => block <= 9485026 ? "/evidence/2026-11-11-chain-executions.json" : "/evidence/2026-11-12-chain-executions.json";
+const executionEvidence = (block: number) => block <= 9485026 ? "/evidence/2026-11-11-chain-executions.json" : block <= 9490861 ? "/evidence/2026-11-12-chain-executions.json" : "/evidence/2026-11-13-chain-executions.json";
 const creditTotal = (n: number) => (n / 1e9).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const short = (v: string) => `${v.slice(0, 7)}…${v.slice(-6)}`;
 const dailyRows = data.subnets.map(s => {

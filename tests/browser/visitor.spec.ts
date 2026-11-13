@@ -781,12 +781,12 @@ test("Gamma separates service status from activity and simplifies news navigatio
  await expect(nav.getByRole('link')).toHaveCount(6);
  await expect(nav.getByRole('link',{name:'Gamma →',exact:true})).toHaveAttribute('aria-current','page');
  await expect(nav.getByRole('link',{name:/Watchlist|Recovery|Split|Seasonality|Holding/})).toHaveCount(0);
- await expect(page.locator('main article')).toHaveCount(7);
+ await expect(page.locator('main article')).toHaveCount(8);
  await page.getByRole('searchbox',{name:'Find a subnet'}).fill('engy');
  await expect(page.getByRole('region',{name:'Who accepts Gamma?'}).locator('details')).toHaveCount(1);
  await page.getByRole('searchbox',{name:'Find a subnet'}).fill('');
  await page.getByLabel('Service registered only',{exact:true}).check();
- await expect(page.getByRole('region',{name:'Who accepts Gamma?'}).locator('details')).toHaveCount(5);
+ await expect(page.getByRole('region',{name:'Who accepts Gamma?'}).locator('details')).toHaveCount(6);
  await page.getByLabel('Service registered only',{exact:true}).uncheck();
  await page.screenshot({path:`../gamma-redesign-${test.info().project.name}.png`,fullPage:true});
  await expect(page.locator('#sn80')).toContainText('No registered service found');

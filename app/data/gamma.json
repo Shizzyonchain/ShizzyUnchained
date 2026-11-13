@@ -1,8 +1,8 @@
 {
-  "hash": "0x45794d04f8caf0f0d1540a58c9bbb6af98bb1183bf4379633203adbba7a62194",
-  "block": 9490698,
-  "checkedAt": "2026-11-12T14:14:55.899231+00:00",
-  "chainTime": 1794492120000,
+  "hash": "0x416be98492120fac7f0b8fbc9b714cf0cad7276bff0d71881cc738512a820a65",
+  "block": 9498639,
+  "checkedAt": "2026-11-13T16:49:21.886085+00:00",
+  "chainTime": 1794587412000,
   "runtime": 490,
   "enabled": true,
   "subnets": [
@@ -21,7 +21,7 @@
       "NetworkRegisteredAt": 2998801,
       "SubnetOwner": "5HTeZ5168DjjGWZgbvzGfysEAj9fnexF24gYFKJHENU5cc8a",
       "SubnetGammaPrice": {
-        "bits": 74007025664505122
+        "bits": 73361283385511092
       },
       "SubnetGammaEmission": [],
       "services": [
@@ -42,6 +42,185 @@
       "activity": []
     },
     {
+      "netuid": 51,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "lium.io",
+        "github_repo": "https://github.com/Datura-ai/lium-io",
+        "subnet_contact": "support@lium.io",
+        "subnet_url": "https://lium.io",
+        "discord": "https://discord.gg/lium",
+        "description": "Agent-first GPU cloud. Rent NVIDIA GPUs via web, CLI, SDK, or API. Providers earn 95% rental revenue + bonuses.",
+        "logo_url": "https://lium.io/web-app-manifest-512x512.png",
+        "additional": "Docs: https://docs.lium.io | Providers: https://provider.lium.io | X: https://x.com/lium_io | CLI/SDK: https://github.com/Datura-ai/lium"
+      },
+      "NetworkRegisteredAt": 3966206,
+      "SubnetOwner": "5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe",
+      "SubnetGammaPrice": {
+        "bits": 2209998260946435113
+      },
+      "SubnetGammaEmission": [],
+      "services": [
+        {
+          "hotkey": "5FTVrwEpjvpNeKwczFtYjs62GHKKLHLCdqCThtj2unZouKg1",
+          "service": {
+            "url": "https://lium.io/api/gamma/service.json",
+            "spender": "5CksywENMjRzjaCQetV888Yf6ZsPb2kog5MTTxWjwAFCedpR"
+          }
+        }
+      ],
+      "activity": [
+        {
+          "block": 9492965,
+          "hash": "0x69e1f517704fd369e4f5217f9f4c4ce353582038045b1dd2987d7760c7674792",
+          "eventIndex": 147,
+          "extrinsicIndex": 4,
+          "type": "SubnetGammaEnabledSet",
+          "attributes": {
+            "netuid": 51,
+            "enabled": true
+          }
+        },
+        {
+          "block": 9497388,
+          "hash": "0x392b2b5af62978764ff16cdf89df33249c066b51fb2b0dfcac174ad7875fd110",
+          "eventIndex": 243,
+          "extrinsicIndex": 37,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 51,
+            "coldkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "hotkey": "5FETuCfPTTdQmZG33xLkgBGmMCGsvrdh3VN5yCJxCHktAd5H",
+            "spender": "5CksywENMjRzjaCQetV888Yf6ZsPb2kog5MTTxWjwAFCedpR",
+            "daily_spend_cap": null,
+            "tao": 50000000,
+            "alpha": 416498404,
+            "value": 49642508,
+            "gamma": 10583122964
+          }
+        },
+        {
+          "block": 9497391,
+          "hash": "0xb0ff5d2c06186d6bc8bf02b560304ebc27b0393334837fab33c12cc9708c78ea",
+          "eventIndex": 150,
+          "extrinsicIndex": 5,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 51,
+            "coldkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "hotkey": "5FETuCfPTTdQmZG33xLkgBGmMCGsvrdh3VN5yCJxCHktAd5H",
+            "spender": "5CksywENMjRzjaCQetV888Yf6ZsPb2kog5MTTxWjwAFCedpR",
+            "amount": 10583122964,
+            "reference": "0x20b45881e72fa58de8cc6b1a7678155f1874ae2212f3c22e0515fcf609f334b1"
+          }
+        },
+        {
+          "block": 9497862,
+          "hash": "0x68f8485793bc47a1cf673ee711e69919beefe7d4ce9b5ec509b47c8e8575db02",
+          "eventIndex": 316,
+          "extrinsicIndex": 57,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 51,
+            "coldkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "hotkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "spender": "5CksywENMjRzjaCQetV888Yf6ZsPb2kog5MTTxWjwAFCedpR",
+            "daily_spend_cap": null,
+            "tao": 46936856,
+            "alpha": 389611420,
+            "value": 46617976,
+            "gamma": 10001906037
+          }
+        },
+        {
+          "block": 9497869,
+          "hash": "0x19e82763a1209e45c0d59ebc0828ee6af137f0de94b535e5963b3156e5b705c4",
+          "eventIndex": 253,
+          "extrinsicIndex": 11,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 51,
+            "coldkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "hotkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "spender": "5CksywENMjRzjaCQetV888Yf6ZsPb2kog5MTTxWjwAFCedpR",
+            "amount": 10001906037,
+            "reference": "0x12ffc608253a4259b4c65c25c066778a279c4cf1f44d00e10c914f5ce21f559b"
+          }
+        },
+        {
+          "block": 9498375,
+          "hash": "0xf9756c28cea509921e9447c2ff469b733e1b5fbb7c98b6a688c55713a13bf2e1",
+          "eventIndex": 171,
+          "extrinsicIndex": 6,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 51,
+            "coldkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "hotkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "spender": "5CksywENMjRzjaCQetV888Yf6ZsPb2kog5MTTxWjwAFCedpR",
+            "daily_spend_cap": null,
+            "tao": 4729194,
+            "alpha": 39422243,
+            "value": 4726749,
+            "gamma": 1000003182
+          }
+        },
+        {
+          "block": 9498379,
+          "hash": "0x5ed55c60c55f345de9d92fd7bea343824fba8151ff51364721851aa1021b7850",
+          "eventIndex": 140,
+          "extrinsicIndex": 3,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 51,
+            "coldkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "hotkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "spender": "5CksywENMjRzjaCQetV888Yf6ZsPb2kog5MTTxWjwAFCedpR",
+            "amount": 1000003182,
+            "reference": "0xbf87699ac2d706af9624d1e31d658983adef436dd62fceb80aefd084d8417d3c"
+          }
+        },
+        {
+          "block": 9498379,
+          "hash": "0x5ed55c60c55f345de9d92fd7bea343824fba8151ff51364721851aa1021b7850",
+          "eventIndex": 160,
+          "extrinsicIndex": 6,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 51,
+            "coldkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "hotkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "spender": "5CksywENMjRzjaCQetV888Yf6ZsPb2kog5MTTxWjwAFCedpR",
+            "daily_spend_cap": null,
+            "tao": 4729191,
+            "alpha": 39423880,
+            "value": 4726753,
+            "gamma": 1000004028
+          }
+        },
+        {
+          "block": 9498390,
+          "hash": "0xd8f639eff90207faa965b0ac6b5a382be11360097a6eb1e2e3db28bb04004a77",
+          "eventIndex": 167,
+          "extrinsicIndex": 12,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 51,
+            "coldkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "hotkey": "5Gn4Hme2HqFu1rW12M7Jo5M4s8ay91jwmfbPDyoxfm4iM9Xv",
+            "spender": "5CksywENMjRzjaCQetV888Yf6ZsPb2kog5MTTxWjwAFCedpR",
+            "amount": 1000004028,
+            "reference": "0x447d69ebc59807b8982047df6eb7f2c9d26f79d9064b64da0c6ee49a830a9784"
+          }
+        }
+      ],
+      "provider": "Lium",
+      "offering": "GPU rental balance",
+      "description": "Lium lists GPU pods billed by the second. Its registered manifest says Gamma linked to a Lium account becomes USD balance.",
+      "workflow": "Link the deposit hotkey to your Lium account. The advertised integration converts Gamma into account balance for GPU rentals. A purchase and delivered workload were not tested.",
+      "terms": "Check the live GPU quote and account terms before funding. Gamma spending is verified, but customer identity and completed rental delivery are not.",
+      "source": "https://lium.io/api/gamma/service.json"
+    },
+    {
       "netuid": 53,
       "SubnetIdentitiesV3": {
         "subnet_name": "engy",
@@ -56,7 +235,7 @@
       "NetworkRegisteredAt": 4203869,
       "SubnetOwner": "5H8SFVCxk52ag1YSC5bQw7B84NRNhAtYWAP81jEPfuJ3VL8Q",
       "SubnetGammaPrice": {
-        "bits": 492342027605101567
+        "bits": 505999732328790355
       },
       "SubnetGammaEmission": [],
       "services": [
@@ -218,7 +397,7 @@
       "NetworkRegisteredAt": 8511017,
       "SubnetOwner": "5DCsuLtioCCfgiNQvfe3kiUBDXMs6X4y9PrEiAX7rMZ2e5E3",
       "SubnetGammaPrice": {
-        "bits": 253436937042808331
+        "bits": 233856022322578575
       },
       "SubnetGammaEmission": [],
       "services": [
@@ -253,7 +432,7 @@
       "NetworkRegisteredAt": 7151800,
       "SubnetOwner": "5CG1eFiaZkWTCUEjD23i7Uiu6AjTkLkgkCu3EyXKFFAkkT2T",
       "SubnetGammaPrice": {
-        "bits": 259430091752509729
+        "bits": 245761613523938484
       },
       "SubnetGammaEmission": [],
       "services": [],
@@ -263,7 +442,158 @@
       "workflow": "There is no verified Gamma-specific ordering flow in this review. The subnet identity explains the project, not what a Gamma payment currently buys.",
       "terms": "Provider billing identity, product availability, Gamma pricing and customer access still need primary-source confirmation. We do not infer an offering from the enabled flag.",
       "source": "https://www.openroboto.ai/",
-      "activity": []
+      "activity": [
+        {
+          "block": 9490937,
+          "hash": "0xf0000848d7a8a6fcc5fdd4fb4cd0fb44019c1807b5604b14b56ff13717ae1d1e",
+          "eventIndex": 192,
+          "extrinsicIndex": 11,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 80,
+            "coldkey": "5CzNRu5TeFqPnWkmp44so92sbuHBAFyqdt8SkNkYV5tMUYrg",
+            "hotkey": "5E4fMuaqmXG27gQCaYS53jKxEEigyWKBynCGowPypCo44VKT",
+            "spender": "5CzNRu5TeFqPnWkmp44so92sbuHBAFyqdt8SkNkYV5tMUYrg",
+            "daily_spend_cap": null,
+            "tao": 0,
+            "alpha": 40000000000,
+            "value": 558882217,
+            "gamma": 115231119735
+          }
+        },
+        {
+          "block": 9496970,
+          "hash": "0x13e7c23d71c2500fdeb3f7fe35a97ce91a83c082879463f6784295b05b21feaa",
+          "eventIndex": 184,
+          "extrinsicIndex": 16,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 80,
+            "coldkey": "5D5MAyMMUDxZ1xAEc9LN9mXhsVKJneuumTnPgjcVp86zb8Le",
+            "hotkey": "5EZJYiLp5KbwW3cVR953kakki2BB3FcoS9ndPm8EAmH2hfgH",
+            "spender": "5D5MAyMMUDxZ1xAEc9LN9mXhsVKJneuumTnPgjcVp86zb8Le",
+            "daily_spend_cap": null,
+            "tao": 120000000,
+            "alpha": 8976176356,
+            "value": 119455806,
+            "gamma": 25270146001
+          }
+        },
+        {
+          "block": 9497086,
+          "hash": "0xeab957eb18f8e0b37fd9e66f5647e3de61b8798c41c7de646650ff9ae7d9d1ba",
+          "eventIndex": 141,
+          "extrinsicIndex": 4,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 80,
+            "coldkey": "5D5MAyMMUDxZ1xAEc9LN9mXhsVKJneuumTnPgjcVp86zb8Le",
+            "hotkey": "5EZJYiLp5KbwW3cVR953kakki2BB3FcoS9ndPm8EAmH2hfgH",
+            "spender": "5D5MAyMMUDxZ1xAEc9LN9mXhsVKJneuumTnPgjcVp86zb8Le",
+            "amount": 25000000000,
+            "reference": "0xe631976031a1b9e5c1a87794482cb1db3706ead318bd44ec467f1c410a675ed4"
+          }
+        },
+        {
+          "block": 9497343,
+          "hash": "0xc0c14e6cebdbc1a2514e3778632a80b1b157aa37227b6f4087dd5bc23ba66766",
+          "eventIndex": 147,
+          "extrinsicIndex": 4,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 80,
+            "coldkey": "5EnrH1xfe8iZmgKimWaZkf1HLoHAjVnpFCkyRQ4yc7EVMXFY",
+            "hotkey": "5CXUwSnDL3WtK2XJyUoCwXc6Qdhi83FAMzjCQDew44RTLLXR",
+            "spender": "5EnrH1xfe8iZmgKimWaZkf1HLoHAjVnpFCkyRQ4yc7EVMXFY",
+            "daily_spend_cap": null,
+            "tao": 125000000,
+            "alpha": 9382192000,
+            "value": 124861208,
+            "gamma": 26551807707
+          }
+        },
+        {
+          "block": 9497417,
+          "hash": "0xfc0c7c772b964facf0f78b0337ebfc272dc4b17c5883ecb52b8628d6ee29924c",
+          "eventIndex": 155,
+          "extrinsicIndex": 7,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 80,
+            "coldkey": "5EnrH1xfe8iZmgKimWaZkf1HLoHAjVnpFCkyRQ4yc7EVMXFY",
+            "hotkey": "5CXUwSnDL3WtK2XJyUoCwXc6Qdhi83FAMzjCQDew44RTLLXR",
+            "spender": "5EnrH1xfe8iZmgKimWaZkf1HLoHAjVnpFCkyRQ4yc7EVMXFY",
+            "amount": 25000000000,
+            "reference": "0xc60d999f9ac0d03a7f2b9f6531f427618af635828909c8ad880ec20470798bb7"
+          }
+        },
+        {
+          "block": 9497434,
+          "hash": "0xb9adf457012c23ed3e3d314c0a296c02f7e41476172d4c3dd4092254bb31b9ab",
+          "eventIndex": 156,
+          "extrinsicIndex": 6,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 80,
+            "coldkey": "5FqfZZDKuZVRCDjHjpuZ9Y78z11o4zThRJoXHqy8xtk225yR",
+            "hotkey": "5F1JfgiMWHHv4BW2GruHoMtaCzFonVpQAA4hJvstTK6iMDJW",
+            "spender": "5FqfZZDKuZVRCDjHjpuZ9Y78z11o4zThRJoXHqy8xtk225yR",
+            "daily_spend_cap": null,
+            "tao": 120000000,
+            "alpha": 9010830140,
+            "value": 119924966,
+            "gamma": 25411113995
+          }
+        },
+        {
+          "block": 9497593,
+          "hash": "0xd3d68f7782123f09454ef850af50ca832cfce70001ed3540465a1ab5d76e44ef",
+          "eventIndex": 263,
+          "extrinsicIndex": 19,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 80,
+            "coldkey": "5FqfZZDKuZVRCDjHjpuZ9Y78z11o4zThRJoXHqy8xtk225yR",
+            "hotkey": "5F1JfgiMWHHv4BW2GruHoMtaCzFonVpQAA4hJvstTK6iMDJW",
+            "spender": "5FqfZZDKuZVRCDjHjpuZ9Y78z11o4zThRJoXHqy8xtk225yR",
+            "amount": 25000000000,
+            "reference": "0x04a9fc63e75fa162ac4ff4c4ce818957f284c1e0a69db7c4845bbe20cea9a086"
+          }
+        },
+        {
+          "block": 9497923,
+          "hash": "0x163d15af04473df149b8a0337344fcbd4ae6f1ec99f57cb7c42aa6073a382091",
+          "eventIndex": 169,
+          "extrinsicIndex": 6,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 80,
+            "coldkey": "5DPkFaFceNsRJ7nrLGMdnGtXkkvMuF2GESXCN2gPx2ScKouE",
+            "hotkey": "5GWhsMskfnPseFhTgUHW2sMhLVsKf8yfTtYQBRs2JYf4Qyt3",
+            "spender": "5DPkFaFceNsRJ7nrLGMdnGtXkkvMuF2GESXCN2gPx2ScKouE",
+            "daily_spend_cap": null,
+            "tao": 130000000,
+            "alpha": 9753474883,
+            "value": 129841545,
+            "gamma": 27868397342
+          }
+        },
+        {
+          "block": 9497926,
+          "hash": "0xa57a063addee65fc2a36f6033631614669aa8d6128077a3da45c1b44434e66e2",
+          "eventIndex": 216,
+          "extrinsicIndex": 13,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 80,
+            "coldkey": "5DPkFaFceNsRJ7nrLGMdnGtXkkvMuF2GESXCN2gPx2ScKouE",
+            "hotkey": "5GWhsMskfnPseFhTgUHW2sMhLVsKf8yfTtYQBRs2JYf4Qyt3",
+            "spender": "5DPkFaFceNsRJ7nrLGMdnGtXkkvMuF2GESXCN2gPx2ScKouE",
+            "amount": 25000000000,
+            "reference": "0xfa3afcbace97c31ddf2e45cc7b0cd388ded4aa4e200e0901a2ac21bcb56d9ff9"
+          }
+        }
+      ]
     },
     {
       "netuid": 81,
@@ -280,7 +610,7 @@
       "NetworkRegisteredAt": 5203057,
       "SubnetOwner": "5GnpQR4Nt3f5AQqBXuhf7GkkaEHhAVQrVk4EsK4daZDmkAQT",
       "SubnetGammaPrice": {
-        "bits": 92733647187119930
+        "bits": 92321673997988696
       },
       "SubnetGammaEmission": [],
       "services": [],
@@ -290,7 +620,41 @@
       "workflow": "A Gamma-specific customer workflow has not been verified. Reinforcement-learning infrastructure is the stated project focus, not proof of a currently purchasable Gamma service.",
       "terms": "Service endpoints, billing operator, published price terms and delivered usage remain unverified in this review.",
       "source": "https://www.reliqua.ai/",
-      "activity": []
+      "activity": [
+        {
+          "block": 9498125,
+          "hash": "0xf59eed75262e43f0ceb2f7cae51aa40ef9283972e7af8e97b8b54bccf4aa04f2",
+          "eventIndex": 170,
+          "extrinsicIndex": 9,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 81,
+            "coldkey": "5HNnifCbgWtx8StJ3w7UVojPDEsSs7PCDiuqC8GMgyfpGmrm",
+            "hotkey": "5EHz75NBsZuhEvgk3ZwwiC1SCvbiroNZUUREX9C4nmUxjDMb",
+            "spender": "5DaFn4cFpKL7o6JPWvh7HJ82nTe8NCo3iweP62skJu2c8asF",
+            "daily_spend_cap": 250000000,
+            "tao": 1200000,
+            "alpha": 239450144,
+            "value": 1199395,
+            "gamma": 258931529
+          }
+        },
+        {
+          "block": 9498538,
+          "hash": "0xa32c76d195e7ebda516fa1d90e14820caff0b33707baa093428075c3b60cf205",
+          "eventIndex": 155,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 81,
+            "coldkey": "5HNnifCbgWtx8StJ3w7UVojPDEsSs7PCDiuqC8GMgyfpGmrm",
+            "hotkey": "5EHz75NBsZuhEvgk3ZwwiC1SCvbiroNZUUREX9C4nmUxjDMb",
+            "spender": "5DaFn4cFpKL7o6JPWvh7HJ82nTe8NCo3iweP62skJu2c8asF",
+            "amount": 250000000,
+            "reference": "0x8e40b630c9aae869b69434f77316416abe1ff0570164d6bdfd5ed27c3995e806"
+          }
+        }
+      ]
     },
     {
       "netuid": 103,
@@ -307,7 +671,7 @@
       "NetworkRegisteredAt": 9321589,
       "SubnetOwner": "5HZJ7QuYrNWhbWccjAcVTuTGMGmkcLs5ctWSe8AuYWuPweAN",
       "SubnetGammaPrice": {
-        "bits": 74660084873438484
+        "bits": 75746236808131448
       },
       "SubnetGammaEmission": [],
       "services": [
@@ -376,7 +740,7 @@
       "NetworkRegisteredAt": 5710859,
       "SubnetOwner": "5FFDV7LGKVsVvyVbzSduzxQDPfBuJYHBM2QJPia5ikDivsXd",
       "SubnetGammaPrice": {
-        "bits": 95354321662921928
+        "bits": 94761286082372343
       },
       "SubnetGammaEmission": [],
       "services": [
@@ -493,13 +857,145 @@
             "amount": 5118779527,
             "reference": "0x6685aa7a7105e75dee6e6cabf207ef771ca46ae2394d1b8a40266ccf66dba8a2"
           }
+        },
+        {
+          "block": 9496970,
+          "hash": "0x13e7c23d71c2500fdeb3f7fe35a97ce91a83c082879463f6784295b05b21feaa",
+          "eventIndex": 177,
+          "extrinsicIndex": 15,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "daily_spend_cap": null,
+            "tao": 95700000,
+            "alpha": 18628558448,
+            "value": 94610770,
+            "gamma": 20014330414
+          }
+        },
+        {
+          "block": 9496971,
+          "hash": "0x03296fabd27c72d13c91ca54a7edbea3c54f60d95733650e17d0ac38404681f8",
+          "eventIndex": 136,
+          "extrinsicIndex": 3,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "amount": 20000000000,
+            "reference": "0xc8ea48439fd236196a32eb4b413d9a297499f6fafe58cd6ff1636a9ff72b569f"
+          }
+        },
+        {
+          "block": 9496974,
+          "hash": "0x857e858d7d92f4d2cabcd6cc264f5c7533547f7c9d3f297422b35d32b1a9e94c",
+          "eventIndex": 203,
+          "extrinsicIndex": 13,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "daily_spend_cap": null,
+            "tao": 95700000,
+            "alpha": 18627714219,
+            "value": 94611294,
+            "gamma": 20016760211
+          }
+        },
+        {
+          "block": 9496975,
+          "hash": "0x4f90f570f424c3e457587cb9d321778a3c717842a8c02e94f5e82ceb54b33f40",
+          "eventIndex": 155,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "amount": 20000000000,
+            "reference": "0xfaec63218b2514901cfbec384491f4ad668ad2f4c8d97a3bdf5d512519b62d91"
+          }
+        },
+        {
+          "block": 9497239,
+          "hash": "0x580af8a2be6415d7a52b344b3c447f9f0e193edb7c3e5428fc675b40f7289ce2",
+          "eventIndex": 193,
+          "extrinsicIndex": 11,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "daily_spend_cap": null,
+            "tao": 95000000,
+            "alpha": 18489583610,
+            "value": 94182717,
+            "gamma": 19994661472
+          }
+        },
+        {
+          "block": 9497240,
+          "hash": "0xd3ad73b0fd0e4a4b243b6b4cf25c2ab7b6dc58e7adf1e5e197e1b78f125d1ae7",
+          "eventIndex": 195,
+          "extrinsicIndex": 23,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "amount": 20000000000,
+            "reference": "0x6e02321a7e78d6f081431559a14204e98d28ea5318268d0dcc401f3114bc5f93"
+          }
+        },
+        {
+          "block": 9497399,
+          "hash": "0xe84ca0190e21366f4e6cf2e8ccdae4b55b2ef2a06356a0f62c699c1054d2f931",
+          "eventIndex": 195,
+          "extrinsicIndex": 9,
+          "type": "GammaMinted",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "daily_spend_cap": null,
+            "tao": 23600000,
+            "alpha": 4593114232,
+            "value": 23428878,
+            "gamma": 4987730810
+          }
+        },
+        {
+          "block": 9497402,
+          "hash": "0xb4153604cb95b3c4c99908dbcbc1ed8eb627c6cf461b9abcff5ab267149d9d44",
+          "eventIndex": 177,
+          "extrinsicIndex": 11,
+          "type": "GammaSpent",
+          "attributes": {
+            "netuid": 117,
+            "coldkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "hotkey": "5E76RU9JDkWQy7uXj7a5S5b7R1L1sUiKkR5F2DxDeUr1uoUF",
+            "spender": "5HTjbYZSKL2SKZ48qJpph8QtWSVWhPhijyWAG3A4z9h1whZ1",
+            "amount": 5000000000,
+            "reference": "0xaca02898ef1db6d61f716a357771bca178953fe40034ea3ffa92b41a4b71d3c8"
+          }
         }
       ]
     }
   ],
   "activityCoverage": {
     "fromBlock": 9476686,
-    "toBlock": 9490861,
+    "toBlock": 9498639,
     "note": "Contiguous event scan from the prior daily cutoff, extended to the configuration snapshot. Not lifetime totals. Successful transactions do not establish independent customers or service delivery."
   }
 }

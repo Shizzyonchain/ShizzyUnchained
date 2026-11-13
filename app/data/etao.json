@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-12T14:45:01.839908+00:00",
-  "block": 9490861,
-  "hash": "0x17ba2083227eda8fe63da02f30fb5c44560c7029dcecac138015013d6a085f3a",
-  "chainTime": 1794494076000,
+  "checkedAt": "2026-11-13T16:50:52.363570+00:00",
+  "block": 9498639,
+  "hash": "0x416be98492120fac7f0b8fbc9b714cf0cad7276bff0d71881cc738512a820a65",
+  "chainTime": 1794587412000,
   "runtime": 488,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -296,9 +296,9 @@
     "42": [
       "0",
       "0",
-      "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "4796153459164483419",
+      "7563165070220916162",
+      "6087425544324152034"
     ],
     "43": [
       "0",
@@ -359,9 +359,9 @@
     "51": [
       "0",
       "0",
-      "3320329489486196244",
+      "1660206966633859584",
       "7563207292111677685",
-      "7563207292111677686"
+      "9223329814964014346"
     ],
     "52": [
       "0",
@@ -1610,6 +1610,54 @@
       "name": "Claims",
       "registrationBlock": 5615562,
       "evidence": "/evidence/2026-11-12-chain-executions.json"
+    },
+    {
+      "netuid": 42,
+      "block": 9490975,
+      "hash": "0x2cfb4c436e9ab952e343177094916342ebe2c5c5eb78211b4d31677a51cb6995",
+      "timestamp": 1794495444000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "4796153459164483419",
+        "7563165070220916162",
+        "6087425544324152034"
+      ],
+      "extrinsic": 34,
+      "name": "Unknown",
+      "registrationBlock": 3613591,
+      "evidence": "/evidence/2026-11-13-chain-executions.json"
+    },
+    {
+      "netuid": 51,
+      "block": 9493650,
+      "hash": "0x16313175446ea706269047e88abd66a52a6f0008b59765bf08d750849dff508d",
+      "timestamp": 1794527544000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "1660206966633859584",
+        "7563207292111677685",
+        "9223329814964014346"
+      ],
+      "extrinsic": 18,
+      "name": "lium.io",
+      "registrationBlock": 3966206,
+      "evidence": "/evidence/2026-11-13-chain-executions.json"
     }
   ],
   "names": {
@@ -1654,12 +1702,12 @@
     "39": "deprecated",
     "40": "Ralph",
     "41": "Almanac",
-    "42": "Unknown",
+    "42": "CADmind",
     "43": "Graphite",
     "44": "Score",
     "45": "AlphaRidge.ai",
     "46": "Instant",
-    "47": "GPUForge",
+    "47": "GF",
     "48": "Quantum Compute",
     "49": "Nepher Robotics",
     "50": "Synth",
@@ -1744,9 +1792,9 @@
   },
   "observations": [],
   "ownerSnapshot": {
-    "block": 9490728,
-    "hash": "0xe262ac3e49044d883ef085b8d4af7317cccfa9b077bc3955ff98de152d608de8",
-    "checkedAt": "2026-11-12T14:45:01.839908+00:00",
+    "block": 9498660,
+    "hash": "0x4cfee4d7e24fa6142fdd7b3024d64c529abfa25c9d02b2cec3c3a46c1902d05b",
+    "checkedAt": "2026-11-13T16:50:52.363570+00:00",
     "owners": {
       "1": "5HCFWvRqzSHWRPecN7q8J6c7aKQnrCZTMHstPv39xL1wgDHh",
       "2": "5EcYQ3W77ndrmMWdvVQusoFqY8doxfP3U2zrh7xZQiaz7avY",
@@ -1880,14 +1928,14 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9490861,
-    "finalizedHash": "0x17ba2083227eda8fe63da02f30fb5c44560c7029dcecac138015013d6a085f3a",
-    "checkedAt": "2026-11-12T14:45:01.839908+00:00",
-    "eventCount": 22,
+    "toBlock": 9498639,
+    "finalizedHash": "0x416be98492120fac7f0b8fbc9b714cf0cad7276bff0d71881cc738512a820a65",
+    "checkedAt": "2026-11-13T16:50:52.363570+00:00",
+    "eventCount": 24,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Reviewed runtime definitions, positive decoding controls and per-block runtime checks retained. Historical allocation and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history.",
-    "evidence": "/evidence/2026-11-12-chain-scan.json"
+    "evidence": "/evidence/2026-11-13-chain-scan.json"
   },
   "lifecycleResets": [
     {

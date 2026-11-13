@@ -1,0 +1,986 @@
+{
+  "version": 1,
+  "date": "2026-11-13",
+  "title": "Bittensor Daily News: November 13, 2026",
+  "summary": "Lium records a 43,019-alpha buy-and-burn, changes its emission split and starts Gamma spending. CADmind launches on SN42 with Yuma while remaining in early testing. Taopill separates business revenue from token buybacks.",
+  "coverageStart": "2026-11-12T14:40:00+00:00",
+  "coverageEnd": "2026-11-13T16:31:20.918170+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [
+    {
+      "headline": "Taopill launches a dashboard separating business revenue from token buybacks",
+      "summary": "Sami Kassab introduced Taopill on November 13 as a public dashboard for Bittensor economics. Its useful distinction is between revenue reported by subnet businesses and on-chain token buybacks. A business can report sales without spending the same amount on its token, so those figures should not be treated as interchangeable.\n\nThe dashboard describes company revenue as team-reported public data, with a separate estimate for SayGM and missing reporters excluded. Its subnet-revenue measure tracks identified buybacks and buy-and-burns, rather than ordinary emissions. Annualized figures are extrapolations, not a year of audited receipts. Readers should use the methodology and date alongside each number, especially when comparing businesses with different reporting coverage.",
+      "rating": 3,
+      "ratingReason": "Three stars: a useful new analytical dashboard with explicit methodological distinctions. Four would require stronger evidence of substantial consequences beyond making existing reported and on-chain data easier to compare.",
+      "status": "verified",
+      "importance": "medium",
+      "sources": [
+        {
+          "url": "https://x.com/Old_Samster/status/2121275142374355346",
+          "label": "Sami Kassab November 13 Taopill introduction"
+        },
+        {
+          "url": "https://taopill.ai/",
+          "label": "Taopill dashboard and methodology"
+        }
+      ],
+      "ratingAssessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "research-tool",
+        "consequence": "Three stars: a useful new analytical dashboard with explicit methodological distinctions. Four would require stronger evidence of substantial consequences beyond making existing reported and on-chain data easier to compare.",
+        "evidence": "Sami Kassab November 13 Taopill introduction; Taopill dashboard and methodology",
+        "scope": "Public dashboard and its stated measurement definitions.",
+        "uncertainty": "Team-reported sales, estimates, coverage gaps and annualization are not independent audits.",
+        "adjacentRatingReason": "Three stars: a useful new analytical dashboard with explicit methodological distinctions. Four would require stronger evidence of substantial consequences beyond making existing reported and on-chain data easier to compare."
+      }
+    }
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": [
+        {
+          "headline": "SN3 Teutonic narrows competitions and revises its evaluation rules",
+          "summary": "In its official channel on November 12, the Teutonic team said it was removing MIX02, MIX03 and MIX05 while continuing the current 110B model. The stated aim is to concentrate on competitions that support model merging and measurable improvements.\n\nThe team also described a Rho-loss-inspired evaluation that measures a challenger against a Horizon reference and requires a positive lower confidence bound before accepting an improvement. The public dashboard describes the same general Horizon-relative scoring approach. Evaluation settings can change, so miners should check the current repository and dashboard rather than assume an earlier announcement remains the exact live configuration.",
+          "rating": 3,
+          "ratingReason": "Three stars: meaningful operational changes for miners, within the standing ceiling for routine competitions. This is not evidence of a new model capability or a major ecosystem milestone.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1493243812263362660",
+              "label": "Official Teutonic channel, November 12 team updates"
+            },
+            {
+              "url": "https://www.teutonic.ai/",
+              "label": "Teutonic evaluation dashboard"
+            },
+            {
+              "url": "https://github.com/unarbos/teutonic",
+              "label": "Chain-linked Teutonic repository"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "routine-competition",
+            "consequence": "Three stars: meaningful operational changes for miners, within the standing ceiling for routine competitions. This is not evidence of a new model capability or a major ecosystem milestone.",
+            "evidence": "Official Teutonic channel, November 12 team updates; Teutonic evaluation dashboard; Chain-linked Teutonic repository",
+            "scope": "Competition selection and announced evaluation changes.",
+            "uncertainty": "No claim about resulting model performance; announcement settings may differ from later live configuration.",
+            "adjacentRatingReason": "Three stars: meaningful operational changes for miners, within the standing ceiling for routine competitions. This is not evidence of a new model capability or a major ecosystem milestone."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": [
+        {
+          "headline": "SN8 Vanta records 9 qualifying alpha burns",
+          "summary": "The finalized review found 9 qualifying transaction burns on SN8: 519.047619047, 421.037353996, 316.725639529, 133.333333333, 163.367865904, 191.666666666, 322.361414067, 410.030857142, 250 alpha. Each individual event exceeds the archive’s 100-alpha threshold. These amounts are token destruction, separate from emissions withheld, recycling and transaction fees. No price effect or source-of-funds claim is inferred.",
+          "rating": 3,
+          "ratingReason": "Three stars: verified economic activity worth recording, without evidence of a broader structural change that would justify four.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-13-chain-executions.json",
+              "label": "Finalized burn execution evidence"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "transaction-burn",
+            "consequence": "Three stars: verified economic activity worth recording, without evidence of a broader structural change that would justify four.",
+            "evidence": "Finalized burn execution evidence",
+            "scope": "Individual native-alpha events above 100 alpha.",
+            "uncertainty": "No causal price or funding-source claim.",
+            "adjacentRatingReason": "Three stars: verified economic activity worth recording, without evidence of a broader structural change that would justify four."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "CADmind",
+      "updates": [
+        {
+          "headline": "SN42 CADmind launches with Yuma, with paid plans still ahead",
+          "summary": "CADmind announced its SN42 launch on November 12, and Yuma confirmed its addition to the accelerator. The product aims to turn natural-language briefs into functional designs, including parts, PC cases, drones and robotics. Its public site describes outputs such as STEP assemblies, STL parts, bills of materials and assembly guides.\n\nThe team clarified in its official Discord on November 13 that this is still an early testing phase. It plans roughly two weeks of quality improvements before revealing paid plans and says a share of future commercial revenue is intended for buybacks. Those are plans, not verified sales or completed buybacks. The team reported about 16 designs produced that morning; we have not independently tested those designs.\n\nFinalized chain evidence records the identity changing from Unknown to CADmind on November 12, with registration and owner address unchanged across that transaction. The allocation changed to 26% owner, 41% validators and 33% miners. This confirms the identity and configuration, not a newly proven ownership sale.",
+          "rating": 4,
+          "ratingReason": "Four stars: a verified project identity, launched product and confirmed Yuma accelerator relationship constitute major subnet news. Three understates that transition; five is not justified by the early testing stage and unestablished deployment scale.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/CAD_mind_subnet/status/2120901132105257216",
+              "label": "CADmind November 12 launch announcement"
+            },
+            {
+              "url": "https://x.com/YumaGroup/status/2120919832749105165",
+              "label": "Yuma accelerator confirmation"
+            },
+            {
+              "url": "https://cadmind.ai/",
+              "label": "CADmind product and output description"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1486496645058138152",
+              "label": "Official CADmind channel, November 13 team clarification"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-13-chain-executions.json",
+              "label": "Finalized identity and allocation evidence"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "substantive-identity-change",
+            "consequence": "Four stars: a verified project identity, launched product and confirmed Yuma accelerator relationship constitute major subnet news. Three understates that transition; five is not justified by the early testing stage and unestablished deployment scale.",
+            "evidence": "CADmind November 12 launch announcement; Yuma accelerator confirmation; CADmind product and output description; Official CADmind channel, November 13 team clarification; Finalized identity and allocation evidence",
+            "scope": "SN42 launch and identity; announced commercial roadmap.",
+            "uncertainty": "Paid adoption and design quality remain unverified; future buybacks are a team plan.",
+            "adjacentRatingReason": "Four stars: a verified project identity, launched product and confirmed Yuma accelerator relationship constitute major subnet news. Three understates that transition; five is not justified by the early testing stage and unestablished deployment scale."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "GF",
+      "updates": [
+        {
+          "headline": "SN47 changes its on-chain name from GPUForge to GF",
+          "summary": "A successful November 13 transaction changed SN47’s on-chain name from GPUForge to GF and cleared its repository, website, contact, description and logo fields. The owner address and registration block remained unchanged across that transaction.\n\nThe previously linked GPUForce X profile still describes GPUForge, and the reviewed posts did not explain the change. We have not established whether GF is simply an abbreviation or signals a broader project transition. The metadata change is confirmed; a takeover, closure or new operating team is not.",
+          "rating": 3,
+          "ratingReason": "Three stars: clearing the project’s contact and descriptive metadata is a meaningful transparency change. A substantive rebrand would receive at least four, but the evidence does not yet distinguish that from an abbreviation and metadata reset.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-13-chain-executions.json",
+              "label": "Finalized before-and-after identity evidence"
+            },
+            {
+              "url": "https://x.com/GPUForce",
+              "label": "Previously chain-linked team profile"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "identity-metadata",
+            "consequence": "Three stars: clearing the project’s contact and descriptive metadata is a meaningful transparency change. A substantive rebrand would receive at least four, but the evidence does not yet distinguish that from an abbreviation and metadata reset.",
+            "evidence": "Finalized before-and-after identity evidence; Previously chain-linked team profile",
+            "scope": "Exact metadata change with unchanged owner and registration.",
+            "uncertainty": "Purpose, beneficial ownership and substantive rebrand remain unresolved.",
+            "adjacentRatingReason": "Three stars: clearing the project’s contact and descriptive metadata is a meaningful transparency change. A substantive rebrand would receive at least four, but the evidence does not yet distinguish that from an abbreviation and metadata reset."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": [
+        {
+          "headline": "SN51 Lium burns 43,019 alpha and starts Gamma spending",
+          "summary": "A finalized November 12 buy-and-burn used 5,001.075064827 TAO to acquire and destroy 43,019.776398498 SN51 alpha. The distinction matters: the alpha was burned; the 5,001 TAO was the purchase input, not TAO destroyed. The burn operation completed inside a batch that also contained an earlier failed operation.\n\nLium also changed its allocation from approximately 18% owner, 41% validators and 41% miners to 9%, 41% and 50%. That shifts nine percentage points toward miners, without guaranteeing an immediate matching change in staking yields. Burn and recycle allocations remain zero.\n\nSN51 enabled Gamma on November 12. Four finalized November 13 spending events consumed 22.585036211 Gamma credits through the reviewed cutoff. Its registered service says Gamma attached to a hotkey linked to a Lium account becomes USD balance for GPU pods billed by the second. This establishes credit consumption and an advertised rental integration, not independently verified delivery to four customers: the observed spends share one deposit-owning coldkey.",
+          "rating": 4,
+          "ratingReason": "Four stars: a substantial verified buy-and-burn, miner incentive change and new payment integration materially affect SN51. Three understates the combined economic change; five is not supported by ecosystem-wide impact or demonstrated customer scale.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-13-chain-executions.json",
+              "label": "Finalized burn, allocation and Gamma execution evidence"
+            },
+            {
+              "url": "https://lium.io/api/gamma/service.json",
+              "label": "Lium registered Gamma service description"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "protocol-and-service",
+            "consequence": "Four stars: a substantial verified buy-and-burn, miner incentive change and new payment integration materially affect SN51. Three understates the combined economic change; five is not supported by ecosystem-wide impact or demonstrated customer scale.",
+            "evidence": "Finalized burn, allocation and Gamma execution evidence; Lium registered Gamma service description",
+            "scope": "One burn operation, one allocation change and four Gamma spend events.",
+            "uncertainty": "The complete batch was not wholly successful. Customer identity, delivered GPU work and source of buyback funds are not independently established.",
+            "adjacentRatingReason": "Four stars: a substantial verified buy-and-burn, miner incentive change and new payment integration materially affect SN51. Three understates the combined economic change; five is not supported by ecosystem-wide impact or demonstrated customer scale."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": []
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": [
+        {
+          "headline": "SN80 OpenRoboto records Gamma spends without a registered service",
+          "summary": "Four finalized November 13 events consumed 25 Gamma each on SN80, for 100 Gamma in total. At the reviewed cutoff, OpenRoboto had Gamma enabled but no entry in the on-chain service registry.\n\nThese events demonstrate credit consumption, not proof that an identified customer bought delivered robotics work. The deposit owners and authorized spenders match in these four events, which makes it especially important not to equate them automatically with third-party commercial demand.",
+          "rating": 3,
+          "ratingReason": "Three stars: new verified usage events matter for tracking Gamma, but no registered service or independently established customer delivery supports a four-star adoption claim.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-13-chain-executions.json",
+              "label": "Finalized Gamma spending events"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/gamma-2026-11-13/snapshot.json",
+              "label": "Service-registry snapshot"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "gamma-activity",
+            "consequence": "Three stars: new verified usage events matter for tracking Gamma, but no registered service or independently established customer delivery supports a four-star adoption claim.",
+            "evidence": "Finalized Gamma spending events; Service-registry snapshot",
+            "scope": "Four spend events totaling 100 Gamma.",
+            "uncertainty": "Real-world users, purpose and delivered service unverified.",
+            "adjacentRatingReason": "Three stars: new verified usage events matter for tracking Gamma, but no registered service or independently established customer delivery supports a four-star adoption claim."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": [
+        {
+          "headline": "SN81 Reliquary records a small Gamma spend",
+          "summary": "Reliquary recorded a finalized 0.25-Gamma spend on November 13 after a small mint. Gamma was enabled, but no service was registered at the review cutoff. The event belongs in the activity record; it does not establish a commercial service launch.",
+          "rating": 2,
+          "ratingReason": "Two stars: a small bounded activity observation, without a registered service or verified customer delivery.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-13-chain-executions.json",
+              "label": "Finalized Reliquary Gamma event"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "gamma-activity",
+            "consequence": "Two stars: a small bounded activity observation, without a registered service or verified customer delivery.",
+            "evidence": "Finalized Reliquary Gamma event",
+            "scope": "One 0.25-Gamma spend.",
+            "uncertainty": "Service and customer purpose unverified.",
+            "adjacentRatingReason": "Two stars: a small bounded activity observation, without a registered service or verified customer delivery."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": [
+        {
+          "headline": "SN114 SOMA records 1 qualifying alpha burn",
+          "summary": "The finalized review found 1 qualifying transaction burn on SN114: 2,905.948920446 alpha. Each individual event exceeds the archive’s 100-alpha threshold. These amounts are token destruction, separate from emissions withheld, recycling and transaction fees. No price effect or source-of-funds claim is inferred.",
+          "rating": 3,
+          "ratingReason": "Three stars: verified economic activity worth recording, without evidence of a broader structural change that would justify four.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-13-chain-executions.json",
+              "label": "Finalized burn execution evidence"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "transaction-burn",
+            "consequence": "Three stars: verified economic activity worth recording, without evidence of a broader structural change that would justify four.",
+            "evidence": "Finalized burn execution evidence",
+            "scope": "Individual native-alpha events above 100 alpha.",
+            "uncertainty": "No causal price or funding-source claim.",
+            "adjacentRatingReason": "Three stars: verified economic activity worth recording, without evidence of a broader structural change that would justify four."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": [
+        {
+          "headline": "SN117 EveryFrame records another 65 Gamma spent",
+          "summary": "Four finalized November 13 transactions consumed 20, 20, 20 and 5 Gamma on EveryFrame. Its registered service describes AI video, image and audio generation, with Gamma used to add EveryFrame credits.\n\nThe observed spender differs from the currently registered service spender, so the events are not attributed automatically to that listing. These are verified credit-spending events; the review did not establish which media jobs were delivered or whether the activity was testing.",
+          "rating": 3,
+          "ratingReason": "Three stars: measurable additional payment activity, without sufficient evidence of customer scale or delivered work for four-star adoption coverage.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-13-chain-executions.json",
+              "label": "Finalized EveryFrame spend events"
+            },
+            {
+              "url": "https://app.everyframe.studio/services.json",
+              "label": "EveryFrame service description"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "gamma-activity",
+            "consequence": "Three stars: measurable additional payment activity, without sufficient evidence of customer scale or delivered work for four-star adoption coverage.",
+            "evidence": "Finalized EveryFrame spend events; EveryFrame service description",
+            "scope": "Four events totaling 65 Gamma.",
+            "uncertainty": "Spender linkage and delivered work remain unverified.",
+            "adjacentRatingReason": "Three stars: measurable additional payment activity, without sufficient evidence of customer scale or delivered work for four-star adoption coverage."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": [
+        {
+          "headline": "SN121 Sundae promotes messaging access across iMessage and WhatsApp",
+          "summary": "Sundae said on November 13 that users can reach its assistant through iMessage, Android messaging and WhatsApp. The advertised workflow is to send a request by message, have the agent work in its own browser, and receive its response by text.\n\nThis is a team-described access route to an existing assistant, not independently verified usage growth. We did not send a message, connect an account or test task execution.",
+          "sources": [
+            {
+              "url": "https://x.com/sundaebar_ai/status/2121250074172985351",
+              "label": "Sundae November 13 product announcement"
+            }
+          ],
+          "rating": 3,
+          "ratingReason": "Three stars: a concrete messaging-access update for an existing assistant. Four would overstate the evidence for a new subnet mechanism or major adoption milestone.",
+          "importance": "medium",
+          "status": "verified",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "Three stars: a concrete messaging-access update for an existing assistant. Four would overstate the evidence for a new subnet mechanism or major adoption milestone.",
+            "evidence": "Original team announcement dated November 13, 9:33 AM Eastern.",
+            "scope": "Announced messaging channels and browser-task workflow.",
+            "uncertainty": "No independent functional test or adoption measurement.",
+            "adjacentRatingReason": "Three stars: a concrete messaging-access update for an existing assistant. Four would overstate the evidence for a new subnet mechanism or major adoption milestone."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "storyOrder": [
+    "SN51 Lium burns 43,019 alpha and starts Gamma spending",
+    "SN42 CADmind launches with Yuma, with paid plans still ahead",
+    "Taopill launches a dashboard separating business revenue from token buybacks",
+    "SN3 Teutonic narrows competitions and revises its evaluation rules",
+    "SN121 Sundae promotes messaging access across iMessage and WhatsApp",
+    "SN47 changes its on-chain name from GPUForge to GF",
+    "SN80 OpenRoboto records Gamma spends without a registered service",
+    "SN117 EveryFrame records another 65 Gamma spent",
+    "SN8 Vanta records 9 qualifying alpha burns",
+    "SN114 SOMA records 1 qualifying alpha burn",
+    "SN81 Reliquary records a small Gamma spend"
+  ],
+  "coverage": {
+    "searched": [
+      "Current identity and primary website records for all 128 subnets; bounded required ecosystem and team X timelines, owner discovery sources and actual Grok queries.",
+      "Finalized contiguous chain events, owner holdings, Gamma services, and selected official Discord team discussions."
+    ],
+    "gaps": [
+      "Full seven-day social and Discord coverage remains incomplete for some teams and fund principals. No-cleared-story does not mean no news.",
+      "Several large price moves remain without a verified cause; missing team channels and invalid cross-registration history are carried forward.",
+      "The full site audit is not yet complete. This edition reports cleared developments without claiming every research gate is finished."
+    ]
+  },
+  "publishedAt": "2026-11-12T15:00:00Z"
+}
