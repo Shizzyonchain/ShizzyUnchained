@@ -739,7 +739,7 @@ test("toolkit answers research questions and opens a working tool on mobile",asy
  await noOverflow(page);
  await page.screenshot({path:`../brand-workday-2026-11-02/toolkit-${test.info().project.name}.png`,fullPage:true});
  await page.getByRole('main').getByRole('link',{name:'Gamma →',exact:true}).click();
- await expect(page.getByRole('heading',{name:'Gamma: who buys what?',exact:true})).toBeVisible();
+ await expect(page.getByRole('heading',{name:'Gamma, made simple.',exact:true})).toBeVisible();
 });
 
 
@@ -782,11 +782,19 @@ test("Gamma separates service status from activity and simplifies news navigatio
  await expect(nav.getByRole('link',{name:'Gamma →',exact:true})).toHaveAttribute('aria-current','page');
  await expect(nav.getByRole('link',{name:/Watchlist|Recovery|Split|Seasonality|Holding/})).toHaveCount(0);
  await expect(page.locator('main article')).toHaveCount(7);
+ await page.getByRole('searchbox',{name:'Find a subnet'}).fill('engy');
+ await expect(page.getByRole('region',{name:'Who accepts Gamma?'}).locator('details')).toHaveCount(1);
+ await page.getByRole('searchbox',{name:'Find a subnet'}).fill('');
+ await page.getByLabel('Service registered only',{exact:true}).check();
+ await expect(page.getByRole('region',{name:'Who accepts Gamma?'}).locator('details')).toHaveCount(5);
+ await page.getByLabel('Service registered only',{exact:true}).uncheck();
+ await page.screenshot({path:`../gamma-redesign-${test.info().project.name}.png`,fullPage:true});
  await expect(page.locator('#sn80')).toContainText('No registered service found');
  await expect(page.locator('#sn53')).toContainText('Mint/spend activity verified');
  await page.locator('#sn25 summary').filter({hasText:'Service identities'}).click();
  await expect(page.locator('#sn25 details').filter({hasText:'5EUQU938'})).toBeVisible();
  await expect(page.getByRole('heading',{name:'Which subnet is buying another subnet’s service?',exact:true})).toBeVisible();
+ await page.getByText('Daily accounting: alpha burned, wallets and comparison gaps',{exact:true}).click();
  await expect(page.getByRole('region',{name:'Daily Gamma usage'})).toContainText('Unavailable');
  await noOverflow(page);
 });
