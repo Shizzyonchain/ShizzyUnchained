@@ -15,6 +15,8 @@ type ChannelVideo = {
 };
 
 const channelVideos: ChannelVideo[] = [
+  { id: "LW1_8hsCTgA", title: "TAO: More Pain Ahead? My Next Move in Bittensor", meta: "22:24 · Public video · November 12, 2026" },
+  { id: "Dr1coVZkXpo", title: "Crypto Crash: More Pain or a Turning Point? | Bitcoin, TAO & Altcoins", meta: "1:09:14 · Livestream replay · November 12, 2026" },
   { id: "UYK4oIbF45w", title: "11/5/26 Bittensor News Updates & TAO Price Action | Members Video", meta: "7:04 · Members-only video · November 5 edition", membersOnly: true },
   { id: "AsNyOPEElo4", title: "Can TAO Hold? Bittensor Price Action vs. Real Progress", meta: "18:35 · Public video · November 9, 2026" },
   { id: "e4glmPHoEvw", title: "It’s About to Happen… REAX Is Moving. Is TAO Next?", meta: "19:04 · Public video · November 6, 2026" },
@@ -380,6 +382,7 @@ const channelVideos: ChannelVideo[] = [
   },
 ];
 const liveStreams: ChannelVideo[] = [
+  { id: "Dr1coVZkXpo", title: "Crypto Crash: More Pain or a Turning Point? | Bitcoin, TAO & Altcoins", meta: "1:09:14 · Livestream replay · November 12, 2026" },
   { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "37:26 · Livestream replay · November 5, 2026" },
   { id: "1ajAfGr_dh0", title: "AI on Your Terms? | True Performance Network | Bittensor Subnet 65", meta: "55:32 · Livestream replay · November 3, 2026" },
   { id: "STPM5BtE-ts", title: "Can You Prove You’re Human? Yanez Bittensor Subnet 54 with Jose Caldera", meta: "57:00 · Livestream replay · October 27, 2026" },
