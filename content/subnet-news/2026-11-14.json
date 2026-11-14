@@ -1,0 +1,866 @@
+{
+  "version": 1,
+  "date": "2026-11-14",
+  "title": "Bittensor Daily News: November 14, 2026",
+  "summary": "Carbon announces mainnet on SN116 with its first motor challenge. SN24 records an owner-address change, SN47 is re-registered, and Lium records more than 43,244 Gamma spent. SayGM introduces optional request guardrails.",
+  "coverageStart": "2026-11-13T16:31:20.918170Z",
+  "coverageEnd": "2026-11-14T15:58:36Z",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": []
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": [
+        {
+          "headline": "SN24 ms.computer records an owner-address change after a coldkey swap",
+          "summary": "Finalized November 14 records show a coldkey swap followed about 26 minutes later by a separate SubnetOwnerChanged event on SN24. The latter changed the owner address from 5Csm…evdw to 5DkB…XZXe. The subnet remained named ms.computer and retained its existing registration block.\n\nThese are two distinct chain events, not proof of two negotiated sales. They establish a change to the address controlling the subnet, but do not by themselves identify a new beneficial owner or operating team. The cause and any implications for the planned product launch remain under review; no compromise or completed product launch is inferred.",
+          "rating": 4,
+          "ratingReason": "Four stars: a finalized change to subnet control following a key migration has material consequences for tracking SN24 ownership. Three understates that control change; five is not supported by established broader impact or an independently confirmed incident.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-14-chain-executions.json",
+              "label": "Finalized swap, owner-change and before-and-after identity evidence"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "protocol",
+            "consequence": "Four stars: a finalized change to subnet control following a key migration has material consequences for tracking SN24 ownership. Three understates that control change; five is not supported by established broader impact or an independently confirmed incident.",
+            "evidence": "Finalized swap, owner-change and before-and-after identity evidence",
+            "scope": "SN24 on-chain control address; registration and project name unchanged.",
+            "uncertainty": "Beneficial ownership, cause and launch status unresolved.",
+            "adjacentRatingReason": "Four stars: a finalized change to subnet control following a key migration has material consequences for tracking SN24 ownership. Three understates that control change; five is not supported by established broader impact or an independently confirmed incident."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": [
+        {
+          "headline": "SN28 SayGM introduces optional guardrails before requests reach providers",
+          "summary": "SayGM announced request guardrails on November 13 for detecting secrets, personal information and blocked words before a request leaves its gateway. The team says the checks run inside its enclave and can be configured per API key. They are optional and off by default.\n\nThis gives API users a new control over what they submit upstream. It is an announced product feature, not a guarantee that every sensitive value will be detected; this review has not independently tested detection coverage or bypass resistance.",
+          "rating": 3,
+          "ratingReason": "Three stars: a useful, bounded gateway feature for existing users. Four would require evidence of a more consequential service change beyond optional request filtering.",
+          "status": "developing",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/say_gm_/status/2121166191469449263",
+              "label": "SayGM November 13 guardrails announcement"
+            },
+            {
+              "url": "https://docs.saygm.com/",
+              "label": "SayGM documentation"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "Three stars: a useful, bounded gateway feature for existing users. Four would require evidence of a more consequential service change beyond optional request filtering.",
+            "evidence": "SayGM November 13 guardrails announcement; SayGM documentation",
+            "scope": "Optional per-key gateway filtering.",
+            "uncertainty": "Detection effectiveness not independently tested.",
+            "adjacentRatingReason": "Three stars: a useful, bounded gateway feature for existing users. Four would require evidence of a more consequential service change beyond optional request filtering."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "CADmind",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "Unknown",
+      "updates": [
+        {
+          "headline": "SN47 is re-registered after the former GF registration is removed",
+          "summary": "SN47 was removed and then re-registered on November 13. Before removal, its on-chain name changed from GF to FG. The new registration was activated at block 9,499,920, with a different owner address and no registered project identity at the reviewed boundary.\n\nThe registration queue recorded a lock amount of 85.943566688 TAO. That is the recorded registration amount, not evidence of a negotiated purchase price for the former business. The new team, project name and operating plans have not been established.\n\nOld and new registrations must not share a continuous price-return calculation. The site is applying the verified registration boundary so the prior project’s history is not presented as a gain made by the new registration.",
+          "rating": 4,
+          "ratingReason": "Four stars: replacing an active subnet registration is a major lifecycle change affecting identity and market-history interpretation. Three understates this reset; five lacks evidence of exceptional ecosystem impact.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-14-chain-executions.json",
+              "label": "Finalized removal, queue and NetworkAdded events"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-14-sn47-registration.json",
+              "label": "Exact registration and owner state before and after"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "subnet-registration",
+            "consequence": "Four stars: replacing an active subnet registration is a major lifecycle change affecting identity and market-history interpretation. Three understates this reset; five lacks evidence of exceptional ecosystem impact.",
+            "evidence": "Finalized removal, queue and NetworkAdded events; Exact registration and owner state before and after",
+            "scope": "SN47 registration reset, not a verified purchase of the prior business.",
+            "uncertainty": "New operator and project identity remain unknown.",
+            "adjacentRatingReason": "Four stars: replacing an active subnet registration is a major lifecycle change affecting identity and market-history interpretation. Three understates this reset; five lacks evidence of exceptional ecosystem impact."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": [
+        {
+          "headline": "SN51 Lium records more than 43,244 Gamma credits spent",
+          "summary": "Two finalized November 13 events consumed 21.543754649 and 43,223.230117033 Gamma on Lium, a combined 43,244.773871682 credits. Both used the same deposit-owning address and the spender listed in Lium’s registered service. These are additional events after the previous report’s cutoff.\n\nLium describes Gamma as a way to add account balance for GPU pods billed by the second. The chain proves that credits were consumed; it does not establish that this amount is recognized revenue, that all corresponding GPU work was delivered, or that the two events represent two customers. Those distinctions matter when comparing a large payment-credit movement with commercial adoption.",
+          "rating": 4,
+          "ratingReason": "Four stars: a substantial step up in recorded service-credit consumption through the registered integration warrants major tracking coverage. Three understates the scale of the verified change; five is not supported by verified customer reach or delivered-work impact.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-14-chain-executions.json",
+              "label": "Finalized mint and spend events"
+            },
+            {
+              "url": "https://lium.io/api/gamma/service.json",
+              "label": "Lium registered service terms"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "gamma-activity",
+            "consequence": "Four stars: a substantial step up in recorded service-credit consumption through the registered integration warrants major tracking coverage. Three understates the scale of the verified change; five is not supported by verified customer reach or delivered-work impact.",
+            "evidence": "Finalized mint and spend events; Lium registered service terms",
+            "scope": "Two events totaling 43,244.773871682 Gamma, same deposit owner.",
+            "uncertainty": "Credit consumption is not independently verified revenue or delivered GPU work.",
+            "adjacentRatingReason": "Four stars: a substantial step up in recorded service-credit consumption through the registered integration warrants major tracking coverage. Three understates the scale of the verified change; five is not supported by verified customer reach or delivered-work impact."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": []
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": [
+        {
+          "headline": "SN80 OpenRoboto records another 125 Gamma spent without a registered service",
+          "summary": "Five finalized events across November 13 and 14 consumed 25 Gamma each on OpenRoboto, adding 125 Gamma after the previous report’s cutoff. No service was registered at the reviewed snapshot. In each event, the deposit-owning address was also the authorized spender.\n\nThe activity is real on-chain credit consumption. It does not establish independent customer purchases, delivered robotics work or a newly launched commercial service.",
+          "rating": 3,
+          "ratingReason": "Three stars: additional measurable Gamma activity is useful to track, but the absent service listing and unknown purpose do not establish four-star commercial adoption.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-14-chain-executions.json",
+              "label": "Five finalized OpenRoboto spend events"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "gamma-activity",
+            "consequence": "Three stars: additional measurable Gamma activity is useful to track, but the absent service listing and unknown purpose do not establish four-star commercial adoption.",
+            "evidence": "Five finalized OpenRoboto spend events",
+            "scope": "Five spends totaling 125 Gamma.",
+            "uncertainty": "Customer identity and delivered service unverified.",
+            "adjacentRatingReason": "Three stars: additional measurable Gamma activity is useful to track, but the absent service listing and unknown purpose do not establish four-star commercial adoption."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": [
+        {
+          "headline": "SN103 Terza records a 97-Gamma spend through its registered spender",
+          "summary": "A finalized November 14 event consumed 97.048535340 Gamma on Terza. The authorized spender matches the entry in the service registry at the review cutoff. Terza describes its service as inference.\n\nThis verifies payment-credit activity associated with the listed spender, not a count of completed inference requests or independently verified customer revenue.",
+          "rating": 3,
+          "ratingReason": "Three stars: meaningful verified activity through a registered service spender. Four is not supported by the event alone without greater demonstrated operational consequences.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-14-chain-executions.json",
+              "label": "Finalized Terza Gamma event"
+            },
+            {
+              "url": "https://terza.si",
+              "label": "Registered service URL"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "gamma-activity",
+            "consequence": "Three stars: meaningful verified activity through a registered service spender. Four is not supported by the event alone without greater demonstrated operational consequences.",
+            "evidence": "Finalized Terza Gamma event; Registered service URL",
+            "scope": "One spend event.",
+            "uncertainty": "Delivered inference work and customer purpose unverified.",
+            "adjacentRatingReason": "Three stars: meaningful verified activity through a registered service spender. Four is not supported by the event alone without greater demonstrated operational consequences."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": [
+        {
+          "headline": "SN116 Carbon announces mainnet with a motor-design challenge",
+          "summary": "Carbon announced its mainnet launch on November 14 and identified a motor challenge as the first live task. The project focuses on physics AI: models that help engineers predict how physical systems behave, alongside evidence about when those predictions can be trusted.\n\nThe motor problem targets smoother torque while retaining the turning force a design needs. Carbon describes miners researching model-building methods and validators rebuilding and evaluating candidates against challenge requirements. That offers a concrete starting point for its broader engineering roadmap.\n\nIts website lists eight proposed challenges spanning cooling, batteries, optical links, motors, robotics, acoustics and fluid mixing. The wider portfolio remains a roadmap, and its dollar-value examples are hypothetical customer scenarios, not Carbon revenue or measured results. The launch is a direct team announcement; this review did not independently run the motor evaluation or establish commercial customers.",
+          "rating": 4,
+          "ratingReason": "Four stars: a substantive subnet mainnet launch with a concrete first engineering task is more consequential than a routine competition update. Five is not established because the announced scope does not yet demonstrate an exceptional network-wide deployment milestone.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/carbonphysicsai/status/2121473883425657274",
+              "label": "Carbon November 14 mainnet announcement"
+            },
+            {
+              "url": "https://x.com/carbonphysicsai/status/2121573875326533669",
+              "label": "Carbon first live motor challenge"
+            },
+            {
+              "url": "https://carbonphysics.ai/portfolio/",
+              "label": "Carbon proposed challenge portfolio and evidence boundaries"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "Four stars: a substantive subnet mainnet launch with a concrete first engineering task is more consequential than a routine competition update. Five is not established because the announced scope does not yet demonstrate an exceptional network-wide deployment milestone.",
+            "evidence": "Carbon November 14 mainnet announcement; Carbon first live motor challenge; Carbon proposed challenge portfolio and evidence boundaries",
+            "scope": "Mainnet announcement and first motor challenge on SN116.",
+            "uncertainty": "No independent challenge execution, commercial customer or performance result claimed.",
+            "adjacentRatingReason": "Four stars: a substantive subnet mainnet launch with a concrete first engineering task is more consequential than a routine competition update. Five is not established because the announced scope does not yet demonstrate an exceptional network-wide deployment milestone."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": []
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "storyOrder": [
+    "SN116 Carbon announces mainnet with a motor-design challenge",
+    "SN24 ms.computer records an owner-address change after a coldkey swap",
+    "SN47 is re-registered after the former GF registration is removed",
+    "SN51 Lium records more than 43,244 Gamma credits spent",
+    "SN28 SayGM introduces optional guardrails before requests reach providers",
+    "SN103 Terza records a 97-Gamma spend through its registered spender",
+    "SN80 OpenRoboto records another 125 Gamma spent without a registered service"
+  ],
+  "coverage": {
+    "searched": [
+      "Primary websites for all 128 subnet roster entries, bounded direct reviews of the required ecosystem accounts, owner discovery sources and submitted Grok queries.",
+      "Contiguous finalized lifecycle, eTAO, transaction-burn and Gamma event review through November 14 at 10:58 AM Eastern; owner balances refreshed at one finalized block."
+    ],
+    "gaps": [
+      "Full seven-day social, media and Discord coverage remains incomplete. Selected verified developments are published without claiming exhaustive coverage.",
+      "Several large market moves lack a verified cause. Team-channel and registration follow-ups remain open.",
+      "The broader site audit is incomplete; news publication does not certify every site function."
+    ]
+  },
+  "publishedAt": "2026-11-14T16:21:45.403013+00:00"
+}
