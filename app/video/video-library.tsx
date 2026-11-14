@@ -15,6 +15,7 @@ type ChannelVideo = {
 };
 
 const channelVideos: ChannelVideo[] = [
+  { id: "kgbeIugqJk8", title: "I Challenged a TAO Bull on Value Capture. Here's What He Said", meta: "47:48 · LongView Compute · Guest appearance · November 13, 2026" },
   { id: "LW1_8hsCTgA", title: "TAO: More Pain Ahead? My Next Move in Bittensor", meta: "22:24 · Public video · November 12, 2026" },
   { id: "Dr1coVZkXpo", title: "Crypto Crash: More Pain or a Turning Point? | Bitcoin, TAO & Altcoins", meta: "1:09:14 · Livestream replay · November 12, 2026" },
   { id: "UYK4oIbF45w", title: "11/5/26 Bittensor News Updates & TAO Price Action | Members Video", meta: "7:04 · Members-only video · November 5 edition", membersOnly: true },
