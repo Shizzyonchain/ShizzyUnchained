@@ -2,21 +2,37 @@
   "date": "2026-11-15",
   "preparedAt": "2026-11-15T12:00:03.950889-05:00",
   "dailyWorkflowComplete": false,
-  "publicationStatus": "PREPARED_WITH_DISCLOSED_GAPS",
+  "publicationStatus": "FOLLOWUP_PREPARED_WITH_DISCLOSED_GAPS",
   "chainReviews": {
     "etao": {
-      "status": "BLOCKED",
-      "checkedAt": "2026-11-15T12:00:03.950889-05:00",
-      "evidence": "/evidence/2026-11-15-market.json",
-      "reason": "Finalized event collector not yet resumed beyond November 14 cutoff; market snapshot is not event evidence.",
-      "newsDisposition": "No new chain claim published; preserve existing archive and pending review."
+      "status": "DONE",
+      "checkedAt": "2026-11-15T17:38:44.690529+00:00",
+      "fromBlock": 9505682,
+      "toBlock": 9513318,
+      "evidence": "/evidence/2026-11-15-chain-scan.json",
+      "executionEvidence": "/evidence/2026-11-15-chain-executions.json",
+      "count": 1,
+      "source": "Public Opentensor archive RPC",
+      "newsDisposition": "Verified changes added to existing November 15 edition and permanent archives.",
+      "hash": "0x7a4d048d1a66cc430aa3e54c2a04520380ac3785efea2dcd32358b8decf450df",
+      "gaps": [],
+      "throughTime": "2026-11-15T17:26:00+00:00",
+      "archiveUpdated": true
     },
     "burns": {
-      "status": "BLOCKED",
-      "checkedAt": "2026-11-15T12:00:03.950889-05:00",
-      "evidence": "/evidence/2026-11-15-market.json",
-      "reason": "Finalized event collector not yet resumed beyond November 14 cutoff; market snapshot is not event evidence.",
-      "newsDisposition": "No new chain claim published; preserve existing archive and pending review."
+      "status": "DONE",
+      "checkedAt": "2026-11-15T17:38:44.690529+00:00",
+      "fromBlock": 9505682,
+      "toBlock": 9513318,
+      "evidence": "/evidence/2026-11-15-chain-scan.json",
+      "executionEvidence": "/evidence/2026-11-15-chain-executions.json",
+      "count": 10,
+      "source": "Public Opentensor archive RPC",
+      "newsDisposition": "Verified changes added to existing November 15 edition and permanent archives.",
+      "hash": "0x7a4d048d1a66cc430aa3e54c2a04520380ac3785efea2dcd32358b8decf450df",
+      "gaps": [],
+      "throughTime": "2026-11-15T17:26:00+00:00",
+      "archiveUpdated": true
     }
   },
   "marketReview": {
@@ -1133,783 +1149,2200 @@
       "netuid": 1,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:40.554719+00:00",
+          "source": "https://apex.macrocosmos.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 2,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:40.555719+00:00",
+          "source": "https://danilabs.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 3,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:40.555719+00:00",
+          "source": "https://www.teutonic.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 4,
       "status": "PARTIAL",
       "disposition": "Published independently verified original announcement",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:40.555719+00:00",
+          "source": "https://targon.com",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 5,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:40.768998+00:00",
+          "source": "https://honedashboard.com",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 6,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:40.789041+00:00",
+          "source": "https://numinouslabs.io/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 7,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:40.829112+00:00",
+          "source": "https://all-ways.io/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 8,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.069702+00:00",
+          "source": "https://www.vantanetwork.io/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 9,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.070701+00:00",
+          "source": "https://iota.macrocosmos.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 10,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.214869+00:00",
+          "source": "https://www.pareton.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 11,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.229887+00:00",
+          "source": "https://trajrl.com",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 12,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.295408+00:00",
+          "source": "https://computehorde.io",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 13,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.342404+00:00",
+          "source": "https://datauniverse.macrocosmos.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 14,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.437319+00:00",
+          "source": "https://cacheon.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 15,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.502017+00:00",
+          "source": "https://oroagents.com",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 16,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.615306+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 17,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.615306+00:00",
+          "source": "https://www.404.xyz",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 18,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.717406+00:00",
+          "source": "https://www.zeussubnet.com/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 19,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.747191+00:00",
+          "source": "https://blockmachine.io",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 20,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:41.848223+00:00",
+          "source": "https://witnessvision.io/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 21,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.023001+00:00",
+          "source": "https://adtao.io",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 22,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.196638+00:00",
+          "source": "https://desearch.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 23,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.223632+00:00",
+          "source": "https://trishool.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 24,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.258635+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 25,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.258635+00:00",
+          "source": "https://ur.xyz/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 26,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.516040+00:00",
+          "source": "https://www.perturbai.io/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 27,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.519040+00:00",
+          "source": "https://komms.app",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 28,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.581431+00:00",
+          "source": "https://saygm.com/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 29,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.707215+00:00",
+          "source": "http://hotfloat.io",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 30,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.731738+00:00",
+          "source": "https://endure.network/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 31,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.758769+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 32,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:42.758769+00:00",
+          "source": "https://its-ai.org/en",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 33,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:43.365669+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 34,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:43.365669+00:00",
+          "source": "https://yugos.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 35,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:43.513876+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 36,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:43.513876+00:00",
+          "source": "https://weircompute.com",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 37,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:43.591392+00:00",
+          "source": "https://aureliusaligned.ai",
+          "httpStatus": 406,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 38,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:43.715178+00:00",
+          "source": "https://chronollm.crunchdao.com/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 39,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:43.801702+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 40,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:43.801702+00:00",
+          "source": "https://ralphlabs.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 41,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:43.907218+00:00",
+          "source": "https://almnc.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 42,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:43.979948+00:00",
+          "source": "https://cadmind.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 43,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.084907+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 44,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.084907+00:00",
+          "source": "https://www.wearescore.com/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 45,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.210813+00:00",
+          "source": "https://alpharidge.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 46,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.366689+00:00",
+          "source": "https://instantnetwork.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 47,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.406324+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 48,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.406324+00:00",
+          "source": "https://www.qbittensorlabs.com/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 49,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.545835+00:00",
+          "source": "https://www.nepher.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 50,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.555461+00:00",
+          "source": "https://synthdata.co",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 51,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.599997+00:00",
+          "source": "https://lium.io",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 52,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.703731+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 53,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.703731+00:00",
+          "source": "https://engy.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 54,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.725830+00:00",
+          "source": "https://www.yanez.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 55,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:44.792905+00:00",
+          "source": "https://niome.genomes.io",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 56,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.011573+00:00",
+          "source": "https://www.gradients.io/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 57,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.042633+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 58,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.042633+00:00",
+          "source": "https://attune.robotensor.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 59,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.081313+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 60,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.081313+00:00",
+          "source": "https://bitsec.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 61,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.230455+00:00",
+          "source": "https://www.theredteam.io/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 62,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.297190+00:00",
+          "source": "https://www.ridges.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 63,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.435584+00:00",
+          "source": "https://www.qbittensorlabs.com/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 64,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.563355+00:00",
+          "source": "https://chutes.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 65,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.639495+00:00",
+          "source": "https://www.trueperformancenetwork.com/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 66,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.883052+00:00",
+          "source": "https://conjectures.io",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 67,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:45.916065+00:00",
+          "source": "https://harnyx.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 68,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:46.104967+00:00",
+          "source": "https://www.metanova-labs.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 69,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:46.155184+00:00",
+          "source": "https://www.heraldmedia.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 70,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:46.222842+00:00",
+          "source": "https://www.fugalai.com",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 71,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:46.394404+00:00",
+          "source": "https://leadpoet.com",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 72,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:46.420413+00:00",
+          "source": "https://www.natix.network/?utm_source=bittensor",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 73,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:46.490431+00:00",
+          "source": "https://elenost.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 74,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:46.619018+00:00",
+          "source": "https://gittensor.io",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 75,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:46.663033+00:00",
+          "source": "https://hippius.com/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 76,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:46.905245+00:00",
+          "source": "https://ormas.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 77,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:46.998762+00:00",
+          "source": "https://sn77.xyz",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 78,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.039764+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 79,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.039764+00:00",
+          "source": "https://mvtrx.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 80,
       "status": "PARTIAL",
       "disposition": "Published independently verified original announcement",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.156754+00:00",
+          "source": "https://www.openroboto.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 81,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.164756+00:00",
+          "source": "https://www.reliqua.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 82,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.320843+00:00",
+          "source": "https://subnet82.com",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 83,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.364548+00:00",
+          "source": "https://cliqueai.toptensor.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 84,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.453665+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 85,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.453665+00:00",
+          "source": "https://vidaio.io/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 86,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.654867+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 87,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.654867+00:00",
+          "source": "https://provenonce.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 88,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.719903+00:00",
+          "source": "https://Investing88.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 89,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.864892+00:00",
+          "source": "https://infinitequant.app",
+          "httpStatus": null,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 90,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.900068+00:00",
+          "source": "https://kubetee.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 91,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:47.974524+00:00",
+          "source": "https://www.cascade.industries/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 92,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.011303+00:00",
+          "source": "https://reax.co/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 93,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.083312+00:00",
+          "source": "https://stats.bitcast.network/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 94,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.180754+00:00",
+          "source": "https://cathedral.computer/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 95,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.280731+00:00",
+          "source": "https://actual.inc",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 96,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.419720+00:00",
+          "source": "https://verathos.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 97,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.448288+00:00",
+          "source": "https://theingot.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 98,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.521055+00:00",
+          "source": "https://neverplayalone.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 99,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.533752+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 100,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.533752+00:00",
+          "source": "https://network.cortex.foundation",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 101,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.781844+00:00",
+          "source": "http://tag101.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 102,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.799488+00:00",
+          "source": "https://connito.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 103,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.887580+00:00",
+          "source": "https://terza.si",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 104,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:48.962223+00:00",
+          "source": "https://taostatus.com/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 105,
       "status": "PARTIAL",
       "disposition": "Published independently verified original announcement",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.134938+00:00",
+          "source": "https://b1m.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 106,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.241853+00:00",
+          "source": "https://nodexo.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 107,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.580440+00:00",
+          "source": "https://theminos.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 108,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.622672+00:00",
+          "source": "https://www.chipforge.io/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 109,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.637574+00:00",
+          "source": "https://finsight.tech/",
+          "httpStatus": null,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 110,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.743337+00:00",
+          "source": "https://www.green-compute.com/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 111,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.845946+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 112,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.845946+00:00",
+          "source": "https://thormachines.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 113,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.855960+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 114,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.855960+00:00",
+          "source": "https://thesoma.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 115,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.960000+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 116,
       "status": "PARTIAL",
       "disposition": "Published independently verified original announcement",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:49.960000+00:00",
+          "source": "https://carbonphysics.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 117,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.065525+00:00",
+          "source": "https://everyframe.studio/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 118,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.122453+00:00",
+          "source": "https://heyditto.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 119,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.176457+00:00",
+          "source": null,
+          "httpStatus": "NO_CONFIGURED_WEBSITE",
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 120,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.176457+00:00",
+          "source": "https://www.affine.io",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 121,
       "status": "PARTIAL",
       "disposition": "Published independently verified original announcement",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.234682+00:00",
+          "source": "https://www.sundaebar.ai/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 122,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.293682+00:00",
+          "source": "https://cookingtao.com/",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 123,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.461781+00:00",
+          "source": "https://mantis123.com",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 124,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.472781+00:00",
+          "source": "https://www.swarm124.com",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 125,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.494784+00:00",
+          "source": "https://refinery125.com",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 126,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.497786+00:00",
+          "source": "https://attelier.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 127,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.874454+00:00",
+          "source": "https://zils.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     },
     {
       "netuid": 128,
       "status": "BLOCKED",
       "disposition": "No cleared story; not a no-news finding",
-      "gap": "Full team-source review incomplete"
+      "gap": "Full team-source review incomplete",
+      "followupChecks": [
+        {
+          "checkedAt": "2026-11-15T17:26:50.924450+00:00",
+          "source": "https://ByteLeap.ai",
+          "httpStatus": 200,
+          "method": "public configured website HTTP fetch",
+          "scope": "Returned landing-page text collected, not full dated source history",
+          "disposition": "Discovery evidence retained locally",
+          "gap": "Seven-day X, Discord and media review not completed by this fetch"
+        }
+      ]
     }
   ],
   "editorialReview": {
-    "status": "BLOCKED",
+    "status": "PREPARED",
     "selectedLead": "SN105 Beam connects data-transfer receipts to Chainlink CRE",
-    "rationale": "Counterparty-confirmed infrastructure integration leads product tracks, SDK changes and operational follow-ups.",
+    "rationale": "Counterparty-confirmed Beam integration leads OpenRoboto product track and attributed Yanez commercial milestone; bounded operations, filings and chain changes follow.",
     "orderedHeadlines": [
       "SN105 Beam connects data-transfer receipts to Chainlink CRE",
       "SN80 OpenRoboto opens an agentic robotics task-building track",
+      "SN54 Yanez reports sales growth and estimated ARR above $500,000",
       "SN4 Targon expands SDK access across its compute products",
       "SN121 Sundae highlights Scout’s context-aware agent handoff",
-      "SN116 Carbon reports its first miner payment after launch"
+      "SN116 Carbon reports its first miner payment after launch",
+      "SN127 Zils gives miners clearer feedback on rejected submissions",
+      "SN64 Chutes lists Tencent Hy4 with separate cached-input pricing",
+      "Boost Run filing separates GPU rental growth from network rewards",
+      "SN94 Cathedral separates agent failures from infrastructure errors in its test report",
+      "SN70 Fugal fixes proof-collection delays that could penalize responsive miners",
+      "SN87 Provenonce shifts its validator and miner emission split",
+      "SN8 Vanta records ten qualifying alpha-burn transactions",
+      "SN76 Ormas enables Gamma, with no service registered at the cutoff"
     ],
-    "gap": "Rendered desktop and phone edition verification pending."
+    "gap": "Live amended rendering verification pending."
   },
   "ratingReview": [
     {
@@ -1966,6 +3399,105 @@
       "adjacentRatingReason": "Three stars: a useful agent-selection and context feature with bounded demonstrated scope. Four is not established by the short product announcement alone.",
       "headline": "SN121 Sundae highlights Scout’s context-aware agent handoff",
       "rating": 3
+    },
+    {
+      "rubricVersion": "2026-11-11",
+      "claimType": "commercial-update",
+      "consequence": "Four stars: a concrete company-reported commercial milestone and new customer materially extend the adoption picture. Three understates that commercial development; five is not established by estimated company-wide ARR and an unnamed customer.",
+      "evidence": "Jose Caldera, Ventura Labs interview, November 12, 1:53 through 5:12",
+      "scope": "Company-wide sales and estimated ARR; two distinct product lines.",
+      "uncertainty": "Auto-generated transcript reviewed; financial results and unnamed customer not independently verified.",
+      "adjacentRatingReason": "Four stars: a concrete company-reported commercial milestone and new customer materially extend the adoption picture. Three understates that commercial development; five is not established by estimated company-wide ARR and an unnamed customer.",
+      "headline": "SN54 Yanez reports sales growth and estimated ARR above $500,000",
+      "rating": 4
+    },
+    {
+      "rubricVersion": "2026-11-11",
+      "claimType": "miner-tools",
+      "consequence": "Three stars: useful diagnostics and job reliability changes affect participation. Two understates the new feedback capability; four would overstate a release that leaves scoring and rewards unchanged.",
+      "evidence": "Zils November 11 private-report release; Zils November 11 hosted-API follow-up",
+      "scope": "Optional miner diagnostics and queue retry behavior.",
+      "uncertainty": "Release notes checked; software not executed.",
+      "adjacentRatingReason": "Three stars: useful diagnostics and job reliability changes affect participation. Two understates the new feedback capability; four would overstate a release that leaves scoring and rewards unchanged.",
+      "headline": "SN127 Zils gives miners clearer feedback on rejected submissions",
+      "rating": 3
+    },
+    {
+      "rubricVersion": "2026-11-11",
+      "claimType": "model-availability",
+      "consequence": "Three stars: a meaningful catalog addition with useful pricing details. Two understates the available model choice; four is not warranted by hosting alone.",
+      "evidence": "Chutes official live model catalog, checked November 15",
+      "scope": "Listed model, context limit and quoted token rates.",
+      "uncertainty": "No inference test, cache-hit measurement or partnership established.",
+      "adjacentRatingReason": "Three stars: a meaningful catalog addition with useful pricing details. Two understates the available model choice; four is not warranted by hosting alone.",
+      "headline": "SN64 Chutes lists Tencent Hy4 with separate cached-input pricing",
+      "rating": 3
+    },
+    {
+      "rubricVersion": "2026-11-11",
+      "claimType": "issuer-filing",
+      "consequence": "Three stars: original issuer accounting gives useful context for compute economics. Two understates the quantified disclosure; four is not established without a more direct subnet-specific development.",
+      "evidence": "Boost Run Form 10-Q, Note 2 and quarterly revenue discussion",
+      "scope": "Issuer-wide quarterly revenue and combined network rewards.",
+      "uncertainty": "No network-specific reward split or supplied subnet identified.",
+      "adjacentRatingReason": "Three stars: original issuer accounting gives useful context for compute economics. Two understates the quantified disclosure; four is not established without a more direct subnet-specific development.",
+      "headline": "Boost Run filing separates GPU rental growth from network rewards",
+      "rating": 3
+    },
+    {
+      "rubricVersion": "2026-11-11",
+      "claimType": "technical-report",
+      "consequence": "Three stars: a substantive test report makes execution evidence and its limits inspectable. Two understates the technical detail; four is not established by a bounded test with prototype verification artifacts.",
+      "evidence": "Full team article and public run card read in browser tab 3.",
+      "scope": "One 1,000-attempt test; reported outcomes and prototype evidence.",
+      "uncertainty": "Receipt chains not independently verified; full run folder not published.",
+      "adjacentRatingReason": "Three stars: a substantive test report makes execution evidence and its limits inspectable. Two understates the technical detail; four is not established by a bounded test with prototype verification artifacts.",
+      "headline": "SN94 Cathedral separates agent failures from infrastructure errors in its test report",
+      "rating": 3
+    },
+    {
+      "rubricVersion": "2026-11-11",
+      "claimType": "miner-operations",
+      "consequence": "Three stars: the fix addresses an operational defect affecting miner participation and burn-in. Two understates that effect; four would overstate a validator-only fix with scoring and consensus unchanged.",
+      "evidence": "Official changelog and timestamped market snapshot.",
+      "scope": "Validator proof collection; price observation separately labelled.",
+      "uncertainty": "Deployment across validators not independently measured; price causality unresolved.",
+      "adjacentRatingReason": "Three stars: the fix addresses an operational defect affecting miner participation and burn-in. Two understates that effect; four would overstate a validator-only fix with scoring and consensus unchanged.",
+      "headline": "SN70 Fugal fixes proof-collection delays that could penalize responsive miners",
+      "rating": 3
+    },
+    {
+      "rubricVersion": "2026-11-11",
+      "claimType": "emission-allocation",
+      "consequence": "Three stars: an executed eight-percentage-point redistribution matters to miners and validators. Two understates the economic effect; four is not established by this bounded allocation adjustment.",
+      "evidence": "Runtime-decoded finalized events and successful extrinsic execution.",
+      "scope": "Executed five-slot allocation change, historical registration preserved.",
+      "uncertainty": "No inference about price impact, beneficial wallet ownership or commercial revenue.",
+      "adjacentRatingReason": "Three stars: an executed eight-percentage-point redistribution matters to miners and validators. Two understates the economic effect; four is not established by this bounded allocation adjustment.",
+      "headline": "SN87 Provenonce shifts its validator and miner emission split",
+      "rating": 3
+    },
+    {
+      "rubricVersion": "2026-11-11",
+      "claimType": "transaction-burn",
+      "consequence": "Three stars: verified qualifying token destruction is a meaningful supply update. Two understates the confirmed transaction series; four would require greater demonstrated consequence than the amounts alone establish.",
+      "evidence": "Runtime-decoded finalized events and successful extrinsic execution.",
+      "scope": "Ten individual qualifying alpha burns, not revenue or TAO expenditure.",
+      "uncertainty": "No inference about price impact, beneficial wallet ownership or commercial revenue.",
+      "adjacentRatingReason": "Three stars: verified qualifying token destruction is a meaningful supply update. Two understates the confirmed transaction series; four would require greater demonstrated consequence than the amounts alone establish.",
+      "headline": "SN8 Vanta records ten qualifying alpha-burn transactions",
+      "rating": 3
+    },
+    {
+      "rubricVersion": "2026-11-11",
+      "claimType": "gamma-configuration",
+      "consequence": "Three stars: a verified new Gamma participant changes the adoption roster. Two understates the concrete enablement; four is not established without a registered service or substantive launch.",
+      "evidence": "Runtime-decoded finalized events and successful extrinsic execution.",
+      "scope": "Gamma enablement only; no service registered at cutoff.",
+      "uncertainty": "No inference about price impact, beneficial wallet ownership or commercial revenue.",
+      "adjacentRatingReason": "Three stars: a verified new Gamma participant changes the adoption roster. Two understates the concrete enablement; four is not established without a registered service or substantive launch.",
+      "headline": "SN76 Ormas enables Gamma, with no service registered at the cutoff",
+      "rating": 3
     }
   ],
   "discordReview": {
@@ -1976,8 +3508,11 @@
     "gap": "Account/channel not verified on desktop, no messages reviewed or watermark advanced."
   },
   "gammaReview": {
-    "status": "BLOCKED",
-    "reason": "Incomplete in initial deadline-recovery edition; retained as required follow-up."
+    "status": "PARTIAL",
+    "fromBlock": 9505682,
+    "toBlock": 9513318,
+    "evidence": "/evidence/2026-11-15-gamma-snapshot.json",
+    "disposition": "Gamma event executions and enabled-service snapshot verified; broader provider/service review remains incomplete."
   },
   "ownerHoldings": {
     "status": "DONE",
@@ -2557,5 +4092,195 @@
     "lint": "PASS: zero errors, one pre-existing unused-variable warning",
     "build": "PASS: November 15 route generated",
     "checkedAt": "2026-11-15T17:05:11.6051858Z"
+  },
+  "followupReviews": [
+    {
+      "checkedAt": "2026-11-15T17:32:12.826173+00:00",
+      "addedHeadlines": [
+        "SN54 Yanez reports sales growth and estimated ARR above $500,000",
+        "SN127 Zils gives miners clearer feedback on rejected submissions",
+        "SN64 Chutes lists Tencent Hy4 with separate cached-input pricing",
+        "Boost Run filing separates GPU rental growth from network rewards"
+      ],
+      "discord": "BLOCKED: Web says Please log in again; desktop minimized and not targetable. Owner login request remains pending.",
+      "websiteCoverage": {
+        "rows": 128,
+        "http200": 106,
+        "noConfigured": 19,
+        "accessErrors": 3,
+        "limitation": "Website fetches are not full seven-day social or media review."
+      },
+      "outletAdded": "https://www.taooutsider.com/blog/",
+      "secondaryLeadsPending": [
+        "SN24 operating-team/launch discussion",
+        "SN42 CADmind delivered-job update",
+        "SN31 Rec4ll launch plan",
+        "SN71 emissions change",
+        "SN88 revenue discussion"
+      ],
+      "collectorCorrection": "research-briefs.py discovered zero links in server HTML; empty briefs-full.json is not evidence of no news. Individual SubnetRadar pages were read separately."
+    },
+    {
+      "checkedAt": "2026-11-15T17:34:49.922593+00:00",
+      "source": "https://cathedral.computer/r/liquid-full-20261106b/",
+      "actualTab": "iab 2, tab 3",
+      "disposition": "Published bounded technical report with prototype-verification limitations",
+      "mediaOutcome": "Full article and rendered run-card text read; screenshot graphic and cryptographic artifact verification not claimed"
+    }
+  ],
+  "followupSourceLedger": [
+    {
+      "source": "https://www.xtao.co/",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Investor-materials list read; most recent dated release September 25, 2026; November 13 investment item is 2025, not current news.",
+      "gap": "No complete principal timeline or new SEDAR filing search."
+    },
+    {
+      "source": "https://www.generaltensor.io/content",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Content index read; rebrand narrative explicitly refers to January 2026. Not republished as a new November rebrand.",
+      "gap": "Full social/video review remains incomplete."
+    },
+    {
+      "source": "https://offthechain.capital/research/",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Latest listed report October 2026, From Hashrate to Rent.",
+      "gap": "Full report requires email delivery; not requested or read."
+    },
+    {
+      "source": "https://medium.com/collab-currency",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Research destination opened from official firm site; no article list returned.",
+      "gap": "Dynamic article content unavailable in reader."
+    },
+    {
+      "source": "https://stillcorecapital.com/the-commanding-heights-of-intelligence/",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "November essay introduction and key points inspected; forecasts are fund opinions, not realized revenue.",
+      "gap": "Full essay and linked PDF not fully reviewed."
+    },
+    {
+      "source": "https://www.yumaai.com/updates",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Official dated index inspected; latest surfaced June 25, 2026 Total Market Fund.",
+      "gap": "Does not substitute for all Yuma team social/video sources."
+    },
+    {
+      "source": "https://www.unsupervised.capital",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Official homepage inspected; surfaced older report.",
+      "gap": "Full principal timelines incomplete."
+    },
+    {
+      "source": "https://dsvfund.com",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Direct fetch timed out.",
+      "gap": "November 13 October-report original remains pending."
+    },
+    {
+      "source": "https://www.alphagap.io/powerrankings",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Public ranking shell read.",
+      "gap": "No populated ranking rows or detailed news returned."
+    },
+    {
+      "source": "https://tao.com",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Reader access failed.",
+      "gap": "Outlet review not complete."
+    },
+    {
+      "source": "https://taosis.com/",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Visible feed read through November 14-15 entries; CADmind and Cathedral originals followed; chain items retained for independent verification.",
+      "gap": "Feed is discovery, not primary chain evidence or full history."
+    },
+    {
+      "source": "https://1t1b.ai/",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "November 15 briefing read; Carbon backlog and SN24 discussion retained as leads.",
+      "gap": "Original Discord authors and dates not verified; no causal price claim published."
+    },
+    {
+      "source": "https://www.taooutsider.com/blog/",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Latest index and Chutes, Zils and Boost Run stories read; original catalog, releases and filing verified.",
+      "gap": "Not a complete historical archive review."
+    },
+    {
+      "source": "https://github.com/cadmindai/cadmind-einstein/releases",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Release list read; latest displayed v0.5.19 November 9.",
+      "gap": "Does not verify secondary claims of v0.6.15 or 102 jobs delivered."
+    },
+    {
+      "source": "https://github.com/fugal-ai/fugal-subnet/commits/main/",
+      "checkedAt": "2026-11-15T17:35:51.581424+00:00",
+      "method": "web reader",
+      "status": "PARTIAL",
+      "disposition": "Reader request failed.",
+      "gap": "Fugal price-move explanation remains blocked pending original team sources."
+    }
+  ],
+  "priorChainReviews": [
+    {
+      "etao": {
+        "status": "DONE",
+        "checkedAt": "2026-11-15T17:38:44.690529+00:00",
+        "fromBlock": 9505682,
+        "toBlock": 9513318,
+        "evidence": "/evidence/2026-11-15-chain-scan.json",
+        "executionEvidence": "/evidence/2026-11-15-chain-executions.json",
+        "count": 1,
+        "source": "Public Opentensor archive RPC",
+        "newsDisposition": "Verified changes added to existing November 15 edition and permanent archives."
+      },
+      "burns": {
+        "status": "DONE",
+        "checkedAt": "2026-11-15T17:38:44.690529+00:00",
+        "fromBlock": 9505682,
+        "toBlock": 9513318,
+        "evidence": "/evidence/2026-11-15-chain-scan.json",
+        "executionEvidence": "/evidence/2026-11-15-chain-executions.json",
+        "count": 10,
+        "source": "Public Opentensor archive RPC",
+        "newsDisposition": "Verified changes added to existing November 15 edition and permanent archives."
+      }
+    }
+  ],
+  "lifecycleReview": {
+    "status": "DONE",
+    "fromBlock": 9505682,
+    "toBlock": 9513318,
+    "evidence": "/evidence/2026-11-15-chain-scan.json",
+    "disposition": "No matching identity, registration or owner-change events in fully scanned interval; endpoint identity collected at cutoff."
   }
 }

@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-11-14T16:20:35.961191+00:00",
-  "block": 9505681,
-  "hash": "0x649e372e187d2733836381612671df12dd79e79ce7eb73ed153134a33eceeb0a",
-  "chainTime": 1794671916000,
+  "checkedAt": "2026-11-15T17:38:44.690529+00:00",
+  "block": 9513318,
+  "hash": "0x7a4d048d1a66cc430aa3e54c2a04520380ac3785efea2dcd32358b8decf450df",
+  "chainTime": 1794763560000,
   "runtime": 490,
   "source": "Opentensor archive RPC",
   "weights": {
@@ -611,9 +611,9 @@
     "87": [
       "0",
       "0",
-      "3320329489486196244",
-      "7563207292111677685",
-      "7563207292111677686"
+      "3320413933267719290",
+      "9038904596117680291",
+      "6087425544324152034"
     ],
     "88": [
       "0",
@@ -1658,6 +1658,30 @@
       "name": "lium.io",
       "registrationBlock": 3966206,
       "evidence": "/evidence/2026-11-13-chain-executions.json"
+    },
+    {
+      "netuid": 87,
+      "block": 9505951,
+      "hash": "0xcea871dc38dc55effd06fe20038414c92dde167c8b75650ce3cfae299eb31ca0",
+      "timestamp": 1794675156000,
+      "before": [
+        "0",
+        "0",
+        "3320329489486196244",
+        "7563207292111677685",
+        "7563207292111677686"
+      ],
+      "after": [
+        "0",
+        "0",
+        "3320413933267719290",
+        "9038904596117680291",
+        "6087425544324152034"
+      ],
+      "extrinsic": 11,
+      "name": "Provenonce",
+      "registrationBlock": 7208725,
+      "evidence": "/evidence/2026-11-15-chain-executions.json"
     }
   ],
   "names": {
@@ -1928,14 +1952,14 @@
   },
   "eventReview": {
     "fromBlock": 9326442,
-    "toBlock": 9505681,
-    "finalizedHash": "0x649e372e187d2733836381612671df12dd79e79ce7eb73ed153134a33eceeb0a",
-    "checkedAt": "2026-11-14T16:20:35.961191+00:00",
-    "eventCount": 24,
+    "toBlock": 9513318,
+    "finalizedHash": "0x7a4d048d1a66cc430aa3e54c2a04520380ac3785efea2dcd32358b8decf450df",
+    "checkedAt": "2026-11-15T17:38:44.690529+00:00",
+    "eventCount": 25,
     "method": "Every finalized block inspected over contiguous archived reviews, including intermediate/reversed changes. Reviewed runtime definitions, positive decoding controls and per-block runtime checks retained. Historical allocation and registration labels preserved.",
     "gaps": [],
     "historyLimit": "This complete interval starts at block 9326442. No complete-event claim is made for earlier history.",
-    "evidence": "/evidence/2026-11-14-chain-scan.json"
+    "evidence": "/evidence/2026-11-15-chain-scan.json"
   },
   "lifecycleResets": [
     {

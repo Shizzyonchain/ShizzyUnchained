@@ -2,12 +2,36 @@
   "version": 1,
   "date": "2026-11-15",
   "title": "Bittensor Daily News: November 15, 2026",
-  "summary": "Beam connects data-transfer receipts to Chainlink CRE. OpenRoboto opens a robotics task track, Targon expands its developer SDK, Sundae highlights Scout, and Carbon reports its first miner payment.",
+  "summary": "Beam connects data-transfer receipts to Chainlink CRE. OpenRoboto opens a robotics task track, Yanez reports commercial growth, and follow-up coverage adds developer tools, compute disclosures, Gamma enablement and verified emission and burn events.",
   "coverageStart": "2026-11-14T15:58:36Z",
-  "coverageEnd": "2026-11-15T12:00:03.950889-05:00",
+  "coverageEnd": "2026-11-15T17:39:30.530929+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
-  "ecosystem": [],
+  "ecosystem": [
+    {
+      "headline": "Boost Run filing separates GPU rental growth from network rewards",
+      "summary": "Boost Run's quarterly filing reports $39.87 million in revenue for the three months ended September 30, 2026. Compared with the same quarter a year earlier, GPU leasing revenue increased by $35.59 million, partly offset by a $2.46 million decline in blockchain-reward revenue. Those are changes in revenue, not the absolute revenue of each segment.\n\nThe company describes providing compute to Bittensor and Aethir in exchange for TAO and ATH, recording those rewards at fair value and converting them to cash or using them for expenses shortly afterward. The combined reward decline is not broken out by network in the cited discussion, so it cannot be described as a $2.46 million decline in Bittensor alone.\n\nFor readers tracking commercial demand, rental contracts and protocol rewards are different payment flows. This filing does not identify the Bittensor subnets supplied or establish how much end-user demand those rewards represent.",
+      "rating": 3,
+      "ratingReason": "Three stars: original issuer accounting gives useful context for compute economics. Two understates the quantified disclosure; four is not established without a more direct subnet-specific development.",
+      "status": "verified",
+      "importance": "medium",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/2090646/000149315226051227/form10-q.htm",
+          "label": "Boost Run Form 10-Q, Note 2 and quarterly revenue discussion"
+        }
+      ],
+      "ratingAssessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "issuer-filing",
+        "consequence": "Three stars: original issuer accounting gives useful context for compute economics. Two understates the quantified disclosure; four is not established without a more direct subnet-specific development.",
+        "evidence": "Boost Run Form 10-Q, Note 2 and quarterly revenue discussion",
+        "scope": "Issuer-wide quarterly revenue and combined network rewards.",
+        "uncertainty": "No network-specific reward split or supplied subnet identified.",
+        "adjacentRatingReason": "Three stars: original issuer accounting gives useful context for compute economics. Two understates the quantified disclosure; four is not established without a more direct subnet-specific development."
+      }
+    }
+  ],
   "subnets": [
     {
       "netuid": 1,
@@ -79,7 +103,35 @@
     {
       "netuid": 8,
       "name": "Vanta",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN8 Vanta records ten qualifying alpha-burn transactions",
+          "summary": "The finalized review found ten successful SN8 alpha-burn events between November 14 at 17:55 UTC and November 15 at 17:24:36 UTC. Each individually exceeded the public archive's 100-alpha threshold. Together they removed 1,967.787795218 alpha. These are alpha units, not TAO or dollars.\n\nThe events are recorded as direct alpha burns, not buy-and-burn transactions: the reviewed events do not establish a matching TAO purchase. The total excludes smaller events, automatic emission withholding, fees and recycling. Each qualifying transaction is retained separately in the Burns archive with its block, event index and amount. The chain establishes the burn execution, not who beneficially owns the originating wallets or why the tokens were burned.",
+          "rating": 3,
+          "ratingReason": "Three stars: verified qualifying token destruction is a meaningful supply update. Two understates the confirmed transaction series; four would require greater demonstrated consequence than the amounts alone establish.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-15-chain-executions.json",
+              "label": "Finalized execution, block and state evidence"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-15-chain-scan.json",
+              "label": "Complete interval scan, blocks 9505682 through 9513318"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "transaction-burn",
+            "consequence": "Three stars: verified qualifying token destruction is a meaningful supply update. Two understates the confirmed transaction series; four would require greater demonstrated consequence than the amounts alone establish.",
+            "evidence": "Runtime-decoded finalized events and successful extrinsic execution.",
+            "scope": "Ten individual qualifying alpha burns, not revenue or TAO expenditure.",
+            "uncertainty": "No inference about price impact, beneficial wallet ownership or commercial revenue.",
+            "adjacentRatingReason": "Three stars: verified qualifying token destruction is a meaningful supply update. Two understates the confirmed transaction series; four would require greater demonstrated consequence than the amounts alone establish."
+          }
+        }
+      ]
     },
     {
       "netuid": 9,
@@ -309,7 +361,31 @@
     {
       "netuid": 54,
       "name": "Yanez",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN54 Yanez reports sales growth and estimated ARR above $500,000",
+          "summary": "In a November 12 Ventura Labs interview, Yanez CEO Jose Caldera said sales had doubled across Q3 and October, bringing estimated annual recurring revenue to slightly above $500,000. He explicitly described the ARR figure as an estimate because some products are new and their recurring revenue is still difficult to measure. It is not a statement that the company collected $500,000 during those four months.\n\nCaldera also said Yanez had signed a large social-network customer for compliance and risk technology, but could not identify it under an NDA. The customer identity and contract value are not established by the interview.\n\nThe distinction between product lines matters: Caldera said many larger customers use Yanez's original financial-crime and regulatory-testing products, while proof of humanity and uniqueness is a newer line launched during the summer. These company-wide figures should not be presented as revenue generated entirely by SN54's newer product or as payments to token holders. This is dated catch-up coverage of an attributed commercial update, not independently audited financial results.",
+          "rating": 4,
+          "ratingReason": "Four stars: a concrete company-reported commercial milestone and new customer materially extend the adoption picture. Three understates that commercial development; five is not established by estimated company-wide ARR and an unnamed customer.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://www.youtube.com/watch?v=UfYnOArKOSk&t=113",
+              "label": "Jose Caldera, Ventura Labs interview, November 12, 1:53 through 5:12"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "commercial-update",
+            "consequence": "Four stars: a concrete company-reported commercial milestone and new customer materially extend the adoption picture. Three understates that commercial development; five is not established by estimated company-wide ARR and an unnamed customer.",
+            "evidence": "Jose Caldera, Ventura Labs interview, November 12, 1:53 through 5:12",
+            "scope": "Company-wide sales and estimated ARR; two distinct product lines.",
+            "uncertainty": "Auto-generated transcript reviewed; financial results and unnamed customer not independently verified.",
+            "adjacentRatingReason": "Four stars: a concrete company-reported commercial milestone and new customer materially extend the adoption picture. Three understates that commercial development; five is not established by estimated company-wide ARR and an unnamed customer."
+          }
+        }
+      ]
     },
     {
       "netuid": 55,
@@ -359,7 +435,31 @@
     {
       "netuid": 64,
       "name": "Chutes",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN64 Chutes lists Tencent Hy4 with separate cached-input pricing",
+          "summary": "Chutes' public model catalog checked on November 15 lists Tencent Hy4 with a 1,048,576-token context window. Its quoted USD rates per million tokens are $0.525 for fresh input, $0.025 for cached input and $1.5625 for output.\n\nFor an application repeatedly sending the same instructions or reference material, the distinction is practical: input billed as a cache read costs less, while new input and generated answers have separate rates. The listing does not establish how often a particular workload will qualify for the cache rate.\n\nThis is verified catalog availability, not evidence of a Tencent partnership or a measured performance advantage. The model was already discussed publicly before today's report; it is included as a missed product update, not a November 15 launch. No paid inference request was submitted in this review.",
+          "rating": 3,
+          "ratingReason": "Three stars: a meaningful catalog addition with useful pricing details. Two understates the available model choice; four is not warranted by hosting alone.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://llm.chutes.ai/v1/models",
+              "label": "Chutes official live model catalog, checked November 15"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "model-availability",
+            "consequence": "Three stars: a meaningful catalog addition with useful pricing details. Two understates the available model choice; four is not warranted by hosting alone.",
+            "evidence": "Chutes official live model catalog, checked November 15",
+            "scope": "Listed model, context limit and quoted token rates.",
+            "uncertainty": "No inference test, cache-hit measurement or partnership established.",
+            "adjacentRatingReason": "Three stars: a meaningful catalog addition with useful pricing details. Two understates the available model choice; four is not warranted by hosting alone."
+          }
+        }
+      ]
     },
     {
       "netuid": 65,
@@ -389,7 +489,35 @@
     {
       "netuid": 70,
       "name": "Fugal",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN70 Fugal fixes proof-collection delays that could penalize responsive miners",
+          "summary": "Fugal's November 12 v0.3.2 changelog describes a validator fix for proof requests getting stuck behind unresponsive miners. The previous connection pool could be occupied by more than 100 endpoints that did not answer, delaying requests to miners whose proofs were ready. The team reports this happening on Finney and says a missed proof could reset a head's burn-in before it completed.\n\nThe update changes proof collection so those unanswered connections no longer block the rest of the field. The documented timeout, queried endpoints, scoring and consensus digest remain unchanged. This is a released validator fix, not another announcement of the v2 preparation covered on November 10.\n\nThe change is relevant operational context, but it does not establish why Fugal's token fell. The November 15 market snapshot showed a 12.63% 24-hour decline against TAO at 17:26 UTC; the original team Discord discussion remains inaccessible, and no causal explanation has been verified.",
+          "rating": 3,
+          "ratingReason": "Three stars: the fix addresses an operational defect affecting miner participation and burn-in. Two understates that effect; four would overstate a validator-only fix with scoring and consensus unchanged.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://github.com/fugal-ai/fugal-subnet/blob/main/CHANGELOG.md",
+              "label": "Fugal v0.3.2 changelog, November 12"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-15-followup-market.json",
+              "label": "November 15 17:26 UTC market snapshot"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "miner-operations",
+            "consequence": "Three stars: the fix addresses an operational defect affecting miner participation and burn-in. Two understates that effect; four would overstate a validator-only fix with scoring and consensus unchanged.",
+            "evidence": "Official changelog and timestamped market snapshot.",
+            "scope": "Validator proof collection; price observation separately labelled.",
+            "uncertainty": "Deployment across validators not independently measured; price causality unresolved.",
+            "adjacentRatingReason": "Three stars: the fix addresses an operational defect affecting miner participation and burn-in. Two understates that effect; four would overstate a validator-only fix with scoring and consensus unchanged."
+          }
+        }
+      ]
     },
     {
       "netuid": 71,
@@ -419,7 +547,39 @@
     {
       "netuid": 76,
       "name": "Ormas",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN76 Ormas enables Gamma, with no service registered at the cutoff",
+          "summary": "Ormas enabled Gamma in a successful transaction at finalized block 9507253 on November 14. The November 15 snapshot at block 9513318 shows nine Gamma-enabled subnets, including Ormas.\n\nEnabling the feature and offering a usable service are separate steps. Ormas had no service entry in the on-chain Services registry at that cutoff. This should not be presented as a customer launch, paid adoption or proof that someone bought and consumed a service. The linked snapshot preserves the enabled flag and empty service list.",
+          "rating": 3,
+          "ratingReason": "Three stars: a verified new Gamma participant changes the adoption roster. Two understates the concrete enablement; four is not established without a registered service or substantive launch.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-15-chain-executions.json",
+              "label": "Finalized execution, block and state evidence"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-15-chain-scan.json",
+              "label": "Complete interval scan, blocks 9505682 through 9513318"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-15-gamma-snapshot.json",
+              "label": "Gamma-enabled subnets and registered services at finalized cutoff"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "gamma-configuration",
+            "consequence": "Three stars: a verified new Gamma participant changes the adoption roster. Two understates the concrete enablement; four is not established without a registered service or substantive launch.",
+            "evidence": "Runtime-decoded finalized events and successful extrinsic execution.",
+            "scope": "Gamma enablement only; no service registered at cutoff.",
+            "uncertainty": "No inference about price impact, beneficial wallet ownership or commercial revenue.",
+            "adjacentRatingReason": "Three stars: a verified new Gamma participant changes the adoption roster. Two understates the concrete enablement; four is not established without a registered service or substantive launch."
+          }
+        }
+      ]
     },
     {
       "netuid": 77,
@@ -498,7 +658,35 @@
     {
       "netuid": 87,
       "name": "Provenonce",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN87 Provenonce shifts its validator and miner emission split",
+          "summary": "A finalized November 14 transaction changed Provenonce's five-slot emission allocation at block 9505951. The validator share rose from approximately 41% to 49%, while the miner share fell from approximately 41% to 33%. The owner share remains approximately 18%, and the burn and recycle slots remain zero. The exact integer vectors are retained in the linked evidence.\n\nThis changes how the subnet's allocated emissions are divided; it does not mean the subnet receives more network emissions. Validator distributions still interact with the protocol's Root allocation rules, and displayed staking yield can lag as epochs settle. The review verified successful execution and the before-and-after state, rather than inferring a change from an APY chart.",
+          "rating": 3,
+          "ratingReason": "Three stars: an executed eight-percentage-point redistribution matters to miners and validators. Two understates the economic effect; four is not established by this bounded allocation adjustment.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-15-chain-executions.json",
+              "label": "Finalized execution, block and state evidence"
+            },
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-15-chain-scan.json",
+              "label": "Complete interval scan, blocks 9505682 through 9513318"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "emission-allocation",
+            "consequence": "Three stars: an executed eight-percentage-point redistribution matters to miners and validators. Two understates the economic effect; four is not established by this bounded allocation adjustment.",
+            "evidence": "Runtime-decoded finalized events and successful extrinsic execution.",
+            "scope": "Executed five-slot allocation change, historical registration preserved.",
+            "uncertainty": "No inference about price impact, beneficial wallet ownership or commercial revenue.",
+            "adjacentRatingReason": "Three stars: an executed eight-percentage-point redistribution matters to miners and validators. Two understates the economic effect; four is not established by this bounded allocation adjustment."
+          }
+        }
+      ]
     },
     {
       "netuid": 88,
@@ -533,7 +721,35 @@
     {
       "netuid": 94,
       "name": "Cathedral",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN94 Cathedral separates agent failures from infrastructure errors in its test report",
+          "summary": "Cathedral's November 14 technical article revisits a November 6 test of 1,000 AI-agent attempts in isolated sandboxes. The public run card reports 424 solved and sealed, one solved with its seal unproven, 557 failed and 18 infrastructure errors. The distinction matters for evaluation: a machine failing before grading should not be counted as the model giving a wrong answer.\n\nThe card lists the model, execution setup and result categories. It also exposes important limits that the short social post does not convey: the summary uses a throwaway prototype signing key, the advertised production verification command does not exist yet, and the complete run folder needed by the prototype verifier is not yet published. The page says receipts establish execution and output, not that the grader itself is correct.\n\nThis review read the team's article and run card; it did not independently verify the receipt chains. The result is a bounded demonstration of execution reporting, not proof of general model performance or completed adoption by other subnets.",
+          "rating": 3,
+          "ratingReason": "Three stars: a substantive test report makes execution evidence and its limits inspectable. Two understates the technical detail; four is not established by a bounded test with prototype verification artifacts.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/i/article/2121604825133801472",
+              "label": "Cathedral November 14 technical article"
+            },
+            {
+              "url": "https://cathedral.computer/r/liquid-full-20261106b/",
+              "label": "November 6 run card, including prototype verification limitations"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "technical-report",
+            "consequence": "Three stars: a substantive test report makes execution evidence and its limits inspectable. Two understates the technical detail; four is not established by a bounded test with prototype verification artifacts.",
+            "evidence": "Full team article and public run card read in browser tab 3.",
+            "scope": "One 1,000-attempt test; reported outcomes and prototype evidence.",
+            "uncertainty": "Receipt chains not independently verified; full run folder not published.",
+            "adjacentRatingReason": "Three stars: a substantive test report makes execution evidence and its limits inspectable. Two understates the technical detail; four is not established by a bounded test with prototype verification artifacts."
+          }
+        }
+      ]
     },
     {
       "netuid": 95,
@@ -774,7 +990,35 @@
     {
       "netuid": 127,
       "name": "Zils",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN127 Zils gives miners clearer feedback on rejected submissions",
+          "summary": "Zils published two optional releases on November 11 that help soup miners understand why their submissions did not win a seat. The private round report shows the stage reached, the reason a submission stopped, and its scores against the required thresholds. A miner signs the request with their hotkey and receives information about their own submissions only. Reports apply to rounds graded on the new release or later.\n\nThe follow-up release routes the command through the hosted API by default, so miners do not need to supply a validator address. The command verifies the validator's signed response. The relay can read that response, so private here does not mean hidden from the relay; miners can still request it directly from a validator.\n\nThe earlier release also retries unanswered queue lease renewals to reduce dropped jobs. The release notes say scoring, seats and the public feed are unchanged. This is a dated operational update, not a new reward formula.",
+          "rating": 3,
+          "ratingReason": "Three stars: useful diagnostics and job reliability changes affect participation. Two understates the new feedback capability; four would overstate a release that leaves scoring and rewards unchanged.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://github.com/ooo-hq/zils/releases/tag/stable-ed8326b",
+              "label": "Zils November 11 private-report release"
+            },
+            {
+              "url": "https://github.com/ooo-hq/zils/releases/tag/stable-f9174a9",
+              "label": "Zils November 11 hosted-API follow-up"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "miner-tools",
+            "consequence": "Three stars: useful diagnostics and job reliability changes affect participation. Two understates the new feedback capability; four would overstate a release that leaves scoring and rewards unchanged.",
+            "evidence": "Zils November 11 private-report release; Zils November 11 hosted-API follow-up",
+            "scope": "Optional miner diagnostics and queue retry behavior.",
+            "uncertainty": "Release notes checked; software not executed.",
+            "adjacentRatingReason": "Three stars: useful diagnostics and job reliability changes affect participation. Two understates the new feedback capability; four would overstate a release that leaves scoring and rewards unchanged."
+          }
+        }
+      ]
     },
     {
       "netuid": 128,
@@ -785,19 +1029,29 @@
   "storyOrder": [
     "SN105 Beam connects data-transfer receipts to Chainlink CRE",
     "SN80 OpenRoboto opens an agentic robotics task-building track",
+    "SN54 Yanez reports sales growth and estimated ARR above $500,000",
     "SN4 Targon expands SDK access across its compute products",
     "SN121 Sundae highlights Scout’s context-aware agent handoff",
-    "SN116 Carbon reports its first miner payment after launch"
+    "SN116 Carbon reports its first miner payment after launch",
+    "SN127 Zils gives miners clearer feedback on rejected submissions",
+    "SN64 Chutes lists Tencent Hy4 with separate cached-input pricing",
+    "Boost Run filing separates GPU rental growth from network rewards",
+    "SN94 Cathedral separates agent failures from infrastructure errors in its test report",
+    "SN70 Fugal fixes proof-collection delays that could penalize responsive miners",
+    "SN87 Provenonce shifts its validator and miner emission split",
+    "SN8 Vanta records ten qualifying alpha-burn transactions",
+    "SN76 Ormas enables Gamma, with no service registered at the cutoff"
   ],
   "coverage": {
     "searched": [
       "Direct original announcements from Beam, Chainlink, OpenRoboto, Targon, Sundae and Carbon; official Targon SDK documentation.",
-      "Direct bounded reviews of the required ecosystem X profiles, active partner Injective, fund principals and discovery outlets; actual signed-in Grok discovery, attention and omission queries."
+      "Direct bounded reviews of the required ecosystem X profiles, active partner Injective, fund principals and discovery outlets; actual signed-in Grok discovery, attention and omission queries.",
+      "Follow-up: 128 configured website rows attempted (106 HTTP 200, 19 without a configured website, three access errors); TAO Daily, SubnetRadar, Tao Outsider, AlphaGap, Taosis and 1t1b discovery pages; original Yanez interview segment, Zils releases, Chutes catalog and Boost Run filing.",
+      "Full finalized event interval 9505682-9513318, execution checks for qualifying burns and emission changes, lifecycle events and Gamma enablement/service snapshot."
     ],
     "gaps": [
       "Full seven-day social, media, fund-principal and team Discord coverage remains incomplete. Roster inclusion is not a claim that every subnet was fully reviewed.",
-      "The eTAO and burns finalized interval after the November 14 archive cutoff remains unreviewed in this initial edition. No absence of events is inferred.",
-      "Gamma, lifecycle and the complete site audit remain pending. Market moves do not have verified causal explanations. Owner balances were refreshed at finalized block 9513190."
+      "Discord originals, complete seven-day team/fund/media review and Gamma provider verification remain incomplete. The chain interval is reviewed through finalized block 9513318; later events are outside that cutoff."
     ]
   },
   "publishedAt": "2026-11-15T12:00:03.950889-05:00"
