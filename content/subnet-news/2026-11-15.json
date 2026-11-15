@@ -1,0 +1,804 @@
+{
+  "version": 1,
+  "date": "2026-11-15",
+  "title": "Bittensor Daily News: November 15, 2026",
+  "summary": "Beam connects data-transfer receipts to Chainlink CRE. OpenRoboto opens a robotics task track, Targon expands its developer SDK, Sundae highlights Scout, and Carbon reports its first miner payment.",
+  "coverageStart": "2026-11-14T15:58:36Z",
+  "coverageEnd": "2026-11-15T12:00:03.950889-05:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": [
+        {
+          "headline": "SN4 Targon expands SDK access across its compute products",
+          "summary": "Targon announced an SDK update on November 12 covering virtual machines, dedicated bare-metal servers and sandboxes. Its current SDK v4 repository documents typed interfaces for managing these workloads from code.\n\nThere is an important language distinction: Go and Python support all three workload services, while TypeScript currently supports Sandboxes only. The repository is more specific than the social announcement's wording about language coverage. It also says the previous Rental and Volume APIs are unavailable in v4 with no current replacement.\n\nFor developers, the update brings more of Targon's compute management into a common toolkit, including sandbox files, execution, forks and templates. Existing integrations should check the documented migration path rather than assume every older API remains compatible. This review checked the published interface documentation, not a paid compute deployment.",
+          "rating": 3,
+          "ratingReason": "Three stars: a meaningful SDK expansion and migration change for existing compute users. Four would require a more consequential new service or integration beyond developer access to existing products.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/TargonCompute/status/2120943189217390699",
+              "label": "Targon November 12 SDK announcement"
+            },
+            {
+              "url": "https://github.com/manifold-inc/targon-sdk",
+              "label": "Official SDK v4 scope and migration notes"
+            },
+            {
+              "url": "https://docs.targon.com/sdk/getting-started",
+              "label": "Official setup documentation"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "developer-tools",
+            "consequence": "Three stars: a meaningful SDK expansion and migration change for existing compute users. Four would require a more consequential new service or integration beyond developer access to existing products.",
+            "evidence": "Targon November 12 SDK announcement; Official SDK v4 scope and migration notes; Official setup documentation",
+            "scope": "Language-specific SDK interfaces and migration constraints.",
+            "uncertainty": "No compute workload executed.",
+            "adjacentRatingReason": "Three stars: a meaningful SDK expansion and migration change for existing compute users. Four would require a more consequential new service or integration beyond developer access to existing products."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": []
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Perturb",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "CADmind",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": []
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": []
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": [
+        {
+          "headline": "SN80 OpenRoboto opens an agentic robotics task-building track",
+          "summary": "OpenRoboto announced its Agentic Robotics Track on November 12. The new task network is intended to test how AI models observe, reason and act in simulated physical environments.\n\nThe available Track A asks miners to create robot-task packages with a scene, success conditions and a reference demonstration. The team describes checks for validity and reproducibility before reference models are evaluated. Track B, where miners run assigned evaluations and return execution evidence, is explicitly marked coming soon.\n\nFor builders, this expands the subnet's evaluation infrastructure around tasks that can distinguish model capabilities. It is a new track launch rather than a report of a routine competition winner. The team announcement establishes availability as reported by the operator; we have not run the task pipeline or independently verified model-performance claims.",
+          "rating": 4,
+          "ratingReason": "Four stars: a substantive new robotics evaluation track changes what miners can contribute. Three would fit routine results within an existing competition; five is not supported by demonstrated broader adoption.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/openroboto/status/2120913756012376561",
+              "label": "OpenRoboto November 12 launch thread"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "Four stars: a substantive new robotics evaluation track changes what miners can contribute. Three would fit routine results within an existing competition; five is not supported by demonstrated broader adoption.",
+            "evidence": "OpenRoboto November 12 launch thread",
+            "scope": "Track A announced live; Track B coming soon.",
+            "uncertainty": "Pipeline not independently exercised; no benchmark superiority claimed.",
+            "adjacentRatingReason": "Four stars: a substantive new robotics evaluation track changes what miners can contribute. Three would fit routine results within an existing competition; five is not supported by demonstrated broader adoption."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": [
+        {
+          "headline": "SN105 Beam connects data-transfer receipts to Chainlink CRE",
+          "summary": "Beam announced its Chainlink Runtime Environment integration on November 13, and Chainlink independently listed Beam among its new integrations that day. The connection gives applications a way to receive verifiable on-chain records of data transfers.\n\nBeam says transfer reports are already recorded as Chainlink-attested receipts on Base mainnet, with the first covering 100 GB. Smart contracts initiating the transfers are the next planned stage, not a capability the announcement says is already live. A delivery receipt could help an application decide when to start a training job or advance a document workflow; it does not prove the contents of a dataset are correct.\n\nThis is dated catch-up coverage of a substantive integration. The relationship is confirmed by both parties. The first-transfer size and Base deployment are attributed to Beam; this review did not independently replay the transfer or audit its receipt contract.",
+          "rating": 4,
+          "ratingReason": "Four stars: a counterparty-confirmed integration connects subnet infrastructure to smart-contract workflows. Three understates the new integration scope; five is not established by a first transfer and proposed use cases.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/b1m_ai/status/2121317275538235398",
+              "label": "Beam November 13 integration article"
+            },
+            {
+              "url": "https://x.com/chainlink/status/2121317177441558828",
+              "label": "Chainlink November 13 integration confirmation"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "integration",
+            "consequence": "Four stars: a counterparty-confirmed integration connects subnet infrastructure to smart-contract workflows. Three understates the new integration scope; five is not established by a first transfer and proposed use cases.",
+            "evidence": "Beam November 13 integration article; Chainlink November 13 integration confirmation",
+            "scope": "Data-transfer receipts; contract-triggered transfers remain planned.",
+            "uncertainty": "Transfer execution and contract independently unaudited.",
+            "adjacentRatingReason": "Four stars: a counterparty-confirmed integration connects subnet infrastructure to smart-contract workflows. Three understates the new integration scope; five is not established by a first transfer and proposed use cases."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unknown",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": [
+        {
+          "headline": "SN116 Carbon reports its first miner payment after launch",
+          "summary": "Carbon said on November 15 that it had a new competition leader and had paid its first miner. The announcement follows its November 14 mainnet launch and first motor-design challenge, already covered in the previous edition.\n\nThis is an operational follow-up to that launch, not another launch announcement. The post does not provide a payment amount or transaction reference, so the payment is reported as the team's statement rather than an independently reconciled chain transfer.",
+          "rating": 3,
+          "ratingReason": "Three stars: the first reported miner payment is a meaningful operational milestone, while a new competition leader remains within the routine-competition ceiling.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/carbonphysicsai/status/2121950427566797304",
+              "label": "Carbon November 15 first-miner-payment post"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "routine-competition",
+            "consequence": "Three stars: the first reported miner payment is a meaningful operational milestone, while a new competition leader remains within the routine-competition ceiling.",
+            "evidence": "Carbon November 15 first-miner-payment post",
+            "scope": "Team-reported first payment and new competition leader.",
+            "uncertainty": "Payment amount and transaction not supplied in the reviewed post.",
+            "adjacentRatingReason": "Three stars: the first reported miner payment is a meaningful operational milestone, while a new competition leader remains within the routine-competition ceiling."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": []
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": [
+        {
+          "headline": "SN121 Sundae highlights Scout’s context-aware agent handoff",
+          "summary": "Sundae described Scout on November 15 as a way to turn a user's description of work into an agent handoff. The team says Scout remembers the user's role and preferences, then launches an agent suited to the job; its follow-up invites users to try it with a free account.\n\nThe update focuses on choosing and briefing an agent rather than requiring the user to select one manually. It is a team-described product capability, not evidence of task success rates or paying adoption. No account, credential vault or automated task was used in this review.",
+          "rating": 3,
+          "ratingReason": "Three stars: a useful agent-selection and context feature with bounded demonstrated scope. Four is not established by the short product announcement alone.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/sundaebar_ai/status/2121938262940119304",
+              "label": "Sundae November 15 Scout announcement"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "Three stars: a useful agent-selection and context feature with bounded demonstrated scope. Four is not established by the short product announcement alone.",
+            "evidence": "Sundae November 15 Scout announcement",
+            "scope": "User-context handoff to an agent.",
+            "uncertainty": "Task outcomes and adoption unverified.",
+            "adjacentRatingReason": "Three stars: a useful agent-selection and context feature with bounded demonstrated scope. Four is not established by the short product announcement alone."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "storyOrder": [
+    "SN105 Beam connects data-transfer receipts to Chainlink CRE",
+    "SN80 OpenRoboto opens an agentic robotics task-building track",
+    "SN4 Targon expands SDK access across its compute products",
+    "SN121 Sundae highlights Scout’s context-aware agent handoff",
+    "SN116 Carbon reports its first miner payment after launch"
+  ],
+  "coverage": {
+    "searched": [
+      "Direct original announcements from Beam, Chainlink, OpenRoboto, Targon, Sundae and Carbon; official Targon SDK documentation.",
+      "Direct bounded reviews of the required ecosystem X profiles, active partner Injective, fund principals and discovery outlets; actual signed-in Grok discovery, attention and omission queries."
+    ],
+    "gaps": [
+      "Full seven-day social, media, fund-principal and team Discord coverage remains incomplete. Roster inclusion is not a claim that every subnet was fully reviewed.",
+      "The eTAO and burns finalized interval after the November 14 archive cutoff remains unreviewed in this initial edition. No absence of events is inferred.",
+      "Gamma, lifecycle and the complete site audit remain pending. Market moves do not have verified causal explanations. Owner balances were refreshed at finalized block 9513190."
+    ]
+  },
+  "publishedAt": "2026-11-15T12:00:03.950889-05:00"
+}
