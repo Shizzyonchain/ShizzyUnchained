@@ -7,9 +7,15 @@ export function freshSignalRows(rows: SignalRow[], now = Date.now()) {
 export function volumeAlerts(rows: SignalRow[], period: "1h" | "24h", limit = 3) {
  return rows.flatMap(row => { const ratio = numberOrNull(row[period === "1h" ? "volume_acceleration_1h" : "volume_acceleration_24h"]); const volume = numberOrNull(row[period === "1h" ? "volume_1h_tao" : "volume_24h_tao"]); return ratio !== null && ratio >= 2 && volume !== null && volume >= 10 && volume / ratio >= 10 ? [{ netuid: row.netuid, name: row.name || `SN${row.netuid}`, ratio, volume }] : []; }).sort((a,b) => b.ratio-a.ratio || b.volume-a.volume).slice(0,limit);
 }
-export function sectorHeat(rows: SignalRow[], sectors: {id:string;name:string}[], tags: {netuid:number;sectors:string[]}[], period: "1h" | "24h") {
+export function sectorHeat(rows: SignalRow[], sectors: {id:string;name:string}[], tags: {netuid:number;sectors:string[]}[], period: "1h" | "24h", registrations: Record<string,{time:string}> = {}, now = Date.now()) {
+ const eligible = (netuid:number) => {
+  const registration = registrations[String(netuid)];
+  if (!registration) return true;
+  const registered = Date.parse(registration.time);
+  return Number.isFinite(registered) && Number.isFinite(now) && now - registered >= 72 * 60 * 60 * 1000;
+ };
  const lookup = new Map(rows.map(row => [row.netuid,row]));
- return sectors.flatMap(sector => { const members = tags.filter(row => row.sectors.includes(sector.id)); const values = members.map(member => numberOrNull(lookup.get(member.netuid)?.[period === "1h" ? "change_1h" : "change_24h"])).filter((n): n is number => n !== null); if (values.length < 2 || values.length < members.length*.8) return []; return [{...sector, value: values.reduce((sum,value)=>sum+value,0)/values.length, count:values.length,total:members.length}]; }).sort((a,b)=>b.value-a.value);
+ return sectors.flatMap(sector => { const members = tags.filter(row => row.sectors.includes(sector.id) && eligible(row.netuid)); const values = members.map(member => numberOrNull(lookup.get(member.netuid)?.[period === "1h" ? "change_1h" : "change_24h"])).filter((n): n is number => n !== null); if (values.length < 2 || values.length < members.length*.8) return []; return [{...sector, value: values.reduce((sum,value)=>sum+value,0)/values.length, count:values.length,total:members.length}]; }).sort((a,b)=>b.value-a.value);
 }
 export function buyingTotals(data: unknown, now = Date.now()) {
  if (!Array.isArray(data)) throw new Error("Missing pool aggregates");

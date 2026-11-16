@@ -30,3 +30,21 @@ test("24-hour sector returns share the price calculation and exclude insufficien
  const missing=sectorPriceRows(rows.map(row=>({...row,time_24h:row.netuid===1?'':row.time_24h})));
  assert.deepEqual(sectorHeat(missing,sectors,tags,'24h'),[]);
 });
+
+
+test("sector heat excludes new registrations for 72 hours, including from coverage",()=>{
+ const at=Date.parse('2026-11-15T18:00:00Z'), sectors=[{id:'compute',name:'Compute'}];
+ const tags=[1,2,47].map(netuid=>({netuid,sectors:['compute']}));
+ const rows=[{netuid:1,change_24h:'2'},{netuid:2,change_24h:'4'},{netuid:47,change_24h:'1600'}];
+ const registrations={'47':{time:new Date(at-72*3600000+1).toISOString()}};
+ assert.deepEqual(sectorHeat(rows,sectors,tags,'24h',registrations,at),[{id:'compute',name:'Compute',value:3,count:2,total:2}]);
+ assert.equal(sectorHeat(rows,sectors,tags,'24h',registrations,at+1)[0].value,1606/3);
+ assert.deepEqual(sectorHeat(rows.slice(0,1),sectors,tags,'24h',registrations,at),[]);
+ // A fresh registration of an old subnet slot restarts the exclusion.
+ registrations['47'].time=new Date(at).toISOString();
+ assert.equal(sectorHeat(rows,sectors,tags,'24h',registrations,at)[0].value,3);
+ for(const time of ['invalid',new Date(at+3600000).toISOString()]){
+  registrations['47'].time=time;
+  assert.equal(sectorHeat(rows,sectors,tags,'24h',registrations,at)[0].value,3);
+ }
+});
