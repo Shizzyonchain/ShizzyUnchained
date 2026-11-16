@@ -4,6 +4,7 @@ const base=process.env.CHART_AUDIT_BASE||'https://shizzyunchained.com';
 const out=process.argv[2]||'chart-audit.json';
 const get=async path=>{const r=await fetch(base+path,{signal:AbortSignal.timeout(30000)});if(!r.ok)throw Error(`HTTP ${r.status}: ${path}`);return r.json();};
 const decode=rows=>rows.map(r=>({time:String(r[0]),open:String(r[1]),high:String(r[2]),low:String(r[3]),close:String(r[4]),volume_tao:String(r[5]??0)}));
+const nodeRecent=async (netuid,interval)=>{let body=await get(`/api/backend/v1/subnets/${netuid}/candles?interval=${interval}&limit=180`);if(chartNeedsRecentHistory(decode(body.data||[]),interval)){body=await get(`/api/backend/v1/subnets/${netuid}/candles?interval=${interval}&limit=60`);}return body;};
 const feed=await get('/api/backend/v1/screener'), quote=await get('/api/tao-price');
 const rows=Array.isArray(feed)?feed:feed.data;const now=Date.now();
 const rates={};for(const interval of ['10m','1h','1d']) rates[interval]=(await get(`/api/tao-chart?interval=${interval}`)).data;
@@ -11,10 +12,10 @@ const result={checkedAt:new Date(now).toISOString(),base,quote,rows:[],gaps:[]};
 const selected=process.env.CHART_AUDIT_SUBNETS?.split(',').map(Number);
 const tasks=rows.filter(r=>r.netuid>0&&(!selected||selected.includes(r.netuid))).flatMap(row=>['10m','1h','1d'].map(interval=>({row,interval})));
 async function worker(){while(tasks.length){const {row,interval}=tasks.shift();try{
- let original,providerError;try{original=await get(`/api/subnet-chart?netuid=${row.netuid}&interval=${interval}`);}catch(e){providerError=String(e);original=await get(`/api/backend/v1/subnets/${row.netuid}/candles?interval=${interval}&limit=180`);}
+ let original,providerError;try{original=await get(`/api/subnet-chart?netuid=${row.netuid}&interval=${interval}`);}catch(e){providerError=String(e);original=await nodeRecent(row.netuid,interval);}
  const step=({ '10m':600000,'1h':3600000,'1d':86400000 })[interval];
  const archive=decode(original.data||[]).filter(c=>Date.parse(c.time)<=Math.floor(now/step)*step);let combined=archive;
- if(chartNeedsRecentHistory(archive,interval,now)){const n=await get(`/api/backend/v1/subnets/${row.netuid}/candles?interval=${interval}&limit=180`);combined=extendChartHistory(archive,decode(n.data||[]),interval,now);}
+ if(chartNeedsRecentHistory(archive,interval,now)){const n=await nodeRecent(row.netuid,interval);combined=extendChartHistory(archive,decode(n.data||[]),interval,now);}
  const fresh=now-Date.parse(row.time)<=180000&&Date.parse(row.time)<=now+60000;
  const rendered=withLiveCandle(combined,fresh?Number(row.price_tao):0,interval,now);
  const fx=withLiveCandle(rates[interval],quote.usd,interval,now);

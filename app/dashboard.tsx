@@ -268,7 +268,11 @@ function loadChartHistory(netuid: number | "tao", timeframe: string, before?: nu
         if (cached?.data.length) return {data:cached.data.map(c=>[c.time,c.open,c.high,c.low,c.close,c.volume_tao||0]),method:cached.method,historyStale:true,historyCheckedAt:new Date(cached.savedAt).toISOString()};
         throw new Error(`Chart request failed: ${response.status}`);
       }
-      const json = await response.json();
+      let json = await response.json();
+      if (nodeFallback && chartNeedsRecentHistory(decodeCompactCandles(json.data||[]),timeframe)) {
+        const retry = await fetch(nodeUrl.replace("limit=180","limit=60"), {signal:controller.signal});
+        if (retry.ok) json = await retry.json();
+      }
       if (nodeFallback && cached?.data.length && ["taostats-alpha","provider-node"].includes(cached.method)) {
         const extended = extendChartHistory(cached.data,decodeCompactCandles(json.data||[]),timeframe);
         return {...json,data:extended.map(c=>[c.time,c.open,c.high,c.low,c.close,c.volume_tao]),method:cached.method === "provider-node" || extended.length>cached.data.length ? "provider-node" : cached.method};
@@ -277,9 +281,13 @@ function loadChartHistory(netuid: number | "tao", timeframe: string, before?: nu
         const archive = decodeCompactCandles(json.data || []);
         if (chartNeedsRecentHistory(archive, timeframe)) {
           try {
-            const recent = await fetch(nodeUrl, {signal: controller.signal});
+            let recent = await fetch(nodeUrl, {signal: controller.signal});
             if (recent.ok) {
-              const body = await recent.json();
+              let body = await recent.json();
+              if (chartNeedsRecentHistory(decodeCompactCandles(body.data||[]),timeframe)) {
+                recent = await fetch(nodeUrl.replace("limit=180","limit=60"),{signal:controller.signal});
+                if (recent.ok) body = await recent.json();
+              }
               const extended = extendChartHistory(archive, decodeCompactCandles(body.data || []), timeframe);
               if (extended.length > archive.length) return {...json, data:extended.map(c=>[c.time,c.open,c.high,c.low,c.close,c.volume_tao]),method:"provider-node", nodeFallback:false};
             }
