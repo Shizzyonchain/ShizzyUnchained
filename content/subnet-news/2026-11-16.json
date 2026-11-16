@@ -2,13 +2,37 @@
   "version": 1,
   "date": "2026-11-16",
   "title": "Bittensor Daily News: November 16, 2026",
-  "summary": "Ms. Computer announces hosting and agent sandboxes on SN24. OpenRoboto and peaq announce a machine.fun launch and Solana trading pair. Engy reports 3.11 trillion inference tokens over 30 closed UTC days, while Hippius releases a mobile sharing update.",
+  "summary": "Ms. Computer announces hosting and agent sandboxes, OpenRoboto expands toward Solana, and KubeTEE reserves miner rewards for external operators. Further coverage includes REAX's moderation beta, Engy and EveryFrame usage reports, Affine training results, Teutonic scoring, Yugos provider rules, Carbon grading, Hippius mobile sharing, INGOT and SOMA efficiency claims, and SN99's planned announcement.",
   "coverageStart": "2026-11-15T17:39:30.530929+00:00",
-  "coverageEnd": "2026-11-16T16:24:31.061873+00:00",
+  "coverageEnd": "2026-11-16T17:08:54.333238+00:00",
   "publishedAt": "2026-11-16T15:07:54.516162+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
-  "ecosystem": [],
+  "ecosystem": [
+    {
+      "headline": "TaoStats adds German and Polish interface options",
+      "summary": "TaoStats announced on November 16 that German and Polish had joined its interface language options. Its stated six-language list is English, French, Spanish, Chinese, German and Polish, with selection through the globe icon at the top right of taostats.io. The team announcement establishes the added options; this review did not independently test each translated interface.",
+      "rating": 2,
+      "ratingReason": "Two stars: additional interface languages make an existing Bittensor tool accessible to more readers. This is a product-localization update, without evidence of a new protocol capability or major adoption change to support three.",
+      "status": "verified",
+      "importance": "informational",
+      "sources": [
+        {
+          "url": "https://x.com/taostats/status/2122253345314205851",
+          "label": "TaoStats November 16 language announcement"
+        }
+      ],
+      "ratingAssessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "product",
+        "consequence": "German- and Polish-speaking readers gain additional language options for the existing analytics interface.",
+        "evidence": "Official TaoStats announcement posted November 16 at 09:00 UTC.",
+        "scope": "Interface localization, with six languages listed by the team.",
+        "uncertainty": "Individual translations and interface selection were not independently tested.",
+        "adjacentRatingReason": "Two stars: additional interface languages make an existing Bittensor tool accessible to more readers. This is a product-localization update, without evidence of a new protocol capability or major adoption change to support three."
+      }
+    }
+  ],
   "subnets": [
     {
       "netuid": 1,
@@ -23,7 +47,31 @@
     {
       "netuid": 3,
       "name": "Teutonic",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN3 Teutonic lowers the threshold for challengers to replace the leading model",
+          "summary": "Teutonic's Tony announced on November 16 at 11:10 AM Eastern that the challenger threshold had been lowered. A challenger must now beat the current leading model with a lower confidence bound above 0.0005 bits per byte.\n\nThe change adjusts the evidence of improvement required to replace the incumbent model. The quoted threshold is the team's announced rule, not a measured improvement in model quality or proof that a new challenger has already won.",
+          "rating": 3,
+          "ratingReason": "Three stars: a changed evaluation threshold matters to participating miners and model selection, beyond minor housekeeping at two. The bounded rule adjustment does not by itself demonstrate a major model or ecosystem advance at four.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1493243812263362660/1571920420230275105",
+              "label": "Teutonic November 16 threshold announcement"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operations",
+            "consequence": "The announced evaluation threshold changes the requirement for a challenger to replace the current leading model.",
+            "evidence": "Teutonic November 16 threshold announcement",
+            "scope": "SN3 challenger evaluation; lower confidence bound above 0.0005 bits per byte.",
+            "uncertainty": "The prior threshold, validator rollout and resulting model improvements were not independently established by this announcement.",
+            "adjacentRatingReason": "Three stars: a changed evaluation threshold matters to participating miners and model selection, beyond minor housekeeping at two. The bounded rule adjustment does not by itself demonstrate a major model or ecosystem advance at four."
+          }
+        }
+      ]
     },
     {
       "netuid": 4,
@@ -131,7 +179,7 @@
       "updates": [
         {
           "headline": "SN24 ms.computer announces hosting and AI-agent sandboxes",
-          "summary": "Ms. Computer announced its SN24 launch on November 15 at 2:20 PM Eastern, presenting HOST for free website or app hosting and RUN for an AI agent in its own sandbox. CONNECT, its inference-network offering, is explicitly marked coming soon. The announcement also invites users to a waitlist, so the launch should not be read as proof of unrestricted access to every service.\n\nThe linked public miner repository describes software that runs customer workloads in an isolated sandbox on a miner’s host. Its documentation says validators check advertised resources and service delivery, with roughly four hours of qualification after enablement before a miner can earn. The software is proprietary and source-available, with permission to run it unmodified for SN24 mining.\n\nThis moves the story beyond the earlier rename and owner-address coverage to an announced service offering. We verified the team’s announcement and published documentation; we did not deploy a customer workload or verify paid demand.",
+          "summary": "Ms. Computer announced its SN24 launch on November 15 at 2:20 PM Eastern, presenting HOST for free website or app hosting and RUN for an AI agent in its own sandbox. CONNECT, its inference-network offering, is explicitly marked coming soon. The announcement also invites users to a waitlist, so the launch should not be read as proof of unrestricted access to every service.\n\nThe linked public miner repository describes software that runs customer workloads in an isolated sandbox on a miner’s host. Its documentation says validators check advertised resources and service delivery, with roughly four hours of qualification after enablement before a miner can earn. The software is proprietary and source-available, with permission to run it unmodified for SN24 mining.\n\nThis moves the story beyond the earlier rename and owner-address coverage to an announced service offering. We verified the team’s announcement and published documentation; we did not deploy a customer workload or verify paid demand.\n\nIn a November 16 Discord follow-up, owner nigirimaki said miners are currently paid according to the real work they perform, specifying that this work means running sandboxes. At 10:53 AM Eastern, he also reported that a brief intermittent mirror-login issue had been resolved. We did not independently test that resolution, and the discussion does not establish a cause for the token's price move.",
           "rating": 4,
           "ratingReason": "Four stars: an announced hosting and agent-compute offering materially changes what SN24 provides, exceeding routine maintenance at three. Five is not established by the currently documented access and deployment scope.",
           "status": "verified",
@@ -148,15 +196,27 @@
             {
               "url": "https://ms.computer/",
               "label": "Official product site"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1537107963167383564/1571916010976710687",
+              "label": "SN24 owner reports mirror-login issue resolved on November 16"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1537107963167383564/1571917919296954471",
+              "label": "SN24 owner explains work-based miner rewards"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1537107963167383564/1571918076369436776",
+              "label": "SN24 owner identifies current work as running sandboxes"
             }
           ],
           "ratingAssessment": {
             "rubricVersion": "2026-11-11",
             "claimType": "product",
             "consequence": "Four stars: an announced hosting and agent-compute offering materially changes what SN24 provides, exceeding routine maintenance at three. Five is not established by the currently documented access and deployment scope.",
-            "evidence": "Ms. Computer November 15 launch announcement; Official SN24 miner documentation; Official product site",
+            "evidence": "Ms. Computer November 15 launch announcement; Official SN24 miner documentation; Official product site; November 16 owner clarification of miner work and reported mirror-login recovery",
             "scope": "Announced HOST and RUN services plus public miner documentation; CONNECT remains planned.",
-            "uncertainty": "Waitlist remains advertised; independent workload execution and paid adoption not established.",
+            "uncertainty": "Waitlist remains advertised; independent workload execution and paid adoption not established. The reported mirror-login recovery was not independently tested and does not establish a price-move cause.",
             "adjacentRatingReason": "Four stars: an announced hosting and agent-compute offering materially changes what SN24 provides, exceeding routine maintenance at three. Five is not established by the currently documented access and deployment scope."
           }
         }
@@ -210,7 +270,43 @@
     {
       "netuid": 34,
       "name": "Yugos",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN34 Yugos temporarily limits miner submissions to Bittensor providers",
+          "summary": "Yugos announced on November 15 that miner submissions would temporarily be restricted to Bittensor providers: SN64 Chutes, SN28 SayGM and SN53 Engy. Owner dubm said uploads would reopen shortly while v0.3.0 remained the active benchmark pack. He also said updates to the pack or its rules would reset the leading submissions.\n\nThe team said it was limiting concurrent runs to avoid provider rate limits. Later that day, dubm reported work on a custom container queue because the provider's default queue could not reliably preserve first-in, first-out ordering. A completed queue fix or firm end date for the provider restriction was not established in the reviewed statements. The change defines which infrastructure miners can use; it does not by itself establish additional customer demand or a new benchmark result.",
+          "rating": 3,
+          "ratingReason": "Three stars: changing eligible providers and submission handling materially affects miner participation, beyond small maintenance at two. It remains a bounded operating policy, without a demonstrated new product or adoption milestone warranting four.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1247680967225905273/1571416444229525535",
+              "label": "Yugos November 15 provider-restriction announcement"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1247680967225905273/1571423124199710761",
+              "label": "Yugos owner explains resets when evaluation policy changes"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1247680967225905273/1571442266369818655",
+              "label": "Yugos owner explains concurrent-run limits"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1247680967225905273/1571587853060677853",
+              "label": "Yugos November 15 custom-queue work-in-progress statement"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operations",
+            "consequence": "Miner submissions are temporarily limited to Bittensor inference providers while concurrency and queue handling are adjusted.",
+            "evidence": "November 15 original statements from the owner in the official SN34 channel.",
+            "scope": "Eligible providers, active v0.3.0 benchmark pack, policy-linked submission resets and queue handling.",
+            "uncertainty": "Upload reopening, queue-fix completion and the restriction end date were not independently established. No demand or benchmark gain is inferred.",
+            "adjacentRatingReason": "Three stars: changing eligible providers and submission handling materially affects miner participation, beyond small maintenance at two. It remains a bounded operating policy, without a demonstrated new product or adoption milestone warranting four."
+          }
+        }
+      ]
     },
     {
       "netuid": 35,
@@ -260,7 +356,35 @@
     {
       "netuid": 44,
       "name": "Score",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN44 Score plans improved review of miner challenge annotations",
+          "summary": "Score's Mikhael said on November 16 that the team was putting an improved review process in place for challenges sent to miners. The statement followed a discussion of football action labels, including potentially missed pass and pass-receive annotations; it describes work in progress, without a confirmed rollout or measured accuracy improvement. In a separate November 16 post, Score described the operating constraints it uses before accuracy competition: a model must run in under 100 milliseconds on two CPUs and occupy less than 30 MB. These are the team's stated eligibility requirements, not evidence that the rules changed that day or an independently reproduced performance result.",
+          "rating": 2,
+          "ratingReason": "Two stars: a planned annotation-review improvement is a useful bounded operating update. A completed change or measured effect on miner evaluation has not been established to support three.",
+          "status": "verified",
+          "importance": "informational",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1271486854830755981/1571852423646150717",
+              "label": "Score November 16 challenge-review statement"
+            },
+            {
+              "url": "https://x.com/webuildscore/status/2122333770858586384",
+              "label": "Score November 16 explanation of model speed and size requirements"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operations",
+            "consequence": "The team plans a better review process for action labels in challenges issued to miners.",
+            "evidence": "November 16 statement from Mikhael in the official SN44 channel and the team's original post explaining current model eligibility requirements.",
+            "scope": "Challenge-annotation review and team-described speed/size conditions for model competition.",
+            "uncertainty": "Rollout completion and resulting annotation accuracy were not established.",
+            "adjacentRatingReason": "Two stars: a planned annotation-review improvement is a useful bounded operating update. A completed change or measured effect on miner evaluation has not been established to support three."
+          }
+        }
+      ]
     },
     {
       "netuid": 45,
@@ -344,7 +468,31 @@
     {
       "netuid": 56,
       "name": "Gradients",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN56 Gradients separates public subnet data from its training API",
+          "summary": "A November 14 update to Gradients' official G.O.D repository separates public read-only subnet information from customer training jobs. The code and documentation direct tournament, emissions and audit-data requests to api.sn56.io, while api.gradients.io remains the platform for creating and monitoring training jobs. The change also adds deployment instructions and API reference pages for the subnet service. This is a repository and documentation update; live endpoint health was not independently tested in this review.",
+          "rating": 2,
+          "ratingReason": "Two stars: a concrete code and documentation change clarifies access to subnet data. It does not establish a first customer-API launch or a material measured operating improvement to support three.",
+          "status": "verified",
+          "importance": "informational",
+          "sources": [
+            {
+              "url": "https://github.com/gradients-ai/G.O.D/commit/5364f7cbc8b22b2aa3839f9bbbcefbe9aa59dfd9",
+              "label": "Gradients November 14 public subnet API commit and documentation diff"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operations",
+            "consequence": "Developers and miners get a distinct documented endpoint for tournament, emissions and audit data.",
+            "evidence": "Official repository commit 5364f7c and its changes to endpoint references, deployment tasks and API documentation.",
+            "scope": "Read-only subnet data is separated from the existing customer training API.",
+            "uncertainty": "Production deployment and live endpoint health were not independently tested.",
+            "adjacentRatingReason": "Two stars: a concrete code and documentation change clarifies access to subnet data. It does not establish a first customer-API launch or a material measured operating improvement to support three."
+          }
+        }
+      ]
     },
     {
       "netuid": 57,
@@ -394,7 +542,39 @@
     {
       "netuid": 66,
       "name": "conjectures",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN66 Conjectures expands its proof catalog and adds scoped Hilbert challenges",
+          "summary": "Conjectures expanded its mathematical challenge catalog through repository updates from November 13 to 16. The November 13 change added 19 Erdős targets and two reward-eligible Hilbert-related targets, taking the configured pool from 306 to 327. A Hilbert 16 target followed on November 15. The November 16 update adds three more narrowly defined statements related to Hilbert 6 and Hilbert 12, while withdrawing Erdős 345. The resulting configured reward pool is 330 targets, or 660 proof-and-refutation bundles. The public catalog lists 333 entries because it also includes entries outside that active reward pool. This gives miners more defined problems to work on; adding a target does not mean that the mathematical problem has been solved. The commits and catalog were checked, without an independent test of live reward distribution.",
+          "rating": 3,
+          "ratingReason": "Three stars: the official repository expands the set of mathematical targets available to proof miners and updates reward eligibility. These are new challenges and configuration changes, without independently verified mathematical breakthroughs or a broader launch to support four.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://github.com/conjectures-io/conjectures-validator/commit/43a2d90b5e73ea3e3bee0c16d4c4f8da8edb2b24",
+              "label": "Conjectures November 16 catalog and reward-pool update"
+            },
+            {
+              "url": "https://github.com/conjectures-io/conjectures-validator/commit/b01dcc70cf6603d7cce95fa9685ad149f278ce7e",
+              "label": "Conjectures November 13 challenge expansion"
+            },
+            {
+              "url": "https://conjectures.io/problems",
+              "label": "Public Conjectures problem catalog"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operations",
+            "consequence": "Proof miners have additional defined mathematical targets, with a revised configured reward pool.",
+            "evidence": "Official November 13 and November 16 repository changes and the public problem catalog.",
+            "scope": "330 reward-eligible targets and 660 paired proof/refutation bundles, distinct from 333 total catalog entries.",
+            "uncertainty": "New problem statements are not solved proofs, and live reward distribution was not independently tested.",
+            "adjacentRatingReason": "Three stars: the official repository expands the set of mathematical targets available to proof miners and updates reward eligibility. These are new challenges and configuration changes, without independently verified mathematical breakthroughs or a broader launch to support four."
+          }
+        }
+      ]
     },
     {
       "netuid": 67,
@@ -414,7 +594,31 @@
     {
       "netuid": 70,
       "name": "Fugal",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN70 Fugal and Yuma schedule a November 18 smart-routing discussion",
+          "summary": "Yuma announced on November 13 that its Subnet Spotlight with Fugal will stream Wednesday, November 18 at 10 a.m. Eastern, or 15:00 UTC. The discussion concerns Fugal's approach to routing an AI query to the lowest-cost model capable of answering it correctly, with miners competing over those choices. This is an upcoming team discussion, not a newly verified performance result or product release.",
+          "rating": 2,
+          "ratingReason": "Two stars: a confirmed upcoming team discussion gives readers a useful date and topic. The event notice does not establish a new routing release or measured cost savings to support three.",
+          "status": "verified",
+          "importance": "informational",
+          "sources": [
+            {
+              "url": "https://x.com/YumaGroup/status/2121273263376503049",
+              "label": "Yuma November 13 announcement with explicit November 18 event time"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operations",
+            "consequence": "Readers can follow a scheduled discussion of Fugal's cost-aware model-routing design.",
+            "evidence": "Official Yuma post gives the team, topic and Wednesday10amET schedule; native event card specifies November18.",
+            "scope": "Upcoming discussion scheduled for November18 at10a.m.Eastern.",
+            "uncertainty": "The event is forthcoming and its announcement supplies no newly measured performance result.",
+            "adjacentRatingReason": "Two stars: a confirmed upcoming team discussion gives readers a useful date and topic. The event notice does not establish a new routing release or measured cost savings to support three."
+          }
+        }
+      ]
     },
     {
       "netuid": 71,
@@ -578,7 +782,39 @@
     {
       "netuid": 90,
       "name": "KubeTEE",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN90 KubeTEE reserves miner emissions for external operators",
+          "summary": "KubeTEE owner Pierre announced on November 15 that the subnet's Oakland-56 owner-operated cluster, UID 56, had been decommissioned. He said only external miner clusters would now be onboarded, scored and eligible for miner emissions. The owner's control plane, validator and platform services would instead be funded from owner emissions.\n\nIn a November 16 follow-up, Pierre said external miners were already onboarded and SayGM remained connected and serving. He described changes to revenue recycling through Gamma as work in progress. The announced policy changes who can compete for miner rewards; it does not establish that the planned Gamma mechanism is live. The shutdown and onboarding status are attributed to the owner, rather than independently verified cluster or payout records.",
+          "rating": 4,
+          "ratingReason": "Four stars: reserving miner reward eligibility for external operators is a substantive change to the subnet's operating model, beyond routine maintenance at three. The demonstrated scope is one subnet, without exceptional broader consequences establishing five.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1448063556368076941/1571626341428625458",
+              "label": "KubeTEE owner's November 15 external-miners announcement"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1448063556368076941/1571898767433539595",
+              "label": "KubeTEE owner's November 16 operational follow-up"
+            },
+            {
+              "url": "https://github.com/KubeTEE-AI/kubetee-subnet",
+              "label": "Official KubeTEE SN90 repository"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operations",
+            "consequence": "An owner-operated miner is retired and miner reward eligibility is reserved for external operators.",
+            "evidence": "KubeTEE owner's November 15 external-miners announcement; KubeTEE owner's November 16 operational follow-up; Official KubeTEE SN90 repository",
+            "scope": "SN90 miner onboarding, scoring and emissions eligibility; owner infrastructure remains separately funded.",
+            "uncertainty": "Cluster shutdown, operational participation and payouts were not independently tested. Gamma revenue changes remain work in progress.",
+            "adjacentRatingReason": "Four stars: reserving miner reward eligibility for external operators is a substantive change to the subnet's operating model, beyond routine maintenance at three. The demonstrated scope is one subnet, without exceptional broader consequences establishing five."
+          }
+        }
+      ]
     },
     {
       "netuid": 91,
@@ -588,7 +824,43 @@
     {
       "netuid": 92,
       "name": "REAX",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN92 REAX team introduces a separate EU-hosted moderation beta",
+          "summary": "Decision Models, the team behind REAX, announced an EU-hosted Moderation API beta on November 16. It supports moderation rules written in plain language and offers a migration tool for existing Perspective API integrations. Its scores are independently calibrated, so developers need to retune thresholds and test their own examples before switching; the team says evaluation is pending and makes no accuracy claim.\n\nA November 15 update also introduced a setup page for its free, open-source local LLM autorouter. The tool classifies prompts and selects among configured models using pricing and benchmark settings. Users supply their provider keys and still pay the underlying inference charges; a proposed Pro version remains on a waitlist.\n\nThese are developments in the team's product suite. Decision Models says EU-tier processing does not use the REAX miner network, so the moderation beta is not evidence of new SN92 miner usage or revenue. A November 16 image-classification example also demonstrates the existing s1-vision model rather than launching a new one.",
+          "rating": 4,
+          "ratingReason": "Four stars: a new moderation capability with custom rules and migration tooling is more consequential than routine catalog maintenance at three. Exceptional adoption or ecosystem consequences supporting five are not established.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://decisionmodels.io/changelog",
+              "label": "Decision Models dated November 15-16 changelog"
+            },
+            {
+              "url": "https://decisionmodels.io/perspective-api-alternative",
+              "label": "Moderation API beta scope and calibration limits"
+            },
+            {
+              "url": "https://decisionmodels.io/llm-autorouter",
+              "label": "Local LLM autorouter documentation"
+            },
+            {
+              "url": "https://decisionmodels.io/models",
+              "label": "Model routing and EU-tier documentation"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "A new moderation beta adds custom rules and migration tooling for developers.",
+            "evidence": "Decision Models dated November 15-16 changelog; Moderation API beta scope and calibration limits; Local LLM autorouter documentation; Model routing and EU-tier documentation",
+            "scope": "Decision Models product expansion through EU-hosted moderation, plus a local autorouter setup page.",
+            "uncertainty": "Beta evaluation and adoption are not established. EU processing does not use REAX miners, and the image example is not an independent benchmark.",
+            "adjacentRatingReason": "Four stars: a new moderation capability with custom rules and migration tooling is more consequential than routine catalog maintenance at three. Exceptional adoption or ecosystem consequences supporting five are not established."
+          }
+        }
+      ]
     },
     {
       "netuid": 93,
@@ -613,7 +885,35 @@
     {
       "netuid": 97,
       "name": "Ingot",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN97 INGOT reports fewer agent steps on bugs shared with Bonsai 2",
+          "summary": "In a November 12 result revisited in Dendrite's November 16 digest, INGOT said its latest leading model took 54 agent steps against Bonsai 2's 70 on SWE-bench Multilingual bugs that both models successfully fixed. The team described the comparison as 22% fewer steps at the same roughly 6 GB size.\n\nThe comparison addresses how much work an agent does on that shared set of solved bugs, which can affect time and token use. It does not show a 22% improvement across every task, a higher overall solve rate or an independently reproduced benchmark. This is dated catch-up coverage of the November 12 team-reported result.",
+          "rating": 3,
+          "ratingReason": "Three stars: a concrete, scoped efficiency comparison offers useful model-selection evidence beyond a minor update at two. Its limited shared-solved sample and unestablished broader results do not support a major general performance milestone at four.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/IngotSubnet/status/2120948945019076637",
+              "label": "INGOT November 12 steps comparison"
+            },
+            {
+              "url": "https://x.com/DendriteHQ/status/2122366347178922161",
+              "label": "Dendrite November 16 weekly digest linking the original result"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "research",
+            "consequence": "INGOT reports fewer agent steps on a defined subset of coding-benchmark tasks.",
+            "evidence": "INGOT November 12 steps comparison; Dendrite November 16 weekly digest linking the original result",
+            "scope": "Team comparison of bugs both models solved in SWE-bench Multilingual, at approximately the same 6 GB size.",
+            "uncertainty": "Underlying test runs were not independently reproduced; the shared-solved subset does not establish overall solve rate or universal cost savings.",
+            "adjacentRatingReason": "Three stars: a concrete, scoped efficiency comparison offers useful model-selection evidence beyond a minor update at two. Its limited shared-solved sample and unestablished broader results do not support a major general performance milestone at four."
+          }
+        }
+      ]
     },
     {
       "netuid": 98,
@@ -623,7 +923,35 @@
     {
       "netuid": 99,
       "name": "Subnet 99",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN99 Discord channel is claimed, with a project announcement planned for Wednesday",
+          "summary": "Bittensor moderator Kat confirmed on November 16 that Tobias had successfully claimed ownership of SN99's Discord channel. Tobias then said he would publish the project announcement on Wednesday, November 18.\n\nThis confirms channel representation and a planned announcement. It does not establish an onchain ownership transfer, a sale, the project's operating scope or a relationship with another subnet.",
+          "rating": 2,
+          "ratingReason": "Two stars: channel representation and a near-term announcement date are a useful bounded watchlist update. A substantive operating-team transition or product launch has not yet been established, so the higher identity-change or product ratings do not apply.",
+          "status": "verified",
+          "importance": "informational",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1568250627669368832/1571918310650552321",
+              "label": "Bittensor moderator's November 16 channel-claim confirmation"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1568250627669368832/1571923221932937230",
+              "label": "SN99 channel owner's Wednesday announcement plan"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "watchlist",
+            "consequence": "SN99 gains a confirmed channel representative and a stated announcement date.",
+            "evidence": "Bittensor moderator's November 16 channel-claim confirmation; SN99 channel owner's Wednesday announcement plan",
+            "scope": "Discord channel ownership and a planned November 18 project announcement.",
+            "uncertainty": "Onchain ownership, project details, operating status and relationships to other subnets remain unverified.",
+            "adjacentRatingReason": "Two stars: channel representation and a near-term announcement date are a useful bounded watchlist update. A substantive operating-team transition or product launch has not yet been established, so the higher identity-change or product ratings do not apply."
+          }
+        }
+      ]
     },
     {
       "netuid": 100,
@@ -698,7 +1026,39 @@
     {
       "netuid": 114,
       "name": "SOMA",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN114 SOMA details how it tests context compression and token savings",
+          "summary": "SOMA said on November 13 that its context-compression product could reduce an AI agent's token costs by 30%. A November 16 follow-up directed readers to its experiment methodology. This is dated catch-up coverage of the team's savings claim, rather than a newly verified result for every customer.\n\nThe methodology compares paired runs using original and transformed context, with answer quality taking priority. It describes repeated tests and held-out examples, and a weighted token-cost calculation that counts ordinary input tokens at 1, cached input at 0.1 and output at 3. Those weights are a comparison model, not a universal provider price schedule.\n\nThe methodology's illustrative charts do not independently establish the advertised 30% result. Real savings depend on the workload, model, caching and the amount of context that can be removed while preserving useful answers.",
+          "rating": 3,
+          "ratingReason": "Three stars: a concrete efficiency claim accompanied by a defined evaluation method gives readers useful product evidence beyond a small update at two. The illustrative methodology does not establish a broad measured savings milestone sufficient for four.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/SomaSubnet/status/2121268463507517718",
+              "label": "SOMA November 13 token-cost claim"
+            },
+            {
+              "url": "https://x.com/SomaSubnet/status/2122350135967383656",
+              "label": "SOMA November 16 methodology follow-up"
+            },
+            {
+              "url": "https://thesoma.ai/labs/experiment-methodology",
+              "label": "SOMA experiment methodology and illustrative results"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "research",
+            "consequence": "The team states a context-compression savings target and explains how paired quality and token-cost comparisons should be evaluated.",
+            "evidence": "November 13 team claim, November 16 methodology follow-up and the linked experiment methodology.",
+            "scope": "Context-compression evaluation using original/transformed pairs, weighted token costs, repeated tests and held-out examples.",
+            "uncertainty": "The reviewed illustrative charts do not independently establish 30% savings across workloads, providers or customers.",
+            "adjacentRatingReason": "Three stars: a concrete efficiency claim accompanied by a defined evaluation method gives readers useful product evidence beyond a small update at two. The illustrative methodology does not establish a broad measured savings milestone sufficient for four."
+          }
+        }
+      ]
     },
     {
       "netuid": 115,
@@ -708,12 +1068,76 @@
     {
       "netuid": 116,
       "name": "Carbon",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN116 Carbon expands Motor grading capacity after submission backlog",
+          "summary": "Carbon reported on November 15 that Motor 1.8 could grade two submissions at once and run compiled model builds. The team said the version and exam were unchanged, scores remained comparable and winning submissions would still be recognized in submission order. On November 16, it said more than 200 submissions had contributed to the grading queue and that repeat checks had been shortened.\n\nLater that morning, Carbon said it had purchased two additional grading machines and was moving model building onto A100 GPUs. Those additions were intended to clear the backlog; the team had not yet published measured throughput after the changes. Its earlier figures of roughly nine minutes for a typical grade and 28 minutes for the slowest tenth were explicitly measured before the upgrade, so they are not evidence of the new system's speed.",
+          "rating": 3,
+          "ratingReason": "Three stars: grading capacity and queue handling materially affect participating miners, exceeding small housekeeping at two. This remains a bounded operating improvement, rather than a new product or wider network milestone warranting four.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1511009214540157088/1571724589619224600",
+              "label": "Carbon November 15 parallel-grading announcement"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1511009214540157088/1571764954699145237",
+              "label": "Carbon November 16 queue and repeat-check explanation"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1511009214540157088/1571764618005844019",
+              "label": "Carbon pre-change timing measurements"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1511009214540157088/1571895379312644188",
+              "label": "Carbon November 16 hardware-capacity update"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operations",
+            "consequence": "Parallel grading and planned hardware expansion address the miner submission backlog.",
+            "evidence": "Carbon November 15 parallel-grading announcement; Carbon November 16 queue and repeat-check explanation; Carbon pre-change timing measurements; Carbon November 16 hardware-capacity update",
+            "scope": "Motor 1.8 grading, model builds, queue ordering and additional grading infrastructure.",
+            "uncertainty": "The team reported the changes; post-upgrade throughput and clearance of the backlog were not measured in the reviewed evidence.",
+            "adjacentRatingReason": "Three stars: grading capacity and queue handling materially affect participating miners, exceeding small housekeeping at two. This remains a bounded operating improvement, rather than a new product or wider network milestone warranting four."
+          }
+        }
+      ]
     },
     {
       "netuid": 117,
       "name": "everyframe.studio",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN117 EveryFrame reports 46,733 jobs and a traffic-limit fix",
+          "summary": "In a report shared on November 16, EveryFrame said SN117 had run 46,733 AI media-generation jobs since launch, with 43,399 verified. Its figures were explicitly dated November 12 at 09:40 GMT. The report also listed 685 creator accounts across 56 countries and regions, 44 online miner nodes out of 81 registered, and 94.3% delivery reliability over the preceding 30 days.\n\nThe team said the verified share of jobs fell to 81.9% on November 11 and 69.8% on November 12 after unusually high traffic reached a limit in its code. It reported identifying the problem and deploying a fix; the reviewed report does not establish post-fix reliability.\n\nThese are operator-reported usage and account figures, not independently audited revenue or a count of paying customers. The article introduces a September 28 to November 1 reporting period but also includes later November activity, so its since-launch totals, rolling 30-day figures and daily results should not be treated as one identical measurement window.",
+          "rating": 4,
+          "ratingReason": "Four stars: a substantive operating report quantifies completed work, account reach and a reliability issue with an attributed repair, beyond routine catalog maintenance at three. Its reported scope does not establish exceptional adoption or wider consequences supporting five.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/xeveryframe/status/2122340791032893508",
+              "label": "EveryFrame November 16 report-sharing post"
+            },
+            {
+              "url": "https://x.com/i/article/2121312630425956352",
+              "label": "EveryFrame SN117 report, figures as of November 12 at 09:40 GMT"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "usage-report",
+            "consequence": "The subnet publishes quantified job delivery, account reach, miner participation and a reported response to a traffic-related reliability decline.",
+            "evidence": "Official EveryFrame report read natively on X, with explicit November 12 data cutoff and separate period definitions.",
+            "scope": "Since-launch jobs, creator accounts, rolling 30-day delivery reliability and November 11-12 verified-job shares.",
+            "uncertainty": "Operator figures are not independently audited. Paying customers, revenue and post-fix reliability are not established, and the report mixes measurement windows.",
+            "adjacentRatingReason": "Four stars: a substantive operating report quantifies completed work, account reach and a reliability issue with an attributed repair, beyond routine catalog maintenance at three. Its reported scope does not establish exceptional adoption or wider consequences supporting five."
+          }
+        }
+      ]
     },
     {
       "netuid": 118,
@@ -728,7 +1152,35 @@
     {
       "netuid": 120,
       "name": "Affine",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN120 Affine reports AIME score rise from 60 to 90",
+          "summary": "Const said in Affine's Discord channel on November 15 that ten LoRA model updates and 30 million tokens took a nine-billion-parameter model from 60 to 90 on AIME in 33 hours, using public miner batches. The reported result describes an improvement produced through distributed training contributions. The post did not specify the AIME edition or full scoring and comparison protocol, and the result was not independently reproduced in this review.\n\nSN120's automated round notices continued on November 16, reporting another leading-model update applied at 14:43 UTC. Those notices track ongoing training rounds; their round-level pass rates are a different measurement from the AIME result.",
+          "rating": 4,
+          "ratingReason": "Four stars: a specific, substantial reported model-improvement result from public miner training is more consequential than routine operating news at three. Incomplete benchmark details and no established exceptional wider result prevent a five-star conclusion.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1381987595881414656/1571615644447801345",
+              "label": "Const November 15 Affine training-result statement"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1381987595881414656/1571900758939533326",
+              "label": "SN120 November 16 automated training-round notice"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "research",
+            "consequence": "A reported nine-billion-parameter model improves its AIME score through ten LoRA updates using public miner batches.",
+            "evidence": "Dated original statement in the official Affine channel, with separate subsequent training-round notice.",
+            "scope": "Reported AIME score of 60 to 90 over 33 hours and 30 million tokens; distinct round pass rates are not treated as AIME scores.",
+            "uncertainty": "AIME edition, complete scoring and comparison details, and independent reproduction were not established.",
+            "adjacentRatingReason": "Four stars: a specific, substantial reported model-improvement result from public miner training is more consequential than routine operating news at three. Incomplete benchmark details and no established exceptional wider result prevent a five-star conclusion."
+          }
+        }
+      ]
     },
     {
       "netuid": 121,
@@ -774,21 +1226,42 @@
   "storyOrder": [
     "SN24 ms.computer announces hosting and AI-agent sandboxes",
     "SN80 OpenRoboto announces machine.fun launch and Solana trading pair",
+    "SN90 KubeTEE reserves miner emissions for external operators",
+    "SN92 REAX team introduces a separate EU-hosted moderation beta",
     "SN53 Engy reports 3.11 trillion inference tokens over 30 days",
-    "SN75 Hippius adds mobile uploads and sharing in Drive 1.3.0"
+    "SN117 EveryFrame reports 46,733 jobs and a traffic-limit fix",
+    "SN120 Affine reports AIME score rise from 60 to 90",
+    "SN3 Teutonic lowers the threshold for challengers to replace the leading model",
+    "SN34 Yugos temporarily limits miner submissions to Bittensor providers",
+    "SN116 Carbon expands Motor grading capacity after submission backlog",
+    "SN75 Hippius adds mobile uploads and sharing in Drive 1.3.0",
+    "SN97 INGOT reports fewer agent steps on bugs shared with Bonsai 2",
+    "SN114 SOMA details how it tests context compression and token savings",
+    "SN66 Conjectures expands its proof catalog and adds scoped Hilbert challenges",
+    "SN99 Discord channel is claimed, with a project announcement planned for Wednesday",
+    "SN44 Score plans improved review of miner challenge annotations",
+    "SN56 Gradients separates public subnet data from its training API",
+    "TaoStats adds German and Polish interface options",
+    "SN70 Fugal and Yuma schedule a November 18 smart-routing discussion"
   ],
   "coverage": {
     "searched": [
       "Direct Ms. Computer launch announcement, official product website and miner documentation.",
       "Engy public usage dashboard, TAO Daily discovery article and Hippius original release announcement.",
-      "Bounded original-post reviews of OpenTensor, Bittensor and Const Reborn; signed-in Grok discovery, estimated-attention and omission queries."
+      "Bounded original-post reviews of OpenTensor, Bittensor and Const Reborn; signed-in Grok discovery, estimated-attention and omission queries.",
+      "Direct team-channel follow-ups in Bittensor Discord for SN3, SN24, SN44, SN90, SN99 and SN116; source dates and reviewed intervals are retained in the audit.",
+      "Decision Models dated changelog and moderation, model-routing and local-autorouter documentation.",
+      "Dendrite November 16 digest followed to INGOT and SOMA originals; late-found developments retain their November 12-13 dates. SOMA experiment methodology reviewed separately from its advertised savings claim.",
+      "EveryFrame original report and November 16 sharing post; statistics retain the November 12 cutoff and separate since-launch, rolling and daily measurement periods.",
+      "Affine original November 15 training-result statement and November 16 automated round notice; AIME and round-level pass rates are kept separate.",
+      "Yugos November 15 owner statements on provider restrictions, concurrent-run limits and ongoing queue work; active benchmark version distinguished from a new pack release."
     ],
     "gaps": [
       "Initial edition: full roster, outlet, seven-day social/media and fund-principal reviews remain incomplete; roster inclusion does not imply complete coverage.",
-      "Discord Web is signed out. The desktop backup was opened but rendered a blank view; channel review remains incomplete.",
       "eTAO and burns collection stopped at an unreviewed runtime version. Archives retain verified coverage through block 9513318; later events are not yet cleared.",
       "Owner-holdings refresh stopped at the runtime-version guard. Last verified holdings are retained. Gamma and lifecycle event review remain incomplete.",
-      "Morning chart scan found 256 intraday USD comparison gaps across 128 slots. Investigation and price-move cause checks remain open; no cause is inferred from price alone."
+      "Discord access was restored and the identified team statements were reviewed. This bounded follow-up does not establish complete channel, historical-watermark or market-trigger coverage. Remaining channel and price-cause investigations are recorded in the audit.",
+      "The repaired chart comparison passed all 384 checked timeframe results across 128 subnet slots. Registration continuity and the causes of flagged market moves remain separate unresolved checks; a passing chart comparison does not establish either."
     ]
   }
 }
