@@ -94,11 +94,14 @@ async function loadUncached(request: NextRequest) {
       const url = new URL("https://api.exchange.coinbase.com/products/TAO-USD/candles");
       url.searchParams.set("granularity", String(granularity));
       if (long) { url.searchParams.set("start", new Date(end - (index + 1) * 299 * 86400000).toISOString()); url.searchParams.set("end", new Date(end - index * 299 * 86400000).toISOString()); }
-      else if (pageCount > 1) {
+      else {
         url.searchParams.set("start", new Date((boundary - index * windowSeconds) * 1000).toISOString());
         url.searchParams.set("end", new Date((index === 0 ? Math.floor(Date.now() / 60000) * 60 : boundary - (index - 1) * windowSeconds) * 1000).toISOString());
       }
-      const response = await fetch(url, { headers: { "User-Agent": "ShizzyUnchained/1.0" }, next: { revalidate: !long && index > 0 ? 86400 : 60 }, signal: AbortSignal.timeout(6000) });
+      // The outer shared chart cache already coalesces live refreshes. A second
+      // stale-while-revalidate fetch cache can renew that cache with old FX data.
+      // Keep immutable older windows cached, but await the actual current page.
+      const response = await fetch(url, { headers: { "User-Agent": "ShizzyUnchained/1.0" }, ...(!long && index === 0 ? { cache: "no-store" as const } : { next: { revalidate: !long && index > 0 ? 86400 : 60 } }), signal: AbortSignal.timeout(6000) });
       if (!response.ok) throw new Error("Exchange history unavailable");
       const rows = await response.json();
       if (!Array.isArray(rows)) throw new Error("Invalid candle response");
@@ -129,5 +132,5 @@ export async function GET(request: NextRequest) {
   const before = request.nextUrl.searchParams.get("before");
   if (!granularities[interval]) return loadUncached(request);
   if (before !== null && (!Number.isSafeInteger(Number(before)) || Number(before) < 1609459200 || Number(before) > Date.now() / 1000 + 86400)) return loadUncached(request);
-  return chartResponse(`tao:${interval}:${before === null ? "latest" : Number(before)}`, () => loadUncached(request));
+  return chartResponse(`tao:${interval}:${before === null ? "latest" : Number(before)}`, () => loadUncached(request), before === null);
 }

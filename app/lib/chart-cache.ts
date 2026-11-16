@@ -10,7 +10,7 @@ function valid(value: unknown, now: number): value is ChartSnapshot {
 }
 // Serve a shared last-good history immediately. Failure never replaces it with
 // an empty response or nine days of node history. Live quotes are separate.
-export async function cachedChart(key: string, store: ChartStore, load: () => Promise<ChartPayload>, background: (work: () => Promise<void>) => void, now = Date.now()) {
+export async function cachedChart(key: string, store: ChartStore, load: () => Promise<ChartPayload>, background: (work: () => Promise<void>) => void, now = Date.now(), awaitRefresh = false) {
   const previous = memory.get(key);
   let saved: unknown;
   try { saved = await store.get(key); } catch { /* Regional cache is optional. */ }
@@ -39,7 +39,13 @@ export async function cachedChart(key: string, store: ChartStore, load: () => Pr
   };
   if (cached) {
     const stale = now - cached.checkedAt > 60_000;
-    if (stale && (!cached.retryAt || cached.retryAt <= now)) background(async () => { try { await refresh(); } catch { /* Retain dated history; retry after cooldown. */ } });
+    if (stale && awaitRefresh && (!cached.retryAt || cached.retryAt <= now)) {
+      try {
+        const fresh = await refresh();
+        return { ...fresh.payload, historyCheckedAt: new Date(fresh.checkedAt).toISOString(), historyStale: false };
+      } catch { /* Retain explicitly stale history if the bounded refresh fails. */ }
+    }
+    if (stale && !awaitRefresh && (!cached.retryAt || cached.retryAt <= now)) background(async () => { try { await refresh(); } catch { /* Retain dated history; retry after cooldown. */ } });
     return { ...cached.payload, historyCheckedAt: new Date(cached.checkedAt).toISOString(), historyStale: stale };
   }
   const snapshot = await refresh();

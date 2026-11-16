@@ -2,7 +2,7 @@
   "date": "2026-11-16",
   "preparedAt": "2026-11-16T10:07:54.516162-05:00",
   "dailyWorkflowComplete": false,
-  "publicationStatus": "PREPARED_WITH_DISCLOSED_GAPS",
+  "publicationStatus": "PUBLISHED_WITH_DISCLOSED_GAPS",
   "chainReviews": {
     "etao": {
       "status": "BLOCKED",
@@ -1712,9 +1712,10 @@
   "editorialReview": {
     "status": "BLOCKED",
     "selectedLead": "SN24 ms.computer announces hosting and AI-agent sandboxes",
-    "rationale": "A substantive announced hosting and sandbox offering leads the quantified operator usage report and bounded mobile update. No rating inflation or adoption inference.",
+    "rationale": "A substantive announced hosting and sandbox offering leads the quantified operator usage report and bounded mobile update. No rating inflation or adoption inference. Counterparty-confirmed SN80 launch expansion added second in an intraday update; original lead and published roundup retained.",
     "orderedHeadlines": [
       "SN24 ms.computer announces hosting and AI-agent sandboxes",
+      "SN80 OpenRoboto announces machine.fun launch and Solana trading pair",
       "SN53 Engy reports 3.11 trillion inference tokens over 30 days",
       "SN75 Hippius adds mobile uploads and sharing in Drive 1.3.0"
     ],
@@ -1759,5 +1760,40 @@
     "Runtime review, chain archives, Gamma, lifecycle and owner holdings",
     "Chart USD gaps",
     "Videos and remaining public routes"
+  ],
+  "intradayUpdates": [
+    {
+      "checkedAt": "2026-11-16T16:24:31.061873+00:00",
+      "headline": "SN80 OpenRoboto announces machine.fun launch and Solana trading pair",
+      "sources": [
+        {
+          "url": "https://x.com/openroboto/status/2122352758636634567",
+          "label": "OpenRoboto November 16 machine.fun announcement"
+        },
+        {
+          "url": "https://x.com/peaq/status/2122356363435319623",
+          "label": "Peaq November 16 counterparty announcement"
+        },
+        {
+          "url": "https://x.com/peaq/status/2122356371433611316",
+          "label": "Peaq bridge and chain-scope explanation"
+        },
+        {
+          "url": "https://x.com/peaq/status/2122356366358556887",
+          "label": "Peaq machine-bonding explanation"
+        }
+      ],
+      "ratingAssessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "partnership",
+        "consequence": "Four stars: a counterparty-confirmed launch and cross-chain trading expansion materially broaden access to SN80 beyond a routine update at three. Five is not established by the announced integration scope alone.",
+        "evidence": "Original OpenRoboto announcement and peaq counterparty confirmation, read natively on X.",
+        "scope": "Announced machine.fun launch and ROBOTO/PEAQ trading pair on Solana; robotics-data identity collaboration.",
+        "uncertainty": "Trading availability, bridge execution and liquidity not independently tested; no inference of token burn or paid adoption.",
+        "adjacentRatingReason": "Four stars: a counterparty-confirmed launch and cross-chain trading expansion materially broaden access to SN80 beyond a routine update at three. Five is not established by the announced integration scope alone."
+      },
+      "accessGap": "machine.fun project page remained on terms-loading screen; no terms accepted, wallet connected or trade attempted.",
+      "disposition": "Add to existing November 16 edition before 5 PM Eastern. No extra roundup."
+    }
   ]
 }

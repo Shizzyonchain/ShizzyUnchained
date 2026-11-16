@@ -18,13 +18,16 @@ async function worker(){while(tasks.length){const {row,interval}=tasks.shift();t
  if(chartNeedsRecentHistory(archive,interval,now)){const n=await nodeRecent(row.netuid,interval);combined=extendChartHistory(archive,decode(n.data||[]),interval,now);}
  const fresh=now-Date.parse(row.time)<=180000&&Date.parse(row.time)<=now+60000;
  const rendered=withLiveCandle(combined,fresh?Number(row.price_tao):0,interval,now);
- const fx=withLiveCandle(rates[interval],quote.usd,interval,now);
+ const fx=withLiveCandle(rates[interval].filter(c=>Date.parse(c.time)<=Math.floor(now/step)*step),quote.usd,interval,now);
  const usd=dollarBars(priceBars(rendered),priceBars(fx));
  const expected=Number(row.price_tao)*quote.usd;
  const last=rendered.at(-1),lastUsd=usd.at(-1);
- const ok=fresh&&!chartNeedsRecentHistory(rendered,interval,now)&&Math.abs(Number(last?.close)-Number(row.price_tao))<1e-10&&!!lastUsd&&Math.abs(lastUsd.close-expected)<1e-8;
+ const calendar=interval==='1d'?['1w','1mo'].map(period=>({period,close:calendarBars(usd,period).at(-1)?.close,taoClose:calendarBars(priceBars(rendered),period).at(-1)?.close})):undefined;
+ const quoteFresh=now-quote.updatedAt*1000<=180000&&quote.updatedAt*1000<=now+60000;
+ const ok=fresh&&quoteFresh&&!chartNeedsRecentHistory(rendered,interval,now)&&Math.abs(Number(last?.close)-Number(row.price_tao))<1e-10&&!!lastUsd&&lastUsd.time===Date.parse(last.time)/1000&&Math.abs(lastUsd.close-expected)<1e-8&&(!calendar||calendar.every(c=>Math.abs(c.close-expected)<1e-8&&Math.abs(c.taoClose-Number(row.price_tao))<1e-10));
  const item={providerError,netuid:row.netuid,interval,status:ok?'PASS':'GAP',snapshotTime:row.time,priceTao:row.price_tao,priceUsd:expected,archiveLast:archive.at(-1)?.time,last:last?.time,chartTao:last?.close,chartUsd:lastUsd?.close,extended:combined.length>archive.length};
- if(interval==='1d')item.calendar=['1w','1mo'].map(period=>({period,close:calendarBars(usd,period).at(-1)?.close}));
+ item.fxLast=fx.at(-1)?.time;item.fxClose=fx.at(-1)?.close;item.quoteFresh=quoteFresh;
+ if(calendar)item.calendar=calendar;
  result.rows.push(item);if(!ok)result.gaps.push(item);
  }catch(e){const item={netuid:row.netuid,interval,status:'ERROR',error:String(e)};result.rows.push(item);result.gaps.push(item);}
  await writeFile(out,JSON.stringify(result,null,2));
