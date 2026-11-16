@@ -110,7 +110,7 @@ test('node tail fills stale provider history without replacing OHLC or bridging 
  assert.equal(updated.length,5);assert.equal(updated[0],old[0]);
  assert.equal(chartNeedsRecentHistory(updated,'1d',now),false);
  assert.equal(chartNeedsRecentHistory(old,'1d',now),true);
- assert.deepEqual(extendChartHistory(old,[c(14),c(15)],'1d',now),old);
+ assert.deepEqual(extendChartHistory(old,[c(14),c(15)],'1d',now).map(c=>Date.parse(c.time)),[12,14,15].map(day=>Date.parse(c(day).time)));
  assert.equal(extendChartHistory(old,[c(13),c(14),c(15),c(16),c(17)],'1d',now).length,5);
- assert.deepEqual(extendChartHistory(old,[{...c(13),close:'NaN'},c(14)],'1d',now),old);
+ assert.equal(extendChartHistory(old,[{...c(13),close:'NaN'},c(14)],'1d',now).length,2);
 });

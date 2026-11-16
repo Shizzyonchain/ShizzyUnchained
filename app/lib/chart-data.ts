@@ -136,7 +136,7 @@ export function withLiveCandle(candles: Candle[], spotPrice: number, timeframe: 
 }
 
 
-// Preserve provider OHLC; extend only with validated, consecutive node buckets.
+// Preserve provider OHLC; extend only with validated node buckets, never invented gap fillers.
 // Node volumes use TAO rather than alpha, so mixed-source callers hide volume.
 export function extendChartHistory(history: Candle[], recent: Candle[], timeframe: string, now = Date.now()): Candle[] {
  const seconds = chartIntervals[timeframe === "1w" || timeframe === "1mo" ? "1d" : timeframe];
@@ -147,7 +147,7 @@ export function extendChartHistory(history: Candle[], recent: Candle[], timefram
  for (const bar of priceBars(recent)) {
   const time = bar.time * 1000;
   if (time <= last) continue;
-  if (time > current || time !== last + step) break;
+  if (time > current) break;
   result.push({time:new Date(time).toISOString(),open:String(bar.open),high:String(bar.high),low:String(bar.low),close:String(bar.close),volume_tao:String(bar.volume)});
   last = time;
  }

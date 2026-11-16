@@ -24,6 +24,7 @@ const test = base.extend<{ contracts: { failed: Set<string>; calls: string[] } }
         if (transfer) (value as { rows: unknown[] }).rows.push({ id: "dust-transfer", amount: "50000", action: "Dust transfer" });
       }
       else if (path === "/api/tao-history") value = { data: [] };
+      else if (/^\/api\/backend\/v1\/subnets\/\d+\/candles$/.test(path)) value = {...chart(url.searchParams.get("interval") || "1d"),method:"boundary"};
       else if (path === "/api/subnet-chart") value = chart(url.searchParams.get("interval") || "1d");
       else if (path === "/api/tao-chart") value = { ...chart(url.searchParams.get("interval") || "1d"), data: chart(url.searchParams.get("interval") || "1d").data.map(([time]) => ({ time, open: "250", high: "250", low: "250", close: "250" })) };
       else if (path === "/api/subnets/owner-sales") value = { netuid: Number(url.searchParams.get("netuid")), address: keys[0], asOf: stamp, ownerCheckedAt: stamp, complete: true, sales:[{id:"owner-sale",extrinsic:"9000000-0001",timestamp:stamp,swap:{fromToken:`SN${url.searchParams.get("netuid")}`,toToken:"TAO",fromAmount:"12500000000",toAmount:"6000000000",taoValue:"6000000000"}}], day: { alpha: "12500000000", tao: "6000000000", trades: 1, bought: { alpha: "25000000000", tao: "12000000000", trades: 2 }, netAlpha: "12500000000" }, week: { alpha: "25000000000", tao: "12000000000", trades: 2, bought: { alpha: "10000000000", tao: "5000000000", trades: 1 }, netAlpha: "-15000000000" } };
