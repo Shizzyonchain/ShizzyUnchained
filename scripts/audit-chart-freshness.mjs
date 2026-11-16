@@ -11,10 +11,10 @@ const result={checkedAt:new Date(now).toISOString(),base,quote,rows:[],gaps:[]};
 const selected=process.env.CHART_AUDIT_SUBNETS?.split(',').map(Number);
 const tasks=rows.filter(r=>r.netuid>0&&(!selected||selected.includes(r.netuid))).flatMap(row=>['10m','1h','1d'].map(interval=>({row,interval})));
 async function worker(){while(tasks.length){const {row,interval}=tasks.shift();try{
- let original,providerError;try{original=await get(`/api/subnet-chart?netuid=${row.netuid}&interval=${interval}`);}catch(e){providerError=String(e);original=await get(`/api/backend/v1/subnets/${row.netuid}/candles?interval=${interval}&limit=500`);}
+ let original,providerError;try{original=await get(`/api/subnet-chart?netuid=${row.netuid}&interval=${interval}`);}catch(e){providerError=String(e);original=await get(`/api/backend/v1/subnets/${row.netuid}/candles?interval=${interval}&limit=180`);}
  const step=({ '10m':600000,'1h':3600000,'1d':86400000 })[interval];
  const archive=decode(original.data||[]).filter(c=>Date.parse(c.time)<=Math.floor(now/step)*step);let combined=archive;
- if(chartNeedsRecentHistory(archive,interval,now)){const n=await get(`/api/backend/v1/subnets/${row.netuid}/candles?interval=${interval}&limit=500`);combined=extendChartHistory(archive,decode(n.data||[]),interval,now);}
+ if(chartNeedsRecentHistory(archive,interval,now)){const n=await get(`/api/backend/v1/subnets/${row.netuid}/candles?interval=${interval}&limit=180`);combined=extendChartHistory(archive,decode(n.data||[]),interval,now);}
  const fresh=now-Date.parse(row.time)<=180000&&Date.parse(row.time)<=now+60000;
  const rendered=withLiveCandle(combined,fresh?Number(row.price_tao):0,interval,now);
  const fx=withLiveCandle(rates[interval],quote.usd,interval,now);
@@ -31,3 +31,4 @@ async function worker(){while(tasks.length){const {row,interval}=tasks.shift();t
  await new Promise(r=>setTimeout(r,700));}}
 await Promise.all([worker(),worker()]);
 await writeFile(out,JSON.stringify(result,null,2));console.log(JSON.stringify({checked:result.rows.length,gaps:result.gaps.length,output:out}));
+

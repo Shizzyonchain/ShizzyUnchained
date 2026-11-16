@@ -252,7 +252,7 @@ function loadChartHistory(netuid: number | "tao", timeframe: string, before?: nu
   const pending = candleRequests.get(key);
   if (pending) return pending;
   const longInterval = timeframe === "1w" || timeframe === "1mo";
-  const nodeUrl = `/api/backend/v1/subnets/${netuid}/candles?interval=${longInterval ? "1d" : timeframe}&limit=500`;
+  const nodeUrl = `/api/backend/v1/subnets/${netuid}/candles?interval=${longInterval ? "1d" : timeframe}&limit=180`;
   const url = (netuid === "tao" ? `/api/tao-chart?interval=${timeframe}` : `/api/subnet-chart?netuid=${netuid}&interval=${timeframe}`) + (before === undefined ? "" : `&before=${before}`);
   const fetchWithRetry = async () => {
     const controller = new AbortController();
