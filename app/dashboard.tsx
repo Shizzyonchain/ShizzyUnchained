@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
-import { calendarBars, dollarBars, priceBars, mergeChartCandles, withLiveCandle } from "./lib/chart-data";
+import { calendarBars, dollarBars, priceBars, extendChartHistory, chartNeedsRecentHistory, mergeChartCandles, withLiveCandle } from "./lib/chart-data";
 import { SiteHeader } from "./site-header";
 import { LivestreamBanner } from "./livestream-banner";
 import { MembershipPromo } from "./membership-promo";
@@ -252,7 +252,7 @@ function loadChartHistory(netuid: number | "tao", timeframe: string, before?: nu
   const pending = candleRequests.get(key);
   if (pending) return pending;
   const longInterval = timeframe === "1w" || timeframe === "1mo";
-  const nodeUrl = `/api/backend/v1/subnets/${netuid}/candles?interval=${longInterval ? "1d" : timeframe}&limit=${longInterval ? 500 : 180}`;
+  const nodeUrl = `/api/backend/v1/subnets/${netuid}/candles?interval=${longInterval ? "1d" : timeframe}&limit=500`;
   const url = (netuid === "tao" ? `/api/tao-chart?interval=${timeframe}` : `/api/subnet-chart?netuid=${netuid}&interval=${timeframe}`) + (before === undefined ? "" : `&before=${before}`);
   const fetchWithRetry = async () => {
     const controller = new AbortController();
@@ -261,11 +261,32 @@ function loadChartHistory(netuid: number | "tao", timeframe: string, before?: nu
       let response = await fetch(url, { signal: controller.signal });
       let nodeFallback = false;
       if (!response.ok && netuid !== "tao" && before === undefined) {
-        if (cached?.data.length) return { data: cached.data.map(c => [c.time,c.open,c.high,c.low,c.close,c.volume_tao || 0]), method: cached.method, historyStale: true, historyCheckedAt: new Date(cached.savedAt).toISOString() };
+        // Preserve cached history below while still requesting the current node tail.
         nodeFallback = true; response = await fetch(nodeUrl, { cache: "no-store", signal: controller.signal });
       }
-      if (!response.ok) throw new Error(`Chart request failed: ${response.status}`);
-      return { ...await response.json(), nodeFallback };
+      if (!response.ok) {
+        if (cached?.data.length) return {data:cached.data.map(c=>[c.time,c.open,c.high,c.low,c.close,c.volume_tao||0]),method:cached.method,historyStale:true,historyCheckedAt:new Date(cached.savedAt).toISOString()};
+        throw new Error(`Chart request failed: ${response.status}`);
+      }
+      const json = await response.json();
+      if (nodeFallback && cached?.data.length && ["taostats-alpha","provider-node"].includes(cached.method)) {
+        const extended = extendChartHistory(cached.data,decodeCompactCandles(json.data||[]),timeframe);
+        return {...json,data:extended.map(c=>[c.time,c.open,c.high,c.low,c.close,c.volume_tao]),method:cached.method === "provider-node" || extended.length>cached.data.length ? "provider-node" : cached.method};
+      }
+      if (netuid !== "tao" && before === undefined && !nodeFallback) {
+        const archive = decodeCompactCandles(json.data || []);
+        if (chartNeedsRecentHistory(archive, timeframe)) {
+          try {
+            const recent = await fetch(nodeUrl, {signal: controller.signal});
+            if (recent.ok) {
+              const body = await recent.json();
+              const extended = extendChartHistory(archive, decodeCompactCandles(body.data || []), timeframe);
+              if (extended.length > archive.length) return {...json, data:extended.map(c=>[c.time,c.open,c.high,c.low,c.close,c.volume_tao]),method:"provider-node", nodeFallback:false};
+            }
+          } catch { /* Keep original history with its dated warning. */ }
+        }
+      }
+      return { ...json, nodeFallback };
     } finally {
       window.clearTimeout(timeout);
     }
@@ -273,7 +294,7 @@ function loadChartHistory(netuid: number | "tao", timeframe: string, before?: nu
   const request = fetchWithRetry()
     .then((json) => {
       const data = netuid === "tao" ? (json.data || []) as Candle[] : decodeCompactCandles(json.data || []);
-      const snapshot = { data: before === undefined ? mergeChartCandles(cached?.data || [], data) : data, savedAt: Date.now(), method: cached?.method === "extended-price" ? "extended-price" : json.method || (netuid === "tao" ? "exchange" : "boundary"), done: cached?.done || json.done === true, notice: json.nodeFallback ? "Limited node fallback history · provider temporarily unavailable" : json.historyStale ? `Cached history checked ${new Date(json.historyCheckedAt).toLocaleString("en-US", { timeZone: "UTC", timeStyle: "short" })} UTC · refreshing in background` : undefined };
+      const snapshot = { data: before === undefined ? mergeChartCandles(cached?.data || [], data) : data, savedAt: Date.now(), method: cached?.method === "extended-price" ? "extended-price" : json.method || (netuid === "tao" ? "exchange" : "boundary"), done: cached?.done || json.done === true, notice: json.method === "provider-node" ? "Recent candles supplemented by node interval prices; wicks are estimates. Mixed-source volume hidden." : json.nodeFallback ? "Limited node fallback history · provider temporarily unavailable" : json.historyStale ? `Cached history checked ${new Date(json.historyCheckedAt).toLocaleString("en-US", { timeZone: "UTC", timeStyle: "short" })} UTC · refreshing in background` : undefined };
       candleCache.set(key, snapshot);
       if (candleCache.size > 128) candleCache.delete(candleCache.keys().next().value!);
       return snapshot;
@@ -785,8 +806,9 @@ export function Dashboard({
       if (run === chartHistoryRun.current) setEarlierHistory({ key, loading: false, done: false, error: error instanceof Error ? error.message : "Earlier history could not load. Please retry." });
     } finally { if (run === chartHistoryRun.current) earlierBusy.current = false; }
   }
-  const chartNote = (chartData.notice ? `${chartData.notice} · ` : "") + (timeframe === "1w" || timeframe === "1mo" ? "Calendar candles from daily history · UTC · Current period incomplete · " : "") + (showTaoChart ? (chartData.method === "extended-price" ? "Coinbase recent candles · TaoStats older price history · Historical candle volume unavailable" : chartData.method === "taostats-price" ? "TaoStats historical TAO/USD price candles · Candle volume unavailable" : "Coinbase TAO/USD candles · Volume in TAO")
-    : chartData.method === "taostats-alpha" ? `TaoStats candles${currency === "usd" ? ` · USD candles use historical TAO/USD rates; high/low are estimates${missingUsdPeriods > 2 ? ` · ${missingUsdPeriods} periods lack USD quotes; TAO mode retains those subnet candles` : ""}` : " · Alpha/TAO"}`
+  const chartHistoryDelayed = chartDate === null && chartNeedsRecentHistory(chartCandles, timeframe);
+  const chartNote = (chartHistoryDelayed ? `HISTORY DELAYED: latest candle ${chartCandles.at(-1)?.time}. Last candle close is not the current quote. · ` : "") + (chartData.notice ? `${chartData.notice} · ` : "") + (timeframe === "1w" || timeframe === "1mo" ? "Calendar candles from daily history · UTC · Current period incomplete · " : "") + (showTaoChart ? (chartData.method === "extended-price" ? "Coinbase recent candles · TaoStats older price history · Historical candle volume unavailable" : chartData.method === "taostats-price" ? "TaoStats historical TAO/USD price candles · Candle volume unavailable" : "Coinbase TAO/USD candles · Volume in TAO")
+    : chartData.method === "provider-node" ? "TaoStats older history + node recent interval prices · Historical USD conversion" : chartData.method === "taostats-alpha" ? `TaoStats candles${currency === "usd" ? ` · USD candles use historical TAO/USD rates; high/low are estimates${missingUsdPeriods > 2 ? ` · ${missingUsdPeriods} periods lack USD quotes; TAO mode retains those subnet candles` : ""}` : " · Alpha/TAO"}`
     : `${chartData.method === "boundary" ? "Interval-boundary prices; wicks and volume are estimates" : "Sampled on-chain prices; volume is estimated"}${currency === "usd" ? " · USD estimates use matching historical TAO/USD candles" : " · Alpha/TAO"}`);
   const totalVolume = finalizedMarketVolume(dailyTrading, fxNow);
   const rankedMovers = rows.filter(row => row.netuid > 0 && row.change_1h != null && row.change_1h !== "" && Number.isFinite(Number(row.change_1h))).sort((a, b) => Number(b.change_1h || 0) - Number(a.change_1h || 0));
@@ -1221,7 +1243,7 @@ export function Dashboard({
                           <>
                               {!showTaoChart && <nav className="subnet-research-nav" aria-label="Subnet sections"><a href="#subnet-price-chart">Chart</a><a href="#subnet-market-snapshot">Market snapshot ↓</a><a href="#subnet-owner-activity">Owner activity ↓</a><a href="#subnet-recent-news">Recent news ↓</a><a className="subnet-flow-link" href={`https://taoflows.app/flows?subnets=${selected}`} target="_blank" rel="noopener noreferrer" aria-label={`View SN${selected} buys and sells on TaoFlows (opens in a new tab)`}>TaoFlows ↗</a></nav>}
                               <div id="subnet-price-chart" tabIndex={-1}>
-                              <TradingChart assetOptions={[{ value: "tao", label: "TAO · Bittensor" }, ...Array.from({ length: 128 }, (_, index) => { const netuid = index + 1; const row = rawRows.find(row => row.netuid === netuid); return { value: String(netuid), label: `SN${netuid} · ${row?.name || "Unknown"}` }; })]} onAssetChange={asset => asset === "tao" ? openTaoChart() : openSubnetChart(Number(asset))} onLoadEarlier={loadEarlierHistory} earlierLoading={earlierHistory.key === requestedChartKey && earlierHistory.loading} earlierDone={earlierHistory.key === requestedChartKey && earlierHistory.done} earlierError={earlierHistory.key === requestedChartKey ? earlierHistory.error : ""} historySession={requestedChartKey} historicalDate={chartDate} onHistoryDate={setChartDate} assetLabel={showTaoChart ? "TAO · Bittensor" : `SN${selected} · ${active?.name || "Unknown"}`} drawingId={showTaoChart ? "tao" : `sn${selected}`} onCurrencyChange={showTaoChart ? undefined : setCurrency} volumeAvailable={chartData.method !== "taostats-price" && chartData.method !== "extended-price"} volumeUnit={chartData.method === "taostats-alpha" ? "alpha" : "TAO"} key={showTaoChart ? "tao" : selected} appearance={appearance} bars={chartBars} currency={chartCurrency} timeframe={timeframe} onTimeframeChange={setTimeframe} loading={chartLoading} error={chartError} note={chartNote} onRetry={() => { candleCache.delete(`${showTaoChart ? "tao" : selected}:${timeframe}${chartDate === null ? "" : `:${chartDate}`}`); candleCache.delete(`tao:${timeframe}${chartDate === null ? "" : `:${chartDate}`}`); setChartRetry(value => value + 1); }} />
+                              <TradingChart assetOptions={[{ value: "tao", label: "TAO · Bittensor" }, ...Array.from({ length: 128 }, (_, index) => { const netuid = index + 1; const row = rawRows.find(row => row.netuid === netuid); return { value: String(netuid), label: `SN${netuid} · ${row?.name || "Unknown"}` }; })]} onAssetChange={asset => asset === "tao" ? openTaoChart() : openSubnetChart(Number(asset))} onLoadEarlier={loadEarlierHistory} earlierLoading={earlierHistory.key === requestedChartKey && earlierHistory.loading} earlierDone={earlierHistory.key === requestedChartKey && earlierHistory.done} earlierError={earlierHistory.key === requestedChartKey ? earlierHistory.error : ""} historySession={requestedChartKey} historicalDate={chartDate} onHistoryDate={setChartDate} assetLabel={showTaoChart ? "TAO · Bittensor" : `SN${selected} · ${active?.name || "Unknown"}`} drawingId={showTaoChart ? "tao" : `sn${selected}`} onCurrencyChange={showTaoChart ? undefined : setCurrency} volumeAvailable={chartData.method !== "provider-node" && chartData.method !== "taostats-price" && chartData.method !== "extended-price"} volumeUnit={chartData.method === "taostats-alpha" ? "alpha" : "TAO"} key={showTaoChart ? "tao" : selected} appearance={appearance} bars={chartBars} currency={chartCurrency} timeframe={timeframe} onTimeframeChange={setTimeframe} loading={chartLoading} error={chartError} note={chartNote} onRetry={() => { candleCache.delete(`${showTaoChart ? "tao" : selected}:${timeframe}${chartDate === null ? "" : `:${chartDate}`}`); candleCache.delete(`tao:${timeframe}${chartDate === null ? "" : `:${chartDate}`}`); setChartRetry(value => value + 1); }} />
                               </div>
                               {chartRangeChange != null && <p className="chart-range-return">Available history <strong className={chartRangeChange >= 0 ? "positive" : "negative"}>{chartRangeChange > 0 ? "+" : ""}{chartRangeChange.toFixed(2)}%</strong> · {chartCurrency.toUpperCase()}</p>}
                               {showTaoChart ? (

@@ -99,3 +99,18 @@ test("live price does not bridge a stale archive gap", () => {
   const rows = [candle("2026-10-01T00:00:00Z", "100")];
   assert.equal(withLiveCandle(rows, 270, "1h", Date.parse("2026-10-19T14:20:00Z")), rows);
 });
+
+
+test('node tail fills stale provider history without replacing OHLC or bridging gaps', async()=>{
+ const {extendChartHistory,chartNeedsRecentHistory}=await import('../app/lib/chart-data.ts');
+ const now=Date.parse('2026-11-16T05:00:00Z');
+ const c=(day,close='2')=>({time:`2026-11-${day}T00:00:00Z`,open:'1',high:'3',low:'1',close,volume_tao:'5'});
+ const old=[c(12)];
+ const updated=extendChartHistory(old,[c(12,'3'),c(13),c(14),c(15),c(16)],'1d',now);
+ assert.equal(updated.length,5);assert.equal(updated[0],old[0]);
+ assert.equal(chartNeedsRecentHistory(updated,'1d',now),false);
+ assert.equal(chartNeedsRecentHistory(old,'1d',now),true);
+ assert.deepEqual(extendChartHistory(old,[c(14),c(15)],'1d',now),old);
+ assert.equal(extendChartHistory(old,[c(13),c(14),c(15),c(16),c(17)],'1d',now).length,5);
+ assert.deepEqual(extendChartHistory(old,[{...c(13),close:'NaN'},c(14)],'1d',now),old);
+});
