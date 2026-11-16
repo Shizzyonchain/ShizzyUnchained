@@ -31,14 +31,18 @@ async function proxy(request: NextRequest, context: { params: Promise<{ path: st
   request.nextUrl.searchParams.forEach((value, key) => target.searchParams.set(key, value));
   const endpoint = path.at(-1);
   const isMarketSnapshot = request.method === "GET" && (endpoint === "candles" || endpoint === "screener");
+  // Candle tails must await the upstream refresh. Nesting a fetch SWR cache
+  // under the CDN can serve a hours-old tail on the first visit to each subnet.
+  // The shared five-second CDN cache below still protects the backend.
+  const cacheSnapshotFetch = isMarketSnapshot && endpoint !== "candles";
   try {
     const response = await fetch(target, {
       method: request.method,
       headers: { "Content-Type": request.headers.get("content-type") || "application/json", "X-API-Key": process.env.BACKEND_API_KEY || "", "X-Request-Id": requestId },
       body: requestBody,
-      cache: isMarketSnapshot ? "force-cache" : "no-store",
+      cache: cacheSnapshotFetch ? "force-cache" : "no-store",
       signal: AbortSignal.timeout(endpoint === "candles" ? 25_000 : isMarketSnapshot ? 15_000 : 8_000),
-      ...(isMarketSnapshot ? { next: { revalidate: 5 } } : {}),
+      ...(cacheSnapshotFetch ? { next: { revalidate: 5 } } : {}),
     });
     const upstreamMs = Math.round(performance.now() - startedAt);
     if (upstreamMs >= 1_000 || !response.ok) {
