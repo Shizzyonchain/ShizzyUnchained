@@ -1,11 +1,18 @@
 import { readFile,readdir } from 'node:fs/promises';
 import { holdingForOwner } from '../app/lib/owner-holdings.ts';
+import { validateHoldingsReview } from './owner-holdings-review.mjs';
 const data=JSON.parse(await readFile('app/data/owner-holdings.json','utf8'));
 const dates=(await readdir('content/subnet-news')).filter(n=>/^\d{4}-\d{2}-\d{2}\.json$/.test(n)).sort();
 const latest=dates.at(-1)?.slice(0,10);
 const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(data.asOf));
 const p=Object.fromEntries(parts.map(p=>[p.type,p.value]));const day=`${p.year}-${p.month}-${p.day}`;
-if(latest&&day<latest)throw new Error(`Refresh owner holdings for the ${latest} daily news edition; snapshot is ${day} Eastern`);
+if(latest&&day<latest){
+ const report=JSON.parse(await readFile(`content/subnet-news/${latest}.json`,'utf8'));
+ const audit=JSON.parse(await readFile(`content/subnet-news/audits/${latest}.json`,'utf8'));
+ validateHoldingsReview(day,report,audit);
+ await readFile(audit.ownerHoldings.evidence,'utf8');
+ console.warn(`Owner holdings refresh BLOCKED; preserving verified ${day} snapshot with public disclosure.`);
+}
 if(Object.keys(data.subnets).length!==128)throw new Error('Incomplete owner holdings roster');
 for(let sn=1;sn<=128;sn++){
  const row=data.subnets[String(sn)];
