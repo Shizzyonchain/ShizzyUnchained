@@ -38,7 +38,7 @@ export function NewsEdition({brief,briefs}:{brief:SubnetNewsBrief;briefs:SubnetN
           </div>
           <div className={styles.dateline}><time dateTime={date}>{formatBriefDate(date)}</time><span>{updatedSubnets.length} subnets with updates · {brief.subnets.length} in coverage roster</span><Link href={`/subnet-news/${date}`} prefetch={false}>Edition permalink ↗</Link>{!isLatestBrief&&<Link href="/subnet-news">Read the latest →</Link>}</div>
           {!scoredFormat && <h1 className={styles.legacyHeadline}>{brief.title}</h1>}
-          {brief.correctedAt&&<p className={styles.correction}><b>Correction · </b><time dateTime={brief.correctedAt}>{new Date(brief.correctedAt).toISOString().replace("T"," ").replace(".000Z"," UTC")}</time> · {brief.correctionNote}</p>}
+          {brief.correctedAt&&<p className={styles.correction}><b>Correction · </b><time dateTime={brief.correctedAt}>{new Date(brief.correctedAt).toLocaleString("en-US",{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit",hour12:false,timeZone:"UTC"})} UTC</time> · {brief.correctionNote}</p>}
         </header>
 
         {scoredFormat ? (
