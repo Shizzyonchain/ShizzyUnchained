@@ -2,9 +2,9 @@
   "version": 1,
   "date": "2026-11-17",
   "title": "Bittensor Daily News: November 17, 2026",
-  "summary": "Runtime 491 addresses lock accounting and account controls. Taostats announces Ethereum-to-Bittensor swaps, Lium reports GPU capacity and usage, and SayGM posts its third monthly burn ledger. Also: Recall releases, REAX distribution and an It’s AI growth appointment.",
+  "summary": "Runtime 491 addresses lock accounting and account controls. Taostats announces Ethereum-to-Bittensor swaps, Lium reports GPU capacity and usage, and SayGM posts its third monthly burn ledger. Also: Recall releases, REAX distribution and an It’s AI growth appointment. Update: Chutes announces an Alibaba Cloud collaboration and temporary model discounts.",
   "coverageStart": "2026-11-16T12:08:54.333238-05:00",
-  "coverageEnd": "2026-11-17T15:09:12.521658+00:00",
+  "coverageEnd": "2026-11-17T15:35:26.001982+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "ecosystem": [
@@ -490,7 +490,35 @@
     {
       "netuid": 64,
       "name": "Chutes",
-      "updates": []
+      "updates": [
+        {
+          "headline": "Chutes announces Alibaba Cloud collaboration and discounted model access",
+          "summary": "Chutes announced an Alibaba Cloud collaboration on November 17, offering GLM-5.3, DeepSeek V4.1 Flash and Qwen3.8 Max through its service. The team says existing API keys and credits work, with developers changing the model ID. Its attached promotion dates the offer November 16 to 23 and advertises 35% off GLM-5.3 and DeepSeek V4.1 Flash. The discount is not described as applying to every model.\n\nThe public Chutes catalog separately lists GLM-5.3 and DeepSeek V4.1 Flash. That establishes visible listings, not an independently tested inference request or proof that these external models are trained or served by SN64 miners.\n\nFor developers, the announced change is access through their existing Chutes workflow. The relationship and offer remain attributed to Chutes: the limited Alibaba Cloud timeline reviewed did not provide separate confirmation, and commercial terms, usage and revenue were not disclosed in the announcement.",
+          "rating": 4,
+          "ratingReason": "Four stars: the announced provider collaboration and expanded developer access exceed a routine three-star catalog listing. Five is not established by the disclosed integration scope; Alibaba Cloud scale is not subnet adoption.",
+          "status": "developing",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/chutes_ai/status/2122699233820082325",
+              "label": "Chutes announcement and November 16-23 offer graphic"
+            },
+            {
+              "url": "https://chutes.ai/",
+              "label": "Official Chutes model catalog"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "partnership-announcement",
+            "consequence": "Four stars: the announced provider collaboration and expanded developer access exceed a routine three-star catalog listing. Five is not established by the disclosed integration scope; Alibaba Cloud scale is not subnet adoption.",
+            "evidence": "Native Chutes original and full graphic; public catalog listings.",
+            "scope": "Team-announced provider collaboration and model access using existing credentials.",
+            "uncertainty": "Counterparty confirmation, commercial terms, execution path and uptake not independently established.",
+            "adjacentRatingReason": "Four stars: the announced provider collaboration and expanded developer access exceed a routine three-star catalog listing. Five is not established by the disclosed integration scope; Alibaba Cloud scale is not subnet adoption."
+          }
+        }
+      ]
     },
     {
       "netuid": 65,
@@ -844,6 +872,7 @@
   "storyOrder": [
     "Runtime 491 release fixes lock accounting and extends account controls",
     "Taostats announces swaps between Ethereum assets and TAO or subnet alpha",
+    "Chutes announces Alibaba Cloud collaboration and discounted model access",
     "Lium reports $50 million hardware footprint and $2.93 million in 30-day billings",
     "SayGM ledger reports third-cycle burn equal to 25.2% of miner emissions",
     "Recall releases secondary validator and fixes miner connection heartbeat",
@@ -855,7 +884,8 @@
       "Official runtime release and merged implementation; Taostats launch announcement; Lium statement and dashboard; SayGM ledger and linked execution.",
       "Recall releases, REAX original and provider directory, and It’s AI original announcement.",
       "AlphaGap feed and bounded TAO Daily, Tao Outsider and 1t1b discovery; signed-in Grok discovery, attention and omission queries.",
-      "Bounded signed-in Discord reviews for SN3, SN24 and SN32."
+      "Bounded signed-in Discord reviews for SN3, SN24 and SN32.",
+      "Chutes original November 17 announcement and full offer graphic, public model listings, and a bounded Alibaba Cloud timeline check."
     ],
     "gaps": [
       "Initial edition: remaining outlet, required-account, fund/person, full-roster and Discord coverage is incomplete. Inclusion in the roster is not a claim that every channel was checked.",
@@ -864,5 +894,7 @@
       "Market-move investigations and the full chart recheck remain open. No price cause is inferred from a team announcement."
     ]
   },
-  "publishedAt": "2026-11-17T15:09:12.521658+00:00"
+  "publishedAt": "2026-11-17T15:09:12.521658+00:00",
+  "correctedAt": "2026-11-17T15:35:26.001982+00:00",
+  "correctionNote": "Added the Chutes provider-collaboration announcement with its November 16-23 offer dates and explicit counterparty-verification limits."
 }
