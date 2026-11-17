@@ -25,6 +25,7 @@ export function NewsEdition({brief,briefs}:{brief:SubnetNewsBrief;briefs:SubnetN
   const remaining = mainNews.filter(entry=>entry!==lead);
   const quickBriefs = shortUpdates.filter(entry=>entry!==lead);
   const editions=briefs.map(item=>({date:item.date,label:formatBriefDate(item.date)}));
+  const correction = brief.correctedAt ? <p className={styles.correction}><b>Correction · </b><time dateTime={brief.correctedAt}>{new Date(brief.correctedAt).toLocaleString("en-US",{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit",hour12:false,timeZone:"UTC"})} UTC</time> · {brief.correctionNote}</p> : null;
   const sectionNumber = (base: number) => String(base + (brief.upcomingUnlocks.length ? 1 : 0)).padStart(2, "0");
 
   return (
@@ -38,12 +39,13 @@ export function NewsEdition({brief,briefs}:{brief:SubnetNewsBrief;briefs:SubnetN
           </div>
           <div className={styles.dateline}><time dateTime={date}>{formatBriefDate(date)}</time><span>{updatedSubnets.length} subnets with updates · {brief.subnets.length} in coverage roster</span><Link href={`/subnet-news/${date}`} prefetch={false}>Edition permalink ↗</Link>{!isLatestBrief&&<Link href="/subnet-news">Read the latest →</Link>}</div>
           {!scoredFormat && <h1 className={styles.legacyHeadline}>{brief.title}</h1>}
-          {brief.correctedAt&&<p className={styles.correction}><b>Correction · </b><time dateTime={brief.correctedAt}>{new Date(brief.correctedAt).toLocaleString("en-US",{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit",hour12:false,timeZone:"UTC"})} UTC</time> · {brief.correctionNote}</p>}
+          {!scoredFormat && correction}
         </header>
 
         {scoredFormat ? (
           <>
           {lead&&<section className={styles.lead} aria-label="Main story"><NewsItem item={lead.item} context={lead.context} rank={rankedNews.indexOf(lead)+1} headingLevel={1}/></section>}
+          {correction}
           {remaining.length>0&&<section className={styles.desk} aria-labelledby="more-news"><div className={styles.sectionLabel}><h2 id="more-news">Around Bittensor</h2><span>{remaining.length} more stories</span></div><div className={styles.stories}>{remaining.map(entry=><NewsItem key={JSON.stringify(entry.item)} item={entry.item} context={entry.context} rank={rankedNews.indexOf(entry)+1}/>)}</div></section>}
           {quickBriefs.length>0&&<section className={styles.briefs} aria-labelledby="quick-briefs"><div className={styles.sectionLabel}><h2 id="quick-briefs">Quick briefs &amp; watchlist</h2><span>{quickBriefs.length} updates</span></div><p className={styles.editorNote}>Smaller developments and early plans. Verification labels distinguish confirmed information from developing claims.</p><div className={styles.stories}>{quickBriefs.map(entry=><NewsItem key={JSON.stringify(entry.item)} item={entry.item} context={entry.context} rank={rankedNews.indexOf(entry)+1}/>)}</div></section>}
           <p className={styles.editorNote}>Stars indicate editorial priority, not investment quality. Routine competition updates receive at most three stars. Shizzy videos receive three; substantive non-video Shizzy coverage receives at least four. Scheduled events remain plans.</p>
