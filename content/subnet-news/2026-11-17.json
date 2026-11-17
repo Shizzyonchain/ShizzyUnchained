@@ -1,0 +1,868 @@
+{
+  "version": 1,
+  "date": "2026-11-17",
+  "title": "Bittensor Daily News: November 17, 2026",
+  "summary": "Runtime 491 addresses lock accounting and account controls. Taostats announces Ethereum-to-Bittensor swaps, Lium reports GPU capacity and usage, and SayGM posts its third monthly burn ledger. Also: Recall releases, REAX distribution and an It’s AI growth appointment.",
+  "coverageStart": "2026-11-16T12:08:54.333238-05:00",
+  "coverageEnd": "2026-11-17T15:09:12.521658+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "ecosystem": [
+    {
+      "headline": "Runtime 491 release fixes lock accounting and extends account controls",
+      "summary": "The official Subtensor repository published runtime 491 on November 16 at 17:16 UTC. The merged change describes a fix for conviction-lock accounting that could double-count locks and incorrectly cross an ownership threshold, including the SN24 incident described in the release material. The migration rebuilds aggregate lock records from canonical locks; it does not change the underlying locks, stake or token balances.\n\nThe release also exposes existing Gamma emission controls through SDK and command-line workflows. This is tooling for an existing feature, not a new Gamma launch. Protected-account workflows use proxy controls and delayed execution, without an automatic execution scheduler.\n\nThese changes affect protocol accounting and account operation, making them more consequential than a routine app update. This report verifies the published release and merged implementation. Network activation and a complete finalized-event reconciliation remain separate checks.",
+      "rating": 4,
+      "ratingReason": "Four stars: network accounting and account-control changes exceed routine three-star maintenance. Five requires stronger evidence of exceptional network-wide consequence and verified activation.",
+      "status": "verified",
+      "importance": "high",
+      "sources": [
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/releases/tag/v491",
+          "label": "Official runtime 491 release"
+        },
+        {
+          "url": "https://github.com/RaoFoundation/subtensor/pull/3327",
+          "label": "Merged implementation and migration explanation"
+        }
+      ],
+      "ratingAssessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "protocol-release",
+        "consequence": "Four stars: network accounting and account-control changes exceed routine three-star maintenance. Five requires stronger evidence of exceptional network-wide consequence and verified activation.",
+        "evidence": "Official runtime 491 release; Merged implementation and migration explanation",
+        "scope": "Published runtime and merged implementation.",
+        "uncertainty": "Activation and complete migration/event reconciliation not independently established here.",
+        "adjacentRatingReason": "Four stars: network accounting and account-control changes exceed routine three-star maintenance. Five requires stronger evidence of exceptional network-wide consequence and verified activation."
+      }
+    },
+    {
+      "headline": "Taostats announces swaps between Ethereum assets and TAO or subnet alpha",
+      "summary": "Taostats announced on November 17 at 09:00 UTC that its cross-chain swap interface is live. The team says users can swap USDC or ETH on Ethereum for TAO or subnet alpha, and swap back, within Taostats.\n\nThe announcement presents a quote-and-sign workflow without a separate exchange account or bridge interface. That describes the user experience; it does not by itself establish that the underlying settlement uses no cross-chain infrastructure or introduces no additional risks.\n\nThe practical change is another route into and out of Bittensor assets from Ethereum. We verified the official announcement and linked product route, not a completed wallet transaction, trading volume or customer adoption.",
+      "rating": 4,
+      "ratingReason": "Four stars: announced cross-network asset access materially expands an existing ecosystem tool, beyond a bounded three-star interface update. Five is not supported by demonstrated adoption or settlement volume.",
+      "status": "verified",
+      "importance": "high",
+      "sources": [
+        {
+          "url": "https://x.com/taostats/status/2122615745355915353",
+          "label": "Taostats November 17 launch announcement"
+        },
+        {
+          "url": "https://taostats.io/swap/cross-chain",
+          "label": "Official cross-chain swap interface"
+        }
+      ],
+      "ratingAssessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "product",
+        "consequence": "Four stars: announced cross-network asset access materially expands an existing ecosystem tool, beyond a bounded three-star interface update. Five is not supported by demonstrated adoption or settlement volume.",
+        "evidence": "Taostats November 17 launch announcement; Official cross-chain swap interface",
+        "scope": "Team-announced cross-chain swap interface.",
+        "uncertainty": "No wallet transaction executed; underlying settlement and adoption not independently assessed.",
+        "adjacentRatingReason": "Four stars: announced cross-network asset access materially expands an existing ecosystem tool, beyond a bounded three-star interface update. Five is not supported by demonstrated adoption or settlement volume."
+      }
+    }
+  ],
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": []
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Subnet 16",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Subnet 26",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": [
+        {
+          "headline": "SayGM ledger reports third-cycle burn equal to 25.2% of miner emissions",
+          "summary": "SayGM’s official buyback ledger lists 22,915 alpha burned for its October 16 to November 16 cycle, against 91,045 alpha of miner emissions. On that same-token basis, the reported burn covers 25.2% of the cycle’s miner emissions.\n\nThe ledger links a successful SN28 burn_alpha extrinsic at block 9,519,875, executed November 16 at 15:17:24 UTC. The displayed call parameter is a maximum-amount request, not an independently decoded actual burn amount. The 22,915-alpha figure remains attributed to the operator ledger pending native-event reconciliation.\n\nSayGM describes buying alpha on the market, also receiving some alpha through customer payments, then burning monthly. Its stated goal is full miner-emission coverage. The current ledger basis supersedes the older 19.3% figure circulating in secondary coverage; neither that percentage nor the associated dollar amount is carried into this report as a verified current measurement.",
+          "rating": 4,
+          "ratingReason": "Four stars: a quantified executed burn with reported quarter-cycle emission coverage is materially more informative than a routine three-star progress note. Five is not supported by this single cycle or the unachieved full-coverage goal.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://saygm.com/buybacks",
+              "label": "Official cycle-three burn ledger"
+            },
+            {
+              "url": "https://taostats.io/extrinsic/9519875-0006",
+              "label": "Successful SN28 burn execution"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "burn-report",
+            "consequence": "Four stars: a quantified executed burn with reported quarter-cycle emission coverage is materially more informative than a routine three-star progress note. Five is not supported by this single cycle or the unachieved full-coverage goal.",
+            "evidence": "Official cycle-three burn ledger; Successful SN28 burn execution",
+            "scope": "Operator cycle ledger plus successful linked execution.",
+            "uncertainty": "Exact native event amount still requires reconciliation; ledger amount explicitly attributed.",
+            "adjacentRatingReason": "Four stars: a quantified executed burn with reported quarter-cycle emission coverage is materially more informative than a routine three-star progress note. Five is not supported by this single cycle or the unachieved full-coverage goal."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": [
+        {
+          "headline": "Recall releases secondary validator and fixes miner connection heartbeat",
+          "summary": "Recall published its first public secondary-validator release on November 16 at 19:26 UTC. It verifies signed weight bundles from the master and submits weights using the operator’s registered hotkey. The release says it needs no GPU, database, open port or Recall API credentials. Verifying a signed bundle should not be confused with independently rescoring the underlying work.\n\nA separate miner release on November 17 at 07:14 UTC addresses silently stalled API connections. It introduces HTTP/2 health pings, closes idle connections after 60 seconds and creates a fresh connection following a failed request, without requiring miner configuration changes.\n\nThese are released operational tools and reliability changes. The release pages establish availability, not the number of operators that have upgraded.",
+          "rating": 3,
+          "ratingReason": "Three stars: meaningful validator participation tooling and miner reliability work exceed a minor two-star note. Four would overstate the demonstrated adoption and network impact.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://github.com/rec4ll-main/recall-validator/releases/tag/v1.20261116.00",
+              "label": "Official secondary-validator release"
+            },
+            {
+              "url": "https://github.com/rec4ll-main/recall-miner/releases/tag/v1.20261117.00",
+              "label": "Official miner heartbeat release"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "software-release",
+            "consequence": "Three stars: meaningful validator participation tooling and miner reliability work exceed a minor two-star note. Four would overstate the demonstrated adoption and network impact.",
+            "evidence": "Official secondary-validator release; Official miner heartbeat release",
+            "scope": "Public validator and miner releases.",
+            "uncertainty": "Upgrade adoption and independent rescoring not established.",
+            "adjacentRatingReason": "Three stars: meaningful validator participation tooling and miner reliability work exceed a minor two-star note. Four would overstate the demonstrated adoption and network impact."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": [
+        {
+          "headline": "It’s AI appoints Oliver Williamson to lead growth and sales",
+          "summary": "It’s AI announced on November 16 at 18:03 UTC that Oliver Williamson is joining as Head of Growth to lead growth and sales. The same announcement was shared by the team in its SN32 Discord channel.\n\nThe appointment adds a named commercial leader to the subnet’s AI-detection business. It does not establish new customers, revenue or a change in subnet ownership. References in the announcement to customers of Williamson’s previous employers are not presented as customers of It’s AI.",
+          "rating": 3,
+          "ratingReason": "Three stars: a named growth and sales leadership appointment is a meaningful organizational update beyond routine promotion. Four requires a more consequential operating change or demonstrated commercial outcome.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/ai_detection/status/2122390053561532816",
+              "label": "Official November 16 appointment announcement"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "team",
+            "consequence": "Three stars: a named growth and sales leadership appointment is a meaningful organizational update beyond routine promotion. Four requires a more consequential operating change or demonstrated commercial outcome.",
+            "evidence": "Official November 16 appointment announcement",
+            "scope": "Named commercial leadership appointment.",
+            "uncertainty": "No new revenue, customers or ownership change established.",
+            "adjacentRatingReason": "Three stars: a named growth and sales leadership appointment is a meaningful organizational update beyond routine promotion. Four requires a more consequential operating change or demonstrated commercial outcome."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Subnet 35",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "CADmind",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "Subnet 47",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": [
+        {
+          "headline": "Lium reports $50 million hardware footprint and $2.93 million in 30-day billings",
+          "summary": "Lium said on November 16 that its hosted hardware footprint had reached about $50 million, including 481 B300 GPUs and more than 25 GPU types. The statement describes hosted capacity, not hardware owned by the subnet or revenue earned.\n\nIts public dashboard, timestamped November 17 at 14:36:40 UTC, separately reported $2.93 million billed to renters, 1.21 million GPU-hours and 34,268 rentals over the previous 30 days, with 83% utilization for that period. These are operator-reported measurements, not independently audited profit.\n\nThe dated capacity announcement and current usage dashboard together provide a clearer operational picture than token price alone. The earlier October 22 figure of 91% rented is not used as a current utilization number, and the historical 481-B300 count should not be confused with a later live inventory snapshot.",
+          "rating": 4,
+          "ratingReason": "Four stars: substantial quantified capacity and customer-billing reporting exceeds routine three-star product maintenance. Five is not established by operator-reported scale alone.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/lium_io/status/2122426808213860594",
+              "label": "Lium November 16 hardware update"
+            },
+            {
+              "url": "https://lium.io/stats",
+              "label": "Official usage dashboard, November 17 14:36:40 UTC"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "usage-report",
+            "consequence": "Four stars: substantial quantified capacity and customer-billing reporting exceeds routine three-star product maintenance. Five is not established by operator-reported scale alone.",
+            "evidence": "Lium November 16 hardware update; Official usage dashboard, November 17 14:36:40 UTC",
+            "scope": "Dated hardware statement and separately timestamped 30-day operator dashboard.",
+            "uncertainty": "Reported billings are not audited revenue or profit; hardware value is not ownership.",
+            "adjacentRatingReason": "Four stars: substantial quantified capacity and customer-billing reporting exceeds routine three-star product maintenance. Five is not established by operator-reported scale alone."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": []
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Subnet 57",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Subnet 59",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": []
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Subnet 78",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Subnet 84",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": [
+        {
+          "headline": "REAX 1.3 appears in the models.dev DecisionModels directory",
+          "summary": "REAX announced its models.dev listing on November 16 at 11:04 UTC. The provider directory lists REAX 1.3 under DecisionModels, giving developers another place to discover the model and its published interface information.\n\nThis is a distribution and discoverability update for an existing model, not evidence that REAX 1.3 launched today. The team connects the model to SN92 miner fine-tuning and DecisionModels serving. A directory entry does not establish a partnership, usage milestone or paying-customer count.",
+          "rating": 3,
+          "ratingReason": "Three stars: developer discoverability and distribution merit coverage beyond a minor social note. Four would overstate a directory listing as a new capability or adoption milestone.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/reaxlabs/status/2122284562562834782",
+              "label": "REAX original listing announcement"
+            },
+            {
+              "url": "https://models.dev/providers/decisionmodels/",
+              "label": "DecisionModels provider directory"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "distribution",
+            "consequence": "Three stars: developer discoverability and distribution merit coverage beyond a minor social note. Four would overstate a directory listing as a new capability or adoption milestone.",
+            "evidence": "REAX original listing announcement; DecisionModels provider directory",
+            "scope": "Existing model listed under DecisionModels.",
+            "uncertainty": "No partnership or paid-use inference.",
+            "adjacentRatingReason": "Three stars: developer discoverability and distribution merit coverage beyond a minor social note. Four would overstate a directory listing as a new capability or adoption milestone."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Subnet 99",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Subnet 113",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": []
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "storyOrder": [
+    "Runtime 491 release fixes lock accounting and extends account controls",
+    "Taostats announces swaps between Ethereum assets and TAO or subnet alpha",
+    "Lium reports $50 million hardware footprint and $2.93 million in 30-day billings",
+    "SayGM ledger reports third-cycle burn equal to 25.2% of miner emissions",
+    "Recall releases secondary validator and fixes miner connection heartbeat",
+    "REAX 1.3 appears in the models.dev DecisionModels directory",
+    "It’s AI appoints Oliver Williamson to lead growth and sales"
+  ],
+  "coverage": {
+    "searched": [
+      "Official runtime release and merged implementation; Taostats launch announcement; Lium statement and dashboard; SayGM ledger and linked execution.",
+      "Recall releases, REAX original and provider directory, and It’s AI original announcement.",
+      "AlphaGap feed and bounded TAO Daily, Tao Outsider and 1t1b discovery; signed-in Grok discovery, attention and omission queries.",
+      "Bounded signed-in Discord reviews for SN3, SN24 and SN32."
+    ],
+    "gaps": [
+      "Initial edition: remaining outlet, required-account, fund/person, full-roster and Discord coverage is incomplete. Inclusion in the roster is not a claim that every channel was checked.",
+      "eTAO and burns finalized-event review has not been extended beyond retained verified coverage. Runtime semantics and exact burn-event reconciliation remain outstanding.",
+      "Gamma, owner holdings and registration continuity review remain incomplete; last-good data is preserved.",
+      "Market-move investigations and the full chart recheck remain open. No price cause is inferred from a team announcement."
+    ]
+  },
+  "publishedAt": "2026-11-17T15:09:12.521658+00:00"
+}
