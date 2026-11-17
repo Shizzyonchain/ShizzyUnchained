@@ -52,5 +52,5 @@ export async function GET(request: NextRequest) {
   const subnet = request.nextUrl.searchParams.get("netuid") || "";
   if (!/^\d{1,3}$/.test(subnet) || Number(subnet) < 1 || Number(subnet) > 128 || !intervals[interval]) return loadUncached(request);
   if (before !== null && (!Number.isSafeInteger(Number(before)) || Number(before) < 1609459200 || Number(before) > Date.now() / 1000 + 86400)) return loadUncached(request);
-  return chartResponse(`subnet:${Number(subnet)}:${interval}:${before === null ? "latest" : Number(before)}`, () => loadUncached(request));
+  return chartResponse(`subnet:${Number(subnet)}:${interval}:${before === null ? "latest" : Number(before)}`, () => loadUncached(request), before === null);
 }

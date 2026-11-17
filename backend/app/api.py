@@ -429,12 +429,9 @@ async def compact_candles(
     if cached and (now - cached["cached_at"]).total_seconds() < 30:
         return cached["payload"]
 
-    if cached:
-        if cache_key not in app.state.candle_refreshing:
-            app.state.candle_refreshing.add(cache_key)
-            asyncio.create_task(_refresh_candle_cache_in_background(cache_key, netuid, interval, limit))
-        return cached["payload"]
-
+    # Expired tails must wait for the bounded refresh. Returning an arbitrarily
+    # old snapshot here makes the first chart visit stale even with a live indexer.
+    # Concurrent readers share the task below; a failed refresh must surface.
     task = app.state.candle_tasks.get(cache_key)
     if task is None or task.done():
         task = asyncio.create_task(_refresh_candle_cache(cache_key, netuid, interval, limit))
