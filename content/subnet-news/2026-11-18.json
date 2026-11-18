@@ -1,0 +1,1024 @@
+{
+  "version": 1,
+  "date": "2026-11-18",
+  "title": "Bittensor Daily News: November 18, 2026",
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": []
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Allways",
+      "updates": []
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": []
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Subnet 16",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": [
+        {
+          "headline": "SN22 Desearch tightens request limits and reduces task-release overhead",
+          "summary": "Desearch merged a task-API fix on November 17. All request methods now count toward the per-IP read limit, including HEAD requests that were previously omitted. Excess polling is rejected before reaching Redis, and rate-limit counters move into memory.\n\nThe change also avoids reading entire task payloads during release. The pull request reports a reduction from roughly 8–24 milliseconds to about 0.2 milliseconds of Redis time in a local test using production-sized tasks. That is a specific component test, not an end-to-end service benchmark. A team reply on November 18 said the API change was live; independent production load testing was not performed.",
+          "rating": 3,
+          "ratingReason": "Three stars: meaningful request-control and task-release improvements exceed a minor two-star maintenance note. Four would overstate the scope of this bounded operational fix.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://github.com/Desearch-ai/subnet-22/pull/410",
+              "label": "Merged request-limit fix"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1189589759065067580/1572507206312661033",
+              "label": "Team deployment confirmation"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "software-release",
+            "consequence": "Three stars: meaningful request-control and task-release improvements exceed a minor two-star maintenance note. Four would overstate the scope of this bounded operational fix.",
+            "evidence": "Merged request-limit fix; Team deployment confirmation",
+            "scope": "Merged API controls and attributed deployment confirmation.",
+            "uncertainty": "Local timing is not production-wide performance; no independent load test.",
+            "adjacentRatingReason": "Three stars: meaningful request-control and task-release improvements exceed a minor two-star maintenance note. Four would overstate the scope of this bounded operational fix."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": [
+        {
+          "headline": "SN23 Trishool plans paid cyber inference and profit-funded alpha buybacks",
+          "summary": "Trishool has outlined Phase 4: a cyber-model business starting with paid inference for security teams, followed by miner-trained specialist models and eventually a larger model of its own. The team discussed the plan on November 17 and published its detailed Phase 4 article dated November 18.\n\nThe first proposed service is an unrestricted version of GLM 5.3, which the team says should arrive in two to three weeks. Later miner challenges would aim to produce smaller, cheaper cyber models. Those capabilities and the launch timetable remain goals, not completed results.\n\nTrishool says 100% of its profits would fund alpha buybacks. It describes inference and model licensing as potential income sources, with Astroware continuing as a separate company that could license the models. The distinction matters: this is a proposed link between a subnet business and its token, not evidence that customer revenue or buybacks have already begun.",
+          "rating": 4,
+          "ratingReason": "Four stars: a substantive change in product and commercial direction exceeds routine three-star roadmap maintenance. Five is not justified by a proposed launch and unexecuted economic model.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://trishool.ai/blog/phase-4",
+              "label": "Official Phase 4 plan"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1437447445176127618/1572520756452266055",
+              "label": "Owner clarification, November 18"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product-plan",
+            "consequence": "Four stars: a substantive change in product and commercial direction exceeds routine three-star roadmap maintenance. Five is not justified by a proposed launch and unexecuted economic model.",
+            "evidence": "Official Phase 4 plan; Owner clarification, November 18",
+            "scope": "Cyber inference and model-development plan with a profit allocation commitment.",
+            "uncertainty": "Service launch, model results, customer revenue and buybacks remain prospective.",
+            "adjacentRatingReason": "Four stars: a substantive change in product and commercial direction exceeds routine three-star roadmap maintenance. Five is not justified by a proposed launch and unexecuted economic model."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Subnet 26",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Subnet 35",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": []
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "deprecated",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": [
+        {
+          "headline": "SN41 Almanac changes duplicate-agent scoring to one skill claim per cluster",
+          "summary": "Almanac merged an update on November 16 that limits duplication across forecasting agents. Its documented upload rule rejects an agent already held by another registered hotkey, using a normalized fingerprint rather than merely comparing file names.\n\nThe scoring change groups sufficiently similar predictions and gives each cluster one skill claim, divided among its claimants. Allowance shares remain unchanged. The separate optional cluster penalty defaults to zero; it should not be described as an additional active penalty.\n\nThis catch-up matters to miners because copying the same strategy across more hotkeys no longer produces the same skill-claim treatment under the new code. The repository also publishes a historical replay, but that simulation is not a measurement of current live payouts.",
+          "rating": 3,
+          "ratingReason": "Three stars: a meaningful miner scoring and participation change exceeds two-star maintenance. Four would overstate the bounded demonstrated scope.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://github.com/corvxai/almanac/pull/68",
+              "label": "Merged scoring rules"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1263142301786574889/1571972447064825866",
+              "label": "Owner update, November 16"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "scoring-update",
+            "consequence": "Three stars: a meaningful miner scoring and participation change exceeds two-star maintenance. Four would overstate the bounded demonstrated scope.",
+            "evidence": "Merged scoring rules; Owner update, November 16",
+            "scope": "Merged duplicate-agent and cluster scoring rules.",
+            "uncertainty": "Historical replay is not current payout evidence; all-operator rollout not established.",
+            "adjacentRatingReason": "Three stars: a meaningful miner scoring and participation change exceeds two-star maintenance. Four would overstate the bounded demonstrated scope."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 42,
+      "name": "CADmind",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "Subnet 47",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": [
+        {
+          "headline": "SN51 Lium says usage revenue funded its recent buybacks and burns",
+          "summary": "Lium representative Fish said on November 18 that the team’s buybacks and burns totaled roughly $3.3 million over the preceding week. Asked explicitly whether the funding came from usage revenue or protocol emissions, Fish replied that it was all from usage revenue.\n\nThat is a material distinction for SN51: the team is describing customer-funded token purchases, rather than treating emissions as customer revenue. The statement is directly attributable to the team, but the dollar valuation, revenue accounting and complete transaction set have not been independently reconciled.\n\nThe separate circulating claim of an 82,159-alpha burn is still awaiting a verified event and execution record in this report. It is not included as a confirmed transaction in our burns archive. TAO used to purchase alpha must also be distinguished from TAO destroyed: buying and burning alpha does not establish that the purchase-input TAO was burned.",
+          "rating": 4,
+          "ratingReason": "Four stars: a specific team statement connecting customer revenue to token purchases is economically material. Five is not justified without independent financial and transaction reconciliation.",
+          "status": "developing",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1291754566957928469/1572486068983435416",
+              "label": "Lium representative’s weekly buyback statement, November 18"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1291754566957928469/1572588937669509164",
+              "label": "Lium clarification that funding came from usage revenue"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "team-reported-revenue",
+            "consequence": "Four stars: a specific team statement connecting customer revenue to token purchases is economically material. Five is not justified without independent financial and transaction reconciliation.",
+            "evidence": "Original team-channel statement and explicit revenue-versus-emission clarification.",
+            "scope": "Attributed team claim; not a verified transaction total or audited revenue.",
+            "uncertainty": "Independent accounting, dollar valuation and finalized transaction reconciliation remain incomplete.",
+            "adjacentRatingReason": "Four stars: a specific team statement connecting customer revenue to token purchases is economically material. Five is not justified without independent financial and transaction reconciliation."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": [
+        {
+          "headline": "SN53 Engy assigns 80% of miner rewards to baseline capacity",
+          "summary": "Engy announced a new reward model scheduled from epoch 23, November 18 at 08:00 UTC: 80% for baseline capacity and 20% for buyer traffic. Previously, the team says, all rewards followed traffic. The baseline pool pays enrolled servers for staying online and serving assigned models even when buyer demand is lower.\n\nWithin that pool, eight-GPU B300 servers receive a 70% allocation and eight-GPU B200 servers 30%. Uptime is sampled every five minutes; an empty hardware class burns its share. The existing quality-gated traffic pool remains open to all miners. The published structure and scheduled start are verified; individual reward settlement has not been independently reconstructed.\n\nSeparately, DeepSeek V4.1 Flash prices are due to double on November 21 at 00:00 UTC: input from $0.03 to $0.06 per million tokens, and output from $0.12 to $0.24. Cached-input pricing is unchanged. Engy attributes the adjustment to sustainable capacity and reliable service.",
+          "rating": 4,
+          "ratingReason": "Four stars: moving most miner rewards from traffic to capacity materially changes operator economics, beyond routine three-star maintenance. Five is not supported by broader network consequences.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1499471917185368247/1572153953737768980",
+              "label": "Owner baseline-pool announcement"
+            },
+            {
+              "url": "https://github.com/hanlinai/engy/blob/main/docs/SN53_ONE_PAGER.md",
+              "label": "Official miner documentation"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1499471917185368247/1572326034064408668",
+              "label": "Owner pricing announcement"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "incentive-model",
+            "consequence": "Four stars: moving most miner rewards from traffic to capacity materially changes operator economics, beyond routine three-star maintenance. Five is not supported by broader network consequences.",
+            "evidence": "Owner baseline-pool announcement; Official miner documentation; Owner pricing announcement",
+            "scope": "Announced SN53 reward allocation and future API pricing.",
+            "uncertainty": "Scheduled implementation and documentation verified; per-server payouts not independently reconstructed.",
+            "adjacentRatingReason": "Four stars: moving most miner rewards from traffic to capacity materially changes operator economics, beyond routine three-star maintenance. Five is not supported by broader network consequences."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": []
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Subnet 57",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Subnet 59",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": []
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": []
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": []
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Subnet 78",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Subnet 84",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": [
+        {
+          "headline": "SN85 Vidaio launches updated video Studio with AI tools and integrations",
+          "summary": "Vidaio announced its updated product on November 17, including a browser Studio that identifies issues in uploaded footage, Pro upscaling, compression and object removal. The launch also offers an API and connections to AI assistants such as Claude and ChatGPT.\n\nThe live product website describes a workflow for applying tools, comparing the result and downloading or sharing the output. Developers can integrate compression and upscaling into their own applications, while the assistant connector provides another route into the toolset.\n\nThis is a product-release announcement, not just a redesigned homepage. The public site and original announcement were checked; a paid processing job, output-quality comparison and every advertised tool were not independently tested.",
+          "rating": 4,
+          "ratingReason": "Four stars: a concrete expansion of the user-facing video product exceeds a cosmetic website refresh. Five would require stronger evidence of broad adoption or independently demonstrated performance.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/vidaio_/status/2122749098126197151",
+              "label": "Official November 17 product announcement"
+            },
+            {
+              "url": "https://vidaio.io/",
+              "label": "Live product and integration overview"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product-release",
+            "consequence": "Four stars: a concrete expansion of the user-facing video product exceeds a cosmetic website refresh. Five would require stronger evidence of broad adoption or independently demonstrated performance.",
+            "evidence": "Official November 17 product announcement; Live product and integration overview",
+            "scope": "Published product or identity announcement with qualified implementation scope.",
+            "uncertainty": "Feature availability is team announced; processing quality and all tools not independently tested.",
+            "adjacentRatingReason": "Four stars: a concrete expansion of the user-facing video product exceeds a cosmetic website refresh. Five would require stronger evidence of broad adoption or independently demonstrated performance."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": [
+        {
+          "headline": "SN97 Ingot expands terminal evaluation data and standardizes task formats",
+          "summary": "Ingot’s team said its evaluation update went live on November 17 at 2:01 PM Eastern, following a temporary pause. The announcement reports ten times as many terminal trajectories, each with more than ten turns, alongside format standardization and task-text fixes affecting software-engineering and science evaluations.\n\nIngot rewards compressed copies of a reference model that preserve its behavior. A broader evaluation set changes how those submissions are compared; ten times more trajectories does not mean models became ten times better. The dataset-size increase is attributed to the team, while the public repository documents the evaluation system.",
+          "rating": 3,
+          "ratingReason": "Three stars: a substantial evaluation-set expansion affects miner comparison and exceeds minor two-star housekeeping. Four is not warranted by a bounded evaluation change alone.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1482026267392868583/1572325951734546585",
+              "label": "Team evaluation update"
+            },
+            {
+              "url": "https://github.com/DendriteLabs/ingot/blob/main/llms.txt",
+              "label": "Official mining and evaluation documentation"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "evaluation-update",
+            "consequence": "Three stars: a substantial evaluation-set expansion affects miner comparison and exceeds minor two-star housekeeping. Four is not warranted by a bounded evaluation change alone.",
+            "evidence": "Team evaluation update; Official mining and evaluation documentation",
+            "scope": "Team-announced evaluation rollout.",
+            "uncertainty": "Dataset multiplier is team reported, not an independently reproduced performance result.",
+            "adjacentRatingReason": "Three stars: a substantial evaluation-set expansion affects miner comparison and exceeds minor two-star housekeeping. Four is not warranted by a bounded evaluation change alone."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Axonry",
+      "updates": [
+        {
+          "headline": "SN99 identifies as Axonry and publishes a weight-editing competition",
+          "summary": "Axonry’s own website now identifies the project as Bittensor Subnet 99, replacing the unnamed slot in our previous report roster. Its public repository describes a competition in which AI agents improve language models by directly editing their weights. This verifies the current project identity, not a reconstructed registration or ownership-transfer event.\n\nMiners submit a method and commit it on chain before publishing it. Accepted entries run in isolated GPU environments, with edits compared against a current champion. The repository says a successful challenger must avoid meaningful regression and improve at least two benchmarks; the champion receives the subnet’s scoring weight.\n\nThe website names Arbos as a partner and describes its GPU sandboxes. Those are project statements; this review has not reproduced the advertised research results or verified settlement of competition rewards.",
+          "rating": 4,
+          "ratingReason": "Four stars: a verified subnet identity and concrete operating model merit the established major-name-change priority. Five is not supported by independently reproduced results or broad adoption.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://axonry.ai/",
+              "label": "Official SN99 identity and product page"
+            },
+            {
+              "url": "https://github.com/AxOrganization/axonry",
+              "label": "Official competition repository"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "subnet-identity",
+            "consequence": "Four stars: a verified subnet identity and concrete operating model merit the established major-name-change priority. Five is not supported by independently reproduced results or broad adoption.",
+            "evidence": "Official SN99 identity and product page; Official competition repository",
+            "scope": "Published product or identity announcement with qualified implementation scope.",
+            "uncertainty": "Exact chain identity-change time and live reward execution remain unverified.",
+            "adjacentRatingReason": "Four stars: a verified subnet identity and concrete operating model merit the established major-name-change priority. Five is not supported by independently reproduced results or broad adoption."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": [
+        {
+          "headline": "SN104 TAOstatus announces automatic agent selection for repository security audits",
+          "summary": "TAOstatus announced an automated repository-auditing workflow on November 16. Its official post describes submitting a Git repository, automatically assigning a security agent, assessing vulnerabilities and returning a report with severity levels and suggested fixes.\n\nThe practical change is removing manual agent selection from the stated customer workflow. This is a dated catch-up on the product announcement, not a claim that it launched on November 18. The announcement establishes what the team offers; it does not establish that every finding is correct or that a customer scan provides a demonstrated exploit. No repository was submitted during this review.",
+          "rating": 3,
+          "ratingReason": "Three stars: a concrete customer-workflow improvement exceeds a minor two-star note. Four would overstate the verified scope of automatic selection without a broader new capability established.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/taostatus_ai/status/2122384381226737731",
+              "label": "Official November 16 workflow announcement"
+            },
+            {
+              "url": "https://taostatus.com/",
+              "label": "Official product website"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product-update",
+            "consequence": "Three stars: a concrete customer-workflow improvement exceeds a minor two-star note. Four would overstate the verified scope of automatic selection without a broader new capability established.",
+            "evidence": "Official November 16 workflow announcement; Official product website",
+            "scope": "Official automated-audit workflow announcement.",
+            "uncertainty": "No customer scan or independent assessment of vulnerability accuracy performed.",
+            "adjacentRatingReason": "Three stars: a concrete customer-workflow improvement exceeds a minor two-star note. Four would overstate the verified scope of automatic selection without a broader new capability established."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Finsight",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": []
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Subnet 113",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": [
+        {
+          "headline": "SN114 SOMA announces competition results and plans a higher burn allocation",
+          "summary": "SOMA announced its completed competition review on November 17, assigning the winning five hotkeys shares of 40%, 25%, 15%, 10% and 10% of that result’s weights. Its earlier announcement said the winning compressor would become the default after review; availability of that default was not independently confirmed.\n\nThe owner separately proposed an allocation change in two weeks: burn from 11% to 19% and miners from 41% to 33%, with validators at 30% and owner at 18%. This is a future emission-allocation plan, not an already executed transaction burn or a reduction of TAO pool liquidity.\n\nFor participants, the distinction is timing: the competition review is finished, while the proposed allocation change still lies ahead.",
+          "rating": 3,
+          "ratingReason": "Three stars: completed competition results and a specified future allocation change merit useful coverage beyond a minor note. The competition cap applies, and the planned change is not execution.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1460644425813328004/1572253647889367043",
+              "label": "Owner competition results"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1460644425813328004/1572258531267055688",
+              "label": "Owner two-week allocation plan"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "routine-competition",
+            "consequence": "Three stars: completed competition results and a specified future allocation change merit useful coverage beyond a minor note. The competition cap applies, and the planned change is not execution.",
+            "evidence": "Owner competition results; Owner two-week allocation plan",
+            "scope": "Team-reviewed competition outcome and proposed allocation adjustment.",
+            "uncertainty": "Future allocation not independently observed on chain; new default availability not confirmed.",
+            "adjacentRatingReason": "Three stars: completed competition results and a specified future allocation change merit useful coverage beyond a minor note. The competition cap applies, and the planned change is not execution."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": []
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": []
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": [
+        {
+          "headline": "SN120 Affine launches eight-slot model competition with 10% of emissions",
+          "summary": "Affine announced Slots live on November 17 at 8:04 PM Eastern. The new competition allocates 10% of SN120 emissions to its winning model, while the existing v2 mechanism retains 90%. Its public dashboard was operating during the November 18 review, showing all eight model slots occupied.\n\nEach slot uses one GPU and lasts eight hourly cycles. Registered SN120 hotkeys can join a queue; a replacement starts from a fresh copy of the current winner. At the end of its tenure, a challenger is compared with that winner on the same tasks. A challenger receives no reward until crowned. This offers a different participation route from simply changing the existing leaderboard.\n\nAffine also merged a separate evaluation-sampling change on November 17. The team reports that its offline comparison used roughly 12% to 15% fewer tasks. That is an evaluation-efficiency claim, not a corresponding improvement in model intelligence.",
+          "rating": 3,
+          "ratingReason": "Three stars: a live, meaningfully different miner competition and evaluation update, above a minor two-star note. The standing routine-competition cap prevents four-star inflation.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://affine.io/slots",
+              "label": "Live Slots dashboard and rules"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1381987595881414656/1572417140995137617",
+              "label": "Team launch announcement"
+            },
+            {
+              "url": "https://github.com/AffineFoundation/affine/pull/270",
+              "label": "Merged evaluation-sampling update"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "routine-competition",
+            "consequence": "Three stars: a live, meaningfully different miner competition and evaluation update, above a minor two-star note. The standing routine-competition cap prevents four-star inflation.",
+            "evidence": "Live Slots dashboard and rules; Team launch announcement; Merged evaluation-sampling update",
+            "scope": "Slots availability, documented rules and a separate sampling update.",
+            "uncertainty": "Dashboard availability verified; operator participation and offline efficiency claims are not independently audited.",
+            "adjacentRatingReason": "Three stars: a live, meaningfully different miner competition and evaluation update, above a minor two-star note. The standing routine-competition cap prevents four-star inflation."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": [
+        {
+          "headline": "SN124 Swarm merges Andorra Test Field task and validator safeguards",
+          "summary": "Swarm merged its Test Field update on November 17. The new drone task uses a map of its real test site in Santa Coloma, Andorra: take off, locate people, report their positions and land while respecting altitude and boundary limits. The implementation specifies 5% of rewards for Test Field and 95% for Sentinel.\n\nThe same change hardens evaluation isolation, expands world-seed generation and adds automatic recovery for stalled validator connections. These are concrete code changes affecting task integrity and reliability, alongside the new competition.\n\nA merged implementation does not prove every validator has upgraded or that a successful physical field test has occurred. The team’s November 17 announcement described the first field test as still being prepared.",
+          "rating": 4,
+          "ratingReason": "Four stars: substantive evaluation safeguards alongside a new task exceed routine three-star competition news. Five is not supported by a network-wide impact or demonstrated field deployment.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://github.com/swarm-subnet/swarm/pull/244",
+              "label": "Merged Test Field and validator update"
+            },
+            {
+              "url": "https://x.com/SwarmSubnet/status/2122721425035579599",
+              "label": "Official Andorra Test Field announcement"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "software-security",
+            "consequence": "Four stars: substantive evaluation safeguards alongside a new task exceed routine three-star competition news. Five is not supported by a network-wide impact or demonstrated field deployment.",
+            "evidence": "Merged Test Field and validator update; Official Andorra Test Field announcement",
+            "scope": "Merged Test Field and validator-hardening implementation.",
+            "uncertainty": "Fleet-wide upgrade and successful physical field test are not established.",
+            "adjacentRatingReason": "Four stars: substantive evaluation safeguards alongside a new task exceed routine three-star competition news. Five is not supported by a network-wide impact or demonstrated field deployment."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "ecosystem": [],
+  "rosterNote": "Carried working roster from November 17. Current registration/identity refresh pending.",
+  "summary": "Vidaio launches its updated video Studio. SN99 identifies as Axonry, Trishool outlines cyber inference, Lium attributes buybacks to usage revenue, and Engy changes miner economics. Twelve stories cover products, subnet identity and operational updates.",
+  "publishedAt": "2026-11-18T15:04:33.456756+00:00",
+  "coverageStart": "2026-11-17T15:35:26.001982+00:00",
+  "coverageEnd": "2026-11-18T15:12:19.758529+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "storyOrder": [
+    "SN85 Vidaio launches updated video Studio with AI tools and integrations",
+    "SN99 identifies as Axonry and publishes a weight-editing competition",
+    "SN23 Trishool plans paid cyber inference and profit-funded alpha buybacks",
+    "SN51 Lium says usage revenue funded its recent buybacks and burns",
+    "SN53 Engy assigns 80% of miner rewards to baseline capacity",
+    "SN120 Affine launches eight-slot model competition with 10% of emissions",
+    "SN124 Swarm merges Andorra Test Field task and validator safeguards",
+    "SN104 TAOstatus announces automatic agent selection for repository security audits",
+    "SN41 Almanac changes duplicate-agent scoring to one skill claim per cluster",
+    "SN114 SOMA announces competition results and plans a higher burn allocation",
+    "SN97 Ingot expands terminal evaluation data and standardizes task formats",
+    "SN22 Desearch tightens request limits and reduces task-release overhead"
+  ],
+  "coverage": {
+    "searched": [
+      "Early discovery across AlphaGap, SubnetRadar, TAO Daily, TAO.com, Taosis, 1t1b, CoinAsia and Tao Outsider; bounded direct Discord and original-source follow-up.",
+      "Primary announcements, repositories and product pages for all included stories. Grok discovery and attention completed; omission reconciliation recorded separately."
+    ],
+    "gaps": [
+      "Remaining full-roster Discord, ecosystem-account, fund/person, media and market-move investigations are incomplete; a roster entry does not mean every source was reviewed.",
+      "eTAO and burns archive extension remains blocked by the collector runtime-review guard. Last verified archives are preserved; no complete current event scan is claimed.",
+      "Owner-holdings refresh attempted but stopped at its runtime-schema guard. Last-good holdings remain dated; Gamma and lifecycle reconciliation remain incomplete."
+    ]
+  }
+}
