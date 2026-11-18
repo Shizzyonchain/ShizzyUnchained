@@ -197,7 +197,39 @@
     {
       "netuid": 28,
       "name": "SayGM",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN28 SayGM adds GPT-6.2 Astra and Sol to its model catalogue",
+          "summary": "SayGM announced support for GPT-6.2 Astra and Sol on November 17. Both appear in its current model catalogue, and the dedicated Astra page provides API instructions, provider rates and recent usage figures. Those measurements are reported by SayGM; this review did not perform a paid API call.\n\nThe announcement quoted a 12.4% discount, while the current Astra page shows different rates across providers. Prices vary rather than representing a fixed saving on every request. SayGM also distinguishes its sealed gateway from the upstream model: frontier providers receive prompts under their own API terms. The listing does not mean OpenAI inference runs inside SayGM’s enclave.\n\nThe announcement’s combined model link returned 404 during review, but the model catalogue and dedicated Astra page were accessible.",
+          "rating": 3,
+          "ratingReason": "Three stars: a useful expansion of an existing model gateway. A routine catalogue addition does not establish a strategic partnership or a new inference architecture deserving four.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/say_gm_/status/2122811286379769925",
+              "label": "November 17 team announcement"
+            },
+            {
+              "url": "https://saygm.com/models",
+              "label": "Current model catalogue"
+            },
+            {
+              "url": "https://saygm.com/models/gpt-6.2-astra",
+              "label": "Astra pricing and routing disclosure"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "model-catalogue-update",
+            "consequence": "Adds model choices for existing gateway users.",
+            "evidence": "Original dated team post and current catalogue/model page.",
+            "scope": "Announced and publicly listed support; no partnership claim.",
+            "uncertainty": "No independent paid inference, pricing benchmark or enclave attestation test.",
+            "adjacentRatingReason": "Three stars: a useful expansion of an existing model gateway. A routine catalogue addition does not establish a strategic partnership or a new inference architecture deserving four."
+          }
+        }
+      ]
     },
     {
       "netuid": 29,
@@ -990,10 +1022,10 @@
   ],
   "ecosystem": [],
   "rosterNote": "Carried working roster from November 17. Current registration/identity refresh pending.",
-  "summary": "Vidaio launches its updated video Studio. SN99 identifies as Axonry, Trishool outlines cyber inference, Lium attributes buybacks to usage revenue, and Engy changes miner economics. Twelve stories cover products, subnet identity and operational updates.",
+  "summary": "Vidaio launches its updated video Studio. SN99 identifies as Axonry, Trishool outlines cyber inference, Lium attributes buybacks to usage revenue, and Engy changes miner economics. Thirteen stories cover products, subnet identity and operational updates.",
   "publishedAt": "2026-11-18T15:04:33.456756+00:00",
   "coverageStart": "2026-11-17T15:35:26.001982+00:00",
-  "coverageEnd": "2026-11-18T15:12:19.758529+00:00",
+  "coverageEnd": "2026-11-18T15:41:33.702862+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "storyOrder": [
@@ -1008,7 +1040,8 @@
     "SN41 Almanac changes duplicate-agent scoring to one skill claim per cluster",
     "SN114 SOMA announces competition results and plans a higher burn allocation",
     "SN97 Ingot expands terminal evaluation data and standardizes task formats",
-    "SN22 Desearch tightens request limits and reduces task-release overhead"
+    "SN22 Desearch tightens request limits and reduces task-release overhead",
+    "SN28 SayGM adds GPT-6.2 Astra and Sol to its model catalogue"
   ],
   "coverage": {
     "searched": [
