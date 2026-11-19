@@ -837,7 +837,31 @@
     {
       "netuid": 116,
       "name": "Carbon",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN116 Carbon continues grading fixes after queue bottlenecks",
+          "summary": "Carbon says it is still addressing grading bugs and improving speed on SN116. In its November 19 morning Discord update, the team said it wanted several smooth days of operation before judging the system’s health and capacity.\n\nThe update follows a November 17 report of roughly 50 grades an hour and a resolved grading stall that evening. On November 18, the team said it had separated model building from grading, reused connections to reduce timeouts and added automatic retries for infrastructure failures. Those failures are not charged to miners, according to the team.\n\nCarbon also clarified on November 19 that a retry after an infrastructure failure keeps its original queue position and does not consume a new daily slot. A proposed threefold speed-up was part of the earlier upgrade plan; this review has not independently measured that gain or established full recovery.",
+          "rating": 3,
+          "ratingReason": "Three stars: grading capacity, retry handling and persistent reliability problems materially affect miners beyond minor maintenance. Four would overstate this bounded operational update without a new major capability.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1511009214540157088",
+              "label": "Official Carbon channel: November 17–19 team updates"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operational-update",
+            "consequence": "Miner grading throughput, queue position and daily-slot handling.",
+            "evidence": "Original Carbon team updates read directly in Discord; dated private captures retained.",
+            "scope": "SN116 grading and infrastructure retries, November 17–19.",
+            "uncertainty": "Throughput and recovery are team-reported; planned speed-up not independently measured.",
+            "adjacentRatingReason": "Three stars: grading capacity, retry handling and persistent reliability problems materially affect miners beyond minor maintenance. Four would overstate this bounded operational update without a new major capability."
+          }
+        }
+      ]
     },
     {
       "netuid": 117,
@@ -961,7 +985,7 @@
   "summary": "SayGM announces Gamma-funded AI credits. Beam supports customer AWS deployments, Vanta reports a live signal model and Optia launches AI visibility tools. Also: Grayscale share placements, three research updates, REAX on Opper, Axonry mining and Affine changes.",
   "publishedAt": "2026-11-19T15:07:50.596687+00:00",
   "coverageStart": "2026-11-18T15:41:33.702862+00:00",
-  "coverageEnd": "2026-11-19T15:10:56.179070+00:00",
+  "coverageEnd": "2026-11-19T15:28:07.318292+00:00",
   "highlights": [],
   "upcomingUnlocks": [],
   "storyOrder": [
@@ -975,7 +999,8 @@
     "SN15 ORO finds three of 16 models beat a simple reorder rule",
     "SN92 REAX 1.3 becomes available through Opper’s EU model gateway",
     "SN120 Affine retires Slots and pauses task rotation after its first round",
-    "SN99 Axonry reports its first champion as mining opens"
+    "SN99 Axonry reports its first champion as mining opens",
+    "SN116 Carbon continues grading fixes after queue bottlenecks"
   ],
   "coverage": {
     "searched": [
