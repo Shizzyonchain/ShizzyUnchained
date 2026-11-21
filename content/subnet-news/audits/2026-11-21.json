@@ -1,0 +1,5234 @@
+{
+  "date": "2026-11-21",
+  "status": "PREPARED_WITH_GAPS",
+  "coverageComplete": false,
+  "publicationComplete": false,
+  "pendingLeads": [
+    {
+      "netuid": 23,
+      "topic": "Trishool Phase 4 paid cyber inference and profit-funded buyback plan",
+      "status": "PRIMARY_ANNOUNCEMENT_VERIFIED",
+      "source": "https://trishool.ai/blog/phase-4",
+      "evidence": [
+        "discord-sn23-early.txt",
+        "trishool-phase4-primary.txt"
+      ],
+      "details": "Nav announced Nov17 09:03 ET; Nov18 02:56 ET says inference mining starts in 2-3 weeks, decentralized training details follow stabilization. Blog displays Nov18. Proposed products/buybacks, not current revenue or executed purchases. Launch video not inspected. No story in Nov15-17 editions.",
+      "disposition": "included-with-scope-and-date-qualifications"
+    },
+    {
+      "netuid": 53,
+      "topic": "Engy baseline capacity pool and DeepSeek pricing change",
+      "status": "PRIMARY_ANNOUNCEMENT_VERIFIED",
+      "source": "https://discord.com/channels/799672011265015819/1499471917185368247/1572153953737768980",
+      "evidence": [
+        "discord-sn53-early.txt"
+      ],
+      "details": "Owner crabby announced Nov17: epoch23 Nov18 08:00UTC split 80% baseline/20% traffic; baseline B300 70%,B200 30%. Repository corroborates structure. Separately Nov21 00:00UTC input .03 to .06 and output .12 to .24 USD/million; cached unchanged. Scheduled effect not independently observed. Refresh five-day eligibility condition and price comparator. Nov17 edition omitted.",
+      "disposition": "included-with-scope-and-date-qualifications"
+    },
+    {
+      "netuid": 41,
+      "topic": "Almanac duplicate agents and shared cluster skill claims",
+      "status": "PRIMARY_ANNOUNCEMENT_VERIFIED",
+      "source": "https://github.com/corvxai/almanac/pull/68",
+      "evidence": [
+        "discord-sn41-early.txt",
+        "alphagap-sn41.txt"
+      ],
+      "details": "Nov16 14:37 ET owner announcement and merged PR68. One agent per hotkey, near-identical predictions share skill claim, additional penalty currently zero. Catch-up original Nov16, not new Nov18 launch. Not in Nov15-17 stories.",
+      "disposition": "included-with-scope-and-date-qualifications"
+    },
+    {
+      "netuid": 92,
+      "topic": "REAX contract, training competition and product plans",
+      "status": "PRIMARY_STATEMENT_VERIFIED_DETAILS_PENDING",
+      "source": "https://discord.com/channels/799672011265015819/1551633427038736454/1572313466532790283",
+      "evidence": [
+        "discord-sn92-early.txt"
+      ],
+      "details": "Florian Nov17 13:12-14:24 ET promises contract details likely tomorrow, competition news and product additions next days; describes coldkey swap as security improvement. Plans only, no signed contract or executed swap verified. Recheck Nov18."
+    },
+    {
+      "netuid": 31,
+      "topic": "Recall secondary validator and heartbeat release",
+      "status": "ALREADY_COVERED",
+      "source": "https://github.com/rec4ll-main/recall-validator/releases/tag/v1.20261116.00",
+      "details": "Exact releases already in Nov17 report. Do not duplicate."
+    },
+    {
+      "netuid": 124,
+      "topic": "Swarm Test Field and validator safeguards",
+      "status": "MERGED_PRIMARY_VERIFIED",
+      "source": "https://github.com/swarm-subnet/swarm/pull/244",
+      "details": "PR244 confirmed merged November17 in morning refresh. Earlier open status superseded; deployment-wide execution remains unverified. Published technical scope only.",
+      "evidence": [
+        "discord-sn124-early.txt",
+        "grok-early-response.txt"
+      ],
+      "disposition": "included-with-scope-and-date-qualifications"
+    },
+    {
+      "netuid": 55,
+      "topic": "NIOME operational follow-up",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://subnetradar.com/subnet-news/55/2026-11-18",
+      "details": "Unverified lead retained privately for further review. No incident allegation published."
+    },
+    {
+      "netuid": 120,
+      "topic": "Affine incentive rework and stalled round",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://subnetradar.com/subnet-news/120/2026-11-18",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts.",
+      "disposition": "included-with-scope-and-date-qualifications"
+    },
+    {
+      "netuid": 44,
+      "topic": "Score dirtiness pool pause and flagged blocks",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://subnetradar.com/news?tab=subnets",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 61,
+      "topic": "RedTeam buyback and challenge updates",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://subnetradar.com/news?tab=subnets",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 114,
+      "topic": "SOMA review and burn setting",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://subnetradar.com/news?tab=subnets",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts.",
+      "disposition": "included-with-scope-and-date-qualifications"
+    },
+    {
+      "netuid": 94,
+      "topic": "Cathedral mining availability and sandbox controls",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://subnetradar.com/news?tab=subnets",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 15,
+      "topic": "ORO sandbox changes",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://www.alphagap.io/feed",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 81,
+      "topic": "Reliquary training marketplace changes",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://www.alphagap.io/feed",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 71,
+      "topic": "Leadpoet validator scoring fixes",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://www.alphagap.io/feed",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 117,
+      "topic": "Everyframe miner persistence fix",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://www.alphagap.io/feed",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 51,
+      "topic": "Lium rental security fixes",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://www.alphagap.io/feed",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 66,
+      "topic": "Conjectures new formal problems",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://www.alphagap.io/feed",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 56,
+      "topic": "Gradients API and Nov23 compression competition",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://subnetradar.com/news?tab=subnets",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 102,
+      "topic": "ConnitoAI burn reversals",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://taosis.com/",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 91,
+      "topic": "Cascade burn changes",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://taosis.com/",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 35,
+      "topic": "SN35 scheduled coldkey swap and identity reconciliation",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://taosis.com/",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 34,
+      "topic": "SN34 scheduled coldkey swap",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://taosis.com/",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts."
+    },
+    {
+      "netuid": 104,
+      "topic": "TAOstatus automatic agent assignment and static-scan scope",
+      "status": "UNVERIFIED_LEAD",
+      "source": "https://x.com/taostatus_ai/status/2122384381226737731",
+      "details": "Discovery lead only. Verify original date, identity, full primary statement/release and prior coverage before publication. Sources differ by lead; inspect original saved outlet evidence and Nov17 pending receipts.",
+      "disposition": "included-with-scope-and-date-qualifications"
+    },
+    {
+      "netuid": 99,
+      "disposition": "added",
+      "reason": "Primary source verified and included; broader source inventory remains open."
+    },
+    {
+      "netuid": 110,
+      "disposition": "unverified",
+      "reason": "Emission pause and team response require chain/source verification; no allegations cleared"
+    },
+    {
+      "netuid": 116,
+      "disposition": "added",
+      "reason": "Carbon operational chronology verified directly and included; wider source review remains incomplete."
+    },
+    {
+      "netuid": 47,
+      "disposition": "added",
+      "reason": "Primary source verified and included; broader source inventory remains open."
+    },
+    {
+      "netuid": 3,
+      "disposition": "unverified",
+      "reason": "Coldkey rotation requires finalized review; not evidence of new beneficial owner"
+    },
+    {
+      "disposition": "added",
+      "reason": "Primary source verified and included; broader source inventory remains open."
+    },
+    {
+      "disposition": "unverified",
+      "reason": "SN110 emission allegations, SN39 identity, SN84/109 registration, SN119 split and remaining fund reports require original and finalized evidence; no allegations published."
+    },
+    {
+      "topic": "SN55 scoring allegations, SN120 Gamma execution, SN91 Hippius costs, SN39 identity, SN84/109 registrations, SN119 splits",
+      "disposition": "unverified",
+      "reason": "Original or finalized evidence incomplete; allegations not published."
+    },
+    {
+      "topic": "Yuma IRIS AI video",
+      "disposition": "unverified",
+      "reason": "Original Nov19 video found, full audiovisual review pending. Do not infer a product launch from its caption."
+    },
+    {
+      "topic": "SN55 scoring allegations, SN120 Gamma execution, SN91 Hippius costs, SN39 identity, SN84/109 registrations, SN119 splits",
+      "disposition": "unverified",
+      "reason": "Original or finalized evidence incomplete; allegations not published."
+    },
+    {
+      "topic": "Yuma IRIS AI video",
+      "disposition": "unverified",
+      "reason": "Original Nov19 video found, full audiovisual review pending. Do not infer a product launch from its caption."
+    },
+    {
+      "topic": "SN17 404 Atlas / Parallel promotion",
+      "disposition": "unverified",
+      "reason": "Original post read; its Atlas customer quote does not independently establish Parallel use of Titan. Further counterparty verification pending."
+    },
+    {
+      "topic": "SN91 Hippius costs",
+      "disposition": "added",
+      "reason": "Original November 20 case study read and included as supplier-published customer-attributed migration; invoices not audited."
+    }
+  ],
+  "preparedAt": "2026-11-21T15:14:02.761214+00:00",
+  "dailyWorkflowComplete": false,
+  "sourceChecklist": "site-audit-2026-11-21/news-10-to-11-checklist.json",
+  "chainReviews": {
+    "etao": {
+      "status": "BLOCKED",
+      "checkedAt": "2026-11-21T14:07:32.183842+00:00",
+      "evidence": "public/evidence/news-review-2026-11-21.json",
+      "reason": "BLOCKED: configured RPC WebSocket timed out",
+      "newsDisposition": "Disclose etao and burns gaps and preserve last-good archives.",
+      "archiveUpdated": false
+    },
+    "burns": {
+      "status": "BLOCKED",
+      "checkedAt": "2026-11-21T14:07:32.183842+00:00",
+      "evidence": "public/evidence/news-review-2026-11-21.json",
+      "reason": "BLOCKED: configured RPC WebSocket timed out",
+      "newsDisposition": "Disclose etao and burns gaps and preserve last-good archives.",
+      "archiveUpdated": false
+    }
+  },
+  "ownerHoldings": {
+    "status": "BLOCKED",
+    "checkedAt": "2026-11-21T14:07:32.183842+00:00",
+    "evidence": "public/evidence/news-review-2026-11-21.json",
+    "reason": "BLOCKED: configured RPC WebSocket closed during connection"
+  },
+  "gammaReview": {
+    "status": "BLOCKED",
+    "reason": "Full intervening event reconciliation incomplete. Runtime release verified separately; no consumption claims."
+  },
+  "marketReview": {
+    "observedAt": "2026-11-21T14:03:24Z",
+    "source": "https://shizzyunchained.com/api/backend/v1/screener",
+    "rows": [
+      {
+        "netuid": 51,
+        "change24hPct": -1.139654985739575,
+        "change7dPct": 4.820818408717585
+      },
+      {
+        "netuid": 64,
+        "change24hPct": -0.5191586886617807,
+        "change7dPct": -1.5934595816775798
+      },
+      {
+        "netuid": 4,
+        "change24hPct": -0.2858059225196982,
+        "change7dPct": -5.974821226658889
+      },
+      {
+        "netuid": 8,
+        "change24hPct": 1.1860951398967063,
+        "change7dPct": 3.8719215700860254
+      },
+      {
+        "netuid": 53,
+        "change24hPct": 0.2899995159739435,
+        "change7dPct": 20.44614721487252
+      },
+      {
+        "netuid": 120,
+        "change24hPct": -0.09801230416762124,
+        "change7dPct": -4.2578026121589145
+      },
+      {
+        "netuid": 44,
+        "change24hPct": -0.5731195788495157,
+        "change7dPct": -9.444103845086108
+      },
+      {
+        "netuid": 28,
+        "change24hPct": -4.832770231002376,
+        "change7dPct": 8.933316923047402
+      },
+      {
+        "netuid": 9,
+        "change24hPct": -0.175256317317874,
+        "change7dPct": -3.942773900319612
+      },
+      {
+        "netuid": 3,
+        "change24hPct": -1.1812341287904689,
+        "change7dPct": -6.4870470847833195
+      },
+      {
+        "netuid": 75,
+        "change24hPct": -2.6052326186429187,
+        "change7dPct": 11.479354082414472
+      },
+      {
+        "netuid": 68,
+        "change24hPct": -0.20819869306086702,
+        "change7dPct": -4.437004036830199
+      },
+      {
+        "netuid": 110,
+        "change24hPct": -2.062462728944777,
+        "change7dPct": -16.256535065201216
+      },
+      {
+        "netuid": 56,
+        "change24hPct": -0.44066456307332524,
+        "change7dPct": -1.0387783521239
+      },
+      {
+        "netuid": 95,
+        "change24hPct": 1.7782866946907931,
+        "change7dPct": 0.20554163522486377
+      },
+      {
+        "netuid": 34,
+        "change24hPct": -0.1169407953811727,
+        "change7dPct": 0.1393826731024101
+      },
+      {
+        "netuid": 93,
+        "change24hPct": -0.16798669807693534,
+        "change7dPct": 4.52591716232959
+      },
+      {
+        "netuid": 5,
+        "change24hPct": 0.08423419778979623,
+        "change7dPct": -1.624984176575067
+      },
+      {
+        "netuid": 24,
+        "change24hPct": -4.465558130995702,
+        "change7dPct": -15.772560482716983
+      },
+      {
+        "netuid": 48,
+        "change24hPct": -4.8716597940408155,
+        "change7dPct": -3.97628216878359
+      },
+      {
+        "netuid": 41,
+        "change24hPct": 1.2774064930203606,
+        "change7dPct": 20.43285773730455
+      },
+      {
+        "netuid": 107,
+        "change24hPct": -0.8482150111926323,
+        "change7dPct": -5.910759490356562
+      },
+      {
+        "netuid": 62,
+        "change24hPct": 2.3348397245075594,
+        "change7dPct": 4.12882667823878
+      },
+      {
+        "netuid": 14,
+        "change24hPct": -0.6344200963881425,
+        "change7dPct": -3.691030371967712
+      },
+      {
+        "netuid": 19,
+        "change24hPct": 0.009509823102431196,
+        "change7dPct": -1.3372551045999088
+      },
+      {
+        "netuid": 80,
+        "change24hPct": -6.046117928292162,
+        "change7dPct": 18.563307334958438
+      },
+      {
+        "netuid": 17,
+        "change24hPct": -0.4704025065755144,
+        "change7dPct": -6.487846385580166
+      },
+      {
+        "netuid": 11,
+        "change24hPct": -0.15898331170893965,
+        "change7dPct": -1.934190157240693
+      },
+      {
+        "netuid": 39,
+        "change24hPct": -4.134048535442871,
+        "change7dPct": -1.5750279569261152
+      },
+      {
+        "netuid": 124,
+        "change24hPct": -1.4556246077450083,
+        "change7dPct": -9.411849515615172
+      },
+      {
+        "netuid": 1,
+        "change24hPct": -0.31155782499907325,
+        "change7dPct": -1.9430185891796012
+      },
+      {
+        "netuid": 114,
+        "change24hPct": -0.4295039911161027,
+        "change7dPct": -4.902258648294402
+      },
+      {
+        "netuid": 52,
+        "change24hPct": -0.07703918364122561,
+        "change7dPct": -1.1875961989310015
+      },
+      {
+        "netuid": 15,
+        "change24hPct": -0.4273216467821877,
+        "change7dPct": -5.680974164737441
+      },
+      {
+        "netuid": 61,
+        "change24hPct": -0.18034800478430724,
+        "change7dPct": -3.4127713512062683
+      },
+      {
+        "netuid": 23,
+        "change24hPct": -5.065997212330632,
+        "change7dPct": 4.925546235620879
+      },
+      {
+        "netuid": 54,
+        "change24hPct": 3.1709625951804656,
+        "change7dPct": -1.4653407107438265
+      },
+      {
+        "netuid": 112,
+        "change24hPct": -3.7020714465012254,
+        "change7dPct": -9.448426265548456
+      },
+      {
+        "netuid": 83,
+        "change24hPct": -0.660428816664027,
+        "change7dPct": -4.314599939158803
+      },
+      {
+        "netuid": 77,
+        "change24hPct": -0.12801357203951788,
+        "change7dPct": -2.2853635125784058
+      },
+      {
+        "netuid": 81,
+        "change24hPct": 0.3429190328243538,
+        "change7dPct": -1.3060491821151117
+      },
+      {
+        "netuid": 13,
+        "change24hPct": -0.7279103193918453,
+        "change7dPct": 5.464407936151687
+      },
+      {
+        "netuid": 10,
+        "change24hPct": -0.5453449927903179,
+        "change7dPct": -7.4484066136687055
+      },
+      {
+        "netuid": 12,
+        "change24hPct": -0.074982433056166,
+        "change7dPct": -0.6589980814982291
+      },
+      {
+        "netuid": 25,
+        "change24hPct": 0.262132250077733,
+        "change7dPct": 1.2922066190858972
+      },
+      {
+        "netuid": 43,
+        "change24hPct": -0.02631968463579431,
+        "change7dPct": -1.0023984811482227
+      },
+      {
+        "netuid": 85,
+        "change24hPct": 0.9798976833698062,
+        "change7dPct": -11.181030027337888
+      },
+      {
+        "netuid": 21,
+        "change24hPct": -7.296001342299452,
+        "change7dPct": -11.424655457049273
+      },
+      {
+        "netuid": 63,
+        "change24hPct": -0.8519876938618545,
+        "change7dPct": -12.364558048616162
+      },
+      {
+        "netuid": 97,
+        "change24hPct": -1.0576222804354234,
+        "change7dPct": -7.540653839615227
+      },
+      {
+        "netuid": 50,
+        "change24hPct": -1.2855819135333202,
+        "change7dPct": 3.410212258840908
+      },
+      {
+        "netuid": 33,
+        "change24hPct": -1.3903074096129684,
+        "change7dPct": 20.521112486416833
+      },
+      {
+        "netuid": 2,
+        "change24hPct": -2.3760458305041556,
+        "change7dPct": -8.594096513192783
+      },
+      {
+        "netuid": 104,
+        "change24hPct": -0.05730156068752741,
+        "change7dPct": -1.3352157906045081
+      },
+      {
+        "netuid": 18,
+        "change24hPct": -1.1919985574276417,
+        "change7dPct": -8.82936379845225
+      },
+      {
+        "netuid": 30,
+        "change24hPct": 0.5700081987480642,
+        "change7dPct": -7.316463264168588
+      },
+      {
+        "netuid": 90,
+        "change24hPct": 1.7626587614832483,
+        "change7dPct": 15.997136254929027
+      },
+      {
+        "netuid": 111,
+        "change24hPct": -0.1069519844934129,
+        "change7dPct": -1.009904587160759
+      },
+      {
+        "netuid": 117,
+        "change24hPct": 3.476229226761783,
+        "change7dPct": 18.506775844600877
+      },
+      {
+        "netuid": 74,
+        "change24hPct": -0.22595034728593427,
+        "change7dPct": -3.0820895953660528
+      },
+      {
+        "netuid": 65,
+        "change24hPct": 0.7686042736870339,
+        "change7dPct": 3.823872236648711
+      },
+      {
+        "netuid": 60,
+        "change24hPct": -0.37319035152100904,
+        "change7dPct": 10.800121313462881
+      },
+      {
+        "netuid": 105,
+        "change24hPct": -2.370504623914925,
+        "change7dPct": -11.548288145294464
+      },
+      {
+        "netuid": 32,
+        "change24hPct": -0.7624438636265181,
+        "change7dPct": -3.313941627918428
+      },
+      {
+        "netuid": 79,
+        "change24hPct": -4.344649408063322,
+        "change7dPct": -3.4119245581017843
+      },
+      {
+        "netuid": 29,
+        "change24hPct": -0.015060657435986889,
+        "change7dPct": 0.9728038551251794
+      },
+      {
+        "netuid": 6,
+        "change24hPct": 1.235538552865906,
+        "change7dPct": 8.16770860446738
+      },
+      {
+        "netuid": 22,
+        "change24hPct": -1.2239787649220326,
+        "change7dPct": -3.0869538098016123
+      },
+      {
+        "netuid": 46,
+        "change24hPct": -1.1551673450042421,
+        "change7dPct": -11.34337217125045
+      },
+      {
+        "netuid": 92,
+        "change24hPct": -5.8430423077979325,
+        "change7dPct": 9.134946227447372
+      },
+      {
+        "netuid": 42,
+        "change24hPct": 4.342818817585101,
+        "change7dPct": -2.1884560291410646
+      },
+      {
+        "netuid": 37,
+        "change24hPct": -0.004274768238240921,
+        "change7dPct": -2.5505173806961885
+      },
+      {
+        "netuid": 88,
+        "change24hPct": -1.6008015736579841,
+        "change7dPct": 1.2782832400420965
+      },
+      {
+        "netuid": 71,
+        "change24hPct": 2.856048434546839,
+        "change7dPct": -27.1191771622011
+      },
+      {
+        "netuid": 89,
+        "change24hPct": -1.1627755202257184,
+        "change7dPct": -3.2656770382687466
+      },
+      {
+        "netuid": 7,
+        "change24hPct": -3.043942075645028,
+        "change7dPct": -3.7843605620333083
+      },
+      {
+        "netuid": 49,
+        "change24hPct": -0.5147995735009178,
+        "change7dPct": -1.3686401748422783
+      },
+      {
+        "netuid": 128,
+        "change24hPct": -0.061105522034000694,
+        "change7dPct": -2.2570144692067786
+      },
+      {
+        "netuid": 72,
+        "change24hPct": 1.2254237182628152,
+        "change7dPct": 9.129458143947202
+      },
+      {
+        "netuid": 20,
+        "change24hPct": 0.9818280748848706,
+        "change7dPct": 2.8515933941189617
+      },
+      {
+        "netuid": 27,
+        "change24hPct": 0.9052202591451484,
+        "change7dPct": 7.47592190231774
+      },
+      {
+        "netuid": 45,
+        "change24hPct": 0.4074140064646854,
+        "change7dPct": 4.504468852400176
+      },
+      {
+        "netuid": 66,
+        "change24hPct": -0.7301961734979301,
+        "change7dPct": 1.363620568268855
+      },
+      {
+        "netuid": 55,
+        "change24hPct": -6.990572825077037,
+        "change7dPct": 2.4990798486862285
+      },
+      {
+        "netuid": 82,
+        "change24hPct": -6.142749577527231,
+        "change7dPct": -19.377207365557258
+      },
+      {
+        "netuid": 121,
+        "change24hPct": -0.3298531986298786,
+        "change7dPct": -1.781912138404256
+      },
+      {
+        "netuid": 73,
+        "change24hPct": -0.04232155256742305,
+        "change7dPct": -1.270854287918186
+      },
+      {
+        "netuid": 106,
+        "change24hPct": 0.86158074438214,
+        "change7dPct": 7.374659779603339
+      },
+      {
+        "netuid": 123,
+        "change24hPct": 1.5414591424198727,
+        "change7dPct": 6.515624507007225
+      },
+      {
+        "netuid": 58,
+        "change24hPct": -2.994561954536858,
+        "change7dPct": -18.063608329356256
+      },
+      {
+        "netuid": 38,
+        "change24hPct": -3.384298752074574,
+        "change7dPct": -12.024283943596012
+      },
+      {
+        "netuid": 98,
+        "change24hPct": -0.04693334844646189,
+        "change7dPct": 6.896515801536116
+      },
+      {
+        "netuid": 127,
+        "change24hPct": -0.7843783792345274,
+        "change7dPct": -11.032501052294519
+      },
+      {
+        "netuid": 31,
+        "change24hPct": 12.73022080668993,
+        "change7dPct": 65.47981353698074
+      },
+      {
+        "netuid": 101,
+        "change24hPct": -0.3164866390530955,
+        "change7dPct": -1.666911142036903
+      },
+      {
+        "netuid": 125,
+        "change24hPct": 2.8144030661797785,
+        "change7dPct": 6.934084945467756
+      },
+      {
+        "netuid": 94,
+        "change24hPct": 27.45253392153559,
+        "change7dPct": 25.254419672736503
+      },
+      {
+        "netuid": 118,
+        "change24hPct": -1.9693786862729257,
+        "change7dPct": -9.922293946675836
+      },
+      {
+        "netuid": 69,
+        "change24hPct": -2.0161346605134827,
+        "change7dPct": -3.60107944410817
+      },
+      {
+        "netuid": 116,
+        "change24hPct": -2.7983147336719587,
+        "change7dPct": -19.52762953054535
+      },
+      {
+        "netuid": 100,
+        "change24hPct": -0.6950532673523024,
+        "change7dPct": -18.89384867666354
+      },
+      {
+        "netuid": 102,
+        "change24hPct": -13.084225674054542,
+        "change7dPct": -6.050637218139692
+      },
+      {
+        "netuid": 91,
+        "change24hPct": 2.1756065683655827,
+        "change7dPct": -2.717137318217791
+      },
+      {
+        "netuid": 126,
+        "change24hPct": -1.2756153028517752,
+        "change7dPct": -5.954271722992008
+      },
+      {
+        "netuid": 115,
+        "change24hPct": 0.013796640072404767,
+        "change7dPct": 5.180751506969426
+      },
+      {
+        "netuid": 119,
+        "change24hPct": 1.6483371248682626,
+        "change7dPct": 8.295641083174887
+      },
+      {
+        "netuid": 67,
+        "change24hPct": -0.4561969325372141,
+        "change7dPct": -2.739962542205829
+      },
+      {
+        "netuid": 87,
+        "change24hPct": 2.689203457322176,
+        "change7dPct": -1.190293297622007
+      },
+      {
+        "netuid": 96,
+        "change24hPct": -0.31648563805642116,
+        "change7dPct": -8.67923190811926
+      },
+      {
+        "netuid": 122,
+        "change24hPct": 0.9020792215682756,
+        "change7dPct": -0.39175843932134224
+      },
+      {
+        "netuid": 40,
+        "change24hPct": -2.8994557332308584,
+        "change7dPct": 21.447545481018285
+      },
+      {
+        "netuid": 57,
+        "change24hPct": -0.3217381790158205,
+        "change7dPct": -3.0078598739087368
+      },
+      {
+        "netuid": 36,
+        "change24hPct": 0.3535446855157817,
+        "change7dPct": -19.76162167407091
+      },
+      {
+        "netuid": 99,
+        "change24hPct": -6.6345042128438205,
+        "change7dPct": -31.426259109878025
+      },
+      {
+        "netuid": 59,
+        "change24hPct": -0.9567633807345309,
+        "change7dPct": -10.118151190312329
+      },
+      {
+        "netuid": 76,
+        "change24hPct": -1.4280058981194297,
+        "change7dPct": -4.935832323416299
+      },
+      {
+        "netuid": 108,
+        "change24hPct": -3.784763282800696,
+        "change7dPct": -16.291334763879004
+      },
+      {
+        "netuid": 103,
+        "change24hPct": -28.73167041462429,
+        "change7dPct": -32.82721457075057
+      },
+      {
+        "netuid": 70,
+        "change24hPct": -5.134412499240598,
+        "change7dPct": -37.54199275959269
+      },
+      {
+        "netuid": 35,
+        "change24hPct": 14.226503292878176,
+        "change7dPct": 81.7474378564679
+      },
+      {
+        "netuid": 47,
+        "change24hPct": -32.85921305938384,
+        "change7dPct": -31.02866815265497
+      },
+      {
+        "netuid": 26,
+        "change24hPct": -9.941919425184814,
+        "change7dPct": 663.2492832484111
+      },
+      {
+        "netuid": 86,
+        "change24hPct": 2.712601872275509,
+        "change7dPct": 3.919974683276257
+      },
+      {
+        "netuid": 16,
+        "change24hPct": -13.139441649232532,
+        "change7dPct": -23.946261215236955
+      },
+      {
+        "netuid": 113,
+        "change24hPct": -67.65039488487794,
+        "change7dPct": 118.43010484580415
+      },
+      {
+        "netuid": 84,
+        "change24hPct": 0.07844807770577332,
+        "change7dPct": 141.86768325934835
+      },
+      {
+        "netuid": 109,
+        "change24hPct": 0.05567944527668074,
+        "change7dPct": 204.5000194273396
+      },
+      {
+        "netuid": 78,
+        "change24hPct": 0.002272812476568944,
+        "change7dPct": 0.1858206802266937
+      }
+    ],
+    "decisions": [
+      {
+        "netuid": 51,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 64,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 4,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 8,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 53,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 120,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 44,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 28,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 9,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 3,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 75,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 68,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 110,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 56,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 95,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 34,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 93,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 5,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 24,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 48,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 41,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 107,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 62,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 14,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 19,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 80,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 17,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 11,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 39,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 124,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 1,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 114,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 52,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 15,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 61,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 23,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 54,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 112,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 83,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 77,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 81,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 13,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 10,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 12,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 25,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 43,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 85,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 21,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 63,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 97,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 50,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 33,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 2,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 104,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 18,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 30,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 90,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 111,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 117,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 74,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 65,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 60,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 105,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 32,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 79,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 29,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 6,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 22,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 46,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 92,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 42,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 37,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 88,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 71,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 89,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 7,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 49,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 128,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 72,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 20,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 27,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 45,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 66,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 55,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 82,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 121,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 73,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 106,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 123,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 58,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 38,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 98,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 127,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 31,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 101,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 125,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 94,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 118,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 69,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 116,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 100,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 102,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 91,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 126,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 115,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 119,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 67,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 87,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 96,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 122,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 40,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 57,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 36,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 99,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 59,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 76,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 108,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 103,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 70,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 35,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 47,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 26,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 86,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 16,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 113,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 84,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 109,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 78,
+        "outcome": "excluded",
+        "reason": "Cause and registration continuity remain under investigation; price alone does not establish a causal news story.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      }
+    ]
+  },
+  "chartReview": {
+    "status": "PASS",
+    "session": 15706,
+    "startedAt": "2026-11-21T14:04:03.863351+00:00",
+    "evidence": "site-audit-2026-11-21/chart-initial.json",
+    "checkout": "dee04912d2c008ffef9d4b3f1195c2b03ad9bc5c",
+    "checkedAt": "2026-11-21T14:07:32.183842+00:00",
+    "baseResults": 384,
+    "uniqueSubnets": 128,
+    "calendarResults": 256,
+    "gaps": 0,
+    "scope": "Automated all-slot TAO/USD closes; native UI review pending"
+  },
+  "editorialReview": {
+    "status": "REVIEWED_WITH_GAPS",
+    "selectedLead": "Runtime 493 puts Gamma spending under the customer hotkey",
+    "orderedHeadlines": [
+      "Runtime 493 puts Gamma spending under the customer hotkey",
+      "SN105 Beam adds one-click Studio deployment on Azure",
+      "SN75 Hippius case study details SN91 Cascade infrastructure migration",
+      "SN66 Conjectures publishes a degree-four minimal-graph proof",
+      "SN3 Teutonic announces a 5% Gamma allocation to SN51 Lium",
+      "SN55 NIOME warns users about malicious emails using its name",
+      "SN111 Claims revises its extraction competition and delays testnet opening",
+      "SN24 ms.computer plans a website competition with 2,424 alpha in prizes",
+      "SN94 Cathedral expands Escape rooms and clarifies compute intake",
+      "SN120 Affine plans stricter batch checks and deduplication"
+    ],
+    "rationale": "Network-wide Gamma payment authority leads concrete cloud deployment and cross-subnet funding; actionable warning then participant updates.",
+    "leadAlternatives": [
+      "SN105 Azure deployment",
+      "SN3 Gamma compute allocation"
+    ],
+    "layoutReview": "Pending live release.",
+    "stories": [
+      {
+        "headline": "Runtime 493 puts Gamma spending under the customer hotkey",
+        "classification": "News"
+      },
+      {
+        "headline": "SN105 Beam adds one-click Studio deployment on Azure",
+        "classification": "News"
+      },
+      {
+        "headline": "SN75 Hippius case study details SN91 Cascade infrastructure migration",
+        "classification": "News"
+      },
+      {
+        "headline": "SN66 Conjectures publishes a degree-four minimal-graph proof",
+        "classification": "News"
+      },
+      {
+        "headline": "SN3 Teutonic announces a 5% Gamma allocation to SN51 Lium",
+        "classification": "News"
+      },
+      {
+        "headline": "SN55 NIOME warns users about malicious emails using its name",
+        "classification": "News"
+      },
+      {
+        "headline": "SN111 Claims revises its extraction competition and delays testnet opening",
+        "classification": "News"
+      },
+      {
+        "headline": "SN24 ms.computer plans a website competition with 2,424 alpha in prizes",
+        "classification": "News"
+      },
+      {
+        "headline": "SN94 Cathedral expands Escape rooms and clarifies compute intake",
+        "classification": "News"
+      },
+      {
+        "headline": "SN120 Affine plans stricter batch checks and deduplication",
+        "classification": "News"
+      }
+    ]
+  },
+  "outletReview": [
+    {
+      "id": "outlet:tao-daily",
+      "group": "outlet",
+      "label": "TAO Daily",
+      "sourceUrls": [],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\taodaily-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "outlet:subnetradar",
+      "group": "outlet",
+      "label": "SubnetRadar",
+      "sourceUrls": [],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\subnetradar-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "outlet:alphagap",
+      "group": "outlet",
+      "label": "AlphaGap",
+      "sourceUrls": [
+        "https://www.alphagap.io/feed"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\alphagap-feed.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "outlet:tao-com",
+      "group": "outlet",
+      "label": "TAO.com",
+      "sourceUrls": [],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\taodotcom-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "outlet:taosis",
+      "group": "outlet",
+      "label": "Taosis",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "outlet:1t1b-ai",
+      "group": "outlet",
+      "label": "1t1b.ai",
+      "sourceUrls": [],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\1t1b-daily.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "outlet:coinasia",
+      "group": "outlet",
+      "label": "CoinAsia",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "outlet:tao-outsider",
+      "group": "outlet",
+      "label": "Tao Outsider",
+      "sourceUrls": [
+        "https://www.taooutsider.com/blog/"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\taooutsider-feed.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    }
+  ],
+  "requiredAccountReview": [
+    {
+      "id": "account:opentensor",
+      "group": "account",
+      "label": "@opentensor",
+      "sourceUrls": [
+        "https://x.com/opentensor"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\opentensor-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:bittensor",
+      "group": "account",
+      "label": "@bittensor",
+      "sourceUrls": [
+        "https://x.com/bittensor"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "account:const_reborn",
+      "group": "account",
+      "label": "@const_reborn",
+      "sourceUrls": [
+        "https://x.com/const_reborn"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\const-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:taostats",
+      "group": "account",
+      "label": "@taostats",
+      "sourceUrls": [
+        "https://x.com/taostats"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\taostats-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:taodotcom",
+      "group": "account",
+      "label": "@taodotcom",
+      "sourceUrls": [
+        "https://x.com/taodotcom"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\taodotcom-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:tensorplexlabs",
+      "group": "account",
+      "label": "@TensorplexLabs",
+      "sourceUrls": [
+        "https://x.com/TensorplexLabs"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\tensorplex-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:yumagroup",
+      "group": "account",
+      "label": "@YumaGroup",
+      "sourceUrls": [
+        "https://x.com/YumaGroup"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\yuma-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:dcgco",
+      "group": "account",
+      "label": "@DCGco",
+      "sourceUrls": [
+        "https://x.com/DCGco"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\dcg-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:grayscale",
+      "group": "account",
+      "label": "@Grayscale",
+      "sourceUrls": [
+        "https://x.com/Grayscale"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\grayscale-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:xtaohq",
+      "group": "account",
+      "label": "@xtaohq",
+      "sourceUrls": [
+        "https://x.com/xtaohq"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\xtao-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:dsvfund",
+      "group": "account",
+      "label": "@dsvfund",
+      "sourceUrls": [
+        "https://x.com/dsvfund"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\dsv-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:stillcorecap",
+      "group": "account",
+      "label": "@stillcorecap",
+      "sourceUrls": [
+        "https://x.com/stillcorecap"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\stillcore-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:tensiafdn",
+      "group": "account",
+      "label": "@TensiaFDN",
+      "sourceUrls": [
+        "https://x.com/TensiaFDN"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\tensia-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:tensiabot",
+      "group": "account",
+      "label": "@TensiaBot",
+      "sourceUrls": [
+        "https://x.com/TensiaBot"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\tensiabot-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:subnetradarcom",
+      "group": "account",
+      "label": "@subnetradarcom",
+      "sourceUrls": [
+        "https://x.com/subnetradarcom"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\subnetradar-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:taodaily_io",
+      "group": "account",
+      "label": "@taodaily_io",
+      "sourceUrls": [
+        "https://x.com/taodaily_io"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\taodaily-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:markjeffrey",
+      "group": "account",
+      "label": "@markjeffrey",
+      "sourceUrls": [
+        "https://x.com/markjeffrey"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\mark-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "account:barrysilbert",
+      "group": "account",
+      "label": "@BarrySilbert",
+      "sourceUrls": [
+        "https://x.com/BarrySilbert"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\barry-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "partner:injective",
+      "group": "partner",
+      "label": "@injective",
+      "sourceUrls": [
+        "https://x.com/injective"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\injective-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    }
+  ],
+  "fundPeopleReview": [
+    {
+      "id": "fund:stillcore-capital",
+      "group": "fund",
+      "label": "Stillcore Capital",
+      "sourceUrls": [
+        "https://x.com/stillcorecap",
+        "https://stillcorecapital.com/",
+        "https://stillcorecapital.com/wp-content/uploads/2025/12/Stillcore-Capital-Fund-Overview_vF-Q4-25.pdf"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\stillcore-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "fund:dsv-fund",
+      "group": "fund",
+      "label": "DSV Fund",
+      "sourceUrls": [
+        "https://x.com/dsvfund",
+        "https://dsvfund.com/about-us/",
+        "https://dsvfund.com/team/"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\dsv-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "fund:unsupervised-capital",
+      "group": "fund",
+      "label": "Unsupervised Capital",
+      "sourceUrls": [
+        "https://x.com/UnsupervisedCap",
+        "https://www.unsupervised.capital/",
+        "https://www.unsupervised.capital/team"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:yuma-yuma-asset-management",
+      "group": "fund",
+      "label": "Yuma / Yuma Asset Management",
+      "sourceUrls": [
+        "https://x.com/YumaGroup",
+        "https://www.yumaai.com/asset-management",
+        "https://www.yumaai.com/team",
+        "https://www.yumaai.com/updates/yuma-asset-management-launch"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\yuma-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "fund:dcg",
+      "group": "fund",
+      "label": "DCG",
+      "sourceUrls": [
+        "https://x.com/DCGco",
+        "https://www.yumaai.com/updates/yuma-asset-management-launch"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\dcg-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "fund:oss-capital",
+      "group": "fund",
+      "label": "OSS Capital",
+      "sourceUrls": [
+        "https://x.com/OSSCapital",
+        "https://oss.capital/portfolio/Bittensor/",
+        "https://oss.capital/team/",
+        "https://oss.capital/team/joseph-jacks/"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:polychain-capital",
+      "group": "fund",
+      "label": "Polychain Capital",
+      "sourceUrls": [
+        "https://polychain.capital/",
+        "https://jobs.polychain.capital/companies/bittensor",
+        "https://offthechain.capital/about/"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:dao5-tao5",
+      "group": "fund",
+      "label": "dao5 / tao5",
+      "sourceUrls": [
+        "https://www.dao5.com/",
+        "https://tao5.com/"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:contango-digital-assets-blockchain-x-ai-fund",
+      "group": "fund",
+      "label": "Contango Digital Assets / Blockchain x AI Fund",
+      "sourceUrls": [
+        "https://www.newsfilecorp.com/release/205635/Contango-Reaches-5M-Close-on-10M-Blockchain-x-AI-Seed-Fund",
+        "https://www.generaltensor.io/about"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:blockchain-assets-blockchain-early-opportunities-fund",
+      "group": "fund",
+      "label": "Blockchain Assets / Blockchain Early Opportunities Fund",
+      "sourceUrls": [
+        "https://bca.fund/",
+        "https://bca.fund/wp-content/uploads/2024/10/October-2024_BEOF_-Investor-Bulletin_Bittensor.pdf"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:collab-currency",
+      "group": "fund",
+      "label": "Collab+Currency",
+      "sourceUrls": [
+        "https://x.com/collab_currency",
+        "https://www.collabcurrency.com/",
+        "https://www.collabcurrency.com/portfolio/"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:off-the-chain-capital",
+      "group": "fund",
+      "label": "Off the Chain Capital",
+      "sourceUrls": [
+        "https://www.newswire.ca/news-releases/xtao-announces-us-7-3m-investment-by-off-the-chain-capital-860435759.html",
+        "https://offthechain.capital/about/",
+        "https://www.xtao.co/"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:borderless-capital",
+      "group": "fund",
+      "label": "Borderless Capital",
+      "sourceUrls": [
+        "https://www.xtao.co/",
+        "https://www.borderlesscapital.io/team"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:escape-velocity-ev3",
+      "group": "fund",
+      "label": "Escape Velocity / EV3",
+      "sourceUrls": [
+        "https://www.xtao.co/",
+        "https://ev3.xyz/"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:hypersphere-capital-ventures",
+      "group": "fund",
+      "label": "Hypersphere Capital / Ventures",
+      "sourceUrls": [
+        "https://www.xtao.co/",
+        "https://www.hypersphere.capital/team"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:canonical",
+      "group": "fund",
+      "label": "Canonical",
+      "sourceUrls": [
+        "https://www.canonical.cc/",
+        "https://www.canonical.cc/faqs",
+        "https://www.tensorplex.ai/"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:yzi-labs",
+      "group": "fund",
+      "label": "YZi Labs",
+      "sourceUrls": [
+        "https://www.yzilabs.com/blog/yzi-labs-invests-in-tensorplex-labs-to-supercharge-the-development-of-decentralized-ai"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:grayscale",
+      "group": "fund",
+      "label": "Grayscale",
+      "sourceUrls": [
+        "https://x.com/Grayscale",
+        "https://www.grayscale.com/funds/grayscale-bittensor-trust",
+        "https://www.grayscale.com/the-stack",
+        "https://www.grayscale.com/the-stack/is-hyperliquid-the-next-financial-services-juggernaut"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\grayscale-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "fund:general-tensor-formerly-general-tao-ventures",
+      "group": "fund",
+      "label": "General Tensor, formerly General TAO Ventures",
+      "sourceUrls": [
+        "https://www.generaltensor.io/about"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:arca",
+      "group": "fund",
+      "label": "Arca",
+      "sourceUrls": [
+        "https://www.xtao.co/",
+        "https://www.ar.ca/"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:cadenza",
+      "group": "fund",
+      "label": "Cadenza",
+      "sourceUrls": [
+        "https://www.xtao.co/",
+        "https://cadenza.vc/team"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:stratos",
+      "group": "fund",
+      "label": "Stratos",
+      "sourceUrls": [
+        "https://www.xtao.co/",
+        "https://www.stratos.xyz/"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund:animoca-brands",
+      "group": "fund",
+      "label": "Animoca Brands",
+      "sourceUrls": [
+        "https://www.xtao.co/",
+        "https://www.animocabrands.com/leadership"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:mark-jeffrey",
+      "group": "fund-person",
+      "label": "Mark Jeffrey",
+      "sourceUrls": [
+        "https://x.com/markjeffrey"
+      ],
+      "organizations": [
+        "Stillcore Capital"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\mark-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "fund-person:rob-greer",
+      "group": "fund-person",
+      "label": "Rob Greer",
+      "sourceUrls": [
+        "https://x.com/rob_svrn"
+      ],
+      "organizations": [
+        "Stillcore Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:jason-calacanis",
+      "group": "fund-person",
+      "label": "Jason Calacanis",
+      "sourceUrls": [
+        "https://x.com/jason"
+      ],
+      "organizations": [
+        "Stillcore Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:siam-kidd",
+      "group": "fund-person",
+      "label": "Siam Kidd",
+      "sourceUrls": [
+        "https://x.com/SiamKidd"
+      ],
+      "organizations": [
+        "DSV Fund"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:mark-creaser",
+      "group": "fund-person",
+      "label": "Mark Creaser",
+      "sourceUrls": [
+        "https://x.com/MarkCreaser"
+      ],
+      "organizations": [
+        "DSV Fund"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:john-moran",
+      "group": "fund-person",
+      "label": "John Moran",
+      "sourceUrls": [],
+      "organizations": [
+        "DSV Fund"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:rob-comer",
+      "group": "fund-person",
+      "label": "Rob Comer",
+      "sourceUrls": [],
+      "organizations": [
+        "DSV Fund"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:davina-james",
+      "group": "fund-person",
+      "label": "Davina James",
+      "sourceUrls": [],
+      "organizations": [
+        "DSV Fund"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:bob-o-brien",
+      "group": "fund-person",
+      "label": "Bob O’Brien",
+      "sourceUrls": [],
+      "organizations": [
+        "DSV Fund"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:ellie-payne",
+      "group": "fund-person",
+      "label": "Ellie Payne",
+      "sourceUrls": [],
+      "organizations": [
+        "DSV Fund"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:sami-kassab",
+      "group": "fund-person",
+      "label": "Sami Kassab",
+      "sourceUrls": [
+        "https://x.com/Old_Samster"
+      ],
+      "organizations": [
+        "Unsupervised Capital"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\sami-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "fund-person:seth-bloomberg",
+      "group": "fund-person",
+      "label": "Seth Bloomberg",
+      "sourceUrls": [
+        "https://x.com/bloomberg_seth"
+      ],
+      "organizations": [
+        "Unsupervised Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:barry-silbert",
+      "group": "fund-person",
+      "label": "Barry Silbert",
+      "sourceUrls": [
+        "https://x.com/BarrySilbert"
+      ],
+      "organizations": [
+        "Yuma / Yuma Asset Management",
+        "DCG"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\barry-posts.txt"
+      ],
+      "reason": "Remaining pagination, media and related account reconciliation.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Direct bounded page/timeline read recorded in evidence, November 21 morning. No claim of exhaustive seven-day pagination or full linked-media review.",
+      "disposition": "Included original-source verified leads in ten-story report; unrelated, older or unverified material deferred.",
+      "gaps": [
+        "Full required source window not yet exhausted."
+      ]
+    },
+    {
+      "id": "fund-person:evan-malanga",
+      "group": "fund-person",
+      "label": "Evan Malanga",
+      "sourceUrls": [
+        "https://x.com/EvanMalanga"
+      ],
+      "organizations": [
+        "Yuma / Yuma Asset Management"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:greg-schvey",
+      "group": "fund-person",
+      "label": "Greg Schvey",
+      "sourceUrls": [
+        "https://x.com/GSchvey"
+      ],
+      "organizations": [
+        "Yuma / Yuma Asset Management"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:jeff-schvey",
+      "group": "fund-person",
+      "label": "Jeff Schvey",
+      "sourceUrls": [],
+      "organizations": [
+        "Yuma / Yuma Asset Management"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:joseph-jacks",
+      "group": "fund-person",
+      "label": "Joseph Jacks",
+      "sourceUrls": [
+        "https://x.com/JosephJacks_"
+      ],
+      "organizations": [
+        "OSS Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:chelsea-wei",
+      "group": "fund-person",
+      "label": "Chelsea Wei",
+      "sourceUrls": [],
+      "organizations": [
+        "OSS Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:olaf-carlson-wee",
+      "group": "fund-person",
+      "label": "Olaf Carlson-Wee",
+      "sourceUrls": [],
+      "organizations": [
+        "Polychain Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:tekin-salimi",
+      "group": "fund-person",
+      "label": "Tekin Salimi",
+      "sourceUrls": [],
+      "organizations": [
+        "dao5 / tao5"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:mike-grantis",
+      "group": "fund-person",
+      "label": "Mike Grantis",
+      "sourceUrls": [],
+      "organizations": [
+        "Contango Digital Assets / Blockchain x AI Fund",
+        "General Tensor, formerly General TAO Ventures"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:joshua-field",
+      "group": "fund-person",
+      "label": "Joshua Field",
+      "sourceUrls": [],
+      "organizations": [
+        "Contango Digital Assets / Blockchain x AI Fund",
+        "General Tensor, formerly General TAO Ventures"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:ian-love",
+      "group": "fund-person",
+      "label": "Ian Love",
+      "sourceUrls": [],
+      "organizations": [
+        "Blockchain Assets / Blockchain Early Opportunities Fund"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:steve-mckeon",
+      "group": "fund-person",
+      "label": "Steve McKeon",
+      "sourceUrls": [
+        "https://x.com/sbmckeon"
+      ],
+      "organizations": [
+        "Collab+Currency"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:derek-edwards",
+      "group": "fund-person",
+      "label": "Derek Edwards",
+      "sourceUrls": [
+        "https://x.com/derekedws"
+      ],
+      "organizations": [
+        "Collab+Currency"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:ronan",
+      "group": "fund-person",
+      "label": "Ronan",
+      "sourceUrls": [
+        "https://x.com/ronangmi"
+      ],
+      "organizations": [
+        "Collab+Currency"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:arjun",
+      "group": "fund-person",
+      "label": "Arjun",
+      "sourceUrls": [
+        "https://x.com/overminn"
+      ],
+      "organizations": [
+        "Collab+Currency"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:arad",
+      "group": "fund-person",
+      "label": "Arad",
+      "sourceUrls": [
+        "https://x.com/aradtski"
+      ],
+      "organizations": [
+        "Collab+Currency"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:amanda",
+      "group": "fund-person",
+      "label": "Amanda",
+      "sourceUrls": [
+        "https://x.com/amanda0x"
+      ],
+      "organizations": [
+        "Collab+Currency"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:brian-estes",
+      "group": "fund-person",
+      "label": "Brian Estes",
+      "sourceUrls": [],
+      "organizations": [
+        "Off the Chain Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:brian-dixon",
+      "group": "fund-person",
+      "label": "Brian Dixon",
+      "sourceUrls": [],
+      "organizations": [
+        "Off the Chain Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:david-garcia",
+      "group": "fund-person",
+      "label": "David Garcia",
+      "sourceUrls": [],
+      "organizations": [
+        "Borderless Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:arul-murugan",
+      "group": "fund-person",
+      "label": "Arul Murugan",
+      "sourceUrls": [],
+      "organizations": [
+        "Borderless Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:alpen-sheth",
+      "group": "fund-person",
+      "label": "Alpen Sheth",
+      "sourceUrls": [],
+      "organizations": [
+        "Borderless Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:amit-mehra",
+      "group": "fund-person",
+      "label": "Amit Mehra",
+      "sourceUrls": [],
+      "organizations": [
+        "Borderless Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:lvaro-gracia",
+      "group": "fund-person",
+      "label": "Álvaro Gracia",
+      "sourceUrls": [],
+      "organizations": [
+        "Borderless Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:hernan-yellati",
+      "group": "fund-person",
+      "label": "Hernan Yellati",
+      "sourceUrls": [],
+      "organizations": [
+        "Borderless Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:siddharth-rao",
+      "group": "fund-person",
+      "label": "Siddharth Rao",
+      "sourceUrls": [],
+      "organizations": [
+        "Borderless Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:dhagash-shah",
+      "group": "fund-person",
+      "label": "Dhagash Shah",
+      "sourceUrls": [],
+      "organizations": [
+        "Borderless Capital"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:mahesh",
+      "group": "fund-person",
+      "label": "Mahesh",
+      "sourceUrls": [],
+      "organizations": [
+        "Escape Velocity / EV3"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:salvador",
+      "group": "fund-person",
+      "label": "Salvador",
+      "sourceUrls": [],
+      "organizations": [
+        "Escape Velocity / EV3"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:john-platts",
+      "group": "fund-person",
+      "label": "John Platts",
+      "sourceUrls": [],
+      "organizations": [
+        "Hypersphere Capital / Ventures"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:benoit-robert",
+      "group": "fund-person",
+      "label": "Benoit Robert",
+      "sourceUrls": [],
+      "organizations": [
+        "Hypersphere Capital / Ventures"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:anand-iyer",
+      "group": "fund-person",
+      "label": "Anand Iyer",
+      "sourceUrls": [],
+      "organizations": [
+        "Canonical"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:anthony-avedissian",
+      "group": "fund-person",
+      "label": "Anthony Avedissian",
+      "sourceUrls": [],
+      "organizations": [
+        "Canonical"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:andy-chang",
+      "group": "fund-person",
+      "label": "Andy Chang",
+      "sourceUrls": [],
+      "organizations": [
+        "YZi Labs"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:zach-pandl",
+      "group": "fund-person",
+      "label": "Zach Pandl",
+      "sourceUrls": [],
+      "organizations": [
+        "Grayscale"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:michael-zhao",
+      "group": "fund-person",
+      "label": "Michael Zhao",
+      "sourceUrls": [],
+      "organizations": [
+        "Grayscale"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:jordan-kotsopoulos",
+      "group": "fund-person",
+      "label": "Jordan Kotsopoulos",
+      "sourceUrls": [],
+      "organizations": [
+        "General Tensor, formerly General TAO Ventures"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:victor-teixeira",
+      "group": "fund-person",
+      "label": "Victor Teixeira",
+      "sourceUrls": [],
+      "organizations": [
+        "General Tensor, formerly General TAO Ventures"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:allan-cassis",
+      "group": "fund-person",
+      "label": "Allan Cassis",
+      "sourceUrls": [],
+      "organizations": [
+        "General Tensor, formerly General TAO Ventures"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:lok-lee",
+      "group": "fund-person",
+      "label": "Lok Lee",
+      "sourceUrls": [],
+      "organizations": [
+        "General Tensor, formerly General TAO Ventures"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:kumar-dandapani",
+      "group": "fund-person",
+      "label": "Kumar Dandapani",
+      "sourceUrls": [],
+      "organizations": [
+        "Cadenza"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:max-shapiro",
+      "group": "fund-person",
+      "label": "Max Shapiro",
+      "sourceUrls": [],
+      "organizations": [
+        "Cadenza"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:harris-wellner",
+      "group": "fund-person",
+      "label": "Harris Wellner",
+      "sourceUrls": [],
+      "organizations": [
+        "Cadenza"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:aniruddh-chittabathini",
+      "group": "fund-person",
+      "label": "Aniruddh Chittabathini",
+      "sourceUrls": [],
+      "organizations": [
+        "Cadenza"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:raghav-raj-mehta",
+      "group": "fund-person",
+      "label": "Raghav Raj Mehta",
+      "sourceUrls": [],
+      "organizations": [
+        "Cadenza"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:alex-acero",
+      "group": "fund-person",
+      "label": "Alex Acero",
+      "sourceUrls": [],
+      "organizations": [
+        "Cadenza"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:yat-siu",
+      "group": "fund-person",
+      "label": "Yat Siu",
+      "sourceUrls": [],
+      "organizations": [
+        "Animoca Brands"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-person:evan-auyang",
+      "group": "fund-person",
+      "label": "Evan Auyang",
+      "sourceUrls": [],
+      "organizations": [
+        "Animoca Brands"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-identity:arche-capital",
+      "group": "fund-identity",
+      "label": "Arche Capital",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-identity:republic",
+      "group": "fund-identity",
+      "label": "Republic",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-identity:lvna-capital",
+      "group": "fund-identity",
+      "label": "Lvna Capital",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-identity:good-morning-holdings",
+      "group": "fund-identity",
+      "label": "Good Morning Holdings",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-identity:outliers-fund",
+      "group": "fund-identity",
+      "label": "Outliers Fund",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-identity:dna-fund",
+      "group": "fund-identity",
+      "label": "DNA Fund",
+      "sourceUrls": [
+        "https://dna.fund/"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-identity:tensor-suisse",
+      "group": "fund-identity",
+      "label": "Tensor Suisse",
+      "sourceUrls": [
+        "https://www.tensorsuisse.com/"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-identity:taobase",
+      "group": "fund-identity",
+      "label": "TaoBase",
+      "sourceUrls": [
+        "https://x.com/taobase_"
+      ],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-identity:northtensor",
+      "group": "fund-identity",
+      "label": "NorthTensor",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "fund-identity:hack-vc",
+      "group": "fund-identity",
+      "label": "Hack VC",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    }
+  ],
+  "discordReview": [
+    {
+      "id": "discord:51",
+      "group": "discord",
+      "label": "SN51 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:64",
+      "group": "discord",
+      "label": "SN64 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:4",
+      "group": "discord",
+      "label": "SN4 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:8",
+      "group": "discord",
+      "label": "SN8 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:53",
+      "group": "discord",
+      "label": "SN53 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:120",
+      "group": "discord",
+      "label": "SN120 official team Discord",
+      "sourceUrls": [],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\discord-sn120.txt"
+      ],
+      "reason": "Full channel/window review unfinished.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Actual official channel visible messages read in signed-in browser; interval bounded by saved snapshot.",
+      "disposition": "Verified team updates included; full watermark reconciliation remains."
+    },
+    {
+      "id": "discord:44",
+      "group": "discord",
+      "label": "SN44 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:28",
+      "group": "discord",
+      "label": "SN28 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:9",
+      "group": "discord",
+      "label": "SN9 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:3",
+      "group": "discord",
+      "label": "SN3 official team Discord",
+      "sourceUrls": [
+        "https://discord.com/channels/799672011265015819/1493243812263362660"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\discord-sn3.txt"
+      ],
+      "reason": "Full channel/window review unfinished.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Actual official channel visible messages read in signed-in browser; interval bounded by saved snapshot.",
+      "disposition": "Verified team updates included; full watermark reconciliation remains."
+    },
+    {
+      "id": "discord:75",
+      "group": "discord",
+      "label": "SN75 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:68",
+      "group": "discord",
+      "label": "SN68 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:56",
+      "group": "discord",
+      "label": "SN56 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:110",
+      "group": "discord",
+      "label": "SN110 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:95",
+      "group": "discord",
+      "label": "SN95 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:34",
+      "group": "discord",
+      "label": "SN34 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:93",
+      "group": "discord",
+      "label": "SN93 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:24",
+      "group": "discord",
+      "label": "SN24 official team Discord",
+      "sourceUrls": [
+        "https://discord.com/channels/799672011265015819/1537107963167383564"
+      ],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\discord-sn24.txt"
+      ],
+      "reason": "Full channel/window review unfinished.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Actual official channel visible messages read in signed-in browser; interval bounded by saved snapshot.",
+      "disposition": "Verified team updates included; full watermark reconciliation remains."
+    },
+    {
+      "id": "discord:5",
+      "group": "discord",
+      "label": "SN5 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:48",
+      "group": "discord",
+      "label": "SN48 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:41",
+      "group": "discord",
+      "label": "SN41 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:107",
+      "group": "discord",
+      "label": "SN107 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:62",
+      "group": "discord",
+      "label": "SN62 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:14",
+      "group": "discord",
+      "label": "SN14 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:19",
+      "group": "discord",
+      "label": "SN19 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:80",
+      "group": "discord",
+      "label": "SN80 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:17",
+      "group": "discord",
+      "label": "SN17 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:11",
+      "group": "discord",
+      "label": "SN11 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:39",
+      "group": "discord",
+      "label": "SN39 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:124",
+      "group": "discord",
+      "label": "SN124 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:1",
+      "group": "discord",
+      "label": "SN1 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:114",
+      "group": "discord",
+      "label": "SN114 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:52",
+      "group": "discord",
+      "label": "SN52 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:15",
+      "group": "discord",
+      "label": "SN15 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:61",
+      "group": "discord",
+      "label": "SN61 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:23",
+      "group": "discord",
+      "label": "SN23 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:54",
+      "group": "discord",
+      "label": "SN54 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:112",
+      "group": "discord",
+      "label": "SN112 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:83",
+      "group": "discord",
+      "label": "SN83 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:77",
+      "group": "discord",
+      "label": "SN77 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:81",
+      "group": "discord",
+      "label": "SN81 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:13",
+      "group": "discord",
+      "label": "SN13 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:10",
+      "group": "discord",
+      "label": "SN10 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:12",
+      "group": "discord",
+      "label": "SN12 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:25",
+      "group": "discord",
+      "label": "SN25 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:43",
+      "group": "discord",
+      "label": "SN43 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:85",
+      "group": "discord",
+      "label": "SN85 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:21",
+      "group": "discord",
+      "label": "SN21 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:63",
+      "group": "discord",
+      "label": "SN63 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:97",
+      "group": "discord",
+      "label": "SN97 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:50",
+      "group": "discord",
+      "label": "SN50 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:33",
+      "group": "discord",
+      "label": "SN33 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:2",
+      "group": "discord",
+      "label": "SN2 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:104",
+      "group": "discord",
+      "label": "SN104 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:18",
+      "group": "discord",
+      "label": "SN18 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:30",
+      "group": "discord",
+      "label": "SN30 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:90",
+      "group": "discord",
+      "label": "SN90 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:111",
+      "group": "discord",
+      "label": "SN111 official team Discord",
+      "sourceUrls": [],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\discord-sn111.txt"
+      ],
+      "reason": "Full channel/window review unfinished.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Actual official channel visible messages read in signed-in browser; interval bounded by saved snapshot.",
+      "disposition": "Verified team updates included; full watermark reconciliation remains."
+    },
+    {
+      "id": "discord:74",
+      "group": "discord",
+      "label": "SN74 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:65",
+      "group": "discord",
+      "label": "SN65 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:117",
+      "group": "discord",
+      "label": "SN117 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:60",
+      "group": "discord",
+      "label": "SN60 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:32",
+      "group": "discord",
+      "label": "SN32 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:105",
+      "group": "discord",
+      "label": "SN105 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:79",
+      "group": "discord",
+      "label": "SN79 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:29",
+      "group": "discord",
+      "label": "SN29 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:22",
+      "group": "discord",
+      "label": "SN22 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:46",
+      "group": "discord",
+      "label": "SN46 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:6",
+      "group": "discord",
+      "label": "SN6 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:42",
+      "group": "discord",
+      "label": "SN42 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:92",
+      "group": "discord",
+      "label": "SN92 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:37",
+      "group": "discord",
+      "label": "SN37 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:88",
+      "group": "discord",
+      "label": "SN88 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:89",
+      "group": "discord",
+      "label": "SN89 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:71",
+      "group": "discord",
+      "label": "SN71 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:7",
+      "group": "discord",
+      "label": "SN7 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:49",
+      "group": "discord",
+      "label": "SN49 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:128",
+      "group": "discord",
+      "label": "SN128 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:72",
+      "group": "discord",
+      "label": "SN72 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:20",
+      "group": "discord",
+      "label": "SN20 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:27",
+      "group": "discord",
+      "label": "SN27 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:66",
+      "group": "discord",
+      "label": "SN66 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:45",
+      "group": "discord",
+      "label": "SN45 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:55",
+      "group": "discord",
+      "label": "SN55 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:82",
+      "group": "discord",
+      "label": "SN82 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:121",
+      "group": "discord",
+      "label": "SN121 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:73",
+      "group": "discord",
+      "label": "SN73 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:106",
+      "group": "discord",
+      "label": "SN106 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:123",
+      "group": "discord",
+      "label": "SN123 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:58",
+      "group": "discord",
+      "label": "SN58 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:38",
+      "group": "discord",
+      "label": "SN38 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:98",
+      "group": "discord",
+      "label": "SN98 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:127",
+      "group": "discord",
+      "label": "SN127 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:31",
+      "group": "discord",
+      "label": "SN31 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:101",
+      "group": "discord",
+      "label": "SN101 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:94",
+      "group": "discord",
+      "label": "SN94 official team Discord",
+      "sourceUrls": [],
+      "status": "IN_PROGRESS",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\discord-sn94.txt"
+      ],
+      "reason": "Full channel/window review unfinished.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Actual official channel visible messages read in signed-in browser; interval bounded by saved snapshot.",
+      "disposition": "Verified team updates included; full watermark reconciliation remains."
+    },
+    {
+      "id": "discord:125",
+      "group": "discord",
+      "label": "SN125 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:118",
+      "group": "discord",
+      "label": "SN118 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:69",
+      "group": "discord",
+      "label": "SN69 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:116",
+      "group": "discord",
+      "label": "SN116 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:102",
+      "group": "discord",
+      "label": "SN102 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:100",
+      "group": "discord",
+      "label": "SN100 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:91",
+      "group": "discord",
+      "label": "SN91 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:126",
+      "group": "discord",
+      "label": "SN126 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:115",
+      "group": "discord",
+      "label": "SN115 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:119",
+      "group": "discord",
+      "label": "SN119 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:67",
+      "group": "discord",
+      "label": "SN67 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:87",
+      "group": "discord",
+      "label": "SN87 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:96",
+      "group": "discord",
+      "label": "SN96 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:122",
+      "group": "discord",
+      "label": "SN122 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:40",
+      "group": "discord",
+      "label": "SN40 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:57",
+      "group": "discord",
+      "label": "SN57 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:36",
+      "group": "discord",
+      "label": "SN36 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:99",
+      "group": "discord",
+      "label": "SN99 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:59",
+      "group": "discord",
+      "label": "SN59 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:76",
+      "group": "discord",
+      "label": "SN76 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:108",
+      "group": "discord",
+      "label": "SN108 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:103",
+      "group": "discord",
+      "label": "SN103 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:70",
+      "group": "discord",
+      "label": "SN70 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:47",
+      "group": "discord",
+      "label": "SN47 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:35",
+      "group": "discord",
+      "label": "SN35 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:26",
+      "group": "discord",
+      "label": "SN26 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:113",
+      "group": "discord",
+      "label": "SN113 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:86",
+      "group": "discord",
+      "label": "SN86 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:16",
+      "group": "discord",
+      "label": "SN16 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:84",
+      "group": "discord",
+      "label": "SN84 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:109",
+      "group": "discord",
+      "label": "SN109 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:78",
+      "group": "discord",
+      "label": "SN78 official team Discord",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:official-announcements",
+      "group": "discord",
+      "label": "Official Bittensor announcements",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    },
+    {
+      "id": "discord:security",
+      "group": "discord",
+      "label": "Relevant official security/incident discussion",
+      "sourceUrls": [],
+      "status": "MISSING",
+      "evidence": [],
+      "reason": "No source-specific completed review is established.",
+      "required": true
+    }
+  ],
+  "grokReview": [
+    {
+      "id": "grok:discovery",
+      "group": "grok",
+      "label": "Actual Grok discovery query",
+      "sourceUrls": [],
+      "status": "DONE",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\grok-discovery-response.txt",
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\grok-discovery-prompt.txt"
+      ],
+      "reason": "",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Actual dated query submitted and response inspected. Query completion only, not certification of its claims.",
+      "disposition": "Leads checked against originals; unresolved leads retained."
+    },
+    {
+      "id": "grok:attention",
+      "group": "grok",
+      "label": "Actual Grok attention query",
+      "sourceUrls": [],
+      "status": "DONE",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\grok-attention-response.txt",
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\grok-attention-prompt.txt"
+      ],
+      "reason": "",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Actual dated query submitted and response inspected. Query completion only, not certification of its claims.",
+      "disposition": "Leads checked against originals; unresolved leads retained."
+    },
+    {
+      "id": "grok:omissions",
+      "group": "grok",
+      "label": "Actual Grok omissions query",
+      "sourceUrls": [],
+      "status": "BLOCKED",
+      "evidence": [
+        "C:\\Users\\srl12\\Documents\\Codex\\2026-09-02\\update-subnet-news-on-site-and\\site-audit-2026-11-21\\grok-omissions-rejection.txt"
+      ],
+      "reason": "Included usage and available credits exhausted.",
+      "required": true,
+      "checkedAt": "2026-11-21T15:15:37.106234+00:00",
+      "scope": "Actual final omission query submitted.",
+      "disposition": "No answer obtained; existing discovery and attention preserved.",
+      "gaps": [
+        "Final omission response unavailable."
+      ]
+    }
+  ]
+}
