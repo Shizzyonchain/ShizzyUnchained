@@ -656,12 +656,72 @@
     {
       "netuid": 98,
       "name": "NeverPlayAlone",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN98 NeverPlayAlone opens early access to hosted Minecraft AI companions",
+          "summary": "SN98 NeverPlayAlone announced early access on November 21 for hosted Minecraft worlds with AI companions. Its website describes eight companion types, including miners, builders and explorers, plus custom names and personalities. Players join through Minecraft Java Edition, version 1.20 onward; Bedrock support is not available yet.\n\nThe site lists an email-verified trial with one server, one companion, five server hours and three companion hours. Its entry plan is advertised at $9.99 for 30 days, with separate server and companion hour allowances. Payments are listed by card or TAO, without automatic renewal. This review inspected the announcement and product page without opening a paid world or testing gameplay.\n\nTwo boundaries matter: bringing companions to a privately operated server is marked coming soon, while the GenieAI administrator is a private preview not included in current plans. The mission gallery explicitly labels its clips as provisional Voyager research footage, not NeverPlayAlone gameplay. The launch establishes an early-access offering, not independently measured player adoption or performance.",
+          "rating": 4,
+          "ratingReason": "Four stars: a substantive consumer-facing early-access product exceeds routine maintenance. Five is not established by this bounded launch.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/NPA_Agents/status/2124124333245186376",
+              "label": "Official November 21 launch announcement"
+            },
+            {
+              "url": "https://x.com/NPA_Agents/status/2124124335308705797",
+              "label": "Official early-access confirmation"
+            },
+            {
+              "url": "https://neverplayalone.ai/",
+              "label": "Product scope, trial, pricing and footage limitations"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "Four stars: a substantive consumer-facing early-access product exceeds routine maintenance. Five is not established by this bounded launch.",
+            "evidence": "Official November 21 launch announcement; Official early-access confirmation; Product scope, trial, pricing and footage limitations",
+            "scope": "Announced early access and public product terms.",
+            "uncertainty": "Gameplay, payments and adoption not independently tested; preview features and provisional footage are explicitly distinguished.",
+            "adjacentRatingReason": "Four stars: a substantive consumer-facing early-access product exceeds routine maintenance. Five is not established by this bounded launch."
+          }
+        }
+      ]
     },
     {
       "netuid": 99,
       "name": "Axonry",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN99 Axonry corrects its math grader and reports a new champion",
+          "summary": "Axonry published corrected competition scores on November 21 after fixing a math-grading bug the previous day. The team says some correct answers had been marked wrong. After regrading, its reported MATH-500 scores are 7.6% before an edit, 49.85% for its own edit and 60.45% for UID 250, replacing the earlier 7.05%, 43.75% and 54.0% figures in its November 19 announcement.\n\nIn a separate November 21 update, Axonry says UID 248 built on an edit from UID 245 and reached 65.45%, compared with the previous champion’s revised 60.45%. The point is that an edit which only tied the incumbent could still be useful to the next miner.\n\nThese are the team’s reported results in a bounded benchmark competition, not independently rerun scores or evidence of the same gains across general tasks. The correction and new result are distinct from the conviction-lock announcement covered yesterday.",
+          "rating": 3,
+          "ratingReason": "Three stars: the grader correction and changed champion matter to participants, beyond housekeeping. The standing routine-competition cap rules out four.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/axonry_ai/status/2124112730558988531",
+              "label": "Official November 21 grader correction"
+            },
+            {
+              "url": "https://x.com/axonry_ai/status/2124113164094865748",
+              "label": "Official November 21 champion announcement"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "routine-competition",
+            "consequence": "Three stars: the grader correction and changed champion matter to participants, beyond housekeeping. The standing routine-competition cap rules out four.",
+            "evidence": "Official November 21 grader correction; Official November 21 champion announcement",
+            "scope": "Team-reported corrected MATH-500 scores and new competition winner.",
+            "uncertainty": "Benchmarks were not independently rerun; broad performance claims are not established.",
+            "adjacentRatingReason": "Three stars: the grader correction and changed champion matter to participants, beyond housekeeping. The standing routine-competition cap rules out four."
+          }
+        }
+      ]
     },
     {
       "netuid": 100,
@@ -932,10 +992,12 @@
     "SN75 Hippius case study details SN91 Cascade infrastructure migration",
     "SN66 Conjectures publishes a degree-four minimal-graph proof",
     "SN3 Teutonic announces a 5% Gamma allocation to SN51 Lium",
+    "SN98 NeverPlayAlone opens early access to hosted Minecraft AI companions",
     "SN55 NIOME warns users about malicious emails using its name",
     "SN111 Claims revises its extraction competition and delays testnet opening",
     "SN24 ms.computer plans a website competition with 2,424 alpha in prizes",
     "SN94 Cathedral expands Escape rooms and clarifies compute intake",
+    "SN99 Axonry corrects its math grader and reports a new champion",
     "SN120 Affine plans stricter batch checks and deduplication"
   ],
   "coverage": {
@@ -952,7 +1014,9 @@
   },
   "summary": "Runtime 493 changes Gamma spending authority. SN105 Beam adds Azure deployment, SN75 Hippius details SN91 Cascade adoption, SN66 Conjectures publishes a formal result, and SN3 Teutonic announces compute funding for SN51 Lium. Plus an SN55 NIOME warning and participant updates.",
   "publishedAt": "2026-11-21T15:14:02.761214+00:00",
-  "coverageEnd": "2026-11-21T15:14:02.761214+00:00",
+  "coverageEnd": "2026-11-21T15:27:52.219870+00:00",
   "highlights": [],
-  "upcomingUnlocks": []
+  "upcomingUnlocks": [],
+  "correctedAt": "2026-11-21T15:27:52.219870+00:00",
+  "correctionNote": "Updated with SN98 NeverPlayAlone early access and SN99 Axonry corrected competition results after additional original-source review. Original publication and single daily roundup are preserved."
 }
