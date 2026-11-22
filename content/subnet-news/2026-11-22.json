@@ -744,7 +744,43 @@
     {
       "netuid": 126,
       "name": "Attelier",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN126 Attelier ties future miner allocations to demand and GPU capacity",
+          "summary": "Attelier owner Sacha said on November 21 that SN126 plans to reduce burning progressively and allocate more to miners as demand requires additional GPU capacity. He linked the public subnet repository and promised a further update on demand and capacity. No fixed date or executed allocation change was established by that announcement.\n\nThe current repository describes a permissioned inference gateway and a service ceiling of 5% of the mining pool, not a guaranteed miner allocation. Eligible work determines rewards, with unused allocation directed to burn. It distinguishes organic requests from synthetic workload; these settings do not establish paid customer demand or independently verified payouts.\n\nThe API announcement dates to November 17. Current documentation describes USD-quoted image, video and audio jobs, with an API balance separate from web credits. Attelier labels Create and its API live, while Studio, Templates, Pipelines and its own models remain in development. This is a follow-up on operating policy, not a new November 22 product launch.",
+          "rating": 3,
+          "ratingReason": "Three stars: the owner clarifies how demand will guide miner allocations, which is more useful than minor housekeeping. Four would overstate an undated policy plan without a newly established allocation change.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1550213095081644132",
+              "label": "Official SN126 owner update, November 21 at 12:02 PM Eastern"
+            },
+            {
+              "url": "https://github.com/attelierai/attelier_subnet",
+              "label": "Public subnet policy and validator documentation"
+            },
+            {
+              "url": "https://docs.attelier.ai/inference/",
+              "label": "Official API workflow and billing documentation"
+            },
+            {
+              "url": "https://attelier.ai/",
+              "label": "Current product availability and roadmap"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operating-policy-plan",
+            "consequence": "Three stars: the owner clarifies how demand will guide miner allocations, which is more useful than minor housekeeping. Four would overstate an undated policy plan without a newly established allocation change.",
+            "evidence": "Native owner announcement, owner-linked public repository, official API documentation and product roadmap.",
+            "scope": "Published operating policy and future intent, not independent chain execution.",
+            "uncertainty": "Timing, actual demand and finalized allocation execution remain unverified.",
+            "adjacentRatingReason": "Three stars: the owner clarifies how demand will guide miner allocations, which is more useful than minor housekeeping. Four would overstate an undated policy plan without a newly established allocation change."
+          }
+        }
+      ]
     },
     {
       "netuid": 127,
@@ -819,7 +855,8 @@
     "SN62 Ridges details Ridgeline pricing and locked-alpha credits",
     "SN24 ms.computer opens website entries with a December 6 deadline",
     "SN111 Claims opens its revised testnet round; submission cutoff has passed",
-    "SN92 REAX broadens Round 2 model eligibility ahead of Tuesday cutoff"
+    "SN92 REAX broadens Round 2 model eligibility ahead of Tuesday cutoff",
+    "SN126 Attelier ties future miner allocations to demand and GPU capacity"
   ],
   "coverage": {
     "searched": [
@@ -835,7 +872,8 @@
   },
   "summary": "TaoStats explains a transaction-ordering route addressed in runtime 492. The merged runtime 494 candidate adds paid commitments and mechanism-specific delegation. Plus Ridgeline pricing, ms.computer competition entries and Claims testnet rules.",
   "publishedAt": "2026-11-22T15:13:55.570549+00:00",
-  "coverageEnd": "2026-11-22T15:31:28.596838+00:00",
+  "coverageEnd": "2026-11-22T15:54:41.854398+00:00",
   "highlights": [],
-  "upcomingUnlocks": []
+  "upcomingUnlocks": [],
+  "updatedAt": "2026-11-22T15:54:41.854398+00:00"
 }

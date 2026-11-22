@@ -4695,6 +4695,15 @@
       "scope": "November 20 12:48 Eastern through November 22 04:26 Eastern visible messages; original owner November 21 rule announcements read. Earlier overlap and threads incomplete.",
       "evidence": "site-audit-2026-11-22/discord-sn92.txt",
       "disposition": "Added current v2.4 competition update; superseded v2.0 limits excluded."
+    },
+    {
+      "netuid": 126,
+      "status": "IN_PROGRESS",
+      "checkedAt": "2026-11-22T15:54:41.854398+00:00",
+      "url": "https://discord.com/channels/799672011265015819/1550213095081644132",
+      "scope": "Visible November 20-21 messages; earlier overlap and threads pending.",
+      "evidence": "site-audit-2026-11-22/discord-sn126.txt",
+      "disposition": "SN126 Attelier ties future miner allocations to demand and GPU capacity"
     }
   ],
   "grokReview": [
@@ -4747,5 +4756,15 @@
       "gap": "Final omission query rejected for exhausted included usage and credits."
     }
   ],
-  "updatedAt": "2026-11-22T15:31:28.596838+00:00"
+  "updatedAt": "2026-11-22T15:54:41.854398+00:00",
+  "followupEditorialReviews": [
+    {
+      "headline": "SN126 Attelier ties future miner allocations to demand and GPU capacity",
+      "reviewedAt": "2026-11-22T15:54:41.854398+00:00",
+      "rating": 3,
+      "rationale": "Three stars: the owner clarifies how demand will guide miner allocations, which is more useful than minor housekeeping. Four would overstate an undated policy plan without a newly established allocation change.",
+      "dedup": "Earlier November reports contain roster entries but no Attelier API or allocation-policy story. November 17 launch retained as background.",
+      "coverageComplete": false
+    }
+  ]
 }
