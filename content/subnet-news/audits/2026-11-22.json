@@ -1,7 +1,7 @@
 {
   "date": "2026-11-22",
-  "status": "PREPARED_WITH_GAPS",
-  "publicationComplete": false,
+  "status": "PUBLISHED_WITH_DISCLOSED_GAPS",
+  "publicationComplete": true,
   "coverageComplete": false,
   "dailyWorkflowComplete": false,
   "pendingLeads": [
@@ -1771,7 +1771,8 @@
       "Runtime 494 candidate adds paid commitments and mechanism-specific delegation",
       "SN62 Ridges details Ridgeline pricing and locked-alpha credits",
       "SN24 ms.computer opens website entries with a December 6 deadline",
-      "SN111 Claims opens its revised testnet round; submission cutoff has passed"
+      "SN111 Claims opens its revised testnet round; submission cutoff has passed",
+      "SN92 REAX broadens Round 2 model eligibility ahead of Tuesday cutoff"
     ],
     "rationale": "A concrete trading-protection investigation leads the next protocol candidate, followed by service access and participant updates.",
     "leadAlternatives": [
@@ -1798,6 +1799,12 @@
       {
         "headline": "SN111 Claims opens its revised testnet round; submission cutoff has passed",
         "classification": "News"
+      },
+      {
+        "headline": "SN92 REAX broadens Round 2 model eligibility ahead of Tuesday cutoff",
+        "classification": "News",
+        "rating": 3,
+        "reason": "Three stars under the routine-competition cap: expanded eligibility and submission rules materially affect entrants. Two understates the participation change; four would overrate a competition update."
       }
     ]
   },
@@ -4677,6 +4684,17 @@
       "evidence": [],
       "reason": "No source-specific completed review is established.",
       "required": true
+    },
+    {
+      "netuid": 92,
+      "status": "IN_PROGRESS",
+      "checkedAt": "2026-11-22T15:31:28.596838+00:00",
+      "url": "https://discord.com/channels/799672011265015819/1551633427038736454",
+      "surface": "Discord Web",
+      "account": "shizzyunchained",
+      "scope": "November 20 12:48 Eastern through November 22 04:26 Eastern visible messages; original owner November 21 rule announcements read. Earlier overlap and threads incomplete.",
+      "evidence": "site-audit-2026-11-22/discord-sn92.txt",
+      "disposition": "Added current v2.4 competition update; superseded v2.0 limits excluded."
     }
   ],
   "grokReview": [
@@ -4728,5 +4746,6 @@
       "disposition": "Selected verified developments included; other leads remain pending.",
       "gap": "Final omission query rejected for exhausted included usage and credits."
     }
-  ]
+  ],
+  "updatedAt": "2026-11-22T15:31:28.596838+00:00"
 }

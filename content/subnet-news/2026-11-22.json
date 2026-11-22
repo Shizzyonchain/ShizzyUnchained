@@ -518,7 +518,35 @@
     {
       "netuid": 92,
       "name": "REAX",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN92 REAX broadens Round 2 model eligibility ahead of Tuesday cutoff",
+          "summary": "REAX owner Florian announced broader Generalist Round 2 rules on November 21, followed by the published v2.4 rulebook. Eligible starting models can now use any architecture with public weights, a compatible licence and no Hugging Face Decision Index flag, subject to the stated 45-billion-parameter limit and one 96 GB GPU requirement.\n\nThe revised rules allow two commitments per coldkey in a rolling 24 hours and simplify the required lineage record to the submitting hotkey and weight parents, or a declaration of training from scratch. Each entry is evaluated in its base model's own setup. Declared loops or rereads may use up to twice that setup's compute, but unsupported settings wait for implementation; this is not proof that every setup is ready.\n\nThe first planned commitment cutoff is November 24 at 15:00 UTC, with results targeted for November 26 at 13:00 UTC. These are published participation terms, not independently verified evaluation results or reward payments. The older v2.0 page has been superseded.",
+          "rating": 3,
+          "ratingReason": "Three stars under the routine-competition cap: expanded eligibility and submission rules materially affect entrants. Two understates the participation change; four would overrate a competition update.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://reax.co/competitions/rules/v2.4/",
+              "label": "Current official Round 2 rulebook, updated November 21"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1551633427038736454",
+              "label": "Official SN92 owner announcements, November 21"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "routine-competition",
+            "consequence": "More eligible models and more frequent submissions for Round 2 participants.",
+            "evidence": "Published v2.4 rulebook and original owner announcements in SN92.",
+            "scope": "Participation and evaluation rules; upcoming cutoff and target result date.",
+            "uncertainty": "Setup readiness, scoring results and payouts not independently verified.",
+            "adjacentRatingReason": "Three stars under the routine-competition cap: expanded eligibility and submission rules materially affect entrants. Two understates the participation change; four would overrate a competition update."
+          }
+        }
+      ]
     },
     {
       "netuid": 93,
@@ -790,7 +818,8 @@
     "Runtime 494 candidate adds paid commitments and mechanism-specific delegation",
     "SN62 Ridges details Ridgeline pricing and locked-alpha credits",
     "SN24 ms.computer opens website entries with a December 6 deadline",
-    "SN111 Claims opens its revised testnet round; submission cutoff has passed"
+    "SN111 Claims opens its revised testnet round; submission cutoff has passed",
+    "SN92 REAX broadens Round 2 model eligibility ahead of Tuesday cutoff"
   ],
   "coverage": {
     "searched": [
@@ -806,7 +835,7 @@
   },
   "summary": "TaoStats explains a transaction-ordering route addressed in runtime 492. The merged runtime 494 candidate adds paid commitments and mechanism-specific delegation. Plus Ridgeline pricing, ms.computer competition entries and Claims testnet rules.",
   "publishedAt": "2026-11-22T15:13:55.570549+00:00",
-  "coverageEnd": "2026-11-22T15:13:55.570549+00:00",
+  "coverageEnd": "2026-11-22T15:31:28.596838+00:00",
   "highlights": [],
   "upcomingUnlocks": []
 }
