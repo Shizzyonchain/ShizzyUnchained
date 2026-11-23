@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { requestGuard, responseCoalescer } from "../../../lib/request-protection";
 
 const load = responseCoalescer(128, 4);
-const names = new Set(["GammaMinted", "GammaEmissionMinted", "GammaSpent", "SubnetGammaEnabledSet", "SubnetGammaEmissionSet", "GammaMoved", "GammaClosed", "GammaServiceSet", "GammaServiceRemoved"]);
+const names = new Set(["GammaMinted", "GammaEmissionMinted", "GammaSpent", "SubnetGammaEnabledSet", "SubnetGammaEmissionSet", "GammaMoved", "GammaClosed", "GammaServiceSet", "GammaServiceRemoved", "GammaDepositClosed", "GammaDepositSpenderSet", "GammaDepositDailySpendCapSet", "GammaSpendSkipped", "ServiceSet", "ServiceRemoved"]);
 export async function GET(request: NextRequest) {
   const blocked = requestGuard(request, "research"); if (blocked) return blocked;
   const query = request.nextUrl.searchParams;
