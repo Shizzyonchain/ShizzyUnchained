@@ -1,3 +1,4 @@
+import { exchangeHistoryWindows } from "../../lib/exchange-history-window";
 import { requestGuard } from "../../lib/request-protection";
 import { chartResponse } from "../../lib/chart-cache-source";
 import { NextRequest, NextResponse } from "next/server";
@@ -82,9 +83,9 @@ async function loadUncached(request: NextRequest) {
   }
   try {
     const end = Math.floor(Date.now() / 86400000) * 86400000 + 86400000;
-    const pageCount = long ? 3 : interval === "10m" ? 3 : 1;
-    const windowSeconds = 299 * granularity;
-    const boundary = Math.floor(Date.now() / 1000 / windowSeconds) * windowSeconds;
+    // Include the preceding fixed window: the current window can start only minutes ago.
+    const pageCount = long || interval === "10m" ? 3 : 2;
+    const windows = exchangeHistoryWindows(interval, Date.now());
     const pages: CoinbaseCandle[][] = [];
     // Bounded concurrency respects the public exchange rate limit. Fixed older
     // windows stay cached; visitors only refresh the short, current window.
@@ -95,8 +96,8 @@ async function loadUncached(request: NextRequest) {
       url.searchParams.set("granularity", String(granularity));
       if (long) { url.searchParams.set("start", new Date(end - (index + 1) * 299 * 86400000).toISOString()); url.searchParams.set("end", new Date(end - index * 299 * 86400000).toISOString()); }
       else {
-        url.searchParams.set("start", new Date((boundary - index * windowSeconds) * 1000).toISOString());
-        url.searchParams.set("end", new Date((index === 0 ? Math.floor(Date.now() / 60000) * 60 : boundary - (index - 1) * windowSeconds) * 1000).toISOString());
+        url.searchParams.set("start", new Date(windows[index].start * 1000).toISOString());
+        url.searchParams.set("end", new Date(windows[index].end * 1000).toISOString());
       }
       // The outer shared chart cache already coalesces live refreshes. A second
       // stale-while-revalidate fetch cache can renew that cache with old FX data.
@@ -132,5 +133,5 @@ export async function GET(request: NextRequest) {
   const before = request.nextUrl.searchParams.get("before");
   if (!granularities[interval]) return loadUncached(request);
   if (before !== null && (!Number.isSafeInteger(Number(before)) || Number(before) < 1609459200 || Number(before) > Date.now() / 1000 + 86400)) return loadUncached(request);
-  return chartResponse(`tao:${interval}:${before === null ? "latest" : Number(before)}`, () => loadUncached(request), before === null);
+  return chartResponse(`tao:v2:${interval}:${before === null ? "latest" : Number(before)}`, () => loadUncached(request), before === null);
 }

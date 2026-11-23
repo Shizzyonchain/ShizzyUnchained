@@ -3,9 +3,10 @@ U64_MAX = 2**64 - 1
 BLOCKS_PER_DAY = 7200  # Explicit estimate: 12-second blocks, not actual 24h earnings.
 
 
-def owner_daily_rate(emission, weights):
+def owner_daily_rate(emission, weights, gamma=()):
     values = [int(v) for v in weights]
-    if len(values) != 5 or any(v < 0 for v in values) or sum(values) != U64_MAX:
+    gamma_values = [int(weight) for _, weight in gamma]
+    if len(values) != 5 or any(v < 0 for v in values + gamma_values) or sum(values) + sum(gamma_values) != U64_MAX:
         raise ValueError('Invalid normalized emission weights')
     if emission < 0:
         raise ValueError('Invalid alpha emission')
@@ -20,6 +21,8 @@ def add_owner_emissions(chain, block_hash, rows):
     values = chain.query_multi(keys, block_hash=block_hash)
     if len(values) != len(keys):
         raise ValueError('Incomplete emission weights')
+    gamma = {int(k.value): v.value for k, v in chain.query_map(
+        "SubtensorModule", "SubnetGammaEmission", block_hash=block_hash)}
     evidence = {}
     for sn, (_, value) in zip(rows, values):
         emission = emissions.get(int(sn))
@@ -32,7 +35,7 @@ def add_owner_emissions(chain, block_hash, rows):
                 raise ValueError('Missing alpha emission')
             emission = int(emission)
         weights = [int(v) for v in value.value]
-        amount = owner_daily_rate(emission, weights)
+        amount = owner_daily_rate(emission, weights, gamma.get(int(sn), []))
         rows[sn].update(ownerEmissionPerDayRaw=str(amount), alphaOutEmissionRaw=str(emission), ownerWeightRaw=str(weights[2]))
-        evidence[sn] = {'alphaOutEmissionRaw': str(emission), 'weights': [str(v) for v in weights], 'blocksPerDay': BLOCKS_PER_DAY}
+        evidence[sn] = {'alphaOutEmissionRaw': str(emission), 'weights': [str(v) for v in weights], 'gamma': [[n, str(w)] for n,w in gamma.get(int(sn), [])], 'blocksPerDay': BLOCKS_PER_DAY}
     return evidence

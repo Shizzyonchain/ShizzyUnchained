@@ -23,7 +23,7 @@ if(proof.snapshot.hash!==data.hash||proof.snapshot.block!==data.block||JSON.stri
 if (proof.ownerEmissionRates) {
  for (const [sn, rate] of Object.entries(proof.ownerEmissionRates)) {
   const weights=rate.weights.map(BigInt), row=data.subnets[sn], max=(1n<<64n)-1n;
-  if(weights.length!==5||weights.some(v=>v<0n)||weights.reduce((a,b)=>a+b,0n)!==max||rate.blocksPerDay!==7200||BigInt(rate.alphaOutEmissionRaw)<0n)throw new Error(`Invalid emission evidence for SN${sn}`);
+  if(weights.length!==5||weights.some(v=>v<0n)||weights.reduce((a,b)=>a+b,0n)+(rate.gamma||[]).reduce((a,[,w])=>a+BigInt(w),0n)!==max||rate.blocksPerDay!==7200||BigInt(rate.alphaOutEmissionRaw)<0n)throw new Error(`Invalid emission evidence for SN${sn}`);
   const daily=BigInt(rate.alphaOutEmissionRaw)*weights[2]/max*7200n;
   if(row.ownerEmissionPerDayRaw!==String(daily)||row.ownerWeightRaw!==String(weights[2])||row.alphaOutEmissionRaw!==rate.alphaOutEmissionRaw)throw new Error(`Owner/day does not match finalized evidence for SN${sn}`);
  }

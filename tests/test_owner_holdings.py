@@ -1,4 +1,6 @@
-import importlib.util,unittest
+import importlib.util,unittest,sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
 spec=importlib.util.spec_from_file_location('holdings','scripts/refresh-owner-holdings.py');h=importlib.util.module_from_spec(spec);spec.loader.exec_module(h)
 class HoldingsDecoder(unittest.TestCase):
  def test_large_exact_stake_and_zero_wallet(self):

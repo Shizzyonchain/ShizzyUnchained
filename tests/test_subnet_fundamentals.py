@@ -9,6 +9,9 @@ class OwnerEmissionTest(unittest.TestCase):
   self.assertEqual(owner_daily_rate(10**9,[0,0,owner,0,U64_MAX-owner]),99_999_999*7200)
   self.assertEqual(owner_daily_rate(10**9,[0,0,0,0,U64_MAX]),0)
   self.assertEqual(owner_daily_rate(0,[0,0,owner,0,U64_MAX-owner]),0)
+ def test_gamma_share_is_not_renormalized_into_owner_cut(self):
+  owner=U64_MAX//10; gamma=U64_MAX//5
+  self.assertEqual(owner_daily_rate(10**9,[0,0,owner,0,U64_MAX-owner-gamma],[(51,gamma)]),99_999_999*7200)
  def test_reject_invalid_weights(self):
   for weights in [[0,0,18,41,41],[0,0,U64_MAX],[0,0,-1,0,U64_MAX+1]]:
    with self.assertRaises(ValueError):owner_daily_rate(10**9,weights)
