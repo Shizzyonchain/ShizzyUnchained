@@ -15,6 +15,9 @@ type ChannelVideo = {
 };
 
 const channelVideos: ChannelVideo[] = [
+  { id: "rGpnTLCsilI", title: "Bitcoin at $62K, TAO Under $200: Are We Buying the Bottom?", meta: "1:04:48 · Livestream replay · November 19, 2026" },
+  { id: "yND0J2d3g08", title: "TAO’s Last Stand: Why I’m Doubling Down on Bittensor Subnets", meta: "24:49 · Public video · November 17, 2026" },
+  { id: "47ETbLAe_Js", title: "TAO Below $200: Is the Market Missing What Bittensor Is Building?", meta: "23:59 · Public video · November 16, 2026" },
   { id: "DLQ0PwhvQos", title: "Is This The Bottom For Crypto? Live Market Breakdown (w/ @Shizzyunchained @ 4PM EST)", meta: "1:46:20 · JM Crypto · Guest appearance · November 13, 2026" },
   { id: "kgbeIugqJk8", title: "I Challenged a TAO Bull on Value Capture. Here's What He Said", meta: "47:48 · LongView Compute · Guest appearance · November 13, 2026" },
   { id: "LW1_8hsCTgA", title: "TAO: More Pain Ahead? My Next Move in Bittensor", meta: "22:24 · Public video · November 12, 2026" },

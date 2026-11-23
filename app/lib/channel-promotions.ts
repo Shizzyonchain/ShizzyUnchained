@@ -1,10 +1,10 @@
 export const youtubeMembershipUrl = "https://www.youtube.com/channel/UCzp_1hHByX_XBnRRJPucEIw/join";
 
 export const latestMemberVideo = {
-  id: "JwyGqeMnsCs",
-  title: "TAO Insider: What Matters Today | 11/11/26",
-  meta: "9:20 · Members-only video · November 11 edition",
-  publishedLabel: "November 11 edition",
+  id: "gksV5Yb8gRI",
+  title: "TAO Insider: What Matters Today | 11/13/26",
+  meta: "10:56 · Members-only video · November 13 edition",
+  publishedLabel: "November 13 edition",
   membersOnly: true,
 };
 
