@@ -1,0 +1,390 @@
+[
+  {
+    "netuid": 22,
+    "url": "https://www.desearch.ai/services.json",
+    "status": 200,
+    "contentType": "application/json; charset=utf-8",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "e744b2c36e2c2e7192162fb9ef2a9bba7f555b163a49980187b526aa409d4afd",
+    "manifest": {
+      "version": 1,
+      "name": "Desearch",
+      "description": "Live AI, web, and X search APIs for agents, search products, research tools, dashboards, and data workflows.",
+      "publishers": [
+        {
+          "netuid": 22,
+          "hotkey": "5CUu1QhvrfyMDBELUPJLt4c7uJFbi7TKqDHkS1Zz41oD4dyP"
+        }
+      ],
+      "services": [
+        {
+          "type": "openapi",
+          "endpoint": "https://api.desearch.ai",
+          "spec": "https://api.desearch.ai/openapi.json"
+        },
+        {
+          "type": "mcp",
+          "endpoint": "https://mcp.desearch.ai/mcp"
+        }
+      ],
+      "payments": [
+        {
+          "type": "gamma",
+          "note": "Gamma spent at this service is credited to a Desearch Console account, not to the spending hotkey. Verify the deposit's coldkey on the console's Billing page before you spend. API requests then use your normal API key."
+        }
+      ],
+      "docs": "https://www.desearch.ai/docs",
+      "pricing": "https://www.desearch.ai/pricing",
+      "console": "https://console.desearch.ai"
+    }
+  },
+  {
+    "netuid": 25,
+    "url": "https://api.bringyour.com/pay/gamma/services.json",
+    "status": 200,
+    "contentType": "application/json",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "33b05e30a70d0e3e608ebe9b5adc1f23010f88e441cd33c98aa29659fe51c502",
+    "manifest": {
+      "version": 1,
+      "name": "URnetwork",
+      "description": "A decentralized VPN and proxy network. UR Pro plans and data, paid from an SN25 gamma deposit or over x402, entirely by API.",
+      "publishers": [
+        {
+          "netuid": 25,
+          "hotkey": "5CyQFykVpfa9xgZVGgBsiNUpjbo1EihBTSkPvDC1FZbL1wxG"
+        }
+      ],
+      "services": [
+        {
+          "type": "openapi",
+          "endpoint": "https://api.bringyour.com",
+          "spec": "https://ur.io/openapi.yml"
+        }
+      ],
+      "payments": [
+        {
+          "type": "gamma",
+          "max_spend": "40",
+          "terms": "https://api.bringyour.com/pay/gamma/terms"
+        },
+        {
+          "type": "x402",
+          "skus": "https://api.bringyour.com/x402/skus"
+        }
+      ]
+    }
+  },
+  {
+    "netuid": 28,
+    "url": "https://saygm.com/services.json",
+    "status": 200,
+    "contentType": "application/json",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "ea0d405ee81c84aa8c4ddb28099dea472e5be50f2c8959b3025a384b85e44e19",
+    "manifest": {
+      "version": 1,
+      "name": "SayGM",
+      "description": "SayGM provides prepaid access to AI models through an API, with gamma as a payment method.",
+      "publishers": [
+        {
+          "netuid": 28,
+          "hotkey": "5Evgh9QTXJLxYLusVy3tcY5S6Z3GgRSNDb9AzXUchX5dco3P"
+        }
+      ],
+      "services": [
+        {
+          "type": "http",
+          "endpoint": "https://api.saygm.com",
+          "spec": "https://saygm.com/gamma/openapi.json"
+        }
+      ],
+      "payments": [
+        {
+          "type": "gamma",
+          "signature": "btauth/1",
+          "balance": "https://api.saygm.com/balance"
+        }
+      ],
+      "pricing": "https://api.saygm.com/v1/models",
+      "terms": "https://saygm.com/terms",
+      "docs": "https://saygm.com/gamma/guide.md"
+    }
+  },
+  {
+    "netuid": 51,
+    "url": "https://lium.io/api/gamma/service.json",
+    "status": 200,
+    "contentType": "application/json",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "4e31cefc28765050e07dc03361c69edfc9dae0a3df48233c3724d39abff6b62a",
+    "manifest": {
+      "version": 1,
+      "name": "Lium",
+      "description": "GPU pods by the second. Gamma spent at Lium's service hotkey becomes the hotkey's USD balance.",
+      "publishers": [
+        {
+          "netuid": 51,
+          "hotkey": "5FTVrwEpjvpNeKwczFtYjs62GHKKLHLCdqCThtj2unZouKg1"
+        }
+      ],
+      "services": [
+        {
+          "type": "http",
+          "endpoint": "https://lium.io/api",
+          "spec": "https://lium.io/api/openapi.json"
+        }
+      ],
+      "payments": [
+        {
+          "type": "gamma",
+          "signature": "btauth/1",
+          "balance": "https://lium.io/api/gamma/balance"
+        }
+      ],
+      "pricing": "https://lium.io/pricing.json",
+      "docs": "https://docs.lium.io/llms.txt"
+    }
+  },
+  {
+    "netuid": 53,
+    "url": "https://engy.ai/services.json",
+    "status": 200,
+    "contentType": "application/json",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "610a1877632ec749335216291caced440605bf2374b3c464488ef845efaafc39",
+    "manifest": {
+      "version": 1,
+      "name": "engy",
+      "description": "OpenAI-compatible LLM API. Pay with gamma: spend it at engy's service hotkey and that hotkey's balance is credited at $1 per gamma plus 5%; then call the API with btauth/1-signed requests.",
+      "publishers": [
+        {
+          "netuid": 53,
+          "hotkey": "5DXSBCCKH5ENuyHFNaAvtaMfbhEEWpjSJB4rzc4mJfsc1uvJ"
+        }
+      ],
+      "services": [
+        {
+          "type": "http",
+          "endpoint": "https://api.engy.ai",
+          "spec": "https://api.engy.ai/openapi.json"
+        }
+      ],
+      "payments": [
+        {
+          "type": "gamma",
+          "signature": "btauth/1",
+          "balance": "https://api.engy.ai/gamma/balance"
+        }
+      ],
+      "pricing": "https://api.engy.ai/v1/models",
+      "docs": "https://engy.ai/docs"
+    }
+  },
+  {
+    "netuid": 58,
+    "url": "https://api.robotensor.ai/services.json",
+    "status": 200,
+    "contentType": "application/json",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "49a6985d9250ab7b6753c89aa9e698e14fce8ac0038ef59e4f4e1839945887bb",
+    "manifest": {
+      "version": 1,
+      "name": "Attune",
+      "description": "Robot data (simulation and egocentric, pre-train and post-train). Robot policies. Playground runs.",
+      "services": [
+        {
+          "type": "openapi",
+          "endpoint": "https://api.robotensor.ai/v1",
+          "spec": "https://api.robotensor.ai/openapi.json"
+        }
+      ],
+      "publishers": [
+        {
+          "netuid": 58,
+          "hotkey": "5DsnuvVczKJvrFphbzNnuRhiGhH48co7im1EzzvnWibWBp9S"
+        }
+      ],
+      "payments": [
+        {
+          "type": "gamma",
+          "balance": "https://api.robotensor.ai/v1/gamma/wallet"
+        }
+      ],
+      "contact": "contact@robotensor.ai"
+    }
+  },
+  {
+    "netuid": 75,
+    "url": "https://api.hippius.com/api/billing/gamma/service.json",
+    "status": 200,
+    "contentType": "application/json",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "382e9086f9350feeb9ee0638c73be93fded003624661c27075566429ce132e9a",
+    "manifest": {
+      "version": 3,
+      "name": "Hippius",
+      "description": "Hippius is a decentralized cloud (compute, storage, S3). Gamma a hotkey spends at our service hotkey is credited, one US dollar per gamma, to that hotkey's Hippius account.",
+      "publishers": [
+        {
+          "netuid": 75,
+          "hotkey": "5G1Qj93Fy22grpiGKq6BEvqqmS2HVRs3jaEdMhq9absQzs6g"
+        }
+      ],
+      "services": [
+        {
+          "type": "openapi",
+          "endpoint": "https://api.hippius.com/swagger.json"
+        },
+        {
+          "type": "http",
+          "endpoint": "https://api.hippius.com",
+          "openapi": "https://api.hippius.com/swagger.json",
+          "docs": "https://docs.hippius.com/llms.txt"
+        }
+      ],
+      "payments": [
+        {
+          "type": "gamma",
+          "signature": "btauth/1",
+          "balance": "https://api.hippius.com/api/billing/gamma/balance",
+          "balance_auth": "btauth/1 signed by the hotkey for its total spendable balance; unsigned shows its gamma only"
+        }
+      ],
+      "pricing": "https://api.hippius.com/api/billing/gamma/pricing",
+      "docs": "https://docs.hippius.com/llms.txt",
+      "openapi": "https://api.hippius.com/swagger.json"
+    }
+  },
+  {
+    "netuid": 76,
+    "url": "https://api.ormas.ai/services.json",
+    "status": 200,
+    "contentType": "application/json",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "ea73ddea188fb52d81e48d9c3ce287462c4cf7dd45da1ee7ecf865e42aadcbf1",
+    "manifest": {
+      "contact": "ops@ormas.ai",
+      "description": "Coding tasks priced per accepted outcome, on Bittensor subnet 76. Miners bid on whole tasks and are paid only when the delivery is accepted. Gamma terms: https://ormas.ai/docs/sn76-gamma",
+      "name": "Ormas",
+      "payments": [],
+      "services": [
+        {
+          "endpoint": "https://api.ormas.ai",
+          "spec": "https://api.ormas.ai/openapi.json",
+          "type": "openapi"
+        },
+        {
+          "endpoint": "https://ormas.ai/docs",
+          "type": "docs"
+        }
+      ],
+      "version": 1
+    }
+  },
+  {
+    "netuid": 80,
+    "url": "https://www.openroboto.ai/",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "94476eb13900a87d5a2b11dda72575c079f8b200fe89e14ac65cf0082bb404e9"
+  },
+  {
+    "netuid": 94,
+    "url": "https://cathedral.computer/v1/gamma/services.json",
+    "status": 200,
+    "contentType": "application/json",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "90c645e44c563b159a6c3c1d83d1c017ffae54558ed7d0c0552212070be3899d",
+    "manifest": {
+      "version": 1,
+      "name": "Cathedral",
+      "description": "Confidential sandboxes (AMD SEV-SNP) on Bittensor SN94, billed per second in US dollars. Gamma spent at a Cathedral service hotkey becomes that hotkey's balance; every paid route takes btauth/1 requests signed by that hotkey, with no sign-up or API key.",
+      "publishers": [
+        {
+          "netuid": 94,
+          "hotkey": "5FQsFkui1UvS7S7Sf3JAqN9FPCR7RmufSEZTGuVPPN5EDmsN"
+        }
+      ],
+      "services": [
+        {
+          "type": "openapi",
+          "endpoint": "https://api.polaris.computer/v1/gamma/openapi.json",
+          "api_base": "https://api.polaris.computer",
+          "signature": "btauth/1",
+          "pricing": "https://api.polaris.computer/v1/gamma/pricing",
+          "catalog": "https://api.polaris.computer/v1/gamma/pricing"
+        }
+      ],
+      "payments": [
+        {
+          "type": "gamma",
+          "signature": "btauth/1",
+          "balance": "https://cathedral.computer/v1/gamma/balance"
+        }
+      ],
+      "pricing": "https://api.polaris.computer/v1/gamma/pricing",
+      "catalog": "https://api.polaris.computer/v1/gamma/pricing",
+      "docs": "https://cathedral.computer/docs/"
+    }
+  },
+  {
+    "netuid": 103,
+    "url": "https://terza.si",
+    "status": 200,
+    "contentType": "text/html",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "add54f9edc77a8cf4cab0af96fc13675a6752aacb47030edb9a52621aac67e0b"
+  },
+  {
+    "netuid": 117,
+    "url": "https://app.everyframe.studio/services.json",
+    "status": 200,
+    "contentType": "application/json",
+    "checkedAt": "2026-11-23",
+    "bodySha256": "7b720713ca884af82759023c9abbe6d51632af89f74e27476d4a9c8d34cdc791",
+    "manifest": {
+      "version": 1,
+      "name": "EveryFrame",
+      "description": "AI video, image and speech generation for agents. Spend SN117 Gamma at the publisher hotkey, then sign every API request with your hotkey (btauth/1). No sign-up or API key. 1 Gamma = 1 USD.",
+      "publishers": [
+        {
+          "netuid": 117,
+          "hotkey": "5G9K4zDrdcAE8F1MaaZNxLGXuhMApR5ENZGTs2wAEhiptHEf"
+        }
+      ],
+      "services": [
+        {
+          "type": "openapi",
+          "endpoint": "https://app.everyframe.studio/api/v1/openapi.json",
+          "base": "https://app.everyframe.studio/api/v1",
+          "pricing": [
+            "https://app.everyframe.studio/api/v1/render/models",
+            "https://app.everyframe.studio/api/v1/speech/models"
+          ],
+          "catalog": [
+            "https://app.everyframe.studio/api/v1/render/models",
+            "https://app.everyframe.studio/api/v1/speech/models"
+          ]
+        },
+        {
+          "type": "mcp",
+          "endpoint": "https://app.everyframe.studio/api/v1/mcp"
+        }
+      ],
+      "pricing": [
+        "https://app.everyframe.studio/api/v1/render/models",
+        "https://app.everyframe.studio/api/v1/speech/models"
+      ],
+      "payments": [
+        {
+          "type": "gamma",
+          "max_spend": "1000",
+          "signature": "btauth/1",
+          "balance": "https://app.everyframe.studio/api/v1/gamma/balance"
+        }
+      ]
+    }
+  }
+]

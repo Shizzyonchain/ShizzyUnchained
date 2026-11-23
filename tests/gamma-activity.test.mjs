@@ -20,3 +20,21 @@ test("initial Gamma daily activity does not mix the UTC evening into the next Ea
  assert.equal(day.filter(e=>e.type==="GammaMinted").length,0);
  assert.ok(data.coverageStartBlock<=9479559&&data.coverageEndBlock>=9485026);
 });
+
+test("emission-funded credits belong to the receiving service subnet",()=>{
+ const rows=data.events.filter(e=>e.type==="GammaEmissionMinted");
+ assert.ok(rows.length>0);
+ for(const e of rows){assert.equal(e.netuid,e.attributes.target);assert.notEqual(e.netuid,e.attributes.netuid);}
+});
+
+test("current Gamma balances reconcile with finalized deposit evidence",()=>{
+ const configuration=JSON.parse(readFileSync(new URL('../app/data/gamma.json',import.meta.url)));
+ const proof=JSON.parse(readFileSync(new URL('../public/evidence/gamma-2026-11-23-deposits.json',import.meta.url)));
+ assert.equal(configuration.block,proof.block);
+ let total=0;
+ for(const subnet of configuration.subnets){
+  const amount=proof.deposits[String(subnet.netuid)].reduce((sum,row)=>sum+row.deposit.balance,0);
+  assert.ok(Number.isSafeInteger(amount));assert.equal(subnet.remainingCredits,amount);total+=amount;
+ }
+ assert.equal(configuration.remainingCredits,total);
+});
