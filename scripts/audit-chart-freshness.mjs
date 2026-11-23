@@ -1,4 +1,6 @@
-import {writeFile} from 'node:fs/promises';
+import {writeFile,readFile} from 'node:fs/promises';
+import {registrationCandles} from '../app/lib/registration-history.ts';
+const registrations=JSON.parse(await readFile(new URL('../app/data/market-registrations.json',import.meta.url),'utf8'));
 import {extendChartHistory,chartNeedsRecentHistory,withLiveCandle,priceBars,dollarBars,calendarBars} from '../app/lib/chart-data.ts';
 const base=process.env.CHART_AUDIT_BASE||'https://shizzyunchained.com';
 const out=process.argv[2]||'chart-audit.json';
@@ -16,6 +18,13 @@ async function worker(){while(tasks.length){const {row,interval}=tasks.shift();t
  const step=({ '10m':600000,'1h':3600000,'1d':86400000 })[interval];
  const archive=decode(original.data||[]).filter(c=>Date.parse(c.time)<=Math.floor(now/step)*step);let combined=archive;
  if(chartNeedsRecentHistory(archive,interval,now)){const n=await nodeRecent(row.netuid,interval);combined=extendChartHistory(archive,decode(n.data||[]),interval,now);}
+ const registration=registrations[String(row.netuid)];
+ const eligible=registrationCandles(combined,row.netuid,registrations);
+ if(registration && !eligible.length && Date.parse(registration.time)>Math.floor(now/step)*step){
+  result.rows.push({netuid:row.netuid,interval,status:'NOT_YET_AVAILABLE',reason:'Registration occurred inside the current candle; mixed-registration OHLC excluded',registeredAt:registration.time});
+  await writeFile(out,JSON.stringify(result,null,2));continue;
+ }
+ combined=eligible;
  const fresh=now-Date.parse(row.time)<=180000&&Date.parse(row.time)<=now+60000;
  const rendered=withLiveCandle(combined,fresh?Number(row.price_tao):0,interval,now);
  const fx=withLiveCandle(rates[interval].filter(c=>Date.parse(c.time)<=Math.floor(now/step)*step),quote.usd,interval,now);

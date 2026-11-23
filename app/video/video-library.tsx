@@ -388,6 +388,7 @@ const channelVideos: ChannelVideo[] = [
   },
 ];
 const liveStreams: ChannelVideo[] = [
+  { id: "rGpnTLCsilI", title: "Bitcoin at $62K, TAO Under $200: Are We Buying the Bottom?", meta: "1:04:48 · Livestream replay · November 19, 2026" },
   { id: "Dr1coVZkXpo", title: "Crypto Crash: More Pain or a Turning Point? | Bitcoin, TAO & Altcoins", meta: "1:09:14 · Livestream replay · November 12, 2026" },
   { id: "q2pGNLUvCm4", title: "Leadpoet’s Latest Updates: From Leads to Action | Bittensor SN71", meta: "37:26 · Livestream replay · November 5, 2026" },
   { id: "1ajAfGr_dh0", title: "AI on Your Terms? | True Performance Network | Bittensor Subnet 65", meta: "55:32 · Livestream replay · November 3, 2026" },
