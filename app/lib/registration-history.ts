@@ -1,6 +1,15 @@
 type HistoryRow = {netuid:number;time?:string;[key:string]:unknown};
 type Registration = {time:string;block:number;evidence:string};
 
+// A bucket beginning before the boundary can contain prices from both projects.
+// Exclude it as well as older buckets rather than inventing a replacement OHLC.
+export function registrationCandles<T extends {time:string}>(candles:T[], netuid:number, registrations:Record<string,Registration>):T[] {
+ const registration=registrations[String(netuid)];
+ if(!registration)return candles;
+ const start=Date.parse(registration.time);
+ return candles.filter(candle=>Date.parse(candle.time)>=start);
+}
+
 // Verified lifecycle boundaries, independent of whether a replacement has a
 // name. Never compare the new registration against the old occupant's price.
 export function registrationHistory<T extends HistoryRow>(row:T, registrations:Record<string,Registration>):T {

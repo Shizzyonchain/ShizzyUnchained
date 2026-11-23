@@ -13,7 +13,7 @@ import { SiteHeader } from "./site-header";
 import { LivestreamBanner } from "./livestream-banner";
 import { MembershipPromo } from "./membership-promo";
 import registrations from "./data/market-registrations.json";
-import { registrationHistory } from "./lib/registration-history";
+import { registrationHistory, registrationCandles } from "./lib/registration-history";
 import { currencyReturns, type FxPoint, type ReturnHistory } from "./lib/currency-returns";
 import { mergeFxHistory } from "./lib/merge-fx-history";
 import { compareLiquidation, liquidationExplanation, liquidationPercent } from "./lib/liquidation";
@@ -768,8 +768,8 @@ export function Dashboard({
   const chartCurrency = showTaoChart ? "usd" : currency;
   const requestedChartKey = `${showTaoChart ? "tao" : selected}:${timeframe}${chartDate === null ? "" : `:${chartDate}`}:${chartCurrency}`;
   const candles = useMemo(
-    () => (chartData.key === requestedChartKey ? chartData.candles : []),
-    [chartData, requestedChartKey],
+    () => chartData.key !== requestedChartKey ? [] : showTaoChart ? chartData.candles : registrationCandles(chartData.candles, selected, registrations),
+    [chartData, requestedChartKey, showTaoChart, selected],
   );
   const chartCandles = useMemo(
     () => chartDate !== null ? candles : withLiveCandle(
@@ -815,7 +815,8 @@ export function Dashboard({
     } finally { if (run === chartHistoryRun.current) earlierBusy.current = false; }
   }
   const chartHistoryDelayed = chartDate === null && chartNeedsRecentHistory(chartCandles, timeframe);
-  const chartNote = (chartHistoryDelayed ? `HISTORY DELAYED: latest candle ${chartCandles.at(-1)?.time}. Last candle close is not the current quote. · ` : "") + (chartData.notice ? `${chartData.notice} · ` : "") + (timeframe === "1w" || timeframe === "1mo" ? "Calendar candles from daily history · UTC · Current period incomplete · " : "") + (showTaoChart ? (chartData.method === "extended-price" ? "Coinbase recent candles · TaoStats older price history · Historical candle volume unavailable" : chartData.method === "taostats-price" ? "TaoStats historical TAO/USD price candles · Candle volume unavailable" : "Coinbase TAO/USD candles · Volume in TAO")
+  const chartRegistration = showTaoChart ? undefined : (registrations as Record<string, {time:string}>)[String(selected)];
+  const chartNote = (chartRegistration ? `Current registration only, since ${chartRegistration.time}. Earlier and boundary-crossing candles excluded; daily history may be unavailable on registration day. · ` : "") + (chartHistoryDelayed ? `HISTORY DELAYED: latest candle ${chartCandles.at(-1)?.time}. Last candle close is not the current quote. · ` : "") + (chartData.notice ? `${chartData.notice} · ` : "") + (timeframe === "1w" || timeframe === "1mo" ? "Calendar candles from daily history · UTC · Current period incomplete · " : "") + (showTaoChart ? (chartData.method === "extended-price" ? "Coinbase recent candles · TaoStats older price history · Historical candle volume unavailable" : chartData.method === "taostats-price" ? "TaoStats historical TAO/USD price candles · Candle volume unavailable" : "Coinbase TAO/USD candles · Volume in TAO")
     : chartData.method === "provider-node" ? "TaoStats older history + node recent interval prices · Historical USD conversion" : chartData.method === "taostats-alpha" ? `TaoStats candles${currency === "usd" ? ` · USD candles use historical TAO/USD rates; high/low are estimates${missingUsdPeriods > 2 ? ` · ${missingUsdPeriods} periods lack USD quotes; TAO mode retains those subnet candles` : ""}` : " · Alpha/TAO"}`
     : `${chartData.method === "boundary" ? "Interval-boundary prices; wicks and volume are estimates" : "Sampled on-chain prices; volume is estimated"}${currency === "usd" ? " · USD estimates use matching historical TAO/USD candles" : " · Alpha/TAO"}`);
   const totalVolume = finalizedMarketVolume(dailyTrading, fxNow);
