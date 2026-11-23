@@ -1,0 +1,1814 @@
+{
+  "date": "2026-11-23",
+  "editionDate": "2026-11-23",
+  "coverageComplete": false,
+  "publicationComplete": false,
+  "outletReview": [],
+  "requiredAccountReview": [],
+  "fundPeopleReview": [],
+  "discordReview": [],
+  "status": "PREPARED_WITH_GAPS",
+  "preparedAt": "2026-11-23T15:12:30.262225+00:00",
+  "dailyWorkflowComplete": false,
+  "sourceChecklist": "site-audit-2026-11-23/news-10-to-11-checklist.json",
+  "chainReviews": {
+    "etao": {
+      "status": "BLOCKED",
+      "checkedAt": "2026-11-23T15:12:30.262225+00:00",
+      "evidence": "public/evidence/news-review-2026-11-23.json",
+      "reason": "Collector refused changed runtime metadata; full contiguous event review not completed.",
+      "newsDisposition": "Disclose event coverage gap; retain last-good archives.",
+      "archiveUpdated": false
+    },
+    "burns": {
+      "status": "BLOCKED",
+      "checkedAt": "2026-11-23T15:12:30.262225+00:00",
+      "evidence": "public/evidence/news-review-2026-11-23.json",
+      "reason": "Collector refused changed runtime metadata; full contiguous event review not completed.",
+      "newsDisposition": "Disclose event coverage gap; retain last-good archives.",
+      "archiveUpdated": false
+    }
+  },
+  "ownerHoldings": {
+    "status": "BLOCKED",
+    "checkedAt": "2026-11-23T15:12:30.262225+00:00",
+    "evidence": "public/evidence/news-review-2026-11-23.json",
+    "reason": "Collector refused unsupported runtime; last-good owner holdings preserved."
+  },
+  "gammaReview": {
+    "status": "BLOCKED",
+    "reason": "Complete intervening flows and allocation review unfinished. Engy documented service update verified separately."
+  },
+  "chartReview": {
+    "status": "PASS",
+    "checkedAt": "2026-11-23T13:56:14.333Z",
+    "baseResults": 384,
+    "uniqueSubnets": 128,
+    "calendarResults": 256,
+    "gaps": 0,
+    "evidence": "site-audit-2026-11-23/chart-initial.json",
+    "scope": "Automated TAO/USD comparisons; representative native UI review remains pending."
+  },
+  "marketReview": {
+    "observedAt": "2026-11-23T15:12:30.262225+00:00",
+    "source": "https://shizzyunchained.com/api/backend/v1/screener",
+    "rows": [
+      {
+        "netuid": 51,
+        "change24hPct": -0.7539214324538543,
+        "change7dPct": 8.493260089687043
+      },
+      {
+        "netuid": 64,
+        "change24hPct": 1.3652132619724922,
+        "change7dPct": 1.3458412035977232
+      },
+      {
+        "netuid": 4,
+        "change24hPct": -0.4798936422749086,
+        "change7dPct": -4.955295787726354
+      },
+      {
+        "netuid": 53,
+        "change24hPct": 1.3004598723753962,
+        "change7dPct": 21.66389277492149
+      },
+      {
+        "netuid": 8,
+        "change24hPct": 1.0271712569706297,
+        "change7dPct": 7.257847323490356
+      },
+      {
+        "netuid": 120,
+        "change24hPct": 0.2398026221823243,
+        "change7dPct": -2.9717232450057054
+      },
+      {
+        "netuid": 44,
+        "change24hPct": 1.6592351089278714,
+        "change7dPct": -5.659044366933972
+      },
+      {
+        "netuid": 28,
+        "change24hPct": 1.4897854654539893,
+        "change7dPct": 6.221064753882153
+      },
+      {
+        "netuid": 9,
+        "change24hPct": -0.11369665902446241,
+        "change7dPct": -3.248262633000962
+      },
+      {
+        "netuid": 3,
+        "change24hPct": 0.07651199135657297,
+        "change7dPct": -6.637277140095578
+      },
+      {
+        "netuid": 75,
+        "change24hPct": -0.7225532506340734,
+        "change7dPct": 10.206690217271772
+      },
+      {
+        "netuid": 68,
+        "change24hPct": 0.797494871472469,
+        "change7dPct": -3.2458748453110173
+      },
+      {
+        "netuid": 56,
+        "change24hPct": -0.14801754936713088,
+        "change7dPct": -1.0052022473457378
+      },
+      {
+        "netuid": 110,
+        "change24hPct": -0.30153350088302183,
+        "change7dPct": -25.008038305654267
+      },
+      {
+        "netuid": 95,
+        "change24hPct": 1.0343495107500873,
+        "change7dPct": 2.0014523903495767
+      },
+      {
+        "netuid": 93,
+        "change24hPct": -0.07034672035803731,
+        "change7dPct": 8.183489616864486
+      },
+      {
+        "netuid": 34,
+        "change24hPct": -0.255460418546563,
+        "change7dPct": 0.4530796791855254
+      },
+      {
+        "netuid": 24,
+        "change24hPct": -1.3689186749120676,
+        "change7dPct": 19.00183832091807
+      },
+      {
+        "netuid": 5,
+        "change24hPct": 0.26085871379619746,
+        "change7dPct": -0.5927878262669414
+      },
+      {
+        "netuid": 41,
+        "change24hPct": 2.4618484834946783,
+        "change7dPct": 13.803991727287228
+      },
+      {
+        "netuid": 48,
+        "change24hPct": 0.2005371082921992,
+        "change7dPct": -5.202643303093856
+      },
+      {
+        "netuid": 107,
+        "change24hPct": -0.04044373914398504,
+        "change7dPct": -9.328082617678165
+      },
+      {
+        "netuid": 14,
+        "change24hPct": -0.2633447823564286,
+        "change7dPct": -3.262809427277109
+      },
+      {
+        "netuid": 19,
+        "change24hPct": -1.6879000021533674,
+        "change7dPct": -3.303959192287913
+      },
+      {
+        "netuid": 62,
+        "change24hPct": -6.098952727245322,
+        "change7dPct": -4.456939742313808
+      },
+      {
+        "netuid": 80,
+        "change24hPct": 3.047725160474119,
+        "change7dPct": 4.817457189692292
+      },
+      {
+        "netuid": 17,
+        "change24hPct": -0.2898300325382562,
+        "change7dPct": -6.357003695677611
+      },
+      {
+        "netuid": 11,
+        "change24hPct": 0.20397205142604022,
+        "change7dPct": -1.031836683059134
+      },
+      {
+        "netuid": 39,
+        "change24hPct": 0.25632576148061864,
+        "change7dPct": -1.6252304234950767
+      },
+      {
+        "netuid": 124,
+        "change24hPct": -0.06313094402559097,
+        "change7dPct": -5.532372926929545
+      },
+      {
+        "netuid": 114,
+        "change24hPct": 0.5939496978879613,
+        "change7dPct": -3.2670095546840767
+      },
+      {
+        "netuid": 1,
+        "change24hPct": -0.4694674640850444,
+        "change7dPct": -1.9247555460239671
+      },
+      {
+        "netuid": 52,
+        "change24hPct": -0.012147426848921996,
+        "change7dPct": -0.8650934902322075
+      },
+      {
+        "netuid": 15,
+        "change24hPct": -0.573469467591795,
+        "change7dPct": -8.100600104485261
+      },
+      {
+        "netuid": 61,
+        "change24hPct": 1.0076465484793133,
+        "change7dPct": -4.773064046296104
+      },
+      {
+        "netuid": 23,
+        "change24hPct": -1.438470892711217,
+        "change7dPct": 6.471957993715559
+      },
+      {
+        "netuid": 54,
+        "change24hPct": -0.41558993558830776,
+        "change7dPct": -4.675681448655541
+      },
+      {
+        "netuid": 112,
+        "change24hPct": -0.7437808361884984,
+        "change7dPct": -4.6295185087398805
+      },
+      {
+        "netuid": 83,
+        "change24hPct": -0.43966263149386603,
+        "change7dPct": -3.8352651306044154
+      },
+      {
+        "netuid": 81,
+        "change24hPct": 0.4011603106940845,
+        "change7dPct": -1.8934589690600654
+      },
+      {
+        "netuid": 77,
+        "change24hPct": -0.6124056796116394,
+        "change7dPct": -2.139565941432234
+      },
+      {
+        "netuid": 13,
+        "change24hPct": -0.4842239556004333,
+        "change7dPct": 5.616825126937206
+      },
+      {
+        "netuid": 10,
+        "change24hPct": -0.19872242669335816,
+        "change7dPct": -3.658234020693785
+      },
+      {
+        "netuid": 12,
+        "change24hPct": 0.03295995957716403,
+        "change7dPct": -0.12139132538449733
+      },
+      {
+        "netuid": 25,
+        "change24hPct": -0.5245542583216022,
+        "change7dPct": 2.4976634420405284
+      },
+      {
+        "netuid": 43,
+        "change24hPct": 0.046498522671109176,
+        "change7dPct": -0.2014549810831981
+      },
+      {
+        "netuid": 63,
+        "change24hPct": 4.476692753224463,
+        "change7dPct": -7.595688375723913
+      },
+      {
+        "netuid": 85,
+        "change24hPct": 0.13559545650037502,
+        "change7dPct": -4.826430474934167
+      },
+      {
+        "netuid": 21,
+        "change24hPct": 0.8637494660217092,
+        "change7dPct": -8.116896313457708
+      },
+      {
+        "netuid": 97,
+        "change24hPct": -0.4102210503836314,
+        "change7dPct": -5.212217069922892
+      },
+      {
+        "netuid": 50,
+        "change24hPct": -1.222708956355209,
+        "change7dPct": -1.1255336516691428
+      },
+      {
+        "netuid": 33,
+        "change24hPct": -0.30010748981218505,
+        "change7dPct": 20.86420027759285
+      },
+      {
+        "netuid": 104,
+        "change24hPct": -0.04125876558343576,
+        "change7dPct": -0.6979513459481315
+      },
+      {
+        "netuid": 18,
+        "change24hPct": -0.19469810709102714,
+        "change7dPct": -8.238057245113264
+      },
+      {
+        "netuid": 2,
+        "change24hPct": -0.6404106029574419,
+        "change7dPct": -8.968139775026586
+      },
+      {
+        "netuid": 30,
+        "change24hPct": 0.1473463745870841,
+        "change7dPct": -5.540737251954409
+      },
+      {
+        "netuid": 111,
+        "change24hPct": -0.9299107462673988,
+        "change7dPct": -1.483828353103743
+      },
+      {
+        "netuid": 74,
+        "change24hPct": -0.760973668171698,
+        "change7dPct": 4.297514827243172
+      },
+      {
+        "netuid": 90,
+        "change24hPct": -7.812934655428637,
+        "change7dPct": -12.21477158049724
+      },
+      {
+        "netuid": 65,
+        "change24hPct": -2.030446393111092,
+        "change7dPct": 0.9124152559199329
+      },
+      {
+        "netuid": 79,
+        "change24hPct": -0.9211632766903396,
+        "change7dPct": -3.876301357204661
+      },
+      {
+        "netuid": 22,
+        "change24hPct": 3.0647981430784528,
+        "change7dPct": 3.0628435691515015
+      },
+      {
+        "netuid": 60,
+        "change24hPct": -2.4232152739346984,
+        "change7dPct": 2.8019964450022514
+      },
+      {
+        "netuid": 32,
+        "change24hPct": -3.1318320545452125,
+        "change7dPct": -4.9046225034232025
+      },
+      {
+        "netuid": 117,
+        "change24hPct": -9.386040333149374,
+        "change7dPct": 4.705401069909368
+      },
+      {
+        "netuid": 92,
+        "change24hPct": 1.2703509371280728,
+        "change7dPct": 9.814610267015503
+      },
+      {
+        "netuid": 29,
+        "change24hPct": -0.012246916416484687,
+        "change7dPct": 2.063203107521324
+      },
+      {
+        "netuid": 105,
+        "change24hPct": -4.790705888142943,
+        "change7dPct": -10.718169769554327
+      },
+      {
+        "netuid": 6,
+        "change24hPct": 0.6054237237225298,
+        "change7dPct": 7.038457381063159
+      },
+      {
+        "netuid": 46,
+        "change24hPct": -1.600165622179201,
+        "change7dPct": -12.348985302200331
+      },
+      {
+        "netuid": 37,
+        "change24hPct": -0.2931291391365287,
+        "change7dPct": -4.589693543180846
+      },
+      {
+        "netuid": 42,
+        "change24hPct": 0.4042838382389269,
+        "change7dPct": -0.38745228959416256
+      },
+      {
+        "netuid": 88,
+        "change24hPct": -1.3448733154050863,
+        "change7dPct": 1.7324011071463132
+      },
+      {
+        "netuid": 89,
+        "change24hPct": -0.6936022714041326,
+        "change7dPct": -4.461539416015121
+      },
+      {
+        "netuid": 128,
+        "change24hPct": -0.0335335395484486,
+        "change7dPct": -0.8715214201443655
+      },
+      {
+        "netuid": 49,
+        "change24hPct": -0.15214859643224332,
+        "change7dPct": -3.868291681734218
+      },
+      {
+        "netuid": 71,
+        "change24hPct": -2.8367183586882865,
+        "change7dPct": -26.665035890964113
+      },
+      {
+        "netuid": 72,
+        "change24hPct": -0.07996475023255055,
+        "change7dPct": 7.156435787807708
+      },
+      {
+        "netuid": 55,
+        "change24hPct": 3.963118884616742,
+        "change7dPct": 7.8695449405277795
+      },
+      {
+        "netuid": 20,
+        "change24hPct": -2.0447277328499487,
+        "change7dPct": 2.084485964854367
+      },
+      {
+        "netuid": 27,
+        "change24hPct": -0.5199690182560938,
+        "change7dPct": 5.941759960429486
+      },
+      {
+        "netuid": 45,
+        "change24hPct": 0.5789670817373606,
+        "change7dPct": 5.326403895681004
+      },
+      {
+        "netuid": 66,
+        "change24hPct": -0.7750951613834707,
+        "change7dPct": -5.4530706909194375
+      },
+      {
+        "netuid": 121,
+        "change24hPct": 0.014652110167726306,
+        "change7dPct": -1.990070788222446
+      },
+      {
+        "netuid": 82,
+        "change24hPct": -2.122691953902645,
+        "change7dPct": -19.66635607141824
+      },
+      {
+        "netuid": 73,
+        "change24hPct": 1.0273295180773816,
+        "change7dPct": 0.6526589990428454
+      },
+      {
+        "netuid": 58,
+        "change24hPct": 0.2879242060095095,
+        "change7dPct": -23.573765145833715
+      },
+      {
+        "netuid": 106,
+        "change24hPct": 0.33587577836690474,
+        "change7dPct": 7.017758110736548
+      },
+      {
+        "netuid": 123,
+        "change24hPct": 0.6358559767682262,
+        "change7dPct": 6.634393772936584
+      },
+      {
+        "netuid": 38,
+        "change24hPct": -0.9683650876184114,
+        "change7dPct": -5.7509148706072555
+      },
+      {
+        "netuid": 98,
+        "change24hPct": -0.05622832958847337,
+        "change7dPct": 6.678534441791735
+      },
+      {
+        "netuid": 101,
+        "change24hPct": -0.23831468277831772,
+        "change7dPct": -1.7507225221240992
+      },
+      {
+        "netuid": 127,
+        "change24hPct": 0.08866094795788683,
+        "change7dPct": -1.6890304908551836
+      },
+      {
+        "netuid": 94,
+        "change24hPct": -4.895035023188941,
+        "change7dPct": 30.281052340537997
+      },
+      {
+        "netuid": 125,
+        "change24hPct": 1.6078969221430888,
+        "change7dPct": 5.213468016510814
+      },
+      {
+        "netuid": 31,
+        "change24hPct": -8.285648107492293,
+        "change7dPct": 32.54533142728162
+      },
+      {
+        "netuid": 118,
+        "change24hPct": -0.5636790614865391,
+        "change7dPct": -1.1962429639336452
+      },
+      {
+        "netuid": 69,
+        "change24hPct": -0.12898530151428478,
+        "change7dPct": -3.329099687265282
+      },
+      {
+        "netuid": 116,
+        "change24hPct": -1.1652653661654013,
+        "change7dPct": -22.36163011354189
+      },
+      {
+        "netuid": 102,
+        "change24hPct": -2.5383688901403167,
+        "change7dPct": -7.956891941919296
+      },
+      {
+        "netuid": 91,
+        "change24hPct": -7.945540704005275,
+        "change7dPct": 1.7124886625548772
+      },
+      {
+        "netuid": 126,
+        "change24hPct": -0.5007134639671408,
+        "change7dPct": -4.834937725033988
+      },
+      {
+        "netuid": 100,
+        "change24hPct": -6.7960268735758556,
+        "change7dPct": -28.29951334730431
+      },
+      {
+        "netuid": 115,
+        "change24hPct": -2.5556394521782297,
+        "change7dPct": 3.668087153573245
+      },
+      {
+        "netuid": 119,
+        "change24hPct": -1.8286689915783918,
+        "change7dPct": 5.543424036488361
+      },
+      {
+        "netuid": 67,
+        "change24hPct": -0.989627899909634,
+        "change7dPct": -2.7091612177238047
+      },
+      {
+        "netuid": 87,
+        "change24hPct": -10.815769328611303,
+        "change7dPct": -3.5745203306785145
+      },
+      {
+        "netuid": 96,
+        "change24hPct": -2.1490454179161262,
+        "change7dPct": -6.949238849817502
+      },
+      {
+        "netuid": 40,
+        "change24hPct": 11.60772410743287,
+        "change7dPct": 15.02807871173637
+      },
+      {
+        "netuid": 122,
+        "change24hPct": -0.2742204105880313,
+        "change7dPct": -0.8766256248159509
+      },
+      {
+        "netuid": 99,
+        "change24hPct": 3.5344089430683887,
+        "change7dPct": -29.867229728174944
+      },
+      {
+        "netuid": 36,
+        "change24hPct": -3.00858080953685,
+        "change7dPct": -4.772990112100969
+      },
+      {
+        "netuid": 59,
+        "change24hPct": -0.7585038344384482,
+        "change7dPct": -17.638280211349965
+      },
+      {
+        "netuid": 76,
+        "change24hPct": -1.3292920024412245,
+        "change7dPct": -1.7464712074072037
+      },
+      {
+        "netuid": 108,
+        "change24hPct": -7.613726568507178,
+        "change7dPct": -23.43299068733284
+      },
+      {
+        "netuid": 35,
+        "change24hPct": 9.834903275762999,
+        "change7dPct": 163.04084197016394
+      },
+      {
+        "netuid": 103,
+        "change24hPct": -17.657575685874672,
+        "change7dPct": -45.20246452621094
+      },
+      {
+        "netuid": 70,
+        "change24hPct": -10.539292290077517,
+        "change7dPct": -35.984315870355154
+      },
+      {
+        "netuid": 47,
+        "change24hPct": -0.6187170173040089,
+        "change7dPct": 26.771033274278366
+      },
+      {
+        "netuid": 26,
+        "change24hPct": -8.995544105752506,
+        "change7dPct": -47.66481721571417
+      },
+      {
+        "netuid": 86,
+        "change24hPct": -2.9501510924415824,
+        "change7dPct": 5.220163675251292
+      },
+      {
+        "netuid": 113,
+        "change24hPct": 102.22762050087083,
+        "change7dPct": 315.3722368415938
+      },
+      {
+        "netuid": 7,
+        "change24hPct": 100.9066322179041,
+        "change7dPct": 71.60478994274362
+      },
+      {
+        "netuid": 16,
+        "change24hPct": -1.1873277332983332,
+        "change7dPct": -12.646587239486076
+      },
+      {
+        "netuid": 84,
+        "change24hPct": -13.870547480473176,
+        "change7dPct": 194.87149800567084
+      },
+      {
+        "netuid": 57,
+        "change24hPct": 0.9406021733495001,
+        "change7dPct": 131.64056494061973
+      },
+      {
+        "netuid": 109,
+        "change24hPct": 0.01783926140259598,
+        "change7dPct": 133.27159405274932
+      },
+      {
+        "netuid": 78,
+        "change24hPct": 0.053462317617239324,
+        "change7dPct": 0.16128684244595004
+      }
+    ],
+    "decisions": [
+      {
+        "netuid": 51,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 64,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 4,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 53,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 8,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 120,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 44,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 28,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 9,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 3,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 75,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 68,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 56,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 110,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 95,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 93,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 34,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 24,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 5,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 41,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 48,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 107,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 14,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 19,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 62,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 80,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 17,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 11,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 39,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 124,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 114,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 1,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 52,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 15,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 61,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 23,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 54,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 112,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 83,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 81,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 77,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 13,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 10,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 12,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 25,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 43,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 63,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 85,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 21,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 97,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 50,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 33,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 104,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 18,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 2,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 30,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 111,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 74,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 90,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 65,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 79,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 22,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 60,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 32,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 117,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 92,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 29,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 105,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 6,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 46,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 37,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 42,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 88,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 89,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 128,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 49,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 71,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 72,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 55,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 20,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 27,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 45,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 66,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 121,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 82,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 73,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 58,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 106,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 123,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 38,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 98,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 101,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 127,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 94,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 125,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 31,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 118,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 69,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 116,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 102,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 91,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 126,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 100,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 115,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 119,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 67,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 87,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 96,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 40,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 122,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 99,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 36,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 59,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 76,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 108,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 35,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 103,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 70,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 47,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 26,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 86,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 113,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 7,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 16,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 84,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 57,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 109,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 78,
+        "outcome": "excluded",
+        "reason": "Price cause and registration continuity not fully reconciled; no causal price story asserted.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      }
+    ]
+  },
+  "grokReview": {
+    "identity": "@ShizzyUnchained",
+    "mode": "Auto",
+    "conversation": "https://x.com/i/grok?conversation=5ca987f9-039e-4138-b18f-cb9d6bcda7d7",
+    "discovery": "Response saved in grok-discovery-response.txt; used only as leads.",
+    "attention": "Response saved in grok-attention.txt; approximate ranking not published.",
+    "omissions": "Actual submitted query rejected for exhausted usage; grok-omissions.txt.",
+    "status": "PARTIAL"
+  },
+  "editorialReview": {
+    "status": "IN_PROGRESS",
+    "selectedLead": "SN53 Engy announces accountless inference through Gamma",
+    "orderedHeadlines": [
+      "SN53 Engy announces accountless inference through Gamma",
+      "SN64 Chutes ties buy-burn resumption to its Gamma rollout",
+      "SN7 registers again and now identifies itself as Algo",
+      "SN36 Weir opens GPU rental beta with full virtual machines",
+      "SN75 Hippius updates mobile backups, biometric access and file comments",
+      "SN111 Claims moves new-schema mainnet evaluation to November 25",
+      "SN55 NIOME reports quarterly revenue and separates clients from its pipeline",
+      "SN116 Carbon reports a new motor-model competition leader",
+      "SN3 Teutonic clarifies release plans and keeps pretraining completion open"
+    ],
+    "rationale": "A concrete accountless service route leads a related planned return mechanism, followed by a beta product, operational releases, business disclosures and research plans.",
+    "leadAlternatives": [
+      "SN64 Chutes planned buy-burn resumption",
+      "SN36 Weir beta catch-up"
+    ],
+    "layoutReview": "Pending live release.",
+    "stories": [
+      {
+        "headline": "SN53 Engy announces accountless inference through Gamma",
+        "classification": "News"
+      },
+      {
+        "headline": "SN64 Chutes ties buy-burn resumption to its Gamma rollout",
+        "classification": "News"
+      },
+      {
+        "headline": "SN7 registers again and now identifies itself as Algo",
+        "classification": "News"
+      },
+      {
+        "headline": "SN36 Weir opens GPU rental beta with full virtual machines",
+        "classification": "News"
+      },
+      {
+        "headline": "SN75 Hippius updates mobile backups, biometric access and file comments",
+        "classification": "News"
+      },
+      {
+        "headline": "SN111 Claims moves new-schema mainnet evaluation to November 25",
+        "classification": "News"
+      },
+      {
+        "headline": "SN55 NIOME reports quarterly revenue and separates clients from its pipeline",
+        "classification": "News"
+      },
+      {
+        "headline": "SN116 Carbon reports a new motor-model competition leader",
+        "classification": "News"
+      },
+      {
+        "headline": "SN3 Teutonic clarifies release plans and keeps pretraining completion open",
+        "classification": "News"
+      }
+    ]
+  },
+  "pendingLeads": [
+    {
+      "topic": "SN7 Algo operating team and product",
+      "disposition": "unverified",
+      "reason": "New registration and name verified and covered; current identity omits team links. Operator discovery remains pending."
+    },
+    {
+      "topic": "Gamma allocation and usage totals",
+      "disposition": "unverified",
+      "reason": "Tracker mint/spend/outstanding figures not independently reconciled; no adoption totals asserted."
+    },
+    {
+      "topic": "SN31, SN22, SN71, SN122 previously held additions",
+      "disposition": "held",
+      "reason": "Prior automatic approval review rejection remains unresolved; not retried."
+    }
+  ],
+  "lifecycleReview": {
+    "status": "PARTIAL",
+    "evidence": "public/evidence/2026-11-23-sn7-registration.json",
+    "disposition": "SN7 new registration and Algo name published; all other intervening events unfinished."
+  }
+}

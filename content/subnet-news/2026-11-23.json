@@ -1,0 +1,903 @@
+{
+  "version": 1,
+  "date": "2026-11-23",
+  "title": "Bittensor Daily News: November 23, 2026",
+  "coverageStart": "2026-11-22T15:54:41.854398+00:00",
+  "subnets": [
+    {
+      "netuid": 1,
+      "name": "Apex",
+      "updates": []
+    },
+    {
+      "netuid": 2,
+      "name": "DaniLabs",
+      "updates": []
+    },
+    {
+      "netuid": 3,
+      "name": "Teutonic",
+      "updates": [
+        {
+          "headline": "SN3 Teutonic clarifies release plans and keeps pretraining completion open",
+          "summary": "SN3 Teutonic's team said on November 23 that it has no fixed date for completing pretraining. Hux from Dendrite said the latest checkpoint is available for experimentation while the team continues to test training methods.\n\nThe team plans to publish model weights and a technical paper. It currently does not plan to offer the raw pretrained model as a public chat service; hosting a future post-trained version remains undecided.\n\nThe reply also describes comparisons against other public checkpoints and additional internal loss measurements. No quantified new benchmark was supplied in that message. This is a roadmap clarification, not a finished-model release or a new hosted service.",
+          "rating": 2,
+          "ratingReason": "Two stars: useful clarification of research and hosting plans, but no newly completed model or quantified result to justify three.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1493243812263362660",
+              "label": "SN3 Teutonic team reply, November 23"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "roadmap",
+            "consequence": "Two stars: useful clarification of research and hosting plans, but no newly completed model or quantified result to justify three.",
+            "evidence": "SN3 Teutonic team reply, November 23",
+            "scope": "Original team reply November 23 at 8:53 AM Eastern.",
+            "uncertainty": "Completion date, hosting choice and quantitative comparisons remain unspecified.",
+            "adjacentRatingReason": "Two stars: useful clarification of research and hosting plans, but no newly completed model or quantified result to justify three."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 4,
+      "name": "Targon",
+      "updates": []
+    },
+    {
+      "netuid": 5,
+      "name": "Hone",
+      "updates": []
+    },
+    {
+      "netuid": 6,
+      "name": "Numinous",
+      "updates": []
+    },
+    {
+      "netuid": 7,
+      "name": "Algo",
+      "updates": [
+        {
+          "headline": "SN7 registers again and now identifies itself as Algo",
+          "summary": "Bittensor's SN7 slot registered again on November 23 at 08:51:36 UTC. A direct finalized-chain check confirms a NetworkAdded event at block 9,568,319, with the slot's registration height changing from zero to that block. A later finalized identity snapshot names the subnet Algo.\n\nOur previous edition listed SN7 as Allways. The new registration is a separate lifecycle event, so readers should not interpret price history spanning the boundary as the performance of one continuous project.\n\nThe current on-chain identity provides no project website, repository, Discord or description. The operating team, product plans and any off-chain transaction terms remain unverified. The registration evidence does not establish a negotiated sale or purchase price.",
+          "rating": 4,
+          "ratingReason": "Four stars: a verified new registration and substantive identity change affect how readers interpret the slot, beyond routine key maintenance. Five is not established without exceptional broader consequences.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://shizzyunchained.com/evidence/2026-11-23-sn7-registration.json",
+              "label": "Finalized SN7 registration and identity evidence"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "substantive-identity-change",
+            "consequence": "Four stars: a verified new registration and substantive identity change affect how readers interpret the slot, beyond routine key maintenance. Five is not established without exceptional broader consequences.",
+            "evidence": "Finalized SN7 registration and identity evidence",
+            "scope": "Targeted finalized before/after registration storage, NetworkAdded event and current on-chain identity.",
+            "uncertainty": "New operator identity, product and any sale terms not established; full lifecycle interval remains unfinished.",
+            "adjacentRatingReason": "Four stars: a verified new registration and substantive identity change affect how readers interpret the slot, beyond routine key maintenance. Five is not established without exceptional broader consequences."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 8,
+      "name": "Vanta",
+      "updates": []
+    },
+    {
+      "netuid": 9,
+      "name": "iota",
+      "updates": []
+    },
+    {
+      "netuid": 10,
+      "name": "Pareton",
+      "updates": []
+    },
+    {
+      "netuid": 11,
+      "name": "TrajectoryRL",
+      "updates": []
+    },
+    {
+      "netuid": 12,
+      "name": "Compute Horde",
+      "updates": []
+    },
+    {
+      "netuid": 13,
+      "name": "Data Universe",
+      "updates": []
+    },
+    {
+      "netuid": 14,
+      "name": "Cacheon",
+      "updates": []
+    },
+    {
+      "netuid": 15,
+      "name": "ORO",
+      "updates": []
+    },
+    {
+      "netuid": 16,
+      "name": "Unnamed subnet",
+      "updates": []
+    },
+    {
+      "netuid": 17,
+      "name": "404—GEN",
+      "updates": []
+    },
+    {
+      "netuid": 18,
+      "name": "Zeus",
+      "updates": []
+    },
+    {
+      "netuid": 19,
+      "name": "blockmachine",
+      "updates": []
+    },
+    {
+      "netuid": 20,
+      "name": "Witness",
+      "updates": []
+    },
+    {
+      "netuid": 21,
+      "name": "AdTAO",
+      "updates": []
+    },
+    {
+      "netuid": 22,
+      "name": "Desearch",
+      "updates": []
+    },
+    {
+      "netuid": 23,
+      "name": "Trishool",
+      "updates": []
+    },
+    {
+      "netuid": 24,
+      "name": "ms.computer",
+      "updates": []
+    },
+    {
+      "netuid": 25,
+      "name": "UR",
+      "updates": []
+    },
+    {
+      "netuid": 26,
+      "name": "Unnamed subnet",
+      "updates": []
+    },
+    {
+      "netuid": 27,
+      "name": "Komms",
+      "updates": []
+    },
+    {
+      "netuid": 28,
+      "name": "SayGM",
+      "updates": []
+    },
+    {
+      "netuid": 29,
+      "name": "hoτfloaτ",
+      "updates": []
+    },
+    {
+      "netuid": 30,
+      "name": "Endure Network",
+      "updates": []
+    },
+    {
+      "netuid": 31,
+      "name": "rec4ll",
+      "updates": []
+    },
+    {
+      "netuid": 32,
+      "name": "ItsAI",
+      "updates": []
+    },
+    {
+      "netuid": 33,
+      "name": "ReadyAI",
+      "updates": []
+    },
+    {
+      "netuid": 34,
+      "name": "Yugos",
+      "updates": []
+    },
+    {
+      "netuid": 35,
+      "name": "Unnamed subnet",
+      "updates": []
+    },
+    {
+      "netuid": 36,
+      "name": "Weir",
+      "updates": [
+        {
+          "headline": "SN36 Weir opens GPU rental beta with full virtual machines",
+          "summary": "In a November 20 announcement reviewed for this catch-up, SN36 Weir opened its GPU rental service in beta. The team advertises full virtual machines with root SSH access, allowing customers to install their own software and run Docker.\n\nIts documentation describes prepaid hourly rentals funded with TAO, USDT or USDC. Customers supply an SSH public key, choose a machine and connect using the instance credentials. Releasing a rental early returns unused whole hours to the platform balance; that is distinct from refunding a deposit to an external wallet.\n\nThe public beta announcement and access terms are verified. We have not rented a machine or independently measured capacity, reliability or the team's advertised connection speed.",
+          "rating": 4,
+          "ratingReason": "Four stars: an announced usable GPU rental product with concrete access terms exceeds a routine three-star operational update. Five is not established by a beta launch without exceptional scale.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/weircompute/status/2123786321303089640",
+              "label": "SN36 Weir beta announcement, November 20"
+            },
+            {
+              "url": "https://weircompute.com/docs",
+              "label": "SN36 Weir rental documentation"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "Four stars: an announced usable GPU rental product with concrete access terms exceeds a routine three-star operational update. Five is not established by a beta launch without exceptional scale.",
+            "evidence": "SN36 Weir beta announcement, November 20; SN36 Weir rental documentation",
+            "scope": "November 20 beta announcement and current public operating documentation.",
+            "uncertainty": "No paid rental or capacity/performance test performed.",
+            "adjacentRatingReason": "Four stars: an announced usable GPU rental product with concrete access terms exceeds a routine three-star operational update. Five is not established by a beta launch without exceptional scale."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 37,
+      "name": "Aurelius",
+      "updates": []
+    },
+    {
+      "netuid": 38,
+      "name": "ChronoLLM",
+      "updates": []
+    },
+    {
+      "netuid": 39,
+      "name": "Kokoah",
+      "updates": []
+    },
+    {
+      "netuid": 40,
+      "name": "Ralph",
+      "updates": []
+    },
+    {
+      "netuid": 41,
+      "name": "Almanac",
+      "updates": []
+    },
+    {
+      "netuid": 42,
+      "name": "CADmind",
+      "updates": []
+    },
+    {
+      "netuid": 43,
+      "name": "Graphite",
+      "updates": []
+    },
+    {
+      "netuid": 44,
+      "name": "Score",
+      "updates": []
+    },
+    {
+      "netuid": 45,
+      "name": "AlphaRidge.ai",
+      "updates": []
+    },
+    {
+      "netuid": 46,
+      "name": "Instant",
+      "updates": []
+    },
+    {
+      "netuid": 47,
+      "name": "Optia",
+      "updates": []
+    },
+    {
+      "netuid": 48,
+      "name": "Quantum Compute",
+      "updates": []
+    },
+    {
+      "netuid": 49,
+      "name": "Nepher Robotics",
+      "updates": []
+    },
+    {
+      "netuid": 50,
+      "name": "Synth",
+      "updates": []
+    },
+    {
+      "netuid": 51,
+      "name": "lium.io",
+      "updates": []
+    },
+    {
+      "netuid": 52,
+      "name": "Dojo",
+      "updates": []
+    },
+    {
+      "netuid": 53,
+      "name": "engy",
+      "updates": [
+        {
+          "headline": "SN53 Engy announces accountless inference through Gamma",
+          "summary": "SN53 Engy announced late November 22 Eastern that its Gamma integration is fully live, allowing a funded Bittensor hotkey to access inference without a separate sign-up or API key. This follows its initial November 11 payment-support announcement; the new update emphasizes the complete accountless and agent-discovery workflow.\n\nThe service documentation explains that a coldkey creates a Gamma deposit and the hotkey spends it against the service. Each Gamma spent credits $1 plus a 5% bonus. The hotkey then signs inference requests, with usage deducted at the published model prices. An agent can discover the service document from subnet 53 rather than requiring a manually supplied provider account.\n\nThis is verified as the team's availability announcement and documented interface. We have not executed a paid inference request, and availability does not establish independent customer adoption or revenue.",
+          "rating": 4,
+          "ratingReason": "Four stars: a documented end-to-end payment and authentication route is more consequential than a routine three-star catalog update. Five is not established by availability without exceptional deployment scope.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/engyai/status/2124725312454033479",
+              "label": "SN53 Engy announcement, November 22 Eastern"
+            },
+            {
+              "url": "https://engy.ai/docs/account-and-billing/gamma-payments",
+              "label": "SN53 Engy Gamma documentation"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product",
+            "consequence": "Four stars: a documented end-to-end payment and authentication route is more consequential than a routine three-star catalog update. Five is not established by availability without exceptional deployment scope.",
+            "evidence": "SN53 Engy announcement, November 22 Eastern; SN53 Engy Gamma documentation",
+            "scope": "Original availability announcement and service payment/authentication documentation.",
+            "uncertainty": "No paid end-to-end request or independent adoption measurement performed.",
+            "adjacentRatingReason": "Four stars: a documented end-to-end payment and authentication route is more consequential than a routine three-star catalog update. Five is not established by availability without exceptional deployment scope."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 54,
+      "name": "Yanez",
+      "updates": []
+    },
+    {
+      "netuid": 55,
+      "name": "NIOME",
+      "updates": [
+        {
+          "headline": "SN55 NIOME reports quarterly revenue and separates clients from its pipeline",
+          "summary": "SN55 NIOME published business figures on November 22, reporting $30,000 revenue and three clients in Q2, followed by $50,000 and five clients in Q3. For Q4 it reported $40,000 so far and projected a $60,000 total.\n\nIts nine-client figure combines five clients with four prospects in the pipeline, so it should not be read as nine signed customers. The stated Q4 projection would be 20% above the reported Q3 total; the post's broader claim of more than 40% quarterly growth is not demonstrated for every quarter by those figures.\n\nIn a reply, the team said buybacks would begin once profitable. No execution date or completed buyback amount was established. These are attributed company disclosures and projections, not independently audited financial results.",
+          "rating": 3,
+          "ratingReason": "Three stars: specific reported revenue periods and client/pipeline distinctions provide meaningful information beyond promotion. Four is not established by these limited self-reported figures without a newly verified major commercial development.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/NiomeAI/status/2124570927383879987",
+              "label": "SN55 NIOME business disclosure, November 22"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "business-disclosure",
+            "consequence": "Three stars: specific reported revenue periods and client/pipeline distinctions provide meaningful information beyond promotion. Four is not established by these limited self-reported figures without a newly verified major commercial development.",
+            "evidence": "SN55 NIOME business disclosure, November 22",
+            "scope": "Original November 22 revenue post and team reply.",
+            "uncertainty": "Figures unaudited; Q4 and pipeline are forecasts; buybacks conditional.",
+            "adjacentRatingReason": "Three stars: specific reported revenue periods and client/pipeline distinctions provide meaningful information beyond promotion. Four is not established by these limited self-reported figures without a newly verified major commercial development."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 56,
+      "name": "Gradients",
+      "updates": []
+    },
+    {
+      "netuid": 57,
+      "name": "Unnamed subnet",
+      "updates": []
+    },
+    {
+      "netuid": 58,
+      "name": "Attune",
+      "updates": []
+    },
+    {
+      "netuid": 59,
+      "name": "Unnamed subnet",
+      "updates": []
+    },
+    {
+      "netuid": 60,
+      "name": "Bitsec.ai",
+      "updates": []
+    },
+    {
+      "netuid": 61,
+      "name": "RedTeam",
+      "updates": []
+    },
+    {
+      "netuid": 62,
+      "name": "Ridges",
+      "updates": []
+    },
+    {
+      "netuid": 63,
+      "name": "Enigma",
+      "updates": []
+    },
+    {
+      "netuid": 64,
+      "name": "Chutes",
+      "updates": [
+        {
+          "headline": "SN64 Chutes ties buy-burn resumption to its Gamma rollout",
+          "summary": "SN64 Chutes said on November 22 that it intends to resume buy-burns when its Gamma integration arrives. In the official subnet channel, the team described its commitment as returning all revenue from miners to the network through buy-burns. That wording does not establish that every category of company revenue is included.\n\nThe team also promised a fuller update during the week covering revenue, buy-burns, Parallax and the planned network upgrade. It described Gamma as imminent but supplied no exact activation date in the reviewed announcement.\n\nThe announcement establishes a plan and a forthcoming update, not a completed Gamma launch, executed purchases or a verified burn amount.",
+          "rating": 4,
+          "ratingReason": "Four stars: a specific planned revenue-return mechanism at a major inference subnet has broader consequences than routine maintenance. Five is not supported by an unexecuted plan with no quantified impact.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1320739778534047785",
+              "label": "SN64 Chutes official channel, November 22 team update"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product-plan",
+            "consequence": "Four stars: a specific planned revenue-return mechanism at a major inference subnet has broader consequences than routine maintenance. Five is not supported by an unexecuted plan with no quantified impact.",
+            "evidence": "SN64 Chutes official channel, November 22 team update",
+            "scope": "Original team statements at 12:10 and 12:38 PM Eastern on November 22.",
+            "uncertainty": "Activation timing and executed purchases/burns remain unverified.",
+            "adjacentRatingReason": "Four stars: a specific planned revenue-return mechanism at a major inference subnet has broader consequences than routine maintenance. Five is not supported by an unexecuted plan with no quantified impact."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 65,
+      "name": "True Performance Network",
+      "updates": []
+    },
+    {
+      "netuid": 66,
+      "name": "conjectures",
+      "updates": []
+    },
+    {
+      "netuid": 67,
+      "name": "Harnyx",
+      "updates": []
+    },
+    {
+      "netuid": 68,
+      "name": "NOVA",
+      "updates": []
+    },
+    {
+      "netuid": 69,
+      "name": "Herald",
+      "updates": []
+    },
+    {
+      "netuid": 70,
+      "name": "Fugal",
+      "updates": []
+    },
+    {
+      "netuid": 71,
+      "name": "Leadpoet",
+      "updates": []
+    },
+    {
+      "netuid": 72,
+      "name": "StreetVision by NATIX",
+      "updates": []
+    },
+    {
+      "netuid": 73,
+      "name": "Elenost",
+      "updates": []
+    },
+    {
+      "netuid": 74,
+      "name": "Gittensor",
+      "updates": []
+    },
+    {
+      "netuid": 75,
+      "name": "Hippius",
+      "updates": [
+        {
+          "headline": "SN75 Hippius updates mobile backups, biometric access and file comments",
+          "summary": "SN75 Hippius announced Drive version 1.4.0 for iPhone and Android on November 23. The team says photo backups now continue after users leave the app, alongside faster uploads and initial backups.\n\nThe update also adds biometric unlocking and comments on shared files. The team says files remain encrypted on the phone before upload. These are attributed release claims, not an independent security assessment or device-performance test. The mobile app itself launched earlier; this story concerns the new version.",
+          "rating": 3,
+          "ratingReason": "Three stars: practical backup and access changes affect existing mobile users beyond minor housekeeping. Four would overstate an incremental release of an existing product.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/Hippius_cloud/status/2124790053943620038",
+              "label": "SN75 Hippius version 1.4.0 announcement"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product-update",
+            "consequence": "Three stars: practical backup and access changes affect existing mobile users beyond minor housekeeping. Four would overstate an incremental release of an existing product.",
+            "evidence": "SN75 Hippius version 1.4.0 announcement",
+            "scope": "Original version 1.4.0 announcement.",
+            "uncertainty": "Device behavior and encryption implementation not independently tested.",
+            "adjacentRatingReason": "Three stars: practical backup and access changes affect existing mobile users beyond minor housekeeping. Four would overstate an incremental release of an existing product."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 76,
+      "name": "Ormas",
+      "updates": []
+    },
+    {
+      "netuid": 77,
+      "name": "Liquidity",
+      "updates": []
+    },
+    {
+      "netuid": 78,
+      "name": "Unnamed subnet",
+      "updates": []
+    },
+    {
+      "netuid": 79,
+      "name": "MVTRX",
+      "updates": []
+    },
+    {
+      "netuid": 80,
+      "name": "OpenRoboto",
+      "updates": []
+    },
+    {
+      "netuid": 81,
+      "name": "Reliquary",
+      "updates": []
+    },
+    {
+      "netuid": 82,
+      "name": "Noah",
+      "updates": []
+    },
+    {
+      "netuid": 83,
+      "name": "CliqueAI",
+      "updates": []
+    },
+    {
+      "netuid": 84,
+      "name": "Unnamed subnet",
+      "updates": []
+    },
+    {
+      "netuid": 85,
+      "name": "Vidaio",
+      "updates": []
+    },
+    {
+      "netuid": 86,
+      "name": "OnSale",
+      "updates": []
+    },
+    {
+      "netuid": 87,
+      "name": "Provenonce",
+      "updates": []
+    },
+    {
+      "netuid": 88,
+      "name": "Investing",
+      "updates": []
+    },
+    {
+      "netuid": 89,
+      "name": "InfiniteQuant",
+      "updates": []
+    },
+    {
+      "netuid": 90,
+      "name": "KubeTEE",
+      "updates": []
+    },
+    {
+      "netuid": 91,
+      "name": "cascade",
+      "updates": []
+    },
+    {
+      "netuid": 92,
+      "name": "REAX",
+      "updates": []
+    },
+    {
+      "netuid": 93,
+      "name": "Bitcast",
+      "updates": []
+    },
+    {
+      "netuid": 94,
+      "name": "Cathedral",
+      "updates": []
+    },
+    {
+      "netuid": 95,
+      "name": "Actual",
+      "updates": []
+    },
+    {
+      "netuid": 96,
+      "name": "Verathos",
+      "updates": []
+    },
+    {
+      "netuid": 97,
+      "name": "Ingot",
+      "updates": []
+    },
+    {
+      "netuid": 98,
+      "name": "NeverPlayAlone",
+      "updates": []
+    },
+    {
+      "netuid": 99,
+      "name": "Axonry",
+      "updates": []
+    },
+    {
+      "netuid": 100,
+      "name": "Cortex",
+      "updates": []
+    },
+    {
+      "netuid": 101,
+      "name": "Tag101",
+      "updates": []
+    },
+    {
+      "netuid": 102,
+      "name": "ConnitoAI",
+      "updates": []
+    },
+    {
+      "netuid": 103,
+      "name": "Terza Inference",
+      "updates": []
+    },
+    {
+      "netuid": 104,
+      "name": "TAOstatus",
+      "updates": []
+    },
+    {
+      "netuid": 105,
+      "name": "Beam",
+      "updates": []
+    },
+    {
+      "netuid": 106,
+      "name": "Nodexo",
+      "updates": []
+    },
+    {
+      "netuid": 107,
+      "name": "Minos",
+      "updates": []
+    },
+    {
+      "netuid": 108,
+      "name": "ChipForge",
+      "updates": []
+    },
+    {
+      "netuid": 109,
+      "name": "Unnamed subnet",
+      "updates": []
+    },
+    {
+      "netuid": 110,
+      "name": "Green Compute",
+      "updates": []
+    },
+    {
+      "netuid": 111,
+      "name": "Claims",
+      "updates": [
+        {
+          "headline": "SN111 Claims moves new-schema mainnet evaluation to November 25",
+          "summary": "SN111 Claims moved its new-schema mainnet run to November 25 at 12:00 UTC, according to the team's November 23 update. Package intake is expected to open six to twelve hours beforehand, with the exact opening time and round ID still to be announced. The old-schema November 23 round will close without evaluation.\n\nThe change follows a failed testnet round in which only two of ten papers received finalized scores. The team attributed the other exclusions to validator-side evidence-size limits, table selection, unsupported judging findings and figure OCR problems. Its rules required ten eligible papers before selecting a winner.\n\nThe team plans to test repairs against retained outputs and conduct additional testnet runs before the new mainnet evaluation. The failed round's evidence remains available. This updates yesterday's testnet coverage and does not claim the replacement mainnet round is already open.",
+          "rating": 3,
+          "ratingReason": "Three stars under the competition cap: a changed evaluation date and failed testnet materially affect participants. Two understates the schedule impact; four would overrate the bounded competition update.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1515007366016401599",
+              "label": "SN111 Claims team update, November 23 at 6:13 AM Eastern"
+            },
+            {
+              "url": "https://dashboard.claims111.ai/competition/round_20261122T151842Z_testnet",
+              "label": "SN111 Claims retained testnet round"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "routine-competition",
+            "consequence": "Three stars under the competition cap: a changed evaluation date and failed testnet materially affect participants. Two understates the schedule impact; four would overrate the bounded competition update.",
+            "evidence": "SN111 Claims team update, November 23 at 6:13 AM Eastern; SN111 Claims retained testnet round",
+            "scope": "Original November 23 team messages and linked testnet dashboard.",
+            "uncertainty": "New round intake and repaired execution are not yet verified.",
+            "adjacentRatingReason": "Three stars under the competition cap: a changed evaluation date and failed testnet materially affect participants. Two understates the schedule impact; four would overrate the bounded competition update."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 112,
+      "name": "THOR",
+      "updates": []
+    },
+    {
+      "netuid": 113,
+      "name": "Unnamed subnet",
+      "updates": []
+    },
+    {
+      "netuid": 114,
+      "name": "SOMA",
+      "updates": []
+    },
+    {
+      "netuid": 115,
+      "name": "MoirAI",
+      "updates": []
+    },
+    {
+      "netuid": 116,
+      "name": "Carbon",
+      "updates": [
+        {
+          "headline": "SN116 Carbon reports a new motor-model competition leader",
+          "summary": "SN116 Carbon reported a new Motor Challenge leader on November 23 with a score of 0.923. The team describes the entry as a physics-shaped model with roughly 7,700 fitted parameters, contrasting it with earlier leaders built from pure physics.\n\nIn its edited announcement, the team reports full-waveform torque error falling from 0.123% to 0.067%, and torque-ripple error from 0.0054 to 0.0019 newton-metres. It also reports 74 miners at or above 0.90 accuracy and 22 above 0.95, with 0.936 the next target to beat.\n\nThese are team-reported challenge results. They do not by themselves establish performance in a commercial motor deployment, and the next target is not the current winning score.",
+          "rating": 3,
+          "ratingReason": "Three stars under the competition cap: quantified model and leaderboard changes are useful participant news. Four would overrate a bounded challenge result.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/carbonphysicsai/status/2124865039370743903",
+              "label": "SN116 Carbon latest edited Motor Challenge announcement"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "routine-competition",
+            "consequence": "Three stars under the competition cap: quantified model and leaderboard changes are useful participant news. Four would overrate a bounded challenge result.",
+            "evidence": "SN116 Carbon latest edited Motor Challenge announcement",
+            "scope": "Latest edited official announcement at 8:57 AM Eastern November 23.",
+            "uncertainty": "Benchmarks attributed to team; attached video and independent reproduction remain unreviewed.",
+            "adjacentRatingReason": "Three stars under the competition cap: quantified model and leaderboard changes are useful participant news. Four would overrate a bounded challenge result."
+          }
+        }
+      ]
+    },
+    {
+      "netuid": 117,
+      "name": "everyframe.studio",
+      "updates": []
+    },
+    {
+      "netuid": 118,
+      "name": "Ditto",
+      "updates": []
+    },
+    {
+      "netuid": 119,
+      "name": "CapabilityForge Next",
+      "updates": []
+    },
+    {
+      "netuid": 120,
+      "name": "Affine",
+      "updates": []
+    },
+    {
+      "netuid": 121,
+      "name": "sundae_bar",
+      "updates": []
+    },
+    {
+      "netuid": 122,
+      "name": "CookingTAO",
+      "updates": []
+    },
+    {
+      "netuid": 123,
+      "name": "MANTIS",
+      "updates": []
+    },
+    {
+      "netuid": 124,
+      "name": "Swarm",
+      "updates": []
+    },
+    {
+      "netuid": 125,
+      "name": "Refinery",
+      "updates": []
+    },
+    {
+      "netuid": 126,
+      "name": "Attelier",
+      "updates": []
+    },
+    {
+      "netuid": 127,
+      "name": "Zils",
+      "updates": []
+    },
+    {
+      "netuid": 128,
+      "name": "ByteLeap",
+      "updates": []
+    }
+  ],
+  "ecosystem": [],
+  "storyOrder": [
+    "SN53 Engy announces accountless inference through Gamma",
+    "SN64 Chutes ties buy-burn resumption to its Gamma rollout",
+    "SN7 registers again and now identifies itself as Algo",
+    "SN36 Weir opens GPU rental beta with full virtual machines",
+    "SN75 Hippius updates mobile backups, biometric access and file comments",
+    "SN111 Claims moves new-schema mainnet evaluation to November 25",
+    "SN55 NIOME reports quarterly revenue and separates clients from its pipeline",
+    "SN116 Carbon reports a new motor-model competition leader",
+    "SN3 Teutonic clarifies release plans and keeps pretraining completion open"
+  ],
+  "coverage": {
+    "searched": [
+      "Original team announcements and documentation for selected stories; actual AlphaGap feed, Grok discovery and attention, and selected original Discord discussions."
+    ],
+    "gaps": [
+      "Full outlet, fund/person, subnet, Discord, market-trigger and media coverage remains unfinished. This is not an exhaustive report; additional verified developments are being investigated.",
+      "Grok discovery and attention returned responses; the separate final omissions query was rejected because available usage was exhausted.",
+      "The etao and burns event collectors and owner-holdings collector stopped at runtime compatibility guards. Last-good archives were preserved; full Gamma flows, allocations and new registration reconciliation remain incomplete."
+    ]
+  },
+  "summary": "SN53 Engy announces accountless Gamma inference. SN64 Chutes ties buy-burn resumption to Gamma, SN75 Hippius updates mobile backups, and SN111 Claims moves its new-schema mainnet run. Plus GPU rentals, revenue disclosures, motor models and pretraining plans.",
+  "coverageEnd": "2026-11-23T15:12:30.262225+00:00",
+  "highlights": [],
+  "upcomingUnlocks": [],
+  "publishedAt": "2026-11-23T15:12:30.262225+00:00"
+}
