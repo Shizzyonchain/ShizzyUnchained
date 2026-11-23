@@ -2,8 +2,8 @@ import "server-only";
 import { getCache } from "@vercel/functions";
 import seed from "../data/etao.json";
 import { ss58 } from "./child-hotkey-storage";
-import { decodeEmission, emissionPrefix, observationIsResolved, type EmissionObservation } from "./etao";
-export type EtaoSnapshot = Omit<typeof seed, "weights" | "observations" | "names" | "ownerSnapshot"> & { ownerSnapshot: { block: number; hash: string; checkedAt: string; owners: Record<string, string> }; weights: Record<string, string[]>; names: Record<string, string>; observations: EmissionObservation[] };
+import { decodeEmission, decodeGammaEmission, gammaEmissionPrefix, type GammaAllocation, emissionPrefix, observationIsResolved, type EmissionObservation } from "./etao";
+export type EtaoSnapshot = Omit<typeof seed, "weights" | "observations" | "names" | "ownerSnapshot"> & { ownerSnapshot: { block: number; hash: string; checkedAt: string; owners: Record<string, string> }; weights: Record<string, string[]>; gamma?: Record<string, GammaAllocation[]>; names: Record<string, string>; observations: EmissionObservation[] };
 const cache = () => getCache({ namespace: "shizzy-etao-v1" });
 export async function getEtaoSnapshot(): Promise<EtaoSnapshot> {
   try {
@@ -48,10 +48,21 @@ export async function refreshEtao() {
     }
     if (!keys.length) throw new Error("Missing emission storage");
     const groups = await rpc<{ changes: [string, string | null][] }[]>("state_queryStorageAt", [keys, hash]);
+    const gammaKeys = keys.map(key => gammaEmissionPrefix + key.slice(emissionPrefix.length));
+    const gammaGroups = await rpc<{ changes: [string, string | null][] }[]>("state_queryStorageAt", [gammaKeys, hash]);
+    const gamma: Record<string, GammaAllocation[]> = {};
+    for (const [key, value] of gammaGroups.flatMap(group => group.changes)) {
+      if (!gammaKeys.includes(key)) throw new Error("Unexpected Gamma storage");
+      const netuid = String(Buffer.from(key.slice(gammaEmissionPrefix.length), "hex").readUInt16LE());
+      if (gamma[netuid]) throw new Error("Duplicate Gamma storage");
+      gamma[netuid] = decodeGammaEmission(value ?? "0x00");
+    }
+    if (Object.keys(gamma).length !== keys.length) throw new Error("Incomplete Gamma snapshot");
     const weights: Record<string, string[]> = {};
     for (const [key, value] of groups.flatMap(group => group.changes)) {
       if (!value || !key.startsWith(emissionPrefix) || key.length !== emissionPrefix.length + 4) throw new Error("Incomplete emission snapshot");
-      weights[String(Buffer.from(key.slice(emissionPrefix.length), "hex").readUInt16LE())] = decodeEmission(value);
+      const netuid = String(Buffer.from(key.slice(emissionPrefix.length), "hex").readUInt16LE());
+      weights[netuid] = decodeEmission(value, gamma[netuid]);
     }
     if (Object.keys(weights).length !== keys.length) throw new Error("Incomplete emission snapshot");
     const checkedAt = new Date().toISOString();
@@ -78,7 +89,7 @@ export async function refreshEtao() {
       if (JSON.stringify(previous.weights[netuid]) !== JSON.stringify(weights[netuid])) observations.push({ netuid: Number(netuid), before: previous.weights[netuid] || null, after: weights[netuid] || null, fromBlock: previous.block, toBlock: block, detectedAt: checkedAt });
     }
     // This cache supplements the checked-in audit; it is not a permanent event archive.
-    const snapshot: EtaoSnapshot = { ...previous, block, hash, runtime: runtime.specVersion, checkedAt, weights, ownerSnapshot, observations: observations.slice(-1000), source: process.env.ETAO_RPC_URL ? "Configured chain RPC" : "Opentensor archive RPC" };
+    const snapshot: EtaoSnapshot = { ...previous, block, hash, runtime: runtime.specVersion, checkedAt, weights, gamma, ownerSnapshot, observations: observations.slice(-1000), source: process.env.ETAO_RPC_URL ? "Configured chain RPC" : "Opentensor archive RPC" };
     await cache().set("snapshot", snapshot, { ttl: 30 * 86400 });
     return { block, subnets: keys.length, observations: observations.length, checkedAt };
   } finally { clearTimeout(timeout); socket.close(); }
