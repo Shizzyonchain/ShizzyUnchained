@@ -196,7 +196,35 @@
     {
       "netuid": 33,
       "name": "ReadyAI",
-      "updates": []
+      "updates": [
+        {
+          "headline": "ReadyAI brings its agent skill store into the Hermes plugin catalog",
+          "summary": "SN33 ReadyAI announced on November 23 that its ss33 Skill Store plugin is available in the Nous Research Hermes Agent catalog. The counterpart catalog independently lists ReadyAI as the developer and provides the install command, supported platforms and plugin details.\n\nThe plugin searches for skills ranked for a project's software stack. Users can review and install a skill into their project with a lockfile, then list or update installed skills. Optional prompt matching can suggest a skill when a task needs one. ReadyAI advertises more than 60,000 skills; that is a catalog-size claim, not a customer or usage count.\n\nThe listing discloses that searches send a query and short project summary to the skill store. Prompt matching is opt-in and sends a truncated prompt when enabled. We verified the public listing and original announcement without installing the plugin or testing its performance. This establishes catalog availability and the described integration, not a strategic partnership or a cause for SN33's price movement.",
+          "rating": 4,
+          "ratingReason": "Four stars: this is a working product integration that lets Hermes users discover, review and manage ReadyAI skills inside their agent workflow, beyond a routine model listing. Five is not established by this bounded integration alone.",
+          "status": "verified",
+          "importance": "high",
+          "sources": [
+            {
+              "url": "https://x.com/ReadyAI_/status/2124909267019084212",
+              "label": "ReadyAI announcement, November 23"
+            },
+            {
+              "url": "https://hermes-agent.nousresearch.com/marketplace/ss33",
+              "label": "Nous Research Hermes catalog: ss33"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product-integration",
+            "consequence": "Four stars: this is a working product integration that lets Hermes users discover, review and manage ReadyAI skills inside their agent workflow, beyond a routine model listing. Five is not established by this bounded integration alone.",
+            "evidence": "Original ReadyAI announcement and counterpart Nous Research catalog listing.",
+            "scope": "Skill discovery, review, installation and management inside Hermes; supported Linux, macOS and Windows.",
+            "uncertainty": "No installation or performance test; skill count attributed; video not fully reviewed; no revenue or causal price claim.",
+            "adjacentRatingReason": "Four stars: this is a working product integration that lets Hermes users discover, review and manage ReadyAI skills inside their agent workflow, beyond a routine model listing. Five is not established by this bounded integration alone."
+          }
+        }
+      ]
     },
     {
       "netuid": 34,
@@ -945,6 +973,7 @@
     "Runtime 494 adds commitment, delegation and basket-trading controls",
     "SN28 SayGM connects Bijou agents through a shared AI balance",
     "SN98 NeverPlayAlone opens Studio and brings agents to existing Minecraft servers",
+    "ReadyAI brings its agent skill store into the Hermes plugin catalog",
     "OpenTensor launches Federation builder hubs in France, India and China",
     "SN55 NIOME outlines expansion into genetic-treatment design and evaluation",
     "TAO.com raises crosschain swap ceiling to $100,000 and reports $10 million in volume",
@@ -967,6 +996,6 @@
       "Full daily Gamma flows and lifecycle-event reconciliation remain unfinished. Snapshot values are not customer adoption or a complete event history."
     ]
   },
-  "correctedAt": "2026-11-24T15:25:18.282337+00:00",
-  "correctionNote": "Added the November 23 TAO.com crosschain limit and gross-volume announcement after checking the original post and current product interface."
+  "correctedAt": "2026-11-24T15:39:39.548713+00:00",
+  "correctionNote": "Added the November 23 TAO.com crosschain update and ReadyAI Hermes integration after original-source and counterpart checks."
 }
