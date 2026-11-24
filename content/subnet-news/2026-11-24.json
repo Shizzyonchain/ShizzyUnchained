@@ -911,6 +911,33 @@
         "uncertainty": "Future event delivery and participant outcomes not established; video not fully reviewed.",
         "adjacentRatingReason": "Four stars: an official multi-country builder program has broader ecosystem scope than a routine meetup. Five is not established by launch announcements and prior attendance figures."
       }
+    },
+    {
+      "headline": "TAO.com raises crosschain swap ceiling to $100,000 and reports $10 million in volume",
+      "summary": "TAO.com announced on November 23 that crosschain swaps can now reach $100,000 per transaction, subject to available liquidity. Its current website advertises the same limit for swaps between Ethereum USDC or ETH and Bittensor tokens, in either direction.\n\nThe team also reports $10 million in gross crosschain swap volume through TAO Intents. Gross volume is the value moved through swaps, not platform revenue, profit or net new capital entering Bittensor. The post does not specify a measurement period or a unique-user count.\n\nWe verified the published limit and product interface without connecting a wallet or executing a transaction. A displayed ceiling does not guarantee a $100,000 quote for every token or market condition.",
+      "rating": 3,
+      "ratingReason": "Three stars: a higher transaction ceiling and quantified usage are meaningful operating developments. Four is not established by a limit increase and gross-volume disclosure alone.",
+      "status": "verified",
+      "importance": "medium",
+      "sources": [
+        {
+          "url": "https://x.com/taodotcom/status/2124900209549349255",
+          "label": "TAO.com announcement, November 23"
+        },
+        {
+          "url": "https://www.tao.com/",
+          "label": "Current crosschain limit and interface"
+        }
+      ],
+      "ratingAssessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "product-update",
+        "consequence": "Three stars: a higher transaction ceiling and quantified usage are meaningful operating developments. Four is not established by a limit increase and gross-volume disclosure alone.",
+        "evidence": "Original provider post and current public interface.",
+        "scope": "Published transaction ceiling and attributed gross-volume milestone.",
+        "uncertainty": "Volume unaudited; period unspecified; no wallet connection or executed swap; video not fully reviewed.",
+        "adjacentRatingReason": "Three stars: a higher transaction ceiling and quantified usage are meaningful operating developments. Four is not established by a limit increase and gross-volume disclosure alone."
+      }
     }
   ],
   "storyOrder": [
@@ -920,6 +947,7 @@
     "SN98 NeverPlayAlone opens Studio and brings agents to existing Minecraft servers",
     "OpenTensor launches Federation builder hubs in France, India and China",
     "SN55 NIOME outlines expansion into genetic-treatment design and evaluation",
+    "TAO.com raises crosschain swap ceiling to $100,000 and reports $10 million in volume",
     "SN65 TPN reports Gratis usage and 305 paid Bench runs",
     "SN79 MVTRX doubles its simulated order-book capacity to 256",
     "SN92 REAX operator adds bison-1 to Decision Models API",
@@ -938,5 +966,7 @@
       "The etao and burns historical collector stopped because its requested interval crosses runtime metadata changes. Last-good archives are preserved; complete intervening event review is not claimed.",
       "Full daily Gamma flows and lifecycle-event reconciliation remain unfinished. Snapshot values are not customer adoption or a complete event history."
     ]
-  }
+  },
+  "correctedAt": "2026-11-24T15:25:18.282337+00:00",
+  "correctionNote": "Added the November 23 TAO.com crosschain limit and gross-volume announcement after checking the original post and current product interface."
 }
