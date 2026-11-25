@@ -155,7 +155,10 @@ class FakeLockView:
             ("SubtensorModule", "DecayingOwnerLock"): [],
         }[storage]
 
-    async def query(self, storage):
+    async def query(self, storage, params=None):
+        if storage == ("SubtensorModule", "HasMigrationRun"):
+            assert params == [list(b"migrate_one_lock_bucket_per_hotkey")]
+            return False
         assert storage == ("SubtensorModule", "UnlockRate")
         return 10
 
@@ -172,6 +175,25 @@ async def test_locked_alpha_uses_bounded_storage_maps_and_rolls_decay():
         decaying=True,
     )
     assert totals[64] == Decimal(3)
+
+
+async def test_migrated_locks_include_owner_once_without_removed_storage_reads():
+    class Migrated(FakeLockView):
+        async def query(self, storage, params=None):
+            if storage == ("SubtensorModule", "HasMigrationRun"):
+                return True
+            return await super().query(storage, params)
+
+        async def query_map(self, storage):
+            assert storage[1] not in ("OwnerLock", "DecayingOwnerLock")
+            rows = await super().query_map(storage)
+            if storage[1] == "HotkeyLock":
+                rows += [((64, "owner-hotkey"), {"locked_mass": 3_000_000_000, "last_update": 90})]
+            return rows
+
+    totals = await ChainClient(Settings())._locked_alpha_by_subnet(Migrated(), [4, 64], 100)
+    assert totals[64] == Decimal(3)
+    assert totals[4] > Decimal(2)
 
 
 def test_emission_share_includes_pool_injection_and_chain_buys():

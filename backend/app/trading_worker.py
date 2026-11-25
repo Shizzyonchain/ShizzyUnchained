@@ -16,7 +16,9 @@ log = logging.getLogger("shizzy.trading")
 # GammaMinted TAO purchases have a separate event; stake-funded minting has tao=0.
 # Runtime490 review: public/evidence/2026-11-11-trade-runtime-review.json.
 # GammaEmissionMinted routes existing alpha through TAO, not external TAO flow.
-REVIEWED_TRADE_RUNTIMES = frozenset({484, 486, 488, 490})
+# v494/495: paid Gamma mint omits spender; native amount semantics unchanged.
+# Review: public/evidence/2026-11-25-trade-runtime-review.json.
+REVIEWED_TRADE_RUNTIMES = frozenset({484, 486, 488, 490, 494, 495})
 
 
 def require_trade_runtime(version):

@@ -1,0 +1,57 @@
+{
+  "reviewedAt": "2026-11-25T14:13:48.234188+00:00",
+  "runtimes": [
+    494,
+    495
+  ],
+  "sourceReview": [
+    "v490 to v495 add_stake.rs, remove_stake.rs and move_stake.rs are identical. stake_utils changes only a comment.",
+    "GammaMinted removes spender; paid mint still reports native TAO and stake-funded mint still sets tao=0. Both exact reviewed layouts are accepted; other layouts fail.",
+    "BasketSwapped fields and native TAO routing remain unchanged; controls and work accounting do not change counted external legs.",
+    "Gamma emission mint remains internal alpha-to-alpha conversion, excluded from external TAO flow.",
+    "one_lock_bucket_per_hotkey migrates owner lock aggregates into hotkey maps. Read its flag at the pinned block and never double-count removed owner maps."
+  ],
+  "eventDefinitions494And495Identical": true,
+  "liveReadOnlyValidation": {
+    "runtime": 495,
+    "checkedAt": "2026-11-25T14:13:48.234188+00:00",
+    "block": 9584327,
+    "hash": "0x3f2cb3c3f110c24ca2fcc81f0229c0bcf3e2db553f19c5d0743df16f8b89d582",
+    "oneLockBucketMigration": true,
+    "blocks": [
+      {
+        "block": 9584325,
+        "hash": "0x8169091f867e23a900eab9c0b53c0e2a3160b6a36ad5866c09716c39b1263235",
+        "totals": {
+          "buy": 0,
+          "sell": 24496933727,
+          "trades": 1
+        }
+      },
+      {
+        "block": 9584326,
+        "hash": "0x5937cc136a515e39aec283c96b3fe8ad308a8f30ebedb38cf5c3bb476d93c647",
+        "totals": {
+          "buy": 2300604076,
+          "sell": 36170859900,
+          "trades": 4
+        }
+      },
+      {
+        "block": 9584327,
+        "hash": "0x3f2cb3c3f110c24ca2fcc81f0229c0bcf3e2db553f19c5d0743df16f8b89d582",
+        "totals": {
+          "buy": 0,
+          "sell": 115219816,
+          "trades": 1
+        }
+      }
+    ]
+  },
+  "primarySources": [
+    "https://raw.githubusercontent.com/RaoFoundation/subtensor/v495/pallets/subtensor/src/macros/events.rs",
+    "https://raw.githubusercontent.com/RaoFoundation/subtensor/v495/pallets/subtensor/src/subnets/gamma.rs",
+    "https://raw.githubusercontent.com/RaoFoundation/subtensor/v495/pallets/subtensor/src/migrations/migrate_one_lock_bucket_per_hotkey.rs"
+  ],
+  "limitations": "Three finalized live blocks plus source and regression tests. Contiguous trade history must recover before production totals are considered healthy. Unknown runtimes still stop."
+}

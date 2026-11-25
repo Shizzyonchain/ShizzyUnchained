@@ -158,3 +158,11 @@ def test_runtime488_gamma_counts_tao_purchase_without_stake_mint_or_failed_call(
     assert trade_totals([event("GammaMinted", gamma), event("ExtrinsicFailed", {}, "System"), event("ExtrinsicSuccess", {}, "System", idx=0)]) == {"buy": 0, "sell": 0, "trades": 0}
     with pytest.raises(ValueError, match="GammaMinted"):
         trade_totals([event("GammaMinted", {"tao": 500}), SUCCESS])
+
+
+def test_runtime495_gamma_purchase_retains_exact_flow_and_rejects_unknown_layout():
+    gamma = {"netuid": 24, "coldkey": "cold", "hotkey": "hot", "daily_spend_cap": None, "tao": 5000000001, "alpha": 700, "value": 800, "gamma": 900}
+    assert trade_totals([event("GammaMinted", gamma), SUCCESS]) == {"buy": 5000000001, "sell": 0, "trades": 1}
+    assert trade_totals([event("GammaMinted", {**gamma, "tao": 0}), SUCCESS]) == {"buy": 0, "sell": 0, "trades": 0}
+    with pytest.raises(ValueError, match="GammaMinted"):
+        trade_totals([event("GammaMinted", {**gamma, "unknown": 1}), SUCCESS])

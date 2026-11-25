@@ -108,7 +108,8 @@ def trade_totals(records):
                 # Runtime488 swaps TAO directly without emitting StakeAdded.
                 # The stake-funded variant sets tao=0.
                 expected = {"netuid", "coldkey", "hotkey", "spender", "daily_spend_cap", "tao", "alpha", "value", "gamma"}
-                if not isinstance(a, dict) or set(a) != expected:
+                # v494/495 removed spender; the paid TAO amount is unchanged.
+                if not isinstance(a, dict) or set(a) not in (expected, expected - {"spender"}):
                     raise ValueError("Unreviewed GammaMinted trade layout")
                 netuid, tao = scale_int(a["netuid"]), scale_int(a["tao"])
                 if 1 <= netuid <= 128 and tao > 0:

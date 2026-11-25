@@ -797,6 +797,16 @@ class ChainClient:
                 min(12, self.settings.rpc_block_timeout_seconds / 2),
             )
             async with asyncio.timeout(timeout):
+                # Read the migration at this exact block. After it runs, the
+                # hotkey maps already include owner locks and legacy maps vanish.
+                unified = _plain(await view.query(
+                    ("SubtensorModule", "HasMigrationRun"),
+                    [list(b"migrate_one_lock_bucket_per_hotkey")],
+                ))
+                if not isinstance(unified, bool):
+                    raise ValueError("Invalid lock migration state")
+                async def owner_rows(name):
+                    return [] if unified else await view.query_map(("SubtensorModule", name))
                 (
                     perpetual_hotkeys,
                     decaying_hotkeys,
@@ -806,8 +816,8 @@ class ChainClient:
                 ) = await asyncio.gather(
                     view.query_map(("SubtensorModule", "HotkeyLock")),
                     view.query_map(("SubtensorModule", "DecayingHotkeyLock")),
-                    view.query_map(("SubtensorModule", "OwnerLock")),
-                    view.query_map(("SubtensorModule", "DecayingOwnerLock")),
+                    owner_rows("OwnerLock"),
+                    owner_rows("DecayingOwnerLock"),
                     view.query(("SubtensorModule", "UnlockRate")),
                 )
         except Exception as exc:  # noqa: BLE001 -- isolate optional SDK/RPC reads
