@@ -1,11 +1,111 @@
 {
-  "hash": "0xdfc7a35f0f8bed245496e1086c77684eacb0ed2d9aaa5180f623cc3cc02d1f63",
-  "block": 9571521,
-  "checkedAt": "2026-11-23T19:32:43.498479+00:00",
-  "chainTime": 1795462320000,
-  "runtime": 494,
+  "hash": "0x3f2cb3c3f110c24ca2fcc81f0229c0bcf3e2db553f19c5d0743df16f8b89d582",
+  "block": 9584327,
+  "checkedAt": "2026-11-25T14:17:17.448947+00:00",
+  "chainTime": 1795615992000,
+  "runtime": 495,
   "enabled": true,
   "subnets": [
+    {
+      "netuid": 19,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "blockmachine",
+        "github_repo": "https://github.com/taostat/blockmachine/",
+        "subnet_contact": "team@blockmachine.io",
+        "subnet_url": "blockmachine.io",
+        "discord": "",
+        "description": "Harnessing Bittensor's incentive layer to forge self-optimizing infrastructure.",
+        "logo_url": "https://blockmachine.io/logo.svg",
+        "additional": ""
+      },
+      "NetworkRegisteredAt": 1956072,
+      "SubnetOwner": "5FWh37LfVV5LE9dZA91STzbtebh6vxYa3MH71c621sYafo1L",
+      "SubnetGammaPrice": {
+        "bits": 142803027625078414
+      },
+      "SubnetGammaEmission": [],
+      "services": [
+        {
+          "hotkey": "5CK49hDJcseEk1V7iB1dmmztdw4igafhxLsVN82VtUVAQRfC",
+          "service": {
+            "url": "https://blockmachine.io/services.json"
+          }
+        }
+      ],
+      "provider": "blockmachine",
+      "offering": "Paid JSON-RPC services",
+      "description": "Provider description: JSON-RPC services on SN19. Unsigned requests without an API key use a free tier and do not spend Gamma.",
+      "workflow": "Fund SN19 Gamma and sign paid requests with your deposit hotkey using btauth/1. The provider exposes a Gamma balance endpoint and OpenAPI documentation.",
+      "terms": "Check the provider pricing file before spending. Free-tier requests are not evidence of paid Gamma usage.",
+      "source": "https://blockmachine.io/services.json",
+      "pricingSources": [
+        "https://blockmachine.io/pricing.json"
+      ],
+      "providerCheckedAt": "2026-11-25",
+      "remainingCredits": 676849476,
+      "activity": [
+        {
+          "block": 9577671,
+          "eventIndex": 175,
+          "extrinsicIndex": 9,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577686,
+          "eventIndex": 182,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9578953,
+          "eventIndex": 229,
+          "extrinsicIndex": 28,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9578956,
+          "eventIndex": 217,
+          "extrinsicIndex": 12,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9578959,
+          "eventIndex": 228,
+          "extrinsicIndex": 8,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9581975,
+          "eventIndex": 166,
+          "extrinsicIndex": 5,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9581987,
+          "eventIndex": 169,
+          "extrinsicIndex": 7,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9582430,
+          "eventIndex": 156,
+          "extrinsicIndex": 3,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9582433,
+          "eventIndex": 201,
+          "extrinsicIndex": 23,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9582471,
+          "eventIndex": 172,
+          "extrinsicIndex": 8,
+          "type": "GammaSpent"
+        }
+      ]
+    },
     {
       "netuid": 22,
       "SubnetIdentitiesV3": {
@@ -21,15 +121,14 @@
       "NetworkRegisteredAt": 2009702,
       "SubnetOwner": "5DFuaMasyQtPhXcsuoYEyJmCVSRtzKxsTKFTA4SrpcGXBxJn",
       "SubnetGammaPrice": {
-        "bits": 51116157062349212
+        "bits": 52145965685909632
       },
       "SubnetGammaEmission": [],
       "services": [
         {
           "hotkey": "5CUu1QhvrfyMDBELUPJLt4c7uJFbi7TKqDHkS1Zz41oD4dyP",
           "service": {
-            "url": "https://www.desearch.ai/services.json",
-            "spender": null
+            "url": "https://www.desearch.ai/services.json"
           }
         }
       ],
@@ -47,6 +146,130 @@
       "providerCheckedAt": "2026-11-23"
     },
     {
+      "netuid": 23,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "Trishool",
+        "github_repo": "https://github.com/TrishoolAI/trishool-phase2",
+        "subnet_contact": "nav@astroware.ai",
+        "subnet_url": "https://trishool.ai",
+        "discord": "https://discord.com/channels/799672011265015819/1437447445176127618",
+        "description": "Trishool is the AI alignment protocol built on Bittensor",
+        "logo_url": "https://trishool.ai/_next/image?url=%2Ftrishool-logo-small.png&w=96&q=75",
+        "additional": ""
+      },
+      "NetworkRegisteredAt": 2063528,
+      "SubnetOwner": "5CqTRwoFmme25YAbbwovR9rEic1UY7hYBLHxSk1PSfZ2jpmN",
+      "SubnetGammaPrice": {
+        "bits": 103760317375395708
+      },
+      "SubnetGammaEmission": [],
+      "services": [],
+      "provider": "Trishool",
+      "offering": "Trishool is the AI alignment protocol built on Bittensor",
+      "description": "Provider description: Trishool is the AI alignment protocol built on Bittensor",
+      "workflow": "Gamma is enabled. No service is registered at this snapshot.",
+      "terms": "No registered service pricing or access terms were available at this snapshot.",
+      "source": "https://trishool.ai",
+      "pricingSources": [],
+      "providerCheckedAt": "2026-11-25",
+      "remainingCredits": 0,
+      "activity": []
+    },
+    {
+      "netuid": 24,
+      "SubnetIdentitiesV3": {
+        "subnet_name": "ms.computer",
+        "github_repo": "https://github.com/misscomputer/mscomputer-miner",
+        "subnet_contact": "",
+        "subnet_url": "https://ms.computer",
+        "discord": "https://discord.gg/9DdfsRRDs",
+        "description": "The internet\u2019s computer, run by everyone.",
+        "logo_url": "https://ms.computer/logo.png",
+        "additional": ""
+      },
+      "NetworkRegisteredAt": 2538424,
+      "SubnetOwner": "5DkBU7R4AHZPapnQgUZ5DTZk8KwsRTctF9eE6RKNgDa4XZXe",
+      "SubnetGammaPrice": {
+        "bits": 224965978089711712
+      },
+      "SubnetGammaEmission": [],
+      "services": [
+        {
+          "hotkey": "5ELAvsvXL9kU9CMzkFcRiqFjw3QGVgA7MrvEfcHsicv5WvWX",
+          "service": {
+            "url": "https://api.ms.computer/services.json"
+          }
+        }
+      ],
+      "provider": "ms.computer",
+      "offering": "Isolated Linux sandboxes",
+      "description": "Provider description: Linux sandboxes with 1 vCPU, 4 GiB memory and 10 GiB storage, with execution, files and process APIs.",
+      "workflow": "Fund SN24 Gamma, sign requests with your deposit hotkey using btauth/1, then create and use a sandbox. The provider says usage is billed per second.",
+      "terms": "Provider limits include available balance, fleet capacity and 600 signed requests per minute per hotkey. Check current pricing before creating a sandbox.",
+      "source": "https://api.ms.computer/services.json",
+      "pricingSources": [
+        "https://api.ms.computer/v1/gamma/pricing"
+      ],
+      "providerCheckedAt": "2026-11-25",
+      "remainingCredits": 758959948,
+      "activity": [
+        {
+          "block": 9576122,
+          "eventIndex": 176,
+          "extrinsicIndex": 7,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576124,
+          "eventIndex": 154,
+          "extrinsicIndex": 3,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576234,
+          "eventIndex": 178,
+          "extrinsicIndex": 6,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576238,
+          "eventIndex": 210,
+          "extrinsicIndex": 13,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577431,
+          "eventIndex": 250,
+          "extrinsicIndex": 20,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577437,
+          "eventIndex": 191,
+          "extrinsicIndex": 19,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577443,
+          "eventIndex": 188,
+          "extrinsicIndex": 16,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9581881,
+          "eventIndex": 216,
+          "extrinsicIndex": 24,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9581888,
+          "eventIndex": 172,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent"
+        }
+      ]
+    },
+    {
       "netuid": 25,
       "SubnetIdentitiesV3": {
         "subnet_name": "UR",
@@ -61,15 +284,14 @@
       "NetworkRegisteredAt": 2998801,
       "SubnetOwner": "5HTeZ5168DjjGWZgbvzGfysEAj9fnexF24gYFKJHENU5cc8a",
       "SubnetGammaPrice": {
-        "bits": 75762982366194877
+        "bits": 78144615445978675
       },
       "SubnetGammaEmission": [],
       "services": [
         {
           "hotkey": "5CyQFykVpfa9xgZVGgBsiNUpjbo1EihBTSkPvDC1FZbL1wxG",
           "service": {
-            "url": "https://api.bringyour.com/pay/gamma/services.json",
-            "spender": null
+            "url": "https://api.bringyour.com/pay/gamma/services.json"
           }
         }
       ],
@@ -106,15 +328,14 @@
       "NetworkRegisteredAt": 4878363,
       "SubnetOwner": "5CA6rwAytZvvyZhLYEzo79627QEV422Q8kD51DEnTaRQxm45",
       "SubnetGammaPrice": {
-        "bits": 556580446341474792
+        "bits": 529434064009942422
       },
       "SubnetGammaEmission": [],
       "services": [
         {
           "hotkey": "5Evgh9QTXJLxYLusVy3tcY5S6Z3GgRSNDb9AzXUchX5dco3P",
           "service": {
-            "url": "https://saygm.com/services.json",
-            "spender": null
+            "url": "https://saygm.com/services.json"
           }
         }
       ],
@@ -136,9 +357,111 @@
           "eventIndex": 184,
           "extrinsicIndex": 21,
           "type": "GammaSpent"
+        },
+        {
+          "block": 9574006,
+          "eventIndex": 160,
+          "extrinsicIndex": 4,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574027,
+          "eventIndex": 161,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9579768,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580128,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580488,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580848,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581208,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581568,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581878,
+          "eventIndex": 210,
+          "extrinsicIndex": 12,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9581885,
+          "eventIndex": 190,
+          "extrinsicIndex": 16,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9581928,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582288,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582648,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583008,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583074,
+          "eventIndex": 163,
+          "extrinsicIndex": 5,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9583084,
+          "eventIndex": 197,
+          "extrinsicIndex": 17,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9584088,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
         }
       ],
-      "remainingCredits": 272932423,
+      "remainingCredits": 78755144463,
       "pricingSources": [
         "https://api.saygm.com/v1/models"
       ],
@@ -159,7 +482,7 @@
       "NetworkRegisteredAt": 3212175,
       "SubnetOwner": "5GRBbS3aDep7cvR1NRm9Awp5HAF1o4HC7t59Y8HoheLZ6ZaP",
       "SubnetGammaPrice": {
-        "bits": 47751202337138354
+        "bits": 48099294536276575
       },
       "SubnetGammaEmission": [],
       "services": [],
@@ -189,15 +512,14 @@
       "NetworkRegisteredAt": 3966206,
       "SubnetOwner": "5FqACMtcegZxxopgu1g7TgyrnyD8skurr9QDPLPhxNQzsThe",
       "SubnetGammaPrice": {
-        "bits": 2261224358745503505
+        "bits": 2181265041079051956
       },
       "SubnetGammaEmission": [],
       "services": [
         {
           "hotkey": "5FTVrwEpjvpNeKwczFtYjs62GHKKLHLCdqCThtj2unZouKg1",
           "service": {
-            "url": "https://lium.io/api/gamma/service.json",
-            "spender": null
+            "url": "https://lium.io/api/gamma/service.json"
           }
         }
       ],
@@ -1389,9 +1711,987 @@
           "eventIndex": 198,
           "extrinsicIndex": 9,
           "type": "GammaSpent"
+        },
+        {
+          "block": 9571667,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9571690,
+          "eventIndex": 195,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9571696,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9571784,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9571810,
+          "eventIndex": 186,
+          "extrinsicIndex": 7,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9571815,
+          "eventIndex": 201,
+          "extrinsicIndex": 10,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9572027,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572050,
+          "eventIndex": 195,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572056,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572144,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572387,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572410,
+          "eventIndex": 191,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572416,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572504,
+          "eventIndex": 163,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572608,
+          "eventIndex": 163,
+          "extrinsicIndex": 4,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9572628,
+          "eventIndex": 198,
+          "extrinsicIndex": 8,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9572747,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572770,
+          "eventIndex": 189,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572776,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572864,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573107,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573130,
+          "eventIndex": 193,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573136,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573224,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573394,
+          "eventIndex": 206,
+          "extrinsicIndex": 9,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9573407,
+          "eventIndex": 160,
+          "extrinsicIndex": 4,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9573467,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573490,
+          "eventIndex": 193,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573496,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573584,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573827,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573850,
+          "eventIndex": 183,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573856,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573944,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574187,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574210,
+          "eventIndex": 189,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574216,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574304,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574547,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574570,
+          "eventIndex": 190,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574576,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574664,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574907,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574930,
+          "eventIndex": 189,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574936,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575012,
+          "eventIndex": 193,
+          "extrinsicIndex": 9,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9575024,
+          "eventIndex": 158,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575267,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575290,
+          "eventIndex": 191,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575296,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575384,
+          "eventIndex": 153,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575627,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575638,
+          "eventIndex": 245,
+          "extrinsicIndex": 11,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9575641,
+          "eventIndex": 262,
+          "extrinsicIndex": 27,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9575650,
+          "eventIndex": 191,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575656,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575744,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575987,
+          "eventIndex": 151,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576010,
+          "eventIndex": 192,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576016,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576104,
+          "eventIndex": 168,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576347,
+          "eventIndex": 151,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576370,
+          "eventIndex": 188,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576376,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576464,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576707,
+          "eventIndex": 151,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576730,
+          "eventIndex": 186,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576736,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576824,
+          "eventIndex": 153,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577067,
+          "eventIndex": 151,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577090,
+          "eventIndex": 190,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577096,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577184,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577427,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577450,
+          "eventIndex": 189,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577456,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577544,
+          "eventIndex": 153,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577787,
+          "eventIndex": 151,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577810,
+          "eventIndex": 190,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577816,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577904,
+          "eventIndex": 169,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578112,
+          "eventIndex": 171,
+          "extrinsicIndex": 7,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9578113,
+          "eventIndex": 222,
+          "extrinsicIndex": 25,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9578147,
+          "eventIndex": 152,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578170,
+          "eventIndex": 190,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578176,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578264,
+          "eventIndex": 156,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578507,
+          "eventIndex": 152,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578530,
+          "eventIndex": 190,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578536,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578624,
+          "eventIndex": 156,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578867,
+          "eventIndex": 153,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578890,
+          "eventIndex": 195,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578896,
+          "eventIndex": 161,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578984,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579227,
+          "eventIndex": 153,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579250,
+          "eventIndex": 193,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579256,
+          "eventIndex": 161,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579344,
+          "eventIndex": 158,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579587,
+          "eventIndex": 152,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579610,
+          "eventIndex": 192,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579616,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579704,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579947,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579970,
+          "eventIndex": 194,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579976,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580064,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580307,
+          "eventIndex": 151,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580330,
+          "eventIndex": 190,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580424,
+          "eventIndex": 158,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580667,
+          "eventIndex": 151,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580690,
+          "eventIndex": 188,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580696,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580784,
+          "eventIndex": 162,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581027,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581050,
+          "eventIndex": 198,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581056,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581144,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581150,
+          "eventIndex": 253,
+          "extrinsicIndex": 7,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9581154,
+          "eventIndex": 207,
+          "extrinsicIndex": 12,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9581222,
+          "eventIndex": 160,
+          "extrinsicIndex": 4,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9581387,
+          "eventIndex": 149,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581410,
+          "eventIndex": 194,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581416,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581504,
+          "eventIndex": 156,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581562,
+          "eventIndex": 229,
+          "extrinsicIndex": 11,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9581563,
+          "eventIndex": 191,
+          "extrinsicIndex": 17,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9581747,
+          "eventIndex": 151,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581770,
+          "eventIndex": 188,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581776,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581864,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581993,
+          "eventIndex": 204,
+          "extrinsicIndex": 23,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9582013,
+          "eventIndex": 201,
+          "extrinsicIndex": 23,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9582107,
+          "eventIndex": 151,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582130,
+          "eventIndex": 190,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582136,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582143,
+          "eventIndex": 178,
+          "extrinsicIndex": 13,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9582146,
+          "eventIndex": 210,
+          "extrinsicIndex": 11,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9582224,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582467,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582490,
+          "eventIndex": 189,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582496,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582584,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582827,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582850,
+          "eventIndex": 193,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582856,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582944,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583187,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583210,
+          "eventIndex": 185,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583216,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583304,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583547,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583570,
+          "eventIndex": 193,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583576,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583664,
+          "eventIndex": 157,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583841,
+          "eventIndex": 198,
+          "extrinsicIndex": 22,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9583907,
+          "eventIndex": 150,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583930,
+          "eventIndex": 189,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583936,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9584024,
+          "eventIndex": 153,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9584267,
+          "eventIndex": 151,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9584290,
+          "eventIndex": 184,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9584296,
+          "eventIndex": 160,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
         }
       ],
-      "remainingCredits": 5254437941212,
+      "remainingCredits": 10832649806987,
       "pricingSources": [
         "https://lium.io/pricing.json"
       ],
@@ -1412,15 +2712,14 @@
       "NetworkRegisteredAt": 4203869,
       "SubnetOwner": "5H8SFVCxk52ag1YSC5bQw7B84NRNhAtYWAP81jEPfuJ3VL8Q",
       "SubnetGammaPrice": {
-        "bits": 660335476611188450
+        "bits": 623474917570471815
       },
       "SubnetGammaEmission": [],
       "services": [
         {
           "hotkey": "5DXSBCCKH5ENuyHFNaAvtaMfbhEEWpjSJB4rzc4mJfsc1uvJ",
           "service": {
-            "url": "https://engy.ai/services.json",
-            "spender": null
+            "url": "https://engy.ai/services.json"
           }
         }
       ],
@@ -1682,9 +2981,381 @@
           "eventIndex": 154,
           "extrinsicIndex": null,
           "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572568,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9572804,
+          "eventIndex": 184,
+          "extrinsicIndex": 5,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9572810,
+          "eventIndex": 239,
+          "extrinsicIndex": 8,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9572906,
+          "eventIndex": 194,
+          "extrinsicIndex": 10,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9572928,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573288,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9573648,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574008,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574368,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9574728,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575088,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575448,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9575654,
+          "eventIndex": 197,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576374,
+          "eventIndex": 204,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576734,
+          "eventIndex": 200,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576778,
+          "eventIndex": 208,
+          "extrinsicIndex": 10,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576795,
+          "eventIndex": 271,
+          "extrinsicIndex": 9,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576888,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9576945,
+          "eventIndex": 221,
+          "extrinsicIndex": 24,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577094,
+          "eventIndex": 206,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577454,
+          "eventIndex": 199,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577608,
+          "eventIndex": 154,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577814,
+          "eventIndex": 200,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9577968,
+          "eventIndex": 156,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578174,
+          "eventIndex": 202,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578328,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578534,
+          "eventIndex": 206,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578688,
+          "eventIndex": 156,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9578894,
+          "eventIndex": 205,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579048,
+          "eventIndex": 156,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579254,
+          "eventIndex": 201,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579408,
+          "eventIndex": 155,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579614,
+          "eventIndex": 204,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579768,
+          "eventIndex": 158,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9579787,
+          "eventIndex": 159,
+          "extrinsicIndex": 5,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9579974,
+          "eventIndex": 200,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580128,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580334,
+          "eventIndex": 202,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580488,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580694,
+          "eventIndex": 206,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9580772,
+          "eventIndex": 219,
+          "extrinsicIndex": 16,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9580848,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581054,
+          "eventIndex": 200,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581208,
+          "eventIndex": 158,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581414,
+          "eventIndex": 204,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581568,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581774,
+          "eventIndex": 202,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9581866,
+          "eventIndex": 240,
+          "extrinsicIndex": 17,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9581870,
+          "eventIndex": 259,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9581928,
+          "eventIndex": 159,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582134,
+          "eventIndex": 202,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582288,
+          "eventIndex": 158,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582494,
+          "eventIndex": 201,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582648,
+          "eventIndex": 158,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9582854,
+          "eventIndex": 197,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583008,
+          "eventIndex": 158,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583214,
+          "eventIndex": 203,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583574,
+          "eventIndex": 197,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9583669,
+          "eventIndex": 199,
+          "extrinsicIndex": 21,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9583934,
+          "eventIndex": 205,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9584088,
+          "eventIndex": 158,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
+        },
+        {
+          "block": 9584294,
+          "eventIndex": 204,
+          "extrinsicIndex": null,
+          "type": "GammaEmissionMinted"
         }
       ],
-      "remainingCredits": 135416280888,
+      "remainingCredits": 161483715139,
       "pricingSources": [
         "https://api.engy.ai/v1/models"
       ],
@@ -1705,15 +3376,14 @@
       "NetworkRegisteredAt": 8511017,
       "SubnetOwner": "5DCsuLtioCCfgiNQvfe3kiUBDXMs6X4y9PrEiAX7rMZ2e5E3",
       "SubnetGammaPrice": {
-        "bits": 188838119235204014
+        "bits": 178149554447427477
       },
       "SubnetGammaEmission": [],
       "services": [
         {
           "hotkey": "5DsnuvVczKJvrFphbzNnuRhiGhH48co7im1EzzvnWibWBp9S",
           "service": {
-            "url": "https://api.robotensor.ai/services.json",
-            "spender": null
+            "url": "https://api.robotensor.ai/services.json"
           }
         }
       ],
@@ -1774,15 +3444,14 @@
       "NetworkRegisteredAt": 5102795,
       "SubnetOwner": "5DAQpczEK4vzBn1waHkC4BZGqGPZ1dwPxKVsj36JDofHAw3a",
       "SubnetGammaPrice": {
-        "bits": 360904118576532001
+        "bits": 333709029932746546
       },
       "SubnetGammaEmission": [],
       "services": [
         {
           "hotkey": "5G1Qj93Fy22grpiGKq6BEvqqmS2HVRs3jaEdMhq9absQzs6g",
           "service": {
-            "url": "https://api.hippius.com/api/billing/gamma/service.json",
-            "spender": null
+            "url": "https://api.hippius.com/api/billing/gamma/service.json"
           }
         }
       ],
@@ -1828,9 +3497,81 @@
           "eventIndex": 176,
           "extrinsicIndex": 20,
           "type": "GammaSpent"
+        },
+        {
+          "block": 9575457,
+          "eventIndex": 187,
+          "extrinsicIndex": 19,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9575518,
+          "eventIndex": 222,
+          "extrinsicIndex": 10,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9575636,
+          "eventIndex": 177,
+          "extrinsicIndex": 6,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9575670,
+          "eventIndex": 223,
+          "extrinsicIndex": 17,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576783,
+          "eventIndex": 188,
+          "extrinsicIndex": 16,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576814,
+          "eventIndex": 288,
+          "extrinsicIndex": 13,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576845,
+          "eventIndex": 232,
+          "extrinsicIndex": 20,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576884,
+          "eventIndex": 251,
+          "extrinsicIndex": 20,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577377,
+          "eventIndex": 384,
+          "extrinsicIndex": 27,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9581972,
+          "eventIndex": 179,
+          "extrinsicIndex": 9,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9581984,
+          "eventIndex": 182,
+          "extrinsicIndex": 9,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9583635,
+          "eventIndex": 251,
+          "extrinsicIndex": 7,
+          "type": "GammaMinted"
         }
       ],
-      "remainingCredits": 2877927046,
+      "remainingCredits": 13548255356,
       "pricingSources": [
         "https://api.hippius.com/api/billing/gamma/pricing"
       ],
@@ -1851,9 +3592,13 @@
       "NetworkRegisteredAt": 9003844,
       "SubnetOwner": "5CLWmDjLwkDtLQ86y9aiwfzrUCrtnnSWS9oEXianj2jMDCAo",
       "SubnetGammaPrice": {
-        "bits": 50949783966230263
+        "bits": 47480428371163403
       },
       "SubnetGammaEmission": [
+        [
+          28,
+          553402322211286548
+        ],
         [
           53,
           922337203685477580
@@ -1863,8 +3608,7 @@
         {
           "hotkey": "5CqaQ34dznCVTdrpcxoiTKcSTbZ87x3oSjJh5G1rTERmcCWK",
           "service": {
-            "url": "https://api.ormas.ai/services.json",
-            "spender": null
+            "url": "https://api.ormas.ai/services.json"
           }
         }
       ],
@@ -1894,15 +3638,14 @@
       "NetworkRegisteredAt": 7151800,
       "SubnetOwner": "5CG1eFiaZkWTCUEjD23i7Uiu6AjTkLkgkCu3EyXKFFAkkT2T",
       "SubnetGammaPrice": {
-        "bits": 290702099277698178
+        "bits": 266111955438211520
       },
       "SubnetGammaEmission": [],
       "services": [
         {
           "hotkey": "5HTwtytUfeUhK4p8NRCGppjUZrhJ5ckoRHeVWEQafg2N1Zo6",
           "service": {
-            "url": "https://www.openroboto.ai/",
-            "spender": null
+            "url": "https://www.openroboto.ai/"
           }
         }
       ],
@@ -4822,9 +6565,603 @@
           "eventIndex": 182,
           "extrinsicIndex": 18,
           "type": "GammaSpent"
+        },
+        {
+          "block": 9571730,
+          "eventIndex": 268,
+          "extrinsicIndex": 17,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9571800,
+          "eventIndex": 174,
+          "extrinsicIndex": 7,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9571802,
+          "eventIndex": 189,
+          "extrinsicIndex": 7,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9571803,
+          "eventIndex": 241,
+          "extrinsicIndex": 20,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9571808,
+          "eventIndex": 147,
+          "extrinsicIndex": 2,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9572007,
+          "eventIndex": 179,
+          "extrinsicIndex": 7,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9572012,
+          "eventIndex": 186,
+          "extrinsicIndex": 9,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9572022,
+          "eventIndex": 236,
+          "extrinsicIndex": 16,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9572716,
+          "eventIndex": 168,
+          "extrinsicIndex": 5,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9573017,
+          "eventIndex": 229,
+          "extrinsicIndex": 29,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9573137,
+          "eventIndex": 198,
+          "extrinsicIndex": 21,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9573557,
+          "eventIndex": 205,
+          "extrinsicIndex": 22,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9573598,
+          "eventIndex": 158,
+          "extrinsicIndex": 4,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574442,
+          "eventIndex": 172,
+          "extrinsicIndex": 4,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574446,
+          "eventIndex": 147,
+          "extrinsicIndex": 2,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574453,
+          "eventIndex": 200,
+          "extrinsicIndex": 25,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574465,
+          "eventIndex": 211,
+          "extrinsicIndex": 16,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574469,
+          "eventIndex": 238,
+          "extrinsicIndex": 27,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574477,
+          "eventIndex": 233,
+          "extrinsicIndex": 27,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574481,
+          "eventIndex": 210,
+          "extrinsicIndex": 24,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574485,
+          "eventIndex": 172,
+          "extrinsicIndex": 12,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574490,
+          "eventIndex": 180,
+          "extrinsicIndex": 10,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574494,
+          "eventIndex": 159,
+          "extrinsicIndex": 5,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574498,
+          "eventIndex": 163,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574502,
+          "eventIndex": 190,
+          "extrinsicIndex": 9,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574506,
+          "eventIndex": 190,
+          "extrinsicIndex": 13,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574510,
+          "eventIndex": 188,
+          "extrinsicIndex": 9,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574516,
+          "eventIndex": 147,
+          "extrinsicIndex": 2,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574520,
+          "eventIndex": 168,
+          "extrinsicIndex": 6,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574524,
+          "eventIndex": 168,
+          "extrinsicIndex": 8,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574528,
+          "eventIndex": 178,
+          "extrinsicIndex": 9,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574532,
+          "eventIndex": 166,
+          "extrinsicIndex": 8,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574536,
+          "eventIndex": 173,
+          "extrinsicIndex": 7,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574544,
+          "eventIndex": 225,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574548,
+          "eventIndex": 174,
+          "extrinsicIndex": 7,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574553,
+          "eventIndex": 197,
+          "extrinsicIndex": 23,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574591,
+          "eventIndex": 180,
+          "extrinsicIndex": 9,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574601,
+          "eventIndex": 322,
+          "extrinsicIndex": 44,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574605,
+          "eventIndex": 258,
+          "extrinsicIndex": 28,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574610,
+          "eventIndex": 223,
+          "extrinsicIndex": 4,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574614,
+          "eventIndex": 232,
+          "extrinsicIndex": 6,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574619,
+          "eventIndex": 285,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574623,
+          "eventIndex": 274,
+          "extrinsicIndex": 18,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574627,
+          "eventIndex": 287,
+          "extrinsicIndex": 7,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574631,
+          "eventIndex": 276,
+          "extrinsicIndex": 14,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574635,
+          "eventIndex": 278,
+          "extrinsicIndex": 12,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9574644,
+          "eventIndex": 204,
+          "extrinsicIndex": 7,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574766,
+          "eventIndex": 180,
+          "extrinsicIndex": 10,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9574778,
+          "eventIndex": 166,
+          "extrinsicIndex": 4,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576178,
+          "eventIndex": 217,
+          "extrinsicIndex": 13,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576182,
+          "eventIndex": 199,
+          "extrinsicIndex": 15,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576186,
+          "eventIndex": 212,
+          "extrinsicIndex": 12,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576191,
+          "eventIndex": 173,
+          "extrinsicIndex": 5,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576195,
+          "eventIndex": 215,
+          "extrinsicIndex": 15,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576199,
+          "eventIndex": 191,
+          "extrinsicIndex": 13,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576203,
+          "eventIndex": 202,
+          "extrinsicIndex": 20,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576207,
+          "eventIndex": 233,
+          "extrinsicIndex": 22,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576418,
+          "eventIndex": 204,
+          "extrinsicIndex": 11,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576823,
+          "eventIndex": 200,
+          "extrinsicIndex": 14,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576841,
+          "eventIndex": 237,
+          "extrinsicIndex": 28,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577463,
+          "eventIndex": 219,
+          "extrinsicIndex": 21,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577469,
+          "eventIndex": 244,
+          "extrinsicIndex": 25,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577473,
+          "eventIndex": 311,
+          "extrinsicIndex": 32,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577477,
+          "eventIndex": 264,
+          "extrinsicIndex": 32,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577481,
+          "eventIndex": 233,
+          "extrinsicIndex": 29,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577485,
+          "eventIndex": 205,
+          "extrinsicIndex": 20,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577489,
+          "eventIndex": 344,
+          "extrinsicIndex": 48,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577493,
+          "eventIndex": 286,
+          "extrinsicIndex": 38,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577497,
+          "eventIndex": 320,
+          "extrinsicIndex": 39,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577501,
+          "eventIndex": 309,
+          "extrinsicIndex": 34,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577505,
+          "eventIndex": 228,
+          "extrinsicIndex": 22,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577509,
+          "eventIndex": 616,
+          "extrinsicIndex": 113,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577513,
+          "eventIndex": 380,
+          "extrinsicIndex": 44,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577667,
+          "eventIndex": 157,
+          "extrinsicIndex": 3,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577672,
+          "eventIndex": 231,
+          "extrinsicIndex": 23,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577676,
+          "eventIndex": 175,
+          "extrinsicIndex": 9,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577680,
+          "eventIndex": 163,
+          "extrinsicIndex": 5,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577684,
+          "eventIndex": 228,
+          "extrinsicIndex": 12,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577689,
+          "eventIndex": 180,
+          "extrinsicIndex": 18,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577833,
+          "eventIndex": 350,
+          "extrinsicIndex": 24,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577838,
+          "eventIndex": 190,
+          "extrinsicIndex": 8,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577842,
+          "eventIndex": 275,
+          "extrinsicIndex": 17,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577848,
+          "eventIndex": 177,
+          "extrinsicIndex": 2,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577852,
+          "eventIndex": 185,
+          "extrinsicIndex": 9,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577856,
+          "eventIndex": 215,
+          "extrinsicIndex": 13,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577860,
+          "eventIndex": 252,
+          "extrinsicIndex": 20,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577864,
+          "eventIndex": 249,
+          "extrinsicIndex": 14,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577868,
+          "eventIndex": 194,
+          "extrinsicIndex": 13,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577873,
+          "eventIndex": 184,
+          "extrinsicIndex": 18,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577877,
+          "eventIndex": 227,
+          "extrinsicIndex": 28,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577884,
+          "eventIndex": 189,
+          "extrinsicIndex": 4,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577888,
+          "eventIndex": 199,
+          "extrinsicIndex": 10,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577892,
+          "eventIndex": 252,
+          "extrinsicIndex": 20,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577896,
+          "eventIndex": 196,
+          "extrinsicIndex": 10,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577900,
+          "eventIndex": 185,
+          "extrinsicIndex": 9,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9578666,
+          "eventIndex": 159,
+          "extrinsicIndex": 3,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9578671,
+          "eventIndex": 177,
+          "extrinsicIndex": 10,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9578828,
+          "eventIndex": 176,
+          "extrinsicIndex": 6,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9578832,
+          "eventIndex": 193,
+          "extrinsicIndex": 10,
+          "type": "GammaSpent"
         }
       ],
-      "remainingCredits": 157264656450,
+      "remainingCredits": 10773705350571,
       "pricingSources": [],
       "providerCheckedAt": "2026-11-23"
     },
@@ -4843,7 +7180,7 @@
       "NetworkRegisteredAt": 5203057,
       "SubnetOwner": "5GnpQR4Nt3f5AQqBXuhf7GkkaEHhAVQrVk4EsK4daZDmkAQT",
       "SubnetGammaPrice": {
-        "bits": 89812582639343431
+        "bits": 90178576108656844
       },
       "SubnetGammaEmission": [],
       "services": [],
@@ -4886,15 +7223,14 @@
       "NetworkRegisteredAt": 6962737,
       "SubnetOwner": "5CnwnkkCxrrNDuhy8Vvptd6j6ebrv9Z6mrTzD479f7uAiYat",
       "SubnetGammaPrice": {
-        "bits": 75549273089440056
+        "bits": 70767922377172723
       },
       "SubnetGammaEmission": [],
       "services": [
         {
           "hotkey": "5FQsFkui1UvS7S7Sf3JAqN9FPCR7RmufSEZTGuVPPN5EDmsN",
           "service": {
-            "url": "https://cathedral.computer/v1/gamma/services.json",
-            "spender": null
+            "url": "https://cathedral.computer/v1/gamma/services.json"
           }
         }
       ],
@@ -4928,9 +7264,93 @@
           "eventIndex": 241,
           "extrinsicIndex": 9,
           "type": "GammaSpent"
+        },
+        {
+          "block": 9572785,
+          "eventIndex": 173,
+          "extrinsicIndex": 12,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9572787,
+          "eventIndex": 218,
+          "extrinsicIndex": 13,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9573498,
+          "eventIndex": 324,
+          "extrinsicIndex": 16,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9573501,
+          "eventIndex": 232,
+          "extrinsicIndex": 28,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576100,
+          "eventIndex": 244,
+          "extrinsicIndex": 18,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576103,
+          "eventIndex": 228,
+          "extrinsicIndex": 20,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9576313,
+          "eventIndex": 196,
+          "extrinsicIndex": 22,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9576315,
+          "eventIndex": 245,
+          "extrinsicIndex": 20,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577458,
+          "eventIndex": 302,
+          "extrinsicIndex": 13,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577461,
+          "eventIndex": 243,
+          "extrinsicIndex": 27,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9577673,
+          "eventIndex": 234,
+          "extrinsicIndex": 29,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9577676,
+          "eventIndex": 159,
+          "extrinsicIndex": 5,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9581978,
+          "eventIndex": 172,
+          "extrinsicIndex": 6,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9581990,
+          "eventIndex": 169,
+          "extrinsicIndex": 7,
+          "type": "GammaSpent"
         }
       ],
-      "remainingCredits": 0,
+      "remainingCredits": 874820242,
       "pricingSources": [
         "https://api.polaris.computer/v1/gamma/pricing"
       ],
@@ -4951,15 +7371,14 @@
       "NetworkRegisteredAt": 9321589,
       "SubnetOwner": "5HZJ7QuYrNWhbWccjAcVTuTGMGmkcLs5ctWSe8AuYWuPweAN",
       "SubnetGammaPrice": {
-        "bits": 40833679831915343
+        "bits": 29886166639109640
       },
       "SubnetGammaEmission": [],
       "services": [
         {
           "hotkey": "5FCSL8R69CXweUjewpoGUpDnYFcFg3Q1J4tQbNHj23SbLgUc",
           "service": {
-            "url": "https://terza.si",
-            "spender": null
+            "url": "https://terza.si"
           }
         }
       ],
@@ -5014,15 +7433,14 @@
       "NetworkRegisteredAt": 5710859,
       "SubnetOwner": "5FFDV7LGKVsVvyVbzSduzxQDPfBuJYHBM2QJPia5ikDivsXd",
       "SubnetGammaPrice": {
-        "bits": 97271867252124543
+        "bits": 93051211450584167
       },
       "SubnetGammaEmission": [],
       "services": [
         {
           "hotkey": "5G9K4zDrdcAE8F1MaaZNxLGXuhMApR5ENZGTs2wAEhiptHEf",
           "service": {
-            "url": "https://app.everyframe.studio/services.json",
-            "spender": null
+            "url": "https://app.everyframe.studio/services.json"
           }
         }
       ],
@@ -5212,9 +7630,69 @@
           "eventIndex": 331,
           "extrinsicIndex": 18,
           "type": "GammaSpent"
+        },
+        {
+          "block": 9577674,
+          "eventIndex": 185,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9578135,
+          "eventIndex": 157,
+          "extrinsicIndex": 3,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9578166,
+          "eventIndex": 190,
+          "extrinsicIndex": 3,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9578250,
+          "eventIndex": 193,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9578352,
+          "eventIndex": 148,
+          "extrinsicIndex": 2,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9581913,
+          "eventIndex": 213,
+          "extrinsicIndex": 25,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9581916,
+          "eventIndex": 177,
+          "extrinsicIndex": 7,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9582631,
+          "eventIndex": 156,
+          "extrinsicIndex": 3,
+          "type": "GammaMinted"
+        },
+        {
+          "block": 9582634,
+          "eventIndex": 173,
+          "extrinsicIndex": 6,
+          "type": "GammaSpent"
+        },
+        {
+          "block": 9582702,
+          "eventIndex": 148,
+          "extrinsicIndex": 2,
+          "type": "GammaSpent"
         }
       ],
-      "remainingCredits": 68793545821,
+      "remainingCredits": 103856777905,
       "pricingSources": [
         "https://app.everyframe.studio/api/v1/render/models",
         "https://app.everyframe.studio/api/v1/speech/models"
@@ -5224,9 +7702,10 @@
   ],
   "activityCoverage": {
     "fromBlock": 9476686,
-    "toBlock": 9571521,
+    "toBlock": 9584327,
     "note": "Contiguous event scan from the prior daily cutoff, extended to the configuration snapshot. Not lifetime totals. Successful transactions do not establish independent customers or service delivery."
   },
-  "configurationEvidence": "/evidence/gamma-2026-11-23-snapshot.json",
-  "remainingCredits": 7404165905187
+  "configurationEvidence": "/evidence/gamma-2026-11-25-snapshot.json",
+  "remainingCredits": 23751412301434,
+  "balancesEvidence": "/evidence/gamma-2026-11-25-deposits.json"
 }

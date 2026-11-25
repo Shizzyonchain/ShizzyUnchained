@@ -29,7 +29,7 @@ test("emission-funded credits belong to the receiving service subnet",()=>{
 
 test("current Gamma balances reconcile with finalized deposit evidence",()=>{
  const configuration=JSON.parse(readFileSync(new URL('../app/data/gamma.json',import.meta.url)));
- const proof=JSON.parse(readFileSync(new URL('../public/evidence/gamma-2026-11-23-deposits.json',import.meta.url)));
+ const proof=JSON.parse(readFileSync(new URL(`../public${configuration.balancesEvidence}`,import.meta.url)));
  assert.equal(configuration.block,proof.block);
  let total=0;
  for(const subnet of configuration.subnets){
