@@ -867,8 +867,8 @@
       }
     },
     {
-      "headline": "Yuma researches a feedback-based redesign of subnet market emissions",
-      "summary": "Yuma published Alpha Subnet Market Reloaded, or ASMR, on November 24. Researcher Youssef El Moujahid proposes tying pool operations to measured trading flow and liquidity depth. This is research, not an approved or implemented Bittensor upgrade.\n\nThe papers explore releasing TAO and alpha proportionally, retiring protocol-injected alpha and retaining earned alpha in a vault. Returned TAO could remain in its pool, move to other pools or stay in a vault under different modeled policies. The distinction matters: the proposal does not simply burn every holder's earned tokens.\n\nYuma reports that liquidity in ten liquid pools rose 196% while trading fell 61% between June 2025 and September 30, 2026. Its simulations freeze a September 30 network configuration and omit factors including profit-taking, front-running and future parameter changes. Modeled outcomes are not forecasts. Full technical-paper review remains ongoing; the initial report covers the published summary and specified mechanism descriptions.",
+      "headline": "Yuma researches a feedback-based approach to subnet liquidity",
+      "summary": "Yuma published Alpha Subnet Market Reloaded, or ASMR, on November 24. Researcher Youssef El Moujahid proposes tying pool operations to measured trading flow and liquidity depth. This is research, not an approved or implemented Bittensor upgrade. The papers explicitly retain the emission-allocation rule; ASMR changes liquidity management, which can indirectly affect prices and emission shares.\n\nThe papers explore releasing TAO and alpha proportionally, retiring protocol-injected alpha and retaining earned alpha in a vault. Returned TAO could remain in its pool, move to other pools or stay in a vault under different modeled policies. The distinction matters: the proposal does not simply burn every holder's earned tokens.\n\nYuma reports that liquidity in ten liquid pools rose 196% while trading fell 61% between June 2025 and September 30, 2026. Its simulations freeze a September 30 network configuration and omit factors including profit-taking, front-running and future parameter changes. Modeled outcomes are not forecasts. Full technical-paper review remains ongoing; the initial report covers the published summary and specified mechanism descriptions.",
       "rating": 4,
       "ratingReason": "Four stars: original market measurements and a specified alternative emission mechanism have substantial reader consequences beyond a fund opinion. Five is not established by simulations without protocol adoption.",
       "status": "verified",
@@ -904,7 +904,7 @@
     "Runtime 495 expands configurable mechanisms and changes new Gamma deposits",
     "SN44 Score demonstrates yuBot with services from eight Bittensor subnets",
     "SN81 Reliquary publishes a method for distributed model-training corrections",
-    "Yuma researches a feedback-based redesign of subnet market emissions",
+    "Yuma researches a feedback-based approach to subnet liquidity",
     "SN75 Hippius reports faster writes in a defined mounted-bucket test",
     "SN66 Conjectures reports a proof-checked TorchLean optimization result",
     "SN24 ms.computer hosts Gambit, a playable browser chess application"
