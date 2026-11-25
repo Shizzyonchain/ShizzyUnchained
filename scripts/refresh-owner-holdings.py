@@ -55,8 +55,9 @@ def main():
  c=SubstrateInterface(url=os.environ.get('ETAO_RPC_URL','wss://archive.chain.opentensor.ai:443'),ws_options={'timeout':60})
  h=c.get_chain_finalised_head();block=c.get_block_number(h);c.init_runtime(block_hash=h)
  runtime=c.rpc_request('state_getRuntimeVersion',[h])['result']['specVersion']
- # v494 StakeInfo fields and queried runtime methods match reviewed v490 source.
- if runtime not in (484, 490, 494):raise ValueError('Review runtime holdings schema before publishing this version')
+ # v495 stake_info.rs is byte-identical to v494; runtime API wiring and queried
+ # storage schemas are unchanged. Keep rejecting unreviewed future versions.
+ if runtime not in (484, 490, 494, 495):raise ValueError('Review runtime holdings schema before publishing this version')
  timestamp=int(c.query('Timestamp','Now',block_hash=h).value)
  registrations={int(k.value):int(v.value) for k,v in c.query_map('SubtensorModule','NetworkRegisteredAt',block_hash=h)}
  active=sorted(sn for sn in registrations if 1<=sn<=128)
