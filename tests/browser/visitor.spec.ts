@@ -786,12 +786,13 @@ test("Gamma separates service status from activity and simplifies news navigatio
  await expect(nav.getByRole('link')).toHaveCount(6);
  await expect(nav.getByRole('link',{name:'Gamma →',exact:true})).toHaveAttribute('aria-current','page');
  await expect(nav.getByRole('link',{name:/Watchlist|Recovery|Split|Seasonality|Holding/})).toHaveCount(0);
- await expect(page.locator('main article')).toHaveCount(14);
+ const gamma=JSON.parse(readFileSync(new URL('../../app/data/gamma.json',import.meta.url),'utf8'));
+ await expect(page.locator('main article')).toHaveCount(gamma.subnets.length);
  await page.getByRole('searchbox',{name:'Find a subnet'}).fill('engy');
  await expect(page.getByRole('region',{name:'Who accepts Gamma?'}).locator('details')).toHaveCount(1);
  await page.getByRole('searchbox',{name:'Find a subnet'}).fill('');
  await page.getByLabel('Service registered only',{exact:true}).check();
- await expect(page.getByRole('region',{name:'Who accepts Gamma?'}).locator('details')).toHaveCount(12);
+ await expect(page.getByRole('region',{name:'Who accepts Gamma?'}).locator('details')).toHaveCount(gamma.subnets.filter((s: {services: unknown[]})=>s.services.length>0).length);
  await page.getByLabel('Service registered only',{exact:true}).uncheck();
  await page.screenshot({path:`../gamma-redesign-${test.info().project.name}.png`,fullPage:true});
  await expect(page.locator('#sn80')).toContainText('Service registered');
