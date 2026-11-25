@@ -3,7 +3,7 @@
   "date": "2026-11-25",
   "title": "Bittensor Daily News: November 25, 2026",
   "coverageStart": "2026-11-24T15:15:00+00:00",
-  "coverageEnd": "2026-11-25T15:22:09.525267+00:00",
+  "coverageEnd": "2026-11-25T15:55:38.085246+00:00",
   "subnets": [
     {
       "netuid": 1,
@@ -429,7 +429,35 @@
     {
       "netuid": 70,
       "name": "Fugal",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN70 Fugal schedules protocol v5 and a new miner image",
+          "summary": "SN70 Fugal announced a protocol-v5 switch for block 9,585,720 in its official Bittensor Discord channel late on November 24. The team estimated November 25 at 18:51 UTC, or 1:51 PM Eastern. The block is the specified trigger; the clock time is an estimate.\n\nThe team says the update changes router scoring to weigh answer accuracy against model cost, removes challenges and changes how miner rewards are distributed or burned. Those are announced rules, not verified executed burn transactions.\n\nMiners are instructed to use image-v2026.11.24b rather than the earlier image-v2026.11.24. The linked GitHub release provides the new image digest and approved entries for validators. The team expects the first rewarded seat around 21 epochs after the switch. Activation and actual reward outcomes have not been independently verified in this report, and no causal link to the token's price move is established.",
+          "rating": 3,
+          "ratingReason": "Three stars: a scheduled scoring and operator update has concrete consequences for participating miners and validators. Four would overstate the verified scope of this subnet-specific rollout before activation.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1564273282356871348/1575011584529662053",
+              "label": "Fugal owner announcement, November 24"
+            },
+            {
+              "url": "https://github.com/fugal-ai/fugal-subnet/releases/tag/image-v2026.11.24b",
+              "label": "Fugal approved miner image release"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "scheduled-protocol-update",
+            "consequence": "Three stars: a scheduled scoring and operator update has concrete consequences for participating miners and validators. Four would overstate the verified scope of this subnet-specific rollout before activation.",
+            "evidence": "Native owner announcement and linked public release.",
+            "scope": "Announced subnet protocol switch and available operator image.",
+            "uncertainty": "Activation, actual burns and price causation not verified.",
+            "adjacentRatingReason": "Three stars: a scheduled scoring and operator update has concrete consequences for participating miners and validators. Four would overstate the verified scope of this subnet-specific rollout before activation."
+          }
+        }
+      ]
     },
     {
       "netuid": 71,
@@ -907,7 +935,8 @@
     "Yuma researches a feedback-based approach to subnet liquidity",
     "SN75 Hippius reports faster writes in a defined mounted-bucket test",
     "SN66 Conjectures reports a proof-checked TorchLean optimization result",
-    "SN24 ms.computer hosts Gambit, a playable browser chess application"
+    "SN24 ms.computer hosts Gambit, a playable browser chess application",
+    "SN70 Fugal schedules protocol v5 and a new miner image"
   ],
   "publishedAt": "2026-11-25T15:14:47.393455+00:00",
   "summary": "Swarm secures government funding for autonomous ski-resort inspections. OpenRoboto reports a 50,000-hour robotics-data agreement, Score demonstrates yuBot, and runtime 495 reaches Finney. Plus Reliquary and Yuma research, Hippius storage measurements and a dated TorchLean catch-up.",
