@@ -1,0 +1,1806 @@
+{
+  "date": "2026-11-25",
+  "coverageComplete": false,
+  "sourceReview": [],
+  "status": "PREPARED_WITH_GAPS",
+  "preparedAt": "2026-11-25T15:14:47.393455+00:00",
+  "publicationComplete": false,
+  "dailyWorkflowComplete": false,
+  "sourceChecklist": "site-audit-2026-11-25/news-10-to-11-checklist.json",
+  "chainReviews": {
+    "etao": {
+      "status": "BLOCKED",
+      "checkedAt": "2026-11-25T15:14:47.393455+00:00",
+      "evidence": "public/evidence/news-review-2026-11-25.json",
+      "reason": "Full historical etao, burn and lifecycle reconciliation is incomplete; last-good archives retained.",
+      "newsDisposition": "No claim of complete intervening event coverage; retain archives and disclose gap.",
+      "archiveUpdated": false
+    },
+    "burns": {
+      "status": "BLOCKED",
+      "checkedAt": "2026-11-25T15:14:47.393455+00:00",
+      "evidence": "public/evidence/news-review-2026-11-25.json",
+      "reason": "Full historical etao, burn and lifecycle reconciliation is incomplete; last-good archives retained.",
+      "newsDisposition": "No claim of complete intervening event coverage; retain archives and disclose gap.",
+      "archiveUpdated": false
+    }
+  },
+  "ownerHoldings": {
+    "status": "DONE",
+    "block": 9584292,
+    "hash": "0xc498a8f41bb172201ee1e43bd2ef025e0257080eab09b8b9da832755549f3a04",
+    "asOf": "2026-11-25T14:06:12+00:00",
+    "evidence": "public/evidence/owner-holdings-9584292.json"
+  },
+  "gammaReview": {
+    "status": "DONE",
+    "scope": "Current snapshot and retained 1,234 events, including 417 new finalized event matches.",
+    "evidence": "gamma-chain-proof.json",
+    "gap": "Partial November 10 history; no universal paid-delivery verification."
+  },
+  "chartReview": {
+    "status": "PASS",
+    "checkedAt": "2026-11-25T14:26:58.530Z",
+    "baseResults": 384,
+    "gaps": 0,
+    "evidence": "chart-final.json"
+  },
+  "marketReview": {
+    "observedAt": "2026-11-25T14:24:24.127588+00:00",
+    "source": "https://shizzyunchained.com/api/backend/v1/screener",
+    "rows": [
+      {
+        "netuid": 51,
+        "change24hPct": -4.632091304830771,
+        "change7dPct": -1.5446990181820026
+      },
+      {
+        "netuid": 64,
+        "change24hPct": -0.6516461987404193,
+        "change7dPct": -2.7239602266887615
+      },
+      {
+        "netuid": 4,
+        "change24hPct": -4.801606235219164,
+        "change7dPct": -7.744707462427726
+      },
+      {
+        "netuid": 8,
+        "change24hPct": 1.0937364133949137,
+        "change7dPct": 4.109209560111324
+      },
+      {
+        "netuid": 53,
+        "change24hPct": -2.6012501480538814,
+        "change7dPct": -9.005460087371604
+      },
+      {
+        "netuid": 120,
+        "change24hPct": -0.06873191652267134,
+        "change7dPct": -2.4680935133121644
+      },
+      {
+        "netuid": 44,
+        "change24hPct": -1.6884949522559247,
+        "change7dPct": -8.72357197037769
+      },
+      {
+        "netuid": 28,
+        "change24hPct": -3.3946406357996994,
+        "change7dPct": -10.21710058590521
+      },
+      {
+        "netuid": 9,
+        "change24hPct": -1.9410657501463495,
+        "change7dPct": -5.857276913269704
+      },
+      {
+        "netuid": 3,
+        "change24hPct": -0.16607512019160262,
+        "change7dPct": -5.654349598584652
+      },
+      {
+        "netuid": 75,
+        "change24hPct": -4.527485504886011,
+        "change7dPct": -6.649516112433283
+      },
+      {
+        "netuid": 68,
+        "change24hPct": -1.287561132637342,
+        "change7dPct": -5.2910886326973205
+      },
+      {
+        "netuid": 56,
+        "change24hPct": -0.07452905273143764,
+        "change7dPct": -2.157171183721752
+      },
+      {
+        "netuid": 110,
+        "change24hPct": -2.942312005628825,
+        "change7dPct": -25.52540088918647
+      },
+      {
+        "netuid": 24,
+        "change24hPct": 20.03141501695442,
+        "change7dPct": 10.260984807604592
+      },
+      {
+        "netuid": 34,
+        "change24hPct": -0.37894812860404636,
+        "change7dPct": -0.7628056021835362
+      },
+      {
+        "netuid": 95,
+        "change24hPct": -2.431727221971322,
+        "change7dPct": -9.165522286087487
+      },
+      {
+        "netuid": 93,
+        "change24hPct": -2.5837460845980016,
+        "change7dPct": 4.384370151486773
+      },
+      {
+        "netuid": 5,
+        "change24hPct": 0.622937474787756,
+        "change7dPct": 1.3361894212905816
+      },
+      {
+        "netuid": 48,
+        "change24hPct": -0.003278805799313239,
+        "change7dPct": -7.683770629826547
+      },
+      {
+        "netuid": 41,
+        "change24hPct": -4.200740491388634,
+        "change7dPct": 4.794026155756707
+      },
+      {
+        "netuid": 14,
+        "change24hPct": -0.28933287322221596,
+        "change7dPct": -3.3773997204579462
+      },
+      {
+        "netuid": 19,
+        "change24hPct": 0.04005158644333902,
+        "change7dPct": -4.189987752640458
+      },
+      {
+        "netuid": 62,
+        "change24hPct": -0.3533708567925786,
+        "change7dPct": 0.5585674505472448
+      },
+      {
+        "netuid": 107,
+        "change24hPct": -1.862959229263925,
+        "change7dPct": -20.724179442270387
+      },
+      {
+        "netuid": 17,
+        "change24hPct": -0.008447444656489847,
+        "change7dPct": -5.619220059821639
+      },
+      {
+        "netuid": 80,
+        "change24hPct": -5.772599110925108,
+        "change7dPct": -15.165736166376554
+      },
+      {
+        "netuid": 11,
+        "change24hPct": -0.4788073569467809,
+        "change7dPct": -0.5690745879127767
+      },
+      {
+        "netuid": 39,
+        "change24hPct": -1.5006072292299075,
+        "change7dPct": -2.6339169009296133
+      },
+      {
+        "netuid": 1,
+        "change24hPct": 0.24960334884206722,
+        "change7dPct": -0.8965687881979995
+      },
+      {
+        "netuid": 52,
+        "change24hPct": 0.15587683914841102,
+        "change7dPct": -0.08882851135383939
+      },
+      {
+        "netuid": 124,
+        "change24hPct": -0.2515780519938652,
+        "change7dPct": -6.669225935298625
+      },
+      {
+        "netuid": 114,
+        "change24hPct": -2.0469237271232976,
+        "change7dPct": -8.325017155707606
+      },
+      {
+        "netuid": 15,
+        "change24hPct": -1.9034461232249205,
+        "change7dPct": -6.095750334707874
+      },
+      {
+        "netuid": 23,
+        "change24hPct": 2.597854558207751,
+        "change7dPct": -4.876545757530845
+      },
+      {
+        "netuid": 61,
+        "change24hPct": -0.9661224665098922,
+        "change7dPct": -2.315286602025586
+      },
+      {
+        "netuid": 112,
+        "change24hPct": 0.014097004557012507,
+        "change7dPct": -8.49169109849532
+      },
+      {
+        "netuid": 77,
+        "change24hPct": 0.05408572998634176,
+        "change7dPct": -0.6627161173537719
+      },
+      {
+        "netuid": 81,
+        "change24hPct": 0.9912944539124247,
+        "change7dPct": -0.05258372403704024
+      },
+      {
+        "netuid": 83,
+        "change24hPct": -0.30709760925768614,
+        "change7dPct": -3.74605761252872
+      },
+      {
+        "netuid": 25,
+        "change24hPct": 1.557738271661233,
+        "change7dPct": 5.77315936022313
+      },
+      {
+        "netuid": 54,
+        "change24hPct": 1.1985637203098394,
+        "change7dPct": -8.036462587379358
+      },
+      {
+        "netuid": 12,
+        "change24hPct": 0.6932162339995613,
+        "change7dPct": 2.471866600238485
+      },
+      {
+        "netuid": 13,
+        "change24hPct": -0.32886109470621416,
+        "change7dPct": -1.8601055061598353
+      },
+      {
+        "netuid": 43,
+        "change24hPct": 0.06922096766960215,
+        "change7dPct": 1.2850165602188026
+      },
+      {
+        "netuid": 10,
+        "change24hPct": -0.6331096428904815,
+        "change7dPct": -9.266176973034176
+      },
+      {
+        "netuid": 85,
+        "change24hPct": 0.22199494209705253,
+        "change7dPct": -3.257290745487157
+      },
+      {
+        "netuid": 63,
+        "change24hPct": 0.3885256359142014,
+        "change7dPct": -10.065730090267895
+      },
+      {
+        "netuid": 104,
+        "change24hPct": 1.9981989761302659,
+        "change7dPct": 4.681607019283431
+      },
+      {
+        "netuid": 50,
+        "change24hPct": -1.1235427998302665,
+        "change7dPct": -5.209730004792815
+      },
+      {
+        "netuid": 97,
+        "change24hPct": -0.8235644502762316,
+        "change7dPct": -5.922961000139566
+      },
+      {
+        "netuid": 2,
+        "change24hPct": -0.7282850257343007,
+        "change7dPct": -12.007304150092738
+      },
+      {
+        "netuid": 18,
+        "change24hPct": -4.382929865203759,
+        "change7dPct": -7.276595598570501
+      },
+      {
+        "netuid": 21,
+        "change24hPct": 0.8816464045268109,
+        "change7dPct": -17.000133553003085
+      },
+      {
+        "netuid": 30,
+        "change24hPct": -0.5278600040930748,
+        "change7dPct": -0.549259150308779
+      },
+      {
+        "netuid": 74,
+        "change24hPct": 0.34998135434026084,
+        "change7dPct": 0.427058056543614
+      },
+      {
+        "netuid": 90,
+        "change24hPct": 2.2225516156748855,
+        "change7dPct": -16.644618587943913
+      },
+      {
+        "netuid": 65,
+        "change24hPct": 0.47688869848204174,
+        "change7dPct": -1.222446831439168
+      },
+      {
+        "netuid": 111,
+        "change24hPct": -1.4737451058285218,
+        "change7dPct": -2.71702635357716
+      },
+      {
+        "netuid": 117,
+        "change24hPct": -4.374344756628176,
+        "change7dPct": -0.16605804163077453
+      },
+      {
+        "netuid": 32,
+        "change24hPct": -0.40521387065841524,
+        "change7dPct": -0.8776432486234808
+      },
+      {
+        "netuid": 33,
+        "change24hPct": -0.7746234666137459,
+        "change7dPct": -0.7359113461501879
+      },
+      {
+        "netuid": 22,
+        "change24hPct": 0.42897889737824524,
+        "change7dPct": 5.876724860724834
+      },
+      {
+        "netuid": 79,
+        "change24hPct": 0.2574613379348089,
+        "change7dPct": -10.876259653354127
+      },
+      {
+        "netuid": 46,
+        "change24hPct": 1.1798964456149736,
+        "change7dPct": 7.70158377635139
+      },
+      {
+        "netuid": 37,
+        "change24hPct": -0.6720971312351266,
+        "change7dPct": -1.1154277323276836
+      },
+      {
+        "netuid": 60,
+        "change24hPct": -1.496754933992128,
+        "change7dPct": -12.597021851008183
+      },
+      {
+        "netuid": 88,
+        "change24hPct": 0.3477928312573215,
+        "change7dPct": 0.5801322826449143
+      },
+      {
+        "netuid": 89,
+        "change24hPct": -2.205632688965712,
+        "change7dPct": -4.159994552325406
+      },
+      {
+        "netuid": 128,
+        "change24hPct": -0.8000865038449033,
+        "change7dPct": 2.615243591555743
+      },
+      {
+        "netuid": 92,
+        "change24hPct": -5.678499391749386,
+        "change7dPct": -11.493824471096797
+      },
+      {
+        "netuid": 29,
+        "change24hPct": -0.32286924440098996,
+        "change7dPct": -9.942037312132395
+      },
+      {
+        "netuid": 6,
+        "change24hPct": -1.4488563149392486,
+        "change7dPct": -7.020522636575802
+      },
+      {
+        "netuid": 105,
+        "change24hPct": -13.791112387535236,
+        "change7dPct": -20.288805079351384
+      },
+      {
+        "netuid": 71,
+        "change24hPct": -0.4606399434285788,
+        "change7dPct": -18.70752200288146
+      },
+      {
+        "netuid": 42,
+        "change24hPct": -1.6528074290192014,
+        "change7dPct": -5.127973696646166
+      },
+      {
+        "netuid": 49,
+        "change24hPct": 0.31080515881656945,
+        "change7dPct": -5.978624474442628
+      },
+      {
+        "netuid": 121,
+        "change24hPct": -0.17072396930493647,
+        "change7dPct": 1.3292181539620374
+      },
+      {
+        "netuid": 55,
+        "change24hPct": 0.25189782774482955,
+        "change7dPct": -8.249340285105255
+      },
+      {
+        "netuid": 58,
+        "change24hPct": 0.6089006093691787,
+        "change7dPct": -4.99924586805503
+      },
+      {
+        "netuid": 45,
+        "change24hPct": -3.1429203717263414,
+        "change7dPct": -9.511180264418897
+      },
+      {
+        "netuid": 66,
+        "change24hPct": 0.1438370832533012,
+        "change7dPct": -16.53987725546081
+      },
+      {
+        "netuid": 82,
+        "change24hPct": -5.984809285514102,
+        "change7dPct": -24.162300008100548
+      },
+      {
+        "netuid": 20,
+        "change24hPct": -13.447136779327389,
+        "change7dPct": -18.391393195136207
+      },
+      {
+        "netuid": 38,
+        "change24hPct": -0.008323266144758245,
+        "change7dPct": -6.76214126897224
+      },
+      {
+        "netuid": 73,
+        "change24hPct": -14.582825912614727,
+        "change7dPct": -14.507443264537851
+      },
+      {
+        "netuid": 27,
+        "change24hPct": -4.698148440901667,
+        "change7dPct": -18.345633868578044
+      },
+      {
+        "netuid": 101,
+        "change24hPct": -0.36333263067469496,
+        "change7dPct": -2.1669281692258227
+      },
+      {
+        "netuid": 72,
+        "change24hPct": -4.766858247011128,
+        "change7dPct": -22.58584004105175
+      },
+      {
+        "netuid": 106,
+        "change24hPct": -1.490994018607964,
+        "change7dPct": -13.464093902089894
+      },
+      {
+        "netuid": 123,
+        "change24hPct": 1.9525197860928294,
+        "change7dPct": -11.735739867892127
+      },
+      {
+        "netuid": 127,
+        "change24hPct": 0.919605943203678,
+        "change7dPct": -16.02121086553739
+      },
+      {
+        "netuid": 31,
+        "change24hPct": -3.455145749445108,
+        "change7dPct": 22.091953864114608
+      },
+      {
+        "netuid": 69,
+        "change24hPct": -0.31423508237446585,
+        "change7dPct": -5.486330789766378
+      },
+      {
+        "netuid": 94,
+        "change24hPct": -7.2369181133924965,
+        "change7dPct": 21.184812841644035
+      },
+      {
+        "netuid": 125,
+        "change24hPct": -2.2550055878146567,
+        "change7dPct": -10.102716264569066
+      },
+      {
+        "netuid": 118,
+        "change24hPct": -6.584555813498713,
+        "change7dPct": -12.2941914998004
+      },
+      {
+        "netuid": 98,
+        "change24hPct": -11.173152296105247,
+        "change7dPct": -27.38403851921085
+      },
+      {
+        "netuid": 102,
+        "change24hPct": 0.06093297189558438,
+        "change7dPct": -15.357760221007709
+      },
+      {
+        "netuid": 91,
+        "change24hPct": -1.2402696987086193,
+        "change7dPct": 3.4517151326532356
+      },
+      {
+        "netuid": 116,
+        "change24hPct": -10.887034896985803,
+        "change7dPct": -34.13632348656817
+      },
+      {
+        "netuid": 126,
+        "change24hPct": -0.5267697103798423,
+        "change7dPct": -12.050460164530827
+      },
+      {
+        "netuid": 100,
+        "change24hPct": 2.3419098893964856,
+        "change7dPct": -24.663755777197483
+      },
+      {
+        "netuid": 115,
+        "change24hPct": -4.870273037849799,
+        "change7dPct": -14.065061799810373
+      },
+      {
+        "netuid": 119,
+        "change24hPct": -3.209919577720788,
+        "change7dPct": -13.643637888765573
+      },
+      {
+        "netuid": 67,
+        "change24hPct": -0.700720928143957,
+        "change7dPct": -2.8474511013089177
+      },
+      {
+        "netuid": 87,
+        "change24hPct": 0.008067843227137292,
+        "change7dPct": -9.885671635256209
+      },
+      {
+        "netuid": 96,
+        "change24hPct": -0.8509660862932069,
+        "change7dPct": -2.8341654277142565
+      },
+      {
+        "netuid": 122,
+        "change24hPct": -2.7949658848736774,
+        "change7dPct": -2.3317694920271848
+      },
+      {
+        "netuid": 99,
+        "change24hPct": -8.670970620796693,
+        "change7dPct": -35.219010477967494
+      },
+      {
+        "netuid": 36,
+        "change24hPct": -4.308369814065845,
+        "change7dPct": -13.439415670252883
+      },
+      {
+        "netuid": 40,
+        "change24hPct": -1.0734322543729182,
+        "change7dPct": -28.55698389067033
+      },
+      {
+        "netuid": 59,
+        "change24hPct": -4.1704354947068465,
+        "change7dPct": -22.029990168866224
+      },
+      {
+        "netuid": 76,
+        "change24hPct": -1.1400025470631288,
+        "change7dPct": -6.881949650880252
+      },
+      {
+        "netuid": 26,
+        "change24hPct": 15.213963311546381,
+        "change7dPct": -13.420664235851005
+      },
+      {
+        "netuid": 108,
+        "change24hPct": -6.064412837097763,
+        "change7dPct": -24.44329632578467
+      },
+      {
+        "netuid": 35,
+        "change24hPct": -3.5316776264607372,
+        "change7dPct": 19.31325456792124
+      },
+      {
+        "netuid": 47,
+        "change24hPct": -14.87078525721162,
+        "change7dPct": 26.64602617963543
+      },
+      {
+        "netuid": 70,
+        "change24hPct": -13.838199696789514,
+        "change7dPct": -48.6064702083267
+      },
+      {
+        "netuid": 103,
+        "change24hPct": 5.314912684644358,
+        "change7dPct": -60.40121403584864
+      },
+      {
+        "netuid": 113,
+        "change24hPct": 17.35388135151636,
+        "change7dPct": -60.45476191593703
+      },
+      {
+        "netuid": 86,
+        "change24hPct": -1.6233556930556712,
+        "change7dPct": 2.275646259166559
+      },
+      {
+        "netuid": 7,
+        "change24hPct": 0.22765797095634774,
+        "change7dPct": 91.88220273929048
+      },
+      {
+        "netuid": 84,
+        "change24hPct": -9.09558871053273,
+        "change7dPct": 173.59729210692345
+      },
+      {
+        "netuid": 16,
+        "change24hPct": -2.8042612464585406,
+        "change7dPct": -5.125742732728422
+      },
+      {
+        "netuid": 57,
+        "change24hPct": 0.9178049391652978,
+        "change7dPct": 136.44480417819972
+      },
+      {
+        "netuid": 109,
+        "change24hPct": 0.016461476837733767,
+        "change7dPct": 200.9214189581933
+      },
+      {
+        "netuid": 78,
+        "change24hPct": 0.011472169686968974,
+        "change7dPct": 0.16312838839610114
+      }
+    ],
+    "decisions": [
+      {
+        "netuid": 51,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 64,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 4,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 8,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 53,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 120,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 44,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 28,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 9,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 3,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 75,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 68,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 56,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 110,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 24,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 34,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 95,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 93,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 5,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 48,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 41,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 14,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 19,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 62,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 107,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 17,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 80,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 11,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 39,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 1,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 52,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 124,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 114,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 15,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 23,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 61,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 112,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 77,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 81,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 83,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 25,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 54,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 12,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 13,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 43,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 10,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 85,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 63,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 104,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 50,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 97,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 2,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 18,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 21,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 30,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 74,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 90,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 65,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 111,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 117,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 32,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 33,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 22,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 79,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 46,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 37,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 60,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 88,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 89,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 128,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 92,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 29,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 6,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 105,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 71,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 42,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 49,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 121,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 55,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 58,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 45,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 66,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 82,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 20,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 38,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 73,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 27,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 101,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 72,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 106,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 123,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 127,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 31,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 69,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 94,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 125,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 118,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 98,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 102,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 91,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 116,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 126,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 100,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 115,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 119,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 67,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 87,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 96,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 122,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 99,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 36,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 40,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 59,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 76,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 26,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 108,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 35,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 47,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 70,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 103,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 113,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 86,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 7,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 84,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 16,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 57,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 109,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      },
+      {
+        "netuid": 78,
+        "outcome": "excluded",
+        "reason": "Full mandatory price-trigger and causal-source investigation remains unfinished. No causal price claim published; independent stories assessed separately.",
+        "sources": [
+          "https://shizzyunchained.com/api/backend/v1/screener"
+        ]
+      }
+    ]
+  },
+  "editorialReview": {
+    "status": "DONE",
+    "checkedAt": "2026-11-25T15:14:47.393455+00:00",
+    "selectedLead": "SN124 Swarm wins Andorra funding for autonomous ski-resort inspections",
+    "orderedHeadlines": [
+      "SN124 Swarm wins Andorra funding for autonomous ski-resort inspections",
+      "SN80 OpenRoboto reports a 50,000-hour robotics-data agreement",
+      "Runtime 495 expands configurable mechanisms and changes new Gamma deposits",
+      "SN44 Score demonstrates yuBot with services from eight Bittensor subnets",
+      "SN81 Reliquary publishes a method for distributed model-training corrections",
+      "Yuma researches a feedback-based redesign of subnet market emissions",
+      "SN75 Hippius reports faster writes in a defined mounted-bucket test",
+      "SN66 Conjectures reports a proof-checked TorchLean optimization result"
+    ],
+    "rationale": "Government-corroborated funding for a concrete robotics trial leads an attributed commercial data agreement, deployed runtime, assistant launch and substantive research.",
+    "leadAlternatives": [
+      "SN80 OpenRoboto data agreement",
+      "Runtime 495",
+      "SN44 Score yuBot"
+    ],
+    "layoutReview": "Prepublication desktop and phone layout review pending.",
+    "stories": [
+      {
+        "headline": "SN124 Swarm wins Andorra funding for autonomous ski-resort inspections",
+        "classification": "News",
+        "disposition": "selected"
+      },
+      {
+        "headline": "SN80 OpenRoboto reports a 50,000-hour robotics-data agreement",
+        "classification": "News",
+        "disposition": "selected"
+      },
+      {
+        "headline": "Runtime 495 expands configurable mechanisms and changes new Gamma deposits",
+        "classification": "News",
+        "disposition": "selected"
+      },
+      {
+        "headline": "SN44 Score demonstrates yuBot with services from eight Bittensor subnets",
+        "classification": "News",
+        "disposition": "selected"
+      },
+      {
+        "headline": "SN81 Reliquary publishes a method for distributed model-training corrections",
+        "classification": "Research",
+        "disposition": "selected"
+      },
+      {
+        "headline": "Yuma researches a feedback-based redesign of subnet market emissions",
+        "classification": "Research",
+        "disposition": "selected"
+      },
+      {
+        "headline": "SN75 Hippius reports faster writes in a defined mounted-bucket test",
+        "classification": "News",
+        "disposition": "selected"
+      },
+      {
+        "headline": "SN66 Conjectures reports a proof-checked TorchLean optimization result",
+        "classification": "News",
+        "disposition": "selected"
+      }
+    ]
+  },
+  "pendingLeads": [
+    {
+      "topic": "Whole known-source inventory",
+      "disposition": "unverified",
+      "reason": "Continue MISSING and IN_PROGRESS checklist rows; passing content validation does not clear them."
+    },
+    {
+      "topic": "Lium attention lead",
+      "disposition": "unverified",
+      "reason": "Grok attention lead requires dated original confirmation."
+    },
+    {
+      "topic": "SN124 Sentinel and SN26 Pocket",
+      "disposition": "unverified",
+      "reason": "AlphaGap leads require original and current-identity verification."
+    },
+    {
+      "topic": "SN116 Carbon operations",
+      "disposition": "unverified",
+      "reason": "Secondary account requires original team source and careful scope verification; no allegation published."
+    }
+  ]
+}
