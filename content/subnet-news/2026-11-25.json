@@ -3,7 +3,7 @@
   "date": "2026-11-25",
   "title": "Bittensor Daily News: November 25, 2026",
   "coverageStart": "2026-11-24T15:15:00+00:00",
-  "coverageEnd": "2026-11-25T15:14:47.393455+00:00",
+  "coverageEnd": "2026-11-25T15:22:09.525267+00:00",
   "subnets": [
     {
       "netuid": 1,
@@ -123,7 +123,35 @@
     {
       "netuid": 24,
       "name": "ms.computer",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN24 ms.computer hosts Gambit, a playable browser chess application",
+          "summary": "Gambit, a chess application hosted on SN24 ms.computer, was shared in the subnet's Bittensor Discord channel on November 24. Its public site offers play against Stockfish at eight difficulty levels and advertises play with a friend through a link. No account was required for our browser test.\n\nWe opened the application, moved a pawn to e4 and received the computer's c5 reply. The site explains that Stockfish runs on the player's device, so this is evidence of a usable hosted application, not proof that the subnet performs the chess engine's inference.\n\nThe creator's description also covers coaching, hints and a multiplayer relay. We did not test multiplayer reliability or audit the relay's encryption. The bounded test confirms an accessible application and a completed computer response; it does not establish customer numbers or revenue.",
+          "rating": 3,
+          "ratingReason": "Three stars: a working application demonstrates bounded platform use beyond a landing page. Four would overstate a single chess application as a major platform launch or adoption milestone.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://gambit-chess-v5934.ms.computer/",
+              "label": "Gambit public application"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1537107963167383564/1574928939158216927",
+              "label": "SN24 channel announcement, November 24"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "application-demo",
+            "consequence": "Three stars: a working application demonstrates bounded platform use beyond a landing page. Four would overstate a single chess application as a major platform launch or adoption milestone.",
+            "evidence": "Public application and a browser move followed by a computer response; original channel post.",
+            "scope": "Single-player initial move; no account or paid interaction.",
+            "uncertainty": "Multiplayer, encryption, scale and revenue not independently verified.",
+            "adjacentRatingReason": "Three stars: a working application demonstrates bounded platform use beyond a landing page. Four would overstate a single chess application as a major platform launch or adoption milestone."
+          }
+        }
+      ]
     },
     {
       "netuid": 25,
@@ -878,7 +906,8 @@
     "SN81 Reliquary publishes a method for distributed model-training corrections",
     "Yuma researches a feedback-based redesign of subnet market emissions",
     "SN75 Hippius reports faster writes in a defined mounted-bucket test",
-    "SN66 Conjectures reports a proof-checked TorchLean optimization result"
+    "SN66 Conjectures reports a proof-checked TorchLean optimization result",
+    "SN24 ms.computer hosts Gambit, a playable browser chess application"
   ],
   "publishedAt": "2026-11-25T15:14:47.393455+00:00",
   "summary": "Swarm secures government funding for autonomous ski-resort inspections. OpenRoboto reports a 50,000-hour robotics-data agreement, Score demonstrates yuBot, and runtime 495 reaches Finney. Plus Reliquary and Yuma research, Hippius storage measurements and a dated TorchLean catch-up.",
