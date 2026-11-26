@@ -215,7 +215,35 @@
     {
       "netuid": 32,
       "name": "ItsAI",
-      "updates": []
+      "updates": [
+        {
+          "headline": "It's AI plans a second miner competition for text humanisation",
+          "summary": "It's AI announced on November 24 that SN32 will pair its existing AI-detection competition with a second task: rewriting generated text while preserving quality. The stated allocation is 50% of emissions to detection and 50% to the humanisation task. This is a dated catch-up to an announcement missing from the preceding editions.\n\nThe team describes testing rewritten text against commercial detectors, while LLM judges assess quality. Its original post says the new incentive mechanism will reach mainnet this week. The announcement therefore establishes the planned competition and allocation, not independently confirmed activation or executed rewards.\n\nThe update broadens what miners compete to improve. It does not establish that the resulting text is human-authored or that detection systems can reliably settle authorship.",
+          "ratingReason": "Three stars: a substantive but routine competition and scoring update. The routine-competition cap applies; mainnet activation remains unverified.",
+          "sources": [
+            {
+              "url": "https://x.com/ai_detection/status/2125309851836567862",
+              "label": "SN32 original dual-competition announcement, November 24"
+            },
+            {
+              "url": "https://github.com/It-s-AI/llm-detection",
+              "label": "Official SN32 repository"
+            }
+          ],
+          "rating": 3,
+          "status": "verified",
+          "importance": "medium",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "competition-update",
+            "consequence": "Three stars: a substantive but routine competition and scoring update. The routine-competition cap applies; mainnet activation remains unverified.",
+            "evidence": "SN32 original dual-competition announcement, November 24; Official SN32 repository",
+            "scope": "Full original native X posts, including date and draft/planned status.",
+            "uncertainty": "Mainnet activation and actual emission allocation not independently confirmed.",
+            "adjacentRatingReason": "Three stars: a substantive but routine competition and scoring update. The routine-competition cap applies; mainnet activation remains unverified."
+          }
+        }
+      ]
     },
     {
       "netuid": 33,
@@ -666,7 +694,35 @@
     {
       "netuid": 111,
       "name": "Claims",
-      "updates": []
+      "updates": [
+        {
+          "headline": "Claims adds scientific advisors and demonstrates a more detailed evidence schema",
+          "summary": "Claims announced on November 25 that Gideon Nave and Adam Altmejd are joining as independent scientific advisors. The team says they will help it assess the strength of evidence across studies, drawing on their work on whether research findings replicate. This is an advisory appointment, not an institutional endorsement of the subnet.\n\nOn November 26, Claims showed a worked example of its draft schema 1.1. Each quantitative finding carries context about what was measured, the population studied, uncertainty and the sentence, table or figure supporting it. The example distinguishes animal-study evidence from patient evidence instead of presenting a number without its conditions.\n\nFor a subnet building scientific datasets for AI, the change is about preserving evidence context and traceability. The post demonstrates a draft format; it does not establish production-wide deployment, independent validation or clinical usefulness.",
+          "ratingReason": "Three stars: named scientific advisors and a concrete draft-data-format example advance an existing project. Four is not established without a major delivered capability or demonstrated adoption.",
+          "sources": [
+            {
+              "url": "https://x.com/DeSciClaims/status/2125698132466123211",
+              "label": "Claims scientific-advisor announcement, November 25"
+            },
+            {
+              "url": "https://x.com/DeSciClaims/status/2125956501588332918",
+              "label": "Draft schema 1.1 worked example, November 26"
+            }
+          ],
+          "rating": 3,
+          "status": "verified",
+          "importance": "medium",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "product-update",
+            "consequence": "Three stars: named scientific advisors and a concrete draft-data-format example advance an existing project. Four is not established without a major delivered capability or demonstrated adoption.",
+            "evidence": "Claims scientific-advisor announcement, November 25; Draft schema 1.1 worked example, November 26",
+            "scope": "Full original native X posts, including date and draft/planned status.",
+            "uncertainty": "Advisor roles are announced by Claims; draft schema example is not verified production deployment or clinical validation.",
+            "adjacentRatingReason": "Three stars: named scientific advisors and a concrete draft-data-format example advance an existing project. Four is not established without a major delivered capability or demonstrated adoption."
+          }
+        }
+      ]
     },
     {
       "netuid": 112,
@@ -927,14 +983,16 @@
     "Runtime 497 is live; SDK updates protect multisig payloads across upgrades",
     "Taostats Gamma report shows spending concentrated in Lium",
     "SayGM releases v0.6.1 to restore fresh worker deployments",
-    "TPN brings its Gratis local-AI app to Product Hunt"
+    "TPN brings its Gratis local-AI app to Product Hunt",
+    "It's AI plans a second miner competition for text humanisation",
+    "Claims adds scientific advisors and demonstrates a more detailed evidence schema"
   ],
   "summary": "Const takes operational leadership of Synth, EveryFrame demonstrates TAO-funded video, and Microtensor arrives on SN129. Plus Tensorader on SN7, the Revenue Index launch, runtime 497 and a new Gamma activity report.",
   "highlights": [],
   "upcomingUnlocks": [],
   "coverage": {
     "searched": [
-      "Original announcements, official product pages, linked methodology and finalized chain snapshots for the nine selected stories. Bounded AlphaGap, outlet, Grok and official Discord reviews."
+      "Original announcements, official product pages, linked methodology and finalized chain snapshots for the eleven selected stories. Bounded AlphaGap, outlet, Grok and official Discord reviews."
     ],
     "gaps": [
       "Required outlet, account, fund/person, subnet, Discord, market-trigger and media reviews remain unfinished. This initial edition is not exhaustive; verified additions will follow.",
@@ -943,6 +1001,6 @@
     ]
   },
   "publishedAt": "2026-11-26T15:15:01.800584+00:00",
-  "correctedAt": "2026-11-26T15:25:24.434874+00:00",
-  "correctionNote": "Added verified November 25 follow-ups: SayGM worker-deployment fix and the completed Gratis Product Hunt launch."
+  "correctedAt": "2026-11-26T15:35:43.860140+00:00",
+  "correctionNote": "Added verified SayGM and Gratis follow-ups, the planned SN32 dual competition, and Claims advisor and draft-schema updates. Original announcement dates are preserved."
 }
