@@ -55,13 +55,14 @@ def main():
  c=SubstrateInterface(url=os.environ.get('ETAO_RPC_URL','wss://archive.chain.opentensor.ai:443'),ws_options={'timeout':60})
  h=c.get_chain_finalised_head();block=c.get_block_number(h);c.init_runtime(block_hash=h)
  runtime=c.rpc_request('state_getRuntimeVersion',[h])['result']['specVersion']
- # v495 stake_info.rs is byte-identical to v494; runtime API wiring and queried
- # storage schemas are unchanged. Keep rejecting unreviewed future versions.
- if runtime not in (484, 490, 494, 495):raise ValueError('Review runtime holdings schema before publishing this version')
+ # v495..v497 compare: runtime code changes only spec_version; holdings APIs
+ # and storage schemas unchanged. Reject unreviewed future versions.
+ if runtime not in (484, 490, 494, 495, 497):raise ValueError('Review runtime holdings schema before publishing this version')
  timestamp=int(c.query('Timestamp','Now',block_hash=h).value)
  registrations={int(k.value):int(v.value) for k,v in c.query_map('SubtensorModule','NetworkRegisteredAt',block_hash=h)}
- active=sorted(sn for sn in registrations if 1<=sn<=128)
- if len(active)!=128:raise ValueError('Review active roster before publishing incomplete holdings')
+ active=sorted(sn for sn in registrations if sn>0)
+ total=int(c.query('SubtensorModule','TotalNetworks',block_hash=h).value)
+ if not active or len(active)!=total-1:raise ValueError('Review active roster before publishing incomplete holdings')
  keys=[c.create_storage_key('SubtensorModule','SubnetOwner',[sn]) for sn in active]
  values=c.query_multi(keys,block_hash=h)
  if len(values)!=len(keys):raise ValueError('Incomplete owner response')
@@ -80,7 +81,7 @@ def main():
   stake=availability[address].get(sn,{'total':0,'locked':0,'available':0});balance=balance_by_owner[address]
   rows[str(sn)]={'address':address,'registeredAt':registrations[sn],'alphaRaw':str(stake['total']),'lockedAlphaRaw':str(stake['locked']),'unstakableAlphaRaw':str(stake['available']),'freeTaoRaw':str(balance['free']),'frozenTaoRaw':str(balance.get('frozen',0)),'rootTaoRaw':str(availability[address].get(0,{}).get('total',0))}
  emission_evidence=add_owner_emissions(c,h,rows)
- result={'version':1,'block':block,'hash':h,'runtime':runtime,'asOf':datetime.fromtimestamp(timestamp/1000,timezone.utc).isoformat(),'checkedAt':datetime.now(timezone.utc).isoformat(),'source':'Finalized Subtensor StakeInfoRuntimeApi stake availability and System.Account; one block for every wallet','subnets':rows}
+ result={'version':1,'block':block,'hash':h,'runtime':runtime,'activeNetuids':active,'asOf':datetime.fromtimestamp(timestamp/1000,timezone.utc).isoformat(),'checkedAt':datetime.now(timezone.utc).isoformat(),'source':'Finalized Subtensor StakeInfoRuntimeApi stake availability and System.Account; one block for every wallet','subnets':rows}
  target=Path(args.output)
  if target.exists() and json.loads(target.read_text(encoding='utf-8'))['block']>block:raise ValueError('Refusing to regress owner holdings')
  proof=Path(f'public/evidence/owner-holdings-{block}.json');proof.parent.mkdir(parents=True,exist_ok=True)

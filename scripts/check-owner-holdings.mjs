@@ -13,8 +13,9 @@ if(latest&&day<latest){
  await readFile(audit.ownerHoldings.evidence,'utf8');
  console.warn(`Owner holdings refresh BLOCKED; preserving verified ${day} snapshot with public disclosure.`);
 }
-if(Object.keys(data.subnets).length!==128)throw new Error('Incomplete owner holdings roster');
-for(let sn=1;sn<=128;sn++){
+const active=data.activeNetuids??Array.from({length:128},(_,i)=>i+1);
+if(!active.length||new Set(active).size!==active.length||active.some(sn=>!Number.isInteger(sn)||sn<1)||Object.keys(data.subnets).length!==active.length)throw new Error('Incomplete owner holdings roster');
+for(const sn of active){
  const row=data.subnets[String(sn)];
  if(!row||!holdingForOwner(data,sn,row.address)||BigInt(row.lockedAlphaRaw)>BigInt(row.alphaRaw)||BigInt(row.unstakableAlphaRaw)>BigInt(row.alphaRaw))throw new Error(`Invalid owner holdings for SN${sn}`);
 }
@@ -27,6 +28,6 @@ if (proof.ownerEmissionRates) {
   const daily=BigInt(rate.alphaOutEmissionRaw)*weights[2]/max*7200n;
   if(row.ownerEmissionPerDayRaw!==String(daily)||row.ownerWeightRaw!==String(weights[2])||row.alphaOutEmissionRaw!==rate.alphaOutEmissionRaw)throw new Error(`Owner/day does not match finalized evidence for SN${sn}`);
  }
- if(Object.keys(proof.ownerEmissionRates).length!==128)throw new Error('Incomplete owner emission roster');
+ if(Object.keys(proof.ownerEmissionRates).length!==active.length)throw new Error('Incomplete owner emission roster');
 }
-console.log(`Validated 128 owner holdings at finalized block ${data.block}; ${day} Eastern.`);
+console.log(`Validated ${active.length} owner holdings at finalized block ${data.block}; ${day} Eastern.`);

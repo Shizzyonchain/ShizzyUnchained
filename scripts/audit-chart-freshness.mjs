@@ -13,6 +13,7 @@ const rates={};for(const interval of ['10m','1h','1d']) rates[interval]=(await g
 const result={checkedAt:new Date(now).toISOString(),base,quote,rows:[],gaps:[]};
 const selected=process.env.CHART_AUDIT_SUBNETS?.split(',').map(Number);
 const tasks=rows.filter(r=>r.netuid>0&&(!selected||selected.includes(r.netuid))).flatMap(row=>['10m','1h','1d'].map(interval=>({row,interval})));
+const totalTasks=tasks.length;
 async function worker(){while(tasks.length){const {row,interval}=tasks.shift();try{
  let original,providerError;try{original=await get(`/api/subnet-chart?netuid=${row.netuid}&interval=${interval}`);}catch(e){providerError=String(e);original=await nodeRecent(row.netuid,interval);}
  const step=({ '10m':600000,'1h':3600000,'1d':86400000 })[interval];
@@ -40,7 +41,7 @@ async function worker(){while(tasks.length){const {row,interval}=tasks.shift();t
  result.rows.push(item);if(!ok)result.gaps.push(item);
  }catch(e){const item={netuid:row.netuid,interval,status:'ERROR',error:String(e)};result.rows.push(item);result.gaps.push(item);}
  await writeFile(out,JSON.stringify(result,null,2));
- if(result.rows.length%32===0)console.log(`${result.rows.length}/384 checked; ${result.gaps.length} gaps`);
+ if(result.rows.length%32===0)console.log(`${result.rows.length}/${totalTasks} checked; ${result.gaps.length} gaps`);
  await new Promise(r=>setTimeout(r,700));}}
 await Promise.all([worker(),worker()]);
 await writeFile(out,JSON.stringify(result,null,2));console.log(JSON.stringify({checked:result.rows.length,gaps:result.gaps.length,output:out}));

@@ -19,7 +19,7 @@ async function loadUncached(request: NextRequest) {
   const beforeParam = request.nextUrl.searchParams.get("before");
   const before = beforeParam === null ? null : Number(beforeParam);
   if (before !== null && (!Number.isSafeInteger(before) || before < 1609459200 || before > Date.now() / 1000 + 86400)) return NextResponse.json({ error: "Invalid history cursor" }, { status: 400 });
-  if (!/^\d{1,3}$/.test(subnet) || !Number.isInteger(netuid) || netuid < 1 || netuid > 128 || !config) return NextResponse.json({ error: "Unsupported chart query" }, { status: 400 });
+  if (!/^\d{1,5}$/.test(subnet) || !Number.isInteger(netuid) || netuid < 1 || netuid > 65535 || !config) return NextResponse.json({ error: "Unsupported chart query" }, { status: 400 });
   const key = process.env.TAOSTATS_API_KEY;
   if (!key) return NextResponse.json({ error: "Chart provider unavailable" }, { status: 503 });
   try {
@@ -50,7 +50,7 @@ export async function GET(request: NextRequest) {
   const interval = request.nextUrl.searchParams.get("interval") || "1h";
   const before = request.nextUrl.searchParams.get("before");
   const subnet = request.nextUrl.searchParams.get("netuid") || "";
-  if (!/^\d{1,3}$/.test(subnet) || Number(subnet) < 1 || Number(subnet) > 128 || !intervals[interval]) return loadUncached(request);
+  if (!/^\d{1,5}$/.test(subnet) || Number(subnet) < 1 || Number(subnet) > 65535 || !intervals[interval]) return loadUncached(request);
   if (before !== null && (!Number.isSafeInteger(Number(before)) || Number(before) < 1609459200 || Number(before) > Date.now() / 1000 + 86400)) return loadUncached(request);
   return chartResponse(`subnet:${Number(subnet)}:${interval}:${before === null ? "latest" : Number(before)}`, () => loadUncached(request), before === null);
 }

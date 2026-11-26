@@ -26,3 +26,11 @@ test("new registrations retain their own price history but cannot inherit old oc
  assert.equal(row.change_24h,457);
  assert.equal(registrationHistory({...row,netuid:51},registry).change_24h,457);
 });
+
+test('SN129 excludes its partial first daily candle and retains post-registration hourly bars',()=>{
+ const registry=JSON.parse(readFileSync(new URL('../app/data/market-registrations.json',import.meta.url)));
+ const daily=[{time:'2026-11-25T19:00:00-05:00'},{time:'2026-11-27T00:00:00Z'}];
+ assert.deepEqual(registrationCandles(daily,129,registry),[daily[1]]);
+ const hourly=[{time:'2026-11-26T03:00:00Z'},{time:'2026-11-26T04:00:00Z'}];
+ assert.deepEqual(registrationCandles(hourly,129,registry),[hourly[1]]);
+});
