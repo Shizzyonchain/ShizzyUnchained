@@ -25,6 +25,6 @@ export function marketSnapshotHealth(rows: { netuid: number; time?: string | nul
   const alpha = rows.filter(row => row.netuid > 0);
   const stale = alpha.filter(row => !snapshotIsFresh(Date.parse(row.time || ""), now)).length;
   const unique = new Set(alpha.map(row => row.netuid));
-  const complete = alpha.length === 128 && unique.size === 128 && alpha.every(row => Number.isInteger(row.netuid) && row.netuid <= 128);
+  const complete = alpha.length >= 128 && unique.size === alpha.length && alpha.every(row => Number.isInteger(row.netuid) && row.netuid <= alpha.length);
   return { fresh: complete && stale === 0, stale, complete, count: alpha.length };
 }

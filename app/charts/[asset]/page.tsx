@@ -10,7 +10,7 @@ export const revalidate = 15;
 
 function chartAsset(asset: string): number | "tao" {
   if (asset === "tao") return "tao";
-  if (!/^[1-9]\d{0,2}$/.test(asset) || Number(asset) > 128) notFound();
+  if (!/^[1-9]\d{0,4}$/.test(asset) || Number(asset) > 65535) notFound();
   return Number(asset);
 }
 

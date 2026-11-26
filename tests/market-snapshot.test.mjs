@@ -32,3 +32,11 @@ test('live means complete current rows, not merely one new timestamp',()=>{
  rows[0].time=new Date(now+86400000).toISOString();assert.equal(marketSnapshotHealth(rows,now).fresh,false);assert.equal(snapshotIsFresh(now+86400000,now),false);
  rows[0]={...rows[1]};assert.equal(marketSnapshotHealth(rows,now).complete,false);
 });
+
+test('expanded roster stays fresh while holes and duplicate subnet slots fail',()=>{
+ const now=Date.parse('2026-11-26T14:00:00Z');
+ const rows=Array.from({length:129},(_,i)=>({netuid:i+1,time:new Date(now).toISOString()}));
+ assert.equal(marketSnapshotHealth(rows,now).fresh,true);
+ assert.equal(marketSnapshotHealth(rows.filter(row=>row.netuid!==70),now).complete,false);
+ assert.equal(marketSnapshotHealth([...rows.slice(0,-1),rows[0]],now).complete,false);
+});
