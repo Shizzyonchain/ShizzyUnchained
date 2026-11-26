@@ -171,7 +171,31 @@
     {
       "netuid": 28,
       "name": "SayGM",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SayGM releases v0.6.1 to restore fresh worker deployments",
+          "summary": "SayGM released gmcli v0.6.1 on November 25 after new worker deployments failed compose-hash verification. The maintainer confirmed that Phala Cloud had begun adding a default port policy, making fresh deployments differ from the previously approved image configuration. Already-running workers were unaffected.\n\nThe fix includes the expected policy and new approved image versions on mainnet and testnet. The maintainer reports completing a fresh testnet deployment, matching the hashes and serving requests through the gateway. That is a team-verified recovery, not a deployment independently reproduced for this report.\n\nThis dated catch-up replaces the unresolved v0.6.0 deployment lead with the released fix. It is an operational compatibility repair, not a new service launch.",
+          "rating": 3,
+          "ratingReason": "Three stars: a released compatibility fix restores new worker onboarding. Four would overstate maintenance as a major product launch.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://github.com/taostat/gm-miner/issues/423",
+              "label": "Maintainer diagnosis and v0.6.1 release confirmation, November 25"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operational-update",
+            "consequence": "Three stars: a released compatibility fix restores new worker onboarding. Four would overstate maintenance as a major product launch.",
+            "evidence": "Maintainer diagnosis and v0.6.1 release confirmation, November 25",
+            "scope": "Dated original team announcement and linked primary documentation.",
+            "uncertainty": "Fresh testnet success is attributed to the maintainer; no independent deployment was performed.",
+            "adjacentRatingReason": "Three stars: a released compatibility fix restores new worker onboarding. Four would overstate maintenance as a major product launch."
+          }
+        }
+      ]
     },
     {
       "netuid": 29,
@@ -380,7 +404,39 @@
     {
       "netuid": 65,
       "name": "True Performance Network",
-      "updates": []
+      "updates": [
+        {
+          "headline": "TPN brings its Gratis local-AI app to Product Hunt",
+          "summary": "True Performance Network confirmed on November 25 that Gratis was live on Product Hunt, following the launch plan covered in our November 24 edition. The team invited users to test the app and provide feedback. This is the completed distribution milestone, rather than another announcement of the upcoming listing.\n\nGratis is presented as a way to run open-source AI models on a user's own device. Its website describes local processing and offline use after initial setup, with model recommendations based on the device. Those are the product's stated capabilities; the app was not installed or benchmarked for this report.\n\nThe listing gives SN65's product another route to users. It does not establish new revenue, verified adoption growth or an improvement in model performance.",
+          "rating": 3,
+          "ratingReason": "Three stars: a completed public distribution milestone follows the previously announced plan. Four is not established by a listing without new demonstrated capability or adoption.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/TPN_Labs/status/2125502236931272742",
+              "label": "TPN confirms Product Hunt launch, November 25"
+            },
+            {
+              "url": "https://x.com/Gratis_AI/status/2125501839185768669",
+              "label": "Gratis original Product Hunt announcement"
+            },
+            {
+              "url": "https://gratis-ai.com/",
+              "label": "Gratis official product description"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operational-update",
+            "consequence": "Three stars: a completed public distribution milestone follows the previously announced plan. Four is not established by a listing without new demonstrated capability or adoption.",
+            "evidence": "TPN confirms Product Hunt launch, November 25; Gratis original Product Hunt announcement; Gratis official product description",
+            "scope": "Dated original team announcement and linked primary documentation.",
+            "uncertainty": "Local processing and offline operation are product claims, not independently tested performance.",
+            "adjacentRatingReason": "Three stars: a completed public distribution milestone follows the previously announced plan. Four is not established by a listing without new demonstrated capability or adoption."
+          }
+        }
+      ]
     },
     {
       "netuid": 66,
@@ -869,14 +925,16 @@
     "SN7 changes its registered identity from Algo to Tensorader",
     "SubConnect launches a transaction-linked Bittensor Revenue Index",
     "Runtime 497 is live; SDK updates protect multisig payloads across upgrades",
-    "Taostats Gamma report shows spending concentrated in Lium"
+    "Taostats Gamma report shows spending concentrated in Lium",
+    "SayGM releases v0.6.1 to restore fresh worker deployments",
+    "TPN brings its Gratis local-AI app to Product Hunt"
   ],
   "summary": "Const takes operational leadership of Synth, EveryFrame demonstrates TAO-funded video, and Microtensor arrives on SN129. Plus Tensorader on SN7, the Revenue Index launch, runtime 497 and a new Gamma activity report.",
   "highlights": [],
   "upcomingUnlocks": [],
   "coverage": {
     "searched": [
-      "Original announcements, official product pages, linked methodology and finalized chain snapshots for the seven selected stories. Bounded AlphaGap, outlet, Grok and official Discord reviews."
+      "Original announcements, official product pages, linked methodology and finalized chain snapshots for the nine selected stories. Bounded AlphaGap, outlet, Grok and official Discord reviews."
     ],
     "gaps": [
       "Required outlet, account, fund/person, subnet, Discord, market-trigger and media reviews remain unfinished. This initial edition is not exhaustive; verified additions will follow.",
@@ -884,5 +942,7 @@
       "Current Gamma evidence was checked during the site audit, but the complete new daily Gamma event scan remains unfinished. Partial November 10 history is explicitly retained."
     ]
   },
-  "publishedAt": "2026-11-26T15:15:01.800584+00:00"
+  "publishedAt": "2026-11-26T15:15:01.800584+00:00",
+  "correctedAt": "2026-11-26T15:25:24.434874+00:00",
+  "correctionNote": "Added verified November 25 follow-ups: SayGM worker-deployment fix and the completed Gratis Product Hunt launch."
 }

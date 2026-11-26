@@ -1,10 +1,10 @@
 {
   "date": "2026-11-26",
   "coverageComplete": false,
-  "status": "PREPARED_WITH_GAPS",
+  "status": "PUBLISHED_WITH_DISCLOSED_GAPS",
   "sourceLedger": "../early-news-prep.json",
   "preparedAt": "2026-11-26T15:15:01.800584+00:00",
-  "publicationComplete": false,
+  "publicationComplete": true,
   "dailyWorkflowComplete": false,
   "sourceChecklist": "site-audit-2026-11-26/news-10-to-11-checklist.json",
   "chainReviews": {
@@ -5308,5 +5308,27 @@
       "USD10m/1h/24h conversion and trigger reconciliation incomplete.",
       "Per-trigger full Discord and official-source investigation incomplete."
     ]
-  }
+  },
+  "updatedAt": "2026-11-26T15:25:24.434874+00:00",
+  "publication": {
+    "reportUrl": "https://shizzyunchained.com/subnet-news/2026-11-26",
+    "xUrl": "https://x.com/ShizzyUnchained/status/2125973738063528262",
+    "verifiedAt": "2026-11-26T15:23:42.620Z"
+  },
+  "postPublicationAdditions": [
+    {
+      "netuid": 28,
+      "headline": "SayGM releases v0.6.1 to restore fresh worker deployments",
+      "checkedAt": "2026-11-26T15:25:24.434874+00:00",
+      "eventDate": "2026-11-25",
+      "disposition": "added"
+    },
+    {
+      "netuid": 65,
+      "headline": "TPN brings its Gratis local-AI app to Product Hunt",
+      "checkedAt": "2026-11-26T15:25:24.434874+00:00",
+      "eventDate": "2026-11-25",
+      "disposition": "added"
+    }
+  ]
 }
