@@ -3,7 +3,7 @@
   "date": "2026-11-27",
   "title": "Bittensor Daily News: November 27, 2026",
   "coverageStart": "2026-11-26T15:15:01.800584+00:00",
-  "coverageEnd": "2026-11-27T15:14:15.008348+00:00",
+  "coverageEnd": "2026-11-27T15:23:51.273630+00:00",
   "subnets": [
     {
       "netuid": 1,
@@ -272,7 +272,35 @@
     {
       "netuid": 49,
       "name": "Nepher Robotics",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN49 Nepher names tabletop winners and announces a parts-sorting contest",
+          "summary": "Nepher’s operator announced approved Phase 2 tabletop challenge winners on November 27: Jonathan Hou scored 0.8273, HugoR1989 0.8204 and Jason Zhu 0.7438. The team reported 20 agents from 15 participants and a 70/20/10 reward split, with rankings based on a private evaluation separate from the public board. A separate November 26 announcement sets out Phase 1 of a parts-sorting challenge: a Franka arm with a Robotiq gripper must sort industrial parts into instructed tray cells across 16 fixed simulation tasks. Submissions are scheduled to open December 5 at 12:28 UTC, with evaluation December 6–7. These are operator-reported competition results and simulation tasks, not proof of customer deployment or verified reward payment.",
+          "rating": 3,
+          "ratingReason": "Three stars: concrete results and a new participation window, capped as competition coverage.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1434923225229295697/1575784670514253975",
+              "label": "Nepher operator announces approved winners, November 27"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1434923225229295697/1575485087288393869",
+              "label": "Parts-sorting contest and UTC schedule, November 26"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "routine-competition",
+            "consequence": "Three stars: concrete results and a new participation window, capped as competition coverage.",
+            "evidence": "Original announcement and operator replies in the official Bittensor subnet channel, inspected in Discord desktop.",
+            "scope": "SN49 participants",
+            "uncertainty": "Reward distribution and real-world deployment are not independently verified.",
+            "adjacentRatingReason": "Three stars: concrete results and a new participation window, capped as competition coverage."
+          }
+        }
+      ]
     },
     {
       "netuid": 50,
@@ -330,7 +358,35 @@
     {
       "netuid": 55,
       "name": "NIOME",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN55 NIOME outlines a rare-disease variant-calling challenge",
+          "summary": "NIOME outlined a new challenge on November 26 aimed at identifying disease-causing genetic variants and their correct genotypes. Participants would train weights for a fixed DeepVariant architecture, while NIOME handles inference and evaluation. The proposed scoring counts a patient as solved only when all causal variants are identified, includes negative cases to penalize over-calling, and keeps genome-wide accuracy as a guardrail. Each round is intended to use fresh private evaluation data. The initial focus is inherited anaemias. The team’s announcement says launch details are still to come: this is a planned competition, not a clinically validated diagnostic service or a claim of patient outcomes.",
+          "rating": 3,
+          "ratingReason": "Three stars: meaningful competition design and participant requirements, subject to the competition ceiling.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1465796313877577903/1575558853842567179",
+              "label": "NIOME challenge outline, November 26"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1465796313877577903/1575558872394113025",
+              "label": "Initial focus and launch-details qualification"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "routine-competition",
+            "consequence": "Three stars: meaningful competition design and participant requirements, subject to the competition ceiling.",
+            "evidence": "Original announcement and operator replies in the official Bittensor subnet channel, inspected in Discord desktop.",
+            "scope": "SN55 participants",
+            "uncertainty": "Competition launch timing and clinical validation are not established.",
+            "adjacentRatingReason": "Three stars: meaningful competition design and participant requirements, subject to the competition ceiling."
+          }
+        }
+      ]
     },
     {
       "netuid": 56,
@@ -732,7 +788,35 @@
     {
       "netuid": 121,
       "name": "sundae_bar",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN121 SundaeBar plans archive-node fix for rejected payment credits",
+          "summary": "SundaeBar’s operator acknowledged on November 27 that some credit-funded submissions failed payment verification because the validator tried to reread an original payment block whose state the public node had already discarded. The operator says a fix has been built to fall back to an archive node, but deployment is scheduled after SBC40 closes at 17:00 UTC, noon Eastern, rather than during the active challenge. In the reviewed cases, credits were restored with 14-day validity for use in SBC41; the operator said those submissions would not be requeued before the current close. A separate similarity check remains in place. The fix is announced and pending deployment, not a confirmed restoration of every affected submission.",
+          "rating": 3,
+          "ratingReason": "Three stars: a verified operator acknowledgement and remedy materially affect miner access to evaluation; broader systemic consequences are not established.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://discord.com/channels/799672011265015819/1382818027241738352/1575892381935599619",
+              "label": "SundaeBar owner describes archive fallback and schedule"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1382818027241738352/1575892749779996774",
+              "label": "Operator confirms credit handling and SBC41 plan"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "operational-remediation",
+            "consequence": "Three stars: a verified operator acknowledgement and remedy materially affect miner access to evaluation; broader systemic consequences are not established.",
+            "evidence": "Original announcement and operator replies in the official Bittensor subnet channel, inspected in Discord desktop.",
+            "scope": "SN121 participants",
+            "uncertainty": "Fix deployment and all affected credits have not been independently verified.",
+            "adjacentRatingReason": "Three stars: a verified operator acknowledgement and remedy materially affect miner access to evaluation; broader systemic consequences are not established."
+          }
+        }
+      ]
     },
     {
       "netuid": 122,
@@ -882,6 +966,9 @@
     "SN124 Swarm sets a 200-second search-and-rescue task for TestField v2",
     "Subtensor merges a fix for weight commitments during hotkey swaps",
     "SN120 Affine merges a six-benchmark math dashboard specification",
+    "SN55 NIOME outlines a rare-disease variant-calling challenge",
+    "SN49 Nepher names tabletop winners and announces a parts-sorting contest",
+    "SN121 SundaeBar plans archive-node fix for rejected payment credits",
     "SN71 Leadpoet merges an export catch-up fix",
     "xTAO reports validator compatibility updates; API product remains in development"
   ],
@@ -892,7 +979,8 @@
     "searched": [
       "TAOApp original shutdown notice and announcement; Numinous changelog; REAX official board; Swarm original announcement; Subtensor, Affine and Leadpoet pull requests; xTAO issuer release.",
       "Prior seven editions checked for duplicated developments; older additions explicitly dated as catch-ups.",
-      "SN50 official Discord operator posts from November 27, 09:07 to 10:05 Eastern; launch figures and a subsequent scoring-bug acknowledgement reviewed. Earlier backlog and other channels remain incomplete."
+      "SN50 official Discord operator posts from November 27, 09:07 to 10:05 Eastern; launch figures and a subsequent scoring-bug acknowledgement reviewed. Earlier backlog and other channels remain incomplete.",
+      "Additional original Discord checks: SN55 challenge outline, SN49 competition results and upcoming contest, SN121 payment-credit remedy. Exact reviewed intervals and remaining gaps retained in the audit."
     ],
     "gaps": [
       "Source coverage remains incomplete: AlphaGap feed cards, full required X timelines, funds and people, Grok queries and the full subnet-source inventory have not all been reviewed.",

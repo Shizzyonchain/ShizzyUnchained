@@ -119,6 +119,48 @@
         }
       ],
       "status": "VERIFIED_OPERATOR_STATEMENT_WITH_LIMITS"
+    },
+    {
+      "headline": "SN55 NIOME outlines a rare-disease variant-calling challenge",
+      "source": [
+        {
+          "url": "https://discord.com/channels/799672011265015819/1465796313877577903/1575558853842567179",
+          "label": "NIOME challenge outline, November 26"
+        },
+        {
+          "url": "https://discord.com/channels/799672011265015819/1465796313877577903/1575558872394113025",
+          "label": "Initial focus and launch-details qualification"
+        }
+      ],
+      "status": "VERIFIED_ATTRIBUTED_ANNOUNCEMENT"
+    },
+    {
+      "headline": "SN49 Nepher names tabletop winners and announces a parts-sorting contest",
+      "source": [
+        {
+          "url": "https://discord.com/channels/799672011265015819/1434923225229295697/1575784670514253975",
+          "label": "Nepher operator announces approved winners, November 27"
+        },
+        {
+          "url": "https://discord.com/channels/799672011265015819/1434923225229295697/1575485087288393869",
+          "label": "Parts-sorting contest and UTC schedule, November 26"
+        }
+      ],
+      "status": "VERIFIED_ATTRIBUTED_ANNOUNCEMENT"
+    },
+    {
+      "headline": "SN121 SundaeBar plans archive-node fix for rejected payment credits",
+      "source": [
+        {
+          "url": "https://discord.com/channels/799672011265015819/1382818027241738352/1575892381935599619",
+          "label": "SundaeBar owner describes archive fallback and schedule"
+        },
+        {
+          "url": "https://discord.com/channels/799672011265015819/1382818027241738352/1575892749779996774",
+          "label": "Operator confirms credit handling and SBC41 plan"
+        }
+      ],
+      "status": "VERIFIED_ATTRIBUTED_ANNOUNCEMENT"
     }
   ],
   "dailyWorkflowComplete": false,
@@ -836,21 +878,6 @@
   },
   "pendingLeads": [
     {
-      "topic": "SN55 NIOME challenge: original terms pending.",
-      "status": "unverified",
-      "disposition": "Continue original-source verification"
-    },
-    {
-      "topic": "SN49 Nepher sorting task: original announcement pending.",
-      "status": "unverified",
-      "disposition": "Continue original-source verification"
-    },
-    {
-      "topic": "SN121 Sundaebar fee/refund changes: original terms pending.",
-      "status": "unverified",
-      "disposition": "Continue original-source verification"
-    },
-    {
       "topic": "SN116 Carbon retirement: original announcement pending.",
       "status": "unverified",
       "disposition": "Continue original-source verification"
@@ -864,6 +891,11 @@
       "topic": "SN50 scoring fix: deployment and recomputation confirmation pending.",
       "status": "unverified",
       "disposition": "Continue original-source verification"
+    },
+    {
+      "topic": "SundaeBar archive-node fallback deployment after 17:00 UTC and separate fee-change lead",
+      "status": "unverified",
+      "disposition": "Follow up on actual deployment and original fee announcement."
     }
   ],
   "discordReview": [
@@ -881,6 +913,51 @@
       "gaps": [
         "Earlier message backlog not reviewed",
         "Fix deployment and chain details not independently verified"
+      ]
+    },
+    {
+      "netuid": 55,
+      "status": "IN_PROGRESS",
+      "surface": "Discord desktop",
+      "accountVerification": "shizzyunchained profile verified",
+      "channel": "https://discord.com/channels/799672011265015819/1465796313877577903",
+      "checkedAt": "2026-11-27T15:23:51.273630+00:00",
+      "interval": "November 26 12:07 through November 27 01:23 Eastern",
+      "speakerEvidence": "jgenome profile verified with Subnet role; announcement signed NIOME Team.",
+      "evidence": "site-audit-2026-11-27/discord-sn55-1021.txt",
+      "disposition": "Added sourced announcement with explicit limits.",
+      "gaps": [
+        "Earlier backlog and attached media not exhaustively reviewed."
+      ]
+    },
+    {
+      "netuid": 49,
+      "status": "IN_PROGRESS",
+      "surface": "Discord desktop",
+      "accountVerification": "shizzyunchained profile verified",
+      "channel": "https://discord.com/channels/799672011265015819/1434923225229295697",
+      "checkedAt": "2026-11-27T15:23:51.273630+00:00",
+      "interval": "November 25 16:40 through November 27 03:05 Eastern",
+      "speakerEvidence": "roboτensor | nepher.ai displayed Owner role.",
+      "evidence": "site-audit-2026-11-27/discord-sn49-1023.txt",
+      "disposition": "Added sourced announcement with explicit limits.",
+      "gaps": [
+        "Earlier backlog and attached media not exhaustively reviewed."
+      ]
+    },
+    {
+      "netuid": 121,
+      "status": "IN_PROGRESS",
+      "surface": "Discord desktop",
+      "accountVerification": "shizzyunchained profile verified",
+      "channel": "https://discord.com/channels/799672011265015819/1382818027241738352",
+      "checkedAt": "2026-11-27T15:23:51.273630+00:00",
+      "interval": "November 26 20:49 through November 27 10:15 Eastern",
+      "speakerEvidence": "Author displayed Owner role; original replies reviewed.",
+      "evidence": "site-audit-2026-11-27/discord-sn121-1024.txt",
+      "disposition": "Added sourced announcement with explicit limits.",
+      "gaps": [
+        "Earlier backlog and attached media not exhaustively reviewed."
       ]
     }
   ],
@@ -996,6 +1073,9 @@
       "SN124 Swarm sets a 200-second search-and-rescue task for TestField v2",
       "Subtensor merges a fix for weight commitments during hotkey swaps",
       "SN120 Affine merges a six-benchmark math dashboard specification",
+      "SN55 NIOME outlines a rare-disease variant-calling challenge",
+      "SN49 Nepher names tabletop winners and announces a parts-sorting contest",
+      "SN121 SundaeBar plans archive-node fix for rejected payment credits",
       "SN71 Leadpoet merges an export catch-up fix",
       "xTAO reports validator compatibility updates; API product remains in development"
     ],
@@ -1314,6 +1394,57 @@
         "uncertainty": "Requirements must not be presented as demonstrated performance.",
         "adjacentRatingReason": "Three stars: a meaningful benchmark and participation update, not a verified rescue deployment."
       }
+    },
+    {
+      "headline": "SN55 NIOME outlines a rare-disease variant-calling challenge",
+      "rating": 3,
+      "assessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "routine-competition",
+        "consequence": "Three stars: meaningful competition design and participant requirements, subject to the competition ceiling.",
+        "evidence": "Original announcement and operator replies in the official Bittensor subnet channel, inspected in Discord desktop.",
+        "scope": "SN55 participants",
+        "uncertainty": "Competition launch timing and clinical validation are not established.",
+        "adjacentRatingReason": "Three stars: meaningful competition design and participant requirements, subject to the competition ceiling."
+      }
+    },
+    {
+      "headline": "SN49 Nepher names tabletop winners and announces a parts-sorting contest",
+      "rating": 3,
+      "assessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "routine-competition",
+        "consequence": "Three stars: concrete results and a new participation window, capped as competition coverage.",
+        "evidence": "Original announcement and operator replies in the official Bittensor subnet channel, inspected in Discord desktop.",
+        "scope": "SN49 participants",
+        "uncertainty": "Reward distribution and real-world deployment are not independently verified.",
+        "adjacentRatingReason": "Three stars: concrete results and a new participation window, capped as competition coverage."
+      }
+    },
+    {
+      "headline": "SN121 SundaeBar plans archive-node fix for rejected payment credits",
+      "rating": 3,
+      "assessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "operational-remediation",
+        "consequence": "Three stars: a verified operator acknowledgement and remedy materially affect miner access to evaluation; broader systemic consequences are not established.",
+        "evidence": "Original announcement and operator replies in the official Bittensor subnet channel, inspected in Discord desktop.",
+        "scope": "SN121 participants",
+        "uncertainty": "Fix deployment and all affected credits have not been independently verified.",
+        "adjacentRatingReason": "Three stars: a verified operator acknowledgement and remedy materially affect miner access to evaluation; broader systemic consequences are not established."
+      }
+    }
+  ],
+  "updates": [
+    {
+      "at": "2026-11-27T15:23:51.273630+00:00",
+      "type": "additional-verified-coverage",
+      "addedSubnets": [
+        55,
+        49,
+        121
+      ],
+      "note": "Preserved original lead, publication time and all initial stories. No second roundup authorized."
     }
   ]
 }
