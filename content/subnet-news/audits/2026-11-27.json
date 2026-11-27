@@ -175,6 +175,20 @@
         }
       ],
       "status": "VERIFIED_PROPOSAL_NOT_EXECUTION"
+    },
+    {
+      "headline": "SN116 Carbon documents treasury routing for unused miner rewards",
+      "source": [
+        {
+          "url": "https://github.com/carbonphysicsai/Carbon/blob/main/carbon/rewards/MAINNET-V6-CUTOVER.md",
+          "label": "Official Carbon v6 treasury-routing specification"
+        },
+        {
+          "url": "https://discord.com/channels/799672011265015819/1511009214540157088/1575899043752710185",
+          "label": "Carbon channel explanation, November 27"
+        }
+      ],
+      "status": "VERIFIED_POLICY_WITH_ATTRIBUTED_EXECUTION"
     }
   ],
   "dailyWorkflowComplete": false,
@@ -982,6 +996,15 @@
       "interval": "November 26 12:59 through November 27 07:20 Eastern",
       "evidence": "site-audit-2026-11-27/discord-sn41-1031.txt",
       "disposition": "Official ballot verified; earlier backlog remains incomplete."
+    },
+    {
+      "netuid": 116,
+      "status": "IN_PROGRESS",
+      "surface": "Discord desktop",
+      "checkedAt": "2026-11-27T15:50:34.725814+00:00",
+      "interval": "November 27 00:49 through 10:41 Eastern",
+      "evidence": "site-audit-2026-11-27/discord-sn116-1044.txt",
+      "disposition": "Treasury specification corroborated; retirement lead and earlier backlog remain incomplete."
     }
   ],
   "marketMoveInvestigations": [
@@ -1100,6 +1123,7 @@
       "SN49 Nepher names tabletop winners and announces a parts-sorting contest",
       "SN121 SundaeBar plans archive-node fix for rejected payment credits",
       "SN41 Almanac asks holders about a higher owner emissions share",
+      "SN116 Carbon documents treasury routing for unused miner rewards",
       "SN71 Leadpoet merges an export catch-up fix",
       "xTAO reports validator compatibility updates; API product remains in development"
     ],
@@ -1470,6 +1494,19 @@
         "uncertainty": "Advisory proposal only; no enacted allocation change or reliable current tally verified.",
         "adjacentRatingReason": "Three stars: concrete participation and allocation proposal exceeds minor housekeeping; no enacted change or wider network consequence establishes four."
       }
+    },
+    {
+      "headline": "SN116 Carbon documents treasury routing for unused miner rewards",
+      "rating": 3,
+      "assessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "reward-policy",
+        "consequence": "A documented v6 policy routes post-bonus residual rewards to a capped community treasury rather than burning them immediately.",
+        "evidence": "Official Carbon mainnet-v6 cutover specification, corroborated by November 27 channel explanation.",
+        "scope": "SN116 miner reward allocation and community treasury.",
+        "uncertainty": "Actual live reward distributions have not been independently reconstructed.",
+        "adjacentRatingReason": "Three stars: a concrete subnet reward-routing change exceeds housekeeping; broader network impact or exceptional adoption is not established."
+      }
     }
   ],
   "updates": [
@@ -1490,6 +1527,14 @@
         41
       ],
       "note": "Dated catch-up of advisory ballot; original publication time and lead preserved."
+    },
+    {
+      "at": "2026-11-27T15:50:34.725814+00:00",
+      "type": "additional-verified-coverage",
+      "addedSubnets": [
+        116
+      ],
+      "note": "Documented treasury routing, with live execution explicitly attributed."
     }
   ]
 }

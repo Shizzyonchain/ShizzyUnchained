@@ -3,7 +3,7 @@
   "date": "2026-11-27",
   "title": "Bittensor Daily News: November 27, 2026",
   "coverageStart": "2026-11-26T15:15:01.800584+00:00",
-  "coverageEnd": "2026-11-27T15:37:11.139065+00:00",
+  "coverageEnd": "2026-11-27T15:50:34.725814+00:00",
   "subnets": [
     {
       "netuid": 1,
@@ -767,7 +767,35 @@
     {
       "netuid": 116,
       "name": "Carbon",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN116 Carbon documents treasury routing for unused miner rewards",
+          "summary": "Carbon’s published v6 policy documents a community treasury for rewards left after the leading miner’s decaying allocation and miner holding bonus. A November 27 explanation in its SN116 channel says the switch took place that day. The official specification confirms the routing rules, but does not itself prove live execution.\n\nUIDs 498 and 499 belong to the same treasury vault and share the residual allocation; two slots do not double it. Routing applies while the vault’s SN116 stake is below 50,000 alpha. At the cap, if stake cannot be read, or if neither registration matches its pinned identity, that residual burns instead. The vault cannot earn the leading-miner reward or holding bonus. Actual reward distributions have not been independently reconstructed.",
+          "rating": 3,
+          "ratingReason": "Three stars: a concrete subnet reward-routing change exceeds housekeeping; broader network impact or exceptional adoption is not established.",
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "reward-policy",
+            "consequence": "A documented v6 policy routes post-bonus residual rewards to a capped community treasury rather than burning them immediately.",
+            "evidence": "Official Carbon mainnet-v6 cutover specification, corroborated by November 27 channel explanation.",
+            "scope": "SN116 miner reward allocation and community treasury.",
+            "uncertainty": "Actual live reward distributions have not been independently reconstructed.",
+            "adjacentRatingReason": "Three stars: a concrete subnet reward-routing change exceeds housekeeping; broader network impact or exceptional adoption is not established."
+          },
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://github.com/carbonphysicsai/Carbon/blob/main/carbon/rewards/MAINNET-V6-CUTOVER.md",
+              "label": "Official Carbon v6 treasury-routing specification"
+            },
+            {
+              "url": "https://discord.com/channels/799672011265015819/1511009214540157088/1575899043752710185",
+              "label": "Carbon channel explanation, November 27"
+            }
+          ]
+        }
+      ]
     },
     {
       "netuid": 117,
@@ -998,6 +1026,7 @@
     "SN49 Nepher names tabletop winners and announces a parts-sorting contest",
     "SN121 SundaeBar plans archive-node fix for rejected payment credits",
     "SN41 Almanac asks holders about a higher owner emissions share",
+    "SN116 Carbon documents treasury routing for unused miner rewards",
     "SN71 Leadpoet merges an export catch-up fix",
     "xTAO reports validator compatibility updates; API product remains in development"
   ],
