@@ -161,6 +161,20 @@
         }
       ],
       "status": "VERIFIED_ATTRIBUTED_ANNOUNCEMENT"
+    },
+    {
+      "headline": "SN41 Almanac asks holders about a higher owner emissions share",
+      "source": [
+        {
+          "url": "https://almnc.ai/vote",
+          "label": "Official advisory ballot and proposed allocation"
+        },
+        {
+          "url": "https://discord.com/channels/799672011265015819/1263142301786574889/1575572557749297292",
+          "label": "Almanac moderator links proposal, November 26"
+        }
+      ],
+      "status": "VERIFIED_PROPOSAL_NOT_EXECUTION"
     }
   ],
   "dailyWorkflowComplete": false,
@@ -959,6 +973,15 @@
       "gaps": [
         "Earlier backlog and attached media not exhaustively reviewed."
       ]
+    },
+    {
+      "netuid": 41,
+      "status": "IN_PROGRESS",
+      "surface": "Discord desktop",
+      "checkedAt": "2026-11-27T15:37:11.139065+00:00",
+      "interval": "November 26 12:59 through November 27 07:20 Eastern",
+      "evidence": "site-audit-2026-11-27/discord-sn41-1031.txt",
+      "disposition": "Official ballot verified; earlier backlog remains incomplete."
     }
   ],
   "marketMoveInvestigations": [
@@ -1076,6 +1099,7 @@
       "SN55 NIOME outlines a rare-disease variant-calling challenge",
       "SN49 Nepher names tabletop winners and announces a parts-sorting contest",
       "SN121 SundaeBar plans archive-node fix for rejected payment credits",
+      "SN41 Almanac asks holders about a higher owner emissions share",
       "SN71 Leadpoet merges an export catch-up fix",
       "xTAO reports validator compatibility updates; API product remains in development"
     ],
@@ -1433,6 +1457,19 @@
         "uncertainty": "Fix deployment and all affected credits have not been independently verified.",
         "adjacentRatingReason": "Three stars: a verified operator acknowledgement and remedy materially affect miner access to evaluation; broader systemic consequences are not established."
       }
+    },
+    {
+      "headline": "SN41 Almanac asks holders about a higher owner emissions share",
+      "rating": 3,
+      "assessment": {
+        "rubricVersion": "2026-11-11",
+        "claimType": "governance-proposal",
+        "consequence": "An advisory ballot proposes moving five percentage points from validators/stakers to owner operations.",
+        "evidence": "Official almnc.ai/vote terms and November 26 moderator link in the official SN41 channel.",
+        "scope": "SN41 holders, validators, stakers and operator.",
+        "uncertainty": "Advisory proposal only; no enacted allocation change or reliable current tally verified.",
+        "adjacentRatingReason": "Three stars: concrete participation and allocation proposal exceeds minor housekeeping; no enacted change or wider network consequence establishes four."
+      }
     }
   ],
   "updates": [
@@ -1445,6 +1482,14 @@
         121
       ],
       "note": "Preserved original lead, publication time and all initial stories. No second roundup authorized."
+    },
+    {
+      "at": "2026-11-27T15:37:11.139065+00:00",
+      "type": "additional-verified-coverage",
+      "addedSubnets": [
+        41
+      ],
+      "note": "Dated catch-up of advisory ballot; original publication time and lead preserved."
     }
   ]
 }
