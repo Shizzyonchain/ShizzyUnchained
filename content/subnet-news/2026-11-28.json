@@ -3,7 +3,7 @@
   "date": "2026-11-28",
   "title": "Bittensor Daily News: November 28, 2026",
   "coverageStart": "2026-11-27T15:50:34.725814+00:00",
-  "coverageEnd": "2026-11-28T14:56:14.172744+00:00",
+  "coverageEnd": "2026-11-28T15:10:27.215237+00:00",
   "subnets": [
     {
       "netuid": 51,
@@ -1158,7 +1158,35 @@
     {
       "netuid": 116,
       "name": "Carbon",
-      "updates": []
+      "updates": [
+        {
+          "headline": "SN116 Carbon announces miner hold bonuses and a community treasury",
+          "summary": "SN116 Carbon announced on November 27 that it is changing where declining miner rewards go. Its existing challenge rewards still halve every 24 hours. Under the announced distribution order, current winners are paid first, followed by bonuses for past winners who retain their earned alpha, a capped community treasury, and finally the remaining burn allocation. The aim is to reward continued participation instead of sending all of the declining allocation directly to burn.\n\nThe team says eligible winners can earn up to an additional 50% over a rolling 30-day window. Selling, unstaking or transferring the earned alpha reduces eligibility, reaching zero when half or more is gone; the lowest balance during the window counts. These are the announced rules, not a guaranteed return for general token holders.\n\nCarbon describes a community council controlling treasury spending and says its own keys are excluded from bonuses, council seats and treasury payouts. Although the announcement says the mechanism has shipped, the public council page checked on November 28 still states that production admission is disabled and launch dates are unset. Completed treasury activation, live bonus payments and enforcement of the exclusions have not been independently verified.",
+          "rating": 3,
+          "ratingReason": "Three stars: a concrete change to competition reward distribution affects miner participation. Four is not established for this bounded incentive update with treasury activation still unresolved.",
+          "status": "verified",
+          "importance": "medium",
+          "sources": [
+            {
+              "url": "https://x.com/carbonphysicsai/status/2126304987592683967",
+              "label": "SN116 Carbon original reward-distribution announcement, November 27"
+            },
+            {
+              "url": "https://council.carbonphysics.ai/",
+              "label": "Carbon Council public admission status, checked November 28"
+            }
+          ],
+          "ratingAssessment": {
+            "rubricVersion": "2026-11-11",
+            "claimType": "miner-incentive-policy",
+            "consequence": "Three stars: a concrete change to competition reward distribution affects miner participation. Four is not established for this bounded incentive update with treasury activation still unresolved.",
+            "evidence": "Original team announcement and current public council page",
+            "scope": "SN116 competition winners and prospective council participants",
+            "uncertainty": "Treasury activation, actual bonus payouts and on-chain enforcement remain unverified.",
+            "adjacentRatingReason": "Three stars: a concrete change to competition reward distribution affects miner participation. Four is not established for this bounded incentive update with treasury activation still unresolved."
+          }
+        }
+      ]
     },
     {
       "netuid": 115,
@@ -1545,6 +1573,7 @@
     "SN99 Axonry releases a new small-model checkpoint with mixed benchmark results",
     "SN23 Trishool outlines December dates for inference mining and beta access",
     "SN56 Gradients plans lower entry fees and a new reward split for December 7",
+    "SN116 Carbon announces miner hold bonuses and a community treasury",
     "SN71 Leadpoet merges a higher reward target for new sandbox assignments",
     "Federation announces $17,000 hackathon across three builder tracks",
     "SN117 EveryFrame reports its first contest payout in alpha and Gamma",
